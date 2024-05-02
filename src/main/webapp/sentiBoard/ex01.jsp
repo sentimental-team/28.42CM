@@ -27,6 +27,7 @@
 <style>div[_ngcontent-dye-c44]{display:inline-block;position:fixed;top:50%;left:50%;z-index:1100;max-width:260px;padding:15px 30px;background-color:#000;font-size:14px;line-height:20px;text-align:center;color:#fff;transform:translate(-50%,-50%);word-break:keep-all;box-sizing:border-box}</style>
 </head>
 
+
 <body>
 <header>
 	 <jsp:include page="/layout/top.jsp"></jsp:include>
