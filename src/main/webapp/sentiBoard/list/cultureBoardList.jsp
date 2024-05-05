@@ -411,27 +411,12 @@ counter-increment: list-number 1;
 			<button></button>
 			<div>
 				<!-- <button></button>  화면이 작아졌을 때 #best-left메뉴 나타나게 하는거 -->
-				<h2 class="best_title_left">뷰티</h2>
+				<h2 class="best_title_left">컬처</h2>
 				<!-- <ul class="left_bar_meue" > -->
 				<ul class="left-menu">
 					<li><a class="medium-ctgr" href="">ALL</a></li>
 					<li><a class="medium-ctgr"  href="">NEW</a></li>
-					<li><a class="medium-ctgr"  href="">선물세트</a></li>
-					<li><a class="medium-ctgr"  href="">스킨케어</a></li>
-					<li><a class="medium-ctgr" href="">EXCLUSIVE</a></li>
-					<li><a class="medium-ctgr"  href="">채식주의</a></li>
-					<li><a class="medium-ctgr"  href="">친환경 패키지</a></li>
-					<li><a class="medium-ctgr"  href="">자연유래</a></li>
-					<li><a class="medium-ctgr"  href="">바디케어</a></li>
-					<li><a class="medium-ctgr"  href="">헤어케어</a></li>
-					<li><a class="medium-ctgr"  href="">메이크업</a></li>
-					<li><a class="medium-ctgr"  href="">네일, 디자인타투</a></li>
-					<li><a class="medium-ctgr"  href="">향수</a></li>
-					<li><a class="medium-ctgr"  href="">여성용품</a></li>
-					<li><a class="medium-ctgr"  href="">뷰티기기, 마스크</a></li>
-					<li><a class="medium-ctgr"  href="">남성뷰티</a></li>
-					<li><a class="medium-ctgr"  href="">스킨타입</a></li>
-					<li><a class="medium-ctgr"  href="">이너뷰티</a></li>
+					<li><a class="medium-ctgr"  href="">티켓</a></li>
 				</ul>
 				<!-- </ul> -->
 			</div>
@@ -495,29 +480,29 @@ counter-increment: list-number 1;
 					<div class="cc">
 						<a href="">
 							<div class="dd">
-								<img alt="" src="https://img.29cm.co.kr/next-product/2023/05/16/cdc46d768b984d7b844e59c78a4fdcd4_20230516114241.jpg?width=600" class="ff">
+								<img alt="" src="https://img.29cm.co.kr/item/202404/11ef043c3b245391b9bbe7fdf10f5149.jpg?width=700" class="ff">
 							</div>
 						</a>
 						<div class="gg">
-							<a class="hh" href="">디오디너리</a>	
-							<a title="[모든피부타입,수분,피지조절] 나이아신아마이드 10% + 징크 1%">
+							<a class="hh" href="">리얼뱅크시</a>	
+							<a title="[얼리버드] 리얼뱅크시 - Banksy is NOWHERE">
 								<div class="j">
-									<h5 class="jj">[모든피부타입,수분,피지조절] 나이아신아마이드 10% + 징크 1%</h5>
-										<strong class="jjj"></strong>							
+									<h5 class="jj">[얼리버드] 리얼뱅크시 - Banksy is NOWHERE</h5>
+										<strong class="jjj">15000</strong>							
 									<div class="01" >
-										<span class="kkk"></span>
-										<strong class="qqq">7,000</strong>
+										<span class="kkk">20%</span>
+										<strong class="qqq">12000</strong>
 									</div>
 									<ul class="eee">
-										<li class="yyy"></li>
+										<li class="yyy">무료배송</li>
 										<li></li>
 									</ul>
 								</div>
 							</a>
 							<div class="ppp">
-								<button>15,944</button><!-- 하트 마크표시 필요함  -->
+								<button>703</button><!-- 하트 마크표시 필요함  -->
 								<a>
-									<span>4,649</span><!--  댓글 마크 표시 필요함 -->
+									<span>0</span><!--  댓글 마크 표시 필요함 -->
 								</a>
 							</div>
 						</div>
@@ -528,29 +513,29 @@ counter-increment: list-number 1;
 					<div class="cc">
 						<a href="">
 							<div class="dd">
-								<img alt="" src="https://img.29cm.co.kr/next-product/2023/03/29/dc370f592664499ca1db62a1d51ff6f1_20230329143729.jpg?width=600" class="ff">
+								<img alt="" src="https://img.29cm.co.kr/item/202404/11ef043c3b245391b9bbe7fdf10f5149.jpg?width=700" class="ff">
 							</div>
 						</a>
 						<div class="gg">
-							<a class="hh" href="">파르티멘토 우먼</a>	
-							<a title="[1+1] [트러블케어] 비타진정 깔라만시 바디워시 510gx2 (등드름 가드름 케어)">
+							<a class="hh" href="">리얼뱅크시</a>	
+							<a title="[얼리버드] 리얼뱅크시 - Banksy is NOWHERE">
 								<div class="j">
-									<h5 class="jj">[1+1] [트러블케어] 비타진정 깔라만시 바디워시 510gx2 (등드름 가드름 케어)</h5>
-										<strong class="jjj"></strong>							
+									<h5 class="jj">[얼리버드] 리얼뱅크시 - Banksy is NOWHERE</h5>
+										<strong class="jjj">15000</strong>							
 									<div class="01" >
-										<span class="kkk">41%</span>
-										<strong class="qqq">32,900</strong>
+										<span class="kkk">20%</span>
+										<strong class="qqq">12000</strong>
 									</div>
 									<ul class="eee">
-										<li class="yyy"></li>
-										<li>무료배송</li>
+										<li class="yyy">무료배송</li>
+										<li></li>
 									</ul>
 								</div>
 							</a>
 							<div class="ppp">
-								<button>95</button><!-- 하트 마크표시 필요함  -->
+								<button>703</button><!-- 하트 마크표시 필요함  -->
 								<a>
-									<span>23</span><!--  댓글 마크, 평점 표시 필요함 -->
+									<span>0</span><!--  댓글 마크 표시 필요함 -->
 								</a>
 							</div>
 						</div>
@@ -560,29 +545,29 @@ counter-increment: list-number 1;
 					<div class="cc">
 						<a href="">
 							<div class="dd">
-								<img alt="" src="https://img.29cm.co.kr/next-product/2023/03/29/dc370f592664499ca1db62a1d51ff6f1_20230329143729.jpg?width=600" class="ff">
+								<img alt="" src="https://img.29cm.co.kr/item/202404/11ef043c3b245391b9bbe7fdf10f5149.jpg?width=700" class="ff">
 							</div>
 						</a>
 						<div class="gg">
-							<a class="hh" href="">파르티멘토 우먼</a>	
-							<a title="[1+1] [트러블케어] 비타진정 깔라만시 바디워시 510gx2 (등드름 가드름 케어)">
+							<a class="hh" href="">리얼뱅크시</a>	
+							<a title="[얼리버드] 리얼뱅크시 - Banksy is NOWHERE">
 								<div class="j">
-									<h5 class="jj">[1+1] [트러블케어] 비타진정 깔라만시 바디워시 510gx2 (등드름 가드름 케어)</h5>
-										<strong class="jjj"></strong>							
+									<h5 class="jj">[얼리버드] 리얼뱅크시 - Banksy is NOWHERE</h5>
+										<strong class="jjj">15000</strong>							
 									<div class="01" >
-										<span class="kkk">41%</span>
-										<strong class="qqq">32,900</strong>
+										<span class="kkk">20%</span>
+										<strong class="qqq">12000</strong>
 									</div>
 									<ul class="eee">
-										<li class="yyy"></li>
-										<li>무료배송</li>
+										<li class="yyy">무료배송</li>
+										<li></li>
 									</ul>
 								</div>
 							</a>
 							<div class="ppp">
-								<button>95</button><!-- 하트 마크표시 필요함  -->
+								<button>703</button><!-- 하트 마크표시 필요함  -->
 								<a>
-									<span>23</span><!--  댓글 마크, 평점 표시 필요함 -->
+									<span>0</span><!--  댓글 마크 표시 필요함 -->
 								</a>
 							</div>
 						</div>
@@ -593,29 +578,29 @@ counter-increment: list-number 1;
 					<div class="cc">
 						<a href="">
 							<div class="dd">
-								<img alt="" src="https://img.29cm.co.kr/next-product/2023/03/29/dc370f592664499ca1db62a1d51ff6f1_20230329143729.jpg?width=600" class="ff">
+								<img alt="" src="https://img.29cm.co.kr/item/202404/11ef043c3b245391b9bbe7fdf10f5149.jpg?width=700" class="ff">
 							</div>
 						</a>
 						<div class="gg">
-							<a class="hh" href="">파르티멘토 우먼</a>	
-							<a title="[1+1] [트러블케어] 비타진정 깔라만시 바디워시 510gx2 (등드름 가드름 케어)">
+							<a class="hh" href="">리얼뱅크시</a>	
+							<a title="[얼리버드] 리얼뱅크시 - Banksy is NOWHERE">
 								<div class="j">
-									<h5 class="jj">[1+1] [트러블케어] 비타진정 깔라만시 바디워시 510gx2 (등드름 가드름 케어)</h5>
-										<strong class="jjj"></strong>							
+									<h5 class="jj">[얼리버드] 리얼뱅크시 - Banksy is NOWHERE</h5>
+										<strong class="jjj">15000</strong>							
 									<div class="01" >
-										<span class="kkk">41%</span>
-										<strong class="qqq">32,900</strong>
+										<span class="kkk">20%</span>
+										<strong class="qqq">12000</strong>
 									</div>
 									<ul class="eee">
-										<li class="yyy"></li>
-										<li>무료배송</li>
+										<li class="yyy">무료배송</li>
+										<li></li>
 									</ul>
 								</div>
 							</a>
 							<div class="ppp">
-								<button>95</button><!-- 하트 마크표시 필요함  -->
+								<button>703</button><!-- 하트 마크표시 필요함  -->
 								<a>
-									<span>23</span><!--  댓글 마크, 평점 표시 필요함 -->
+									<span>0</span><!--  댓글 마크 표시 필요함 -->
 								</a>
 							</div>
 						</div>
@@ -625,29 +610,29 @@ counter-increment: list-number 1;
 					<div class="cc">
 						<a href="">
 							<div class="dd">
-								<img alt="" src="https://img.29cm.co.kr/next-product/2023/03/29/dc370f592664499ca1db62a1d51ff6f1_20230329143729.jpg?width=600" class="ff">
+								<img alt="" src="https://img.29cm.co.kr/item/202404/11ef043c3b245391b9bbe7fdf10f5149.jpg?width=700" class="ff">
 							</div>
 						</a>
 						<div class="gg">
-							<a class="hh" href="">파르티멘토 우먼</a>	
-							<a title="[1+1] [트러블케어] 비타진정 깔라만시 바디워시 510gx2 (등드름 가드름 케어)">
+							<a class="hh" href="">리얼뱅크시</a>	
+							<a title="[얼리버드] 리얼뱅크시 - Banksy is NOWHERE">
 								<div class="j">
-									<h5 class="jj">[1+1] [트러블케어] 비타진정 깔라만시 바디워시 510gx2 (등드름 가드름 케어)</h5>
-										<strong class="jjj"></strong>							
+									<h5 class="jj">[얼리버드] 리얼뱅크시 - Banksy is NOWHERE</h5>
+										<strong class="jjj">15000</strong>							
 									<div class="01" >
-										<span class="kkk">41%</span>
-										<strong class="qqq">32,900</strong>
+										<span class="kkk">20%</span>
+										<strong class="qqq">12000</strong>
 									</div>
 									<ul class="eee">
-										<li class="yyy"></li>
-										<li>무료배송</li>
+										<li class="yyy">무료배송</li>
+										<li></li>
 									</ul>
 								</div>
 							</a>
 							<div class="ppp">
-								<button>95</button><!-- 하트 마크표시 필요함  -->
+								<button>703</button><!-- 하트 마크표시 필요함  -->
 								<a>
-									<span>23</span><!--  댓글 마크, 평점 표시 필요함 -->
+									<span>0</span><!--  댓글 마크 표시 필요함 -->
 								</a>
 							</div>
 						</div>
@@ -657,29 +642,29 @@ counter-increment: list-number 1;
 					<div class="cc">
 						<a href="">
 							<div class="dd">
-								<img alt="" src="https://img.29cm.co.kr/next-product/2023/03/29/dc370f592664499ca1db62a1d51ff6f1_20230329143729.jpg?width=600" class="ff">
+								<img alt="" src="https://img.29cm.co.kr/item/202404/11ef043c3b245391b9bbe7fdf10f5149.jpg?width=700" class="ff">
 							</div>
 						</a>
 						<div class="gg">
-							<a class="hh" href="">파르티멘토 우먼</a>	
-							<a title="[1+1] [트러블케어] 비타진정 깔라만시 바디워시 510gx2 (등드름 가드름 케어)">
+							<a class="hh" href="">리얼뱅크시</a>	
+							<a title="[얼리버드] 리얼뱅크시 - Banksy is NOWHERE">
 								<div class="j">
-									<h5 class="jj">[1+1] [트러블케어] 비타진정 깔라만시 바디워시 510gx2 (등드름 가드름 케어)</h5>
-										<strong class="jjj"></strong>							
+									<h5 class="jj">[얼리버드] 리얼뱅크시 - Banksy is NOWHERE</h5>
+										<strong class="jjj">15000</strong>							
 									<div class="01" >
-										<span class="kkk">41%</span>
-										<strong class="qqq">32,900</strong>
+										<span class="kkk">20%</span>
+										<strong class="qqq">12000</strong>
 									</div>
 									<ul class="eee">
-										<li class="yyy"></li>
-										<li>무료배송</li>
+										<li class="yyy">무료배송</li>
+										<li></li>
 									</ul>
 								</div>
 							</a>
 							<div class="ppp">
-								<button>95</button><!-- 하트 마크표시 필요함  -->
+								<button>703</button><!-- 하트 마크표시 필요함  -->
 								<a>
-									<span>23</span><!--  댓글 마크, 평점 표시 필요함 -->
+									<span>0</span><!--  댓글 마크 표시 필요함 -->
 								</a>
 							</div>
 						</div>
