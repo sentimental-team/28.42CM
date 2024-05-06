@@ -405,6 +405,9 @@ counter-increment: list-number 1;
 
 </style>
 </head>
+<header>
+	<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
+</header>
 <body>
 	<div id="wrap">
 		<div id="best-left">
