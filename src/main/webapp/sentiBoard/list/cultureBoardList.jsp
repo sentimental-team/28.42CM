@@ -478,7 +478,7 @@ button {
 }
 </style>
 </head>
-<header class="stick">
+<header>
 	<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
 </header>
 <body>
@@ -763,16 +763,7 @@ button {
 						</div>
 					</div>
 				</li>
-					
-					
-					
-					
-					
-
-				
 			</ul>
-
-
 		</div>
 	</div>
 
@@ -780,6 +771,8 @@ button {
 <script>
 
 </script>
-
+<footer>
+	<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
+</footer>
 </body>
 </html>
