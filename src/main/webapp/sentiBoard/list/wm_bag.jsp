@@ -405,6 +405,7 @@ class ="best_radio_box3 ":checked+.bb {
 .review-point {
 	margin-right: 2px;
 	color: rgb(255, 72, 0);
+	margin-left: 4px;
 }
 
 .heart>svg+.jj {
@@ -433,7 +434,7 @@ class ="best_radio_box3 ":checked+.bb {
 	-webkit-box-pack: start;
 	justify-content: flex-start;
 	min-height: 42px;
-	border: 1px solid gray;
+	border: 1px solid #e4e4e4;
 }
 
 .widget-gap {
@@ -446,7 +447,7 @@ class ="best_radio_box3 ":checked+.bb {
 	align-items: center;
 	height: 100%;
 	min-height: 42px;
-	border-right: 1px solid gray;
+	border-right: 1px solid #e4e4e4;
 }
 
 button {
@@ -457,8 +458,10 @@ button {
 }
 </style>
 </head>
+<header>
+	<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
+</header>
 <body>
-	<header>asd</header>
 	<div id="wrap">
 		<div id="best-left">
 			<button></button>
