@@ -420,6 +420,43 @@ button {
 }
  */
 </style>
+<<<<<<< HEAD
+<header class="th">
+    <p>29CM</p>
+    <nav class="tm">
+        <a href="#">검색</a>
+        <a href="#">MY PAGE</a>
+        <a href="#">MY LIKE</a>
+        <a href="#">SHOPPING BAG</a>
+        <a href="#">LOGOUT</a>
+    </nav>
+</header>
+
+<ul class="ma">
+    <li><a href="#"><h3>Special-Order</h3></a></li>
+    <li><a href="#"><h3>Showcase</h3></a></li>
+    <li><a href="#"><h3>PT</h3></a></li>
+    <li><a href="#"><h3>Welove</h3></a></li>
+</ul>
+
+<ul class="mb">
+    <li><a href="#">BEST</a></li>
+    <li><a href="#">WOMEN</a></li>
+    <li><a href="#">MEN</a></li>
+    <li><a href="#">INTERIOR</a></li>
+    <li><a href="#">KITCHEN</a></li>
+    <li><a href="#">ELECTRONICS</a></li>
+    <li><a href="#">DIGITAL</a></li>
+    <li><a href="#">BEAUTY</a></li>
+    <li><a href="#">FOOD</a></li>
+    <li><a href="#">LEISURE</a></li>
+    <li><a href="#">KIDS</a></li>
+    <li><a href="#">CULTURE</a></li>
+    <li><a href="#">Event</a></li>
+    <li><a href="#">Lookbook</a></li>
+</ul>
+<hr>
+=======
 <html>
 <head>
 <meta charset="UTF-8">
@@ -533,3 +570,4 @@ button {
 
 </body>
 </html>
+>>>>>>> 5c3db28d179f680ebabdd3cf6fcabe03b72f08bc
