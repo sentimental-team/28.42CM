@@ -17,6 +17,9 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 />
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<header>
+   <jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
+</header>
 <style>
    span.material-symbols-outlined{
    vertical-align: text-bottom;
