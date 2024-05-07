@@ -233,8 +233,8 @@ h4 {
     display: inline-block;
     padding: 10px 0px;
     font-size: 15px;
-    color: rgb(48, 48, 51);
-    font-weight: 600;
+    color: rgb(93, 93, 93);
+    font-weight: 200;
 }
 
 .shop-info-a {
@@ -243,6 +243,14 @@ h4 {
     font-size: 15px;
     color: rgb(93, 93, 93);
     font-weight: 200;
+}
+
+.review-info-a {
+    display: inline-block;
+    padding: 10px 0px;
+    font-size: 15px;
+    color: rgb(48, 48, 51);
+    font-weight: 600;
 }
 
 .id {
@@ -335,227 +343,147 @@ h4 {
     }
 }
 
-.mid-deli-view {
+.review-text {
+    margin-bottom: 16px;
     font-size: 22px;
     font-weight: 500;
-    line-height: 1.5;
-    color: #000000;
+    line-height: 30px;
+    color: rgb(0, 0, 0);
 }
 
-.mid-deli-info {
-    margin-top: 10px;
-}
-
-.mid-deli-chart {
+.review-list {
     display: flex;
-    border-top: 4px solid black;
-}
-
-.item-info {
-    padding: 20px;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    flex: 1 1 0%;
-}
-
-.deli-charge {
-    padding: 20px;
-    font-weight: 700;
-    text-align: center;
-    width: min(20%, 140px);
-    font-size: 18px;
-}
-
-.deli-ing {
-    padding: 20px;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    width: min(28%, 200px);
-}
-
-.buy-review {
-    padding: 20px;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    width: min(22%, 223px);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    white-space: nowrap;
-}
-
-.deli-text {
-    border-top: 2px solid black;
-    text-align: center;
-    padding: 40px 0px;
-    font-size: 18px;
-    border-bottom: 1px solid black;
-}
-
-.deli-guide {
-    margin-top: 90px;
-}
-
-.guide-text {
-    font-size: 22px;
-    color: #000000;
-    line-height: 1.5;
-    font-weight: 500;
-    padding-bottom: 8px;
-    border-bottom: 4px solid #000000;
-}
-
-.guide-main {
-    margin-top: 45px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: center;
-    word-break: keep-all;
-    word-wrap: break-word;
-}
-
-.guide-circle {
+    border-bottom: 4px solid rgb(0, 0, 0);
     position: relative;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    width: 13%;
-    margin-right: 4.4%;
 }
 
-.circle {
-    display: block;
-    padding-top: 100%;
-    position: relative;
-    border-radius: 50%;
-    background-color: #000000;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 1;
-}
-
-.circle-text {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.under-text {
-    margin-top: 8px;
+.can-review {
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 180px;
+    height: 49px;
     font-size: 14px;
-    line-height: 1.4;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 }
 
-.css-u4n2w6 {
-    width: 8px;
-    height: 16px;
-    position: absolute;
-    right: -20%;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    width: 10px;
-    height: 20px;
-}
-
-.bottom-text {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+.my-review {
+    cursor: pointer;
     display: flex;
-    margin-top: 20px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 180px;
+    height: 49px;
+    font-size: 14px;
+    color: rgb(160, 160, 160);
+    background-color: rgb(255, 255, 255);
+    border-width: 1px 1px 0px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-top-color: rgb(212, 212, 212);
+    border-right-color: rgb(212, 212, 212);
+    border-left-color: rgb(212, 212, 212);
+    border-image: initial;
+    border-bottom-style: initial;
+    border-bottom-color: initial;
 }
 
-p {
+.mileage-sum {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+}
+
+.mile-sum2 {
+    position: relative;
+}
+
+.mile-sum3 {
+    line-height: 0;
+}
+
+.mileage-box {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.mile-text {
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.mile-num {
+    color: rgb(255, 72, 0);
+}
+
+.question-mark {
+    line-height: 0;
+}
+
+.mile-textbox {
+    position: absolute;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    opacity: 1;
+    background: rgb(255, 255, 255);
+    border-radius: 2px;
+    transition: opacity 0.2s ease-in-out 0s;
+    top: -12px;
+    display: none;
+    right: 0px;
+    left: auto;
+    transform: translate(0px, -100%);
+    width: 408px;
+    padding: 24px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px 0px;
+}
+
+.mile-textbox::after{
+	border-top: 7px solid rgb(255,255,255);
+}
+
+.mile-textbox::after{
+	cursor: pointer;
+	content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
+    transform: translateX(-50%);
+    border-top: 7px solid rgb(255, 72, 0);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
 }
 
-.first-text {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    position: relative;
-    padding-top: 25px;
-    border-top: 1px solid #303033;
-    font-size: 16px;
-    font-weight: 700;
-    text-align: center;
-    box-sizing: border-box;
-    margin-right: 4.4%;
+.box-box {
+    color: rgb(0, 0, 0);
+    white-space: pre-wrap;
 }
 
-.second-text {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    position: relative;
-    padding-top: 25px;
-    border-top: 1px solid #303033;
-    font-size: 16px;
-    font-weight: 700;
-    text-align: center;
-    box-sizing: border-box;
+.textbox1 {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 20px;
 }
 
-.first-text::before {
-    left: 0;
+.textbox2 {
+    font-size: 14px;
+    line-height: 20px;
 }
-
-.first-text::after {
-    right: 0;
-}
-
-.first-text::before, .first-text::after {
-    position: absolute;
-    top: -4px;
-    width: 1px;
-    height: 8px;
-    background-color: #303033;
-    content: '';
-}
-
-.second-text::before {
-    left: 0;
-}
-
-.second-text::after {
-    right: 0;
-}
-
-.second-text::before, .second-text::after {
-    position: absolute;
-    top: -4px;
-    width: 1px;
-    height: 8px;
-    background-color: #303033;
-    content: '';
-}
-
-
-
-.footer{
-	min-width: 900px;
-    padding: 0 50px;
-}
-
 </style>
 </head>
 <body>
@@ -598,7 +526,7 @@ p {
 					<h4 class="shop-info">나의 쇼핑정보</h4>
 					<ul class="shop-info-list">
 						<li class="shop-info-li">
-							<a class="delivery-view" href="#">주문배송조회</a>
+							<a class="delivery-view" href="/SentiProject/sentiBoard/list/mypage_delivery.jsp">주문배송조회</a>
 						</li>
 						<li>
 							<a class="shop-info-a" href="#">숙박예약조회</a>
@@ -607,7 +535,7 @@ p {
 							<a class="shop-info-a" href="#">취소/교환/반품 내역</a>
 						</li>
 						<li>
-							<a class="shop-info-a" href="/SentiProject/sentiBoard/list/mypage_item_review.jsp">상품 리뷰</a>
+							<a class="review-info-a" href="#">상품 리뷰</a>
 						</li>
 						<li>
 							<a class="shop-info-a" href="#">증빙서류 발급</a>
@@ -663,101 +591,43 @@ p {
 			</section>
 		</div>
 		<div class="mid-mid">
-			<h4 class="mid-deli-view">주문배송조회</h4>
-			<section>
-				<section class="mid-deli-info">
-					<section class="mid-deli-chart">
-						<div class="item-info">상품정보</div>
-						<div class="deli-charge">배송비</div>
-						<div class="deli-ing">진행상태</div>
-						<div class="buy-review">구매확정 및 리뷰</div>
-					</section>
-					<p class="deli-text">주문내역이 없습니다.</p>
-				</section>
-			</section>
-			<section class="deli-guide">
-				<h4 class="guide-text">주문상태 및 취소기간 안내</h4>
-				<ol class="guide-main">
-					<li class="guide-circle">
-						<strong class="circle">
-							<span class="circle-text">입금대기</span>
-								<svg class="e17g6d407 css-u4n2w6 e2007db0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 80">
-									<g fill="none" fill-rule="evenodd" stroke="#000000" stroke-width="3">
-										<path d="M1 0l40 40.083L1.166 80">
-										</path>
-									</g>
-								</svg>
-						</strong>
-						<p class="under-text">입금 전 상태입니다 (3일 이내 미입금 시 자동취소)</p>
-					</li>
-					<li class="guide-circle">
-						<strong class="circle">
-							<span class="circle-text">결제완료</span>
-								<svg class="e17g6d407 css-u4n2w6 e2007db0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 80">
-									<g fill="none" fill-rule="evenodd" stroke="#000000" stroke-width="3">
-										<path d="M1 0l40 40.083L1.166 80">
-										</path>
-									</g>
-								</svg>
-						</strong>
-						<p class="under-text">입금(결제) 확인이 완료되었습니다</p>
-					</li>
-					<li class="guide-circle">
-						<strong class="circle">
-							<span class="circle-text">상품준비중</span>
-								<svg class="e17g6d407 css-u4n2w6 e2007db0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 80">
-									<g fill="none" fill-rule="evenodd" stroke="#000000" stroke-width="3">
-										<path d="M1 0l40 40.083L1.166 80">
-										</path>
-									</g>
-								</svg>
-						</strong>
-						<p class="under-text">주문하신 상품을 발송할 예정입니다</p>
-					</li>
-					<li class="guide-circle">
-						<strong class="circle">
-							<span class="circle-text">배송시작</span>
-								<svg class="e17g6d407 css-u4n2w6 e2007db0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 80">
-									<g fill="none" fill-rule="evenodd" stroke="#000000" stroke-width="3">
-										<path d="M1 0l40 40.083L1.166 80">
-										</path>
-									</g>
-								</svg>
-						</strong>
-						<p class="under-text">상품준비가 완료되어 곧 배송 될 예정입니다</p>
-					</li>
-					<li class="guide-circle">
-						<strong class="circle">
-							<span class="circle-text">배송중</span>
-								<svg class="e17g6d407 css-u4n2w6 e2007db0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 80">
-									<g fill="none" fill-rule="evenodd" stroke="#000000" stroke-width="3">
-										<path d="M1 0l40 40.083L1.166 80">
-										</path>
-									</g>
-								</svg>
-						</strong>
-						<p class="under-text">상품이 고객님께 배송중입니다</p>
-					</li>
-					<li class="guide-circle">
-						<strong class="circle">
-							<span class="circle-text">배송완료</span>
-						</strong>
-						<p class="under-text">상품이 주문자에게 전달완료 되었습니다</p>
-					</li>
-				</ol>
-				<section class="bottom-text">
-					<p class="first-text">
-						<span class="bot-text1"></span>
-						직접취소가능
-					</p>
-					<p class="second-text">
-						<span class="bot-text2"></span>
-						취소불가
-					</p>
-				</section>
-			</section>
+			<h3 class="review-text">리뷰</h3>
+			<ul class="review-list">
+				<li class="can-review">작성 가능한 리뷰(0)</li>
+				<li class="my-review">내 리뷰(0)</li>
+				<div class="mileage-sum">
+					<div class="mile-sum2">
+						<div class="mile-sum3">
+							<div class="mileage-box">
+								<p class="mile-text">
+								적립 가능한 마일리지 합계
+								<span class="mile-num">0</span>
+								</p>
+								<div class="question-mark">
+									<svg width="20" height="20" viewBox="0 0 20 20">
+										<g transform="translate(1 1)" fill="none" fill-rule="evenodd">
+											<circle stroke="#d4d4d4" cx="9" cy="9" r="9">
+											</circle>
+											<path d="M9.614 10.944H8.271v-.592c0-.214.024-.408.072-.58.047-.173.117-.33.207-.47.09-.14.2-.273.329-.4a5.94 5.94 0 0 1 .435-.39l.529-.432c.21-.156.383-.327.521-.512s.207-.422.207-.71c0-.395-.145-.71-.435-.944-.29-.235-.665-.352-1.122-.352-.476 0-.857.131-1.143.395a1.534 1.534 0 0 0-.5.963L6 6.784a2.5 2.5 0 0 1 .357-.957 2.64 2.64 0 0 1 .679-.722c.271-.198.583-.348.935-.45A4.009 4.009 0 0 1 9.1 4.5c.4 0 .774.05 1.121.148.348.099.655.245.922.438.267.194.476.433.628.716.153.284.229.612.229.982 0 .263-.033.494-.1.691-.067.198-.16.377-.279.537-.119.16-.264.311-.435.451-.172.14-.357.284-.557.432-.19.14-.353.265-.486.377a1.598 1.598 0 0 0-.314.34 1.186 1.186 0 0 0-.165.382 2.28 2.28 0 0 0-.05.518v.432zm.357 1.741c0 .214-.09.403-.271.568a.98.98 0 0 1-.686.247c-.266 0-.493-.08-.678-.24-.186-.161-.279-.348-.279-.562 0-.223.09-.414.272-.575.18-.16.41-.24.685-.24.276 0 .505.078.686.234a.725.725 0 0 1 .271.568z" fill="#5d5d5d">
+											</path>
+										</g>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="mile-textbox">
+							<div class="box-box">
+								<strong class="textbox1">마일리지 합계는 작성 가능한 리뷰를 모두 작성 하였을 때, 적립 가능한 최대 마일리지의 합계 입니다.</strong>
+								<p class="textbox2">(건 당 적립 가능한 최대 마일리지는 결제 금액에 따라 달라집니다. 1만원 이하 – 100 마일리지, 1만원 초과 – 1,500 마일리지)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</ul>
 		</div>
 	</div>
-	<footer class="footer"></footer>
+<script>
+
+</script>
 </body>
 </html>
