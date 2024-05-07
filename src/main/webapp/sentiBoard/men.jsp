@@ -11,6 +11,12 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <link rel="stylesheet" href="http://localhost/jspPro/resources/cdn-main/example.css">
 <script src="http://localhost/jspPro/resources/cdn-main/example.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <style>
    span.material-symbols-outlined{
    vertical-align: text-bottom;
@@ -543,12 +549,6 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
     max-height: 2902px;
 }
 
-.qq3_1_1{
-    top: 2902px;
-    left: 0px;
-    width: 300px;
-    writing-mode: horizontal-tb;
-    position: absolute;
 }
 .qq3_1_1_1{
 	 padding: 0px 8%;	
@@ -733,6 +733,45 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
     font-family: campton;
     color: rgb(93, 93, 93);
 }
+
+.swiper {
+  width: 100%;
+  height: 620px;
+}
+
+@media (min-width: 541px) {
+    .uuu {
+        height: 680px;
+        margin: 0px 100px 0px 380px;
+    }
+}
+.uuu{
+    overflow: hidden;
+    text-align: left;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+}
+@media (min-width: 541px) {
+    .uuu1 {
+        width: 440px;
+        margin-left: 60px;
+    }
+}
+.uuu1_1{
+    white-space: pre-wrap;
+    font-size: xx-large;
+    font-weight: 500;
+    line-height: 58px;
+}
+.uuu1_2{
+     margin-top: 19px;
+    font-size: 20px;
+    line-height: 35px;
+    white-space: pre-wrap;
+}
 </style>
 
 
@@ -740,147 +779,119 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <body>
 	<div id="wrap">
       <div id="first">
-        <div class="aa">
-            <div class="aa1">
-              <div class="aa1_1">
-                  <span class="aa3"></span>
-                  <span class="aa3"></span>
-                  <span class="aa3"></span>
-                  <span class="aa3"></span>
-                  <span class="aa3"></span>                 
-              </div>
-              <div class="aa2">
-                  <div class="aa2_1">
-                    <a href="" class="aa2_1_1">
-                        <picture class="aaa1">
-                            <img src="https://img.29cm.co.kr/next-product/2024/05/03/dc2…1fb872d78e1ac4432f0_20240503172623.jpg?width=2000" alt="" class="aaa">
-                        </pi>
-                        <div class="aa2_1_1_1">
-                          <div class="aa2_1_1_1_1">
-                            <h2 class="aa2_1_1_1_1_1">편안하고 완벽한</h2>
-                            <p class="aa2_1_1_1_1_2">DESCENTE</p>
-                          </div>
-                        </div>
-                    </a>
-                  </div>
-                  <div class="aa2_1">
-                    <a href="" class="aa2_1_1">
-                        <picture>
-                            <img src="https://img.29cm.co.kr/next-product/2024/05/03/dc2…1fb872d78e1ac4432f0_20240503172623.jpg?width=2000" alt="">
-                        </picture>
-                        <div class="aa2_1_1_1">
-                          <div class="aa2_1_1_1_1">
-                            <h2 class="aa2_1_1_1_1_1">편안하고 완벽한</h2>
-                            <p class="aa2_1_1_1_1_2">DESCENTE</p>
-                          </div>
-                        </div>
-                    </a>
-                  </div>  
-                  <div class="aa2_1">
-                    <a href="" class="aa2_1_1">
-                        <picture>
-                            <img src="https://img.29cm.co.kr/next-product/2024/05/03/dc2…1fb872d78e1ac4432f0_20240503172623.jpg?width=2000" alt="">
-                        </picture>
-                        <div class="aa2_1_1_1">
-                          <div class="aa2_1_1_1_1">
-                            <h2 class="aa2_1_1_1_1_1">편안하고 완벽한</h2>
-                            <p class="aa2_1_1_1_1_2">DESCENTE</p>
-                          </div>
-                        </div>
-                    </a>
-                  </div>
-                  <div class="aa2_1">
-                    <a href="" class="aa2_1_1">
-                        <picture>
-                            <img src="https://img.29cm.co.kr/next-product/2024/05/03/dc2…1fb872d78e1ac4432f0_20240503172623.jpg?width=2000" alt="">
-                        </picture>
-                        <div class="aa2_1_1_1">
-                          <div class="aa2_1_1_1_1">
-                            <h2 class="aa2_1_1_1_1_1">편안하고 완벽한</h2>
-                            <p class="aa2_1_1_1_1_2">DESCENTE</p>
-                          </div>
-                        </div>
-                    </a>
-                  </div>
-                  <div class="aa2_1">
-                    <a href="" class="aa2_1_1">
-                        <picture>
-                            <img src="https://img.29cm.co.kr/next-product/2024/05/03/dc2…1fb872d78e1ac4432f0_20240503172623.jpg?width=2000" alt="">
-                        </picture>
-                        <div class="aa2_1_1_1">
-                          <div class="aa2_1_1_1_1">
-                            <h2 class="aa2_1_1_1_1_1">편안하고 완벽한</h2>
-                            <p class="aa2_1_1_1_1_2">DESCENTE</p>
-                          </div>
-                        </div>
-                    </a>
-                  </div>
-                  <div class="aa2_1">
-                    <a href="" class="aa2_1_1">
-                        <picture>
-                            <img src="https://img.29cm.co.kr/next-product/2024/05/03/dc2…1fb872d78e1ac4432f0_20240503172623.jpg?width=2000" alt="">
-                        </picture>
-                        <div class="aa2_1_1_1">
-                          <div class="aa2_1_1_1_1">
-                            <h2 class="aa2_1_1_1_1_1">편안하고 완벽한</h2>
-                            <p class="aa2_1_1_1_1_2">DESCENTE</p>
-                          </div>
-                        </div>
-                    </a>
-                  </div>
-                  <div class="aa2_1">
-                    <a href="" class="aa2_1_1">
-                        <picture>
-                            <img src="https://img.29cm.co.kr/next-product/2024/05/03/dc2…1fb872d78e1ac4432f0_20240503172623.jpg?width=2000" alt="">
-                        </picture>
-                        <div class="aa2_1_1_1">
-                          <div class="aa2_1_1_1_1">
-                            <h2 class="aa2_1_1_1_1_1">편안하고 완벽한</h2>
-                            <p class="aa2_1_1_1_1_2">DESCENTE</p>
-                          </div>
-                        </div>
-                    </a>
-                  </div>
-                  <div class="aa2_1">
-                    <a href="" class="aa2_1_1">
-                        <picture>
-                            <img src="https://img.29cm.co.kr/next-product/2024/05/03/dc2…1fb872d78e1ac4432f0_20240503172623.jpg?width=2000" alt="">
-                        </picture>
-                        <div class="aa2_1_1_1">
-                          <div class="aa2_1_1_1_1">
-                            <h2 class="aa2_1_1_1_1_1">편안하고 완벽한</h2>
-                            <p class="aa2_1_1_1_1_2">DESCENTE</p>
-                          </div>
-                        </div>
-                    </a>
-                  </div>
-                  <div class="aa2_1">
-                    <a href="" class="aa2_1_1">
-                        <picture>
-                            <img src="https://img.29cm.co.kr/next-product/2024/05/03/dc2…1fb872d78e1ac4432f0_20240503172623.jpg?width=2000" alt="">
-                        </picture>
-                        <div class="aa2_1_1_1">
-                          <div class="aa2_1_1_1_1">
-                            <h2 class="aa2_1_1_1_1_1">편안하고 완벽한</h2>
-                            <p class="aa2_1_1_1_1_2">DESCENTE</p>
-                          </div>
-                        </div>
-                    </a>
-                  </div>
-                  
-              </div>
-              <div class="aa3">
-              	<svg class="aa3_1">
-                  <path class="aa3_1_1"></path>                 
-                </svg>
-              </div>
-              <div class="aa4">
-              	<svg class="aa4_1">
-              		<path class="aa4_1_1"></path>
-              	</svg>
-              </div>
-            </div>
-        </div>
+      	<div class="swiper">
+			  <!-- Additional required wrapper -->
+			  <div class="swiper-wrapper">
+			    <!-- Slides -->
+			    <div class="swiper-slide">
+			    	<a>
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<div class="uuu">
+			    			<div class="uuu1">
+			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
+			    				<p class="uuu1_2">SUNLOVE</p>
+			    			</div>
+			    		</div>
+			    	</a>	
+			    </div>
+			      <div class="swiper-slide">
+			    	<a>
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<div class="uuu">
+			    			<div class="uuu1">
+			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
+			    				<p class="uuu1_2">SUNLOVE</p>
+			    			</div>
+			    		</div>
+			    	</a>	
+			    </div>
+			      <div class="swiper-slide">
+			    	<a>
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<div class="uuu">
+			    			<div class="uuu1">
+			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
+			    				<p class="uuu1_2">SUNLOVE</p>
+			    			</div>
+			    		</div>
+			    	</a>	
+			    </div>
+			      <div class="swiper-slide">
+			    	<a>
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<div class="uuu">
+			    			<div class="uuu1">
+			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
+			    				<p class="uuu1_2">SUNLOVE</p>
+			    			</div>
+			    		</div>
+			    	</a>	
+			    </div>
+			      <div class="swiper-slide">
+			    	<a>
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<div class="uuu">
+			    			<div class="uuu1">
+			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
+			    				<p class="uuu1_2">SUNLOVE</p>
+			    			</div>
+			    		</div>
+			    	</a>	
+			    </div>
+			      <div class="swiper-slide">
+			    	<a>
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<div class="uuu">
+			    			<div class="uuu1">
+			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
+			    				<p class="uuu1_2">SUNLOVE</p>
+			    			</div>
+			    		</div>
+			    	</a>	
+			    </div>
+			      <div class="swiper-slide">
+			    	<a>
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<div class="uuu">
+			    			<div class="uuu1">
+			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
+			    				<p class="uuu1_2">SUNLOVE</p>
+			    			</div>
+			    		</div>
+			    	</a>	
+			    </div>
+			      <div class="swiper-slide">
+			    	<a>
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<div class="uuu">
+			    			<div class="uuu1">
+			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
+			    				<p class="uuu1_2">SUNLOVE</p>
+			    			</div>
+			    		</div>
+			    	</a>	
+			    </div>
+			      <div class="swiper-slide">
+			    	<a>
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<div class="uuu">
+			    			<div class="uuu1">
+			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
+			    				<p class="uuu1_2">SUNLOVE</p>
+			    			</div>
+			    		</div>
+			    	</a>	
+			    </div>
+			   			
+			  </div>
+			
+			
+			  <!-- If we need navigation buttons -->
+			  <div style="left: 350px" class="swiper-button-prev"></div>
+			  <div class="swiper-button-next"></div>
+			
+			
+		</div>
         <div class="bb">
           <div>
             <h2 class="bb1">남성의류</h2>
@@ -973,32 +984,18 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
     <div id="third">
       <ul>
         <button>New arrivals</button>
-        <button>Weekly best</button>
+        <button>Weekly best</button><!-- 밑에 코딩은 신상품에 관련된 것들이나 비동기 처리로 주간 베스트 제풀이 로드 되게 코드 추가해야함.  -->
       </ul>
       <div class="dd">
         <h2 class="dd1">New arrivals
           <a class="dd1_1" href="https://www.29cm.co.kr/shop/category/list?category_large_code=272100100&amp;category_medium_code=new">전체보기</a>
         </h2>
-        <div class="dd2">
-          <div class="dd2_1">
-          	<svg>
-          		<path></path>
-          	</svg>
-          </div>
-          <div class="dd2_2">
-          	<svg>
-          		<path></path>
-          	</svg>
-          </div>
-          <div class="dd3">
-            <div class="dd3_1">
-              <span class="dd3_1_1"></span>
-              <span class="dd3_1_1"></span>
-              <span class="dd3_1_1"></span>
-              <span class="dd3_1_1"></span>
-              <span class="dd3_1_1"></span>
-            </div>
-            <div class="dd3_2">
+        <div class="swiper" style="position: relative; height: 350px">
+			  <!-- Additional required wrapper -->
+			  <div class="swiper-wrapper">
+				    <!-- Slides -->
+				    <div class="swiper-slide">
+		 <div class="dd3_2">
               <div class="dd3_2_1">
               	<div class="dd3_2_1_1">
               		<div class="dd3_2_1_1_1">
@@ -1100,8 +1097,433 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
               	</div>
               </div>       
             </div>
-          </div>
-        </div>
+				    	
+				    </div>
+				      <div class="swiper-slide">
+				    		 <div class="dd3_2">
+              <div class="dd3_2_1">
+              	<div class="dd3_2_1_1">
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/a472b7907c34407d8b1787f876063d06_20240503171651.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/04/30/a7789846a9ca43cca99e78a3518a9618_20240430161643.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/07/dd531b67f67f492e8bdc64285d4be00a_20240507101610.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/07/60dff07367624d19a6a93dc361062506_20240507095354.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/07/dbd58c7afaf9403b90d66676f1de7927_20240507101744.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		
+              	</div>
+              </div>       
+            </div>
+				    </div>
+				      <div class="swiper-slide">
+				    		 <div class="dd3_2">
+              <div class="dd3_2_1">
+              	<div class="dd3_2_1_1">
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/e8251409505246bd92fe151ec72afb2d_20240503170905.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/07/56a2a63030164df5984abe07e8b14fde_20240507101643.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/04/30/d9f94bb45698479993bba29569d6450e_20240430161751.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/d03a139b290a4d85b37129e7fc455db7_20240503173016.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/4d5ef2cd159b40ca8c7411c8ed3e99a5_20240503172020.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		
+              	</div>
+              </div>       
+            </div>
+				    </div>
+				      <div class="swiper-slide">
+				    		 <div class="dd3_2">
+              <div class="dd3_2_1">
+              	<div class="dd3_2_1_1">
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef092e4466116fbb14f7a6d884bd2e.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef092e446267c2bb147bb1a8cab4c7.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/4aee6c97faba4407b2ec47b1249392bc_20240503171001.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/0a7d8d9171b64218a92aa9260fb93578_20240503171924.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/07/37812aa47e764f9fbf12dcfa6302c955_20240507101814.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		
+              	</div>
+              </div>       
+            </div>
+				    </div>
+				      <div class="swiper-slide">
+				    		 <div class="dd3_2">
+              <div class="dd3_2_1">
+              	<div class="dd3_2_1_1">
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef092e4464158abb1467deaa8e24e7.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/07/21242685dbba4eabab7c91d2c94d20e7_20240507101705.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0c0939542743b9bb858d6bd1625a.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1" >
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/07/cbca88363caf494580fb9f7dd138fc10_20240507113125.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0c090a5694f8892b8d92fec21139.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		
+              	</div>
+              </div>       
+            </div>
+				    </div>		    
+			  </div>
+			
+			
+			  <!-- If we need navigation buttons -->
+			  <div class="swiper-button-prev"></div>
+			  <div class="swiper-button-next"></div>
+			
+			
+		</div>
       </div>
     </div>
     <div id="fourth">
@@ -1110,7 +1532,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
         <hr class="qq2">
         <ul class="qq3">
           <div class="qq3_1">
-          	<div  class="qq3_1_1" style="top: 1500px; left: 0px; width: 300px; writing-mode: horizontal-tb; position: absolute;">
+          	<div  class="qq3_1_1" style="top: 1650px; left: 0px; width: 300px; writing-mode: horizontal-tb; position: absolute;">
           		<div class=" qq3_1_1_1 ">
           			<a class="qq3_1_1_1_1" href="https://content.29cm.co.kr/brand-news/21139">
           				<span class="qq3_1_1_1_1_1"></span>
@@ -1163,7 +1585,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
           			</div>
           		</div>
           	</div>
-          	<div  class="qq3_1_1" style="top: 1500px; left: 400px; width: 300px; writing-mode: horizontal-tb; position: absolute;">
+          	<div  class="qq3_1_1" style="top: 1500px; left: 500px; width: 300px; writing-mode: horizontal-tb; position: absolute;">
           		<div class=" qq3_1_1_1 ">
           			<a class="qq3_1_1_1_1" href="https://content.29cm.co.kr/brand-news/21139">
           				<span class="qq3_1_1_1_1_1"></span>
@@ -1217,7 +1639,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
           		</div>
           	</div>
        
-       <div  class="qq3_1_1" style="top: 500px; left: 800px; width: 300px; writing-mode: horizontal-tb; position: absolute;">
+       <div  class="qq3_1_1" style="top: 500px; left: 900px; width: 300px; writing-mode: horizontal-tb; position: absolute;">
           		<div class=" qq3_1_1_1 ">
           			<a class="qq3_1_1_1_1" href="https://content.29cm.co.kr/brand-news/21139">
           				<span class="qq3_1_1_1_1_1"></span>
@@ -1265,7 +1687,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
           		</div>
           	</div>
        
-       <div  class="qq3_1_1" style="top: 500px; left: 0px; width: 300px; writing-mode: horizontal-tb; position: absolute;">
+       <div  class="qq3_1_1" style="top: 800px; left: 0px; width: 300px; writing-mode: horizontal-tb; position: absolute;">
           		<div class=" qq3_1_1_1 ">
           			<a class="qq3_1_1_1_1" href="https://content.29cm.co.kr/brand-news/21139">
           				<span class="qq3_1_1_1_1_1"></span>
@@ -1313,6 +1735,101 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
           			</div>
           		</div>
           	</div>
+          	  <div  class="qq3_1_1" style="top: 0px; left: 0px; width: 300px; writing-mode: horizontal-tb; position: absolute;">
+          		<div class=" qq3_1_1_1 ">
+          			<a class="qq3_1_1_1_1" href="https://content.29cm.co.kr/brand-news/21139">
+          				<span class="qq3_1_1_1_1_1"></span>
+          				<div class="qq3_1_1_1_1_2">
+          					<img src="https://img.29cm.co.kr/cm/202405/11ef090cb609124fbb1445cfd84d9d0f.jpg?width=500" class="qq3_1_1_1_1_2_1">
+          				</div>
+          				<div class="qq3_1_1_1_1_3">
+          					<h1 class="qq3_1_1_1_1_3_1">입어보면 확실히 다른</h1>
+          					<p class="qq3_1_1_1_1_3_2">갑자기 찾아온 무더운 날씨에 인더로우의 서머 컬렉션을 추천합니다. 인더로우의 메이킹과 소재에 대한 자부심이 담긴 제품을 만나보세요.</p>
+          				</div>
+          			</a>
+          			<div class="qq3_1_1_1_2">
+ 						<a class="qq3_1_1_1_2_1" href="https://product.29cm.co.kr/catalog/2018272">
+ 							<img src="https://img.29cm.co.kr/item/202404/11ef02113cf23346bb6a1933ac760e9b.JPG?width=150" class="qq3_1_1_1_2_1_1">
+ 								<div class="qq3_1_1_1_2_1_2">
+	 								<span class="qq3_1_1_1_2_1_2_1">인더로우</span>
+	 								<span>STRIPE CREW PANEL T SHIRT - 5 COLOR</span>
+	 								<span class="qq3_1_1_1_2_1_2_2">58,000<span class=>won</span>
+	 								</span>
+	 							</div>
+	 					</a>
+	 					<div class="qq3_1_1_1_2_2">
+	 						<button class=" ">	 							
+	 							<span class=>3,012</span>
+	 						</button>
+	 					</div>
+          			</div>
+          			<div class="qq3_1_1_1_3">
+          					<a class="qq3_1_1_1_3_1" href="https://product.29cm.co.kr/catalog/2033303">
+          						<img src="https://img.29cm.co.kr/item/202404/11eef18ac8d66ad988b1530726d6884b.jpg?width=150" class="qq3_1_1_1_3_1_1">
+          							<div class="qq3_1_1_1_3_1_1_1 ">
+          								<span class="qq3_1_1_1_3_1_1_1_1">인더로우</span>
+          								<span>COTTON RIB HALF KNIT POLO - 10 COLOR</span>
+          								<span class=" qq3_1_1_1_3_1_1_1_2">129,000
+          									<span class=" ">won</span>
+          								</span>
+          							</div>
+          					</a>
+          					<div class="qq3_1_1_1_3_2">
+          						<button class="qq3_1_1_1_3_3">          							
+          							<span class="qq3_1_1_1_3_3_1">2,013</span>
+          						</button>
+          					</div>
+          			</div>
+          		</div>
+          	</div>
+          	 <div  class="qq3_1_1" style="top: 0px; left: 500px; width: 300px; writing-mode: horizontal-tb; position: absolute;">
+          		<div class=" qq3_1_1_1 ">
+          			<a class="qq3_1_1_1_1" href="https://content.29cm.co.kr/brand-news/21139">
+          				<span class="qq3_1_1_1_1_1"></span>
+          				<div class="qq3_1_1_1_1_2">
+          					<img src="https://img.29cm.co.kr/cm/202405/11ef090cb609124fbb1445cfd84d9d0f.jpg?width=500" class="qq3_1_1_1_1_2_1">
+          				</div>
+          				<div class="qq3_1_1_1_1_3">
+          					<h1 class="qq3_1_1_1_1_3_1">입어보면 확실히 다른</h1>
+          					<p class="qq3_1_1_1_1_3_2">갑자기 찾아온 무더운 날씨에 인더로우의 서머 컬렉션을 추천합니다. 인더로우의 메이킹과 소재에 대한 자부심이 담긴 제품을 만나보세요.</p>
+          				</div>
+          			</a>
+          			<div class="qq3_1_1_1_2">
+ 						<a class="qq3_1_1_1_2_1" href="https://product.29cm.co.kr/catalog/2018272">
+ 							<img src="https://img.29cm.co.kr/item/202404/11ef02113cf23346bb6a1933ac760e9b.JPG?width=150" class="qq3_1_1_1_2_1_1">
+ 								<div class="qq3_1_1_1_2_1_2">
+	 								<span class="qq3_1_1_1_2_1_2_1">인더로우</span>
+	 								<span>STRIPE CREW PANEL T SHIRT - 5 COLOR</span>
+	 								<span class="qq3_1_1_1_2_1_2_2">58,000<span class=>won</span>
+	 								</span>
+	 							</div>
+	 					</a>
+	 					<div class="qq3_1_1_1_2_2">
+	 						<button class=" ">	 							
+	 							<span class=>3,012</span>
+	 						</button>
+	 					</div>
+          			</div>
+          			<div class="qq3_1_1_1_3">
+          					<a class="qq3_1_1_1_3_1" href="https://product.29cm.co.kr/catalog/2033303">
+          						<img src="https://img.29cm.co.kr/item/202404/11eef18ac8d66ad988b1530726d6884b.jpg?width=150" class="qq3_1_1_1_3_1_1">
+          							<div class="qq3_1_1_1_3_1_1_1 ">
+          								<span class="qq3_1_1_1_3_1_1_1_1">인더로우</span>
+          								<span>COTTON RIB HALF KNIT POLO - 10 COLOR</span>
+          								<span class=" qq3_1_1_1_3_1_1_1_2">129,000
+          									<span class=" ">won</span>
+          								</span>
+          							</div>
+          					</a>
+          					<div class="qq3_1_1_1_3_2">
+          						<button class="qq3_1_1_1_3_3">          							
+          							<span class="qq3_1_1_1_3_3_1">2,013</span>
+          						</button>
+          					</div>
+          			</div>
+          		</div>
+          	</div>
+       
        
        
           </div>
@@ -1323,4 +1840,28 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
   </div>
 
 </body>
+<script>
+const swiper = new Swiper('.swiper', {
+	  // Optional parameters
+	  direction: 'horizontal',
+	  loop: true,
+
+	  // If we need pagination
+	  pagination: {
+	    el: '.swiper-pagination',
+	  },
+
+	  // Navigation arrows
+	  navigation: {
+	    nextEl: '.swiper-button-next',
+	    prevEl: '.swiper-button-prev',
+	  },
+
+	  // And if we need scrollbar
+	  scrollbar: {
+	    el: '.swiper-scrollbar',
+	  },
+	});
+
+</script>
 </html>
