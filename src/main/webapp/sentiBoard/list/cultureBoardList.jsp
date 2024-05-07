@@ -19,8 +19,6 @@ body {
     
 }
 
-
-
 #wrap {
 	display: -webkit-box;
 	display: -webkit-flex;
