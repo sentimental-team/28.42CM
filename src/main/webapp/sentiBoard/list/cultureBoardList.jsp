@@ -317,14 +317,7 @@ padding: 0px 6px;
     font-size: 11px;
     color: rgb(93, 93, 93);
 }  
-.ppp > button{
-	display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    width: 58px;
-    font-size: inherit;
-    line-height: 1;
-}
+
 .ppp> a{
     display: flex;
     -webkit-box-align: center;
@@ -402,10 +395,92 @@ counter-increment: list-number 1;
     border-color: #66afe9;
     box-shadow: 0 0 0 3px rgba(102, 175, 233, 0.6);
 }
+.widget {
+	-webkit-box-align: center;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	-webkit-box-pack: start;
+	justify-content: flex-start;
+	min-height: 42px;
+	border: 1px solid gray;
+}
 
+.widget-gap {
+	display: flex;
+	flex-direction: row;
+	-webkit-box-pack: start;
+	justify-content: flex-start;
+	flex: 1 1 0%;
+	-webkit-box-align: center;
+	align-items: center;
+	height: 100%;
+	min-height: 42px;
+	border-right: 1px solid gray;
+}
+
+.heart {
+	display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: inherit;
+    color: inherit;
+}
+
+.ppp>.heart+.review {
+	margin-left: 27px;
+}
+
+.review {
+	color: inherit;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	line-height: 1;
+}
+
+.review-point {
+	margin-right: 2px;
+	color: rgb(255, 72, 0);
+}
+
+.heart>svg+.jj {
+	margin-left: 3px;
+}
+
+.j h5 {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	padding-right: 26px;
+	font-size: 12px;
+	font-weight: 400;
+	word-break: break-all;
+	overflow-wrap: break-word;
+	white-space: normal;
+	visibility: visible;
+	-webkit-line-clamp: 2;
+}
+
+button {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
+.stick {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Adjust z-index as needed */
+    background-color: white; /* Optionally, change background color */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: Add shadow for visual effect */
+}
 </style>
 </head>
-<header>
+<header class="stick">
 	<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
 </header>
 <body>
@@ -428,21 +503,21 @@ counter-increment: list-number 1;
 		<div id="best-right">
 			<!-- <h2 class="best_title_right" >여성의류</h2> -->
 			<div class="widget">
-			    <fieldset>
-			        <div class="controlgroup">
-			            <select id="sort-type" class="styled-select">
-			                <option>추천순</option>
-			                <option>신상품순</option>
-			                <option>리뷰많은순</option>
-			                <option>낮은가격순</option>
-			                <option>높은가격순</option>
-			                <option>높은할인순</option>
-			                <option>좋아요많은순</option>
-			                <option>판매순</option>
-			            </select>
-			        </div>
-			    </fieldset>
-			    <br>
+				<div class="widget-gap"></div>
+				<div class="controlgroup">
+					<select id="sort-type" class="styled-select">
+						<option>추천순</option>
+						<option>신상품순</option>
+						<option>리뷰많은순</option>
+						<option>낮은가격순</option>
+						<option>높은가격순</option>
+						<option>높은할인순</option>
+						<option>좋아요많은순</option>
+						<option>판매순</option>
+					</select>
+				</div>
+
+				<br>
 			</div>
 			<!-- <div class="best_radio_box">
 				<ul class="aa">
@@ -536,9 +611,26 @@ counter-increment: list-number 1;
 								</div>
 							</a>
 							<div class="ppp">
-								<button>703</button><!-- 하트 마크표시 필요함  -->
-								<a>
-									<span>0</span><!--  댓글 마크 표시 필요함 -->
+								<button class="heart">
+									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
+										viewBox="0 0 20 20">
+										<path
+											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5" />
+									</svg>
+									<h5 class="jj">14,715</h5>
+								</button>
+								<a href="#" class="review"> <svg
+										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
+								<path
+											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5"></path>
+								</svg>
+									<div class="review-point">4.8</div>
+									<div class="review-count">(1183)</div>
 								</a>
 							</div>
 						</div>

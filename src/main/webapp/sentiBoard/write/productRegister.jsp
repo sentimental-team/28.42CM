@@ -59,6 +59,7 @@
     }
 </style>
 </head>
+<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
 <body>
     <div class="container">
         <h1>상품 등록 페이지</h1>
