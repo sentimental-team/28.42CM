@@ -12,6 +12,9 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <!-- <script src="/jspPro/resources/cdn-main/example.js"></script> -->
+<header>
+   <jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
+</header>
 <style>
 body {
 	min-height: 190vh;
