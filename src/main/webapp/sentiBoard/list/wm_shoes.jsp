@@ -336,18 +336,10 @@ class ="best_radio_box3 ":checked+.bb {
 	display: flex;
 	-webkit-box-align: center;
 	align-items: center;
+	height: 15px;
 	margin-top: 16px;
 	font-size: 11px;
 	color: rgb(93, 93, 93);
-}
-
-.ppp>button {
-	display: flex;
-	-webkit-box-align: center;
-	align-items: center;
-	width: 58px;
-	font-size: inherit;
-	line-height: 1;
 }
 
 .ppp>a {
@@ -388,10 +380,14 @@ class ="best_radio_box3 ":checked+.bb {
 }
 
 .heart {
-	border: 0;
-	background: transparent;
-	cursor: pointer;
-	outline: none;
+	display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: inherit;
+    color: inherit;
 }
 
 .ppp>.heart+.review {
@@ -451,6 +447,13 @@ class ="best_radio_box3 ":checked+.bb {
 	height: 100%;
 	min-height: 42px;
 	border-right: 1px solid gray;
+}
+
+button {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
 }
 </style>
 </head>
