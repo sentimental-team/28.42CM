@@ -4,13 +4,12 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
-<title>감도 깊은 취향 셀렉트샾 29CM</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" href="http://localhost/jspPro/images/SiSt.ico">
 
-<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <!-- <script src="/jspPro/resources/cdn-main/example.js"></script> -->
 <style>
 body {
@@ -30,13 +29,13 @@ body {
 	padding: 40px 50px 90px
 }
 
-#best-left {
+#kids-left {
 	width: 200px;
 	padding-right: 80px;
 	box-sizing: content-box;
 }
 
-.best_title_left {
+.kids_title_left {
 	width: 200px;
 	padding-bottom: 12px;
 	border-bottom: 4px solid #000000;
@@ -63,18 +62,18 @@ body {
 	text-decoration: none;
 }
 
-#best-right {
+#kids-right {
 	flex: 1;
 }
 
-.best_title_right {
+.kids_title_right {
 	margin-bottom: 36px;
 	font-size: 34px;
 	font-weight: 600;
 	line-height: 41px;
 }
 
-.best_radio_box {
+.kids_radio_box {
 	display: flex;
 	-webkit-box-align: center;
 	align-items: center;
@@ -128,49 +127,6 @@ label {
 
 input[type="radio"]:checked+label {
 	font-weight: bold; /* 체크된 상태일 때 텍스트의 굵기를 변경할 수 있다 */
-}
-
-.best_raido_box2 {
-	margin-top: 30px;
-}
-
-.best_raido_box2>span {
-	position: relative;
-	overflow: hidden;
-	display: inline-block;
-	min-height: 20px;
-	line-height: 20px;
-	margin-right: 0px
-}
-
-.best_raido_box2>span>input {
-	position: absolute;
-	z-index: -10;
-	top: -100%;
-	left: -100%;
-	width: 13px;
-	height: 13px;
-	background: transparent;
-}
-
-.
-class ="best_radio_box3 ":checked+.bb {
-	font-weight: 600;
-}
-
-.best_radio_box3 {
-	padding-left: 0px;
-	font-size: 14px;
-	font-weight: 300;
-	color: rgb(93, 93, 93);
-	margin: 0px 24px;
-	cursor: pointer;
-	position: relative;
-	z-index: 1;
-	display: inline-block;
-	padding-left: 27px;
-	line-height: 20px;
-	color: #303033;
 }
 
 .bb {
@@ -255,9 +211,10 @@ class ="best_radio_box3 ":checked+.bb {
 		padding: 16px 12px 0px;
 	}
 }
-.gg{
+
+.gg {
 	position: relative;
-    padding-top: 14px;
+	padding-top: 14px;
 }
 
 .hh {
@@ -381,13 +338,13 @@ class ="best_radio_box3 ":checked+.bb {
 
 .heart {
 	display: flex;
-    flex-direction: row;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    font-size: inherit;
-    color: inherit;
+	flex-direction: row;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	font-size: inherit;
+	color: inherit;
 }
 
 .ppp>.heart+.review {
@@ -433,7 +390,7 @@ class ="best_radio_box3 ":checked+.bb {
 	-webkit-box-pack: start;
 	justify-content: flex-start;
 	min-height: 42px;
-	border: 1px solid #e4e4e4;
+	border: 1px solid gray;
 }
 
 .widget-gap {
@@ -446,53 +403,142 @@ class ="best_radio_box3 ":checked+.bb {
 	align-items: center;
 	height: 100%;
 	min-height: 42px;
-	border-right: 1px solid #e4e4e4;
+	border-right: 1px solid gray;
 }
 
 button {
-    border: 0;
-    background: transparent;
-    cursor: pointer;
-    outline: none;
+	border: 0;
+	background: transparent;
+	cursor: pointer;
+	outline: none;
+}
+</style>
+<style>
+/* Styles specific to top.jsp */
+.th {
+	margin: 10px;
+	padding-left: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.th p {
+	font-size: 30px;
+	margin: 0;
+	padding: 0;
+}
+
+.tm {
+	background-color: #444;
+	color: #fff;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: 20px;
+}
+
+.tm a {
+	color: #fff;
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+.tm a:hover {
+	text-decoration: underline;
+}
+
+.ma, .mb {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 20px;
+}
+
+.ma li, .mb li {
+	margin-left: 10px;
+	white-space: nowrap;
+}
+
+.ma li a, .mb li a {
+	font-size: 20px;
+	color: black;
+}
+
+.ma li a {
+	font-size: 30px;
+	text-decoration: none;
+}
+
+.ma li a h3 {
+	margin-right: 10px;
+}
+
+.mb li a {
+	text-decoration: none;
+}
+
+.mb li a:hover {
+	text-decoration: underline;
+}
+
+.ma li a:hover {
+	text-decoration: underline;
 }
 </style>
 </head>
-<header>
-	<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
-</header>
 <body>
+	<header>
+		<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
+	</header>
 	<div id="wrap">
-		<div id="best-left">
+		<div id="kids-left">
 			<button></button>
 			<div>
-				<!-- <button></button>  화면이 작아졌을 때 #best-left메뉴 나타나게 하는거 -->
-				<h2 class="best_title_left">여성의류</h2>
+				<!-- <button></button>  화면이 작아졌을 때 #kids-left메뉴 나타나게 하는거 -->
+				<h2 class="kids_title_left">유아,아동</h2>
 				<!-- <ul class="left_bar_meue" > -->
 				<ul class="left-menu">
-					<li><a class="medium-ctgr" href="">ALL</a></li>
-					<li><a class="medium-ctgr" href="">NEW</a></li>
-					<li><a class="medium-ctgr" href="">EXCLUSIVE</a></li>
-					<li><a class="medium-ctgr" href="">상의</a></li>
-					<li><a class="medium-ctgr" href="">바지</a></li>
-					<li><a class="medium-ctgr" href="">원피스</a></li>
-					<li><a class="medium-ctgr" href="">스커트</a></li>
-					<li><a class="medium-ctgr" href="">셋업</a></li>
-					<li><a class="medium-ctgr" href="">점프수트</a></li>
-					<li><a class="medium-ctgr" href="">엑티브웨어</a></li>
-					<li><a class="medium-ctgr" href="">아우터</a></li>
-					<li><a class="medium-ctgr" href="">니트웨어</a></li>
-					<li><a class="medium-ctgr" href="">이너웨어</a></li>
-					<li><a class="medium-ctgr" href="">홈웨어</a></li>
-					<li><a class="medium-ctgr" href="">해외브랜드</a></li>
+					<li><a class="medium-ctgr"
+						href="http://localhost/jspPro/sentiBoard/list/kids_all.jsp">ALL</a></li>
+					<li><a class="medium-ctgr"
+						href="http://localhost/jspPro/sentiBoard/list/kids_new.jsp">NEW</a></li>
+					<li><a class="medium-ctgr"
+						href="http://localhost/jspPro/sentiBoard/list/kids_cloth.jsp">의류</a></li>
+					<li><a class="medium-ctgr"
+						href="http://localhost/jspPro/sentiBoard/list/kids_shoesNbag.jsp">신발,가방</a></li>
+					<li><a class="medium-ctgr"
+						href="http://localhost/jspPro/sentiBoard/list/kids_product.jsp">아동,홈</a></li>
 				</ul>
 				<!-- </ul> -->
 			</div>
 		</div>
 
-		<div id="best-right">
-			<!-- <h2 class="best_title_right" >여성의류</h2> -->
+		<div id="kids-right">
+			<!-- <h2 class="kids_title_right" >유아,아동</h2> -->
 			<div class="widget">
-				<div class="widget-gap"></div>
+				<div class="widget-gap">
+				<div class="smallCategory">
+					<button class="smallCategory_btn">
+						<span class="" color="primary">전체</span>
+					</button>
+					<button class="smallCategory_btn">
+						<span class="" color="secondary">운동화</span>
+					</button>
+					<button class="smallCategory_btn">
+						<span class="" color="secondary">샌들</span>
+					</button>
+					<button class="smallCategory_btn">
+						<span class="" color="secondary">장화</span>
+					</button>
+					<button class="smallCategory_btn">
+						<span class="" color="secondary">가방</span>
+					</button>
+					<button class="smallCategory_btn">
+						<span class="" color="secondary">잡화</span>
+					</button>
+				</div></div>
 				<div class="controlgroup">
 					<select id="sort-type" class="styled-select">
 						<option>추천순</option>
@@ -515,18 +561,18 @@ button {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef02ddc815e25cbb6acd7db6ab5317.jpg?width=600"
+									src="https://img.29cm.co.kr/next-product/2023/03/27/a766d30c08204769afee93ee452d9869_20230327150230.jpg?width=600"
 									class="ff">
 							</div>
-						</a> 
+						</a>
 						<div class="gg">
-							<a class="hh" href="">토마스모어</a> <a
-								title="TE5-SH07 페이퍼셔츠 (10 Color)">
+							<a class="hh" href="">크록스</a> <a
+								title="크록스공식 지비츠 78종 택1">
 								<div class="j">
-									<h5 class="jj">TE5-SH07 페이퍼셔츠 (10 Color)</h5>
+									<h5 class="jj">크록스공식 지비츠 78종 택1</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk"></span> <strong class="qqq">59,700</strong>
+										<span class="kkk">6%</span> <strong class="qqq">4,700</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -543,7 +589,7 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">35,854</h5>
+									<h5 class="jj">759</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -553,8 +599,8 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">4.8</div>
-									<div class="review-count">(1526)</div>
+									<div class="review-point">4.9</div>
+									<div class="review-count">(130)</div>
 								</a>
 							</div>
 						</div>
@@ -566,19 +612,18 @@ button {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef008fb56dcdbf88b199fb5f90965d.jpg"
+									src="https://img.29cm.co.kr/next-product/2024/01/08/01866c39c5b04fe1a20f756cd5c91662_20240108110204.jpg?width=600"
 									class="ff">
 							</div>
-						</a> 
+						</a>
 						<div class="gg">
-							<a class="hh" href="">파르티멘토 우먼</a> <a
-								title="[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s SHORT SLEEVE TEE_6COLORS">
+							<a class="hh" href="">크록스</a> <a
+								title="크록스공식 키즈 HANDLE IT RAIN BOOT KIDS 5종 택1 (24SKBT12803)">
 								<div class="j">
-									<h5 class="jj">[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s
-										SHORT SLEEVE TEE_6COLORS</h5>
+									<h5 class="jj">크록스공식 키즈 HANDLE IT RAIN BOOT KIDS 5종 택1 (24SKBT12803)</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk">24%</span> <strong class="qqq">29,640</strong>
+										<span class="kkk">3%</span> <strong class="qqq">53,200</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -595,7 +640,7 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">41,275</h5>
+									<h5 class="jj">87</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -606,7 +651,7 @@ button {
 											stroke-width="1.5"></path>
 								</svg>
 									<div class="review-point">4.8</div>
-									<div class="review-count">(15034)</div>
+									<div class="review-count">(6)</div>
 								</a>
 							</div>
 						</div>
@@ -618,18 +663,17 @@ button {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef02ddc815e25cbb6acd7db6ab5317.jpg?width=600"
+									src="https://img.29cm.co.kr/next-product/2021/05/14/93b2884ca9ac47e7b52084df018a7898_20210514134805.jpg?width=600"
 									class="ff">
 							</div>
-						</a> <br>
+						</a>
 						<div class="gg">
-							<a class="hh" href="">토마스모어</a> <a
-								title="TE5-SH07 페이퍼셔츠 (10 Color)">
+							<a class="hh" href="">빅토리아슈즈</a> <a title="빅토리아슈즈 키즈 글리터 발레리나 (1046100-PLATA)">
 								<div class="j">
-									<h5 class="jj">TE5-SH07 페이퍼셔츠 (10 Color)</h5>
+									<h5 class="jj">빅토리아슈즈 키즈 글리터 발레리나 (1046100-PLATA)</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk"></span> <strong class="qqq">59,700</strong>
+										<span class="kkk">15%</span> <strong class="qqq">58,650</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -646,7 +690,7 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">41,275</h5>
+									<h5 class="jj">294</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -656,8 +700,8 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">4.8</div>
-									<div class="review-count">(15034)</div>
+									<div class="review-point">4.5</div>
+									<div class="review-count">(13)</div>
 								</a>
 							</div>
 						</div>
@@ -668,19 +712,18 @@ button {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef008fb56dcdbf88b199fb5f90965d.jpg"
+									src="https://img.29cm.co.kr/next-product/2022/05/20/70a592fa8f3c4802bc42f2c7b9e58a90_20220520141132.jpg?width=600"
 									class="ff">
 							</div>
-						</a> 
+						</a>
 						<div class="gg">
-							<a class="hh" href="">파르티멘토 우먼</a> <a
-								title="[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s SHORT SLEEVE TEE_6COLORS">
+							<a class="hh" href="">빅토리아슈즈</a> <a
+								title="[빅토리아슈즈x키티버니포니] 아동 벨크로 메르세데스 로나 틴타다 유니벌스(1366925-MULTICOLOR)">
 								<div class="j">
-									<h5 class="jj">[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s
-										SHORT SLEEVE TEE_6COLORS</h5>
+									<h5 class="jj">[빅토리아슈즈x키티버니포니] 아동 벨크로 메르세데스 로나 틴타다 유니벌스(1366925-MULTICOLOR)</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk">24%</span> <strong class="qqq">29,640</strong>
+										<span class="kkk"></span> <strong class="qqq">69,000</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -697,7 +740,7 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">41,275</h5>
+									<h5 class="jj">1,278</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -707,8 +750,8 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">4.8</div>
-									<div class="review-count">(15034)</div>
+									<div class="review-point">4.7</div>
+									<div class="review-count">(20)</div>
 								</a>
 							</div>
 						</div>
@@ -719,19 +762,17 @@ button {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef008fb56dcdbf88b199fb5f90965d.jpg"
+									src="https://img.29cm.co.kr/next-product/2023/05/17/3c1fd50ab8144b2a86f8dc3cfd77f75d_20230517190837.jpg?width=600"
 									class="ff">
 							</div>
-						</a> 
+						</a>
 						<div class="gg">
-							<a class="hh" href="">파르티멘토 우먼</a> <a
-								title="[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s SHORT SLEEVE TEE_6COLORS">
+							<a class="hh" href="">호텔세리토스</a> <a title="호텔세리토스 키즈 Kids Candy Ball Cap">
 								<div class="j">
-									<h5 class="jj">[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s
-										SHORT SLEEVE TEE_6COLORS</h5>
+									<h5 class="jj">호텔세리토스 키즈 Kids Candy Ball Cap</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk">24%</span> <strong class="qqq">29,640</strong>
+										<span class="kkk"></span> <strong class="qqq">32,000</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -748,7 +789,7 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">41,275</h5>
+									<h5 class="jj">116</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -758,8 +799,8 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">4.8</div>
-									<div class="review-count">(15034)</div>
+									<div class="review-point">4.4</div>
+									<div class="review-count">(7)</div>
 								</a>
 							</div>
 						</div>
@@ -770,19 +811,17 @@ button {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef008fb56dcdbf88b199fb5f90965d.jpg"
+									src="https://img.29cm.co.kr/item/202308/11ee3728c3a9f979bdfabb5493f9d316.jpg?width=600"
 									class="ff">
 							</div>
-						</a> 
+						</a>
 						<div class="gg">
-							<a class="hh" href="">파르티멘토 우먼</a> <a
-								title="[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s SHORT SLEEVE TEE_6COLORS">
+							<a class="hh" href="">리복</a> <a title="클럽 C 인펀트 - 크림 / GY7474">
 								<div class="j">
-									<h5 class="jj">[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s
-										SHORT SLEEVE TEE_6COLORS</h5>
+									<h5 class="jj">클럽 C 인펀트 - 크림 / GY7474</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk">24%</span> <strong class="qqq">29,640</strong>
+										<span class="kkk"></span> <strong class="qqq">59,000</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -799,7 +838,7 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">41,275</h5>
+									<h5 class="jj">176</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -809,8 +848,8 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">4.8</div>
-									<div class="review-count">(15034)</div>
+									<div class="review-point">4.9</div>
+									<div class="review-count">(14)</div>
 								</a>
 							</div>
 						</div>
@@ -821,19 +860,17 @@ button {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef008fb56dcdbf88b199fb5f90965d.jpg"
+									src="https://img.29cm.co.kr/next-product/2023/12/13/827743eab64b40feb0ccf68df137a12e_20231213091404.jpg?width=600"
 									class="ff">
 							</div>
-						</a> 
+						</a>
 						<div class="gg">
-							<a class="hh" href="">파르티멘토 우먼</a> <a
-								title="[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s SHORT SLEEVE TEE_6COLORS">
+							<a class="hh" href="">레인보우 샌들</a> <a title="레인보우샌들 키즈 SIERRA BROWN">
 								<div class="j">
-									<h5 class="jj">[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s
-										SHORT SLEEVE TEE_6COLORS</h5>
+									<h5 class="jj">레인보우샌들 키즈 SIERRA BROWN</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk">24%</span> <strong class="qqq">29,640</strong>
+										<span class="kkk">25%</span> <strong class="qqq">43,510</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -850,7 +887,7 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">41,275</h5>
+									<h5 class="jj">71</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -860,8 +897,8 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">4.8</div>
-									<div class="review-count">(15034)</div>
+									<div class="review-point">5</div>
+									<div class="review-count">(2)</div>
 								</a>
 							</div>
 						</div>
@@ -872,19 +909,17 @@ button {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef008fb56dcdbf88b199fb5f90965d.jpg"
+									src="https://img.29cm.co.kr/next-product/2020/10/19/670e8627dda8406687137f8140a559e9_20201019131933.jpg?width=600"
 									class="ff">
 							</div>
-						</a> 
+						</a>
 						<div class="gg">
-							<a class="hh" href="">파르티멘토 우먼</a> <a
-								title="[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s SHORT SLEEVE TEE_6COLORS">
+							<a class="hh" href="">앙레베</a> <a title="앙레베 기저귀 가방 뉴 이너백 XL 사이즈 고야드이너백">
 								<div class="j">
-									<h5 class="jj">[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s
-										SHORT SLEEVE TEE_6COLORS</h5>
+									<h5 class="jj">앙레베 기저귀 가방 뉴 이너백 XL 사이즈 고야드이너백</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk">24%</span> <strong class="qqq">29,640</strong>
+										<span class="kkk"></span> <strong class="qqq">26,000</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -901,7 +936,7 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">41,275</h5>
+									<h5 class="jj">330</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -911,8 +946,8 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">4.8</div>
-									<div class="review-count">(15034)</div>
+									<div class="review-point">4.9</div>
+									<div class="review-count">(22)</div>
 								</a>
 							</div>
 						</div>
@@ -923,19 +958,18 @@ button {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef008fb56dcdbf88b199fb5f90965d.jpg"
+									src="https://img.29cm.co.kr/next-product/2022/07/05/2b8e9b76a57548ada5745f06074e8860_20220705100741.jpg?width=600"
 									class="ff">
 							</div>
-						</a> 
+						</a>
 						<div class="gg">
-							<a class="hh" href="">파르티멘토 우먼</a> <a
-								title="[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s SHORT SLEEVE TEE_6COLORS">
+							<a class="hh" href="">키티버니포니</a> <a
+								title="이지 미니 백팩">
 								<div class="j">
-									<h5 class="jj">[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s
-										SHORT SLEEVE TEE_6COLORS</h5>
+									<h5 class="jj">이지 미니 백팩</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk">24%</span> <strong class="qqq">29,640</strong>
+										<span class="kkk"></span> <strong class="qqq">80,000</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -952,7 +986,7 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">41,275</h5>
+									<h5 class="jj">448</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -962,8 +996,8 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">4.8</div>
-									<div class="review-count">(15034)</div>
+									<div class="review-point">5</div>
+									<div class="review-count">(3)</div>
 								</a>
 							</div>
 						</div>
@@ -974,19 +1008,18 @@ button {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef008fb56dcdbf88b199fb5f90965d.jpg"
+									src="https://img.29cm.co.kr/next-product/2019/09/06/aecf32597bfd43f28b4052b464a9b796_20190906130800.jpg?width=600"
 									class="ff">
 							</div>
-						</a> 
+						</a>
 						<div class="gg">
-							<a class="hh" href="">파르티멘토 우먼</a> <a
-								title="[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s SHORT SLEEVE TEE_6COLORS">
+							<a class="hh" href="">이지피지</a> <a
+								title="이지피지 키즈 선글라스 밀크 (1-5세)">
 								<div class="j">
-									<h5 class="jj">[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s
-										SHORT SLEEVE TEE_6COLORS</h5>
+									<h5 class="jj">이지피지 키즈 선글라스 밀크 (1-5세)</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk">24%</span> <strong class="qqq">29,640</strong>
+										<span class="kkk"></span> <strong class="qqq">65,000</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -1003,7 +1036,7 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">41,275</h5>
+									<h5 class="jj">106</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -1013,25 +1046,18 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">4.8</div>
-									<div class="review-count">(15034)</div>
+									<div class="review-point">5</div>
+									<div class="review-count">(6)</div>
 								</a>
 							</div>
 						</div>
 					</div>
 				</li>
-				
+
 			</ul>
 		</div>
 	</div>
-<footer>
-	<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
-</footer>
-
-
 	<script>
-
 </script>
-
 </body>
 </html>
