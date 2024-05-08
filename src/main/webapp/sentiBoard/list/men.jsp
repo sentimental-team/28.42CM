@@ -9,8 +9,6 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <title></title>
 <link rel="shortcut icon" type="image/x-icon" href="http://localhost/jspPro/images/satomi.png">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<link rel="stylesheet" href="http://localhost/jspPro/resources/cdn-main/example.css">
-<script src="http://localhost/jspPro/resources/cdn-main/example.js"></script>
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
