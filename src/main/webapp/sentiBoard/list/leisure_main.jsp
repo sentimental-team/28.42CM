@@ -2552,9 +2552,10 @@ body {
 	display: block;
 	margin: 8px;
 }
+
 div {
-    display: block;
-    unicode-bidi: isolate;
+	display: block;
+	unicode-bidi: isolate;
 }
 </style>
 <style data-emotion="css 1opn7tv" data-s="">
@@ -3618,30 +3619,33 @@ a.css-1iv23n0 {
 .css-79elbk {
 	position: relative;
 }
-@media (max-width: 540px) {
-<style>
-    .css-ccftqy {
-        height: 310px;
-    }
+
+@media ( max-width : 540px) { <
+	style>.css-ccftqy {
+		height: 310px;
+	}
 }
+
 .css-ccftqy {
-    height: 680px;
-    width: 100%;
-    position: relative;
+	height: 680px;
+	width: 100%;
+	position: relative;
 }
+
 .css-10klw3m {
-    height: 100%;
+	height: 100%;
 }
+
 .css-ccftqy .swiper-pagination {
-    bottom: 30px;
-    position: absolute;
-    text-align: center;
-    transition: all 0.3s ease 0s;
-    transform: translateZ(0px);
-    z-index: 10;
-    height: 10px;
-    left: 0px;
-    right: 0px;
+	bottom: 30px;
+	position: absolute;
+	text-align: center;
+	transition: all 0.3s ease 0s;
+	transform: translateZ(0px);
+	z-index: 10;
+	height: 10px;
+	left: 0px;
+	right: 0px;
 }
 </style>
 <style>
@@ -3749,201 +3753,223 @@ swiper-slide.style {
 <!-- new/weekly best style-->
 <style>
 .css-1rw4rkj {
-    position: relative;
-    overflow: hidden;
+	position: relative;
+	overflow: hidden;
 }
+
 .css-11egtcj {
-    display: flex;
+	display: flex;
 }
+
 .css-ydj7ef {
-    flex: 1 1 0%;
-    display: block;
-    min-height: 70px;
-    height: 100%;
-    border-top: 1px solid rgb(212, 212, 212);
-    background: rgb(255, 255, 255);
-    font-size: 18px;
-    line-height: 70px;
-    color: rgb(160, 160, 160);
-    text-align: center;
+	flex: 1 1 0%;
+	display: block;
+	min-height: 70px;
+	height: 100%;
+	border-top: 1px solid rgb(212, 212, 212);
+	background: rgb(255, 255, 255);
+	font-size: 18px;
+	line-height: 70px;
+	color: rgb(160, 160, 160);
+	text-align: center;
 }
+
 .css-13tv9x8 {
-    flex: 1 1 0%;
-    display: block;
-    min-height: 70px;
-    height: 100%;
-    border-top: 1px solid rgb(48, 48, 51);
-    background: rgb(48, 48, 51);
-    font-size: 18px;
-    line-height: 70px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    position: relative;
-    margin: 0px -1px;
+	flex: 1 1 0%;
+	display: block;
+	min-height: 70px;
+	height: 100%;
+	border-top: 1px solid rgb(48, 48, 51);
+	background: rgb(48, 48, 51);
+	font-size: 18px;
+	line-height: 70px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	position: relative;
+	margin: 0px -1px;
 }
 </style>
 <style>
-@media (min-width: 541px) {
-    .css-9qgiem {
-        padding: 50px 100px 40px;
-        text-align: center;
-        background: rgb(48, 48, 51);
-    }
-@media (min-width: 541px) {
-    .css-fnx4f5 {
-        display: none;
-    }
-}
-@media (min-width: 541px) {
-    .css-f1nnni {
-        display: none;
-    }
+@media ( min-width : 541px) {
+	.css-9qgiem {
+		padding: 50px 100px 40px;
+		text-align: center;
+		background: rgb(48, 48, 51);
+	}
+	@media ( min-width : 541px) {
+		.css-fnx4f5 {
+			display: none;
+		}
+	}
+	@media ( min-width : 541px) {
+		.css-f1nnni {
+			display: none;
+		}
+	}
 }
 </style>
 <style>
 .css-1ymgzmv {
-    position: relative;
+	position: relative;
 }
+
 .css-6vy6m4 {
-    position: absolute;
-    top: 50%;
-    margin-top: -60px;
-    z-index: 10;
-    cursor: pointer;
-    padding: 20px 30px;
-    background: none;
-    left: -100px;
-    right: auto;
+	position: absolute;
+	top: 50%;
+	margin-top: -60px;
+	z-index: 10;
+	cursor: pointer;
+	padding: 20px 30px;
+	background: none;
+	left: -100px;
+	right: auto;
 }
+
 .css-1dv0xyg {
-    width: 22px;
-    height: 44px;
-    opacity: 0.35;
-    transform: rotate(180deg);
+	width: 22px;
+	height: 44px;
+	opacity: 0.35;
+	transform: rotate(180deg);
 }
 
 .css-vhkf1b {
-    position: absolute;
-    top: 50%;
-    margin-top: -60px;
-    z-index: 10;
-    cursor: pointer;
-    padding: 20px 30px;
-    background: none;
-    right: -100px;
-    left: auto;
+	position: absolute;
+	top: 50%;
+	margin-top: -60px;
+	z-index: 10;
+	cursor: pointer;
+	padding: 20px 30px;
+	background: none;
+	right: -100px;
+	left: auto;
 }
+
 .css-1tulk9i {
-    width: 22px;
-    height: 44px;
+	width: 22px;
+	height: 44px;
 }
-@media (min-width: 541px) {
-    .css-13alrll {
-        padding-bottom: 54px;
-    }
+
+@media ( min-width : 541px) {
+	.css-13alrll {
+		padding-bottom: 54px;
+	}
 }
+
 .swiper-container-pointer-events {
-    touch-action: pan-y;
+	touch-action: pan-y;
 }
+
 .swiper-container {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
-    z-index: 1;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	overflow: hidden;
+	list-style: none;
+	padding: 0;
+	z-index: 1;
 }
 </style>
 <style>
 svg:not(:root) {
-    overflow-clip-margin: content-box;
-    overflow: hidden;
+	overflow-clip-margin: content-box;
+	overflow: hidden;
 }
 </style>
 <style>
-@media (min-width: 541px) {
-    .css-1ymgzmv .swiper-pagination {
-        height: 16px;
-    }
+@media ( min-width : 541px) {
+	.css-1ymgzmv .swiper-pagination {
+		height: 16px;
+	}
 }
+
 .css-1ymgzmv .swiper-pagination {
-    position: absolute;
-    text-align: center;
-    transition: all 0.3s ease 0s;
-    transform: translateZ(0px);
-    left: 0px;
-    right: 0px;
-    z-index: 10;
-    bottom: 0px;
+	position: absolute;
+	text-align: center;
+	transition: all 0.3s ease 0s;
+	transform: translateZ(0px);
+	left: 0px;
+	right: 0px;
+	z-index: 10;
+	bottom: 0px;
 }
+
 .css-1ymgzmv .swiper-pagination-bullet-active {
-    opacity: 1;
+	opacity: 1;
 }
-@media (min-width: 541px) {
-    .css-1ymgzmv .swiper-pagination-bullet {
-        border-radius: 50%;
-        width: 16px;
-        height: 16px;
-        background: rgb(255, 255, 255);
-        opacity: 0.3;
-        margin: 0px 5px;
-    }
+
+@media ( min-width : 541px) {
+	.css-1ymgzmv .swiper-pagination-bullet {
+		border-radius: 50%;
+		width: 16px;
+		height: 16px;
+		background: rgb(255, 255, 255);
+		opacity: 0.3;
+		margin: 0px 5px;
+	}
 }
+
 .css-1ymgzmv .swiper-pagination-bullet {
-    display: inline-block;
+	display: inline-block;
 }
-@media (min-width: 541px) {
-    .css-1ymgzmv .swiper-pagination-bullet {
-        border-radius: 50%;
-        width: 16px;
-        height: 16px;
-        background: rgb(255, 255, 255);
-        opacity: 0.3;
-        margin: 0px 5px;
-    }
+
+@media ( min-width : 541px) {
+	.css-1ymgzmv .swiper-pagination-bullet {
+		border-radius: 50%;
+		width: 16px;
+		height: 16px;
+		background: rgb(255, 255, 255);
+		opacity: 0.3;
+		margin: 0px 5px;
+	}
 }
+
 .css-1ymgzmv .swiper-pagination-bullet {
-    display: inline-block;
+	display: inline-block;
 }
-@media (min-width: 541px) {
-    .css-1ymgzmv .swiper-pagination-bullet {
-        border-radius: 50%;
-        width: 16px;
-        height: 16px;
-        background: rgb(255, 255, 255);
-        opacity: 0.3;
-        margin: 0px 5px;
-    }
+
+@media ( min-width : 541px) {
+	.css-1ymgzmv .swiper-pagination-bullet {
+		border-radius: 50%;
+		width: 16px;
+		height: 16px;
+		background: rgb(255, 255, 255);
+		opacity: 0.3;
+		margin: 0px 5px;
+	}
 }
+
 .css-1ymgzmv .swiper-pagination-bullet {
-    display: inline-block;
+	display: inline-block;
 }
-@media (min-width: 541px) {
-    .css-1ymgzmv .swiper-pagination-bullet {
-        border-radius: 50%;
-        width: 16px;
-        height: 16px;
-        background: rgb(255, 255, 255);
-        opacity: 0.3;
-        margin: 0px 5px;
-    }
+
+@media ( min-width : 541px) {
+	.css-1ymgzmv .swiper-pagination-bullet {
+		border-radius: 50%;
+		width: 16px;
+		height: 16px;
+		background: rgb(255, 255, 255);
+		opacity: 0.3;
+		margin: 0px 5px;
+	}
 }
+
 .css-1ymgzmv .swiper-pagination-bullet {
-    display: inline-block;
+	display: inline-block;
 }
-@media (min-width: 541px) {
-    .css-1ymgzmv .swiper-pagination-bullet {
-        border-radius: 50%;
-        width: 16px;
-        height: 16px;
-        background: rgb(255, 255, 255);
-        opacity: 0.3;
-        margin: 0px 5px;
-    }
+
+@media ( min-width : 541px) {
+	.css-1ymgzmv .swiper-pagination-bullet {
+		border-radius: 50%;
+		width: 16px;
+		height: 16px;
+		background: rgb(255, 255, 255);
+		opacity: 0.3;
+		margin: 0px 5px;
+	}
 }
+
 .css-1ymgzmv .swiper-pagination-bullet {
-    display: inline-block;
+	display: inline-block;
 }
 </style>
 <style>
@@ -3952,25 +3978,26 @@ svg:not(:root) {
     transition-duration: 0ms;
 } */ /* 바껴야되는 값 */
 .swiper-wrapper {
-    transform: translateZ(0);
-}
-.swiper-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    display: flex;
-    transition-property: transform;
-    box-sizing: content-box;
-}
-.swiper-slide {
-    flex-shrink: 0;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transition-property: transform;
+	transform: translateZ(0);
 }
 
+.swiper-wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	display: flex;
+	transition-property: transform;
+	box-sizing: content-box;
+}
+
+.swiper-slide {
+	flex-shrink: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transition-property: transform;
+}
 </style>
 <link as="script" rel="prefetch"
 	href="https://cdn-resource-microservice.29cm.co.kr/shop/_next/static/chunks/pages/index-3eb055cb8f194f55.js">
@@ -4024,39 +4051,18 @@ svg:not(:root) {
 			<!-- 페이지의 중앙부분(header,footer)뺀 나머지부분 -->
 			<div class="css-79elbk e8dmgjc0">
 				<div class="css-ccftqy e1ha01s71">
-					<div
-						class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events 
-								css-10klw3m e1ha01s72">
+					<div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events css-10klw3m e1ha01s72">
 						<div class="swiper-pagination swiper-pagination-bullets">
-							<!-- 페이지전환효과찾아보기 -->
-							<span class="swiper-pagination-bullet"></span>
-							<!-- <span class="swiper-pagination-bullet "></span>
-							<span class="swiper-pagination-bullet"></span> 
-							<span class="swiper-pagination-bullet"></span> 
-							<span class="swiper-pagination-bullet"></span> -->
+							<span class="swiper-pagination-bullet"></span><span
+								class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span
+								class="swiper-pagination-bullet"></span><span
+								class="swiper-pagination-bullet"></span><span
+								class="swiper-pagination-bullet"></span>
 						</div>
 						<div class="swiper-wrapper"
-							style="transform: translate3d(-2184px, 0px, 0px); transition-duration: 0ms;">
-
-							<div class="swiper-slide swiper-slide"
-								data-swiper-slide-index="0" style="width: 1092px;">
-								<a class="css-12ngsuq eiewl70" target="_self"
-									href="https://content.29cm.co.kr/brand-news/21518?product_sort=featured">
-									<picture> <img
-										src="https://img.29cm.co.kr/next-product/2024/05/03/779dbff0badf448d9b2fad9ca144d578_20240503164718.jpg?width=2000"
-										class="css-1rdq2xw eiewl71"> </picture>
-									<div class="css-ftsck8 eiewl72">
-										<div color="#000000" class="css-1a9mgan eiewl74">
-											<h2 class="css-rrjwli eiewl75">고윤정의 스포티룩</h2>
-											<p class="css-1pnjbcd eiewl76">DISCOVERY EXPEDITION</p>
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<div
-								class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate"
-								data-swiper-slide-index="0" style="width: 1092px;">
+							style="transform: translate3d(-2676px, 0px, 0px); transition-duration: 0ms;">
+							<div class="swiper-slide swiper-slide-duplicate"
+								data-swiper-slide-index="4" style="width: 1338px;">
 								<a class="css-12ngsuq eiewl70" target="_self"
 									href="https://content.29cm.co.kr/brand-news/21518?product_sort=featured"><picture>
 									<img
@@ -4069,10 +4075,93 @@ svg:not(:root) {
 										</div>
 									</div></a>
 							</div>
+							<div class="swiper-slide swiper-slide-prev"
+								data-swiper-slide-index="0" style="width: 1338px;">
+								<a class="css-12ngsuq eiewl70" target="_self"
+									href="https://content.29cm.co.kr/keyword/2024/05/06/windbreaker"><picture>
+									<img
+										src="https://img.29cm.co.kr/next-product/2024/05/03/e26336b7fc2c408c8d389c73498e48cd_20240503164652.jpg?width=2000"
+										class="css-1rdq2xw eiewl71"></picture>
+									<div class="css-ftsck8 eiewl72">
+										<div color="#000000" class="css-1a9mgan eiewl74">
+											<h2 class="css-rrjwli eiewl75">지금 날씨에 입기 좋은</h2>
+											<p class="css-1pnjbcd eiewl76">ARC TERYX</p>
+										</div>
+									</div></a>
+							</div>
+							<div class="swiper-slide swiper-slide-active"
+								data-swiper-slide-index="1" style="width: 1338px;">
+								<a class="css-12ngsuq eiewl70" target="_self"
+									href="https://content.29cm.co.kr/brand-news/21666"><picture>
+									<img
+										src="https://img.29cm.co.kr/next-product/2024/05/03/32ffd6ab36da4ce9a4f94d301f9f4d28_20240503164855.jpg?width=2000"
+										class="css-1rdq2xw eiewl71"></picture>
+									<div class="css-ftsck8 eiewl72">
+										<div color="#ffffff" class="css-1rel3op eiewl74">
+											<h2 class="css-rrjwli eiewl75">제니의 환상적인 모험</h2>
+											<p class="css-1pnjbcd eiewl76">CORALIQUE</p>
+										</div>
+									</div></a>
+							</div>
+							<div class="swiper-slide swiper-slide-next"
+								data-swiper-slide-index="2" style="width: 1338px;">
+								<a class="css-12ngsuq eiewl70" target="_self"
+									href="https://content.29cm.co.kr/focus/2024/05/06/3nd"><picture>
+									<img
+										src="https://img.29cm.co.kr/next-product/2024/05/03/9208026eab884b1da21e3fe414593d6c_20240503164811.jpg?width=2000"
+										class="css-1rdq2xw eiewl71"></picture>
+									<div class="css-ftsck8 eiewl72">
+										<div color="#000000" class="css-1a9mgan eiewl74">
+											<h2 class="css-rrjwli eiewl75">올여름 함께할</h2>
+											<p class="css-1pnjbcd eiewl76">MOVEWARM</p>
+										</div>
+									</div></a>
+							</div>
+							<div class="swiper-slide" data-swiper-slide-index="3"
+								style="width: 1338px;">
+								<a class="css-12ngsuq eiewl70" target="_self"
+									href="https://content.29cm.co.kr/brand-news/21304?product_sort=best"><picture>
+									<img
+										src="https://img.29cm.co.kr/next-product/2024/05/03/17ede728e8a347339493c23a89bb8d84_20240503164749.jpg?width=2000"
+										class="css-1rdq2xw eiewl71"></picture>
+									<div class="css-ftsck8 eiewl72">
+										<div color="#000000" class="css-1a9mgan eiewl74">
+											<h2 class="css-rrjwli eiewl75">일상을 빛내는 아웃도어</h2>
+											<p class="css-1pnjbcd eiewl76">SNOWPEAK APPAREL</p>
+										</div>
+									</div></a>
+							</div>
+							<div class="swiper-slide" data-swiper-slide-index="4"
+								style="width: 1338px;">
+								<a class="css-12ngsuq eiewl70" target="_self"
+									href="https://content.29cm.co.kr/brand-news/21518?product_sort=featured"><picture>
+									<img
+										src="https://img.29cm.co.kr/next-product/2024/05/03/779dbff0badf448d9b2fad9ca144d578_20240503164718.jpg?width=2000"
+										class="css-1rdq2xw eiewl71"></picture>
+									<div class="css-ftsck8 eiewl72">
+										<div color="#000000" class="css-1a9mgan eiewl74">
+											<h2 class="css-rrjwli eiewl75">고윤정의 스포티룩</h2>
+											<p class="css-1pnjbcd eiewl76">DISCOVERY EXPEDITION</p>
+										</div>
+									</div></a>
+							</div>
+							<div
+								class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
+								data-swiper-slide-index="0" style="width: 1338px;">
+								<a class="css-12ngsuq eiewl70" target="_self"
+									href="https://content.29cm.co.kr/keyword/2024/05/06/windbreaker"><picture>
+									<img
+										src="https://img.29cm.co.kr/next-product/2024/05/03/e26336b7fc2c408c8d389c73498e48cd_20240503164652.jpg?width=2000"
+										class="css-1rdq2xw eiewl71"></picture>
+									<div class="css-ftsck8 eiewl72">
+										<div color="#000000" class="css-1a9mgan eiewl74">
+											<h2 class="css-rrjwli eiewl75">지금 날씨에 입기 좋은</h2>
+											<p class="css-1pnjbcd eiewl76">ARC TERYX</p>
+										</div>
+									</div></a>
+							</div>
 						</div>
-						
-						<!-- 슬라이드 좌우 버튼 -->
-						<!-- <div class="css-145q29u e1ha01s73">
+						<div class="css-145q29u e1ha01s73">
 							<svg class="e1ha01s76 css-8k8h7u e15lsifv0"
 								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 80">
 								<path d="M1 0l40 40.083L1.166 80" fill="none"
@@ -4083,9 +4172,10 @@ svg:not(:root) {
 								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 80">
 								<path d="M1 0l40 40.083L1.166 80" fill="none"
 									fill-rule="evenodd" stroke="#000000" stroke-width="5"></path></svg>
-						</div> -->
+						</div>
 					</div>
 				</div>
+
 				<div class="css-1onoukq etlggkw0">
 					<div class="css-8t2d70 etlggkw1">
 						<h2 class="css-kkqm0g etlggkw2">레저</h2>
