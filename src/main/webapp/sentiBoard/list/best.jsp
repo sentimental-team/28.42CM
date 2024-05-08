@@ -3693,4 +3693,7 @@ $(document).ready(function(){
 </script>
 
 </body>
+<footer>
+   <jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
+</footer>
 </html>

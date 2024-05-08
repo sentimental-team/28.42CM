@@ -9,7 +9,6 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <title></title>
 <link rel="shortcut icon" type="image/x-icon" href="http://localhost/jspPro/images/satomi.png">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<link rel="stylesheet" href="http://localhost/jspPro/resources/cdn-main/example.css">
 <script src="http://localhost/jspPro/resources/cdn-main/example.js"></script>
 <link
   rel="stylesheet"
@@ -17,12 +16,15 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 />
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<header>
+ <header>
    <jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
-</header>
+</header> 
 <style>
    span.material-symbols-outlined{
    vertical-align: text-bottom;
+   }
+   body{
+   width : 100%;
    }
   #wrap{
       position: relative;
@@ -1558,11 +1560,11 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 	 							</div>
 	 					</a>
 	 					<div class="qq3_1_1_1_2_2">
-	 						<button class=" ">
+	 						<button class="qq3_1_1_1_3_3 ">
 	 							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 20 20">
 	 								<path d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z" fill="none" fill-rule="evenodd" stroke="#5d5d5d" stroke-width="0.7"></path>
 	 							</svg>
-	 							<span class=>3,012</span>
+	 							<span class="qq3_1_1_1_3_3_1">3,012</span>
 	 						</button>
 	 					</div>
           			</div>
@@ -1611,11 +1613,11 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 	 							</div>
 	 					</a>
 	 					<div class="qq3_1_1_1_2_2">
-	 						<button class=" ">
+	 						<button class="qq3_1_1_1_3_3 ">
 	 							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 20 20">
 	 								<path d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z" fill="none" fill-rule="evenodd" stroke="#5d5d5d" stroke-width="0.7"></path>
 	 							</svg>
-	 							<span class=>3,012</span>
+	 							<span class="qq3_1_1_1_3_3_1">3,012</span>
 	 						</button>
 	 					</div>
           			</div>
@@ -1665,8 +1667,11 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 	 							</div>
 	 					</a>
 	 					<div class="qq3_1_1_1_2_2">
-	 						<button class=" ">	 							
-	 							<span class=>3,012</span>
+	 						<button class="qq3_1_1_1_3_3 ">	 	
+	 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 20 20">
+          							<path d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z" fill="none" fill-rule="evenodd" stroke="#5d5d5d" stroke-width="0.7"></path>
+          					</svg>   						
+	 							<span class="qq3_1_1_1_3_3_1">3,012</span>
 	 						</button>
 	 					</div>
           			</div>
@@ -1682,7 +1687,10 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
           							</div>
           					</a>
           					<div class="qq3_1_1_1_3_2">
-          						<button class="qq3_1_1_1_3_3">          							
+          						<button class="qq3_1_1_1_3_3">
+          						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 20 20">
+          							<path d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z" fill="none" fill-rule="evenodd" stroke="#5d5d5d" stroke-width="0.7"></path>
+          						</svg>             							
           							<span class="qq3_1_1_1_3_3_1">2,013</span>
           						</button>
           					</div>
@@ -1713,9 +1721,11 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 	 							</div>
 	 					</a>
 	 					<div class="qq3_1_1_1_2_2">
-	 						<button class=" ">
-	 							
-	 							<span class=>3,012</span>
+	 						<button class="qq3_1_1_1_3_3 ">
+	 							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 20 20">
+          							<path d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z" fill="none" fill-rule="evenodd" stroke="#5d5d5d" stroke-width="0.7"></path>
+          						</svg>  
+	 							<span  class="qq3_1_1_1_3_3_1">3,012</span>
 	 						</button>
 	 					</div>
           			</div>
@@ -1731,7 +1741,10 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
           							</div>
           					</a>
           					<div class="qq3_1_1_1_3_2">
-          						<button class="qq3_1_1_1_3_3">         							
+          						<button class="qq3_1_1_1_3_3">   
+          						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 20 20">
+          							<path d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z" fill="none" fill-rule="evenodd" stroke="#5d5d5d" stroke-width="0.7"></path>
+          						</svg>         							
           							<span class="qq3_1_1_1_3_3_1">2,013</span>
           						</button>
           					</div>
@@ -1761,8 +1774,11 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 	 							</div>
 	 					</a>
 	 					<div class="qq3_1_1_1_2_2">
-	 						<button class=" ">	 							
-	 							<span class=>3,012</span>
+	 						<button class="qq3_1_1_1_3_3 ">	
+	 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 20 20">
+          							<path d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z" fill="none" fill-rule="evenodd" stroke="#5d5d5d" stroke-width="0.7"></path>
+          					</svg>    							
+	 							<span  class="qq3_1_1_1_3_3_1">3,012</span>
 	 						</button>
 	 					</div>
           			</div>
@@ -1778,7 +1794,10 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
           							</div>
           					</a>
           					<div class="qq3_1_1_1_3_2">
-          						<button class="qq3_1_1_1_3_3">          							
+          						<button class="qq3_1_1_1_3_3">  
+          						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 20 20">
+          							<path d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z" fill="none" fill-rule="evenodd" stroke="#5d5d5d" stroke-width="0.7"></path>
+          						</svg>           							
           							<span class="qq3_1_1_1_3_3_1">2,013</span>
           						</button>
           					</div>
@@ -1808,8 +1827,11 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 	 							</div>
 	 					</a>
 	 					<div class="qq3_1_1_1_2_2">
-	 						<button class=" ">	 							
-	 							<span class=>3,012</span>
+	 						<button class="qq3_1_1_1_3_3 ">	
+	 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 20 20">
+          							<path d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z" fill="none" fill-rule="evenodd" stroke="#5d5d5d" stroke-width="0.7"></path>
+          					</svg>    							
+	 							<span  class="qq3_1_1_1_3_3_1">3,012</span>
 	 						</button>
 	 					</div>
           			</div>
@@ -1825,7 +1847,10 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
           							</div>
           					</a>
           					<div class="qq3_1_1_1_3_2">
-          						<button class="qq3_1_1_1_3_3">          							
+          						<button class="qq3_1_1_1_3_3">      
+          						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 20 20">
+          							<path d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z" fill="none" fill-rule="evenodd" stroke="#5d5d5d" stroke-width="0.7"></path>
+          						</svg>    							
           							<span class="qq3_1_1_1_3_3_1">2,013</span>
           						</button>
           					</div>
