@@ -9,8 +9,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" href="http://localhost/jspPro/images/SiSt.ico">
 
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <!-- <script src="/jspPro/resources/cdn-main/example.js"></script> -->
 <style>
@@ -1025,6 +1024,9 @@ button {
 			</ul>
 		</div>
 	</div>
+<footer>
+	<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
+</footer>
 
 
 	<script>
