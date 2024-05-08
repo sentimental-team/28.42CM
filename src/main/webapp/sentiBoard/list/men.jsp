@@ -4,16 +4,18 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title></title>
-<link rel="shortcut icon" type="image/x-icon" href="http://localhost/jspPro/images/satomi.png">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="http://localhost/jspPro/resources/cdn-main/example.js"></script>
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
  <header>
@@ -311,12 +313,12 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 #third > ul {
 	display: flex;
 }
-#third > ul > button:nth-child(1) {
+#third > ul > li:nth-child(1) {
 	flex: 1 1 0%;
     display: block;
     min-height: 70px;
     height: 100%;
-    border-top: 1px solid rgb(48, 48, 51);
+   border-top: 1px solid rgb(212, 212, 212);
     background: rgb(48, 48, 51);
     font-size: 18px;
     line-height: 70px;
@@ -325,7 +327,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
     position: relative;
     margin: 0px -1px;
 }
-#third > ul > button:nth-child(2){
+#third > ul > li:nth-child(2){
     flex: 1 1 0%;
     display: block;
     min-height: 70px;
@@ -339,18 +341,20 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 }
 
 @media (min-width: 541px) {
-    .dd {
+    #dd1 {
         padding: 50px 100px 40px;
         text-align: center;
         background: rgb(48, 48, 51);
     }
 }
 @media (min-width: 541px) {
-<style>
-    .css-fnx4f5 {
-        display: none;
+    #dd2 {
+        padding: 50px 100px 40px;
+        text-align: center;
+        background: rgb(48, 48, 51);
     }
 }
+
 @media (min-width: 541px) {
     .dd1{
         display: none;
@@ -777,6 +781,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
     line-height: 35px;
     white-space: pre-wrap;
 }
+
 </style>
 
 
@@ -982,16 +987,15 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
       </div>
     </div>
     
-    
-    
+
     
     
     <div id="third">
       <ul>
-        <button>New arrivals</button>
-        <button>Weekly best</button><!-- 밑에 코딩은 신상품에 관련된 것들이나 비동기 처리로 주간 베스트 제풀이 로드 되게 코드 추가해야함.  -->
+        <li id="third1"><a id="third-1" href="#dd1">New Arrivals</a></li>
+        <li id="third2"><a id="third-2" href="#dd2">Weekly best</a></li><!-- 밑에 코딩은 신상품에 관련된 것들이나 비동기 처리로 주간 베스트 제풀이 로드 되게 코드 추가해야함.  -->
       </ul>
-      <div class="dd">
+      <div id="dd1">
         <h2 class="dd1">New arrivals
           <a class="dd1_1" href="https://www.29cm.co.kr/shop/category/list?category_large_code=272100100&amp;category_medium_code=new">전체보기</a>
         </h2>
@@ -1008,6 +1012,545 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
               						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef082abb927237b9bb69b9ba03a5a7.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0829f9b4c699bb14d1b1c8a3ae5e.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202404/11eef163bb471cae9367176e3746dc06.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0917e1693159bb14d775ef7620cc.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202404/11ef03aa4d54527bbb141dd1c0655cf5.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		
+              	</div>
+              </div>       
+            </div>
+				    	
+				    </div>
+				      <div class="swiper-slide">
+				    		 <div class="dd3_2">
+              <div class="dd3_2_1">
+              	<div class="dd3_2_1_1">
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/a472b7907c34407d8b1787f876063d06_20240503171651.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/04/30/a7789846a9ca43cca99e78a3518a9618_20240430161643.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/07/dd531b67f67f492e8bdc64285d4be00a_20240507101610.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/07/60dff07367624d19a6a93dc361062506_20240507095354.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/07/dbd58c7afaf9403b90d66676f1de7927_20240507101744.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		
+              	</div>
+              </div>       
+            </div>
+				    </div>
+				      <div class="swiper-slide">
+				    		 <div class="dd3_2">
+              <div class="dd3_2_1">
+              	<div class="dd3_2_1_1">
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/e8251409505246bd92fe151ec72afb2d_20240503170905.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/07/56a2a63030164df5984abe07e8b14fde_20240507101643.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/04/30/d9f94bb45698479993bba29569d6450e_20240430161751.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/d03a139b290a4d85b37129e7fc455db7_20240503173016.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/4d5ef2cd159b40ca8c7411c8ed3e99a5_20240503172020.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		
+              	</div>
+              </div>       
+            </div>
+				    </div>
+				      <div class="swiper-slide">
+				    		 <div class="dd3_2">
+              <div class="dd3_2_1">
+              	<div class="dd3_2_1_1">
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef092e4466116fbb14f7a6d884bd2e.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef092e446267c2bb147bb1a8cab4c7.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/4aee6c97faba4407b2ec47b1249392bc_20240503171001.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/0a7d8d9171b64218a92aa9260fb93578_20240503171924.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/07/37812aa47e764f9fbf12dcfa6302c955_20240507101814.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		
+              	</div>
+              </div>       
+            </div>
+				    </div>
+				      <div class="swiper-slide">
+				    		 <div class="dd3_2">
+              <div class="dd3_2_1">
+              	<div class="dd3_2_1_1">
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef092e4464158abb1467deaa8e24e7.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/07/21242685dbba4eabab7c91d2c94d20e7_20240507101705.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0c0939542743b9bb858d6bd1625a.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1" >
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/07/cbca88363caf494580fb9f7dd138fc10_20240507113125.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0c090a5694f8892b8d92fec21139.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">디스이즈네버댓</h2>
+              					<div class="dd2">TNT FARAH Boxer Briefs Black/Grey</div>
+              					<span class="ddd3">
+              					45,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">디스이즈네버댓</a>
+              			
+              		</div>
+              		
+              	</div>
+              </div>       
+            </div>
+				    </div>		    
+			  </div>
+			
+			
+			  <!-- If we need navigation buttons -->
+			  <div class="swiper-button-prev"></div>
+			  <div class="swiper-button-next"></div>
+			
+			
+		</div>
+      </div>
+      <div id="dd2" style="display: none">
+        <h2 class="dd1">Weekly best
+          <a class="dd1_1" href="https://www.29cm.co.kr/shop/category/list?category_large_code=272100100&amp;category_medium_code=new">전체보기</a>
+        </h2>
+        <div class="swiper" style="position: relative; height: 350px">
+			  <!-- Additional required wrapper -->
+			  <div class="swiper-wrapper">
+				    <!-- Slides -->
+				    <div class="swiper-slide">
+		 <div class="dd3_2">
+              <div class="dd3_2_1">
+              	<div class="dd3_2_1_1">
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
@@ -1869,6 +2412,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 </body>
 <script>
+//슬라이딩 배너 플러그인 코딩.
 const swiper = new Swiper('.swiper', {
 	  // Optional parameters
 	  direction: 'horizontal',
@@ -1891,5 +2435,19 @@ const swiper = new Swiper('.swiper', {
 	  },
 	});
 
+</script>
+<script>
+$("#third-1").on("click",function(){
+	$("#third1").css("background","rgb(48, 48, 51)");
+	$("#third2").css("background","rgb(255, 255, 255)");
+	$("#dd2").hide();
+	$("#dd1").show();
+})
+$("#third-2").on("click",function(){
+	$("#third2").css("background","rgb(48, 48, 51)");
+	$("#third1").css("background","rgb(255, 255, 255)");
+	$("#dd1").hide();
+	$("#dd2").show();
+})
 </script>
 </html>

@@ -44,16 +44,43 @@ ol, ul, li {
     padding-top: 260px;
 }
 
-.head-main {
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    right: 0;
-    left: 0;
-    min-width: 1000px;
-    padding-bottom: 20px;
-    background: #ffffff;
-}
+    .head-main {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        min-width: 1000px;
+        z-index: 100;
+        padding-bottom: 20px;
+        background: #fff;
+    }
+
+
+    .yj {
+       padding-bottom: 40px !important;
+ 	   padding-top: 12px !important;
+ 	   border-bottom: 1px solid #d4d4d4 !important;
+    }
+    .yj2{
+   		    margin: 0px 0px 20px !important;
+ 	   		padding-top: 0px !important;
+   			 position: absolute !important;
+ 		  top: 11px;
+  		  left: 160px;
+    }
+    .yj3{
+  		   margin: 80px 0 20px !important; 		
+		   position: absolute;
+  		   top: 0px !important;
+ 		   left: 120px;
+  		  
+    }
+    .yj4{
+	    
+	    margin: 4px 10px 2px 15px;
+	    font-size: 28px !important;
+    }
+
 
 @supports (position:sticky) or (position:-webkit-sticky) {
     .css-ktg3h6 {
@@ -63,6 +90,7 @@ ol, ul, li {
 
 .head-main1 {
     position: relative;
+    padding-bottom: 8px;
 }
 
 .logo {
@@ -533,4 +561,33 @@ button {
 	</div>
 
 </body>
+<script>
+$(document).ready(function(){
+	  $(window).scroll(function(){
+	    // 스크롤 이벤트 발생 시 실행될 코드
+	    var scroll = $(window).scrollTop(); // 현재 스크롤 위치
+	    
+	    if(scroll >0){
+	      // 특정 위치 이상으로 스크롤 될 때
+	      $('.head-main').addClass('yj'); 
+	      $('.mid-nav').addClass('yj2'); 
+	      $('.bottom').addClass('yj3');	     
+	      $('.mid-li').addClass('yj4');
+	    } else {
+	      // 특정 위치 미만으로 스크롤 될 때
+	      $('.head-main' ).removeClass('yj'); // 클래스명 제거
+	      $('.mid-nav').removeClass('yj2'); 
+	      $('.bottom').removeClass('yj3');
+	      $('.mid-li').removeClass('yj4');
+	    }
+	  });
+	});
+</script>
+<script>
+$("#third-2").on("click",function(){
+	$("#third2").css("background","rgb(48, 48, 51)");
+	$("#third1").css("background","rgb(255, 255, 255)");
+	
+})
+</script>
 </html>
