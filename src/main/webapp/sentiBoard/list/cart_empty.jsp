@@ -129,13 +129,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 						</g>
 					</svg>
 				</li>
-				<li class="order-confirmed">03 ORDER CONFIRMED
-					<svg class="efn0hf62 css-1eloq9d e2007db0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 80">
-						<g fill="none" fill-rule="evenodd" stroke="rgb(212, 212, 212)" stroke-width="5">
-							<path d="M1 0l40 40.083L1.166 80"></path>
-						</g>
-					</svg>
-				</li>
+				<li class="order-confirmed">03 ORDER CONFIRMED</li>
 			</ol>
 		</div>
 		<div class="cart-info">
