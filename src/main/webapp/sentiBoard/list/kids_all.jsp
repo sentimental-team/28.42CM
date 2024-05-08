@@ -29,6 +29,21 @@ body {
 	padding: 40px 50px 90px
 }
 
+.kids_title_left a.large-ctgr {
+    color: black; 
+    text-decoration: none; /* 클릭 후에도 줄 안생기게 하는 css */
+}
+
+.kids_title_left a.large-ctgr:link,
+.kids_title_left a.large-ctgr:visited,
+.kids_title_left a.large-ctgr:hover,
+.kids_title_left a.large-ctgr:focus,
+.kids_title_left a.large-ctgr:active {
+    color: black;
+    text-decoration: none;
+    /* 클릭 후 기존 색 유지 css */
+}
+
 #kids-left {
 	width: 200px;
 	padding-right: 80px;
@@ -486,6 +501,11 @@ button {
 .ma li a:hover {
 	text-decoration: underline;
 }
+
+body, input, select, textarea, button, a {
+    -webkit-text-size-adjust: none;
+    font-family: 'campton', 'Apple SD Gothic Neo', NanumBarunGothic, '나눔바른고딕', Malgun Gothic, '맑은 고딕', dotum, sans-serif;
+}
 </style>
 </head>
 <body>
@@ -497,7 +517,7 @@ button {
 			<button></button>
 			<div>
 				<!-- <button></button>  화면이 작아졌을 때 #kids-left메뉴 나타나게 하는거 -->
-				<h2 class="kids_title_left"><a class="large-ctgr" href="http://localhost/jspPro/sentiBoard/kids_main.jsp">유아,아동</a></h2>
+				<h2 class="kids_title_left"><a class="large-ctgr" href="http://localhost/jspPro/sentiBoard/view/kidsBoardView.jsp">유아,아동</a></h2>
 				<!-- <ul class="left_bar_meue" > -->
 				<ul class="left-menu">
 					<li><a class="medium-ctgr"
@@ -1034,7 +1054,6 @@ button {
 						</div>
 					</div>
 				</li>
-
 			</ul>
 		</div>
 	</div>
