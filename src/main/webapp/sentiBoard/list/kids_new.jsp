@@ -1037,7 +1037,8 @@ button {
 			</ul>
 		</div>
 	</div>
-	<script>
+<script>
+/* test */
 </script>
 </body>
 </html>
