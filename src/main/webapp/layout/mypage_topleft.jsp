@@ -5,8 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<link rel="stylesheet" href="http://localhost/jspPro/resources/cdn-main/example.css">
-<script src="http://localhost/jspPro/resources/cdn-main/example.js"></script>
+
 <style>
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
