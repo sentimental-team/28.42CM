@@ -75,6 +75,7 @@ body {
 	outline: none;
 	font-weight: 200;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 #kids-right {
@@ -521,15 +522,15 @@ body, input, select, textarea, button, a {
 				<!-- <ul class="left_bar_meue" > -->
 				<ul class="left-menu">
 					<li><a class="medium-ctgr"
-						href="http://localhost/jspPro/sentiBoard/list/kids_all.jsp">ALL</a></li>
+						data-url="http://localhost/jspPro/sentiBoard/list/kids_all.jsp">ALL</a></li>
 					<li><a class="medium-ctgr"
-						href="http://localhost/jspPro/sentiBoard/list/kids_new.jsp">NEW</a></li>
+						data-url="http://localhost/jspPro/sentiBoard/list/kids_new.jsp">NEW</a></li>
 					<li><a class="medium-ctgr"
-						href="http://localhost/jspPro/sentiBoard/list/kids_cloth.jsp">의류</a></li>
+						data-url="http://localhost/jspPro/sentiBoard/list/kids_cloth.jsp">의류</a></li>
 					<li><a class="medium-ctgr"
-						href="http://localhost/jspPro/sentiBoard/list/kids_shoesNbag.jsp">신발,가방</a></li>
+						data-url="http://localhost/jspPro/sentiBoard/list/kids_shoesNbag.jsp">신발,가방</a></li>
 					<li><a class="medium-ctgr"
-						href="http://localhost/jspPro/sentiBoard/list/kids_product.jsp">아동,홈</a></li>
+						data-url="http://localhost/jspPro/sentiBoard/list/kids_product.jsp">아동,홈</a></li>
 				</ul>
 				<!-- </ul> -->
 			</div>
@@ -1056,7 +1057,37 @@ body, input, select, textarea, button, a {
 			</ul>
 		</div>
 	</div>
+<br>
+	<footer>
+		<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
+	</footer>
 <script>
+$(document).ready(function() {
+    $('.medium-ctgr').click(function(e) {
+        e.preventDefault();  // 기본 동작 방지
+        var urlToRequest = $(this).data('url');  // 요청 URL을 data-url 속성에서 가져옵니다.
+
+        $.ajax({
+            type: "POST",
+            url: urlToRequest,
+            data: {
+                // 필요하다면 서버에 보낼 데이터
+            },
+            success: function(response) {
+                // .photo_list 내용 업데이트
+                var updatedPhotoList = $(response).find('.photo_list').html();
+                $('.photo_list').html(updatedPhotoList);
+
+                // .widget 내용 업데이트
+                var updatedWidget = $(response).find('.widget').html();
+                $('.widget').html(updatedWidget);
+            },
+            error: function(xhr, status, error) {
+                alert('Error loading new content: ' + error);
+            }
+        });
+    });
+});
 </script>
 </body>
 </html>
