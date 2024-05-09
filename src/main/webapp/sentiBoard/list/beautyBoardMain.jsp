@@ -1,4 +1,4 @@
-<%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ 
 taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
@@ -793,10 +793,21 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 			    <!-- Slides -->
 			    <div class="swiper-slide">
 			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/08/023207f3ed7d43a28023894c19fd89dd_20240508174347.jpg?width=2000">
 			    		<div class="uuu">
 			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
+			    				<h2 class="uuu1_1">건강한 웰니르 루틴</h2>
+			    				<p class="uuu1_2">WELLNESS ROUTINE</p>
+			    			</div>
+			    		</div>
+			    	</a>	
+			    </div>
+			      <div class="swiper-slide">
+			    	<a>
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/08/ae8f220338264eed839c236b916ba0ea_20240508174431.jpg?width=2000">
+			    		<div class="uuu">
+			    			<div class="uuu1">
+			    				<h2 class="uuu1_1">낭만적인 바디 리추얼</h2>
 			    				<p class="uuu1_2">SUNLOVE</p>
 			    			</div>
 			    		</div>
@@ -804,88 +815,77 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 			    </div>
 			      <div class="swiper-slide">
 			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/08/023207f3ed7d43a28023894c19fd89dd_20240508174347.jpg?width=2000">
 			    		<div class="uuu">
 			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
-			    				<p class="uuu1_2">SUNLOVE</p>
+			    				<h2 class="uuu1_1">건강한 웰니르 루틴</h2>
+			    				<p class="uuu1_2">WELLNESS ROUTINE</p>
 			    			</div>
 			    		</div>
 			    	</a>	
 			    </div>
 			      <div class="swiper-slide">
 			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/08/023207f3ed7d43a28023894c19fd89dd_20240508174347.jpg?width=2000">
 			    		<div class="uuu">
 			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
-			    				<p class="uuu1_2">SUNLOVE</p>
+			    				<h2 class="uuu1_1">건강한 웰니르 루틴</h2>
+			    				<p class="uuu1_2">WELLNESS ROUTINE</p>
 			    			</div>
 			    		</div>
 			    	</a>	
 			    </div>
 			      <div class="swiper-slide">
 			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/08/023207f3ed7d43a28023894c19fd89dd_20240508174347.jpg?width=2000">
 			    		<div class="uuu">
 			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
-			    				<p class="uuu1_2">SUNLOVE</p>
+			    				<h2 class="uuu1_1">건강한 웰니르 루틴</h2>
+			    				<p class="uuu1_2">WELLNESS ROUTINE</p>
 			    			</div>
 			    		</div>
 			    	</a>	
 			    </div>
 			      <div class="swiper-slide">
 			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/08/023207f3ed7d43a28023894c19fd89dd_20240508174347.jpg?width=2000">
 			    		<div class="uuu">
 			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
-			    				<p class="uuu1_2">SUNLOVE</p>
+			    				<h2 class="uuu1_1">건강한 웰니르 루틴</h2>
+			    				<p class="uuu1_2">WELLNESS ROUTINE</p>
 			    			</div>
 			    		</div>
 			    	</a>	
 			    </div>
 			      <div class="swiper-slide">
 			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/08/023207f3ed7d43a28023894c19fd89dd_20240508174347.jpg?width=2000">
 			    		<div class="uuu">
 			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
-			    				<p class="uuu1_2">SUNLOVE</p>
+			    				<h2 class="uuu1_1">건강한 웰니르 루틴</h2>
+			    				<p class="uuu1_2">WELLNESS ROUTINE</p>
 			    			</div>
 			    		</div>
 			    	</a>	
 			    </div>
 			      <div class="swiper-slide">
 			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/08/023207f3ed7d43a28023894c19fd89dd_20240508174347.jpg?width=2000">
 			    		<div class="uuu">
 			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
-			    				<p class="uuu1_2">SUNLOVE</p>
+			    				<h2 class="uuu1_1">건강한 웰니르 루틴</h2>
+			    				<p class="uuu1_2">WELLNESS ROUTINE</p>
 			    			</div>
 			    		</div>
 			    	</a>	
 			    </div>
 			      <div class="swiper-slide">
 			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/08/023207f3ed7d43a28023894c19fd89dd_20240508174347.jpg?width=2000">
 			    		<div class="uuu">
 			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
-			    				<p class="uuu1_2">SUNLOVE</p>
-			    			</div>
-			    		</div>
-			    	</a>	
-			    </div>
-			      <div class="swiper-slide">
-			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
-			    		<div class="uuu">
-			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
-			    				<p class="uuu1_2">SUNLOVE</p>
+			    				<h2 class="uuu1_1">건강한 웰니르 루틴</h2>
+			    				<p class="uuu1_2">WELLNESS ROUTINE</p>
 			    			</div>
 			    		</div>
 			    	</a>	
@@ -902,7 +902,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 		</div>
         <div class="bb">
           <div>
-            <h2 class="bb1">남성의류</h2>
+            <h2 class="bb1">뷰티</h2>
           </div>
           <ul>
             <a href="" class="bb2">All</a>
@@ -2409,6 +2409,9 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
   </div>
 
 </body>
+<footer>
+   <jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
+</footer> 
 <script>
 //슬라이딩 배너 플러그인 코딩.
 const swiper = new Swiper('.swiper', {

@@ -7,6 +7,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <link rel="stylesheet" href="http://localhost/jspPro/resources/cdn-main/example.css">
 <script src="http://localhost/jspPro/resources/cdn-main/example.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+  
 <style>
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
@@ -632,6 +637,9 @@ h4 {
 		$(".mile-textbox").show();
 	}, function(){
 		$(".mile-textbox").hide();
+	})
+	$(".my-review").on("click", function(){
+		$(".mile-sum2").hide();
 	})
 </script>
 </body>

@@ -1,4 +1,4 @@
-<%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ 
 taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
@@ -35,6 +35,8 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
   }	
   #first{
     /* background-color: yellow; */
+    width:1295px;
+    
   }
  @media (min-width: 541px) {
 
@@ -42,6 +44,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
         max-width: 1920px;
         margin: 0px auto;
         padding: 0px 50px 0px 300px;
+        
         
     }
 }
@@ -52,6 +55,8 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
   }
 #fourth{
+
+  	
     box-sizing: border-box;
     min-width: 1000px;
     max-width: 1920px;
@@ -769,14 +774,37 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 }
 .uuu1_1{
     white-space: pre-wrap;
-    font-size: xx-large;
+    font-size: 48px;
+    color: white;
     font-weight: 500;
     line-height: 58px;
 }
 .uuu1_2{
      margin-top: 19px;
-    font-size: 20px;
+    font-size: 28px;
     line-height: 35px;
+    color:white;
+    white-space: pre-wrap;
+}
+
+@media (min-width: 541px) {
+    .2 {
+        width: 440px;
+        margin-left: 60px;
+    }
+}
+.ddd2_1{
+    white-space: pre-wrap;
+    font-size: 48px;
+    color: white;
+    font-weight: 500;
+    line-height: 58px;
+}
+.ddd2_2{
+     margin-top: 19px;
+    font-size: 28px;
+    line-height: 35px;
+    color:white;
     white-space: pre-wrap;
 }
 
@@ -793,22 +821,22 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 			    <!-- Slides -->
 			    <div class="swiper-slide">
 			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/08/1573aff039114e09b6e1e09f173d1860_20240508184633.jpg?width=2000">
 			    		<div class="uuu">
 			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
-			    				<p class="uuu1_2">SUNLOVE</p>
+			    				<h2 class="uuu1_1">디테일의 차이</h2>
+			    				<p class="uuu1_2">LEICA</p>
 			    			</div>
 			    		</div>
 			    	</a>	
 			    </div>
 			      <div class="swiper-slide">
 			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
-			    		<div class="uuu">
-			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
-			    				<p class="uuu1_2">SUNLOVE</p>
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/08/1a04a5cfba33484ea822d40baa3fb42f_20240508184447.jpg?width=2000">
+			    		<div class="ddd">
+			    			<div class="ddd2">
+			    				<h2 class="ddd2_1">분위기 한 스푼</h2>
+			    				<p class="ddd2_2">HAVE A GOOD ITEM</p>
 			    			</div>
 			    		</div>
 			    	</a>	
@@ -902,20 +930,19 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 		</div>
         <div class="bb">
           <div>
-            <h2 class="bb1">남성의류</h2>
+            <h2 class="bb1">컴퓨터/디지털</h2>
           </div>
           <ul>
             <a href="" class="bb2">All</a>
             <a href="" class="bb2">NEW</a>
-            <a href="" class="bb2">EXCLUSIVE</a>
-            <a href="" class="bb2">해외브랜드</a>
-            <a href="" class="bb2">아우터</a>
-            <a href="" class="bb2">상의</a>
-            <a href="" class="bb2">하의</a>
-            <a href="" class="bb2">홈웨어</a>
-            <a href="" class="bb2">셋업</a>
-            <a href="" class="bb2">이너웨어</a>
-            <a href="" class="bb2">니트웨어</a>
+            <a href="" class="bb2">음향기기</a>
+            <a href="" class="bb2">모바일,웨어러블</a>
+            <a href="" class="bb2">모바일 액세서리</a>
+            <a href="" class="bb2">PC,노트북</a>
+            <a href="" class="bb2">게임</a>
+            <a href="" class="bb2">사진</a>
+            <a href="" class="bb2">자동차용품,장난감</a>
+            <a href="" class="bb2">스마트모빌리티</a>
           
           </ul>
         </div>
