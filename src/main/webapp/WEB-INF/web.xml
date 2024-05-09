@@ -21,7 +21,7 @@
 	</resource-ref>
 
 	<!-- 2. 인코딩 필터 -->
-	 
+  
 	<filter>
 		<filter-name>characterEncodingFilter</filter-name>
 		<filter-class>com.filter.CharacterEncodingFilter</filter-class>
@@ -35,6 +35,9 @@
 		<url-pattern>/*</url-pattern> 
 		<dispatcher>REQUEST</dispatcher>
 	</filter-mapping>
+<<<<<<< HEAD
+ 
+=======
 
 	
 	<!-- 3.  컨트롤러 서블릿 등록 -->
@@ -57,6 +60,7 @@
 </web-app>
 
 
+>>>>>>> afda2a90da5f54f04fa967f7a23e75ba455df6d5
 	<!-- 3. 컨트롤러 서블릿 등록 -->
 	<!-- <servlet> <description>listBoard</description> <servlet-name>dispatcher</servlet-name> 
 		<servlet-class>days09.FileTestServlet</servlet-class> <init-param> <description>URL과 
