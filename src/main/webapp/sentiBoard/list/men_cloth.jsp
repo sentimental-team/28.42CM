@@ -1,6 +1,61 @@
+<%@page import="domain.Medium_CtgrVO"%>
+<%@page import="java.util.Iterator"%>
+<%@page import="java.sql.SQLException"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="domain.Large_CtgrVO"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="com.util.DBConn"%>
+<%@page import="java.sql.Connection"%>
 <%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ 
 taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+ <%
+    Connection conn = DBConn.getConnection();
+    
+    PreparedStatement pstmt = null;
+    ResultSet rs = null;    
+    String sql = " SELECT medium_ctgr_id, medium_ctgr_name, large_ctgr_id " 
+    		+" FROM medium_ctgr"
+    		+" where large_ctgr_id='5'";
+    
+    int medium_ctgr_id = 0;
+    String medium_ctgr_name =  null; 
+    int large_ctgr_id =0;
+    
+    Medium_CtgrVO mcvo = null;
+    ArrayList<Medium_CtgrVO> mclist = null;
+    
+    try {
+        pstmt = conn.prepareStatement(sql);
+        rs = pstmt.executeQuery();
+        
+        if( rs.next() ) {
+            mclist = new ArrayList<>();
+            do {
+            	medium_ctgr_id = rs.getInt("medium_ctgr_id");
+            	medium_ctgr_name = rs.getString("medium_ctgr_name");
+            	large_ctgr_id = rs.getInt("large_ctgr_id");    
+                
+                mcvo = new Medium_CtgrVO(medium_ctgr_id, medium_ctgr_name, large_ctgr_id);    
+                
+                mclist.add(mcvo);
+            } while (rs.next());                
+        } // if 
+        
+        
+    } catch (SQLException e) { 
+        e.printStackTrace();
+    } finally {
+        try {
+            pstmt.close();
+            rs.close();
+            // DBConn.close();
+        } catch (SQLException e) { 
+            e.printStackTrace();
+        }
+    }
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,9 +64,9 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" href="http://localhost/jspPro/images/SiSt.ico">
 
-<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-<!-- <script src="/jspPro/resources/cdn-main/example.js"></script> -->
+ <script src="/jspPro/resources/cdn-main/example.js"></script> 
 <style>
 body {
 	min-height: 190vh;
@@ -84,32 +139,21 @@ body {
 	background-color: rgb(255, 255, 255);
 }
 
-.aa {
+ .aa {
 	display: flex;
 	flex-wrap: wrap;
 	list-style: none;
 }
 
-.aa>span {
-	min-height: 10px;
-	line-height: 10px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	overflow: visible;
-	height: 18px;
-	margin-right: 10px; /* 간격 조절 */
-	padding-right: 15px; /* 구분선 위치 조절 */
-	border-right: 1px solid #ccc; /* 구분선 스타일 */
-	font-size: 12px;
-}
+
 
 .aa>span:last-child {
 	margin-right: 0;
 	padding-right: 0;
 	border-right: none;
+
 }
+
 
 input[type="radio"] {
 	appearance: none;
@@ -206,6 +250,16 @@ class ="best_radio_box3 ":checked+.bb {
 	grid-gap: 40px 20px;
 	min-height: 800px;
 	padding: 0px;
+}
+@media (max-width: 1640px) {
+    .photo_list {
+        grid-template-columns: repeat(16, 1fr);
+    }
+}
+@media (max-width: 1024px) {
+    .photo_list {
+        grid-template-columns: repeat(12, 1fr);
+    }
 }
 
 .css-1hjflnh {
@@ -351,23 +405,20 @@ class ="best_radio_box3 ":checked+.bb {
 }
 
 .styled-select {
-	display: block;
-	width: 100%;
-	padding: 10px;
-	font-size: 16px;
-	line-height: 1.3;
-	appearance: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	background-color: #fff;
-	background-image:
-		url('data:image/svg+xml;utf8,<svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
-	background-repeat: no-repeat;
-	background-position: right 10px center;
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	outline: none;
-	cursor: pointer;
+	    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 13px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    background-image: url(data:image/svg+xml;utf8,<svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    border: 1px solid #fff;
+    /* border-radius: 5px; */
+    /* outline: none; */
+    cursor: pointer;
 }
 
 .styled-select:hover {
@@ -437,16 +488,14 @@ class ="best_radio_box3 ":checked+.bb {
 }
 
 .widget-gap {
-	display: flex;
-	flex-direction: row;
-	-webkit-box-pack: start;
-	justify-content: flex-start;
-	flex: 1 1 0%;
-	-webkit-box-align: center;
-	align-items: center;
-	height: 100%;
-	min-height: 42px;
-	border-right: 1px solid #e4e4e4;
+	    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid rgb(212, 212, 212);
+    background-color: rgb(255, 255, 255);
+    padding: 12px;
 }
 
 button {
@@ -455,35 +504,61 @@ button {
     cursor: pointer;
     outline: none;
 }
+.right_radio{
+    min-height: 10px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: visible;
+    height: 18px;
+    margin-right: 10px;
+    padding-right: 15px;
+    border-right: 1px solid #ccc;
+    font-size: 12px;
+}
+.best_radio_box{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    padding: 12px;
+    
+}
 </style>
 </head>
+
+<body>
 <header>
 	<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
 </header>
-<body>
 	<div id="wrap">
 		<div id="best-left">
 			<button></button>
 			<div>
 				<!-- <button></button>  화면이 작아졌을 때 #best-left메뉴 나타나게 하는거 -->
-				<h2 class="best_title_left">여성의류</h2>
+				<h2 class="best_title_left">남성의류</h2>
 				<!-- <ul class="left_bar_meue" > -->
 				<ul class="left-menu">
-					<li><a class="medium-ctgr" href="">ALL</a></li>
-					<li><a class="medium-ctgr" href="">NEW</a></li>
-					<li><a class="medium-ctgr" href="">EXCLUSIVE</a></li>
-					<li><a class="medium-ctgr" href="">상의</a></li>
-					<li><a class="medium-ctgr" href="">바지</a></li>
-					<li><a class="medium-ctgr" href="">원피스</a></li>
-					<li><a class="medium-ctgr" href="">스커트</a></li>
-					<li><a class="medium-ctgr" href="">셋업</a></li>
-					<li><a class="medium-ctgr" href="">점프수트</a></li>
-					<li><a class="medium-ctgr" href="">엑티브웨어</a></li>
-					<li><a class="medium-ctgr" href="">아우터</a></li>
-					<li><a class="medium-ctgr" href="">니트웨어</a></li>
-					<li><a class="medium-ctgr" href="">이너웨어</a></li>
-					<li><a class="medium-ctgr" href="">홈웨어</a></li>
-					<li><a class="medium-ctgr" href="">해외브랜드</a></li>
+					 	<%
+              Iterator<Medium_CtgrVO> ir =mclist.iterator();
+              while (ir.hasNext()) {
+              mcvo = ir.next();
+         %>
+               <li value="<%= mcvo.getMedium_ctgr_id() %>" class="medium_ctgr_id111">
+               		<a href="#" class="medium-ctgr"  <%=medium_ctgr_id == mcvo.getMedium_ctgr_id() ? "selected" : "" %>><%= mcvo.getMedium_ctgr_name() %></a>
+               </li>
+               
+    
+    <!-- 각 도메인의 url도 db에 있어야 할거 같음.  -->
+		<%
+		        } // while
+		 %> 
+			
 				</ul>
 				<!-- </ul> -->
 			</div>
@@ -492,7 +567,39 @@ button {
 		<div id="best-right">
 			<!-- <h2 class="best_title_right" >여성의류</h2> -->
 			<div class="widget">
-				<div class="widget-gap"></div>
+				<div class="best_radio_box">
+					<ul class="aa">
+						<!-- <span class="right_radio"> <input type="radio" name="14"> <label for="14" class="right_label">전체</label>
+						</span>
+						<span class="right_radio"> <input type="radio" name="01"> <label for="01" class="right_label">상의</label>
+						</span>
+						<span class="right_radio"> <input type="radio" name="02"> <label for="02" class="right_label">원피스</label>
+						</span>
+						<span class="right_radio"> <input type="radio" name="03"> <label for="03" class="right_label">바지</label>
+						</span>
+						<span class="right_radio"> <input type="radio" name="04"> <label for="04" class="right_label">아우터</label>
+						</span>
+						<span class="right_radio"> <input type="radio" name="05"> <label for="05" class="right_label">스커트</label>
+						</span>
+						<span class="right_radio"> <input type="radio" name="06"> <label for="06" class="right_label">니트웨어</label>
+						</span>
+						<span class="right_radio"> <input type="radio" name="07"> <label for="07" class="right_label">액티브웨어</label>
+						</span>
+						<span class="right_radio"> <input type="radio" name="08"> <label for="08" class="right_label">홈웨어</label>
+						</span>
+						<span class="right_radio"> <input type="radio" name="09"> <label for="09" class="right_label">셋업</label>
+						</span>
+						<span class="right_radio"> <input type="radio" name="10"> <label for="10" class="right_label">이너웨어</label>
+						</span>
+						<span class="right_radio"> <input type="radio" name="11"> <label for="11" class="right_label">점프수트</label>
+						</span>
+						<span class="right_radio"> <input type="radio" name="12"> <label for="12" class="right_label">EXCLUSIVE</label>
+						</span>
+						<span class="right_radio"> <input type="radio" name="13"> <label for="13" class="right_label">해외브랜드</label>
+						</span> -->
+						<!--라디오 버튼을 없앴다. 레이블을 클릭하면 input이 동작 할 수 있도록 for을  사요했다.  -->
+					</ul>
+			</div>
 				<div class="controlgroup">
 					<select id="sort-type" class="styled-select">
 						<option>추천순</option>
@@ -506,7 +613,7 @@ button {
 					</select>
 				</div>
 
-				<br>
+				
 			</div>
 
 			<ul class="photo_list">
@@ -1024,14 +1131,62 @@ button {
 			</ul>
 		</div>
 	</div>
+	<script>
+	/* 
+	{
+		  "small_ctgr":[
+			              {"small_ctgr_id":138,"small_ctgr_name":"아우터","medium_ctgr_id":21},
+			              {"small_ctgr_id":139,"small_ctgr_name":"상의","medium_ctgr_id":21},
+			              {"small_ctgr_id":140,"small_ctgr_name":"하의","medium_ctgr_id":21}
+			           ]
+	}
+	 */  
+	
+	
+	      $(".medium_ctgr_id111").on("click", function(){
+	    	  
+	          let selectedMedium_ctgr_id = $(this).val(); // 선택한 부서번호 가져오기
+	          $.ajax({
+	             url: "small_ctgr_json.jsp", 
+	             dataType: "json",
+	             type: "GET", 
+	             data: { medium_ctgr_id: selectedMedium_ctgr_id }, // 선택한 부서번호를 전달
+	             cache: false,
+	             success: function(data){
+	                 $(".aa").empty(); // 테이블 내용 초기화
+	                 
+	                
+	                 $(data.small_ctgr).each(function(index, element){
+	                     // 직원 정보를 테이블에 추가
+	                     $(".aa").append(`	
+	                    		 
+	                    		 
+	                             <span class="right_radio">
+	                     <input type="radio"><label class="right_label">\${element.small_ctgr_name}</label>	                             
+	                             </span>	   
+	                             
+	                                   `);
+	                     
+	                 });
+	                 
+	                //alert( data.small_ctgr );
+	             },
+	             error: function(){
+	                 alert("error");
+	             }
+	             
+	             
+	          });
+	      });
+	 
+	
+	</script>
 <footer>
 	<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
 </footer>
 
 
-	<script>
-
-</script>
+	
 
 </body>
 </html>
