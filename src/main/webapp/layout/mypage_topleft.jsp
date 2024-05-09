@@ -229,6 +229,15 @@ h4 {
     unicode-bidi: isolate;
 }
 
+@media (min-width: 541px) {
+    .mid-mid {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        padding-top: 190px;
+    }
+}
+
 .delivery-view {
     display: inline-block;
     padding: 10px 0px;
@@ -337,10 +346,11 @@ h4 {
 
 </style>
 </head>
-<body>
-	<header>
+<header>
 		<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
-	</header>
+</header>
+<body>
+	
 	<div class="mid-div">
 		<div class="mid-left">
 			<div class="mid-left-top">
@@ -441,6 +451,16 @@ h4 {
 				</ul>
 			</section>
 		</div>
+		<div class="mid-mid">
+		
+		
+		<!-- 여기서부터 작업하시면 됩니다 -->
+		
+		
+		</div>
 	</div>
+<footer>
+		<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
+</footer>
 </body>
 </html>
