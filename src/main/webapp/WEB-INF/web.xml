@@ -36,6 +36,7 @@
 		<dispatcher>REQUEST</dispatcher>
 	</filter-mapping>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 	<!-- 3.  컨트롤러 서블릿 등록 -->
 <!-- 	<servlet>
@@ -56,6 +57,8 @@
 	</servlet-mapping>  -->
 </web-app>
 =======
+=======
+>>>>>>> 6a5cede6b11d82be588ccf01a73cf51c584018e5
 
 	<!-- 3. 컨트롤러 서블릿 등록 -->
 	<!-- <servlet> <description>listBoard</description> <servlet-name>dispatcher</servlet-name> 
@@ -67,6 +70,7 @@
 </web-app>
 
 
+<<<<<<< HEAD
 
 
 
@@ -77,3 +81,5 @@
 
 
 >>>>>>> 66eacd4fce1af95bab4c82133f1000b155179b46
+=======
+>>>>>>> 6a5cede6b11d82be588ccf01a73cf51c584018e5
