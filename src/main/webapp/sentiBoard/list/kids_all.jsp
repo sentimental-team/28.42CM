@@ -75,6 +75,7 @@ body {
 	outline: none;
 	font-weight: 200;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 #kids-right {
@@ -521,15 +522,15 @@ body, input, select, textarea, button, a {
 				<!-- <ul class="left_bar_meue" > -->
 				<ul class="left-menu">
 					<li><a class="medium-ctgr"
-						href="http://localhost/jspPro/sentiBoard/list/kids_all.jsp">ALL</a></li>
+						data-url="http://localhost/jspPro/sentiBoard/list/kids_all.jsp">ALL</a></li>
 					<li><a class="medium-ctgr"
-						href="http://localhost/jspPro/sentiBoard/list/kids_new.jsp">NEW</a></li>
+						data-url="http://localhost/jspPro/sentiBoard/list/kids_new.jsp">NEW</a></li>
 					<li><a class="medium-ctgr"
-						href="http://localhost/jspPro/sentiBoard/list/kids_cloth.jsp">의류</a></li>
+						data-url="http://localhost/jspPro/sentiBoard/list/kids_cloth.jsp">의류</a></li>
 					<li><a class="medium-ctgr"
-						href="http://localhost/jspPro/sentiBoard/list/kids_shoesNbag.jsp">신발,가방</a></li>
+						data-url="http://localhost/jspPro/sentiBoard/list/kids_shoesNbag.jsp">신발,가방</a></li>
 					<li><a class="medium-ctgr"
-						href="http://localhost/jspPro/sentiBoard/list/kids_product.jsp">아동,홈</a></li>
+						data-url="http://localhost/jspPro/sentiBoard/list/kids_product.jsp">아동,홈</a></li>
 				</ul>
 				<!-- </ul> -->
 			</div>
@@ -1057,7 +1058,38 @@ body, input, select, textarea, button, a {
 			</ul>
 		</div>
 	</div>
-	<script>
+	<br>
+	<footer>
+		<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
+	</footer>
+<script>
+$(document).ready(function() {
+    $('.medium-ctgr').click(function(e) {
+        var urlToRequest = $(this).data('url');  // AJAX 요청을 위해 URL 가져오기
+
+        $.ajax({
+            type: "POST",  // POST 방식을 사용
+            url: urlToRequest,  // 요청할 URL 지정
+            data: {
+                // 필요한 데이터가 있다면 여기에 추가
+            },
+            success: function(response) {
+                // .photo_list와 .widget 내용을 업데이트
+                var updatedPhotoList = $(response).find('.photo_list').html();
+                var updatedWidget = $(response).find('.widget').html();
+                $('.photo_list').html(updatedPhotoList);
+                $('.widget').html(updatedWidget);
+
+                // 필요한 JavaScript 컴포넌트 재초기화
+                reinitializeJavaScript();
+            },
+            error: function(xhr, status, error) {
+                // 에러 처리
+                alert('콘텐츠 로딩 중 에러 발생: ' + error);
+            }
+        });
+    });
+});
 </script>
 </body>
 </html>
