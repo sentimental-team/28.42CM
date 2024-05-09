@@ -62,23 +62,55 @@ ol, ul, li {
  	   border-bottom: 1px solid #d4d4d4 !important;
     }
     .yj2{
-   		    margin: 0px 0px 20px !important;
- 	   		padding-top: 0px !important;
-   			 position: absolute !important;
- 		  top: 11px;
-  		  left: 160px;
+		margin: 0px 0px 0px !important;
+		padding-top: 0px !important;
+		position: absolute !important;
+		top: 25px;
+		left: 169px;
     }
     .yj3{
   		   margin: 80px 0 20px !important; 		
 		   position: absolute;
-  		   top: 0px !important;
+  		   top: -10px !important;
  		   left: 120px;
+ 		   padding: 0 0 0 50px !important;
   		  
     }
     .yj4{
 	    
 	    margin: 4px 10px 2px 15px;
 	    font-size: 28px !important;
+    }
+    
+    .jin{
+    	position: absolute;
+	    top: 30px !important;
+    	right: 38px !important;
+	    vertical-align: top;
+    }
+    
+    .jin2{
+	    width: 67px;
+	    position: absolute;
+	    height: 0px !important;
+	    padding: 0px !important;
+	    top: 0px !important;
+	    right: 10px !important;
+    }
+    
+    .jin3{
+    	overflow: hidden;
+	    display: inline-block;
+	    line-height: 100em;
+	    vertical-align: top;
+	    line-height: 0px !important;
+	    width: 25px !important;
+	    height: 25px !important;
+    	background: url('https://img.29cm.co.kr/next29cm/sp_29cm.png') -125px 0px / 200px 200px !important;
+    }
+    
+    .jin4{
+    	display: none !important;
     }
 
 
@@ -489,7 +521,7 @@ button {
 					</div>
 					<div class="head-mid">
 						<button class="search-btn">
-							<span class="search-text">검색</span>
+							<span class="search-text"></span>
 						</button>
 					</div>
 				</div>
@@ -567,18 +599,32 @@ $(document).ready(function(){
 	    // 스크롤 이벤트 발생 시 실행될 코드
 	    var scroll = $(window).scrollTop(); // 현재 스크롤 위치
 	    
-	    if(scroll >0){
+	    if(scroll > 20){
 	      // 특정 위치 이상으로 스크롤 될 때
 	      $('.head-main').addClass('yj'); 
 	      $('.mid-nav').addClass('yj2'); 
 	      $('.bottom').addClass('yj3');	     
 	      $('.mid-li').addClass('yj4');
+	      $('.menu-box').addClass('jin');
+	      $('.search-btn').addClass('jin2');
+	      $('.search-text').addClass('jin3');
+	      $('.my-page-text').addClass('jin4');
+	      $('.my-like-text').addClass('jin4');
+	      $('.my-bag-text').addClass('jin4');
+	      $('.my-logout-text').addClass('jin4');
 	    } else {
 	      // 특정 위치 미만으로 스크롤 될 때
 	      $('.head-main' ).removeClass('yj'); // 클래스명 제거
 	      $('.mid-nav').removeClass('yj2'); 
 	      $('.bottom').removeClass('yj3');
 	      $('.mid-li').removeClass('yj4');
+	      $('.menu-box').removeClass('jin');
+	      $('.search-btn').removeClass('jin2');
+	      $('.search-text').removeClass('jin3');
+	      $('.my-page-text').removeClass('jin4');
+	      $('.my-like-text').removeClass('jin4');
+	      $('.my-bag-text').removeClass('jin4');
+	      $('.my-logout-text').removeClass('jin4');
 	    }
 	  });
 	});
