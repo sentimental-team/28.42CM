@@ -962,6 +962,391 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
     font-size: var(--ruler-semantic-typography-title-xxl-bold-font-size);
     color: var(--ruler-semantic-color-common-accent);
 }
+
+.right-section-bot {
+    padding-top: 25px;
+    border-top: 1px solid rgb(228, 228, 228);
+}
+
+.right-section-bot-btn {
+    margin: 30px 0px 0px;
+}
+
+.right-section-bot2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.right-sec-bo2-box {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    min-width: fit-content;
+    min-height: fit-content;
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+.bot2-checkbox {
+    position: absolute;
+    z-index: -1;
+    top: 2px;
+    left: 2px;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    appearance: none;
+    visibility: hidden;
+    background: transparent;
+    border: 0px;
+}
+
+		.bot2-checbox-total-not {
+		    cursor: pointer;
+		    position: relative;
+		    z-index: 1;
+		    display: inline-block;
+		    color: rgb(48, 48, 51);
+		    vertical-align: top;
+		    padding: 5px 5px 5px 34px;
+		    font-size: 13px;
+		    line-height: 1.2;
+		}
+
+.bot2-checbox-total-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+   	color: rgb(10, 10, 10);
+}
+
+		.bot2-checbox-total-not::before {
+		    content: "";
+		    position: absolute;
+		    top: 0px;
+		    left: 0px;
+		    width: 20px;
+		    height: 20px;
+		    text-align: center;
+		    background: rgb(255, 255, 255);
+		    border: 1px solid rgb(212, 212, 212);
+		    border-radius: 2px;
+		    transition: background-color 0.2s ease 0s;
+		}
+		
+		.bot2-checbox-total-not::before {
+		    width: 24px;
+		    height: 24px;
+		    border-color: rgb(228, 228, 228);
+		    top: 50%;
+		    transform: translateY(-50%);
+		}
+		
+		.bot2-checbox-total-not::after {
+		    content: "";
+		    position: absolute;
+		    top: 3px;
+		    left: 7px;
+		    transform: rotate(45deg);
+		    box-sizing: content-box;
+		    width: 5px;
+		    height: 10px;
+		    border-style: solid;
+		    border-color: rgb(212, 212, 212);
+		    border-image: initial;
+		    border-width: 0px 1px 1px 0px;
+		}
+		
+		.bot2-checbox-total-not::after {
+		    width: 6px;
+		    height: 11px;
+		    top: 50%;
+		    left: 8.5px;
+		    margin-top: -8px;
+		    border-color: rgb(228, 228, 228);
+		}
+		
+
+.bot2-checbox-total::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 2px;
+    transition: background-color 0.2s ease 0s;
+}
+
+.bot2-checbox-total::before {
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgb(0, 0, 0) !important;
+    border-color: rgb(0, 0, 0) !important;
+}
+
+.bot2-checbox-total::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    transform: rotate(45deg);
+    box-sizing: content-box;
+    width: 5px;
+    height: 10px;
+    border-style: solid;
+    border-color: rgb(212, 212, 212);
+    border-image: initial;
+    border-width: 0px 1px 1px 0px;
+}
+
+.bot2-checbox-total::after {
+    width: 6px;
+    height: 11px;
+    top: 50%;
+    left: 8.5px;
+    margin-top: -8px;
+    border-color: rgb(228, 228, 228);
+}
+
+.right-sec-bot3-box {
+    margin-top: 5px;
+}
+
+.bot3-li {
+    display: flex;
+    align-items: flex-start;
+}
+
+.bot3-li-div {
+    position: relative;
+    display: inline-block;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-left: 32px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    color: rgb(160, 160, 160);
+    vertical-align: middle;
+}
+
+.bot3-li-div-span {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    min-width: fit-content;
+    min-height: fit-content;
+    line-height: 24px;
+    vertical-align: middle;
+    margin-left: -32px;
+}
+
+.bot3-li-div-span-input {
+    position: absolute;
+    z-index: -1;
+    top: 2px;
+    left: 2px;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    appearance: none;
+    visibility: hidden;
+    background: transparent;
+    border: 0px;
+}
+
+.right-section-bot3 {
+    margin-top: 5px;
+}
+
+		.bot3-li-div-span-input-text-not {
+		    cursor: pointer;
+		    position: relative;
+		    z-index: 1;
+		    display: inline-block;
+		    vertical-align: top;
+		    padding: 5px 5px 5px 34px;
+		    font-size: 14px;
+		    line-height: 22px;
+		    color: rgb(160, 160, 160);
+		}
+		
+		.bot3-li-div-span-input-text-not::before {
+		    content: "";
+		    position: absolute;
+		    top: 0px;
+		    left: 0px;
+		    width: 20px;
+		    height: 20px;
+		    text-align: center;
+		    background: rgb(255, 255, 255);
+		    border: 1px solid rgb(212, 212, 212);
+		    border-radius: 2px;
+		    transition: background-color 0.2s ease 0s;
+		}
+		
+		.bot3-li-div-span-input-text-not::before {
+		    width: 24px;
+		    height: 24px;
+		    border-color: rgb(228, 228, 228);
+		    top: 50%;
+		    transform: translateY(-50%);
+		}
+		
+		.bot3-li-div-span-input-text-not::after {
+		    content: "";
+		    position: absolute;
+		    top: 3px;
+		    left: 7px;
+		    transform: rotate(45deg);
+		    box-sizing: content-box;
+		    width: 5px;
+		    height: 10px;
+		    border-style: solid;
+		    border-color: rgb(212, 212, 212);
+		    border-image: initial;
+		    border-width: 0px 1px 1px 0px;
+		}
+		
+		.bot3-li-div-span-input-text-not::after {
+		    width: 6px;
+		    height: 11px;
+		    top: 50%;
+		    left: 8.5px;
+		    margin-top: -8px;
+		    border-color: rgb(228, 228, 228);
+		}
+		
+		.bot3-li-div-span-input-text-not::after {
+		    top: 50%;
+		    left: 8.5px;
+		    margin-top: -8px;
+		}
+
+.bot3-li-div-span-input-text {
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 5px 5px 34px;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgb(160, 160, 160);
+}
+
+.bot3-li-div-span-input-text::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 2px;
+    transition: background-color 0.2s ease 0s;
+}
+
+.bot3-li-div-span-input-text::before {
+    width: 24px;
+    height: 24px;
+    border-color: rgb(228, 228, 228);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bot3-li-div-span-input-text::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    transform: rotate(45deg);
+    box-sizing: content-box;
+    width: 5px;
+    height: 10px;
+    border-style: solid;
+    border-color: rgb(212, 212, 212);
+    border-image: initial;
+    border-width: 0px 1px 1px 0px;
+}
+
+.bot3-li-div-span-input-text::after {
+    width: 6px;
+    height: 11px;
+    top: 50%;
+    left: 8.5px;
+    margin-top: -8px;
+    border-color: rgb(228, 228, 228);
+}
+
+.bot3-li-div-span-input-text::after {
+    top: 50%;
+    left: 8.5px;
+    margin-top: -8px;
+}
+
+.more-view1 {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(160, 160, 160);
+    text-decoration: underline;
+    vertical-align: middle;
+}
+
+.KG-company {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ruler-scale-color-gray-400);
+    text-decoration: underline;
+    vertical-align: middle;
+}
+
+.right-section-bot4 {
+    margin: 30px 0px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+em {
+    color: rgb(255, 72, 0);
+}
+
+.right-section-bot-btn {
+    margin: 30px 0px 0px;
+}
+
+.right-section-bot-checkout {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-width: 40px;
+    min-height: 25px;
+    width: 100%;
+    height: 72px;
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    border-radius: 0px;
+}
+
+@supports (position:sticky) or (position:-webkit-sticky) {
+    .head-main {
+        position: relative;
+    }
+}
 </style>
 <body>
 <header>
@@ -1155,8 +1540,59 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 								</div>
 							</li>
 						</ul>
-						<div class=""></div>
-						<div class=""></div>
+						<div class="right-section-bot">
+							<div class="right-section-bot2">
+								<span class="right-sec-bo2-box">
+									<input class="bot2-checkbox" type="checkbox" />
+									<label class="bot2-checbox-total-not">
+										<span class="bot2-checkbox-total-text">주문 내용을 확인했으며, 아래 내용에 모두 동의합니다.</span>
+									</label>
+								</span>
+							</div>
+							<ul class="right-section-bot3">
+								<li class="bot3-li">
+									<div class="bot3-li-div">
+										<span class="bot3-li-div-span">
+											<input class="bot3-li-div-span-input" type="checkbox" />
+											<label class="bot3-li-div-span-input-not">
+												<span class="bot3-li-div-span-input-text">(필수) 개인정보 수집/이용 동의</span>
+											</label>
+										</span>
+										<button type="button" class="more-view1">보기</button>
+									</div>
+								</li>
+								<li class="bot3-li">
+									<div class="bot3-li-div">
+										<span class="bot3-li-div-span">
+											<input class="bot3-li-div-span-input" type="checkbox" />
+											<label class="bot3-li-div-span-input-not">
+												<span class="bot3-li-div-span-input-text">(필수) 개인정보 제3자 제공 동의</span>
+											</label>
+										</span>
+										<button type="button" class="more-view1">보기</button>
+									</div>
+								</li>
+								<li class="bot3-li">
+									<div class="bot3-li-div">
+										<span class="bot3-li-div-span">
+											<input class="bot3-li-div-span-input" type="checkbox" />
+											<label class="bot3-li-div-span-input-not">
+												<span class="bot3-li-div-span-input-text">(필수) 결제대행 서비스 이용약관</span>
+											</label>
+										</span>
+										<a class="KG-company" href="https://www.inicis.com/terms">(주)KG이니시스</a>
+									</div>
+								</li>
+							</ul>
+							<p class="right-section-bot4">
+							결제 및 계좌 안내 시 상호명은
+							<em>(주)무신사</em>
+							로 표기되니 참고 부탁드립니다.
+							</p>
+						</div>
+						<div class="right-section-bot-btn">
+							<button class="right-section-bot-checkout">CHECK OUT</button>
+						</div>
 					</div>
 				</section>
 			</aside>
@@ -1202,7 +1638,7 @@ $(".sec2-sale-btn-not").on("click", function(){
         $(".sec2-sale-box-not").addClass("sec2-sale-box");
     }
 })
-</script>
 
+</script>
 </body>
 </html>
