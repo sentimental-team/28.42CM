@@ -13,9 +13,6 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <!-- <script src="/jspPro/resources/cdn-main/example.js"></script> -->
-<header>
-	<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
-</header>
 <style>
 body {
 	min-height: 190vh;
@@ -409,7 +406,6 @@ class ="best_radio_box3 ":checked+.bb {
 .review-point {
 	margin-right: 2px;
 	color: rgb(255, 72, 0);
-	margin-left: 4px;
 }
 
 .heart>svg+.jj {
@@ -462,31 +458,24 @@ button {
 }
 </style>
 </head>
-
 <body>
+<header>
+	<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
+</header>
 	<div id="wrap">
 		<div id="best-left">
 			<button></button>
 			<div>
 				<!-- <button></button>  화면이 작아졌을 때 #best-left메뉴 나타나게 하는거 -->
-				<h2 class="best_title_left">여성가방</h2>
+				<h2 class="best_title_left">푸드</h2>
 				<!-- <ul class="left_bar_meue" > -->
 				<ul class="left-menu">
 					<li><a class="medium-ctgr" href="">ALL</a></li>
 					<li><a class="medium-ctgr" href="">NEW</a></li>
-					<li><a class="medium-ctgr" href="">숄더백</a></li>
-					<li><a class="medium-ctgr" href="">EXCLUSIVE</a></li>
-					<li><a class="medium-ctgr" href="">크로스백</a></li>
-					<li><a class="medium-ctgr" href="">토트백</a></li>
-					<li><a class="medium-ctgr" href="">에코,캔버스백</a></li>
-					<li><a class="medium-ctgr" href="">백팩</a></li>
-					<li><a class="medium-ctgr" href="">파우치</a></li>
-					<li><a class="medium-ctgr" href="">클러치</a></li>
-					<li><a class="medium-ctgr" href="">가방 엑세서리</a></li>
-					<li><a class="medium-ctgr" href="">해외브랜드</a></li>
-					<li><a class="medium-ctgr" href="">이너웨어</a></li>
-					<li><a class="medium-ctgr" href="">홈웨어</a></li>
-					<li><a class="medium-ctgr" href="">해외브랜드</a></li>
+					<li><a class="medium-ctgr" href="">선물세트</a></li>
+					<li><a class="medium-ctgr" href="">음료</a></li>
+					<li><a class="medium-ctgr" href="">가공식품</a></li>
+					<li><a class="medium-ctgr" href="">신선,냉장</a></li>
 				</ul>
 				<!-- </ul> -->
 			</div>
@@ -518,18 +507,18 @@ button {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef003eac0dc326bb6a5f556c2e2f99.jpg"
+									src="https://img.29cm.co.kr/item/202404/11ef05b99d42e469bb14aba69c0fd742.png?width=600"
 									class="ff">
 							</div>
 						</a> 
 						<div class="gg">
-							<a class="hh" href="">마땡킴</a> <a
-								title="[29CM 단독]_MINI BUCKLE BAG 7color">
+							<a class="hh" href="">온더홀</a> <a
+								title="[당일배송] 온더홀 까눌레 4구 세트">
 								<div class="j">
-									<h5 class="jj">[29CM 단독]_MINI BUCKLE BAG 7color</h5>
+									<h5 class="jj">[당일배송] 온더홀 까눌레 4구 세트</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk">5%</span> <strong class="qqq">90,250</strong>
+										<span class="kkk"></span> <strong class="qqq">16,800</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -546,7 +535,7 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">14,715</h5>
+									<h5 class="jj">240</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -556,8 +545,8 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">4.8</div>
-									<div class="review-count">(1183)</div>
+									<div class="review-point">5</div>
+									<div class="review-count">(3)</div>
 								</a>
 							</div>
 						</div>
@@ -569,18 +558,18 @@ button {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef0396e9283a71bb142f9ca532c66b.png"
+									src="https://img.29cm.co.kr/item/202308/11ee4315d967d9ff8a69c7b418cbe14c.jpeg?width=600"
 									class="ff">
 							</div>
 						</a> 
 						<div class="gg">
-							<a class="hh" href="">코오롱스포츠</a> <a
-								title="KS X INAP 남녀공용 데일리 백팩 QEBXX24801BLK">
+							<a class="hh" href="">맥파이앤타이거</a> <a
+								title="[어버이날, 스승의날]_[선물포장] 티머그 & 논카페인 잎차 세트">
 								<div class="j">
-									<h5 class="jj">KS X INAP 남녀공용 데일리 백팩 QEBXX24801BLK</h5>
+									<h5 class="jj">[어버이날, 스승의날]_[선물포장] 티머그 & 논카페인 잎차 세트</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk">10%</span> <strong class="qqq">106,200</strong>
+										<span class="kkk">10%</span> <strong class="qqq">40,950</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -597,7 +586,7 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">41,275</h5>
+									<h5 class="jj">6,949</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -607,8 +596,8 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">4.8</div>
-									<div class="review-count">(15034)</div>
+									<div class="review-point">4.9</div>
+									<div class="review-count">(331)</div>
 								</a>
 							</div>
 						</div>
