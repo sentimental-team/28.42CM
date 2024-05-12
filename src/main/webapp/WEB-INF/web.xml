@@ -21,7 +21,7 @@
 	</resource-ref>
 
 	<!-- 2. 인코딩 필터 -->
-	 
+  
 	<filter>
 		<filter-name>characterEncodingFilter</filter-name>
 		<filter-class>com.filter.CharacterEncodingFilter</filter-class>
@@ -35,7 +35,6 @@
 		<url-pattern>/*</url-pattern> 
 		<dispatcher>REQUEST</dispatcher>
 	</filter-mapping>
-
 	
 	<!-- 3.  컨트롤러 서블릿 등록 -->
 <!-- 	<servlet>
@@ -55,12 +54,3 @@
 		<url-pattern>*.ss</url-pattern>	
 	</servlet-mapping>  -->
 </web-app>
-
-
-	<!-- 3. 컨트롤러 서블릿 등록 -->
-	<!-- <servlet> <description>listBoard</description> <servlet-name>dispatcher</servlet-name> 
-		<servlet-class>days09.FileTestServlet</servlet-class> <init-param> <description>URL과 
-		Handler 등록 파일 경로</description> <param-name>path</param-name> <param-value>/days09/FileTestServlet</param-value> 
-		</init-param> <load-on-startup>1</load-on-startup> </servlet> <servlet-mapping> 
-		<servlet-name>dispatcher</servlet-name> <url-pattern>*.ss</url-pattern> </servlet-mapping> -->
-
