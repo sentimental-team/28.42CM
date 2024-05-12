@@ -545,7 +545,7 @@ button {
 				<!-- <ul class="left_bar_meue" > -->
 				<ul class="left-menu">
 					 	<%
-              Iterator<Medium_CtgrVO> ir =mclist.iterator();
+              Iterator<Medium_CtgrVO> ir = mclist.iterator();
               while (ir.hasNext()) {
               mcvo = ir.next();
          %>
