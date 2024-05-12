@@ -10,7 +10,7 @@
     
    
  <%
- System.out.print("small_ctgr_json()...");
+ System.out.println("small_ctgr_json()...");
 Connection conn = null;
 PreparedStatement pstmt = null;
 ResultSet rs = null;
