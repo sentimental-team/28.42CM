@@ -30,18 +30,16 @@ body {
 }
 
 .kids_title_left a.large-ctgr {
-    color: black; 
-    text-decoration: none; /* 클릭 후에도 줄 안생기게 하는 css */
+	color: black;
+	text-decoration: none; /* 클릭 후에도 줄 안생기게 하는 css */
 }
 
-.kids_title_left a.large-ctgr:link,
-.kids_title_left a.large-ctgr:visited,
-.kids_title_left a.large-ctgr:hover,
-.kids_title_left a.large-ctgr:focus,
-.kids_title_left a.large-ctgr:active {
-    color: black;
-    text-decoration: none;
-    /* 클릭 후 기존 색 유지 css */
+.kids_title_left a.large-ctgr:link, .kids_title_left a.large-ctgr:visited,
+	.kids_title_left a.large-ctgr:hover, .kids_title_left a.large-ctgr:focus,
+	.kids_title_left a.large-ctgr:active {
+	color: black;
+	text-decoration: none;
+	/* 클릭 후 기존 색 유지 css */
 }
 
 #kids-left {
@@ -429,45 +427,45 @@ button {
 	outline: none;
 }
 
-.button:focus,
-.button:active {
-    background-color: var(--dark-black);
+.button:focus, .button:active {
+	background-color: var(- -dark-black);
 }
 
 .button:hover {
-    background-color: darken(var(--button-color), 10%);
+	background-color: darken(var(- -button-color), 10%);
 }
+
 .smallCategory {
 	-webkit-box-align: center;
-    align-items: center;
-    display: flex;
-    flex-flow: wrap;
-    -webkit-box-pack: start;
-    justify-content: flex-start;
+	align-items: center;
+	display: flex;
+	flex-flow: wrap;
+	-webkit-box-pack: start;
+	justify-content: flex-start;
 }
 
 .smallCategory_btn {
 	position: relative;
-    padding: 11px 20px;
+	padding: 11px 20px;
 }
 
 .s_span {
-    display: inline-block;
-    font-family: var(--ruler-semantic-typography-text-l-bold-font-family);
-    font-weight: var(--ruler-semantic-typography-text-l-bold-font-weight);
-    line-height: var(--ruler-semantic-typography-text-l-bold-line-height);
-    font-size: var(--ruler-semantic-typography-text-l-bold-font-size);
-    color: #737272;
+	display: inline-block;
+	font-family: var(- -ruler-semantic-typography-text-l-bold-font-family);
+	font-weight: var(- -ruler-semantic-typography-text-l-bold-font-weight);
+	line-height: var(- -ruler-semantic-typography-text-l-bold-line-height);
+	font-size: var(- -ruler-semantic-typography-text-l-bold-font-size);
+	color: #737272;
 }
 
 .s_span::after {
-    content: "";
-    position: absolute;
-    right: 0px;
-    width: 1px;
-    height: 20px;
-    background: var(--ruler-semantic-color-border-line);
-    color: #e4e4e4;
+	content: "";
+	position: absolute;
+	right: 0px;
+	width: 1px;
+	height: 20px;
+	background: var(- -ruler-semantic-color-border-line);
+	color: #e4e4e4;
 }
 </style>
 <style>
@@ -545,8 +543,13 @@ button {
 }
 
 body, input, select, textarea, button, a {
-    -webkit-text-size-adjust: none;
-    font-family: 'campton', 'Apple SD Gothic Neo', NanumBarunGothic, '나눔바른고딕', Malgun Gothic, '맑은 고딕', dotum, sans-serif;
+	-webkit-text-size-adjust: none;
+	font-family: 'campton', 'Apple SD Gothic Neo', NanumBarunGothic,
+		'나눔바른고딕', Malgun Gothic, '맑은 고딕', dotum, sans-serif;
+}
+
+.bold {
+    font-weight: bold; /* 글자 굵게 */
 }
 </style>
 </head>
@@ -559,7 +562,10 @@ body, input, select, textarea, button, a {
 			<button></button>
 			<div>
 				<!-- <button></button>  화면이 작아졌을 때 #kids-left메뉴 나타나게 하는거 -->
-				<h2 class="kids_title_left"><a class="large-ctgr" href="http://localhost/jspPro/sentiBoard/view/kidsBoardView.jsp">유아,아동</a></h2>
+				<h2 class="kids_title_left">
+					<a class="large-ctgr"
+						href="http://localhost/jspPro/sentiBoard/view/kidsBoardView.jsp">유아,아동</a>
+				</h2>
 				<!-- <ul class="left_bar_meue" > -->
 				<ul class="left-menu">
 					<li><a class="medium-ctgr"
@@ -640,8 +646,7 @@ body, input, select, textarea, button, a {
 							</div>
 						</a>
 						<div class="gg">
-							<a class="hh" href="">테켓</a> <a
-								title="Kids Plan Tee Navy">
+							<a class="hh" href="">테켓</a> <a title="Kids Plan Tee Navy">
 								<div class="j">
 									<h5 class="jj">Kids Plan Tee Navy</h5>
 									<strong class="jjj"></strong>
@@ -694,7 +699,8 @@ body, input, select, textarea, button, a {
 							<a class="hh" href="">마리뗴 앙팡</a> <a
 								title="140, 150 사이즈 5/14 예약_ENFANT CLASSIC LOGO RINGER TEE white">
 								<div class="j">
-									<h5 class="jj">140, 150 사이즈 5/14 예약_ENFANT CLASSIC LOGO RINGER TEE white</h5>
+									<h5 class="jj">140, 150 사이즈 5/14 예약_ENFANT CLASSIC LOGO
+										RINGER TEE white</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
 										<span class="kkk">10%</span> <strong class="qqq">35,100</strong>
@@ -791,8 +797,7 @@ body, input, select, textarea, button, a {
 							</div>
 						</a>
 						<div class="gg">
-							<a class="hh" href="">타티네쇼콜라</a> <a
-								title="TC)GN딸기나시내의">
+							<a class="hh" href="">타티네쇼콜라</a> <a title="TC)GN딸기나시내의">
 								<div class="j">
 									<h5 class="jj">TC)GN딸기나시내의</h5>
 									<strong class="jjj"></strong>
@@ -988,7 +993,8 @@ body, input, select, textarea, button, a {
 							</div>
 						</a>
 						<div class="gg">
-							<a class="hh" href="">피아네르</a> <a title="kids_로고 자수 오버핏 반팔&쇼츠 셋업 (4color)">
+							<a class="hh" href="">피아네르</a> <a
+								title="kids_로고 자수 오버핏 반팔&쇼츠 셋업 (4color)">
 								<div class="j">
 									<h5 class="jj">kids_로고 자수 오버핏 반팔&쇼츠 셋업 (4color)</h5>
 									<strong class="jjj"></strong>
@@ -1087,8 +1093,7 @@ body, input, select, textarea, button, a {
 							</div>
 						</a>
 						<div class="gg">
-							<a class="hh" href="">위글위글</a> <a
-								title="키즈 로브 - Dont Panic">
+							<a class="hh" href="">위글위글</a> <a title="키즈 로브 - Dont Panic">
 								<div class="j">
 									<h5 class="jj">키즈 로브 - Dont Panic</h5>
 									<strong class="jjj"></strong>
@@ -1130,11 +1135,16 @@ body, input, select, textarea, button, a {
 			</ul>
 		</div>
 	</div>
-<br>
+	<br>
 	<footer>
 		<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
 	</footer>
 <script>
+function reinitializeJavaScript() {
+	    // 재초기화 로직, 예: 이벤트 리스너 재설정, 플러그인 재활성화 등
+	    console.log('Components reinitialized.');
+}
+	
 $(document).ready(function() {
     $('.medium-ctgr').click(function(e) {
         e.preventDefault();  // 기본 동작 방지
@@ -1159,6 +1169,17 @@ $(document).ready(function() {
                 alert('Error loading new content: ' + error);
             }
         });
+    });
+});
+</script>
+<script>
+$(document).ready(function() {
+    $('.smallCategory_btn').click(function() {
+        // 모든 버튼에서 'bold' 클래스를 제거합니다.
+        $('.smallCategory_btn').removeClass('bold');
+
+        // 클릭된 버튼에만 'bold' 클래스를 추가합니다.
+        $(this).addClass('bold');
     });
 });
 </script>
