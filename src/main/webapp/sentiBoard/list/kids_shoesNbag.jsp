@@ -453,6 +453,9 @@ button {
 
 .s_span {
     display: inline-block;
+    font-family: var(--ruler-semantic-typography-text-l-bold-font-family);
+    font-weight: var(--ruler-semantic-typography-text-l-bold-font-weight);
+    line-height: var(--ruler-semantic-typography-text-l-bold-line-height);
     font-size: var(--ruler-semantic-typography-text-l-bold-font-size);
     color: #737272;
 }
@@ -545,11 +548,6 @@ body, input, select, textarea, button, a {
     -webkit-text-size-adjust: none;
     font-family: 'campton', 'Apple SD Gothic Neo', NanumBarunGothic, '나눔바른고딕', Malgun Gothic, '맑은 고딕', dotum, sans-serif;
 }
-
-.bold {
-    font-weight: bold; /* 글자 굵게 */
-}
-
 </style>
 </head>
 <body>
@@ -1125,11 +1123,6 @@ body, input, select, textarea, button, a {
 		<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
 	</footer>
 <script>
-function reinitializeJavaScript() {
-    // 재초기화 로직, 예: 이벤트 리스너 재설정, 플러그인 재활성화 등
-    console.log('Components reinitialized.');
-}
-
 $(document).ready(function() {
     $('.medium-ctgr').click(function(e) {
         e.preventDefault();  // 기본 동작 방지
@@ -1154,17 +1147,6 @@ $(document).ready(function() {
                 alert('Error loading new content: ' + error);
             }
         });
-    });
-});
-</script>
-<script>
-$(document).ready(function() {
-    $('.smallCategory_btn').click(function() {
-        // 모든 버튼에서 'bold' 클래스를 제거합니다.
-        $('.smallCategory_btn').removeClass('bold');
-
-        // 클릭된 버튼에만 'bold' 클래스를 추가합니다.
-        $(this).addClass('bold');
     });
 });
 </script>
