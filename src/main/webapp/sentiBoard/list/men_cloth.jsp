@@ -164,6 +164,161 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
          });
      });
 	       
+<<<<<<< HEAD
+	   $(".medium_ctgr_id111").on("click", function(){
+		   /*medium카테고리를 클릭 했을 떄 해당 카테고리의 상품 전부(All)를 보여주는 코드  */
+    	  
+          let selectedMedium_ctgr_id = $(this).val();
+          $.ajax({
+             url: "../json/product_json.jsp", 
+             dataType: "json",
+             type: "GET", 
+             data: { medium_ctgr_id: selectedMedium_ctgr_id }, 
+             cache: false,
+             success: function(data){           	 
+                  $(".photo_list").empty(); 
+                 $(data.Product).each(function(index, element){	                     
+                     $(".photo_list").append(`	
+                    	<li class="photo1">
+         					<div class="cc">
+         						<a href="#">
+         							<div class="dd">
+         								<img alt=""
+         									src="\${element.pd_image_url}"
+         									class="ff">
+         							</div>
+         						</a> 
+         						<div class="gg">
+         							<a class="hh" href="#">\${element.brand_name}</a> <a
+         								title="\${element.pd_name}">
+         								<div class="j">
+         									<h5 class="jj">\${element.pd_name} (10 Color)</h5>
+         									<strong class="jjj"></strong>
+         									<div class="01">
+         										<span class="kkk"></span> <strong class="qqq">\${element.pd_price}</strong>
+         									</div>
+         									<ul class="eee">
+         										<li class="yyy"></li>
+         										<li></li>
+         									</ul>
+         								</div>
+         							</a>
+         							<div class="ppp">
+         								<button class="heart">
+         									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
+         										viewBox="0 0 20 20">
+         										<path
+         											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+         											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+         											stroke-width="1.5" />
+         									</svg>
+         									<h5 class="jj">좋아요 갯수 카운팅하는 쿼리문 작성해야함</h5>
+         								</button>
+         								<a href="#" class="review"> <svg
+         										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+         										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
+         								<path
+         											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
+         											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+         											stroke-width="1.5"></path>
+         								</svg>
+         									<div class="review-point">\${element.pd_grade}</div>
+         									<div class="review-count">평점 준 사람들 카운팅 하는 쿼리문 필요함</div>
+         								</a>
+         							</div>
+         						</div>
+         					</div>
+         				</li>                   		 
+                           `);	                     
+  								 });  //data.small_ctgr		       
+                												 
+            						 },//success
+         			  	  error: function(){
+        		      	   alert("error");
+           						  }	            	             
+       					   });
+   												   });
+	   
+	   
+	   /*
+	   $(".right_radio").on("click", function(){
+		   /*small카테고리를 클릭 했을 떄 해당 카테고리의 상품을(ex 무스탕, 폴리스, 야상) 보여주는 코드  */
+		   /*  input타입의 name 속성과 label타입의 for 속성을 이용해서 클릭 이벤크 만들기. -> 아직 안만들어서
+		   클릭 이벤트 자체가 발생하지 않는다.*/
+		   /*  현재 문제 product_small_jason으로 아예 넘어가지 않음 즉 클릭 이벤크가 발생하지 않는다. */
+    	/*  
+          let selectedSmall_ctgr_id = $(this).val(); 
+          $.ajax({
+             url: "../json/product(small)_json.jsp", 
+             dataType: "json",
+             type: "GET", 
+             data: { small_ctgr_id: selectedSmall_ctgr_id }, 
+             cache: false,
+             success: function(data){           	 
+                  $(".photo_list").empty(); 
+                 $(data.jsonProduct_small).each(function(index, element){	                     
+                     $(".photo_list").append(`	
+                    	<li class="photo1">
+         					<div class="cc">
+         						<a href="#">
+         							<div class="dd">
+         								<img alt=""
+         									src="\${element.pd_image_url}"
+         									class="ff">
+         							</div>
+         						</a> 
+         						<div class="gg">
+         							<a class="hh" href="#">\${element.brand_name}</a> <a
+         								title="\${element.pd_name}">
+         								<div class="j">
+         									<h5 class="jj">\${element.pd_name} (10 Color)</h5>
+         									<strong class="jjj"></strong>
+         									<div class="01">
+         										<span class="kkk"></span> <strong class="qqq">\${element.pd_price}</strong>
+         									</div>
+         									<ul class="eee">
+         										<li class="yyy"></li>
+         										<li></li>
+         									</ul>
+         								</div>
+         							</a>
+         							<div class="ppp">
+         								<button class="heart">
+         									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
+         										viewBox="0 0 20 20">
+         										<path
+         											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+         											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+         											stroke-width="1.5" />
+         									</svg>
+         									<h5 class="jj">좋아요 갯수 카운팅하는 쿼리문 작성해야함</h5>
+         								</button>
+         								<a href="#" class="review"> <svg
+         										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+         										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
+         								<path
+         											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
+         											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+         											stroke-width="1.5"></path>
+         								</svg>
+         									<div class="review-point">\${element.pd_grade}</div>
+         									<div class="review-count">평점 준 사람들 카운팅 하는 쿼리문 필요함</div>
+         								</a>
+         							</div>
+         						</div>
+         					</div>
+         				</li>                   		 
+                           `);	                     
+  								 });  //data.small_ctgr		       
+                												 
+            						 },//success
+         			  	  error: function(){
+        		      	   alert("error");
+           						  }	            	             
+       					   });
+   												   });
+=======
+>>>>>>> bbf94f7620d3847c8c641bfe8a92beab5441cbe9
 	  
 	   
 	</script>

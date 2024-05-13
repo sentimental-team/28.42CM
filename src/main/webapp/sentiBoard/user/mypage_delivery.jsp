@@ -1,567 +1,80 @@
+<%@page import="java.util.Date"%>
+<%@page import="com.util.JdbcUtil"%>
+<%@page import="java.sql.SQLException"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="domain.DeliveryVO"%>
+<%@page import="com.util.ConnectionProvider"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="com.util.DBConn"%>
+<%@page import="java.sql.Connection"%>
 <%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%
+	Connection conn = null;
+
+	PreparedStatement pstmt = null;
+	ResultSet rs = null;
+	String sql = "SELECT b.brand_name, p.pd_name, p.pd_price, po.PD_OPTION_NAME, de.DELIVERY_STATE, de.DELIVERY_PAY, de.delivery_date "
+			+ "FROM product p JOIN large_ctgr lc ON p.large_ctgr_id = lc.large_ctgr_id "
+            + "JOIN product_option po ON lc.large_ctgr_id = po.large_ctgr_id "
+            + "JOIN brand b ON p.brand_id = b.brand_id "
+            + "JOIN pay pay ON p.pd_id = pay.pd_id "
+            + "JOIN delivery de ON pay.pay_id = de.pay_id "
+            + "WHERE de.delivery_state = 1";
+		
+	String brand_name;
+	String pd_name;
+	int pd_price;
+	String pd_option_name;
+	String delivery_state;
+	int delivery_pay;
+	Date delivery_date;
+	
+	DeliveryVO dvo = null;
+	ArrayList<DeliveryVO> dlist = null;
+	
+	try{
+		conn = ConnectionProvider.getConnection();
+		pstmt = conn.prepareStatement(sql);
+		rs = pstmt.executeQuery();
+		
+		if(rs.next()){
+			dlist = new ArrayList();
+			do{
+				brand_name = rs.getString("brand_name");
+				pd_name = rs.getString("pd_name");
+				pd_price = rs.getInt("pd_price");
+				pd_option_name = rs.getString("pd_option_name");
+				delivery_state = rs.getString("delivery_state");
+				delivery_pay = rs.getInt("delivery_pay");
+				delivery_date = rs.getDate("delivery_date");
+				
+				dvo = new DeliveryVO(brand_name, pd_name, pd_price, pd_option_name, delivery_state, delivery_pay, delivery_date);
+			
+				dlist.add(dvo);
+			} while(rs.next());
+		}// if
+		
+		} catch (SQLException e){
+			e.printStackTrace();
+		} finally{
+			JdbcUtil.close(rs);
+			JdbcUtil.close(pstmt);
+			JdbcUtil.close(conn);
+		}
+%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<link rel="stylesheet" href="http://localhost/jspPro/resources/cdn-main/example.css">
-<script src="http://localhost/jspPro/resources/cdn-main/example.js"></script>
-<style>
-
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
-a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, 
-small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, 
-form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, 
-canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, 
-section, summary, time, mark, audio, video, input, textarea, button, select {
-    margin: 0;
-    padding: 0;
-}
-
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-div {
-    display: block;
-    unicode-bidi: isolate;
-}
-
-ol, ul, li {
-    list-style: none;
-}
-
-article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
-    display: block;
-}
-
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    unicode-bidi: isolate;
-}
-
-@media (min-width: 541px) {
-    .mid-div {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-        -webkit-justify-content: space-between;
-        justify-content: space-between;
-        min-width: 1000px;
-        max-width: 1600px;
-        margin: 40px auto 0;
-        padding: 0 50px 100px;
-    }
-}
-
-.mid-div {
-    position: relative;
-}
-
-@media (min-width: 541px) {
-    .mid-left {
-        flex: 0 0 auto;
-        width: 180px;
-        margin-right: 50px;
-    }
-}
-
-.name {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 1;
-    color: rgb(0, 0, 0);
-    word-break: break-all;
-}
-
-.like {
-    margin: 27px 0px 30px;
-    font-size: 14px;
-}
-
-.like-li {
-    padding: 4px 0px 5px;
-}
-
-.like-a {
-    font-size: 15px;
-    font-weight: 600;
-    color: rgb(48, 48, 51);
-}
-
-a {
-    -webkit-text-decoration: none;
-    text-decoration: none;
-    outline: none;
-}
-
-@media (min-width: 541px) {
-    .mid-top {
-        position: absolute;
-        top: 0px;
-        right: 50px;
-        left: 280px;
-        height: 150px;
-        padding: 25px 0px;
-    }
-}
-
-@media (min-width: 541px) {
-    .mid-top {
-        height: 150px;
-        padding: 25px 0px;
-    }
-}
-
-.mid-top {
-    display: flex;
-    line-height: 1;
-    background-color: rgb(48, 48, 51);
-}
-
-.user-grade {
-    position: relative;
-    padding: 0px 20px;
-    width: 50%;
-    border-left: none;
-}
-
-@media (min-width: 541px) {
-    .grade1 {
-        display: flex;
-        flex-direction: column;
-        -webkit-box-pack: justify;
-        justify-content: space-between;
-        height: 100%;
-    }
-}
-
-.grade1 {
-    /* display: block; */
-    color: rgb(255, 255, 255);
-}
-
-.sale {
-    position: absolute;
-    right: 20px;
-    bottom: 0px;
-    height: 32px;
-    padding: 0px 20px;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 30px;
-    color: rgb(255, 255, 255);
-    border: 1px solid rgb(228, 228, 228);
-    border-radius: 16px;
-}
-
-.grade2 {
-    position: relative;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    font-size: 14px;
-    font-weight: 600;
-    color: rgb(160, 160, 160);
-}
-
-.grade2::after {
-    content: "";
-    transform: rotate(45deg);
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    margin-left: 3px;
-    border-top: 1px solid rgb(160, 160, 160);
-    border-right: 1px solid rgb(160, 160, 160);
-}
-
-@media (max-width: 1440px) {
-    .grade-color {
-        font-size: 30px;
-    }
-}
-
-.grade-color {
-    display: block;
-    font-size: 50px;
-    font-weight: 400;
-    transition: font-size 0.25s ease-in-out 0s;
-}
-
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-    unicode-bidi: isolate;
-}
-
-.user-coupon, .user-mileage {
-    position: relative;
-    width: 25%;
-    padding: 0px 20px;
-    border-left: 1px solid rgb(93, 93, 93);
-}
-
-.shop-info {
-    margin-bottom: 8px;
-    font-size: 17px;
-    line-height: 26px;
-    font-weight: 800;
-    color: rgb(48, 48, 51);
-}
-
-h4 {
-    display: block;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
-}
-
-.delivery-view {
-    display: inline-block;
-    padding: 10px 0px;
-    font-size: 15px;
-    color: rgb(48, 48, 51);
-    font-weight: 600;
-}
-
-.shop-info-a {
-    display: inline-block;
-    padding: 10px 0px;
-    font-size: 15px;
-    color: rgb(93, 93, 93);
-    font-weight: 200;
-}
-
-.id {
-    margin-top: 30px;
-}
-
-
-.id-info {
-    margin-bottom: 8px;
-    font-size: 17px;
-    line-height: 26px;
-    font-weight: 800;
-    color: rgb(48, 48, 51);
-}
-
-.id-a {
-    display: inline-block;
-    padding: 10px 0px;
-    font-size: 15px;
-    color: rgb(93, 93, 93);
-    font-weight: 200;
-}
-
-.service-center {
-    margin-top: 30px;
-}
-
-.service-info {
-    margin-bottom: 8px;
-    font-size: 17px;
-    line-height: 26px;
-    font-weight: 800;
-    color: rgb(48, 48, 51);
-}
-
-.service-a {
-    display: inline-block;
-    padding: 10px 0px;
-    font-size: 15px;
-    color: rgb(93, 93, 93);
-    font-weight: 200;
-}
-
-.information {
-    position: relative;
-    margin-top: 30px;
-}
-
-.service-center-guide {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-    width: 1px;
-    height: 1px;
-    margin: 0px;
-    padding: 0px;
-    white-space: nowrap;
-}
-
-.service-email {
-    font-size: 12px;
-    line-height: 1;
-    color: rgb(160, 160, 160);
-}
-
-.go-go {
-    margin-top: 20px;
-}
-
-.go-go-go {
-    display: block;
-    box-sizing: border-box;
-    width: 150px;
-    height: 40px;
-    padding-left: 12px;
-    font-size: 12px;
-    line-height: 38px;
-    color: rgb(48, 48, 51);
-    border: 1px solid rgb(228, 228, 228);
-    border-radius: 2px;
-}
-
-@media (min-width: 541px) {
-    .mid-mid {
-        -webkit-flex: 1;
-        -ms-flex: 1;
-        flex: 1;
-        padding-top: 190px;
-    }
-}
-
-.mid-deli-view {
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 1.5;
-    color: #000000;
-}
-
-.mid-deli-info {
-    margin-top: 10px;
-}
-
-.mid-deli-chart {
-    display: flex;
-    border-top: 4px solid black;
-}
-
-.item-info {
-    padding: 20px;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    flex: 1 1 0%;
-}
-
-.deli-charge {
-    padding: 20px;
-    font-weight: 700;
-    text-align: center;
-    width: min(20%, 140px);
-    font-size: 18px;
-}
-
-.deli-ing {
-    padding: 20px;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    width: min(28%, 200px);
-}
-
-.buy-review {
-    padding: 20px;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    width: min(22%, 223px);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    white-space: nowrap;
-}
-
-.deli-text {
-    border-top: 2px solid black;
-    text-align: center;
-    padding: 40px 0px;
-    font-size: 18px;
-    border-bottom: 1px solid black;
-}
-
-.deli-guide {
-    margin-top: 90px;
-}
-
-.guide-text {
-    font-size: 22px;
-    color: #000000;
-    line-height: 1.5;
-    font-weight: 500;
-    padding-bottom: 8px;
-    border-bottom: 4px solid #000000;
-}
-
-.guide-main {
-    margin-top: 45px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: center;
-    word-break: keep-all;
-    word-wrap: break-word;
-}
-
-.guide-circle {
-    position: relative;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    width: 13%;
-    margin-right: 4.4%;
-}
-
-.circle {
-    display: block;
-    padding-top: 100%;
-    position: relative;
-    border-radius: 50%;
-    background-color: #000000;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 1;
-}
-
-.circle-text {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.under-text {
-    margin-top: 8px;
-    font-size: 14px;
-    line-height: 1.4;
-}
-
-.css-u4n2w6 {
-    width: 8px;
-    height: 16px;
-    position: absolute;
-    right: -20%;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    width: 10px;
-    height: 20px;
-}
-
-.bottom-text {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 20px;
-}
-
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-}
-
-.first-text {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    position: relative;
-    padding-top: 25px;
-    border-top: 1px solid #303033;
-    font-size: 16px;
-    font-weight: 700;
-    text-align: center;
-    box-sizing: border-box;
-    margin-right: 4.4%;
-}
-
-.second-text {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    position: relative;
-    padding-top: 25px;
-    border-top: 1px solid #303033;
-    font-size: 16px;
-    font-weight: 700;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.first-text::before {
-    left: 0;
-}
-
-.first-text::after {
-    right: 0;
-}
-
-.first-text::before, .first-text::after {
-    position: absolute;
-    top: -4px;
-    width: 1px;
-    height: 8px;
-    background-color: #303033;
-    content: '';
-}
-
-.second-text::before {
-    left: 0;
-}
-
-.second-text::after {
-    right: 0;
-}
-
-.second-text::before, .second-text::after {
-    position: absolute;
-    top: -4px;
-    width: 1px;
-    height: 8px;
-    background-color: #303033;
-    content: '';
-}
-
-
-
-.footer{
-	min-width: 900px;
-    padding: 0 50px;
-}
-
-</style>
+<link rel="stylesheet" href="../css/mypage_delivery.css">
 </head>
+<header>
+	<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
+</header>
 <body>
-	<header>
-		<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
-	</header>
 	<div class="mid-div">
 		<div class="mid-left">
 			<div class="mid-left-top">
@@ -672,7 +185,67 @@ p {
 						<div class="deli-ing">진행상태</div>
 						<div class="buy-review">구매확정 및 리뷰</div>
 					</section>
-					<p class="deli-text">주문내역이 없습니다.</p>
+					<ol class="deli-ok">
+					
+					<!-- 여기서부터 데이터 뿌려주기 -->
+						<li class="deli-ok2">
+							<div class="deli-ok-info">
+								<span class="deli-ok-date">
+									<span class="deli-ok-date2">주문일자</span>
+									sysdate
+								</span>
+								<span class="deli-ok-ordernum">
+									<span class="deli-ok-ordernum2">주문번호</span>
+									주문번호 시퀀스값
+								</span>
+							</div>
+							<ul class="deli_ok-info2">
+								<li class="deli-ok-info3">
+									<ul class="deli-ok-info4">
+										<li class="deli-ok-info5">
+											<a class="deli-ok-info-url" href="">
+												<div class="deli-ok-info6">
+													<div class="deli-ok-info-img">
+														<img src="" alt="" loading="lazy"/>
+													</div>
+													<div class="deli-ok-info7">
+														<p class="deli-ok-brandname">브랜드명</p>
+														<p class="deli-ok-pd-title">상품명</p>
+														<ul class="deli-ok-option">
+															<li>옵션값</li>
+														</ul>
+														<p class="deli-ok-pd-price">상품가격</p>
+													</div>
+												</div>
+											</a>
+											<div class="deli-ok-info7-padding"></div>
+											<div class="deli-ok-info8">
+												<div class="deli-ok-info9">
+													<div>
+														<p class="deli-ok-delistate">배송중,배송완료</p>
+													</div>
+												</div>
+											</div>
+											<div class="deli-ok-info10">
+												<div class="deli-ok-info-btn">
+													<button type="button" class="deli-ok-review">리뷰작성</button>
+													<a class="one-one-inquiry" href="#">1:1문의</a>
+												</div>
+												<div class="deli-ok-buy">구매확정</div>
+											</div>
+										</li>
+									</ul>
+									<div class="deli-ok-charge">
+										<span class="deli-ok-charge2">배송비</span>
+									</div>
+								</li>
+							</ul>
+						</li>
+						
+						
+					</ol>
+					<!-- 주문 내역이 없을 시 -->
+					<!-- <p class="deli-text">주문내역이 없습니다.</p> -->
 				</section>
 			</section>
 			<section class="deli-guide">
@@ -758,6 +331,11 @@ p {
 			</section>
 		</div>
 	</div>
-	<footer class="footer"></footer>
+<footer>
+	<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
+</footer>
 </body>
+<script>
+	
+</script>
 </html>
