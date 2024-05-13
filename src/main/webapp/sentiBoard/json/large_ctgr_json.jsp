@@ -10,19 +10,20 @@
     
    
  <%
- System.out.print("small_ctgr_json()...");
+ System.out.print("large_ctgr_json()...");
 Connection conn = null;
 PreparedStatement pstmt = null;
 ResultSet rs = null;
 
-String pMedium_ctgr_id = request.getParameter("medium_ctgr_id");
+String pMain_ctgr_id = request.getParameter("main_ctgr_id");
 
+if(pMain_ctgr_id == null || pMain_ctgr_id.equals("")) pMain_ctgr_id = "1";
 
-int medium_ctgr_id = Integer.parseInt(pMedium_ctgr_id);
+int main_ctgr_id = Integer.parseInt(pMain_ctgr_id);
 
-String sql = " SELECT small_ctgr_id, small_ctgr_name, medium_ctgr_id"
-			+" FROM small_ctgr" 
-			+" WHERE medium_ctgr_id = ?";
+String sql = " SELECT large_ctgr_id, large_ctgr_name, main_ctgr_id"
+			+" FROM large_ctgr " 
+			+" WHERE main_ctgr_id = ?";
 
 
 JSONObject jsonData = new JSONObject();
@@ -31,24 +32,24 @@ JSONArray jsonEmpArray = new JSONArray();
 try{
     conn = ConnectionProvider.getConnection();
     pstmt = conn.prepareStatement(sql);
-    pstmt.setInt(1, medium_ctgr_id);
+    pstmt.setInt(1, main_ctgr_id);
     rs = pstmt.executeQuery();
 
     while(rs.next()){
-        int small_ctgr_id = rs.getInt("small_ctgr_id");
-        String small_ctgr_name = rs.getString("small_ctgr_name");
+        int large_ctgr_id = rs.getInt("large_ctgr_id");
+        String large_ctgr_name = rs.getString("large_ctgr_name");
         
 
-        JSONObject jsonSmall_ctgr = new JSONObject();
-        jsonSmall_ctgr.put("small_ctgr_id", small_ctgr_id);
-        jsonSmall_ctgr.put("small_ctgr_name", small_ctgr_name);
-        jsonSmall_ctgr.put("medium_ctgr_id", medium_ctgr_id);
+        JSONObject jsonLarge_ctgr = new JSONObject();
+        jsonLarge_ctgr.put("large_ctgr_id", large_ctgr_id);
+        jsonLarge_ctgr.put("large_ctgr_name", large_ctgr_name);
+        jsonLarge_ctgr.put("main_ctgr_id", main_ctgr_id);
        
 
-        jsonEmpArray.add(jsonSmall_ctgr);
+        jsonEmpArray.add(jsonLarge_ctgr);
     }
 
-    jsonData.put("small_ctgr", jsonEmpArray);
+    jsonData.put("large_ctgr", jsonEmpArray);
 
 } catch(Exception e){
     e.printStackTrace();
