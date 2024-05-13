@@ -497,7 +497,7 @@ button {
 			<button></button>
 			<div>
 				<!-- <button></button>  화면이 작아졌을 때 #best-left메뉴 나타나게 하는거 -->
-				<h2 class="best_title_left">푸드</h2>
+				<h2 class="best_title_left">인테리어</h2>
 				<!-- <ul class="left_bar_meue" > -->
 				<!-- <button class="left-menu"><span class="medium-ctgr">ALL</span></button><br>
 				<button class="left-menu"><span class="medium-ctgr">NEW</span></button><br>
@@ -508,10 +508,18 @@ button {
 				<ul class="left-menu">
 					<li><span class="medium-ctgr">ALL</span></li>
 					<li><span class="medium-ctgr">NEW</span></li>
-					<li><span class="medium-ctgr">선물세트</span></li>
-					<li><span class="medium-ctgr">음료</span></li>
-					<li><span class="medium-ctgr">가공식품</span></li>
-					<li><span class="medium-ctgr">신선,냉장</span></li>
+					<li><span class="medium-ctgr">EXCLUSIVE</span></li>
+					<li><span class="medium-ctgr">비앤비이탈리아</span></li>
+					<li><span class="medium-ctgr">침구</span></li>
+					<li><span class="medium-ctgr">홈패브릭</span></li>
+					<li><span class="medium-ctgr">가구</span></li>
+					<li><span class="medium-ctgr">조명</span></li>
+					<li><span class="medium-ctgr">홈데코</span></li>
+					<li><span class="medium-ctgr">가드닝</span></li>
+					<li><span class="medium-ctgr">홈프레그런스</span></li>
+					<li><span class="medium-ctgr">아트,디자인</span></li>
+					<li><span class="medium-ctgr">책,음반</span></li>
+					<li><span class="medium-ctgr">스테이셔너리</span></li>
 				</ul>
 				<!-- </ul> -->
 			</div>
@@ -543,18 +551,18 @@ button {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef05b99d42e469bb14aba69c0fd742.png?width=600"
+									src="https://img.29cm.co.kr/item/202405/11ef084854380667b9bb1f3effe0fc7e.jpg?width=600"
 									class="ff">
 							</div>
 						</a> 
 						<div class="gg">
-							<a class="hh" href="">온더홀</a> <a
-								title="[당일배송] 온더홀 까눌레 4구 세트">
+							<a class="hh" href="">락앤락</a> <a
+								title="드롭드롭드롭 DOSILOCK 3단 도시락 (LCB112S01_DRP)">
 								<div class="j">
-									<h5 class="jj">[당일배송] 온더홀 까눌레 4구 세트</h5>
+									<h5 class="jj">드롭드롭드롭 DOSILOCK 3단 도시락 (LCB112S01_DRP)</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk"></span> <strong class="qqq">16,800</strong>
+										<span class="kkk">30%</span> <strong class="qqq">29,900</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -571,7 +579,7 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">240</h5>
+									<h5 class="jj">1,175</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -581,8 +589,8 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">5</div>
-									<div class="review-count">(3)</div>
+									<div class="review-point">4.9</div>
+									<div class="review-count">(14)</div>
 								</a>
 							</div>
 						</div>
@@ -594,18 +602,18 @@ button {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202308/11ee4315d967d9ff8a69c7b418cbe14c.jpeg?width=600"
+									src="https://img.29cm.co.kr/item/202403/11eee2a5ea13c82682f27532668945d8.png?width=600"
 									class="ff">
 							</div>
 						</a> 
 						<div class="gg">
-							<a class="hh" href="">맥파이앤타이거</a> <a
-								title="[어버이날, 스승의날]_[선물포장] 티머그 & 논카페인 잎차 세트">
+							<a class="hh" href="">다이노탱</a> <a
+								title="Quokka in School Figure Pen">
 								<div class="j">
-									<h5 class="jj">[어버이날, 스승의날]_[선물포장] 티머그 & 논카페인 잎차 세트</h5>
+									<h5 class="jj">Quokka in School Figure Pen</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk">10%</span> <strong class="qqq">40,950</strong>
+										<strong class="qqq">7,000</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -622,7 +630,7 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">6,949</h5>
+									<h5 class="jj">5,890</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -633,7 +641,7 @@ button {
 											stroke-width="1.5"></path>
 								</svg>
 									<div class="review-point">4.9</div>
-									<div class="review-count">(331)</div>
+									<div class="review-count">(42)</div>
 								</a>
 							</div>
 						</div>
@@ -652,7 +660,7 @@ $(function () {
     $(".medium-ctgr:eq(1)").click(function () {
         $.ajax({
             type: 'POST',
-            url: 'food_new.jsp',
+            url: 'interior_new.jsp',
             dataType: 'html',
             error: function (error) {
                 alert("Error!");
@@ -670,7 +678,7 @@ $(function () {
     $(".medium-ctgr:eq(2)").click(function () {
         $.ajax({
             type: 'POST',
-            url: 'food_present.jsp',
+            url: 'interior_exclusive.jsp',
             dataType: 'html',
             error: function (error) {
                 alert("Error!");
@@ -687,7 +695,7 @@ $(function () {
     $(".medium-ctgr:eq(3)").click(function () {
         $.ajax({
             type: 'POST',
-            url: 'food_drink.jsp',
+            url: 'interior_bnb.jsp',
             dataType: 'html',
             error: function (error) {
                 alert("Error!");
@@ -705,7 +713,7 @@ $(function () {
     $(".medium-ctgr:eq(4)").click(function () {
         $.ajax({
             type: 'POST',
-            url: 'food_pfood.jsp',
+            url: 'interior_bed.jsp',
             dataType: 'html',
             error: function (error) {
                 alert("Error!");
@@ -720,10 +728,10 @@ $(function () {
 })
 
 $(function () {
-    $(".medium-ctgr:eq(0)").click(function () {
+    $(".medium-ctgr:eq(5)").click(function () {
         $.ajax({
             type: 'POST',
-            url: 'food_all.jsp',
+            url: 'interior_fabic.jsp',
             dataType: 'html',
             error: function (error) {
                 alert("Error!");

@@ -497,7 +497,7 @@ button {
 			<button></button>
 			<div>
 				<!-- <button></button>  화면이 작아졌을 때 #best-left메뉴 나타나게 하는거 -->
-				<h2 class="best_title_left">푸드</h2>
+				<h2 class="best_title_left">인테리어</h2>
 				<!-- <ul class="left_bar_meue" > -->
 				<!-- <button class="left-menu"><span class="medium-ctgr">ALL</span></button><br>
 				<button class="left-menu"><span class="medium-ctgr">NEW</span></button><br>
@@ -508,19 +508,71 @@ button {
 				<ul class="left-menu">
 					<li><span class="medium-ctgr">ALL</span></li>
 					<li><span class="medium-ctgr">NEW</span></li>
-					<li><span class="medium-ctgr">선물세트</span></li>
-					<li><span class="medium-ctgr">음료</span></li>
-					<li><span class="medium-ctgr">가공식품</span></li>
-					<li><span class="medium-ctgr">신선,냉장</span></li>
+					<li><span class="medium-ctgr">EXCLUSIVE</span></li>
+					<li><span class="medium-ctgr">비앤비이탈리아</span></li>
+					<li><span class="medium-ctgr">침구</span></li>
+					<li><span class="medium-ctgr">홈패브릭</span></li>
+					<li><span class="medium-ctgr">가구</span></li>
+					<li><span class="medium-ctgr">조명</span></li>
+					<li><span class="medium-ctgr">홈데코</span></li>
+					<li><span class="medium-ctgr">가드닝</span></li>
+					<li><span class="medium-ctgr">홈프레그런스</span></li>
+					<li><span class="medium-ctgr">아트,디자인</span></li>
+					<li><span class="medium-ctgr">책,음반</span></li>
+					<li><span class="medium-ctgr">스테이셔너리</span></li>
 				</ul>
 				<!-- </ul> -->
 			</div>
 		</div>
 
 		<div id="best-right">
-			<!-- <h2 class="best_title_right" >여성의류</h2> -->
 			<div class="widget">
-				<div class="widget-gap"></div>
+				<div class="widget-gap">
+				  <div class="scd">
+				     <button class="scb">
+				       <span class="scs">전체</span>
+				     </button>
+				     <button class="scb">
+				       <span class="scs">침구세트</span>
+				     </button>
+				     <button class="scb">
+				       <span class="scs">차렵이불</span>
+				     </button>
+				     <button class="scb">
+				       <span class="scs">솜,구스이불</span>
+				     </button>
+				     <button class="scb">
+				       <span class="scs">홑이불</span>
+				     </button>
+				     <button class="scb">
+				       <span class="scs">이불솜</span>
+				     </button>
+				     <button class="scb">
+				       <span class="scs">이불커버</span>
+				     </button>
+				     <button class="scb">
+				       <span class="scs">토퍼</span>
+				     </button>
+				     <button class="scb">
+				       <span class="scs">매트리스커버</span>
+				     </button>
+				     <button class="scb">
+				       <span class="scs">스프레드</span>
+				     </button>
+				     <button class="scb">
+				       <span class="scs">쿠션</span>
+				     </button>
+				     <button class="scb">
+				       <span class="scs">베개</span>
+				     </button>
+				     <button class="scb">
+				       <span class="scs">베개커버</span>
+				     </button>
+				     <button class="scb">
+				       <span class="scs">쿠션커버</span>
+				     </button>
+				 </div>
+				</div>
 				<div class="controlgroup">
 					<select id="sort-type" class="styled-select">
 						<option>추천순</option>
@@ -543,18 +595,18 @@ button {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef05b99d42e469bb14aba69c0fd742.png?width=600"
+									src="https://img.29cm.co.kr/item/202403/11eee26b84171f7e82f2c5f134986577.jpg?width=600"
 									class="ff">
 							</div>
 						</a> 
 						<div class="gg">
-							<a class="hh" href="">온더홀</a> <a
-								title="[당일배송] 온더홀 까눌레 4구 세트">
+							<a class="hh" href="">마틸라</a> <a
+								title="[풍기인견X순면]빈티지맨션 양면 여름 차렵이불(SS/Q/K) 6종">
 								<div class="j">
-									<h5 class="jj">[당일배송] 온더홀 까눌레 4구 세트</h5>
+									<h5 class="jj">[풍기인견X순면]빈티지맨션 양면 여름 차렵이불(SS/Q/K) 6종</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk"></span> <strong class="qqq">16,800</strong>
+										<span class="kkk">40%</span> <strong class="qqq">69,900</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -571,7 +623,7 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">240</h5>
+									<h5 class="jj">2,718</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -581,8 +633,8 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">5</div>
-									<div class="review-count">(3)</div>
+									<div class="review-point">4.6</div>
+									<div class="review-count">(50)</div>
 								</a>
 							</div>
 						</div>
@@ -594,18 +646,18 @@ button {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202308/11ee4315d967d9ff8a69c7b418cbe14c.jpeg?width=600"
+									src="https://img.29cm.co.kr/next-product/2023/06/21/07ef92bfcc504b31a5d876ca02ceb570_20230621195749.JPG?width=600"
 									class="ff">
 							</div>
 						</a> 
 						<div class="gg">
-							<a class="hh" href="">맥파이앤타이거</a> <a
-								title="[어버이날, 스승의날]_[선물포장] 티머그 & 논카페인 잎차 세트">
+							<a class="hh" href="">포렌</a> <a
+								title="더험블 오가닉 리버시블 여름 이불">
 								<div class="j">
-									<h5 class="jj">[어버이날, 스승의날]_[선물포장] 티머그 & 논카페인 잎차 세트</h5>
+									<h5 class="jj">더험블 오가닉 리버시블 여름 이불</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk">10%</span> <strong class="qqq">40,950</strong>
+										<span class="kkk">66%</span> <strong class="qqq">138,000</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -622,7 +674,7 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">6,949</h5>
+									<h5 class="jj">4,665</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -632,8 +684,8 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">4.9</div>
-									<div class="review-count">(331)</div>
+									<div class="review-point">4.8</div>
+									<div class="review-count">(193)</div>
 								</a>
 							</div>
 						</div>
@@ -649,10 +701,10 @@ button {
 
 <script>
 $(function () {
-    $(".medium-ctgr:eq(1)").click(function () {
+    $(".medium-ctgr:eq(0)").click(function () {
         $.ajax({
             type: 'POST',
-            url: 'food_new.jsp',
+            url: 'interior_all.jsp',
             dataType: 'html',
             error: function (error) {
                 alert("Error!");
@@ -666,11 +718,28 @@ $(function () {
     });
 })
 
+$(function () {
+    $(".medium-ctgr:eq(1)").click(function () {
+        $.ajax({
+            type: 'POST',
+            url: 'interior_new.jsp',
+            dataType: 'html',
+            error: function (error) {
+                alert("Error!");
+            },
+            success: function (data) {
+            	$('body').children().remove();
+                // Contents 영역 교체
+                $("body").html(data);
+            }
+        });
+    });
+})
 $(function () {
     $(".medium-ctgr:eq(2)").click(function () {
         $.ajax({
             type: 'POST',
-            url: 'food_present.jsp',
+            url: 'interior_exclusive.jsp',
             dataType: 'html',
             error: function (error) {
                 alert("Error!");
@@ -683,11 +752,12 @@ $(function () {
         });
     });
 })
+
 $(function () {
     $(".medium-ctgr:eq(3)").click(function () {
         $.ajax({
             type: 'POST',
-            url: 'food_drink.jsp',
+            url: 'interior_bnb.jsp',
             dataType: 'html',
             error: function (error) {
                 alert("Error!");
@@ -702,28 +772,10 @@ $(function () {
 })
 
 $(function () {
-    $(".medium-ctgr:eq(4)").click(function () {
+    $(".medium-ctgr:eq(5)").click(function () {
         $.ajax({
             type: 'POST',
-            url: 'food_pfood.jsp',
-            dataType: 'html',
-            error: function (error) {
-                alert("Error!");
-            },
-            success: function (data) {
-            	$('body').children().remove();
-                // Contents 영역 교체
-                $("body").html(data);
-            }
-        });
-    });
-})
-
-$(function () {
-    $(".medium-ctgr:eq(0)").click(function () {
-        $.ajax({
-            type: 'POST',
-            url: 'food_all.jsp',
+            url: 'interior_fabric.jsp',
             dataType: 'html',
             error: function (error) {
                 alert("Error!");

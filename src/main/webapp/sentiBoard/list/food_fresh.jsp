@@ -63,9 +63,6 @@ body {
 	font-weight: 200;
 	text-decoration: none;
 }
-.medium-ctgr:hover{
-  cursor : pointer;
-}
 
 #best-right {
 	flex: 1;
@@ -458,7 +455,8 @@ button {
     background: transparent;
     cursor: pointer;
     outline: none;
-}.scd {
+}
+.scd {
     -webkit-box-align: center;
     align-items: center;
     display: flex;
@@ -499,12 +497,6 @@ button {
 				<!-- <button></button>  화면이 작아졌을 때 #best-left메뉴 나타나게 하는거 -->
 				<h2 class="best_title_left">푸드</h2>
 				<!-- <ul class="left_bar_meue" > -->
-				<!-- <button class="left-menu"><span class="medium-ctgr">ALL</span></button><br>
-				<button class="left-menu"><span class="medium-ctgr">NEW</span></button><br>
-				<button class="left-menu"><span class="medium-ctgr">선물세트</span></button><br>
-				<button class="left-menu"><span class="medium-ctgr">음료</span></button><br>
-				<button class="left-menu"><span class="medium-ctgr">가공식품</span></button><br>
-				<button class="left-menu"><span class="medium-ctgr">신선,냉장</span></button> -->
 				<ul class="left-menu">
 					<li><span class="medium-ctgr">ALL</span></li>
 					<li><span class="medium-ctgr">NEW</span></li>
@@ -520,7 +512,25 @@ button {
 		<div id="best-right">
 			<!-- <h2 class="best_title_right" >여성의류</h2> -->
 			<div class="widget">
-				<div class="widget-gap"></div>
+				<div class="widget-gap">
+				   <div class="scd">
+				     <button class="scb">
+				       <span class="scs">전체</span>
+				     </button>
+				     <button class="scb">
+				       <span class="scs">육류,계란</span>
+				     </button>
+				     <button class="scb">
+				       <span class="scs">수산,해산물</span>
+				     </button>
+				     <button class="scb">
+				       <span class="scs">과일,채소</span>
+				     </button>
+				     <button class="scb">
+				       <span class="scs">국,반찬</span>
+				     </button>
+				 </div>
+				</div>
 				<div class="controlgroup">
 					<select id="sort-type" class="styled-select">
 						<option>추천순</option>
@@ -543,18 +553,18 @@ button {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef05b99d42e469bb14aba69c0fd742.png?width=600"
+									src="https://img.29cm.co.kr/item/202312/11ee926a7a598671a5b397910b93a1d0.png?width=600"
 									class="ff">
 							</div>
 						</a> 
 						<div class="gg">
-							<a class="hh" href="">온더홀</a> <a
-								title="[당일배송] 온더홀 까눌레 4구 세트">
+							<a class="hh" href="">귤메달</a> <a
+								title="새콤달콤세트">
 								<div class="j">
-									<h5 class="jj">[당일배송] 온더홀 까눌레 4구 세트</h5>
+									<h5 class="jj">새콤달콤세트</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk"></span> <strong class="qqq">16,800</strong>
+										<span class="kkk">23%</span> <strong class="qqq">28,900</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -571,7 +581,7 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">240</h5>
+									<h5 class="jj">63</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -582,7 +592,7 @@ button {
 											stroke-width="1.5"></path>
 								</svg>
 									<div class="review-point">5</div>
-									<div class="review-count">(3)</div>
+									<div class="review-count">(10)</div>
 								</a>
 							</div>
 						</div>
@@ -594,18 +604,18 @@ button {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202308/11ee4315d967d9ff8a69c7b418cbe14c.jpeg?width=600"
+									src="https://img.29cm.co.kr/next-product/2021/12/15/9ba939b9cb014ec184574153e6cef5ad_20211215151956.jpg?width=600"
 									class="ff">
 							</div>
 						</a> 
 						<div class="gg">
-							<a class="hh" href="">맥파이앤타이거</a> <a
-								title="[어버이날, 스승의날]_[선물포장] 티머그 & 논카페인 잎차 세트">
+							<a class="hh" href="">닥터브라이언</a> <a
+								title="아이맥스(오메가3+루테인+아연+비타민A,E)60캡슐X3통(6개월분)">
 								<div class="j">
-									<h5 class="jj">[어버이날, 스승의날]_[선물포장] 티머그 & 논카페인 잎차 세트</h5>
+									<h5 class="jj">아이맥스(오메가3+루테인+아연+비타민A,E)60캡슐X3통(6개월분)</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk">10%</span> <strong class="qqq">40,950</strong>
+										<span class="kkk">68%</span> <strong class="qqq">38,900</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -622,7 +632,7 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">6,949</h5>
+									<h5 class="jj">266</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -632,18 +642,217 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">4.9</div>
-									<div class="review-count">(331)</div>
+									<div class="review-point">4.8</div>
+									<div class="review-count">(108)</div>
 								</a>
 							</div>
 						</div>
 					</div>
 				</li>
-
+				<li class="photo1">
+					<div class="cc">
+						<a href="">
+							<div class="dd">
+								<img alt=""
+									src="https://img.29cm.co.kr/item/202310/11ee73c94f6edc5783bccff2cf66cb2d.jpg?width=600"
+									class="ff">
+							</div>
+						</a> 
+						<div class="gg">
+							<a class="hh" href="">더에이징</a> <a
+								title="국내산 돼지고기 한돈 삼각살 300g">
+								<div class="j">
+									<h5 class="jj">국내산 돼지고기 한돈 삼각살 300g</h5>
+									<strong class="jjj"></strong>
+									<div class="01">
+										<strong class="qqq">5,900</strong>
+									</div>
+									<ul class="eee">
+										<li class="yyy"></li>
+										<li></li>
+									</ul>
+								</div>
+							</a>
+							<div class="ppp">
+								<button class="heart">
+									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
+										viewBox="0 0 20 20">
+										<path
+											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5" />
+									</svg>
+									<h5 class="jj">13</h5>
+								</button>
+								<a href="#" class="review"> <svg
+										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
+								<path
+											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5"></path>
+								</svg>
+									<div class="review-point">5</div>
+									<div class="review-count">(1)</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="photo1">
+					<div class="cc">
+						<a href="">
+							<div class="dd">
+								<img alt=""
+									src="https://img.29cm.co.kr/item/202310/11ee68d4fcbc05bda5b34994bb0d6899.jpg?width=600"
+									class="ff">
+							</div>
+						</a> 
+						<div class="gg">
+							<a class="hh" href="">인생닭</a> <a
+								title="소스담은 닭가슴살 혼합 10종 10팩">
+								<div class="j">
+									<h5 class="jj">소스담은 닭가슴살 혼합 10종 10팩</h5>
+									<strong class="jjj"></strong>
+									<div class="01">
+										<span class="kkk">28%</span> <strong class="qqq">25,800</strong>
+									</div>
+									<ul class="eee">
+										<li class="yyy"></li>
+										<li></li>
+									</ul>
+								</div>
+							</a>
+							<div class="ppp">
+								<button class="heart">
+									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
+										viewBox="0 0 20 20">
+										<path
+											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5" />
+									</svg>
+									<h5 class="jj">17</h5>
+								</button>
+								<a href="#" class="review"> <svg
+										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
+								<path
+											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5"></path>
+								</svg>
+									<div class="review-point">5</div>
+									<div class="review-count">(2)</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="photo1">
+					<div class="cc">
+						<a href="">
+							<div class="dd">
+								<img alt=""
+									src="https://img.29cm.co.kr/next-product/2022/12/13/9483f8163ce44f81b76663eb8676f445_20221213140106.jpg?width=600"
+									class="ff">
+							</div>
+						</a> 
+						<div class="gg">
+							<a class="hh" href="">글래드 호텔</a> <a
+								title="[양갈비] 글래드 프리미엄 양갈비 600g (3~4인분)">
+								<div class="j">
+									<h5 class="jj">[양갈비] 글래드 프리미엄 양갈비 600g (3~4인분)</h5>
+									<strong class="jjj"></strong>
+									<div class="01">
+										<span class="kkk">10%</span> <strong class="qqq">30,240</strong>
+									</div>
+									<ul class="eee">
+										<li class="yyy"></li>
+										<li></li>
+									</ul>
+								</div>
+							</a>
+							<div class="ppp">
+								<button class="heart">
+									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
+										viewBox="0 0 20 20">
+										<path
+											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5" />
+									</svg>
+									<h5 class="jj">53</h5>
+								</button>
+								<a href="#" class="review"> <svg
+										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
+								<path
+											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5"></path>
+								</svg>
+									<div class="review-point">4.8</div>
+									<div class="review-count">(15)</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="photo1">
+					<div class="cc">
+						<a href="">
+							<div class="dd">
+								<img alt=""
+									src="https://img.29cm.co.kr/next-product/2021/11/04/3e039bc59fb4420098525478ee237833_20211104105444.jpg?width=600"
+									class="ff">
+							</div>
+						</a> 
+						<div class="gg">
+							<a class="hh" href="">먹태시대</a> <a
+								title="맥반석오징어 250g">
+								<div class="j">
+									<h5 class="jj">맥반석오징어 250g</h5>
+									<strong class="jjj"></strong>
+									<div class="01">
+										<strong class="qqq">13,000</strong>
+									</div>
+									<ul class="eee">
+										<li class="yyy"></li>
+										<li></li>
+									</ul>
+								</div>
+							</a>
+							<div class="ppp">
+								<button class="heart">
+									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
+										viewBox="0 0 20 20">
+										<path
+											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5" />
+									</svg>
+									<h5 class="jj">86</h5>
+								</button>
+								<a href="#" class="review"> <svg
+										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
+								<path
+											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5"></path>
+								</svg>
+									<div class="review-point">4.6</div>
+									<div class="review-count">(10)</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</div>
-   <footer>
+  <footer>
 	<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
 	</footer>
 
@@ -736,10 +945,5 @@ $(function () {
         });
     });
 })
-
-
-	
-</script>
-
 </body>
 </html>

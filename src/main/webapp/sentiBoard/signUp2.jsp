@@ -52,7 +52,6 @@ $(".ip1").on("keyup",function validateEmail() {
 	}
 });
 
-
 //signUp3.jsp 파일로 화면
 $(function () {
     $(".btn1").click(function () {
