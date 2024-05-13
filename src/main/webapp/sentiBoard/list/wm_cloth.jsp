@@ -310,6 +310,19 @@ class ="best_radio_box3 ":checked+.bb {
 		padding: 16px 12px 0px;
 	}
 }
+
+@media (max-width: 1640px) {
+    .photo_list {
+        grid-template-columns: repeat(16, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    .photo_list {
+        grid-template-columns: repeat(12, 1fr);
+    }
+}
+
 .gg{
 	position: relative;
     padding-top: 14px;
@@ -563,6 +576,7 @@ button {
     height: 20px;
     background: var(--ruler-semantic-color-border-line);
 }
+
 </style>
 </head>
 <header>
@@ -1164,9 +1178,7 @@ button {
                 		   <button class="wm-top-btn">
 							<span class="wm-top-btn-click">\${element.small_ctgr_name}</span>
 							</button>
-                           
                                  `);
-                   
                });
                
               //alert( data.small_ctgr );
@@ -1174,12 +1186,8 @@ button {
            error: function(){
                alert("error");
            }
-           
-           
         });
     });
- 
-
 </script>
 
 </body>

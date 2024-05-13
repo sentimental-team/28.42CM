@@ -412,6 +412,14 @@ button {
     display: flex;
 }
 
+.bot-li-best {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 20px;
+}
+
 .bot-li {
     display: -webkit-box;
     display: -webkit-flex;
@@ -441,7 +449,7 @@ button {
     color: #000000;
     border-bottom: 4px solid transparent;
 }
-/* 메인 카테고리 마우스 올렸을 때 아래로 출력되게 만드는 부분 미완성
+/* 메인 카테고리 마우스 올렸을 때 아래로 출력되게 만드는 부분 미완성 */
 .bot-nav1 {
     position: absolute;
     top: 100%;
@@ -465,20 +473,6 @@ button {
     justify-content: space-between;
     width: 930px;
 }
-
-.bot-li:hover{
-	position: absolute;
-    top: 100%;
-    right: 0px;
-    left: 0px;
-    display: block;
-    min-height: 404px;
-    padding: 17px 50px;
-    background: rgb(255,255,255);
-    border-top: 1px solid rgb(244,244,244);
-    border-bottom: 1px solid rgb(212,212,212);
-}
- */
 </style>
 
 <html>
@@ -543,7 +537,7 @@ button {
 				</nav>
 				<div class="bottom">
 					<ul class="bot-ul">
-						<li class="bot-li">
+						<li class="bot-li-best">
 							<a class="bot-a" style="color:black" href="https://shop.29cm.co.kr/best-items">BEST</a>
 						</li>
 						<li class="bot-li">
@@ -580,13 +574,13 @@ button {
 							<div class="div-ctgr" style="color:black">CULTURE</div>
 						</li>
 					</ul>
-					<!-- 
+					 
 					<div class="bot-nav1">
 						<div class="bot-nav2">
 							
 						</div>
 					</div>
-					 -->
+					
 				</div>
 			</div>
 		</header>
@@ -628,6 +622,21 @@ $(document).ready(function(){
 	    }
 	  });
 	});
+	
+	/* 
+	$(".bot-li, .bot-nav1").on("mouseenter", function(){
+		$(".bot-nav1").show();
+		
+		console.log("viewtest")
+	});
+	
+	$(".bot-nav1").on("mouseleave", function(){
+		$(".bot-nav1").hide();
+		
+		console.log("gonetest");
+		
+	});
+	 */
 </script>
 <script>
 $("#third-2").on("click",function(){
