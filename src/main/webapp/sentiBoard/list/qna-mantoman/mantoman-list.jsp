@@ -37,6 +37,11 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 	display: block;
 }
 
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
 ul {
 	display: block;
 	list-style-type: disc;
@@ -344,15 +349,6 @@ h4 {
 	border-radius: 2px;
 }
 
-@media ( min-width : 541px) {
-	.mid-mid {
-		-webkit-flex: 1;
-		-ms-flex: 1;
-		flex: 1;
-		padding-top: 190px;
-	}
-}
-
 body, input, select, textarea, button, a {
 	-webkit-text-size-adjust: none;
 	font-family: 'campton', 'Apple SD Gothic Neo', NanumBarunGothic,
@@ -634,9 +630,190 @@ body, input, select, textarea, button, a {
 }
 </style>
 <style>
-.my_inquire[_ngcontent-agf-c148] {
+.my_inquire {
     position: relative;
 }
+
+.my_tit {
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #000;
+    font-size: 22px;
+    color: #000;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.m_view {
+    display: none;
+}
+
+.cs_description_container {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.cs_description_container {
+    padding-top: 12px;
+    font-family: Pretendard;
+}
+
+.my_inquire .cs_description {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.6px;
+}
+
+.pc_view {
+    display: block;
+}
+
+.write_btnbx {
+    text-align: right;
+    display: -webkit-box;
+    display: flex;
+    gap: 4px;
+    -webkit-box-pack: end;
+    justify-content: end;
+}
+
+.btn_bor {
+    display: inline-block;
+    border: 1px solid #d4d4d4;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #5d5d5d;
+    line-height: 30px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+a, button {
+    outline: none;
+}
+
+.btn_black {
+    display: inline-block;
+    min-width: 82px;
+    padding: 0 17px;
+    border: 1px solid #303033;
+    background: #303033;
+    font-size: 13px;
+    color: #fff;
+    line-height: 38px;
+    box-sizing: border-box;
+}
+
+.my_tbl_inquire .my_tbl_tit {
+    margin-top: 10px;
+    border-top: 4px solid #000;
+}
+
+.my_tbl_lst .my_tbl, .my_tbl_lst>li {
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.my_tbl_tit {
+    border-bottom: 1px solid #000;
+    font-weight: 700;
+}
+
+.my_tbl_info {
+    display: table;
+    table-layout: fixed;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    color: #303033;
+}
+
+.my_tbl_lst .my_tbl_tit .type, .my_tbl_lst .my_tbl_tit .type .tit {
+    text-align: center;
+}
+
+.my_tbl_info p {
+    display: table-cell;
+    min-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.my_tbl_inquire .type {
+    width: 100px;
+    color: #000;
+}
+
+.my_tbl_inquire .tit {
+    padding: 15px 3%;
+    color: #000;
+    text-align: left;
+}
+
+.my_tbl_inquire .date {
+    width: 100px;
+    padding: 15px 0;
+    color: #000;
+}
+
+.my_tbl_inquire .state {
+    width: 70px;
+    padding: 15px 0;
+    color: #000;
+    font-weight: 700;
+}
+
+.my_tbl_inquire .tblbtn {
+    width: 60px;
+    padding: 0;
+    text-align: center;
+}
+
+.blind, legend {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    font-size: 1px;
+    line-height: 100px;
+    white-space: nowrap;
+}
+
+.my_list_none {
+    height: 65px;
+    font-size: 14px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.my_list_none, .order_list_none {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
 </style>
 </head>
 <header>
@@ -647,21 +824,32 @@ body, input, select, textarea, button, a {
 	<div class="mid-div">
 		<div class="mid-left">
 			<div class="mid-left-top">
-				<h3 class="name">유*</h3>
+				<h3 class="name">조*화</h3>  <!-- ajax -->
 				<ul class="like">
-					<li class="like-li"><a class="like-a" href="#">좋아요 0</a></li>
+					<li class="like-li">
+						<a class="like-a" href="#">좋아요 0</a>
+					</li>
 				</ul>
 			</div>
 			<ul class="mid-top">
-				<li class="user-grade"><a class="grade1" href="#"> <strong
-						class="grade2">회원등급</strong> <span class="grade-color">GREEN</span>
-				</a> <a class="sale" target="blank" href="#">할인혜택 보기</a></li>
-				<li class="user-coupon"><a class="grade1" href="#"> <strong
-						class="grade2">사용가능쿠폰</strong> <span class="grade-color">2</span>
-				</a></li>
-				<li class="user-mileage"><a class="grade1" href="#"> <strong
-						class="grade2">마일리지</strong> <span class="grade-color">0</span>
-				</a></li>
+				<li class="user-grade"><a class="grade1" href="#"> 
+				<strong class="grade2">멤버십등급</strong> 
+				<span class="grade-color">GREEN</span>
+				</a> 
+				<a class="sale" target="blank" href="#">할인혜택 보기</a>
+				</li>
+				<li class="user-coupon">
+				<a class="grade1" href="#"> 
+				<strong class="grade2">사용가능쿠폰</strong> 
+				<span class="grade-color">2</span>
+				</a>
+				</li>
+				<li class="user-mileage">
+				<a class="grade1" href="#"> 
+				<strong class="grade2">마일리지</strong> 
+				<span class="grade-color">0</span>
+				</a>
+				</li>
 			</ul>
 			<ul class="mid-left-list-top">
 				<li class="">
@@ -712,140 +900,75 @@ body, input, select, textarea, button, a {
 		</div>
 		<div class="mid-mid">
 			<!-- 여기서부터 작업하시면 됩니다 -->
-			<div class="grade-list">
-				<div class="css-j9qocs e1b5gypw0">
-					<span class="e1b5gypw1 css-tmdn83 e8avfrl0" color="primary">멤버십
-						혜택 보기</span>
-				</div>
-				<ul class="ebm53gh0 css-1heuese efqgqi90">
-					<li class="ebm53gh1 css-19yreqa e1ctmjji0">현재 등급</li>
-					<li class="ebm53gh1 css-140aynn e1ctmjji0">예상 등급</li>
-				</ul>
-				<div class="ebm53gh2 css-tr1wkt e1ome8550">
-					<div class="css-1lads1q ec5g9yi0">
-						<ul class="css-1ofqig9 eji7g6o0">
-							<li class="e1b0ooww0 css-f9qh2y ec3s1na0"><div
-									class="css-r9nzd6 elwfi5c0">
-									<span class="css-156q5cq e8avfrl0" color="secondary">멤버십
-										등급</span>
+			<ul class="mantoman-list">
+			
+				<section class="my_inquire">
+					<div  class="my_inquire_info">
+						<h3 class="my_tit nobor">1:1 문의내역</h3>
+						<div class="m_view">
+							<div class="cs_description_container">
+								<div>
+									<li class="cs_description">하단 1:1
+										문의를 통해서도 상담이 가능합니다.</li>
+									<li class="cs_description">상품문의는 각
+										상품 Q&amp;A를 이용해주세요.</li>
 								</div>
-								<div class="css-r9nzd6 elwfi5c0">
-									<span class="css-156q5cq e8avfrl0" color="secondary">구매금액</span>
+								<div>
+									<li class="cs_description">고객센터
+										운영시간 : 평일 09:00 - 17:00</li>
+									<li class="cs_description">(점심시간 :
+										12:00 - 13:00 제외)</li>
 								</div>
-								<div class="css-r9nzd6 elwfi5c0">
-									<span class="css-156q5cq e8avfrl0" color="secondary">날짜</span>
-								</div></li>
-							<li class="e1b0ooww0 css-f9qh2y ec3s1na0"><div
-									class="css-r9nzd6 elwfi5c0">
-									<span class="css-17x39sj e8avfrl0" color="secondary">GREEN</span>
-								</div>
-								<div class="css-r9nzd6 elwfi5c0">
-									<span class="css-17x39sj e8avfrl0" color="secondary">0원</span>
-								</div>
-								<div class="css-r9nzd6 elwfi5c0">
-									<span class="css-17x39sj e8avfrl0" color="secondary">2023.11.01
-										~ 2024.04.30</span>
-								</div></li>
-						</ul>
+							</div>
+						</div>
+						<div class="pc_view">
+							<ul class="cs_description_container">
+								<li class="cs_description">한번 등록한
+									상담내용은 수정이 불가능합니다.</li>
+								<li class="cs_description">향후 멤버쉽
+									단계별 혜택 및 선정기준은 사전공지 후 변경될 수 있습니다.</li>
+							</ul>
+						</div>
+						<div class="m_view">
+							<div class="write_btnbx">
+								<a class="btn_bor"
+									href="/jspPro/sentiBoard/list/qna-mantoman/mantoman-detail.jsp">1:1문의
+									쓰기</a> <a href="tel:1644-0560"
+									class="btn_bor"> 고객센터 전화하기 </a>
+							</div>
+						</div>
+						<div class="pc_view">
+							<div  class="write_btnbx">
+								<a class="btn_black"
+									href="/jspPro/sentiBoard/list/qna-mantoman/mantoman-detail.jsp">1:1문의
+									쓰기</a>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="css-1o3oomb eb40n7w0">
-					<span class="css-1vqrq36 e8avfrl0" color="primary">멤버십 혜택</span>
-					<div class="eb40n7w1 css-19djemi ec5g9yi0">
-						<ul class="css-1ofqig9 eji7g6o0">
-							<li class="css-zp7ii8 ec3s1na0"><div
-									class="eb40n7w2 css-n0ir3y elwfi5c0">
-									<span class="css-1vqrq36 e8avfrl0" color="primary">멤버십
-										등급</span>
-								</div>
-								<div class="eb40n7w2 css-n0ir3y elwfi5c0">
-									<span class="css-izpnhq e8avfrl0" color="primary">최근
-										6개월간 구매금액</span>
-								</div>
-								<div class="eb40n7w2 css-n0ir3y elwfi5c0">
-									<span class="css-izpnhq e8avfrl0" color="primary">등급 할인
-										혜택</span>
-								</div></li>
-							<li class="css-zp7ii8 ec3s1na0"><div
-									class="eb40n7w2 css-n0ir3y elwfi5c0">
-									<span class="eb40n7w3 css-ery12n e8avfrl0" color="primary">VIP</span>
-								</div>
-								<div class="eb40n7w2 css-n0ir3y elwfi5c0">
-									<span class="eb40n7w3 css-8xai2a e8avfrl0" color="secondary">50만원
-										이상</span>
-								</div>
-								<div class="eb40n7w2 css-n0ir3y elwfi5c0">
-									<span class="eb40n7w3 css-8xai2a e8avfrl0" color="secondary">월
-										15% 할인쿠폰 2장 지급</span>
-								</div></li>
-							<li class="css-zp7ii8 ec3s1na0"><div
-									class="eb40n7w2 css-n0ir3y elwfi5c0">
-									<span class="eb40n7w3 css-ery12n e8avfrl0" color="primary">Red</span>
-								</div>
-								<div class="eb40n7w2 css-n0ir3y elwfi5c0">
-									<span class="eb40n7w3 css-8xai2a e8avfrl0" color="secondary">30만원
-										이상, 50만원 미만</span>
-								</div>
-								<div class="eb40n7w2 css-n0ir3y elwfi5c0">
-									<span class="eb40n7w3 css-8xai2a e8avfrl0" color="secondary">월
-										15% 할인쿠폰 1장, 10% 할인쿠폰 1장 지급</span>
-								</div></li>
-							<li class="css-zp7ii8 ec3s1na0"><div
-									class="eb40n7w2 css-n0ir3y elwfi5c0">
-									<span class="eb40n7w3 css-ery12n e8avfrl0" color="primary">Orange</span>
-								</div>
-								<div class="eb40n7w2 css-n0ir3y elwfi5c0">
-									<span class="eb40n7w3 css-8xai2a e8avfrl0" color="secondary">10만원
-										이상, 30만원 미만</span>
-								</div>
-								<div class="eb40n7w2 css-n0ir3y elwfi5c0">
-									<span class="eb40n7w3 css-8xai2a e8avfrl0" color="secondary">월
-										10% 할인쿠폰 2장 지급</span>
-								</div></li>
-							<li class="css-zp7ii8 ec3s1na0"><div
-									class="eb40n7w2 css-n0ir3y elwfi5c0">
-									<span class="eb40n7w3 css-ery12n e8avfrl0" color="primary">Green</span>
-								</div>
-								<div class="eb40n7w2 css-n0ir3y elwfi5c0" style="padding-left: 35px;">
-									<span class="eb40n7w3 css-8xai2a e8avfrl0" color="secondary">10만원
-										미만</span>
-								</div>
-								<div class="eb40n7w2 css-n0ir3y elwfi5c0">
-									<span class="eb40n7w3 css-8xai2a e8avfrl0" color="secondary">월
-										10% 할인쿠폰 1장, 신규 가입 시 앱 전용 15% 할인쿠폰 1장 지급 (가입 후 30일 간 유효)</span>
-								</div></li>
-						</ul>
+					<div class="my_tbl_lst my_tbl_inquire">
+						<div class="my_tbl my_tbl_tit">
+							<div class="my_tbl_info">
+								<p class="type">상담구분</p>
+								<p class="tit">상담제목</p>
+								<p class="date">작성일</p>
+								<p class="state">답변유무</p>
+								<p class="tblbtn">
+									<span class="blind">삭제</span>
+								</p>
+							</div>
+						</div>
+
+						<!---->
+						<div class="my_list_none ng-star-inserted">
+							<p >내역이 없습니다</p>
+						</div>
+						<!---->
 					</div>
-				</div>
-				<div class="css-19ft22s e1u8pzqb0">
-					<span class="e1u8pzqb1 css-192or3 e8avfrl0" color="primary">멤버십
-						안내</span>
-					<ul class="css-1hw29i9 e1u8pzqb2">
-						<li class="e1u8pzqb3 css-130oa9n e8avfrl0" color="secondary">매월
-							1일 멤버십 등급이 결정됩니다.</li>
-						<li class="e1u8pzqb3 css-130oa9n e8avfrl0" color="secondary">멤버십
-							등급은 최근 6개월 간의 ‘구매 금액’을 반영하여 결정됩니다.</li>
-						<li class="e1u8pzqb3 css-130oa9n e8avfrl0" color="secondary">구매
-							금액’은 ‘구매 확정’된 상품 판매가의 합으로 계산됩니다. (배송비 금액 제외)</li>
-						<li class="e1u8pzqb3 css-130oa9n e8avfrl0" color="secondary">향후
-							멤버십 등급 별 혜택 및 선정 기준은 사전 통지 후 변경될 수 있습니다.</li>
-					</ul>
-					<span class="e1u8pzqb1 css-vuajq3 e8avfrl0" color="secondary">쿠폰
-						안내</span>
-					<ul class="css-1hw29i9 e1u8pzqb2">
-						<li class="e1u8pzqb3 css-130oa9n e8avfrl0" color="secondary">'등급
-							할인 혜택' 중 '월 할인쿠폰'은 매월 1일에 지급되고 '마이페이지 &gt; 쿠폰' 메뉴에서 확인하실 수 있습니다.</li>
-						<li class="e1u8pzqb3 css-130oa9n e8avfrl0" color="secondary">Green
-							등급에 지급되는 앱 전용 15% 할인쿠폰 1장은 신규 회원 가입 시 1회에 한정하여 지급되는 할인쿠폰으로 신규 회원
-							가입 후 30일 이내에 29CM 앱에서만 사용할 수 있습니다.</li>
-						<li class="e1u8pzqb3 css-130oa9n e8avfrl0" color="secondary">멤버십
-							등급 변경 및 쿠폰 지급은 매월 1일 자정부터 순차적으로 진행됩니다. 쿠폰이 확인되지 않는 경우 약 1시간 후 다시
-							확인해 주세요.</li>
-						<li class="e1u8pzqb3 css-130oa9n e8avfrl0" color="secondary">브랜드
-							정책에 따라 일부 상품은 쿠폰이 적용되지 않을 수 있습니다.</li>
-					</ul>
-				</div>
-			</div>
+					<ruler-basic-pagination><!---->
+					</ruler-basic-pagination>
+				</section>
+
+			</ul>
 		</div>
 	</div>
 
