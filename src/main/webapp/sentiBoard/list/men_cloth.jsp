@@ -53,6 +53,8 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
             rs.close();
             // DBConn.close();
         } catch (SQLException e) { 
+        	
+        	
             e.printStackTrace();
         }
     }
