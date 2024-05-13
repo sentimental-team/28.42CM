@@ -980,7 +980,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 .right-sec-bo2-box {
     position: relative;
-    overflow: visible;
+    overflow: hidden;
     display: inline-block;
     min-width: fit-content;
     min-height: fit-content;
@@ -989,38 +989,17 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 }
 
 .bot2-checkbox {
-	content: "";
     position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    background: rgb(255, 255, 255);
-    border: 1px solid rgb(212, 212, 212);
-    border-radius: 2px;
-    transition: background-color 0.2s ease 0s;	
-}
-
-.bot3-li-div-span-input{
-	content: "";
-    position: absolute;
-    top: 3px;
-    left: 0px;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    background: rgb(255, 255, 255);
-    border: 1px solid rgb(212, 212, 212);
-    border-radius: 2px;
-    transition: background-color 0.2s ease 0s;	
-}
-
-.bot2-checkbox-total-text {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 22px;
-    color: rgb(10, 10, 10);
+    z-index: -1;
+    top: 2px;
+    left: 2px;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    appearance: none;
+    visibility: hidden;
+    background: transparent;
+    border: 0px;
 }
 
 		.bot2-checbox-total-not {
@@ -1088,10 +1067,6 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 		    border-color: rgb(228, 228, 228);
 		}
 		
-.bot2-checkbox:checked + .bot2-checbox-total-not::before {
-    background: rgb(55, 95, 255);
-    border-color: rgb(55, 95, 255);
-}
 
 .bot2-checbox-total::before {
     content: "";
@@ -1173,6 +1148,19 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
     margin-left: -32px;
 }
 
+.bot3-li-div-span-input {
+    position: absolute;
+    z-index: -1;
+    top: 2px;
+    left: 2px;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    appearance: none;
+    visibility: hidden;
+    background: transparent;
+    border: 0px;
+}
 
 .right-section-bot3 {
     margin-top: 5px;
@@ -1359,16 +1347,6 @@ em {
         position: relative;
     }
 }
-
-.sec2-coupon-item-info {
-    margin: 24px 0px;
-}
-
-.checkall-text{
-	position: relative;
-	left: 30px;
-	padding: 5px 5px 5px;
-}
 </style>
 <body>
 <header>
@@ -1504,7 +1482,7 @@ em {
 							<span class="sec2-sale-text-not" color="accent">최대 할인이 적용되지 않았어요. 최대 할인을 활성화 하세요.</span>
 						</div>
 					</div>
-					<ul class="sec2-coupon-item-info"></ul>
+					<ul></ul>
 				</section>
 				<section class="left-section3"></section>
 				<section class="left-section4"></section>
@@ -1561,43 +1539,51 @@ em {
 									<span class="go-total-pay-text">286,000원</span>
 								</div>
 							</li>
+						</ul>
+						<div class="right-section-bot">
+							<div class="right-section-bot2">
+								<span class="right-sec-bo2-box">
+									<input class="bot2-checkbox" type="checkbox" />
+									<label class="bot2-checbox-total-not">
+										<span class="bot2-checkbox-total-text">주문 내용을 확인했으며, 아래 내용에 모두 동의합니다.</span>
+									</label>
+								</span>
+							</div>
+							<ul class="right-section-bot3">
+								<li class="bot3-li">
+									<div class="bot3-li-div">
+										<span class="bot3-li-div-span">
+											<input class="bot3-li-div-span-input" type="checkbox" />
+											<label class="bot3-li-div-span-input-not">
+												<span class="bot3-li-div-span-input-text">(필수) 개인정보 수집/이용 동의</span>
+											</label>
+										</span>
+										<button type="button" class="more-view1">보기</button>
+									</div>
+								</li>
+								<li class="bot3-li">
+									<div class="bot3-li-div">
+										<span class="bot3-li-div-span">
+											<input class="bot3-li-div-span-input" type="checkbox" />
+											<label class="bot3-li-div-span-input-not">
+												<span class="bot3-li-div-span-input-text">(필수) 개인정보 제3자 제공 동의</span>
+											</label>
+										</span>
+										<button type="button" class="more-view1">보기</button>
+									</div>
+								</li>
+								<li class="bot3-li">
+									<div class="bot3-li-div">
+										<span class="bot3-li-div-span">
+											<input class="bot3-li-div-span-input" type="checkbox" />
+											<label class="bot3-li-div-span-input-not">
+												<span class="bot3-li-div-span-input-text">(필수) 결제대행 서비스 이용약관</span>
+											</label>
+										</span>
+										<a class="KG-company" href="https://www.inicis.com/terms">(주)KG이니시스</a>
+									</div>
+								</li>
 							</ul>
-							<div class="right-section-bot">
-								<div class="right-section-bot2">
-									<span class="right-sec-bo2-box">
-										<input class="bot2-checkbox" type="checkbox" name="checkall" onclick="selectAll(this)" value="selectall">
-										<b class="checkall-text">주문 내용을 확인했으며, 아래 내용에 모두 동의합니다.</b>
-									</span>
-								</div>
-								<ul class="right-section-bot3">
-									<li class="bot3-li">
-										<div class="bot3-li-div">
-											<span class="bot3-li-div-span">
-												<input class="bot3-li-div-span-input" type="checkbox" name="checkone" onclick="checkSelectAll()"/>
-												<b class="checkall-text">(필수) 개인정보 수집/이용 동의</b>
-											</span>
-											<button type="button" class="more-view1">보기</button>
-										</div>
-									</li>
-									<li class="bot3-li">
-										<div class="bot3-li-div">
-											<span class="bot3-li-div-span">
-												<input class="bot3-li-div-span-input" type="checkbox" name="checkone" onclick="checkSelectAll()"/>
-													<b class="checkall-text">(필수) 개인정보 제3자 제공 동의</b>
-											</span>
-											<button type="button" class="more-view1">보기</button>
-										</div>
-									</li>
-									<li class="bot3-li">
-										<div class="bot3-li-div">
-											<span class="bot3-li-div-span">
-												<input class="bot3-li-div-span-input" type="checkbox" name="checkone" onclick="checkSelectAll()"/>
-													<b class="checkall-text">(필수) 결제대행 서비스 이용약관</b>
-											</span>
-											<a class="KG-company" href="https://www.inicis.com/terms">(주)KG이니시스</a>
-										</div>
-									</li>
-								</ul>
 							<p class="right-section-bot4">
 							결제 및 계좌 안내 시 상호명은
 							<em>(주)무신사</em>
@@ -1652,35 +1638,7 @@ $(".sec2-sale-btn-not").on("click", function(){
         $(".sec2-sale-box-not").addClass("sec2-sale-box");
     }
 })
-</script>
-<script>
-function checkSelectAll()  {
-	  // 전체 체크박스
-	  const checkboxes 
-	    = document.querySelectorAll('input[name="checkone"]');
-	  // 선택된 체크박스
-	  const checked 
-	    = document.querySelectorAll('input[name="checkone"]:checked');
-	  // select all 체크박스
-	  const selectAll 
-	    = document.querySelector('input[name="checkall"]');
-	  
-	  if(checkboxes.length === checked.length)  {
-	    selectAll.checked = true;
-	  }else {
-	    selectAll.checked = false;
-	  }
 
-	}
-
-	function selectAll(selectAll)  {
-	  const checkboxes 
-	     = document.getElementsByName('checkone');
-	  
-	  checkboxes.forEach((checkbox) => {
-	    checkbox.checked = selectAll.checked
-	  })
-	}
 </script>
 </body>
 </html>

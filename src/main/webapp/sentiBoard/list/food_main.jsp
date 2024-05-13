@@ -4,21 +4,786 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title></title>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<link rel="stylesheet" href="../css/men.css">
+
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
  <header>
    <jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
 </header> 
+<style>
+   span.material-symbols-outlined{
+   vertical-align: text-bottom;
+   }
+   body{
+   width : 100%;
+   }
+  #wrap{
+      position: relative;
+   	  margin-top: 59px;
+   	  `
+  }	
+  #first{
+    /* background-color: yellow; */
+  }
+ @media (min-width: 541px) {
 
+    #second {
+        max-width: 1920px;
+        margin: 0px auto;
+        padding: 0px 50px 0px 300px;
+        
+    }
+}
+  #third{
+
+    
+
+
+  }
+#fourth{
+    box-sizing: border-box;
+    min-width: 1000px;
+    max-width: 1920px;
+    margin: 120px auto 10px;
+    padding: 0px 220px;
+}
+@media (max-width: 1340px) {
+   #fourth{
+        padding: 0px 50px;
+    }
+}
+.aa{
+    height: 680px;
+    width: 100%;
+    position: relative;
+
+}
+.aa1{
+  height: 100%;
+}
+.aa1_1{
+     bottom: 30px;
+    position: absolute;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    transform: translateZ(0px);
+    z-index: 10;
+    height: 10px;
+    left: 0px;
+    right: 0px;
+}
+.aa3{
+       margin: 0px 5px;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      background: rgba(255, 255, 255, 0.3);
+      vertical-align: top;
+       display: inline-block;
+}
+
+.bb{
+    width: 250px;
+    margin: 25px 0px 0px;
+    padding: 25px 25px 15px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 30px 0px;
+}
+@media (min-width: 541px) {
+    .bb {
+        position: absolute;
+        z-index: 2;
+        top: 0px;
+        left: 25px;
+    }
+}
+
+.bb1{
+   position: relative;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin: -6px 0px 8px;
+    padding: 0px 30px 12px 0px;
+    font-size: 23px;
+    font-weight: 800;
+    line-height: 1.25;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    text-transform: uppercase;
+    border-bottom: 4px solid rgb(0, 0, 0);
+    outline: none;
+}
+.bb2{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3px 30px 3px 0px;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 28px;
+    color: rgb(93, 93, 93);
+    text-align: left;
+    border: 0px;
+    outline: none;
+}
+.bb2:hover{
+    font-weight: 600;
+}
+.aa2{
+   transition-duration: 0ms;
+    transform: translate3d(-5148px, 0px, 0px);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+    overflow: hidden;
+}
+.aa2_1{
+  width: 858px;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+.aa2_1_1{
+
+   position: relative;
+    background-color: rgb(244, 244, 244);
+    width: 100%;
+    height: 100%;
+
+}
+.aa2_1_1_1{
+   overflow: hidden;
+    text-align: left;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+}
+@media (min-width: 541px) {
+    .aa2_1_1_1 {
+        height: 680px;
+        margin: 0px 100px 0px 380px;
+    }
+}
+.aa2_1_1_1_1{
+       width: 440px;
+        margin-left: 60px;
+}
+.aa2_1_1_1_1_1{
+     white-space: pre-wrap;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 58px;
+}
+.aa2_1_1_1_1_2{
+   margin-top: 19px;
+    font-size: 28px;
+    line-height: 35px;
+    white-space: pre-wrap;
+}
+.aaa{
+	width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: 50% center;
+    border: 0;
+    vertical-align: top;
+}
+.aaa1{
+    box-sizing: border-box;
+}
+.aa3{
+
+   position: absolute;
+    top: 50%;
+    margin-top: -60px;
+    padding: 30px;
+    z-index: 10;
+    cursor: pointer;
+    left: 350px;
+    right: auto;
+}
+.aa3_1{
+    width: 30px;
+    height: 60px;
+    transform: rotate(180deg);
+}
+.aa3_1_1{
+   stroke: rgb(48, 48, 51);
+    stroke-width: 3;
+}
+.aa4{
+	position: absolute;
+    top: 50%;
+    margin-top: -60px;
+    padding: 30px;
+    z-index: 10;
+    cursor: pointer;
+    right: 0px;
+    left: auto;
+
+}
+.aa4_1{
+    width: 30px;
+    height: 60px;
+}
+.aa4_1_1{
+	stroke: rgb(48, 48, 51);
+    stroke-width: 3;
+    }
+   
+@media (min-width: 541px) {
+    .cc {
+        padding: 58px 0px 80px;
+    }
+}
+
+.cc::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+@media (min-width: 541px) {
+    .cc1_1 {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -40px;
+    }
+}
+@media (min-width: 541px) {
+    .cc1_1_1{
+        flex: 0 0 auto;
+        width: 50%;
+        padding: 0px 0px 30px 40px;
+        box-sizing: border-box;
+    }
+}
+@media (min-width: 541px) and (max-width: 1400px) {
+    .cc1_1_1{
+        padding-left: 30px;
+    }
+}
+.cc1_1_1_1{
+	display: block;
+    position: relative;
+    text-decoration: none;
+}
+.cc1_1_1_1_1{
+	width: 100%;
+}
+.cc1_1_1_2 {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+}
+.cc1_1_1_3{
+	    margin-top: 12px;
+        font-size: 23px;
+        line-height: 30px;
+        font-weight: 600;
+}
+.cc1_1_1_4{
+	margin-top: 6px;
+    font-size: 15px;
+    line-height: 24px;
+}
+#third > ul {
+	display: flex;
+}
+#third > ul > li:nth-child(1) {
+	flex: 1 1 0%;
+    display: block;
+    min-height: 70px;
+    height: 100%;
+   border-top: 1px solid rgb(212, 212, 212);
+    background: rgb(48, 48, 51);
+    font-size: 18px;
+    line-height: 70px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+    margin: 0px -1px;
+}
+#third > ul > li:nth-child(2){
+    flex: 1 1 0%;
+    display: block;
+    min-height: 70px;
+    height: 100%;
+    border-top: 1px solid rgb(212, 212, 212);
+    background: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 70px;
+    color: rgb(160, 160, 160);
+    text-align: center;
+}
+
+@media (min-width: 541px) {
+    #dd1 {
+        padding: 50px 100px 40px;
+        text-align: center;
+        background: rgb(48, 48, 51);
+    }
+}
+@media (min-width: 541px) {
+    #dd2 {
+        padding: 50px 100px 40px;
+        text-align: center;
+        background: rgb(48, 48, 51);
+    }
+}
+
+@media (min-width: 541px) {
+    .dd1{
+        display: none;
+    }
+}
+@media (min-width: 541px) {
+     .dd1_1{
+        display: none;
+    }
+}
+.dd2{
+	position: relative;
+}
+.dd2_1{
+	position: absolute;
+    top: 50%;
+    margin-top: -60px;
+    z-index: 10;
+    cursor: pointer;
+    padding: 20px 30px;
+    background: none;
+    left: -100px;
+    right: auto;
+}
+.dd2_2{
+	position: absolute;
+    top: 50%;
+    margin-top: -60px;
+    z-index: 10;
+    cursor: pointer;
+    padding: 20px 30px;
+    background: none;
+    right: -100px;
+    left: auto;
+}
+.dd3_1{
+	position: absolute;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    transform: translateZ(0px);
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+    bottom: 0px;
+}
+@media (min-width: 541px) {
+    .dd3_1{
+        height: 16px;
+    }
+}
+.dd3_2{
+	position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+    transform: translate3d(0px, 0px, 0px);
+}
+@media (min-width: 541px) {
+    .dd3_1_1{
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        background: rgb(255, 255, 255);
+        opacity: 0.3;
+        margin: 0px 5px;
+    }
+}
+.dd3_2_1{
+	width: 694px;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+    
+}
+.dd3_2_1_1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.dd3_2_1_1_1{
+	position: relative;
+    box-sizing: border-box;
+    width: 20%;
+    padding: 0px 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+@media (max-width: 1400px) {
+    .dd3_2_1_1_1 {
+        padding: 0px 10px;
+    }
+}
+.dd3_2_1_1_1_1{
+	display: block;
+}
+.dd3_2_1_1_1_2{
+	position: absolute;
+    top: 15px;
+    right: 0px;
+    left: 0px;
+    margin-top: calc(100% - 40px);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: transparent;
+}
+.dd3_2_1_1_1_1_1 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 100%;
+    background: rgb(244, 244, 244);
+}
+
+.dd3_2_1_1_1_1_2{
+ 	margin-top: 15px;
+}
+.ddd{
+	position: absolute;
+    inset: 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.ddd1{
+	display: block;
+    font-weight: 700;
+    line-height: 1.2;
+    color: rgb(255, 255, 255);
+}
+@media (min-width: 541px) {
+    .ddd1 {
+        margin-bottom: 7px;
+        font-size: 13px;
+        text-decoration: underline;
+    }
+}
+.ddd2 {
+    margin-bottom: 14px;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgb(93, 93, 93);
+    word-break: break-all;
+}
+.ddd3{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    color: rgb(255, 255, 255);
+}
+.ddd1_1{
+    width: 100%;
+    height: 100%;
+}
+.qq{
+    position: relative;
+    display: flex;
+    padding: 30px 0px 155px;
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+.qq1{
+    position: absolute;
+    top: 30px;
+    bottom: 0px;
+    left: 33%;
+    width: 1px;
+    margin: 0px;
+    background: rgb(212, 212, 212);
+    border: 0px;
+}
+.qq2{
+    position: absolute;
+    top: 30px;
+    bottom: 0px;
+    left: 66%;
+    width: 1px;
+    margin: 0px;
+    background: rgb(212, 212, 212);
+    border: 0px;
+}
+.qq3{
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: -120px;
+}
+.qq3_1{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 2902px;
+    max-height: 2902px;
+}
+
+}
+.qq3_1_1_1{
+	 padding: 0px 8%;	
+}
+.qq3_1_1_1_1{
+    position: relative;
+    display: block;
+    margin-top: 120px;
+    text-align: left;
+}
+@media screen and (width <= 1000px) {
+    .qq3_1_1_1_1_1 {
+        width: 70%;
+        max-width: 200px;
+    }
+}
+.qq3_1_1_1_1_1{
+    position: absolute;
+    top: -30px;
+    left: -5%;
+    width: 200px;
+    height: 4px;
+    background: rgb(0, 0, 0);
+}
+.qq3_1_1_1_1_2{
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: rgb(212, 212, 212);
+}
+.qq3_1_1_1_1_3{
+    padding-right: 30px;
+    color: rgb(0, 0, 0);
+    word-break: keep-all;
+}
+.qq3_1_1_1_1_2_1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+.qq3_1_1_1_1_3_1{
+    margin-top: 14px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.qq3_1_1_1_1_3_2{
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 24px;
+}
+.qq3_1_1_1_2{
+    display: flex;
+    margin-top: 20px;
+    border-top: 1px solid rgb(212, 212, 212);
+    box-sizing: border-box;
+}
+.qq3_1_1_1_2_1{
+    display: flex;
+    flex: 1 1 0%;
+    padding: 15px 0px 10px;
+}
+@media (min-width: 541px) and (max-width: 1200px) {
+    .qq3_1_1_1_2_1 {
+        flex-direction: column-reverse;
+    }
+}
+.qq3_1_1_1_2_2{
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 65px;
+    border-left: 1px solid rgb(212, 212, 212);
+
+}
+.qq3_1_1_1_2_1_1{
+    width: 52px;
+    height: 52px;
+}
+.qq3_1_1_1_2_1_2{
+    margin-left: 18px;
+    font-size: 11px;
+    line-height: 16px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding-right: 10px;
+}
+@media (min-width: 541px) and (max-width: 1200px) {
+    .qq3_1_1_1_2_1_2 {
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+}
+.qq3_1_1_1_2_1_2_1{
+    display: block;
+    font-weight: 800;
+}
+.qq3_1_1_1_2_1_2_2{
+    display: block;
+    margin-top: 6px;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+.qq3_1_1_1_3{
+    display: flex;
+    margin-top: 20px;
+    border-top: 1px solid rgb(212, 212, 212);
+    box-sizing: border-box;
+}
+.qq3_1_1_1_3_1{
+    display: flex;
+    flex: 1 1 0%;
+    padding: 15px 0px 10px;
+}
+@media (min-width: 541px) and (max-width: 1200px) {
+    .qq3_1_1_1_3_1 {
+        flex-direction: column-reverse;
+    }
+}
+.qq3_1_1_1_3_1_1{
+    width: 52px;
+    height: 52px;
+}
+@media (min-width: 541px) and (max-width: 1200px) {
+    .qq3_1_1_1_3_1_1_1 {
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+}
+.qq3_1_1_1_3_1_1_1{
+    margin-left: 18px;
+    font-size: 11px;
+    line-height: 16px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding-right: 10px;
+}
+.qq3_1_1_1_3_1_1_1_1{
+    display: block;
+    font-weight: 800;
+}
+.qq3_1_1_1_3_1_1_1_2{
+    display: block;
+    margin-top: 6px;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+.qq3_1_1_1_3_2{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 65px;
+    border-left: 1px solid rgb(212, 212, 212);
+}
+.qq3_1_1_1_3_3{
+    display: flex;
+    flex-direction: column;
+    padding-top: 6px;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.qq3_1_1_1_3_3_1{
+    display: block;
+    margin: 5px 0px 0px;
+    text-align: center;
+    font-size: 11px;
+    font-family: campton;
+    color: rgb(93, 93, 93);
+}
+
+.swiper {
+  width: 100%;
+  height: 620px;
+}
+
+@media (min-width: 541px) {
+    .uuu {
+        height: 680px;
+        margin: 0px 100px 0px 380px;
+    }
+}
+.uuu{
+    overflow: hidden;
+    text-align: left;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+}
+@media (min-width: 541px) {
+    .uuu1 {
+        width: 440px;
+        margin-left: 60px;
+    }
+}
+.uuu1_1{
+    white-space: pre-wrap;
+    font-size: xx-large;
+    font-weight: 500;
+    line-height: 58px;
+}
+.uuu1_2{
+     margin-top: 19px;
+    font-size: 20px;
+    line-height: 35px;
+    white-space: pre-wrap;
+}
+
+</style>
 
 
 </head>
@@ -31,99 +796,99 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 			    <!-- Slides -->
 			    <div class="swiper-slide">
 			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/08/f6dd48aed34c4b1e9fa254f4b8d85282_20240508174019.jpg?width=2000">
 			    		<div class="uuu">
 			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
-			    				<p class="uuu1_2">SUNLOVE</p>
+			    				<h2 class="uuu1_1">먹을거리로 마음 전하기</h2>
+			    				<p class="uuu1_2">GIFT</p>
 			    			</div>
 			    		</div>
 			    	</a>	
 			    </div>
 			      <div class="swiper-slide">
 			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/08/f6dd48aed34c4b1e9fa254f4b8d85282_20240508174019.jpg?width=2000">
 			    		<div class="uuu">
 			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
-			    				<p class="uuu1_2">SUNLOVE</p>
+			    				<h2 class="uuu1_1">먹을거리로 마음 전하기</h2>
+			    				<p class="uuu1_2">GIFT</p>
 			    			</div>
 			    		</div>
 			    	</a>	
 			    </div>
 			      <div class="swiper-slide">
 			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/08/f6dd48aed34c4b1e9fa254f4b8d85282_20240508174019.jpg?width=2000">
 			    		<div class="uuu">
 			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
-			    				<p class="uuu1_2">SUNLOVE</p>
+			    				<h2 class="uuu1_1">먹을거리로 마음 전하기</h2>
+			    				<p class="uuu1_2">GIFT</p>
 			    			</div>
 			    		</div>
 			    	</a>	
 			    </div>
 			      <div class="swiper-slide">
 			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/08/f6dd48aed34c4b1e9fa254f4b8d85282_20240508174019.jpg?width=2000">
 			    		<div class="uuu">
 			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
-			    				<p class="uuu1_2">SUNLOVE</p>
+			    				<h2 class="uuu1_1">먹을거리로 마음 전하기</h2>
+			    				<p class="uuu1_2">GIFT</p>
 			    			</div>
 			    		</div>
 			    	</a>	
 			    </div>
 			      <div class="swiper-slide">
 			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/08/f6dd48aed34c4b1e9fa254f4b8d85282_20240508174019.jpg?width=2000">
 			    		<div class="uuu">
 			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
-			    				<p class="uuu1_2">SUNLOVE</p>
+			    				<h2 class="uuu1_1">먹을거리로 마음 전하기</h2>
+			    				<p class="uuu1_2">GIFT</p>
 			    			</div>
 			    		</div>
 			    	</a>	
 			    </div>
 			      <div class="swiper-slide">
 			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/08/f6dd48aed34c4b1e9fa254f4b8d85282_20240508174019.jpg?width=2000">
 			    		<div class="uuu">
 			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
-			    				<p class="uuu1_2">SUNLOVE</p>
+			    				<h2 class="uuu1_1">먹을거리로 마음 전하기</h2>
+			    				<p class="uuu1_2">GIFT</p>
 			    			</div>
 			    		</div>
 			    	</a>	
 			    </div>
 			      <div class="swiper-slide">
 			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/08/f6dd48aed34c4b1e9fa254f4b8d85282_20240508174019.jpg?width=2000">
 			    		<div class="uuu">
 			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
-			    				<p class="uuu1_2">SUNLOVE</p>
+			    				<h2 class="uuu1_1">먹을거리로 마음 전하기</h2>
+			    				<p class="uuu1_2">GIFT</p>
 			    			</div>
 			    		</div>
 			    	</a>	
 			    </div>
 			      <div class="swiper-slide">
 			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/08/f6dd48aed34c4b1e9fa254f4b8d85282_20240508174019.jpg?width=2000">
 			    		<div class="uuu">
 			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
-			    				<p class="uuu1_2">SUNLOVE</p>
+			    				<h2 class="uuu1_1">먹을거리로 마음 전하기</h2>
+			    				<p class="uuu1_2">GIFT</p>
 			    			</div>
 			    		</div>
 			    	</a>	
 			    </div>
 			      <div class="swiper-slide">
 			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/197353e9623e4770a8dd0d4712aa9a38_20240503172244.jpg?width=2000">
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/08/f6dd48aed34c4b1e9fa254f4b8d85282_20240508174019.jpg?width=2000">
 			    		<div class="uuu">
 			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">여름을 책임질 티셔츠</h2>
-			    				<p class="uuu1_2">SUNLOVE</p>
+			    				<h2 class="uuu1_1">먹을거리로 마음 전하기</h2>
+			    				<p class="uuu1_2">GIFT</p>
 			    			</div>
 			    		</div>
 			    	</a>	
@@ -140,21 +905,15 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 		</div>
         <div class="bb">
           <div>
-            <h2 class="bb1">남성의류</h2>
+            <h2 class="bb1">푸드</h2>
           </div>
           <ul>
-            <a href="" class="bb2">All</a>
-            <a href="" class="bb2">NEW</a>
-            <a href="" class="bb2">EXCLUSIVE</a>
-            <a href="" class="bb2">해외브랜드</a>
-            <a href="" class="bb2">아우터</a>
-            <a href="" class="bb2">상의</a>
-            <a href="" class="bb2">하의</a>
-            <a href="" class="bb2">홈웨어</a>
-            <a href="" class="bb2">셋업</a>
-            <a href="" class="bb2">이너웨어</a>
-            <a href="" class="bb2">니트웨어</a>
-          
+            <a href="../list/food_all.jsp" class="bb2">All</a>
+            <a href="../list/food_new.jsp" class="bb2">NEW</a>
+            <a href="../list/food_present.jsp" class="bb2">선물세트</a>
+            <a href="../list/food_drink.jsp" class="bb2">음료</a>
+            <a href="../list/food_pfood.jsp" class="bb2">가공식품</a>
+            <a href="../list/food_fresh.jsp" class="bb2">신선,냉장</a>
           </ul>
         </div>
     </div>
@@ -168,54 +927,28 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
       <div class="cc1">
         <ul class="cc1_1">
           <li class="cc1_1_1">
-            <a href="https://content.29cm.co.kr/brand-news/21601" class="cc1_1_1_1">
+            <a href="https://content.29cm.co.kr/showcase/1148" class="cc1_1_1_1">
             	<div>
             		<div>
-            			<img class="cc1_1_1_1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/01728008c1974ab9a9080b42a6ee8818_20240503173507.jpg?width=800">
+            			<img class="cc1_1_1_1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/08/0cd1eb0dc9ef4b1686251b342351c8fd_20240508174216.jpg?width=800">
             		</div>	
             	</div>
             	<div class="cc1_1_1_2">
-            		<h1 class="cc1_1_1_3">제이리움의 고품격 니트웨어</h1>
-            		<p class="cc1_1_1_4">24SS 컬렉션을 최대 혜택으로 제안합니다</p>
+            		<h1 class="cc1_1_1_3">싱그러운 봄날의 정원</h1>
+            		<p class="cc1_1_1_4">오니스트 가든 에디션을 단독으로 소개해요</p>
             	</div>           	
             </a>
           </li>
            <li class="cc1_1_1">
-            <a href="https://content.29cm.co.kr/brand-news/21601" class="cc1_1_1_1">
+            <a href="https://content.29cm.co.kr/highlight/2024/04/24/1st" class="cc1_1_1_1">
             	<div>
             		<div>
-            			<img class="cc1_1_1_1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/85d112c1cdf940b691a82d2c4cc28532_20240503173542.jpg?width=800">
+            			<img class="cc1_1_1_1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/08/e7c01b9516ac4109bf7979e9b7cbd99d_20240508174300.jpg?width=800">
             		</div>	
             	</div>
             	<div class="cc1_1_1_2">
-            		<h1 class="cc1_1_1_3">제이리움의 고품격 니트웨어</h1>
-            		<p class="cc1_1_1_4">24SS 컬렉션을 최대 혜택으로 제안합니다</p>
-            	</div>           	
-            </a>
-          </li>
-          <li class="cc1_1_1">
-            <a href="https://content.29cm.co.kr/brand-news/21601" class="cc1_1_1_1">
-            	<div>
-            		<div>
-            			<img class="cc1_1_1_1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/57fadde85339414b97541653293cf957_20240503173652.jpg?width=800">
-            		</div>	
-            	</div>
-            	<div class="cc1_1_1_2">
-            		<h1 class="cc1_1_1_3">제이리움의 고품격 니트웨어</h1>
-            		<p class="cc1_1_1_4">24SS 컬렉션을 최대 혜택으로 제안합니다</p>
-            	</div>           	
-            </a>
-          </li>
-          <li class="cc1_1_1">
-            <a href="https://content.29cm.co.kr/brand-news/21601" class="cc1_1_1_1">
-            	<div>
-            		<div>
-            			<img class="cc1_1_1_1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/03/23c679fd459b4f85972962af4fb34420_20240503173807.jpg?width=800">
-            		</div>	
-            	</div>
-            	<div class="cc1_1_1_2">
-            		<h1 class="cc1_1_1_3">제이리움의 고품격 니트웨어</h1>
-            		<p class="cc1_1_1_4">24SS 컬렉션을 최대 혜택으로 제안합니다</p>
+            		<h1 class="cc1_1_1_3">모두에게 사랑받는 커피</h1>
+            		<p class="cc1_1_1_4">세 가지 스페셜티 커피로 일상을 가득 채워요</p>
             	</div>           	
             </a>
           </li>
@@ -1685,5 +2418,6 @@ $("#third-2").on("click",function(){
 	$("#dd1").hide();
 	$("#dd2").show();
 })
+
 </script>
 </html>
