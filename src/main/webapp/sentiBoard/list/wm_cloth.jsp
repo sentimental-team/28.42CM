@@ -1156,10 +1156,17 @@ button {
 	<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
 </footer>
 
+<<<<<<< HEAD
     
 <script>
 	$(".medium_ctgr_id111").on("click", function(){
 	  	  
+=======
+
+
+    $(".medium_ctgr_id111").on("click", function(){
+  	  
+>>>>>>> 159e357855e9497f3b238f859f79e2274709a970
         let selectedMedium_ctgr_id = $(this).val(); // 선택한 부서번호 가져오기
         $.ajax({
            url: "small_ctgr_json.jsp", 
@@ -1188,6 +1195,13 @@ button {
            }
         });
     });
+<<<<<<< HEAD
+=======
+
+	<script>
+
+
+>>>>>>> 159e357855e9497f3b238f859f79e2274709a970
 </script>
 
 </body>
