@@ -4,8 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <style>
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
@@ -382,10 +381,7 @@ h4 {
     font-size: var(--ruler-semantic-typography-title-l-bold-font-size);
     line-height: var(--ruler-semantic-typography-title-l-bold-line-height);
     font-weight: var(--ruler-semantic-typography-title-l-bold-font-weight);
-<<<<<<< HEAD
-=======
     color: var(--ruler-semantic-color-text-primary);
->>>>>>> 4a515ba62c3c7993098510b4eefd0fe15644654a
 }
 
 .css-1j2q5hp {
@@ -794,13 +790,9 @@ path[Attributes Style] {
     justify-content: center;
 }
 
-<<<<<<< HEAD
-=======
 .active {
     color: black; /* 검은색으로 활성 상태 표시 */
 }
-
->>>>>>> 4a515ba62c3c7993098510b4eefd0fe15644654a
 </style>
 </head>
 <header>
@@ -896,7 +888,7 @@ path[Attributes Style] {
 						<button type="button" class="css-1j2q5hp e1vq9ybh1">
 							상품 쿠폰(
 							<!-- -->
-							0
+							2
 							<!-- -->
 							)
 						</button>
@@ -1021,36 +1013,13 @@ path[Attributes Style] {
 </body>
 <script>
 $(document).ready(function() {
-    // 클릭 이벤트 핸들러 설정
-    $(".css-1j2q5hp, .css-1hvq8cr").click(function() {
-        // 모든 버튼의 스타일 초기화
-        $(".css-1j2q5hp, .css-1hvq8cr").css('color', '').removeClass('active');
+    // 모든 버튼에 대한 클릭 이벤트 핸들러 설정
+    $("button").click(function() {
+        // 첫 번째로, 모든 버튼에서 특정 클래스를 제거
+        $("button").removeClass("css-1hvq8cr e1vq9ybh1").addClass("css-1j2q5hp e1vq9ybh1");
 
-        // 클릭된 버튼만 검은색으로 표시하고 active 클래스 추가
-        $(this).css('color', 'black').addClass('active');
-
-        // 쿠폰이 없는 메시지 숨기기
-        $("#noCouponMessage").hide();
-
-        // '상품 쿠폰(0)' 버튼 클릭 시
-        if ($(this).hasClass('product-coupons') && $(this).text().includes('(0)')) {
-            // 쿠폰이 없는 메시지 표시
-    // 이벤트 핸들러 설정
-    $(".css-1j2q5hp, .css-1hvq8cr").click(function() {
-        // 모든 버튼 색상 초기화
-        $(".css-1j2q5hp, .css-1hvq8cr").css('color', ''); // 색상 초기화
-
-        // 클릭된 버튼만 검은색으로 변경
-        $(this).css('color', 'black');
-
-        // 상품 쿠폰 메시지 숨기기
-        $("#noCouponMessage").hide();
-
-        // '상품 쿠폰(0)' 버튼을 클릭했는지 확인
-        if ($(this).text().includes('상품 쿠폰(0)')) {
-            // 메시지 표시
-            $("#noCouponMessage").show();
-        }
+        // 클릭된 버튼에만 'css-1hvq8cr e1vq9ybh1' 클래스 추가
+        $(this).removeClass("css-1j2q5hp e1vq9ybh1").addClass("css-1hvq8cr e1vq9ybh1");
     });
 });
 </script>

@@ -23,7 +23,7 @@
 <body>
 	<header>
 		<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
-	</header>
+	</header> 
 	<div id="wrap">
 		<div id="kids-left">
 			<button></button>
@@ -38,13 +38,11 @@
 					<li><a class="medium-ctgr"
 						href="http://localhost/jspPro/sentiBoard/list/kids_all.jsp">ALL</a></li>
 					<li><a class="medium-ctgr"
-						href="">NEW</a></li>
+						href="http://localhost/jspPro/sentiBoard/list/kids_all.jsp">의류</a></li>
 					<li><a class="medium-ctgr"
-						href="">의류</a></li>
+						href="http://localhost/jspPro/sentiBoard/list/kids_all.jsp">신발,가방</a></li>
 					<li><a class="medium-ctgr"
-						href="">신발,가방</a></li>
-					<li><a class="medium-ctgr"
-						href="">아동,홈</a></li>
+						href="http://localhost/jspPro/sentiBoard/list/kids_all.jsp">아동,홈</a></li>
 				</ul>
 				<!-- </ul> -->
 			</div>

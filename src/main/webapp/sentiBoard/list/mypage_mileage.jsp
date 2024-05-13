@@ -794,12 +794,13 @@ h4 {
 </body>
 <script>
 $(document).ready(function() {
-    $('.e8avfrl12').click(function() {
-        // 모든 버튼에서 'active' 클래스를 제거합니다.
-        $('.e8avfrl12').removeClass('active');
+    // 버튼 클릭 이벤트 핸들러 설정
+    $(".css-ffmerx li button").click(function() {
+        // 모든 버튼에서 'css-1pz4yje' 클래스를 제거하고 'css-oh9vub' 클래스를 추가
+        $(".css-ffmerx li button").removeClass("css-1pz4yje").addClass("css-oh9vub");
         
-        // 클릭된 버튼에 'active' 클래스를 추가합니다.
-        $(this).addClass('active');
+        // 클릭된 버튼에만 'css-1pz4yje' 클래스를 추가하고 'css-oh9vub' 클래스를 제거
+        $(this).removeClass("css-oh9vub").addClass("css-1pz4yje");
     });
 });
 </script>

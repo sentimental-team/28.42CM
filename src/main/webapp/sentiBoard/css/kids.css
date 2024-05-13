@@ -667,3 +667,15 @@ body, input, select, textarea, button, a {
 		margin: 0px auto;
 	}
 }
+
+.medium-ctgr:focus, .medium-ctgr:active {
+    background-color: #f0f0f0;
+    color: #333;
+    outline: none;
+}
+
+.medium-ctgr.selected {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+}
