@@ -1,58 +1,6 @@
 <%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ 
 taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<<<<<<< HEAD
- <%
-
-    Connection conn = DBConn.getConnection();
-    
-    PreparedStatement pstmt = null;
-    ResultSet rs = null;    
-    String sql = " SELECT medium_ctgr_id, medium_ctgr_name, large_ctgr_id " 
-    		+" FROM medium_ctgr"
-    		+" where large_ctgr_id='1'";
-    
-    int medium_ctgr_id = 0;
-    String medium_ctgr_name =  null; 
-    int large_ctgr_id =0;
-    
-    Medium_CtgrVO mcvo = null;
-    ArrayList<Medium_CtgrVO> mclist = null;
-    
-    try {
-        pstmt = conn.prepareStatement(sql);
-        rs = pstmt.executeQuery();
-        
-        if( rs.next() ) {
-            mclist = new ArrayList<>();
-            do {
-            	medium_ctgr_id = rs.getInt("medium_ctgr_id");
-            	medium_ctgr_name = rs.getString("medium_ctgr_name");
-            	large_ctgr_id = rs.getInt("large_ctgr_id");    
-                
-                mcvo = new Medium_CtgrVO(medium_ctgr_id, medium_ctgr_name, large_ctgr_id);    
-                
-                mclist.add(mcvo);
-            } while (rs.next());                
-        } // if 
-        
-        
-    } catch (SQLException e) { 
-        e.printStackTrace();
-    } finally {
-        try {
-            pstmt.close();
-            rs.close();
-            // DBConn.close();
-        } catch (SQLException e) { 
-        	
-        	
-            e.printStackTrace();
-        }
-    }
-%>
-=======
->>>>>>> parent of b2531c6 (Merge pull request #56 from sentimental-team/yujin)
 <!DOCTYPE html>
 <html>
 <head>
@@ -520,7 +468,6 @@ button {
     cursor: pointer;
     outline: none;
 }
-<<<<<<< HEAD
 
 .widget-top-btn {
     display: flex;
@@ -576,8 +523,6 @@ button {
     background: var(--ruler-semantic-color-border-line);
 }
 
-=======
->>>>>>> parent of b2531c6 (Merge pull request #56 from sentimental-team/yujin)
 </style>
 </head>
 <header>
@@ -592,20 +537,6 @@ button {
 				<h2 class="best_title_left">여성의류</h2>
 				<!-- <ul class="left_bar_meue" > -->
 				<ul class="left-menu">
-<<<<<<< HEAD
-				<%
-              	Iterator<Medium_CtgrVO> ir =mclist.iterator();
-              	while (ir.hasNext()) {
-             	 mcvo = ir.next();
-         		%>
-               <li value="<%= mcvo.getMedium_ctgr_id() %>" class="medium_ctgr_id111">
-               		<a href="#" class="medium-ctgr"  <%=medium_ctgr_id == mcvo.getMedium_ctgr_id() ? "selected" : "" %>><%= mcvo.getMedium_ctgr_name() %></a>
-               </li>  
-    
-				<%
-		        } // while
-		 		%> 
-=======
 					<li><a class="medium-ctgr" href="">ALL</a></li>
 					<li><a class="medium-ctgr" href="">NEW</a></li>
 					<li><a class="medium-ctgr" href="">EXCLUSIVE</a></li>
@@ -621,7 +552,6 @@ button {
 					<li><a class="medium-ctgr" href="">이너웨어</a></li>
 					<li><a class="medium-ctgr" href="">홈웨어</a></li>
 					<li><a class="medium-ctgr" href="">해외브랜드</a></li>
->>>>>>> parent of b2531c6 (Merge pull request #56 from sentimental-team/yujin)
 				</ul>
 				<!-- </ul> -->
 			</div>
@@ -630,17 +560,7 @@ button {
 		<div id="best-right">
 			<!-- <h2 class="best_title_right" >여성의류</h2> -->
 			<div class="widget">
-<<<<<<< HEAD
-				<div class="widget-gap">
-					<div class="widget-top-btn">
-						<div class="widget-top-btn-box">
-
-						</div>
-					</div>
-				</div>
-=======
 				<div class="widget-gap"></div>
->>>>>>> parent of b2531c6 (Merge pull request #56 from sentimental-team/yujin)
 				<div class="controlgroup">
 					<select id="sort-type" class="styled-select">
 						<option>추천순</option>
@@ -1176,18 +1096,10 @@ button {
 	<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
 </footer>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
-<script>
-	$(".medium_ctgr_id111").on("click", function(){
-	  	  
-=======
 
 
     $(".medium_ctgr_id111").on("click", function(){
   	  
->>>>>>> 159e357855e9497f3b238f859f79e2274709a970
         let selectedMedium_ctgr_id = $(this).val(); // 선택한 부서번호 가져오기
         $.ajax({
            url: "small_ctgr_json.jsp", 
@@ -1216,17 +1128,10 @@ button {
            }
         });
     });
-<<<<<<< HEAD
-=======
-=======
-
-	<script>
->>>>>>> parent of b2531c6 (Merge pull request #56 from sentimental-team/yujin)
 
 	<script>
 
 
->>>>>>> 159e357855e9497f3b238f859f79e2274709a970
 </script>
 
 </body>
