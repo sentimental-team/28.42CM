@@ -148,13 +148,16 @@
 <body>
     <div class="container">
         <h1>상품 등록 페이지</h1>
-        <form action="productRegister_ok.jsp" method="POST" enctype="multipart/form-data">
+        <form action="" method="POST" enctype="multipart/form-data">
             <label for="product_name">상품명:</label>
             <input type="text" id="product_name" name="product_name" required>
 			
 			<label for="product_info">상품설명:</label>
-            <input type="text" id="product_name" name="product_name">
+            <input type="text" id="product_info" name="product_info">
 			
+			<label for="product_info">브랜드명:</label>
+            <input type="text" id="brand_name" name="brand_name">
+            
             <label for="price">가격:</label>
             <input type="number" id="price" name="price" required>
 
@@ -199,7 +202,7 @@
             </select>
 			<br>
 			<br>
-            <button type="submit">등록</button>
+            <button type="submit" onclick="location.href='productRegister_ok.do'">등록</button>
             <button type="submit">수정</button>
             <button type="submit">취소</button>
         </form>
