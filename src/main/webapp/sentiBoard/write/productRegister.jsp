@@ -148,12 +148,12 @@
 <body>
     <div class="container">
         <h1>상품 등록 페이지</h1>
-        <form action="/submit_product" method="POST" enctype="multipart/form-data">
+        <form action="productRegister_ok.jsp" method="POST" enctype="multipart/form-data">
             <label for="product_name">상품명:</label>
             <input type="text" id="product_name" name="product_name" required>
 			
 			<label for="product_info">상품설명:</label>
-            <input type="text" id="product_name" name="product_name" required>
+            <input type="text" id="product_name" name="product_name">
 			
             <label for="price">가격:</label>
             <input type="number" id="price" name="price" required>
@@ -168,7 +168,7 @@
             <input type="file" id="description_image" name="description_image" accept="image/*"> <!-- 추가된 이미지 업로드 -->
 
             <label class="main_category" for="main_category">Main Category:</label>
-            <select class="main_category" id="main_category" name="main_category">
+            <select class="main_category" id="main_category" name="main_category" required>
 			<option value="" disabled selected>카테고리를 선택해주세요</option>
 			<%
 			    Iterator<Main_CtgrVO> ir = mainList.iterator();
@@ -184,17 +184,17 @@
 			</select>
 
             <label class="" for="large_category">Large Category:</label>
-            <select class="large_category" id="large_category" name="large_category">
+            <select class="large_category" id="large_category" name="large_category" required>
             	<option value="" disabled selected>카테고리를 선택해주세요</option>
             </select>
 
             <label class="" for="medium_category">Medium Category:</label>
-            <select class="medium_category" id="medium_category" name="medium_category">
+            <select class="medium_category" id="medium_category" name="medium_category" required>
             	<option value="" disabled selected>카테고리를 선택해주세요</option>
             </select>
 
             <label class="" for="small_category">Small Category:</label>
-            <select class="small_category" id="small_category" name="small_category">
+            <select class="small_category" id="small_category" name="small_category" required>
             	<option value="" disabled selected>카테고리를 선택해주세요</option>
             </select>
 			<br>
