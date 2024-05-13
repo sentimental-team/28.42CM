@@ -10,10 +10,18 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <link rel="shortcut icon" href="http://localhost/jspPro/images/SiSt.ico">
 <script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
-<header>
-	<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
-</header>
+
 <style>
+
+@supports (position:sticky) or (position:-webkit-sticky) {
+    .main-header {
+        position: -webkit-sticky;
+        position: sticky;
+        z-index: 10;
+        top: 0px;
+        padding-top: 0;
+    }
+}
 .middle {
     min-width: 900px;
     max-width: 1600px;
@@ -638,22 +646,698 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
     -webkit-box-align: center;
     align-items: center;
 }
-/* 
-.deli-info-modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 300px;
-    padding: 50px 40px 40px;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0.5) 20px 20px 80px 0px;
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-    transition: all 100ms ease-in 0s;
+
+.sec2-sale-box2 {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
 }
 
-.modal-close {
+		.sec2-sale-box-not {
+		    width: 100%;
+		    box-sizing: border-box;
+		    padding: 10px 16px;
+		    background-color: var(--ruler-semantic-color-fill-surface-contents);
+		}
+	
+		.sec2-sale-btn-not {
+		    position: relative;
+		    width: 38px;
+		    height: 22px;
+		    min-width: 38px;
+		    min-height: 22px;
+		    border-radius: 100px;
+		    background-color: var(--ruler-semantic-color-text-tertiary);
+		}
+	
+		.sec2-sale-box2 > :not(style) ~ :not(style) {
+		    margin-left: 8px;
+		}
+		
+		.sec2-sale-text-not {
+		    display: inline-block;
+		    font-family: var(--ruler-semantic-typography-text-m-font-family);
+		    font-weight: var(--ruler-semantic-typography-text-m-font-weight);
+		    line-height: var(--ruler-semantic-typography-text-m-line-height);
+		    font-size: var(--ruler-semantic-typography-text-m-font-size);
+		    color: var(--ruler-semantic-color-text-secondary);
+		}
+		
+		.sec2-sale-btn-not::before {
+		    content: "";
+		    position: absolute;
+		    top: 2px;
+		    left: 2px;
+		    width: 18px;
+		    height: 18px;
+		    background-color: rgb(255, 255, 255);
+		    border-radius: 50%;
+		}
+		
+.sec2-sale-btn {
+    position: relative;
+    width: 38px;
+    height: 22px;
+    min-width: 38px;
+    min-height: 22px;
+    border-radius: 100px;
+    background-color: var(--ruler-semantic-color-common-accent);
+}
+
+.sec2-sale-text {
+    display: inline-block;
+    font-family: var(--ruler-semantic-typography-text-m-font-family);
+    font-weight: var(--ruler-semantic-typography-text-m-font-weight);
+    line-height: var(--ruler-semantic-typography-text-m-line-height);
+    font-size: var(--ruler-semantic-typography-text-m-font-size);
+    color: var(--ruler-semantic-color-common-accent);
+}
+
+.sec2-sale-box {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 16px;
+    background-color: var(--ruler-scale-color-red-100);
+}
+
+.sec2-sale-btn::before {
+    top: 2px;
+    right: 2px;
+    left: initial;
+}
+
+
+
+
+
+
+
+.rigtht-section {
+    position: sticky;
+    z-index: 5;
+    top: 116px;
+    overflow: auto;
+    flex: 1 1 0%;
+    min-width: 370px;
+    max-height: 1200px;
+    margin-left: 35px;
+}
+
+.right-section-box {
+    position: relative;
+    padding: 0px 30px 40px;
+    border: 3px solid var(--ruler-semantic-color-border-divider-strong);
+}
+
+.right-sec-top {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: 74px;
+    border-bottom: 1px solid var(--ruler-semantic-color-border-line);
+}
+
+.right-sec-top-text{
+	font-family: var(--ruler-semantic-typography-text-xl-bold-font-family);
+    font-weight: var(--ruler-semantic-typography-text-xl-bold-font-weight);
+    line-height: var(--ruler-semantic-typography-text-xl-bold-line-height);
+    font-size: var(--ruler-semantic-typography-text-xl-bold-font-size);
+    color: var(--ruler-semantic-color-text-primary);
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.for-right-top-text-btn{
+	-webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-width: 40px;
+    min-height: 25px;
+    position: relative;
+    padding-right: 30px;
+    display: none;
+}
+
+.right-sec-for-mid {
+    margin: 30px 0px;
+}
+
+.for-mid-li {
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.right-sec-totalpay {
+    display: inline-block;
+    font-family: var(--ruler-semantic-typography-text-l-font-family);
+    font-weight: var(--ruler-semantic-typography-text-l-font-weight);
+    line-height: var(--ruler-semantic-typography-text-l-line-height);
+    font-size: var(--ruler-semantic-typography-text-l-font-size);
+    color: var(--ruler-semantic-color-text-primary);
+}
+
+.right-sec-totalpay-text {
+    display: inline-block;
+    font-family: var(--ruler-semantic-typography-text-xxl-medium-font-family);
+    font-weight: var(--ruler-semantic-typography-text-xxl-medium-font-weight);
+    line-height: var(--ruler-semantic-typography-text-xxl-medium-line-height);
+    font-size: var(--ruler-semantic-typography-text-xxl-medium-font-size);
+    color: var(--ruler-semantic-color-text-primary);
+}
+
+.for-three-text-box {
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    gap: 4px;
+    flex: 1 1 0%;
+}
+
+.box-of-three-coupon {
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.coupon-sale-price {
+    display: inline-block;
+    font-family: var(--ruler-semantic-typography-text-l-font-family);
+    font-weight: var(--ruler-semantic-typography-text-l-font-weight);
+    line-height: var(--ruler-semantic-typography-text-l-line-height);
+    font-size: var(--ruler-semantic-typography-text-l-font-size);
+    color: var(--ruler-semantic-color-common-accent);
+}
+
+.right-sec-for-mid > .for-mid-li + .for-mid-li {
+    margin-top: var(--ruler-scale-dimension-225);
+}
+
+.for-item-coupon-box {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+
+.item-coupon-text {
+    display: inline-block;
+    font-family: var(--ruler-semantic-typography-text-l-font-family);
+    font-weight: var(--ruler-semantic-typography-text-l-font-weight);
+    line-height: var(--ruler-semantic-typography-text-l-line-height);
+    font-size: var(--ruler-semantic-typography-text-l-font-size);
+    color: var(--ruler-semantic-color-text-primary);
+}
+
+.for-item-coupon-text {
+    display: inline-block;
+    font-family: var(--ruler-semantic-typography-text-l-font-family);
+    font-weight: var(--ruler-semantic-typography-text-l-font-weight);
+    line-height: var(--ruler-semantic-typography-text-l-line-height);
+    font-size: var(--ruler-semantic-typography-text-l-font-size);
+    color: var(--ruler-semantic-color-text-primary);
+}
+
+.cart-coupon-box {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+
+.css-18fin6o {
+    margin-right: 4px;
+}
+
+.cart-coupon-box-text {
+    display: inline-block;
+    font-family: var(--ruler-semantic-typography-text-l-font-family);
+    font-weight: var(--ruler-semantic-typography-text-l-font-weight);
+    line-height: var(--ruler-semantic-typography-text-l-line-height);
+    font-size: var(--ruler-semantic-typography-text-l-font-size);
+    color: var(--ruler-semantic-color-text-primary);
+}
+
+.use-mile-box {
+    display: inline-block;
+    font-family: var(--ruler-semantic-typography-text-l-font-family);
+    font-weight: var(--ruler-semantic-typography-text-l-font-weight);
+    line-height: var(--ruler-semantic-typography-text-l-line-height);
+    font-size: var(--ruler-semantic-typography-text-l-font-size);
+    color: var(--ruler-semantic-color-text-primary);
+}
+
+.use-mile-text {
+    display: inline-block;
+    font-family: var(--ruler-semantic-typography-text-xxl-medium-font-family);
+    font-weight: var(--ruler-semantic-typography-text-xxl-medium-font-weight);
+    line-height: var(--ruler-semantic-typography-text-xxl-medium-line-height);
+    font-size: var(--ruler-semantic-typography-text-xxl-medium-font-size);
+    color: var(--ruler-semantic-color-text-primary);
+}
+
+.go-deli-pay {
+    display: inline-block;
+    font-family: var(--ruler-semantic-typography-text-l-font-family);
+    font-weight: var(--ruler-semantic-typography-text-l-font-weight);
+    line-height: var(--ruler-semantic-typography-text-l-line-height);
+    font-size: var(--ruler-semantic-typography-text-l-font-size);
+    color: var(--ruler-semantic-color-text-primary);
+}
+
+.go-deli-pay-text {
+    display: inline-block;
+    font-family: var(--ruler-semantic-typography-text-xxl-medium-font-family);
+    font-weight: var(--ruler-semantic-typography-text-xxl-medium-font-weight);
+    line-height: var(--ruler-semantic-typography-text-xxl-medium-line-height);
+    font-size: var(--ruler-semantic-typography-text-xxl-medium-font-size);
+    color: var(--ruler-semantic-color-text-primary);
+}
+
+.go-total-pay {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex: 1 1 0%;
+    padding: 6px 0px;
+}
+
+.go-total-pay-box {
+    display: inline-block;
+    font-family: var(--ruler-semantic-typography-text-l-bold-font-family);
+    font-weight: var(--ruler-semantic-typography-text-l-bold-font-weight);
+    line-height: var(--ruler-semantic-typography-text-l-bold-line-height);
+    font-size: var(--ruler-semantic-typography-text-l-bold-font-size);
+    color: var(--ruler-semantic-color-text-primary);
+}
+
+.go-total-pay-text {
+    display: inline-block;
+    font-family: var(--ruler-semantic-typography-title-xxl-bold-font-family);
+    font-weight: var(--ruler-semantic-typography-title-xxl-bold-font-weight);
+    line-height: var(--ruler-semantic-typography-title-xxl-bold-line-height);
+    font-size: var(--ruler-semantic-typography-title-xxl-bold-font-size);
+    color: var(--ruler-semantic-color-common-accent);
+}
+
+.right-section-bot {
+    padding-top: 25px;
+    border-top: 1px solid rgb(228, 228, 228);
+}
+
+.right-section-bot-btn {
+    margin: 30px 0px 0px;
+}
+
+.right-section-bot2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.right-sec-bo2-box {
+    position: relative;
+    overflow: visible;
+    display: inline-block;
+    min-width: fit-content;
+    min-height: fit-content;
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+.bot2-checkbox {
+	content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 2px;
+    transition: background-color 0.2s ease 0s;	
+}
+
+.bot3-li-div-span-input{
+	content: "";
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 2px;
+    transition: background-color 0.2s ease 0s;	
+}
+
+.bot2-checkbox-total-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: rgb(10, 10, 10);
+}
+
+		.bot2-checbox-total-not {
+		    cursor: pointer;
+		    position: relative;
+		    z-index: 1;
+		    display: inline-block;
+		    color: rgb(48, 48, 51);
+		    vertical-align: top;
+		    padding: 5px 5px 5px 34px;
+		    font-size: 13px;
+		    line-height: 1.2;
+		}
+
+.bot2-checbox-total-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+   	color: rgb(10, 10, 10);
+}
+
+		.bot2-checbox-total-not::before {
+		    content: "";
+		    position: absolute;
+		    top: 0px;
+		    left: 0px;
+		    width: 20px;
+		    height: 20px;
+		    text-align: center;
+		    background: rgb(255, 255, 255);
+		    border: 1px solid rgb(212, 212, 212);
+		    border-radius: 2px;
+		    transition: background-color 0.2s ease 0s;
+		}
+		
+		.bot2-checbox-total-not::before {
+		    width: 24px;
+		    height: 24px;
+		    border-color: rgb(228, 228, 228);
+		    top: 50%;
+		    transform: translateY(-50%);
+		}
+		
+		.bot2-checbox-total-not::after {
+		    content: "";
+		    position: absolute;
+		    top: 3px;
+		    left: 7px;
+		    transform: rotate(45deg);
+		    box-sizing: content-box;
+		    width: 5px;
+		    height: 10px;
+		    border-style: solid;
+		    border-color: rgb(212, 212, 212);
+		    border-image: initial;
+		    border-width: 0px 1px 1px 0px;
+		}
+		
+		.bot2-checbox-total-not::after {
+		    width: 6px;
+		    height: 11px;
+		    top: 50%;
+		    left: 8.5px;
+		    margin-top: -8px;
+		    border-color: rgb(228, 228, 228);
+		}
+		
+.bot2-checkbox:checked + .bot2-checbox-total-not::before {
+    background: rgb(55, 95, 255);
+    border-color: rgb(55, 95, 255);
+}
+
+.bot2-checbox-total::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 2px;
+    transition: background-color 0.2s ease 0s;
+}
+
+.bot2-checbox-total::before {
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgb(0, 0, 0) !important;
+    border-color: rgb(0, 0, 0) !important;
+}
+
+.bot2-checbox-total::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    transform: rotate(45deg);
+    box-sizing: content-box;
+    width: 5px;
+    height: 10px;
+    border-style: solid;
+    border-color: rgb(212, 212, 212);
+    border-image: initial;
+    border-width: 0px 1px 1px 0px;
+}
+
+.bot2-checbox-total::after {
+    width: 6px;
+    height: 11px;
+    top: 50%;
+    left: 8.5px;
+    margin-top: -8px;
+    border-color: rgb(228, 228, 228);
+}
+
+.right-sec-bot3-box {
+    margin-top: 5px;
+}
+
+.bot3-li {
+    display: flex;
+    align-items: flex-start;
+}
+
+.bot3-li-div {
+    position: relative;
+    display: inline-block;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-left: 32px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    color: rgb(160, 160, 160);
+    vertical-align: middle;
+}
+
+.bot3-li-div-span {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    min-width: fit-content;
+    min-height: fit-content;
+    line-height: 24px;
+    vertical-align: middle;
+    margin-left: -32px;
+}
+
+
+.right-section-bot3 {
+    margin-top: 5px;
+}
+
+		.bot3-li-div-span-input-text-not {
+		    cursor: pointer;
+		    position: relative;
+		    z-index: 1;
+		    display: inline-block;
+		    vertical-align: top;
+		    padding: 5px 5px 5px 34px;
+		    font-size: 14px;
+		    line-height: 22px;
+		    color: rgb(160, 160, 160);
+		}
+		
+		.bot3-li-div-span-input-text-not::before {
+		    content: "";
+		    position: absolute;
+		    top: 0px;
+		    left: 0px;
+		    width: 20px;
+		    height: 20px;
+		    text-align: center;
+		    background: rgb(255, 255, 255);
+		    border: 1px solid rgb(212, 212, 212);
+		    border-radius: 2px;
+		    transition: background-color 0.2s ease 0s;
+		}
+		
+		.bot3-li-div-span-input-text-not::before {
+		    width: 24px;
+		    height: 24px;
+		    border-color: rgb(228, 228, 228);
+		    top: 50%;
+		    transform: translateY(-50%);
+		}
+		
+		.bot3-li-div-span-input-text-not::after {
+		    content: "";
+		    position: absolute;
+		    top: 3px;
+		    left: 7px;
+		    transform: rotate(45deg);
+		    box-sizing: content-box;
+		    width: 5px;
+		    height: 10px;
+		    border-style: solid;
+		    border-color: rgb(212, 212, 212);
+		    border-image: initial;
+		    border-width: 0px 1px 1px 0px;
+		}
+		
+		.bot3-li-div-span-input-text-not::after {
+		    width: 6px;
+		    height: 11px;
+		    top: 50%;
+		    left: 8.5px;
+		    margin-top: -8px;
+		    border-color: rgb(228, 228, 228);
+		}
+		
+		.bot3-li-div-span-input-text-not::after {
+		    top: 50%;
+		    left: 8.5px;
+		    margin-top: -8px;
+		}
+
+.bot3-li-div-span-input-text {
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 5px 5px 34px;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgb(160, 160, 160);
+}
+
+.bot3-li-div-span-input-text::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 2px;
+    transition: background-color 0.2s ease 0s;
+}
+
+.bot3-li-div-span-input-text::before {
+    width: 24px;
+    height: 24px;
+    border-color: rgb(228, 228, 228);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bot3-li-div-span-input-text::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    transform: rotate(45deg);
+    box-sizing: content-box;
+    width: 5px;
+    height: 10px;
+    border-style: solid;
+    border-color: rgb(212, 212, 212);
+    border-image: initial;
+    border-width: 0px 1px 1px 0px;
+}
+
+.bot3-li-div-span-input-text::after {
+    width: 6px;
+    height: 11px;
+    top: 50%;
+    left: 8.5px;
+    margin-top: -8px;
+    border-color: rgb(228, 228, 228);
+}
+
+.bot3-li-div-span-input-text::after {
+    top: 50%;
+    left: 8.5px;
+    margin-top: -8px;
+}
+
+.more-view1 {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(160, 160, 160);
+    text-decoration: underline;
+    vertical-align: middle;
+}
+
+.KG-company {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ruler-scale-color-gray-400);
+    text-decoration: underline;
+    vertical-align: middle;
+}
+
+.right-section-bot4 {
+    margin: 30px 0px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+em {
+    color: rgb(255, 72, 0);
+}
+
+.right-section-bot-btn {
+    margin: 30px 0px 0px;
+}
+
+.right-section-bot-checkout {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
@@ -661,68 +1345,35 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
     justify-content: center;
     min-width: 40px;
     min-height: 25px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 56px;
-    height: 56px;
-    padding: 20px;
+    width: 100%;
+    height: 72px;
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    border-radius: 0px;
 }
 
-.css-1e20pup {
-    width: 16px;
-    height: 16px;
+@supports (position:sticky) or (position:-webkit-sticky) {
+    .head-main {
+        position: relative;
+    }
 }
 
-.css-1e20pup g {
-    stroke-width: 3px;
+.sec2-coupon-item-info {
+    margin: 24px 0px;
 }
 
-.modal-inside {
-    font-size: 18px;
-    line-height: 1.4em;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    word-break: keep-all;
-    white-space: pre-wrap;
+.checkall-text{
+	position: relative;
+	left: 30px;
+	padding: 5px 5px 5px;
 }
-
-.inside-box {
-    margin: 10px -16px -2px;
-    max-width: 254px;
-    text-align: left;
-}
-
-.deli-info-head {
-    font-size: 16px;
-    font-weight: 500;
-    text-align: center;
-}
-
-.deli-info-modal-ul {
-    margin-top: 12px;
-}
-
-.for-modal {
-    position: fixed;
-    z-index: 3000;
-    inset: 0px;
-    overflow: hidden;
-    overscroll-behavior: contain;
-    display: flex;
-    flex-direction: column;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    visibility: visible;
-    opacity: 1;
-    background-color: transparent;
-}
- */
 </style>
-
 <body>
+<header>
+	<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
+</header>
 	<div class="middle">
 		<div class="mid-shopping-state">
 			<ol class="state-text">
@@ -846,10 +1497,119 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 					<header class="second-header">
 						<h2 class="coupon-item-info">쿠폰 사용 및 상품 정보 / 총 1개</h2>
 					</header>
+					<div style="flex: 0 0 auto; height: 25px;"></div>
+					<div class="sec2-sale-box-not">
+						<div class="sec2-sale-box2">
+							<button class="sec2-sale-btn-not"></button>
+							<span class="sec2-sale-text-not" color="accent">최대 할인이 적용되지 않았어요. 최대 할인을 활성화 하세요.</span>
+						</div>
+					</div>
+					<ul class="sec2-coupon-item-info"></ul>
 				</section>
 				<section class="left-section3"></section>
 				<section class="left-section4"></section>
 			</div>
+			<aside class="rigtht-section">
+				<section class="right-section-box">
+					<header class="right-sec-top">
+						<h2 class="right-sec-top-text">결제금액</h2>
+						<button class="for-right-top-text-btn"></button>
+					</header>
+					<div class="right-sec-mid">
+						<ul class="right-sec-for-mid">
+							<li class="for-mid-li">
+								<span class="right-sec-totalpay">총 상품 금액</span>
+								<span class="right-sec-totalpay-text">200,000원</span>
+							</li>
+							<li class="for-mid-li">
+								<div class="for-three-text-box">
+									<div class="box-of-three-coupon">
+										<span class="coupon-sale-price">쿠폰 할인 금액</span>
+										<span class="coupon-sale-price">- 22,900원</span>
+									</div>
+									<div class="box-of-three-coupon">
+										<div class="for-item-coupon-box">
+											<svg class="eftial5 css-18fin6o epb9foa0" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M1 1H2.17647V9.82353H11V11H1V1Z" fill="var(--ruler-semantic-color-border-line)"></path>
+											</svg>
+											<span class="item-coupon-text">상품 쿠폰</span>
+										</div>
+										<span class="for-item-coupon-text">+ 0원</span>
+									</div>
+									<div class="box-of-three-coupon">
+										<div class="cart-coupon-box">
+											<svg class="eftial5 css-18fin6o epb9foa0" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M1 1H2.17647V9.82353H11V11H1V1Z" fill="var(--ruler-semantic-color-border-line)"></path>
+											</svg>
+											<span class="cart-coupon-box-text">장바구니 쿠폰</span>
+										</div>
+										<span class="cart-coupon-text">- 2,900원</span>
+									</div>
+								</div>
+							</li>
+							<li class="for-mid-li">
+								<span class="use-mile-box">마일리지 사용</span>
+								<span class="use-mile-text">+ 0P</span>
+							</li>
+							<li class="for-mid-li">
+								<span class="go-deli-pay">배송비</span>
+								<span class="go-deli-pay-text">+ 2,500원</span>
+							</li>
+							<li class="for-mid-li">
+								<div class="go-total-pay">
+									<span class="go-total-pay-box">총 결제 금액</span>
+									<span class="go-total-pay-text">286,000원</span>
+								</div>
+							</li>
+							</ul>
+							<div class="right-section-bot">
+								<div class="right-section-bot2">
+									<span class="right-sec-bo2-box">
+										<input class="bot2-checkbox" type="checkbox" name="checkall" onclick="selectAll(this)" value="selectall">
+										<b class="checkall-text">주문 내용을 확인했으며, 아래 내용에 모두 동의합니다.</b>
+									</span>
+								</div>
+								<ul class="right-section-bot3">
+									<li class="bot3-li">
+										<div class="bot3-li-div">
+											<span class="bot3-li-div-span">
+												<input class="bot3-li-div-span-input" type="checkbox" name="checkone" onclick="checkSelectAll()"/>
+												<b class="checkall-text">(필수) 개인정보 수집/이용 동의</b>
+											</span>
+											<button type="button" class="more-view1">보기</button>
+										</div>
+									</li>
+									<li class="bot3-li">
+										<div class="bot3-li-div">
+											<span class="bot3-li-div-span">
+												<input class="bot3-li-div-span-input" type="checkbox" name="checkone" onclick="checkSelectAll()"/>
+													<b class="checkall-text">(필수) 개인정보 제3자 제공 동의</b>
+											</span>
+											<button type="button" class="more-view1">보기</button>
+										</div>
+									</li>
+									<li class="bot3-li">
+										<div class="bot3-li-div">
+											<span class="bot3-li-div-span">
+												<input class="bot3-li-div-span-input" type="checkbox" name="checkone" onclick="checkSelectAll()"/>
+													<b class="checkall-text">(필수) 결제대행 서비스 이용약관</b>
+											</span>
+											<a class="KG-company" href="https://www.inicis.com/terms">(주)KG이니시스</a>
+										</div>
+									</li>
+								</ul>
+							<p class="right-section-bot4">
+							결제 및 계좌 안내 시 상호명은
+							<em>(주)무신사</em>
+							로 표기되니 참고 부탁드립니다.
+							</p>
+						</div>
+						<div class="right-section-bot-btn">
+							<button class="right-section-bot-checkout">CHECK OUT</button>
+						</div>
+					</div>
+				</section>
+			</aside>
 		</div>
 	</div>
 	<!-- 
@@ -878,15 +1638,49 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <footer>
 	<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
 </footer>
-<!-- 
+
 <script>
-	$(".sec1-header-box-btn").on("click", function(){
-		$(".deli-info-modal").show();
-		if ($(".modal-close")) {
-			$(".deli-info-modal").hide()
-		}
-	})
+$(".sec2-sale-btn-not").on("click", function(){
+	var sw = $(".sec2-sale-btn-not").hasClass("sec2-sale-btn");
+    if (sw) {
+        $(".sec2-sale-btn-not").removeClass("sec2-sale-btn");
+        $(".sec2-sale-text-not").removeClass("sec2-sale-text").text("최대 할인이 적용되지 않았어요. 최대 할인을 활성화 하세요.");
+        $(".sec2-sale-box-not").removeClass("sec2-sale-box");
+    } else {
+        $(".sec2-sale-btn-not").addClass("sec2-sale-btn");
+        $(".sec2-sale-text-not").addClass("sec2-sale-text").text("최대 할인이 적용됐어요");
+        $(".sec2-sale-box-not").addClass("sec2-sale-box");
+    }
+})
 </script>
- -->
+<script>
+function checkSelectAll()  {
+	  // 전체 체크박스
+	  const checkboxes 
+	    = document.querySelectorAll('input[name="checkone"]');
+	  // 선택된 체크박스
+	  const checked 
+	    = document.querySelectorAll('input[name="checkone"]:checked');
+	  // select all 체크박스
+	  const selectAll 
+	    = document.querySelector('input[name="checkall"]');
+	  
+	  if(checkboxes.length === checked.length)  {
+	    selectAll.checked = true;
+	  }else {
+	    selectAll.checked = false;
+	  }
+
+	}
+
+	function selectAll(selectAll)  {
+	  const checkboxes 
+	     = document.getElementsByName('checkone');
+	  
+	  checkboxes.forEach((checkbox) => {
+	    checkbox.checked = selectAll.checked
+	  })
+	}
+</script>
 </body>
 </html>

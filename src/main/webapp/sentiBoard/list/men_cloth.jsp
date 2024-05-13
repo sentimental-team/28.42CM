@@ -1,16 +1,72 @@
+<%@page import="domain.Medium_CtgrVO"%>
+<%@page import="java.util.Iterator"%>
+<%@page import="java.sql.SQLException"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="domain.Large_CtgrVO"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="com.util.DBConn"%>
+<%@page import="java.sql.Connection"%>
 <%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ 
 taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+ <%
+    Connection conn = DBConn.getConnection();
+    
+    PreparedStatement pstmt = null;
+    ResultSet rs = null;    
+    String sql = " SELECT medium_ctgr_id, medium_ctgr_name, large_ctgr_id " 
+    		+" FROM medium_ctgr"
+    		+" where large_ctgr_id='5'";
+    
+    int medium_ctgr_id = 0;
+    String medium_ctgr_name =  null; 
+    int large_ctgr_id =0;
+    
+    Medium_CtgrVO mcvo = null;
+    ArrayList<Medium_CtgrVO> mclist = null;
+    
+    try {
+        pstmt = conn.prepareStatement(sql);
+        rs = pstmt.executeQuery();
+        
+        if( rs.next() ) {
+            mclist = new ArrayList<>();
+            do {
+            	medium_ctgr_id = rs.getInt("medium_ctgr_id");
+            	medium_ctgr_name = rs.getString("medium_ctgr_name");
+            	large_ctgr_id = rs.getInt("large_ctgr_id");    
+                
+                mcvo = new Medium_CtgrVO(medium_ctgr_id, medium_ctgr_name, large_ctgr_id);    
+                
+                mclist.add(mcvo);
+            } while (rs.next());                
+        } // if 
+        
+        
+    } catch (SQLException e) { 
+        e.printStackTrace();
+    } finally {
+        try {
+            pstmt.close();
+            rs.close();
+            // DBConn.close();
+        } catch (SQLException e) { 
+            e.printStackTrace();
+        }
+    }
+%>
 <!DOCTYPE html>
 <html>
 <head>
+<title>감도 깊은 취향 셀렉트샾 29CM</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" href="http://localhost/jspPro/images/SiSt.ico">
 
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<!-- <script src="/jspPro/resources/cdn-main/example.js"></script> -->
+  <script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+ <script src="/jspPro/resources/cdn-main/example.js"></script> 
 <style>
 body {
 	min-height: 190vh;
@@ -29,28 +85,13 @@ body {
 	padding: 40px 50px 90px
 }
 
-.kids_title_left a.large-ctgr {
-    color: black; 
-    text-decoration: none; /* 클릭 후에도 줄 안생기게 하는 css */
-}
-
-.kids_title_left a.large-ctgr:link,
-.kids_title_left a.large-ctgr:visited,
-.kids_title_left a.large-ctgr:hover,
-.kids_title_left a.large-ctgr:focus,
-.kids_title_left a.large-ctgr:active {
-    color: black;
-    text-decoration: none;
-    /* 클릭 후 기존 색 유지 css */
-}
-
-#kids-left {
+#best-left {
 	width: 200px;
 	padding-right: 80px;
 	box-sizing: content-box;
 }
 
-.kids_title_left {
+.best_title_left {
 	width: 200px;
 	padding-bottom: 12px;
 	border-bottom: 4px solid #000000;
@@ -75,21 +116,20 @@ body {
 	outline: none;
 	font-weight: 200;
 	text-decoration: none;
-	cursor: pointer;
 }
 
-#kids-right {
+#best-right {
 	flex: 1;
 }
 
-.kids_title_right {
+.best_title_right {
 	margin-bottom: 36px;
 	font-size: 34px;
 	font-weight: 600;
 	line-height: 41px;
 }
 
-.kids_radio_box {
+.best_radio_box {
 	display: flex;
 	-webkit-box-align: center;
 	align-items: center;
@@ -99,32 +139,21 @@ body {
 	background-color: rgb(255, 255, 255);
 }
 
-.aa {
+ .aa {
 	display: flex;
 	flex-wrap: wrap;
 	list-style: none;
 }
 
-.aa>span {
-	min-height: 10px;
-	line-height: 10px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	overflow: visible;
-	height: 18px;
-	margin-right: 10px; /* 간격 조절 */
-	padding-right: 15px; /* 구분선 위치 조절 */
-	border-right: 1px solid #ccc; /* 구분선 스타일 */
-	font-size: 12px;
-}
+
 
 .aa>span:last-child {
 	margin-right: 0;
 	padding-right: 0;
 	border-right: none;
+
 }
+
 
 input[type="radio"] {
 	appearance: none;
@@ -143,6 +172,49 @@ label {
 
 input[type="radio"]:checked+label {
 	font-weight: bold; /* 체크된 상태일 때 텍스트의 굵기를 변경할 수 있다 */
+}
+
+.best_raido_box2 {
+	margin-top: 30px;
+}
+
+.best_raido_box2>span {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	min-height: 20px;
+	line-height: 20px;
+	margin-right: 0px
+}
+
+.best_raido_box2>span>input {
+	position: absolute;
+	z-index: -10;
+	top: -100%;
+	left: -100%;
+	width: 13px;
+	height: 13px;
+	background: transparent;
+}
+
+.
+class ="best_radio_box3 ":checked+.bb {
+	font-weight: 600;
+}
+
+.best_radio_box3 {
+	padding-left: 0px;
+	font-size: 14px;
+	font-weight: 300;
+	color: rgb(93, 93, 93);
+	margin: 0px 24px;
+	cursor: pointer;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	padding-left: 27px;
+	line-height: 20px;
+	color: #303033;
 }
 
 .bb {
@@ -178,6 +250,16 @@ input[type="radio"]:checked+label {
 	grid-gap: 40px 20px;
 	min-height: 800px;
 	padding: 0px;
+}
+@media (max-width: 1640px) {
+    .photo_list {
+        grid-template-columns: repeat(16, 1fr);
+    }
+}
+@media (max-width: 1024px) {
+    .photo_list {
+        grid-template-columns: repeat(12, 1fr);
+    }
 }
 
 .css-1hjflnh {
@@ -227,10 +309,9 @@ input[type="radio"]:checked+label {
 		padding: 16px 12px 0px;
 	}
 }
-
-.gg {
+.gg{
 	position: relative;
-	padding-top: 14px;
+    padding-top: 14px;
 }
 
 .hh {
@@ -324,23 +405,20 @@ input[type="radio"]:checked+label {
 }
 
 .styled-select {
-	display: block;
-	width: 100%;
-	padding: 10px;
-	font-size: 16px;
-	line-height: 1.3;
-	appearance: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	background-color: #fff;
-	background-image:
-		url('data:image/svg+xml;utf8,<svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
-	background-repeat: no-repeat;
-	background-position: right 10px center;
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	outline: none;
-	cursor: pointer;
+	    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 13px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    background-image: url(data:image/svg+xml;utf8,<svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    border: 1px solid #fff;
+    /* border-radius: 5px; */
+    /* outline: none; */
+    cursor: pointer;
 }
 
 .styled-select:hover {
@@ -354,13 +432,13 @@ input[type="radio"]:checked+label {
 
 .heart {
 	display: flex;
-	flex-direction: row;
-	-webkit-box-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	justify-content: center;
-	font-size: inherit;
-	color: inherit;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: inherit;
+    color: inherit;
 }
 
 .ppp>.heart+.review {
@@ -406,208 +484,122 @@ input[type="radio"]:checked+label {
 	-webkit-box-pack: start;
 	justify-content: flex-start;
 	min-height: 42px;
-	border: 1px solid gray;
+	border: 1px solid #e4e4e4;
 }
 
 .widget-gap {
-	display: flex;
-	flex-direction: row;
-	-webkit-box-pack: start;
-	justify-content: flex-start;
-	flex: 1 1 0%;
-	-webkit-box-align: center;
-	align-items: center;
-	height: 100%;
-	min-height: 42px;
-	border-right: 1px solid gray;
+	    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid rgb(212, 212, 212);
+    background-color: rgb(255, 255, 255);
+    padding: 12px;
 }
 
 button {
-	border: 0;
-	background: transparent;
-	cursor: pointer;
-	outline: none;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
 }
-
-.button:focus,
-.button:active {
-    background-color: var(--dark-black);
-}
-
-.button:hover {
-    background-color: darken(var(--button-color), 10%);
-}
-.smallCategory {
-	-webkit-box-align: center;
-    align-items: center;
+.right_radio{
+    min-height: 10px;
+    line-height: 10px;
     display: flex;
-    flex-flow: wrap;
-    -webkit-box-pack: start;
-    justify-content: flex-start;
-}
-
-.smallCategory_btn {
-	position: relative;
-    padding: 11px 20px;
-   	-webkit-box-align: center;
     align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: visible;
+    height: 18px;
+    margin-right: 10px;
+    padding-right: 15px;
+    border-right: 1px solid #ccc;
+    font-size: 12px;
+}
+.best_radio_box{
     display: flex;
-    flex-flow: wrap;
-    -webkit-box-pack: start;
-    justify-content: flex-start;
-}
-
-.s_span {
-    display: inline-block;
-    font-size: var(--ruler-semantic-typography-text-l-bold-font-size);
-    color: #737272;
-}
-
-.s_span::after {
-    content: "";
-    position: absolute;
-    right: 0px;
-    width: 1px;
-    height: 20px;
-    background: var(--ruler-semantic-color-border-line);
-    color: #e4e4e4;
-}
-</style>
-<style>
-/* Styles specific to top.jsp */
-.th {
-	margin: 10px;
-	padding-left: 20px;
-	display: flex;
-	align-items: center;
-}
-
-.th p {
-	font-size: 30px;
-	margin: 0;
-	padding: 0;
-}
-
-.tm {
-	background-color: #444;
-	color: #fff;
-	padding: 10px;
-	margin-left: auto;
-	margin-right: 20px;
-}
-
-.tm a {
-	color: #fff;
-	text-decoration: none;
-	margin: 0 10px;
-}
-
-.tm a:hover {
-	text-decoration: underline;
-}
-
-.ma, .mb {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	margin-top: 10px;
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: 20px;
-}
-
-.ma li, .mb li {
-	margin-left: 10px;
-	white-space: nowrap;
-}
-
-.ma li a, .mb li a {
-	font-size: 20px;
-	color: black;
-}
-
-.ma li a {
-	font-size: 30px;
-	text-decoration: none;
-}
-
-.ma li a h3 {
-	margin-right: 10px;
-}
-
-.mb li a {
-	text-decoration: none;
-}
-
-.mb li a:hover {
-	text-decoration: underline;
-}
-
-.ma li a:hover {
-	text-decoration: underline;
-}
-
-body, input, select, textarea, button, a {
-    -webkit-text-size-adjust: none;
-    font-family: 'campton', 'Apple SD Gothic Neo', NanumBarunGothic, '나눔바른고딕', Malgun Gothic, '맑은 고딕', dotum, sans-serif;
-}
-
-.bold {
-    font-weight: bold; /* 글자 굵게 */
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    padding: 12px;
+    
 }
 </style>
 </head>
+
 <body>
-	<header>
-		<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
-	</header>
+<header>
+	<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
+</header>
 	<div id="wrap">
-		<div id="kids-left">
+		<div id="best-left">
 			<button></button>
 			<div>
-				<!-- <button></button>  화면이 작아졌을 때 #kids-left메뉴 나타나게 하는거 -->
-				<h2 class="kids_title_left"><a class="large-ctgr" href="http://localhost/jspPro/sentiBoard/view/kidsBoardView.jsp">유아,아동</a></h2>
+				<!-- <button></button>  화면이 작아졌을 때 #best-left메뉴 나타나게 하는거 -->
+				<h2 class="best_title_left">남성의류</h2>
 				<!-- <ul class="left_bar_meue" > -->
 				<ul class="left-menu">
-					<li><a class="medium-ctgr"
-						data-url="http://localhost/jspPro/sentiBoard/list/kids_all.jsp">ALL</a></li>
-					<li><a class="medium-ctgr"
-						data-url="http://localhost/jspPro/sentiBoard/list/kids_new.jsp">NEW</a></li>
-					<li><a class="medium-ctgr"
-						data-url="http://localhost/jspPro/sentiBoard/list/kids_cloth.jsp">의류</a></li>
-					<li><a class="medium-ctgr"
-						data-url="http://localhost/jspPro/sentiBoard/list/kids_shoesNbag.jsp">신발,가방</a></li>
-					<li><a class="medium-ctgr"
-						data-url="http://localhost/jspPro/sentiBoard/list/kids_product.jsp">아동,홈</a></li>
+					 	<%
+              Iterator<Medium_CtgrVO> ir = mclist.iterator();
+              while (ir.hasNext()) {
+              mcvo = ir.next();
+         %>
+               <li value="<%= mcvo.getMedium_ctgr_id() %>" class="medium_ctgr_id111">
+               		<a href="#" class="medium-ctgr"  <%=medium_ctgr_id == mcvo.getMedium_ctgr_id() ? "selected" : "" %>><%= mcvo.getMedium_ctgr_name() %></a>
+               </li>
+               
+    
+    <!-- 각 도메인의 url도 db에 있어야 할거 같음.  -->
+		<%
+		        } // while
+		 %> 
+			
 				</ul>
 				<!-- </ul> -->
 			</div>
 		</div>
 
-		<div id="kids-right">
-			<!-- <h2 class="kids_title_right" >유아,아동</h2> -->
+		<div id="best-right">
+			<!-- <h2 class="best_title_right" >여성의류</h2> -->
 			<div class="widget">
-				<div class="widget-gap">
-				<div class="smallCategory">
-					<button class="smallCategory_btn">
-						<span class="s_span" color="primary">전체</span>
-					</button>
-					<button class="smallCategory_btn">
-						<span class="s_span" color="secondary">테이블웨어</span>
-					</button>
-					<button class="smallCategory_btn">
-						<span class="s_span" color="secondary">침구,패브릭</span>
-					</button>
-					<button class="smallCategory_btn">
-						<span class="s_span" color="secondary">욕실</span>
-					</button>
-					<button class="smallCategory_btn">
-						<span class="s_span" color="secondary">장난감</span>
-					</button>
-					<button class="smallCategory_btn">
-						<span class="s_span" color="secondary">유아용품</span>
-					</button>
-				</div></div>
+				<div class="best_radio_box">
+					<ul class="aa">
+						<!-- <span class="right_radio"> <input type="radio" name="14"> <label for="14" class="right_label">전체</label>
+						</span>
+						<span class="right_radio"> <input type="radio" name="01"> <label for="01" class="right_label">상의</label>
+						</span>
+						<span class="right_radio"> <input type="radio" name="02"> <label for="02" class="right_label">원피스</label>
+						</span>
+						<span class="right_radio"> <input type="radio" name="03"> <label for="03" class="right_label">바지</label>
+						</span>
+						<span class="right_radio"> <input type="radio" name="04"> <label for="04" class="right_label">아우터</label>
+						</span>
+						<span class="right_radio"> <input type="radio" name="05"> <label for="05" class="right_label">스커트</label>
+						</span>
+						<span class="right_radio"> <input type="radio" name="06"> <label for="06" class="right_label">니트웨어</label>
+						</span>
+						<span class="right_radio"> <input type="radio" name="07"> <label for="07" class="right_label">액티브웨어</label>
+						</span>
+						<span class="right_radio"> <input type="radio" name="08"> <label for="08" class="right_label">홈웨어</label>
+						</span>
+						<span class="right_radio"> <input type="radio" name="09"> <label for="09" class="right_label">셋업</label>
+						</span>
+						<span class="right_radio"> <input type="radio" name="10"> <label for="10" class="right_label">이너웨어</label>
+						</span>
+						<span class="right_radio"> <input type="radio" name="11"> <label for="11" class="right_label">점프수트</label>
+						</span>
+						<span class="right_radio"> <input type="radio" name="12"> <label for="12" class="right_label">EXCLUSIVE</label>
+						</span>
+						<span class="right_radio"> <input type="radio" name="13"> <label for="13" class="right_label">해외브랜드</label>
+						</span> -->
+						<!--라디오 버튼을 없앴다. 레이블을 클릭하면 input이 동작 할 수 있도록 for을  사요했다.  -->
+					</ul>
+			</div>
 				<div class="controlgroup">
 					<select id="sort-type" class="styled-select">
 						<option>추천순</option>
@@ -621,7 +613,7 @@ body, input, select, textarea, button, a {
 					</select>
 				</div>
 
-				<br>
+				
 			</div>
 
 			<ul class="photo_list">
@@ -630,18 +622,18 @@ body, input, select, textarea, button, a {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202405/11ef0825e687669db9bbfbb0c4f71323.jpg?width=700"
+									src="https://img.29cm.co.kr/item/202404/11ef02ddc815e25cbb6acd7db6ab5317.jpg?width=600"
 									class="ff">
 							</div>
-						</a>
+						</a> 
 						<div class="gg">
-							<a class="hh" href="">프랑브아즈</a> <a
-								title="TE5-SH07_페이퍼셔츠_(10 Color)">
+							<a class="hh" href="">토마스모어</a> <a
+								title="TE5-SH07 페이퍼셔츠 (10 Color)">
 								<div class="j">
-									<h5 class="jj">[프랑브아즈X시리츠] 코니 플레이트 단품 2colors</h5>
+									<h5 class="jj">TE5-SH07 페이퍼셔츠 (10 Color)</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk">24%</span> <strong class="qqq">13,860</strong>
+										<span class="kkk"></span> <strong class="qqq">59,700</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -658,7 +650,7 @@ body, input, select, textarea, button, a {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">330</h5>
+									<h5 class="jj">35,854</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -668,8 +660,8 @@ body, input, select, textarea, button, a {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">5</div>
-									<div class="review-count">(4)</div>
+									<div class="review-point">4.8</div>
+									<div class="review-count">(1526)</div>
 								</a>
 							</div>
 						</div>
@@ -681,18 +673,19 @@ body, input, select, textarea, button, a {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202405/11ef082584eb264bbb14450f09b58e3e.jpg?width=600"
+									src="https://img.29cm.co.kr/item/202404/11ef008fb56dcdbf88b199fb5f90965d.jpg"
 									class="ff">
 							</div>
-						</a>
+						</a> 
 						<div class="gg">
-							<a class="hh" href="">프랑브아즈</a> <a
-								title="[29CM 단독] [프랑브아즈X시리츠] 코니_3종 패키지(상자포함)">
+							<a class="hh" href="">파르티멘토 우먼</a> <a
+								title="[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s SHORT SLEEVE TEE_6COLORS">
 								<div class="j">
-									<h5 class="jj">[29CM 단독] [프랑브아즈X시리츠] 코니 3종 패키지(상자포함)</h5>
+									<h5 class="jj">[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s
+										SHORT SLEEVE TEE_6COLORS</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk">29%</span> <strong class="qqq">38,970</strong>
+										<span class="kkk">24%</span> <strong class="qqq">29,640</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -709,7 +702,7 @@ body, input, select, textarea, button, a {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">482</h5>
+									<h5 class="jj">41,275</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -719,8 +712,8 @@ body, input, select, textarea, button, a {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">0</div>
-									<div class="review-count">(0)</div>
+									<div class="review-point">4.8</div>
+									<div class="review-count">(15034)</div>
 								</a>
 							</div>
 						</div>
@@ -732,17 +725,18 @@ body, input, select, textarea, button, a {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202306/11ee1624f9f3ebf8982ba7bdaaf2e77a.jpg?width=600"
+									src="https://img.29cm.co.kr/item/202404/11ef02ddc815e25cbb6acd7db6ab5317.jpg?width=600"
 									class="ff">
 							</div>
-						</a>
+						</a> <br>
 						<div class="gg">
-							<a class="hh" href="">하우키즈풀</a> <a title="HANDKERCHIEF SET (IVORY)">
+							<a class="hh" href="">토마스모어</a> <a
+								title="TE5-SH07 페이퍼셔츠 (10 Color)">
 								<div class="j">
-									<h5 class="jj">HANDKERCHIEF SET (IVORY)</h5>
+									<h5 class="jj">TE5-SH07 페이퍼셔츠 (10 Color)</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk"></span> <strong class="qqq">15,000</strong>
+										<span class="kkk"></span> <strong class="qqq">59,700</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -759,7 +753,7 @@ body, input, select, textarea, button, a {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">3,090</h5>
+									<h5 class="jj">41,275</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -770,7 +764,7 @@ body, input, select, textarea, button, a {
 											stroke-width="1.5"></path>
 								</svg>
 									<div class="review-point">4.8</div>
-									<div class="review-count">(216)</div>
+									<div class="review-count">(15034)</div>
 								</a>
 							</div>
 						</div>
@@ -781,18 +775,19 @@ body, input, select, textarea, button, a {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202402/11eed5132bcb6a148377eb50a6b5023d.png?width=600"
+									src="https://img.29cm.co.kr/item/202404/11ef008fb56dcdbf88b199fb5f90965d.jpg"
 									class="ff">
 							</div>
-						</a>
+						</a> 
 						<div class="gg">
-							<a class="hh" href="">모즈스웨덴</a> <a
-								title="MOZsweden_원터치 트라이탄 키즈 보틀">
+							<a class="hh" href="">파르티멘토 우먼</a> <a
+								title="[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s SHORT SLEEVE TEE_6COLORS">
 								<div class="j">
-									<h5 class="jj">MOZsweden_원터치 트라이탄 키즈 보틀</h5>
+									<h5 class="jj">[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s
+										SHORT SLEEVE TEE_6COLORS</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk"></span> <strong class="qqq">15,900</strong>
+										<span class="kkk">24%</span> <strong class="qqq">29,640</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -809,7 +804,7 @@ body, input, select, textarea, button, a {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">155</h5>
+									<h5 class="jj">41,275</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -820,7 +815,7 @@ body, input, select, textarea, button, a {
 											stroke-width="1.5"></path>
 								</svg>
 									<div class="review-point">4.8</div>
-									<div class="review-count">(6)</div>
+									<div class="review-count">(15034)</div>
 								</a>
 							</div>
 						</div>
@@ -831,17 +826,19 @@ body, input, select, textarea, button, a {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/next-product/2021/01/26/f631623b015c4b31b4ad40230ab4d37e_20210126111919.jpg?width=600"
+									src="https://img.29cm.co.kr/item/202404/11ef008fb56dcdbf88b199fb5f90965d.jpg"
 									class="ff">
 							</div>
-						</a>
+						</a> 
 						<div class="gg">
-							<a class="hh" href="">쥬다르</a> <a title="5/23 부터 순차출고 Art play 촉감놀이매트">
+							<a class="hh" href="">파르티멘토 우먼</a> <a
+								title="[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s SHORT SLEEVE TEE_6COLORS">
 								<div class="j">
-									<h5 class="jj">5/23 부터 순차출고 Art play 촉감놀이매트</h5>
+									<h5 class="jj">[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s
+										SHORT SLEEVE TEE_6COLORS</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk"></span> <strong class="qqq">61,000</strong>
+										<span class="kkk">24%</span> <strong class="qqq">29,640</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -858,7 +855,7 @@ body, input, select, textarea, button, a {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">957</h5>
+									<h5 class="jj">41,275</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -869,7 +866,7 @@ body, input, select, textarea, button, a {
 											stroke-width="1.5"></path>
 								</svg>
 									<div class="review-point">4.8</div>
-									<div class="review-count">(93)</div>
+									<div class="review-count">(15034)</div>
 								</a>
 							</div>
 						</div>
@@ -880,17 +877,19 @@ body, input, select, textarea, button, a {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202401/11eeb043c655727f91eb41b6e2592230.jpg?width=600"
+									src="https://img.29cm.co.kr/item/202404/11ef008fb56dcdbf88b199fb5f90965d.jpg"
 									class="ff">
 							</div>
-						</a>
+						</a> 
 						<div class="gg">
-							<a class="hh" href="">바조</a> <a title="BAJO 작은 토끼 4종">
+							<a class="hh" href="">파르티멘토 우먼</a> <a
+								title="[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s SHORT SLEEVE TEE_6COLORS">
 								<div class="j">
-									<h5 class="jj">BAJO 작은 토끼 4종</h5>
+									<h5 class="jj">[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s
+										SHORT SLEEVE TEE_6COLORS</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk"></span> <strong class="qqq">24,000</strong>
+										<span class="kkk">24%</span> <strong class="qqq">29,640</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -907,7 +906,7 @@ body, input, select, textarea, button, a {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">794</h5>
+									<h5 class="jj">41,275</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -917,8 +916,8 @@ body, input, select, textarea, button, a {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">4.9</div>
-									<div class="review-count">(89)</div>
+									<div class="review-point">4.8</div>
+									<div class="review-count">(15034)</div>
 								</a>
 							</div>
 						</div>
@@ -929,17 +928,19 @@ body, input, select, textarea, button, a {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11eefef0ea1d513f88b1e9af7e1b6d3d.jpg?width=600"
+									src="https://img.29cm.co.kr/item/202404/11ef008fb56dcdbf88b199fb5f90965d.jpg"
 									class="ff">
 							</div>
-						</a>
+						</a> 
 						<div class="gg">
-							<a class="hh" href="">바치</a> <a title="TOYS Felt Basket">
+							<a class="hh" href="">파르티멘토 우먼</a> <a
+								title="[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s SHORT SLEEVE TEE_6COLORS">
 								<div class="j">
-									<h5 class="jj">TOYS Felt Basket</h5>
+									<h5 class="jj">[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s
+										SHORT SLEEVE TEE_6COLORS</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk"></span> <strong class="qqq">35,000</strong>
+										<span class="kkk">24%</span> <strong class="qqq">29,640</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -956,7 +957,7 @@ body, input, select, textarea, button, a {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">177</h5>
+									<h5 class="jj">41,275</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -966,8 +967,8 @@ body, input, select, textarea, button, a {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">0</div>
-									<div class="review-count">(0)</div>
+									<div class="review-point">4.8</div>
+									<div class="review-count">(15034)</div>
 								</a>
 							</div>
 						</div>
@@ -978,17 +979,19 @@ body, input, select, textarea, button, a {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/next-product/2022/07/19/81a0760a4f104bf78f55d3c3e9fd3d57_20220719143014.jpg?width=700"
+									src="https://img.29cm.co.kr/item/202404/11ef008fb56dcdbf88b199fb5f90965d.jpg"
 									class="ff">
 							</div>
-						</a>
+						</a> 
 						<div class="gg">
-							<a class="hh" href="">베이비뵨 코리아</a> <a title="[베이비뵨] 베이비 디너세트 / 이유식기 선물세트">
+							<a class="hh" href="">파르티멘토 우먼</a> <a
+								title="[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s SHORT SLEEVE TEE_6COLORS">
 								<div class="j">
-									<h5 class="jj">[베이비뵨] 베이비 디너세트 / 이유식기 선물세트</h5>
+									<h5 class="jj">[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s
+										SHORT SLEEVE TEE_6COLORS</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk">12%</span> <strong class="qqq">51,040</strong>
+										<span class="kkk">24%</span> <strong class="qqq">29,640</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -1005,7 +1008,7 @@ body, input, select, textarea, button, a {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">1,323</h5>
+									<h5 class="jj">41,275</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -1015,8 +1018,8 @@ body, input, select, textarea, button, a {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">4.9</div>
-									<div class="review-count">(106)</div>
+									<div class="review-point">4.8</div>
+									<div class="review-count">(15034)</div>
 								</a>
 							</div>
 						</div>
@@ -1027,18 +1030,19 @@ body, input, select, textarea, button, a {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202403/11eee0069ef4c18a9a76efdf270080e5.jpg?width=600"
+									src="https://img.29cm.co.kr/item/202404/11ef008fb56dcdbf88b199fb5f90965d.jpg"
 									class="ff">
 							</div>
-						</a>
+						</a> 
 						<div class="gg">
-							<a class="hh" href="">마틸라</a> <a
-								title="콜드썸머 풍기인견 고정밴드 여름 침대패드(SS/Q/K) 6종">
+							<a class="hh" href="">파르티멘토 우먼</a> <a
+								title="[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s SHORT SLEEVE TEE_6COLORS">
 								<div class="j">
-									<h5 class="jj">콜드썸머 풍기인견 고정밴드 여름 침대패드(SS/Q/K) 6종</h5>
+									<h5 class="jj">[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s
+										SHORT SLEEVE TEE_6COLORS</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk">40%</span> <strong class="qqq">39,900</strong>
+										<span class="kkk">24%</span> <strong class="qqq">29,640</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -1055,7 +1059,7 @@ body, input, select, textarea, button, a {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">1,206</h5>
+									<h5 class="jj">41,275</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -1065,8 +1069,8 @@ body, input, select, textarea, button, a {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">4.6</div>
-									<div class="review-count">(192)</div>
+									<div class="review-point">4.8</div>
+									<div class="review-count">(15034)</div>
 								</a>
 							</div>
 						</div>
@@ -1077,18 +1081,19 @@ body, input, select, textarea, button, a {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202402/11eecfc8a172fae591ebbd0cb4430eac.jpg?width=600"
+									src="https://img.29cm.co.kr/item/202404/11ef008fb56dcdbf88b199fb5f90965d.jpg"
 									class="ff">
 							</div>
-						</a>
+						</a> 
 						<div class="gg">
-							<a class="hh" href="">위글위글</a> <a
-								title="키즈 욕실 슬리퍼 (2종 택1)">
+							<a class="hh" href="">파르티멘토 우먼</a> <a
+								title="[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s SHORT SLEEVE TEE_6COLORS">
 								<div class="j">
-									<h5 class="jj">키즈 욕실 슬리퍼 (2종 택1)</h5>
+									<h5 class="jj">[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s
+										SHORT SLEEVE TEE_6COLORS</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk">10%</span> <strong class="qqq">16,700</strong>
+										<span class="kkk">24%</span> <strong class="qqq">29,640</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -1105,7 +1110,7 @@ body, input, select, textarea, button, a {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">300</h5>
+									<h5 class="jj">41,275</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -1115,74 +1120,73 @@ body, input, select, textarea, button, a {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">5</div>
-									<div class="review-count">(28)</div>
+									<div class="review-point">4.8</div>
+									<div class="review-count">(15034)</div>
 								</a>
 							</div>
 						</div>
 					</div>
 				</li>
+				
 			</ul>
 		</div>
 	</div>
-<br>
-	<footer>
-		<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
-	</footer>
-<script>
-function reinitializeJavaScript() {
-    // 재초기화 로직, 예: 이벤트 리스너 재설정, 플러그인 재활성화 등
-    console.log('Components reinitialized.');
-}
+	<script>
+	/* 
+	{
+		  "small_ctgr":[
+			              {"small_ctgr_id":138,"small_ctgr_name":"아우터","medium_ctgr_id":21},
+			              {"small_ctgr_id":139,"small_ctgr_name":"상의","medium_ctgr_id":21},
+			              {"small_ctgr_id":140,"small_ctgr_name":"하의","medium_ctgr_id":21}
+			           ]
+	}
+	 */  
+	
+	
+	      $(".medium_ctgr_id111").on("click", function(){
+	    	  
+	          let selectedMedium_ctgr_id = $(this).val(); // 선택한 부서번호 가져오기
+	          $.ajax({
+	             url: "small_ctgr_json.jsp", 
+	             dataType: "json",
+	             type: "GET", 
+	             data: { medium_ctgr_id: selectedMedium_ctgr_id }, // 선택한 부서번호를 전달
+	             cache: false,
+	             success: function(data){
+	                 $(".aa").empty(); // 테이블 내용 초기화
+	                 
+	                
+	                 $(data.small_ctgr).each(function(index, element){
+	                     // 직원 정보를 테이블에 추가
+	                     $(".aa").append(`	
+	                    		 
+	                    		 
+	                             <span class="right_radio">
+	                     <input type="radio"><label class="right_label">\${element.small_ctgr_name}</label>	                             
+	                             </span>	   
+	                             
+	                                   `);
+	                     
+	                 });
+	                 
+	                //alert( data.small_ctgr );
+	             },
+	             error: function(){
+	                 alert("error");
+	             }
+	             
+	             
+	          });
+	      });
+	 
+	
+	</script>
+<footer>
+	<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
+</footer>
 
-$(document).ready(function() {
-    $('.medium-ctgr').click(function(e) {
-        e.preventDefault();  // 기본 동작 방지
-        var urlToRequest = $(this).data('url');  // 요청 URL을 data-url 속성에서 가져옵니다.
 
-        $.ajax({
-            type: "POST",
-            url: urlToRequest,
-            data: {
-                // 필요하다면 서버에 보낼 데이터
-            },
-            success: function(response) {
-                // .photo_list 내용 업데이트
-                var updatedPhotoList = $(response).find('.photo_list').html();
-                $('.photo_list').html(updatedPhotoList);
+	
 
-                // .widget 내용 업데이트
-                var updatedWidget = $(response).find('.widget').html();
-                $('.widget').html(updatedWidget);
-            },
-            error: function(xhr, status, error) {
-                alert('Error loading new content: ' + error);
-            }
-        });
-    });
-});
-</script>
-<script>
-$(document).ready(function() {
-    $('.smallCategory_btn').click(function() {
-        // 모든 버튼에서 'bold' 클래스를 제거합니다.
-        $('.smallCategory_btn').removeClass('bold');
-
-        // 클릭된 버튼에만 'bold' 클래스를 추가합니다.
-        $(this).addClass('bold');
-    });
-});
-</script>
-<script>
-$(document).ready(function() {
-    $('.smallCategory_btn').click(function() {
-        // 모든 버튼에서 'bold' 클래스를 제거합니다.
-        $('.smallCategory_btn').removeClass('bold');
-
-        // 클릭된 버튼에만 'bold' 클래스를 추가합니다.
-        $(this).addClass('bold');
-    });
-});
-</script>
 </body>
 </html>
