@@ -89,7 +89,7 @@
 
               
                 <li value="<%= lcvo.getLarge_ctgr_id() %>" class="large-menu2">
-               		<a href="#" class="small-menu"  <%=large_ctgr_id == lcvo.getLarge_ctgr_id() ? "selected" : "" %>><%= lcvo.getMain_ctgr_name() %></a>
+               		<a href="#" class="small-menu"  <%=large_ctgr_id == lcvo.getLarge_ctgr_id() ? "selected" : "" %>><%= lcvo.getLarge_ctgr_name() %></a>
                </li>  
                <!-- 스타일 시트에서 칼라를 black 으로 줘도 화면상에서 보라색으로 표시된 해결이 안됨...  -->
  
