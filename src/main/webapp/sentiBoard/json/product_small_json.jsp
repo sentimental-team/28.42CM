@@ -53,7 +53,7 @@ try{
         jsonProduct_small.put("pd_price", pd_price);
         jsonProduct_small.put("pd_grade", pd_grade);
         jsonProduct_small.put("pd_image_url", pd_image_url);
-       
+        jsonProduct_small.put("small_ctgr_id", small_ctgr_id);
 
         jsonEmpArray.add(jsonProduct_small);
     }

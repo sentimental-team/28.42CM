@@ -17,7 +17,7 @@ ResultSet rs = null;
 
 String pMedium_ctgr_id = request.getParameter("medium_ctgr_id");
 
-if(pMedium_ctgr_id == null || pMedium_ctgr_id.equals("")) pMedium_ctgr_id = "21";
+ if(pMedium_ctgr_id == null || pMedium_ctgr_id.equals("")) pMedium_ctgr_id = "21"; 
 
 int medium_ctgr_id = Integer.parseInt(pMedium_ctgr_id);
 

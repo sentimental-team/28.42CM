@@ -1,4 +1,6 @@
 
+<%@page import="com.util.ConnectionProvider"%>
+<%@page import="com.util.JdbcUtil"%>
 <%@page import="domain.Large_CtgrVO"%>
 <%@page import="java.util.Iterator"%>
 <%@page import="java.sql.SQLException"%>
@@ -127,7 +129,7 @@
 
 $(".large-menu2").on("click", function(){
 	 /* medium 카테고리를 클릭했을 때 small 카테고리를 표시하는 코드. */
-	 
+	
     let selectedLarge_ctgr_id = $(this).val(); 
     $.ajax({
        url: "../json/medium_ctgr_json.jsp", 
