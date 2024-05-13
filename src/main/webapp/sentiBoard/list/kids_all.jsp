@@ -1,7 +1,9 @@
+<%@page import="com.util.ConnectionProvider"%>
 <%@page import="domain.Medium_CtgrVO"%>
 <%@page import="java.util.Iterator"%>
 <%@page import="java.sql.SQLException"%>
 <%@page import="java.util.ArrayList"%>
+<%@page import="com.util.ConnectionProvider" %>
 <%@page import="domain.Large_CtgrVO"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.PreparedStatement"%>
@@ -9,10 +11,9 @@
 <%@page import="java.sql.Connection"%>
 <%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%
+ <%
 
-    Connection conn = DBConn.getConnection();
-    
+    Connection conn = ConnectionProvider.getConnection();
     PreparedStatement pstmt = null;
     ResultSet rs = null;    
     String sql = " SELECT medium_ctgr_id, medium_ctgr_name, large_ctgr_id " 
@@ -40,7 +41,7 @@
                 mcvo = new Medium_CtgrVO(medium_ctgr_id, medium_ctgr_name, large_ctgr_id);    
                 
                 mclist.add(mcvo);
-            } while (rs.next());                
+            } while (rs.next());
         } // if 
         
         
@@ -52,8 +53,6 @@
             rs.close();
             // DBConn.close();
         } catch (SQLException e) { 
-        	
-        	
             e.printStackTrace();
         }
     }
@@ -79,26 +78,24 @@
 			<button></button>
 			<div>
 				<!-- <button></button>  화면이 작아졌을 때 #best-left메뉴 나타나게 하는거 -->
-				<h2 class="best_title_left">유아,아동</h2>
+				<h2 class="best_title_left">남성의류</h2>
 				<!-- <ul class="left_bar_meue" > -->
 				<ul class="left-menu">
 					 	<%
-              Iterator<Medium_CtgrVO> ir =mclist.iterator();
+              Iterator<Medium_CtgrVO> ir = mclist.iterator();
               while (ir.hasNext()) {
               mcvo = ir.next();
          %>
-               <li value="<%= mcvo.getMedium_ctgr_id() %>" class="medium_ctgr_id103">
+               <li value="<%= mcvo.getMedium_ctgr_id() %>" class="medium_ctgr_id111">
                		<a href="#" class="medium-ctgr"  <%=medium_ctgr_id == mcvo.getMedium_ctgr_id() ? "selected" : "" %>><%= mcvo.getMedium_ctgr_name() %></a>
                </li>  
-    
 		<%
 		        } // while
 		 %> 
-			
 				</ul>
-				
 			</div>
 		</div>
+
 		<div id="best-right">			
 			<div class="widget">
 				<div class="best_radio_box">
@@ -128,8 +125,6 @@
 	<script>
 	 $(".medium_ctgr_id111").on("click", function(){
 		 /* medium 카테고리를 클릭했을 때 small 카테고리를 표시하는 코드. */
-  	 	 
-  	 	 
          let selectedMedium_ctgr_id = $(this).val(); 
          $.ajax({
             url: "../json/small_ctgr_json.jsp", 
@@ -156,7 +151,6 @@
             
          });
      });
-	       
 	   $(".medium_ctgr_id111").on("click", function(){
 		   /*medium카테고리를 클릭 했을 떄 해당 카테고리의 상품 전부(All)를 보여주는 코드  */
     	  
@@ -230,8 +224,6 @@
            						  }	            	             
        					   });
    												   });
-	   
-	   
 	   /*
 	   $(".right_radio").on("click", function(){
 		   /*small카테고리를 클릭 했을 떄 해당 카테고리의 상품을(ex 무스탕, 폴리스, 야상) 보여주는 코드  */
