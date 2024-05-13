@@ -1,6 +1,59 @@
+<%@page import="java.util.Iterator"%>
+<%@page import="domain.Large_CtgrVO"%>
+<%@page import="java.sql.SQLException"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="com.util.DBConn"%>
+<%@page import="java.sql.Connection"%>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ 
-taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%
+    Connection conn = DBConn.getConnection();
+    
+    PreparedStatement pstmt = null;
+    ResultSet rs = null;    
+    String sql = " SELECT large_ctgr_id, main_ctgr_name, main_ctgr_id"
+    		+" FROM LARGE_CTGR";
+        
+    
+    int large_ctgr_id = 0;
+    String main_ctgr_name =  null; 
+    int main_ctgr_id =   0;
+    
+    Large_CtgrVO lcvo = null;
+    ArrayList<Large_CtgrVO> lclist = null;
+    
+    try {
+        pstmt = conn.prepareStatement(sql);
+        rs = pstmt.executeQuery();
+        
+        if( rs.next() ) {
+            lclist = new ArrayList<>();
+            do {
+            	large_ctgr_id = rs.getInt("large_ctgr_id");
+            	main_ctgr_name = rs.getString("main_ctgr_name");
+            	main_ctgr_id = rs.getInt("main_ctgr_id");    
+                
+                lcvo = new Large_CtgrVO(large_ctgr_id, main_ctgr_name, main_ctgr_id);    
+                
+                lclist.add(lcvo);
+            } while (rs.next());                
+        } // if 
+        
+        
+    } catch (SQLException e) { 
+        e.printStackTrace();
+    } finally {
+        try {
+            pstmt.close();
+            rs.close();
+            // DBConn.close();
+        } catch (SQLException e) { 
+            e.printStackTrace();
+        }
+    }
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -85,7 +138,7 @@ body {
     width: 100%;
     border: 1px solid rgb(212, 212, 212);
     background-color: rgb(255, 255, 255);
-    
+    padding: 12px;
     
 }
 .aa{
@@ -113,6 +166,7 @@ body {
   padding-right: 0;
   border-right: none;
 }
+
 input[type="radio"] {
     appearance: none;
     -webkit-appearance: none;
@@ -390,23 +444,22 @@ counter-increment: list-number 1;
 				<h2 class="best_title_left">Best</h2>
 				<!-- <ul class="left_bar_meue" > -->
 				<ul class="left-menu">
-					<li><a class="small-menu" href="">여성의류</a></li>
-					<li><a class="small-menu"  href="">여성가방</a></li>
-					<li><a class="small-menu"  href="">여성신발</a></li>
-					<li><a class="small-menu"  href="">여성액세서리</a></li>
-					<li><a class="small-menu" href="">남성의류</a></li>
-					<li><a class="small-menu"  href="">남성가방</a></li>
-					<li><a class="small-menu"  href="">남성신발</a></li>
-					<li><a class="small-menu"  href="">남성액세서리</a></li>
-					<li><a class="small-menu"  href="">주방,생활</a></li>
-					<li><a class="small-menu"  href="">가구,인테리어</a></li>
-					<li><a class="small-menu"  href="">뷰티</a></li>
-					<li><a class="small-menu"  href="">컴퓨터,디지털</a></li>
-					<li><a class="small-menu"  href="">가전</a></li>
-					<li><a class="small-menu"  href="">컬처</a></li>
-					<li><a class="small-menu"  href="">레저</a></li>
-					<li><a class="small-menu"  href="">유아,아동</a></li>
-					<li><a class="small-menu"  href="">푸드</a></li>
+			
+	   	<%
+              Iterator<Large_CtgrVO> ir = lclist.iterator();
+              while (ir.hasNext()) {
+              lcvo = ir.next();
+         %>
+               <li>
+               		<a href="" class="small-menu" value="<%= lcvo.getLarge_ctgr_id() %>"
+                		data-main_ctgr_id="<%= lcvo.getMain_ctgr_id() %>"><%= lcvo.getMain_ctgr_name() %></a>
+               </li>
+    <!-- 각 도메인의 url도 db에 있어야 할거 같음.  -->
+		<%
+		        } // while
+		 %> 
+					
+					
 				</ul>
 				<!-- </ul> -->
 			</div>
@@ -3670,26 +3723,7 @@ counter-increment: list-number 1;
 
 
 <script>
-$(document).ready(function(){
-    $('label.right_label).click(function(){
-        var selectedValue = $(this).attr('for');
-        // AJAX 호출
-        $.ajax({
-            url: 'your_backend_endpoint.php', // 백엔드 엔드포인트 URL
-            type: 'POST',
-            data: {value: selectedValue}, // 선택한 값 전달
-            success: function(response){
-                // AJAX 요청이 성공하면 이곳에서 응답을 처리
-                console.log(response); // 콘솔에 응답 출력 (개발자 도구에서 확인 가능)
-                // 여기에 데이터를 처리하고 화면에 표시하는 등의 로직을 추가할 수 있습니다.
-            },
-            error: function(xhr, status, error){
-                // AJAX 요청이 실패한 경우 처리할 코드
-                console.error(error); // 콘솔에 오류 출력
-            }
-        });
-    });
-});
+	
 </script>
 
 </body>

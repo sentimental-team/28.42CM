@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ 
 taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
@@ -75,6 +75,7 @@ body {
 	outline: none;
 	font-weight: 200;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 #kids-right {
@@ -452,9 +453,6 @@ button {
 
 .s_span {
     display: inline-block;
-    font-family: var(--ruler-semantic-typography-text-l-bold-font-family);
-    font-weight: var(--ruler-semantic-typography-text-l-bold-font-weight);
-    line-height: var(--ruler-semantic-typography-text-l-bold-line-height);
     font-size: var(--ruler-semantic-typography-text-l-bold-font-size);
     color: #737272;
 }
@@ -547,6 +545,11 @@ body, input, select, textarea, button, a {
     -webkit-text-size-adjust: none;
     font-family: 'campton', 'Apple SD Gothic Neo', NanumBarunGothic, '나눔바른고딕', Malgun Gothic, '맑은 고딕', dotum, sans-serif;
 }
+
+.bold {
+    font-weight: bold; /* 글자 굵게 */
+}
+
 </style>
 </head>
 <body>
@@ -562,15 +565,15 @@ body, input, select, textarea, button, a {
 				<!-- <ul class="left_bar_meue" > -->
 				<ul class="left-menu">
 					<li><a class="medium-ctgr"
-						href="http://localhost/jspPro/sentiBoard/list/kids_all.jsp">ALL</a></li>
+						data-url="http://localhost/jspPro/sentiBoard/list/kids_all.jsp">ALL</a></li>
 					<li><a class="medium-ctgr"
-						href="http://localhost/jspPro/sentiBoard/list/kids_new.jsp">NEW</a></li>
+						data-url="http://localhost/jspPro/sentiBoard/list/kids_new.jsp">NEW</a></li>
 					<li><a class="medium-ctgr"
-						href="http://localhost/jspPro/sentiBoard/list/kids_cloth.jsp">의류</a></li>
+						data-url="http://localhost/jspPro/sentiBoard/list/kids_cloth.jsp">의류</a></li>
 					<li><a class="medium-ctgr"
-						href="http://localhost/jspPro/sentiBoard/list/kids_shoesNbag.jsp">신발,가방</a></li>
+						data-url="http://localhost/jspPro/sentiBoard/list/kids_shoesNbag.jsp">신발,가방</a></li>
 					<li><a class="medium-ctgr"
-						href="http://localhost/jspPro/sentiBoard/list/kids_product.jsp">아동,홈</a></li>
+						data-url="http://localhost/jspPro/sentiBoard/list/kids_product.jsp">아동,홈</a></li>
 				</ul>
 				<!-- </ul> -->
 			</div>
@@ -1117,7 +1120,53 @@ body, input, select, textarea, button, a {
 			</ul>
 		</div>
 	</div>
-	<script>
+<br>
+	<footer>
+		<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
+	</footer>
+<script>
+function reinitializeJavaScript() {
+    // 재초기화 로직, 예: 이벤트 리스너 재설정, 플러그인 재활성화 등
+    console.log('Components reinitialized.');
+}
+
+$(document).ready(function() {
+    $('.medium-ctgr').click(function(e) {
+        e.preventDefault();  // 기본 동작 방지
+        var urlToRequest = $(this).data('url');  // 요청 URL을 data-url 속성에서 가져옵니다.
+
+        $.ajax({
+            type: "POST",
+            url: urlToRequest,
+            data: {
+                // 필요하다면 서버에 보낼 데이터
+            },
+            success: function(response) {
+                // .photo_list 내용 업데이트
+                var updatedPhotoList = $(response).find('.photo_list').html();
+                $('.photo_list').html(updatedPhotoList);
+
+                // .widget 내용 업데이트
+                var updatedWidget = $(response).find('.widget').html();
+                $('.widget').html(updatedWidget);
+            },
+            error: function(xhr, status, error) {
+                alert('Error loading new content: ' + error);
+            }
+        });
+    });
+});
+</script>
+<script>
+$(document).ready(function() {
+    $('.smallCategory_btn').click(function() {
+        // 모든 버튼에서 'bold' 클래스를 제거합니다.
+        $('.smallCategory_btn').removeClass('bold');
+
+        // 클릭된 버튼에만 'bold' 클래스를 추가합니다.
+        $(this).addClass('bold');
+    });
+});
 </script>
 </body>
 </html>

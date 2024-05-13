@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <style>
 body {
@@ -528,56 +528,56 @@ button {
 				<nav class="mid-nav">
 					<ul class="mid-ul">
 						<li class="mid-li">
-							<a class="mid-a" href="https://shop.29cm.co.kr/special-order">Special-Order</a>
+							<a class="mid-a" href="https://shop.29cm.co.kr/special-order" style="color:black">Special-Order</a>
 						</li>
 						<li class="mid-li">
-							<a class="mid-a" href="https://shop.29cm.co.kr/showcase">Showcase</a>
+							<a class="mid-a" style="color:black" href="https://shop.29cm.co.kr/showcase">Showcase</a>
 						</li>
 						<li class="mid-li">
-							<a class="mid-a" href="https://shop.29cm.co.kr/pt">PT</a>
+							<a class="mid-a" style="color:black" href="https://shop.29cm.co.kr/pt">PT</a>
 						</li>
 						<li class="mid-li">
-							<a class="mid-a" href="https://shop.29cm.co.kr/welove">Welove</a>
+							<a class="mid-a" style="color:black" href="https://shop.29cm.co.kr/welove">Welove</a>
 						</li>
 					</ul>
 				</nav>
 				<div class="bottom">
 					<ul class="bot-ul">
 						<li class="bot-li">
-							<a class="bot-a" href="https://shop.29cm.co.kr/best-items">BEST</a>
+							<a class="bot-a" style="color:black" href="https://shop.29cm.co.kr/best-items">BEST</a>
 						</li>
 						<li class="bot-li">
-							<div class="div-ctgr">WOMEN</div>
+							<div class="div-ctgr" style="color:black">WOMEN</div>
 						</li>
 						<li class="bot-li">
-							<div class="div-ctgr">MEN</div>
+							<div class="div-ctgr" style="color:black">MEN</div>
 						</li>
 						<li class="bot-li">
-							<div class="div-ctgr">INTERIOR</div>
+							<div class="div-ctgr" style="color:black">INTERIOR</div>
 						</li>
 						<li class="bot-li">
-							<div class="div-ctgr">KITCHEN</div>
+							<div class="div-ctgr" style="color:black">KITCHEN</div>
 						</li>
 						<li class="bot-li">
-							<div class="div-ctgr">ELECTRONICS</div>
+							<div class="div-ctgr" style="color:black">ELECTRONICS</div>
 						</li>
 						<li class="bot-li">
-							<div class="div-ctgr">DIGITAL</div>
+							<div class="div-ctgr" style="color:black">DIGITAL</div>
 						</li>
 						<li class="bot-li">
-							<div class="div-ctgr">BEAUTY</div>
+							<div class="div-ctgr" style="color:black">BEAUTY</div>
 						</li>
 						<li class="bot-li">
-							<div class="div-ctgr">FOOD</div>
+							<div class="div-ctgr" style="color:black">FOOD</div>
 						</li>
 						<li class="bot-li">
-							<div class="div-ctgr">LEISURE</div>
+							<div class="div-ctgr" style="color:black">LEISURE</div>
 						</li>
 						<li class="bot-li">
-							<div class="div-ctgr">KIDS</div>
+							<div class="div-ctgr" style="color:black">KIDS</div>
 						</li>
 						<li class="bot-li">
-							<div class="div-ctgr">CULTURE</div>
+							<div class="div-ctgr" style="color:black">CULTURE</div>
 						</li>
 					</ul>
 					<!-- 

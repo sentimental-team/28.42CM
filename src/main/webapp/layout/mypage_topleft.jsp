@@ -1,12 +1,11 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<link rel="stylesheet" href="http://localhost/jspPro/resources/cdn-main/example.css">
-<script src="http://localhost/jspPro/resources/cdn-main/example.js"></script>
+
 <style>
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
@@ -229,6 +228,15 @@ h4 {
     unicode-bidi: isolate;
 }
 
+@media (min-width: 541px) {
+    .mid-mid {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        padding-top: 190px;
+    }
+}
+
 .delivery-view {
     display: inline-block;
     padding: 10px 0px;
@@ -337,10 +345,11 @@ h4 {
 
 </style>
 </head>
-<body>
-	<header>
+<header>
 		<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
-	</header>
+</header>
+<body>
+	
 	<div class="mid-div">
 		<div class="mid-left">
 			<div class="mid-left-top">
@@ -441,6 +450,16 @@ h4 {
 				</ul>
 			</section>
 		</div>
+		<div class="mid-mid">
+		
+		
+		<!-- 여기서부터 작업하시면 됩니다 -->
+		
+		
+		</div>
 	</div>
+<footer>
+		<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
+</footer>
 </body>
 </html>

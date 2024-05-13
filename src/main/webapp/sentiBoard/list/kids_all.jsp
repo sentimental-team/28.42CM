@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ 
 taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
@@ -75,6 +75,7 @@ body {
 	outline: none;
 	font-weight: 200;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 #kids-right {
@@ -427,6 +428,47 @@ button {
 	cursor: pointer;
 	outline: none;
 }
+.button:focus,
+.button:active {
+    background-color: var(--dark-black);
+}
+
+.button:hover {
+    background-color: darken(var(--button-color), 10%);
+}
+.smallCategory {
+	-webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-flow: wrap;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+
+.smallCategory_btn {
+	position: relative;
+    padding: 11px 20px;
+}
+
+.s_span {
+	display: inline-block;
+	font-size: var(--ruler-semantic-typography-text-l-bold-font-size);
+	color: #737272;
+}
+
+.s_span::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    width: 1px;
+    height: 20px;
+    background: var(--ruler-semantic-color-border-line);
+    color: #e4e4e4;
+}
+
+.bold {
+    font-weight: bold; /* 글자 굵게 */
+}
 </style>
 <style>
 /* Styles specific to top.jsp */
@@ -521,15 +563,15 @@ body, input, select, textarea, button, a {
 				<!-- <ul class="left_bar_meue" > -->
 				<ul class="left-menu">
 					<li><a class="medium-ctgr"
-						href="http://localhost/jspPro/sentiBoard/list/kids_all.jsp">ALL</a></li>
+						data-url="http://localhost/jspPro/sentiBoard/list/kids_all.jsp">ALL</a></li>
 					<li><a class="medium-ctgr"
-						href="http://localhost/jspPro/sentiBoard/list/kids_new.jsp">NEW</a></li>
+						data-url="http://localhost/jspPro/sentiBoard/list/kids_new.jsp">NEW</a></li>
 					<li><a class="medium-ctgr"
-						href="http://localhost/jspPro/sentiBoard/list/kids_cloth.jsp">의류</a></li>
+						data-url="http://localhost/jspPro/sentiBoard/list/kids_cloth.jsp">의류</a></li>
 					<li><a class="medium-ctgr"
-						href="http://localhost/jspPro/sentiBoard/list/kids_shoesNbag.jsp">신발,가방</a></li>
+						data-url="http://localhost/jspPro/sentiBoard/list/kids_shoesNbag.jsp">신발,가방</a></li>
 					<li><a class="medium-ctgr"
-						href="http://localhost/jspPro/sentiBoard/list/kids_product.jsp">아동,홈</a></li>
+						data-url="http://localhost/jspPro/sentiBoard/list/kids_product.jsp">아동,홈</a></li>
 				</ul>
 				<!-- </ul> -->
 			</div>
@@ -1057,7 +1099,54 @@ body, input, select, textarea, button, a {
 			</ul>
 		</div>
 	</div>
-	<script>
+	<br>
+	<footer>
+		<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
+	</footer>
+<script>
+function reinitializeJavaScript() {
+    // 재초기화 로직, 예: 이벤트 리스너 재설정, 플러그인 재활성화 등
+    console.log('Components reinitialized.');
+}
+
+$(document).ready(function() {
+    $('.medium-ctgr').click(function(e) {
+    	e.preventDefault();
+        var urlToRequest = $(this).data('url');  // AJAX 요청을 위해 URL 가져오기
+        $.ajax({
+            type: "POST",  // POST 방식을 사용
+            url: urlToRequest,  // 요청할 URL 지정
+            data: {
+                // 필요한 데이터가 있다면 여기에 추가
+            },
+            success: function(response) {
+                // .photo_list와 .widget 내용을 업데이트
+                var updatedPhotoList = $(response).find('.photo_list').html();
+                var updatedWidget = $(response).find('.widget').html();
+                $('.photo_list').html(updatedPhotoList);
+                $('.widget').html(updatedWidget);
+
+                // 필요한 JavaScript 컴포넌트 재초기화
+                reinitializeJavaScript();
+            },
+            error: function(xhr, status, error) {
+                // 에러 처리
+                alert('콘텐츠 로딩 중 에러 발생: ' + error);
+            }
+        });
+    });
+});
+</script>
+<script>
+$(document).ready(function() {
+    $('.smallCategory_btn').click(function() {
+        // 모든 버튼에서 'bold' 클래스를 제거합니다.
+        $('.smallCategory_btn').removeClass('bold');
+
+        // 클릭된 버튼에만 'bold' 클래스를 추가합니다.
+        $(this).addClass('bold');
+    });
+});
 </script>
 </body>
 </html>
