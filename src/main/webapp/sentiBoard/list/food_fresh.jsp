@@ -1,61 +1,6 @@
-<%@page import="domain.Medium_CtgrVO"%>
-<%@page import="java.util.Iterator"%>
-<%@page import="java.sql.SQLException"%>
-<%@page import="java.util.ArrayList"%>
-<%@page import="domain.Large_CtgrVO"%>
-<%@page import="java.sql.ResultSet"%>
-<%@page import="java.sql.PreparedStatement"%>
-<%@page import="com.util.DBConn"%>
-<%@page import="java.sql.Connection"%>
-<%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ 
 taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
- <%
-    Connection conn = DBConn.getConnection();
-    
-    PreparedStatement pstmt = null;
-    ResultSet rs = null;    
-    String sql = " SELECT medium_ctgr_id, medium_ctgr_name, large_ctgr_id " 
-    		+" FROM medium_ctgr"
-    		+" where large_ctgr_id='13'";
-    
-    int medium_ctgr_id = 0;
-    String medium_ctgr_name =  null; 
-    int large_ctgr_id =0;
-    
-    Medium_CtgrVO mcvo = null;
-    ArrayList<Medium_CtgrVO> mclist = null;
-    
-    try {
-        pstmt = conn.prepareStatement(sql);
-        rs = pstmt.executeQuery();
-        
-        if( rs.next() ) {
-            mclist = new ArrayList<>();
-            do {
-            	medium_ctgr_id = rs.getInt("medium_ctgr_id");
-            	medium_ctgr_name = rs.getString("medium_ctgr_name");
-            	large_ctgr_id = rs.getInt("large_ctgr_id");    
-                
-                mcvo = new Medium_CtgrVO(medium_ctgr_id, medium_ctgr_name, large_ctgr_id);    
-                
-                mclist.add(mcvo);
-            } while (rs.next());                
-        } // if 
-        
-        
-    } catch (SQLException e) { 
-        e.printStackTrace();
-    } finally {
-        try {
-            pstmt.close();
-            rs.close();
-            // DBConn.close();
-        } catch (SQLException e) { 
-            e.printStackTrace();
-        }
-    }
-%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -68,7 +13,6 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <!-- <script src="/jspPro/resources/cdn-main/example.js"></script> -->
-
 <style>
 body {
 	min-height: 190vh;
@@ -422,6 +366,7 @@ class ="best_radio_box3 ":checked+.bb {
 	background-repeat: no-repeat;
 	background-position: right 10px center;
 	border: 1px solid #ccc;
+	border-radius: 5px;
 	outline: none;
 	cursor: pointer;
 }
@@ -461,7 +406,6 @@ class ="best_radio_box3 ":checked+.bb {
 .review-point {
 	margin-right: 2px;
 	color: rgb(255, 72, 0);
-	margin-left: 4px;
 }
 
 .heart>svg+.jj {
@@ -512,21 +456,7 @@ button {
     cursor: pointer;
     outline: none;
 }
-
-.widget-top-btn {
-    display: flex;
-    flex-direction: row;
-    -webkit-box-pack: start;
-    justify-content: flex-start;
-    flex: 1 1 0%;
-    -webkit-box-align: center;
-    align-items: center;
-    height: 100%;
-    min-height: 42px;
-    border-right: 1px solid var(--ruler-semantic-color-border-line);
-}
-
-.widget-top-btn-box {
+.scd {
     -webkit-box-align: center;
     align-items: center;
     display: flex;
@@ -534,31 +464,19 @@ button {
     -webkit-box-pack: start;
     justify-content: flex-start;
 }
-
-.wm-top-btn {
+.scb {
     position: relative;
     padding: 11px 20px;
 }
-
-.wm-top-btn-click {
+.scs {
     display: inline-block;
     font-family: var(--ruler-semantic-typography-text-l-bold-font-family);
     font-weight: var(--ruler-semantic-typography-text-l-bold-font-weight);
     line-height: var(--ruler-semantic-typography-text-l-bold-line-height);
     font-size: var(--ruler-semantic-typography-text-l-bold-font-size);
-    color: var(--ruler-semantic-color-text-primary);
+    color: rgb(93, 93, 93);
 }
-
-.wm-top-btn-nclick {
-    display: inline-block;
-    font-family: var(--ruler-semantic-typography-text-l-font-family);
-    font-weight: var(--ruler-semantic-typography-text-l-font-weight);
-    line-height: var(--ruler-semantic-typography-text-l-line-height);
-    font-size: var(--ruler-semantic-typography-text-l-font-size);
-    color: var(--ruler-semantic-color-text-secondary);
-}
-
-.wm-top-btn::after {
+.scb::after {
     content: "";
     position: absolute;
     right: 0px;
@@ -568,35 +486,24 @@ button {
 }
 </style>
 </head>
+<body>
 <header>
 	<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
 </header>
-<body>
 	<div id="wrap">
 		<div id="best-left">
 			<button></button>
 			<div>
 				<!-- <button></button>  화면이 작아졌을 때 #best-left메뉴 나타나게 하는거 -->
-				<h2 class="best_title_left">뷰티</h2>
+				<h2 class="best_title_left">푸드</h2>
 				<!-- <ul class="left_bar_meue" > -->
 				<ul class="left-menu">
-					<li><a class="medium-ctgr" href="#">ALL</a></li>
-					<li><a class="medium-ctgr"  href="#">NEW</a></li>
-		<%
-              Iterator<Medium_CtgrVO> ir = mclist.iterator();
-              while (ir.hasNext()) {
-              mcvo = ir.next();
-         %>
-               <li value="<%= mcvo.getMedium_ctgr_id() %>" class="medium_ctgr_id111">
-               		<a href="#" class="medium-ctgr"  <%=medium_ctgr_id == mcvo.getMedium_ctgr_id() ? "selected" : "" %>><%= mcvo.getMedium_ctgr_name() %></a>
-               </li>
-               
-    
-    <!-- 각 도메인의 url도 db에 있어야 할거 같음.  -->
-		<%
-		        } // while
-		 %> 
-			
+					<li><span class="medium-ctgr">ALL</span></li>
+					<li><span class="medium-ctgr">NEW</span></li>
+					<li><span class="medium-ctgr">선물세트</span></li>
+					<li><span class="medium-ctgr">음료</span></li>
+					<li><span class="medium-ctgr">가공식품</span></li>
+					<li><span class="medium-ctgr">신선,냉장</span></li>
 				</ul>
 				<!-- </ul> -->
 			</div>
@@ -606,11 +513,23 @@ button {
 			<!-- <h2 class="best_title_right" >여성의류</h2> -->
 			<div class="widget">
 				<div class="widget-gap">
-					<div class="widget-top-btn">
-						<div class="widget-top-btn-box">
-						
-						</div>
-					</div>
+				   <div class="scd">
+				     <button class="scb">
+				       <span class="scs">전체</span>
+				     </button>
+				     <button class="scb">
+				       <span class="scs">육류,계란</span>
+				     </button>
+				     <button class="scb">
+				       <span class="scs">수산,해산물</span>
+				     </button>
+				     <button class="scb">
+				       <span class="scs">과일,채소</span>
+				     </button>
+				     <button class="scb">
+				       <span class="scs">국,반찬</span>
+				     </button>
+				 </div>
 				</div>
 				<div class="controlgroup">
 					<select id="sort-type" class="styled-select">
@@ -634,18 +553,18 @@ button {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef003eac0dc326bb6a5f556c2e2f99.jpg"
+									src="https://img.29cm.co.kr/item/202312/11ee926a7a598671a5b397910b93a1d0.png?width=600"
 									class="ff">
 							</div>
 						</a> 
 						<div class="gg">
-							<a class="hh" href="">마땡킴</a> <a
-								title="[29CM 단독]_MINI BUCKLE BAG 7color">
+							<a class="hh" href="">귤메달</a> <a
+								title="새콤달콤세트">
 								<div class="j">
-									<h5 class="jj">[29CM 단독]_MINI BUCKLE BAG 7color</h5>
+									<h5 class="jj">새콤달콤세트</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk">5%</span> <strong class="qqq">90,250</strong>
+										<span class="kkk">23%</span> <strong class="qqq">28,900</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -662,7 +581,7 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">14,715</h5>
+									<h5 class="jj">63</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -672,8 +591,8 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">4.8</div>
-									<div class="review-count">(1183)</div>
+									<div class="review-point">5</div>
+									<div class="review-count">(10)</div>
 								</a>
 							</div>
 						</div>
@@ -685,18 +604,18 @@ button {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef0396e9283a71bb142f9ca532c66b.png"
+									src="https://img.29cm.co.kr/next-product/2021/12/15/9ba939b9cb014ec184574153e6cef5ad_20211215151956.jpg?width=600"
 									class="ff">
 							</div>
 						</a> 
 						<div class="gg">
-							<a class="hh" href="">코오롱스포츠</a> <a
-								title="KS X INAP 남녀공용 데일리 백팩 QEBXX24801BLK">
+							<a class="hh" href="">닥터브라이언</a> <a
+								title="아이맥스(오메가3+루테인+아연+비타민A,E)60캡슐X3통(6개월분)">
 								<div class="j">
-									<h5 class="jj">KS X INAP 남녀공용 데일리 백팩 QEBXX24801BLK</h5>
+									<h5 class="jj">아이맥스(오메가3+루테인+아연+비타민A,E)60캡슐X3통(6개월분)</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk">10%</span> <strong class="qqq">106,200</strong>
+										<span class="kkk">68%</span> <strong class="qqq">38,900</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -713,7 +632,7 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">41,275</h5>
+									<h5 class="jj">266</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -724,59 +643,307 @@ button {
 											stroke-width="1.5"></path>
 								</svg>
 									<div class="review-point">4.8</div>
-									<div class="review-count">(15034)</div>
+									<div class="review-count">(108)</div>
 								</a>
 							</div>
 						</div>
 					</div>
 				</li>
-
+				<li class="photo1">
+					<div class="cc">
+						<a href="">
+							<div class="dd">
+								<img alt=""
+									src="https://img.29cm.co.kr/item/202310/11ee73c94f6edc5783bccff2cf66cb2d.jpg?width=600"
+									class="ff">
+							</div>
+						</a> 
+						<div class="gg">
+							<a class="hh" href="">더에이징</a> <a
+								title="국내산 돼지고기 한돈 삼각살 300g">
+								<div class="j">
+									<h5 class="jj">국내산 돼지고기 한돈 삼각살 300g</h5>
+									<strong class="jjj"></strong>
+									<div class="01">
+										<strong class="qqq">5,900</strong>
+									</div>
+									<ul class="eee">
+										<li class="yyy"></li>
+										<li></li>
+									</ul>
+								</div>
+							</a>
+							<div class="ppp">
+								<button class="heart">
+									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
+										viewBox="0 0 20 20">
+										<path
+											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5" />
+									</svg>
+									<h5 class="jj">13</h5>
+								</button>
+								<a href="#" class="review"> <svg
+										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
+								<path
+											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5"></path>
+								</svg>
+									<div class="review-point">5</div>
+									<div class="review-count">(1)</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="photo1">
+					<div class="cc">
+						<a href="">
+							<div class="dd">
+								<img alt=""
+									src="https://img.29cm.co.kr/item/202310/11ee68d4fcbc05bda5b34994bb0d6899.jpg?width=600"
+									class="ff">
+							</div>
+						</a> 
+						<div class="gg">
+							<a class="hh" href="">인생닭</a> <a
+								title="소스담은 닭가슴살 혼합 10종 10팩">
+								<div class="j">
+									<h5 class="jj">소스담은 닭가슴살 혼합 10종 10팩</h5>
+									<strong class="jjj"></strong>
+									<div class="01">
+										<span class="kkk">28%</span> <strong class="qqq">25,800</strong>
+									</div>
+									<ul class="eee">
+										<li class="yyy"></li>
+										<li></li>
+									</ul>
+								</div>
+							</a>
+							<div class="ppp">
+								<button class="heart">
+									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
+										viewBox="0 0 20 20">
+										<path
+											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5" />
+									</svg>
+									<h5 class="jj">17</h5>
+								</button>
+								<a href="#" class="review"> <svg
+										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
+								<path
+											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5"></path>
+								</svg>
+									<div class="review-point">5</div>
+									<div class="review-count">(2)</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="photo1">
+					<div class="cc">
+						<a href="">
+							<div class="dd">
+								<img alt=""
+									src="https://img.29cm.co.kr/next-product/2022/12/13/9483f8163ce44f81b76663eb8676f445_20221213140106.jpg?width=600"
+									class="ff">
+							</div>
+						</a> 
+						<div class="gg">
+							<a class="hh" href="">글래드 호텔</a> <a
+								title="[양갈비] 글래드 프리미엄 양갈비 600g (3~4인분)">
+								<div class="j">
+									<h5 class="jj">[양갈비] 글래드 프리미엄 양갈비 600g (3~4인분)</h5>
+									<strong class="jjj"></strong>
+									<div class="01">
+										<span class="kkk">10%</span> <strong class="qqq">30,240</strong>
+									</div>
+									<ul class="eee">
+										<li class="yyy"></li>
+										<li></li>
+									</ul>
+								</div>
+							</a>
+							<div class="ppp">
+								<button class="heart">
+									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
+										viewBox="0 0 20 20">
+										<path
+											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5" />
+									</svg>
+									<h5 class="jj">53</h5>
+								</button>
+								<a href="#" class="review"> <svg
+										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
+								<path
+											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5"></path>
+								</svg>
+									<div class="review-point">4.8</div>
+									<div class="review-count">(15)</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="photo1">
+					<div class="cc">
+						<a href="">
+							<div class="dd">
+								<img alt=""
+									src="https://img.29cm.co.kr/next-product/2021/11/04/3e039bc59fb4420098525478ee237833_20211104105444.jpg?width=600"
+									class="ff">
+							</div>
+						</a> 
+						<div class="gg">
+							<a class="hh" href="">먹태시대</a> <a
+								title="맥반석오징어 250g">
+								<div class="j">
+									<h5 class="jj">맥반석오징어 250g</h5>
+									<strong class="jjj"></strong>
+									<div class="01">
+										<strong class="qqq">13,000</strong>
+									</div>
+									<ul class="eee">
+										<li class="yyy"></li>
+										<li></li>
+									</ul>
+								</div>
+							</a>
+							<div class="ppp">
+								<button class="heart">
+									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
+										viewBox="0 0 20 20">
+										<path
+											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5" />
+									</svg>
+									<h5 class="jj">86</h5>
+								</button>
+								<a href="#" class="review"> <svg
+										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
+								<path
+											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5"></path>
+								</svg>
+									<div class="review-point">4.6</div>
+									<div class="review-count">(10)</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</div>
-
-
-<footer>
+  <footer>
 	<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
-</footer>
-</body>
-<script>
+	</footer>
 
-    $(".medium_ctgr_id111").on("click", function(){
-  	  
-        let selectedMedium_ctgr_id = $(this).val(); // 선택한 부서번호 가져오기
+<script>
+$(function () {
+    $(".medium-ctgr:eq(1)").click(function () {
         $.ajax({
-           url: "small_ctgr_json.jsp", 
-           dataType: "json",
-           type: "GET", 
-           data: { medium_ctgr_id: selectedMedium_ctgr_id }, // 선택한 부서번호를 전달
-           cache: false,
-           success: function(data){
-               $(".widget-top-btn-box").empty(); // 테이블 내용 초기화
-               
-              
-               $(data.small_ctgr).each(function(index, element){
-                   // 직원 정보를 테이블에 추가
-                   $(".widget-top-btn-box").append(`	
-                  		 
-                		   <button class="wm-top-btn">
-							<span class="wm-top-btn-click" color="primary">\${element.small_ctgr_name}</span>
-							</button>
-                           
-                                 `);
-                   
-               });
-               
-              //alert( data.small_ctgr );
-           },
-           error: function(){
-               alert("error");
-           }
-           
-           
+            type: 'POST',
+            url: 'food_new.jsp',
+            dataType: 'html',
+            error: function (error) {
+                alert("Error!");
+            },
+            success: function (data) {
+            	$('body').children().remove();
+                // Contents 영역 교체
+                $("body").html(data);
+            }
         });
     });
- 
+})
 
-</script>
+$(function () {
+    $(".medium-ctgr:eq(2)").click(function () {
+        $.ajax({
+            type: 'POST',
+            url: 'food_present.jsp',
+            dataType: 'html',
+            error: function (error) {
+                alert("Error!");
+            },
+            success: function (data) {
+            	$('body').children().remove();
+                // Contents 영역 교체
+                $("body").html(data);
+            }
+        });
+    });
+})
+$(function () {
+    $(".medium-ctgr:eq(3)").click(function () {
+        $.ajax({
+            type: 'POST',
+            url: 'food_drink.jsp',
+            dataType: 'html',
+            error: function (error) {
+                alert("Error!");
+            },
+            success: function (data) {
+            	$('body').children().remove();
+                // Contents 영역 교체
+                $("body").html(data);
+            }
+        });
+    });
+})
+
+$(function () {
+    $(".medium-ctgr:eq(4)").click(function () {
+        $.ajax({
+            type: 'POST',
+            url: 'food_pfood.jsp',
+            dataType: 'html',
+            error: function (error) {
+                alert("Error!");
+            },
+            success: function (data) {
+            	$('body').children().remove();
+                // Contents 영역 교체
+                $("body").html(data);
+            }
+        });
+    });
+})
+
+$(function () {
+    $(".medium-ctgr:eq(0)").click(function () {
+        $.ajax({
+            type: 'POST',
+            url: 'food_all.jsp',
+            dataType: 'html',
+            error: function (error) {
+                alert("Error!");
+            },
+            success: function (data) {
+            	$('body').children().remove();
+                // Contents 영역 교체
+                $("body").html(data);
+            }
+        });
+    });
+})
+</body>
 </html>

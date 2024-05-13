@@ -1,4 +1,4 @@
-<%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ 
 taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
@@ -13,9 +13,6 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <!-- <script src="/jspPro/resources/cdn-main/example.js"></script> -->
-<header>
-	<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
-</header>
 <style>
 body {
 	min-height: 190vh;
@@ -409,7 +406,6 @@ class ="best_radio_box3 ":checked+.bb {
 .review-point {
 	margin-right: 2px;
 	color: rgb(255, 72, 0);
-	margin-left: 4px;
 }
 
 .heart>svg+.jj {
@@ -460,33 +456,62 @@ button {
     cursor: pointer;
     outline: none;
 }
+.scd {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-flow: wrap;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+.scb {
+    position: relative;
+    padding: 11px 20px;
+}
+.scs {
+    display: inline-block;
+    font-family: var(--ruler-semantic-typography-text-l-bold-font-family);
+    font-weight: var(--ruler-semantic-typography-text-l-bold-font-weight);
+    line-height: var(--ruler-semantic-typography-text-l-bold-line-height);
+    font-size: var(--ruler-semantic-typography-text-l-bold-font-size);
+    color: rgb(93, 93, 93);
+}
+.scb::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    width: 1px;
+    height: 20px;
+    background: var(--ruler-semantic-color-border-line);
+}
 </style>
 </head>
-
 <body>
+<header>
+	<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
+</header>
 	<div id="wrap">
 		<div id="best-left">
 			<button></button>
 			<div>
 				<!-- <button></button>  화면이 작아졌을 때 #best-left메뉴 나타나게 하는거 -->
-				<h2 class="best_title_left">여성가방</h2>
+				<h2 class="best_title_left">인테리어</h2>
 				<!-- <ul class="left_bar_meue" > -->
 				<ul class="left-menu">
-					<li><a class="medium-ctgr" href="">ALL</a></li>
-					<li><a class="medium-ctgr" href="">NEW</a></li>
-					<li><a class="medium-ctgr" href="">숄더백</a></li>
-					<li><a class="medium-ctgr" href="">EXCLUSIVE</a></li>
-					<li><a class="medium-ctgr" href="">크로스백</a></li>
-					<li><a class="medium-ctgr" href="">토트백</a></li>
-					<li><a class="medium-ctgr" href="">에코,캔버스백</a></li>
-					<li><a class="medium-ctgr" href="">백팩</a></li>
-					<li><a class="medium-ctgr" href="">파우치</a></li>
-					<li><a class="medium-ctgr" href="">클러치</a></li>
-					<li><a class="medium-ctgr" href="">가방 엑세서리</a></li>
-					<li><a class="medium-ctgr" href="">해외브랜드</a></li>
-					<li><a class="medium-ctgr" href="">이너웨어</a></li>
-					<li><a class="medium-ctgr" href="">홈웨어</a></li>
-					<li><a class="medium-ctgr" href="">해외브랜드</a></li>
+					<li><span class="medium-ctgr">ALL</span></li>
+					<li><span class="medium-ctgr">NEW</span></li>
+					<li><span class="medium-ctgr">EXCLUSIVE</span></li>
+					<li><span class="medium-ctgr">비앤비이탈리아</span></li>
+					<li><span class="medium-ctgr">침구</span></li>
+					<li><span class="medium-ctgr">홈패브릭</span></li>
+					<li><span class="medium-ctgr">가구</span></li>
+					<li><span class="medium-ctgr">조명</span></li>
+					<li><span class="medium-ctgr">홈데코</span></li>
+					<li><span class="medium-ctgr">가드닝</span></li>
+					<li><span class="medium-ctgr">홈프레그런스</span></li>
+					<li><span class="medium-ctgr">아트,디자인</span></li>
+					<li><span class="medium-ctgr">책,음반</span></li>
+					<li><span class="medium-ctgr">스테이셔너리</span></li>
 				</ul>
 				<!-- </ul> -->
 			</div>
@@ -518,18 +543,18 @@ button {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef003eac0dc326bb6a5f556c2e2f99.jpg"
+									src="https://img.29cm.co.kr/item/202405/11ef0ddf9b8c8454892b71cf8c9b647f.jpg?width=600"
 									class="ff">
 							</div>
 						</a> 
 						<div class="gg">
-							<a class="hh" href="">마땡킴</a> <a
-								title="[29CM 단독]_MINI BUCKLE BAG 7color">
+							<a class="hh" href="">39이티씨</a> <a
+								title="39 Spring Stand (Lighting)">
 								<div class="j">
-									<h5 class="jj">[29CM 단독]_MINI BUCKLE BAG 7color</h5>
+									<h5 class="jj">39 Spring Stand (Lighting)</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk">5%</span> <strong class="qqq">90,250</strong>
+										<strong class="qqq">178,000</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -546,7 +571,7 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">14,715</h5>
+									<h5 class="jj">0</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -556,8 +581,8 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">4.8</div>
-									<div class="review-count">(1183)</div>
+									<div class="review-point">0</div>
+									<div class="review-count">(0)</div>
 								</a>
 							</div>
 						</div>
@@ -569,18 +594,18 @@ button {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef0396e9283a71bb142f9ca532c66b.png"
+									src="https://img.29cm.co.kr/item/202405/11ef0ddfeac0649bbb14d35565c8d4ab.jpg?width=600"
 									class="ff">
 							</div>
 						</a> 
 						<div class="gg">
-							<a class="hh" href="">코오롱스포츠</a> <a
-								title="KS X INAP 남녀공용 데일리 백팩 QEBXX24801BLK">
+							<a class="hh" href="">39이티씨</a> <a
+								title="39 Spring Standard (Vase)">
 								<div class="j">
-									<h5 class="jj">KS X INAP 남녀공용 데일리 백팩 QEBXX24801BLK</h5>
+									<h5 class="jj">39 Spring Standard (Vase)</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk">10%</span> <strong class="qqq">106,200</strong>
+										<strong class="qqq">118,000</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -597,7 +622,7 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">41,275</h5>
+									<h5 class="jj">0</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -607,8 +632,8 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">4.8</div>
-									<div class="review-count">(15034)</div>
+									<div class="review-point">0</div>
+									<div class="review-count">(0)</div>
 								</a>
 							</div>
 						</div>
@@ -618,10 +643,103 @@ button {
 			</ul>
 		</div>
 	</div>
+   
+<footer>
+	<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
+	</footer>
+
+<script>
+$(function () {
+    $(".medium-ctgr:eq(0)").click(function () {
+        $.ajax({
+            type: 'POST',
+            url: 'interior_all.jsp',
+            dataType: 'html',
+            error: function (error) {
+                alert("Error!");
+            },
+            success: function (data) {
+            	$('body').children().remove();
+                // Contents 영역 교체
+                $("body").html(data);
+            }
+        });
+    });
+})
+
+$(function () {
+    $(".medium-ctgr:eq(2)").click(function () {
+        $.ajax({
+            type: 'POST',
+            url: 'interior_exclusive.jsp',
+            dataType: 'html',
+            error: function (error) {
+                alert("Error!");
+            },
+            success: function (data) {
+            	$('body').children().remove();
+                // Contents 영역 교체
+                $("body").html(data);
+            }
+        });
+    });
+})
+$(function () {
+    $(".medium-ctgr:eq(3)").click(function () {
+        $.ajax({
+            type: 'POST',
+            url: 'interior_bnb.jsp',
+            dataType: 'html',
+            error: function (error) {
+                alert("Error!");
+            },
+            success: function (data) {
+            	$('body').children().remove();
+                // Contents 영역 교체
+                $("body").html(data);
+            }
+        });
+    });
+})
+
+$(function () {
+    $(".medium-ctgr:eq(4)").click(function () {
+        $.ajax({
+            type: 'POST',
+            url: 'interior_bed.jsp',
+            dataType: 'html',
+            error: function (error) {
+                alert("Error!");
+            },
+            success: function (data) {
+            	$('body').children().remove();
+                // Contents 영역 교체
+                $("body").html(data);
+            }
+        });
+    });
+})
+
+$(function () {
+    $(".medium-ctgr:eq(5)").click(function () {
+        $.ajax({
+            type: 'POST',
+            url: 'interior_fabric.jsp',
+            dataType: 'html',
+            error: function (error) {
+                alert("Error!");
+            },
+            success: function (data) {
+            	$('body').children().remove();
+                // Contents 영역 교체
+                $("body").html(data);
+            }
+        });
+    });
+})
 
 
-	<script>
-
+	
 </script>
 
 </body>
