@@ -336,110 +336,110 @@ h4 {
 
 </style>
 </head>
+<header>
+   <jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
+</header>
 <body>
-	<header>
-		<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
-	</header>
-	<div class="mid-div">
-		<div class="mid-left">
-			<div class="mid-left-top">
-				<h3 class="name">유*</h3>
-				<ul class="like">
-					<li class="like-li">
-						<a class="like-a" href="#">좋아요 0</a>
-					</li>
-				</ul>
-			</div>
-			<ul class="mid-top">
-				<li class="user-grade">
-					<a class="grade1" href="#">
-						<strong class="grade2">회원등급</strong>
-						<span class="grade-color">GREEN</span>
-					</a>
-					<a class="sale" target="blank" href="#">할인혜택 보기</a>
-				</li>
-				<li class="user-coupon">
-					<a class="grade1" href="#">
-						<strong class="grade2">사용가능쿠폰</strong>
-						<span class="grade-color">2</span>
-					</a>
-				</li>
-				<li class="user-mileage">
-					<a class="grade1" href="#">
-						<strong class="grade2">마일리지</strong>
-						<span class="grade-color">0</span>
-					</a>
-				</li>
-			</ul>	
-			<ul class="mid-left-list-top">
-				<li class="">
-					<h4 class="shop-info">나의 쇼핑정보</h4>
-					<ul class="shop-info-list">
-						<li class="shop-info-li">
-							<a class="delivery-view" href="#">주문배송조회</a>
-						</li>
-						<li>
-							<a class="shop-info-a" href="#">숙박예약조회</a>
-						</li>
-						<li>
-							<a class="shop-info-a" href="#">취소/교환/반품 내역</a>
-						</li>
-						<li>
-							<a class="shop-info-a" href="/SentiProject/sentiBoard/list/mypage_item_review.jsp">상품 리뷰</a>
-						</li>
-						<li>
-							<a class="shop-info-a" href="#">증빙서류 발급</a>
-						</li>
-					</ul>
-				</li>
-				<li class="id">
-					<h4 class="id-info">나의 계정설정</h4>
-					<ul class="">
-						<li class="id-li">
-							<a class="id-a" href="#">회원정보수정</a>
-						</li>
-						<li class="id-li">
-							<a class="id-a" href="#">회원등급</a>
-						</li>
-						<li class="id-li">
-							<a class="id-a" href="#">쿠폰</a>
-						</li>
-						<li class="id-li">
-							<a class="id-a" href="#">마일리지</a>
-						</li>
-					</ul>
-				</li>
-				<li class="service-center">
-					<h4 class="service-info">고객센터</h4>
-					<ul class="">
-						<li class="service-li">
-							<a class="service-a" href="#">1:1 문의내역</a>
-						</li>
-						<li class="service-li">
-							<a class="service-a" href="#">상품 Q&A내역</a>
-						</li>
-						<li class="service-li">
-							<a class="service-a" href="#">공지사항</a>
-						</li>
-						<li class="service-li">
-							<a class="service-a" href="#">FAQ</a>
-						</li>
-						<li class="service-li">
-							<a class="service-a" href="#">고객의 소리</a>
-						</li>
-					</ul>
-				</li>
-			</ul>
-			<section class="information">
-				<h4 class="service-center-guide">고객센터 안내</h4>
-				<p class="service-email">customer@29cm.co.kr</p>
-				<ul class="go-go">
-					<li>
-						<a class="go-go-go" href="#">1:1 문의하러가기</a>
-					</li>
-				</ul>
-			</section>
-		</div>
-	</div>
+   <div class="mid-div">
+      <div class="mid-left">
+         <div class="mid-left-top">
+            <h3 class="name">유*</h3>
+            <ul class="like">
+               <li class="like-li">
+                  <a class="like-a" href="#">좋아요 0</a>
+               </li>
+            </ul>
+         </div>
+         <ul class="mid-top">
+            <li class="user-grade">
+               <a class="grade1" href="#">
+                  <strong class="grade2">회원등급</strong>
+                  <span class="grade-color">GREEN</span>
+               </a>
+               <a class="sale" target="blank" href="#">할인혜택 보기</a>
+            </li>
+            <li class="user-coupon">
+               <a class="grade1" href="#">
+                  <strong class="grade2">사용가능쿠폰</strong>
+                  <span class="grade-color">2</span>
+               </a>
+            </li>
+            <li class="user-mileage">
+               <a class="grade1" href="#">
+                  <strong class="grade2">마일리지</strong>
+                  <span class="grade-color">0</span>
+               </a>
+            </li>
+         </ul>   
+         <ul class="mid-left-list-top">
+            <li class="">
+               <h4 class="shop-info">나의 쇼핑정보</h4>
+               <ul class="shop-info-list">
+                  <li class="shop-info-li">
+                     <a class="delivery-view" href="#">주문배송조회</a>
+                  </li>
+                  <li>
+                     <a class="shop-info-a" href="#">숙박예약조회</a>
+                  </li>
+                  <li>
+                     <a class="shop-info-a" href="#">취소/교환/반품 내역</a>
+                  </li>
+                  <li>
+                     <a class="shop-info-a" href="/SentiProject/sentiBoard/list/mypage_item_review.jsp">상품 리뷰</a>
+                  </li>
+                  <li>
+                     <a class="shop-info-a" href="#">증빙서류 발급</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="id">
+               <h4 class="id-info">나의 계정설정</h4>
+               <ul class="">
+                  <li class="id-li">
+                     <a class="id-a" href="#">회원정보수정</a>
+                  </li>
+                  <li class="id-li">
+                     <a class="id-a" href="#">회원등급</a>
+                  </li>
+                  <li class="id-li">
+                     <a class="id-a" href="#">쿠폰</a>
+                  </li>
+                  <li class="id-li">
+                     <a class="id-a" href="#">마일리지</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="service-center">
+               <h4 class="service-info">고객센터</h4>
+               <ul class="">
+                  <li class="service-li">
+                     <a class="service-a" href="#">1:1 문의내역</a>
+                  </li>
+                  <li class="service-li">
+                     <a class="service-a" href="#">상품 Q&A내역</a>
+                  </li>
+                  <li class="service-li">
+                     <a class="service-a" href="#">공지사항</a>
+                  </li>
+                  <li class="service-li">
+                     <a class="service-a" href="#">FAQ</a>
+                  </li>
+                  <li class="service-li">
+                     <a class="service-a" href="#">고객의 소리</a>
+                  </li>
+               </ul>	
+            </li>
+         </ul>
+         <section class="information">
+            <h4 class="service-center-guide">고객센터 안내</h4>
+            <p class="service-email">customer@29cm.co.kr</p>
+            <ul class="go-go">
+               <li>
+                  <a class="go-go-go" href="#">1:1 문의하러가기</a>
+               </li>
+            </ul>
+         </section>
+      </div>
+   </div>
 </body>
 </html>
