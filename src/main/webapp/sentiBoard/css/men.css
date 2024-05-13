@@ -10,11 +10,9 @@
    	  margin-top: 59px;
    	  
   }	
-  #first{
-    /* background-color: yellow; */
-  }
- @media (min-width: 541px) {
 
+  
+ @media (min-width: 541px) {
     #second {
         max-width: 1920px;
         margin: 0px auto;
@@ -22,12 +20,7 @@
         
     }
 }
-  #third{
-
-    
-
-
-  }
+ 
 #fourth{
     box-sizing: border-box;
     min-width: 1000px;
@@ -720,7 +713,7 @@
 
 .swiper {
   width: 100%;
-  height: 620px;
+  height:650px;
 }
 
 @media (min-width: 541px) {

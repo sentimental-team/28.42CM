@@ -13,8 +13,9 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<link rel="stylesheet" href="../css/men.css">
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="../css/men.css">
  <header>
    <jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
 </header> 
@@ -235,7 +236,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
         <h2 class="dd1">New arrivals
           <a class="dd1_1" href="https://www.29cm.co.kr/shop/category/list?category_large_code=272100100&amp;category_medium_code=new">전체보기</a>
         </h2>
-        <div class="swiper" style="position: relative; height: 350px">
+        <div class="swiper" style="position: relative; height :400px">
 			  <!-- Additional required wrapper -->
 			  <div class="swiper-wrapper">
 				    <!-- Slides -->
@@ -774,7 +775,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
         <h2 class="dd1">Weekly best
           <a class="dd1_1" href="https://www.29cm.co.kr/shop/category/list?category_large_code=272100100&amp;category_medium_code=new">전체보기</a>
         </h2>
-        <div class="swiper" style="position: relative; height: 350px">
+        <div class="swiper" style="position: relative; height: 400px">
 			  <!-- Additional required wrapper -->
 			  <div class="swiper-wrapper">
 				    <!-- Slides -->
