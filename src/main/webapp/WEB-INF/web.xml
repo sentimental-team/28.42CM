@@ -35,7 +35,11 @@
 		<url-pattern>/*</url-pattern> 
 		<dispatcher>REQUEST</dispatcher>
 	</filter-mapping>
-	
+	<<<<<<< HEAD
+
+ =======
+
+		
 	<!-- 3.  컨트롤러 서블릿 등록 -->
 <!-- 	<servlet>
 		<description>listBoard</description>
@@ -54,3 +58,13 @@
 		<url-pattern>*.ss</url-pattern>	
 	</servlet-mapping>  -->
 </web-app>
+
+
+>>>>>>> afda2a90da5f54f04fa967f7a23e75ba455df6d5
+	<!-- 3. 컨트롤러 서블릿 등록 -->
+	<!-- <servlet> <description>listBoard</description> <servlet-name>dispatcher</servlet-name> 
+		<servlet-class>days09.FileTestServlet</servlet-class> <init-param> <description>URL과 
+		Handler 등록 파일 경로</description> <param-name>path</param-name> <param-value>/days09/FileTestServlet</param-value> 
+		</init-param> <load-on-startup>1</load-on-startup> </servlet> <servlet-mapping> 
+		<servlet-name>dispatcher</servlet-name> <url-pattern>*.ss</url-pattern> </servlet-mapping> -->
+

@@ -6,17 +6,9 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title></title>
+<link rel="shortcut icon" href="http://localhost/jspPro/images/SiSt.ico">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
- 
 <style>
     :root {
         --ruler-scale-color-gray-00: #fff;
@@ -623,7 +615,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
         justify-content: space-between;
     }
 }
-    .swiper {
+    .css-1nxhd22 {
         position: relative;
         -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
@@ -750,7 +742,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
         height: 28px;
     }
     
-    .swiper .splide__pagination {
+    .css-1nxhd22 .splide__pagination {
         position: unset;
         padding-top: 16px;
     }
@@ -777,14 +769,14 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
         margin: 0;
         pointer-events: auto;
     }
-    .swiper .splide__pagination__page.is-active {
+    .css-1nxhd22 .splide__pagination__page.is-active {
         -webkit-transform: scale(1);
         -moz-transform: scale(1);
         -ms-transform: scale(1);
         transform: scale(1);
         background-color: #000000;
     }
-    .swiper .splide__pagination__page {
+    .css-1nxhd22 .splide__pagination__page {
         width: 10px;
         height: 10px;
         margin: 0 5px;
@@ -3815,33 +3807,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
         line-height: 100em;
         background: url(https://img.29cm.co.kr/next29cm/icon_scroll2.png) 0px -34px / 34px 68px no-repeat;
     }
-    
-    /* 동작 */
-	.css-azx95j:hover + .css-qoulyp {
-    	display: block;
-	}
-	.css-qoulyp:hover {
-		display: block;
-	}
-	.css-1eew7kn {
-	    display: block;
-	    padding: 7px 20px 5px;
-	    font-size: 12px;
-	    color: rgb(93, 93, 93);
-	    cursor: pointer;
-	}
-@media (min-width: 541px) {
-    .uuu {
-        height: 680px;
-        margin: 0px 100px 0px 380px;
-    }
-}
 
-.swiper-slide img {
-    width: 100%;
-    height: auto;
-}
-	
 </style>
 </head>
 <header>
@@ -3861,24 +3827,8 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
                                     </path>
                                     <circle class="ctgr4" stroke="#000000" stroke-width="2" cx="12" cy="12" r="10"></circle>
                                 </g>
-                            </svg>
-                        </div>
-                        <div class="css-qoulyp eq96xsv2">
-                            <ul>
-                                <li><a href="https://www.29cm.co.kr/shop/category/list?category_large_code=291100100&amp;category_medium_code=291111100"
-                                        class="css-1eew7kn eq96xsv3">여성의류</a></li>
-                                <li><a href="https://www.29cm.co.kr/shop/category/list?category_large_code=291100100&amp;category_medium_code=291114100"
-                                        class="css-1eew7kn eq96xsv3">여성가방</a></li>
-                                <li><a href="https://www.29cm.co.kr/shop/category/list?category_large_code=291100100&amp;category_medium_code=291112100"
-                                        class="css-1eew7kn eq96xsv3">남성신발</a></li>
-                                <li><a href="https://www.29cm.co.kr/shop/category/list?category_large_code=291100100&amp;category_medium_code=291103100"
-                                        class="css-1eew7kn eq96xsv3">남성악세서리</a></li>
-                                <li><a href="https://www.29cm.co.kr/shop/category/list?category_large_code=291100100&amp;category_medium_code=291104100"
-                                        class="css-1eew7kn eq96xsv3">주방생활</a></li>
-                                <li><a href="https://www.29cm.co.kr/shop/category/list?category_large_code=291100100&amp;category_medium_code=291105100"
-                                        class="css-1eew7kn eq96xsv3">뷰티</a></li>
-                            </ul>
-                        </div>	
+                            </svg></div>
+                        
                     </div>
                 </li>
                 <li class="css-wb64ex ehh6z822">
@@ -3891,8 +3841,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
                                     </path>
                                     <circle class="ctgr4" stroke="#000000" stroke-width="2" cx="12" cy="12" r="10"></circle>
                                 </g>
-                            </svg>
-                        </div>
+                            </svg></div>
                         <div class="css-qoulyp eq96xsv2">
                             <ul>
                                 <li><a href="https://www.29cm.co.kr/shop/category/list?category_large_code=291100100&amp;category_medium_code=291111100"
@@ -3972,25 +3921,77 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
                 </a></div>
         </div>
         <div class="css-1y47rmj e18uevlq0">
-        	<div class="swiper">
-			    <div class="swiper-wrapper">
-			        <div class="swiper-slide">
-			            <a>
-			                <img alt="" src="https://img.29cm.co.kr/next-product/2023/01/26/c2501247c5744c27a983c311f6d20388_20230126101754.png?width=700">
-			            </a>
-			        </div>
-			        <div class="swiper-slide">
-			            <a>
-			                <img alt="" src="https://img.29cm.co.kr/next-product/2022/08/01/80cb61c8cf0c4b709f9fab214d7ca7b3_20220801134234.jpg?width=700">
-			            </a>
-			        </div>
-			    </div>
-			    <!-- Add Pagination -->
-			    <div class="swiper-pagination"></div>
-			    <!-- Add Navigation -->
-			    <div class="swiper-button-prev"></div>
-			    <div class="swiper-button-next"></div>
-			</div>
+            <div class="css-1nxhd22 enepqhc0">
+                <div class="splide splide--slide splide--ltr splide--draggable is-active is-initialized" id="splide01"
+                    role="region" aria-roledescription="carousel">
+                    <div class="splide__track splide__track--slide splide__track--ltr splide__track--draggable"
+                        id="splide01-track" style="padding-left: 0px; padding-right: 0px;" aria-live="polite"
+                        aria-relevant="additions">
+                        <ul class="splide__list" id="splide01-list" role="presentation"
+                            style="transform: translateX(0px);">
+                            <li class="splide__slide css-1vt3f8z enepqhc2 is-active is-visible" id="splide01-slide01"
+                                role="tabpanel" aria-roledescription="slide" aria-label="1 of 5">
+                                <div class="css-122y91a enepqhc4"><img
+                                        src="https://img.29cm.co.kr/next-product/2023/01/26/c2501247c5744c27a983c311f6d20388_20230126101754.png?width=700"
+                                        alt="" loading="eager" class="css-12qah06 enepqhc5"></div>
+                            </li>
+                            <li class="splide__slide css-1vt3f8z enepqhc2 is-next" id="splide01-slide02" role="tabpanel"
+                                aria-roledescription="slide" aria-label="2 of 5" aria-hidden="true">
+                                <div class="css-122y91a enepqhc4"><img
+                                        src="https://img.29cm.co.kr/next-product/2022/08/01/80cb61c8cf0c4b709f9fab214d7ca7b3_20220801134234.jpg?width=700"
+                                        alt="" loading="lazy" class="css-12qah06 enepqhc5"></div>
+                            </li>
+                            <li class="splide__slide css-1vt3f8z enepqhc2" id="splide01-slide03" role="tabpanel"
+                                aria-roledescription="slide" aria-label="3 of 5" aria-hidden="true">
+                                <div class="css-122y91a enepqhc4"><img
+                                        src="https://img.29cm.co.kr/next-product/2022/08/01/c853e61a1f134dcdb0e83944a5ba5c54_20220801134225.jpg?width=700"
+                                        alt="" loading="lazy" class="css-12qah06 enepqhc5"></div>
+                            </li>
+                            <li class="splide__slide css-1vt3f8z enepqhc2" id="splide01-slide04" role="tabpanel"
+                                aria-roledescription="slide" aria-label="4 of 5" aria-hidden="true">
+                                <div class="css-122y91a enepqhc4"><img
+                                        src="https://img.29cm.co.kr/next-product/2022/08/01/9dfac4fe784c42039396461652b1a68d_20220801134229.jpg?width=700"
+                                        alt="" loading="lazy" class="css-12qah06 enepqhc5"></div>
+                            </li>
+                            <li class="splide__slide css-1vt3f8z enepqhc2" id="splide01-slide05" role="tabpanel"
+                                aria-roledescription="slide" aria-label="5 of 5" aria-hidden="true">
+                                <div class="css-122y91a enepqhc4"><img
+                                        src="https://img.29cm.co.kr/next-product/2022/08/01/47f3046abca84d57bf420cc52815019d_20220801142902.jpg?width=700"
+                                        alt="" loading="lazy" class="css-12qah06 enepqhc5"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="splide__arrows css-1x8q3p5 enepqhc1 splide__arrows--ltr"><button
+                            class="splide__arrows splide__arrow--prev enepqhc8 css-uw6dxe e12h9sp60" type="button"
+                            disabled="" aria-label="Previous slide" aria-controls="splide01-track"><svg
+                                class="enepqhc10 css-19ilmue e15lsifv0" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 42 80">
+                                <path class="slide_arrow1" d="M1 0l40 40.083L1.166 80" fill="none" fill-rule="evenodd" stroke="#000000"
+                                    stroke-width="5"></path>
+                            </svg></button><button
+                            class="splide__arrows splide__arrow--next enepqhc7 css-1l4yul5 e12h9sp60" type="button"
+                            aria-label="Next slide" aria-controls="splide01-track"><svg
+                                class="enepqhc9 css-fc0kkr e15lsifv0" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 42 80">
+                                <path class="slide_arrow2" d="M1 0l40 40.083L1.166 80" fill="none" fill-rule="evenodd" stroke="#000000"
+                                    stroke-width="5"></path>
+                            </svg></button></div>
+                    <ul class="splide__pagination splide__pagination--ltr" role="tablist"
+                        aria-label="Select a slide to show">
+                        <li role="presentation"><button class="splide__pagination__page is-active" type="button"
+                                role="tab" aria-controls="splide01-slide01" aria-label="Go to slide 1"
+                                aria-selected="true"></button></li>
+                        <li role="presentation"><button class="splide__pagination__page" type="button" role="tab"
+                                aria-controls="splide01-slide02" aria-label="Go to slide 2" tabindex="-1"></button></li>
+                        <li role="presentation"><button class="splide__pagination__page" type="button" role="tab"
+                                aria-controls="splide01-slide03" aria-label="Go to slide 3" tabindex="-1"></button></li>
+                        <li role="presentation"><button class="splide__pagination__page" type="button" role="tab"
+                                aria-controls="splide01-slide04" aria-label="Go to slide 4" tabindex="-1"></button></li>
+                        <li role="presentation"><button class="splide__pagination__page" type="button" role="tab"
+                                aria-controls="splide01-slide05" aria-label="Go to slide 5" tabindex="-1"></button></li>
+                    </ul>
+                </div>
+            </div>
             <div class="css-3eeht e18uevlq1">
                 <div class="css-uz7uc7 ek83fdm0">
                     <div class="css-1k84vqv ek83fdm1">
@@ -6370,62 +6371,6 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <footer>
 	<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
 </footer>
-<script>
-//다음 버튼 요소를 가져옵니다.
-$("#next_slide").on("click", function(){
-    // 현재 활성화된 슬라이드 요소
-    var $currentSlide = $(".splide__slide.is-active");
-
-    // 다음 슬라이드 요소
-    var $nextSlide = $currentSlide.next();
-
-    // 만약 다음 슬라이드가 없다면 첫 번째 슬라이드로 이동
-    if (!$nextSlide.length) {
-        $nextSlide = $(".splide__slide").first();
-    }
-
-    // 현재 활성화된 슬라이드 비활성화
-    $currentSlide.removeClass("is-active").removeClass("is-visible");
-
-    // 다음 슬라이드 활성화
-    $nextSlide.addClass("is-active").addClass("is-visible");
-});
-
-</script>
-<script>
-    var swiper = new Swiper('.swiper', {
-        loop: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
-</script>
-
-<script>
-// "상품설명 더보기" 버튼을 가져옵니다.
-var moreDescriptionButton = document.querySelector('.css-h7utre');
-
-// 클릭 이벤트를 추가합니다.
-moreDescriptionButton.addEventListener('click', function() {
-    // 이미지들을 감싸고 있는 부모 요소를 가져옵니다.
-    var imageContainer = document.querySelector('.css-dluqe2');
-
-    // 부모 요소에 적절한 CSS 클래스를 추가하여 이미지들을 보이게 합니다.
-    imageContainer.classList.add('show-all-images');
-
-    
-});
-
-</script>
 </html>
 
 

@@ -1,61 +1,6 @@
-<%@page import="domain.Medium_CtgrVO"%>
-<%@page import="java.util.Iterator"%>
-<%@page import="java.sql.SQLException"%>
-<%@page import="java.util.ArrayList"%>
-<%@page import="domain.Large_CtgrVO"%>
-<%@page import="java.sql.ResultSet"%>
-<%@page import="java.sql.PreparedStatement"%>
-<%@page import="com.util.DBConn"%>
-<%@page import="java.sql.Connection"%>
 <%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ 
 taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
- <%
-    Connection conn = DBConn.getConnection();
-    
-    PreparedStatement pstmt = null;
-    ResultSet rs = null;    
-    String sql = " SELECT medium_ctgr_id, medium_ctgr_name, large_ctgr_id " 
-    		+" FROM medium_ctgr"
-    		+" where large_ctgr_id='1'";
-    
-    int medium_ctgr_id = 0;
-    String medium_ctgr_name =  null; 
-    int large_ctgr_id =0;
-    
-    Medium_CtgrVO mcvo = null;
-    ArrayList<Medium_CtgrVO> mclist = null;
-    
-    try {
-        pstmt = conn.prepareStatement(sql);
-        rs = pstmt.executeQuery();
-        
-        if( rs.next() ) {
-            mclist = new ArrayList<>();
-            do {
-            	medium_ctgr_id = rs.getInt("medium_ctgr_id");
-            	medium_ctgr_name = rs.getString("medium_ctgr_name");
-            	large_ctgr_id = rs.getInt("large_ctgr_id");    
-                
-                mcvo = new Medium_CtgrVO(medium_ctgr_id, medium_ctgr_name, large_ctgr_id);    
-                
-                mclist.add(mcvo);
-            } while (rs.next());                
-        } // if 
-        
-        
-    } catch (SQLException e) { 
-        e.printStackTrace();
-    } finally {
-        try {
-            pstmt.close();
-            rs.close();
-            // DBConn.close();
-        } catch (SQLException e) { 
-            e.printStackTrace();
-        }
-    }
-%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -420,6 +365,7 @@ class ="best_radio_box3 ":checked+.bb {
 	background-repeat: no-repeat;
 	background-position: right 10px center;
 	border: 1px solid #ccc;
+	border-radius: 5px;
 	outline: none;
 	cursor: pointer;
 }
@@ -509,60 +455,6 @@ button {
     cursor: pointer;
     outline: none;
 }
-
-.widget-top-btn {
-    display: flex;
-    flex-direction: row;
-    -webkit-box-pack: start;
-    justify-content: flex-start;
-    flex: 1 1 0%;
-    -webkit-box-align: center;
-    align-items: center;
-    height: 100%;
-    min-height: 42px;
-    border-right: 1px solid var(--ruler-semantic-color-border-line);
-}
-
-.widget-top-btn-box {
-    -webkit-box-align: center;
-    align-items: center;
-    display: flex;
-    flex-flow: wrap;
-    -webkit-box-pack: start;
-    justify-content: flex-start;
-}
-
-.wm-top-btn {
-    position: relative;
-    padding: 11px 20px;
-}
-
-.wm-top-btn-click {
-    display: inline-block;
-    font-family: var(--ruler-semantic-typography-text-l-bold-font-family);
-    font-weight: var(--ruler-semantic-typography-text-l-bold-font-weight);
-    line-height: var(--ruler-semantic-typography-text-l-bold-line-height);
-    font-size: var(--ruler-semantic-typography-text-l-bold-font-size);
-    color: var(--ruler-semantic-color-text-primary);
-}
-
-.wm-top-btn-nclick {
-    display: inline-block;
-    font-family: var(--ruler-semantic-typography-text-l-font-family);
-    font-weight: var(--ruler-semantic-typography-text-l-font-weight);
-    line-height: var(--ruler-semantic-typography-text-l-line-height);
-    font-size: var(--ruler-semantic-typography-text-l-font-size);
-    color: var(--ruler-semantic-color-text-secondary);
-}
-
-.wm-top-btn::after {
-    content: "";
-    position: absolute;
-    right: 0px;
-    width: 1px;
-    height: 20px;
-    background: var(--ruler-semantic-color-border-line);
-}
 </style>
 </head>
 <header>
@@ -577,21 +469,21 @@ button {
 				<h2 class="best_title_left">여성의류</h2>
 				<!-- <ul class="left_bar_meue" > -->
 				<ul class="left-menu">
-					 	<%
-              Iterator<Medium_CtgrVO> ir = mclist.iterator();
-              while (ir.hasNext()) {
-              mcvo = ir.next();
-         %>
-               <li value="<%= mcvo.getMedium_ctgr_id() %>" class="medium_ctgr_id111">
-               		<a href="#" class="medium-ctgr"  <%=medium_ctgr_id == mcvo.getMedium_ctgr_id() ? "selected" : "" %>><%= mcvo.getMedium_ctgr_name() %></a>
-               </li>
-               
-    
-    <!-- 각 도메인의 url도 db에 있어야 할거 같음.  -->
-		<%
-		        } // while
-		 %> 
-			
+					<li><a class="medium-ctgr" href="">ALL</a></li>
+					<li><a class="medium-ctgr" href="">NEW</a></li>
+					<li><a class="medium-ctgr" href="">EXCLUSIVE</a></li>
+					<li><a class="medium-ctgr" href="">상의</a></li>
+					<li><a class="medium-ctgr" href="">바지</a></li>
+					<li><a class="medium-ctgr" href="">원피스</a></li>
+					<li><a class="medium-ctgr" href="">스커트</a></li>
+					<li><a class="medium-ctgr" href="">셋업</a></li>
+					<li><a class="medium-ctgr" href="">점프수트</a></li>
+					<li><a class="medium-ctgr" href="">엑티브웨어</a></li>
+					<li><a class="medium-ctgr" href="">아우터</a></li>
+					<li><a class="medium-ctgr" href="">니트웨어</a></li>
+					<li><a class="medium-ctgr" href="">이너웨어</a></li>
+					<li><a class="medium-ctgr" href="">홈웨어</a></li>
+					<li><a class="medium-ctgr" href="">해외브랜드</a></li>
 				</ul>
 				<!-- </ul> -->
 			</div>
@@ -600,13 +492,7 @@ button {
 		<div id="best-right">
 			<!-- <h2 class="best_title_right" >여성의류</h2> -->
 			<div class="widget">
-				<div class="widget-gap">
-					<div class="widget-top-btn">
-						<div class="widget-top-btn-box">
-						
-						</div>
-					</div>
-				</div>
+				<div class="widget-gap"></div>
 				<div class="controlgroup">
 					<select id="sort-type" class="styled-select">
 						<option>추천순</option>
@@ -1142,43 +1028,8 @@ button {
 	<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
 </footer>
 
-<script>
 
-    $(".medium_ctgr_id111").on("click", function(){
-  	  
-        let selectedMedium_ctgr_id = $(this).val(); // 선택한 부서번호 가져오기
-        $.ajax({
-           url: "small_ctgr_json.jsp", 
-           dataType: "json",
-           type: "GET", 
-           data: { medium_ctgr_id: selectedMedium_ctgr_id }, // 선택한 부서번호를 전달
-           cache: false,
-           success: function(data){
-               $(".widget-top-btn-box").empty(); // 테이블 내용 초기화
-               
-              
-               $(data.small_ctgr).each(function(index, element){
-                   // 직원 정보를 테이블에 추가
-                   $(".widget-top-btn-box").append(`	
-                  		 
-                		   <button class="wm-top-btn">
-							<span class="wm-top-btn-click">\${element.small_ctgr_name}</span>
-							</button>
-                           
-                                 `);
-                   
-               });
-               
-              //alert( data.small_ctgr );
-           },
-           error: function(){
-               alert("error");
-           }
-           
-           
-        });
-    });
- 
+	<script>
 
 </script>
 
