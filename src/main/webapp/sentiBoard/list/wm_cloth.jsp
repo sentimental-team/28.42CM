@@ -255,6 +255,19 @@ class ="best_radio_box3 ":checked+.bb {
 		padding: 16px 12px 0px;
 	}
 }
+
+@media (max-width: 1640px) {
+    .photo_list {
+        grid-template-columns: repeat(16, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    .photo_list {
+        grid-template-columns: repeat(12, 1fr);
+    }
+}
+
 .gg{
 	position: relative;
     padding-top: 14px;
@@ -455,6 +468,61 @@ button {
     cursor: pointer;
     outline: none;
 }
+
+.widget-top-btn {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    flex: 1 1 0%;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 100%;
+    min-height: 42px;
+    border-right: 1px solid var(--ruler-semantic-color-border-line);
+}
+
+.widget-top-btn-box {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-flow: wrap;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+
+.wm-top-btn {
+    position: relative;
+    padding: 11px 20px;
+}
+
+.wm-top-btn-click {
+    display: inline-block;
+    font-family: var(--ruler-semantic-typography-text-l-bold-font-family);
+    font-weight: var(--ruler-semantic-typography-text-l-bold-font-weight);
+    line-height: var(--ruler-semantic-typography-text-l-bold-line-height);
+    font-size: var(--ruler-semantic-typography-text-l-bold-font-size);
+    color: var(--ruler-semantic-color-text-primary);
+}
+
+.wm-top-btn-nclick {
+    display: inline-block;
+    font-family: var(--ruler-semantic-typography-text-l-font-family);
+    font-weight: var(--ruler-semantic-typography-text-l-font-weight);
+    line-height: var(--ruler-semantic-typography-text-l-line-height);
+    font-size: var(--ruler-semantic-typography-text-l-font-size);
+    color: var(--ruler-semantic-color-text-secondary);
+}
+
+.wm-top-btn::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    width: 1px;
+    height: 20px;
+    background: var(--ruler-semantic-color-border-line);
+}
+
 </style>
 </head>
 <header>
@@ -1029,7 +1097,40 @@ button {
 </footer>
 
 
+
+    $(".medium_ctgr_id111").on("click", function(){
+  	  
+        let selectedMedium_ctgr_id = $(this).val(); // 선택한 부서번호 가져오기
+        $.ajax({
+           url: "small_ctgr_json.jsp", 
+           dataType: "json",
+           type: "GET", 
+           data: { medium_ctgr_id: selectedMedium_ctgr_id }, // 선택한 부서번호를 전달
+           cache: false,
+           success: function(data){
+               $(".widget-top-btn-box").empty(); // 테이블 내용 초기화
+               
+              
+               $(data.small_ctgr).each(function(index, element){
+                   // 직원 정보를 테이블에 추가
+                   $(".widget-top-btn-box").append(`	
+                  		 
+                		   <button class="wm-top-btn">
+							<span class="wm-top-btn-click">\${element.small_ctgr_name}</span>
+							</button>
+                                 `);
+               });
+               
+              //alert( data.small_ctgr );
+           },
+           error: function(){
+               alert("error");
+           }
+        });
+    });
+
 	<script>
+
 
 </script>
 
