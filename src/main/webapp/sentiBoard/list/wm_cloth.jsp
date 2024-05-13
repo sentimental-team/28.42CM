@@ -1,15 +1,7 @@
-<%@page import="domain.Medium_CtgrVO"%>
-<%@page import="java.util.Iterator"%>
-<%@page import="java.sql.SQLException"%>
-<%@page import="java.util.ArrayList"%>
-<%@page import="domain.Large_CtgrVO"%>
-<%@page import="java.sql.ResultSet"%>
-<%@page import="java.sql.PreparedStatement"%>
-<%@page import="com.util.DBConn"%>
-<%@page import="java.sql.Connection"%>
 <%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ 
 taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<<<<<<< HEAD
  <%
 
     Connection conn = DBConn.getConnection();
@@ -59,6 +51,8 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
         }
     }
 %>
+=======
+>>>>>>> parent of b2531c6 (Merge pull request #56 from sentimental-team/yujin)
 <!DOCTYPE html>
 <html>
 <head>
@@ -436,6 +430,7 @@ class ="best_radio_box3 ":checked+.bb {
 	background-repeat: no-repeat;
 	background-position: right 10px center;
 	border: 1px solid #ccc;
+	border-radius: 5px;
 	outline: none;
 	cursor: pointer;
 }
@@ -525,6 +520,7 @@ button {
     cursor: pointer;
     outline: none;
 }
+<<<<<<< HEAD
 
 .widget-top-btn {
     display: flex;
@@ -580,6 +576,8 @@ button {
     background: var(--ruler-semantic-color-border-line);
 }
 
+=======
+>>>>>>> parent of b2531c6 (Merge pull request #56 from sentimental-team/yujin)
 </style>
 </head>
 <header>
@@ -594,6 +592,7 @@ button {
 				<h2 class="best_title_left">여성의류</h2>
 				<!-- <ul class="left_bar_meue" > -->
 				<ul class="left-menu">
+<<<<<<< HEAD
 				<%
               	Iterator<Medium_CtgrVO> ir =mclist.iterator();
               	while (ir.hasNext()) {
@@ -606,6 +605,23 @@ button {
 				<%
 		        } // while
 		 		%> 
+=======
+					<li><a class="medium-ctgr" href="">ALL</a></li>
+					<li><a class="medium-ctgr" href="">NEW</a></li>
+					<li><a class="medium-ctgr" href="">EXCLUSIVE</a></li>
+					<li><a class="medium-ctgr" href="">상의</a></li>
+					<li><a class="medium-ctgr" href="">바지</a></li>
+					<li><a class="medium-ctgr" href="">원피스</a></li>
+					<li><a class="medium-ctgr" href="">스커트</a></li>
+					<li><a class="medium-ctgr" href="">셋업</a></li>
+					<li><a class="medium-ctgr" href="">점프수트</a></li>
+					<li><a class="medium-ctgr" href="">엑티브웨어</a></li>
+					<li><a class="medium-ctgr" href="">아우터</a></li>
+					<li><a class="medium-ctgr" href="">니트웨어</a></li>
+					<li><a class="medium-ctgr" href="">이너웨어</a></li>
+					<li><a class="medium-ctgr" href="">홈웨어</a></li>
+					<li><a class="medium-ctgr" href="">해외브랜드</a></li>
+>>>>>>> parent of b2531c6 (Merge pull request #56 from sentimental-team/yujin)
 				</ul>
 				<!-- </ul> -->
 			</div>
@@ -614,6 +630,7 @@ button {
 		<div id="best-right">
 			<!-- <h2 class="best_title_right" >여성의류</h2> -->
 			<div class="widget">
+<<<<<<< HEAD
 				<div class="widget-gap">
 					<div class="widget-top-btn">
 						<div class="widget-top-btn-box">
@@ -621,6 +638,9 @@ button {
 						</div>
 					</div>
 				</div>
+=======
+				<div class="widget-gap"></div>
+>>>>>>> parent of b2531c6 (Merge pull request #56 from sentimental-team/yujin)
 				<div class="controlgroup">
 					<select id="sort-type" class="styled-select">
 						<option>추천순</option>
@@ -1157,6 +1177,7 @@ button {
 </footer>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 <script>
 	$(".medium_ctgr_id111").on("click", function(){
@@ -1197,6 +1218,10 @@ button {
     });
 <<<<<<< HEAD
 =======
+=======
+
+	<script>
+>>>>>>> parent of b2531c6 (Merge pull request #56 from sentimental-team/yujin)
 
 	<script>
 

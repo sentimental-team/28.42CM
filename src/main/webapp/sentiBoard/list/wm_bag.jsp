@@ -369,6 +369,7 @@ class ="best_radio_box3 ":checked+.bb {
 	background-repeat: no-repeat;
 	background-position: right 10px center;
 	border: 1px solid #ccc;
+	border-radius: 5px;
 	outline: none;
 	cursor: pointer;
 }
