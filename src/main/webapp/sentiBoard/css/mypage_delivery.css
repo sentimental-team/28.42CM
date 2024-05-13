@@ -744,6 +744,19 @@ img {
     border-radius: 2px;
 }
 
+.deli-ok-cancel {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 34px;
+    font-size: 11px;
+    line-height: 32px;
+    color: rgb(93, 93, 93);
+    text-align: center;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 2px;
+}
+
 .one-one-inquiry {
     position: relative;
     display: block;
