@@ -38,11 +38,38 @@
     transition: width 0.2s ease 0s;
     z-index: 1;
 }
+.iMiddle2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 40%;
+    height: 4px;
+    background: rgb(0, 0, 0);
+    transition: width 0.2s ease 0s;
+    z-index: 1;
+}
+.iMiddle3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60%;
+    height: 4px;
+    background: rgb(0, 0, 0);
+    transition: width 0.2s ease 0s;
+    z-index: 1;
+}
 .d2 {
     position: relative;
     flex: 1 0 100%;
     padding-top: 18px;
     border-top: 4px solid rgb(244, 244, 244);
+}
+.d22 {
+    position: relative;
+    flex: 1 0 100%;
+    padding-top: 18px;
+    border-top: 4px solid rgb(244, 244, 244);
+    animation: 300ms ease-out 0s 1 normal forwards running animation-ircbx2;
 }
 .agree {
     margin-bottom: 20px;
@@ -51,6 +78,74 @@
     line-height: 28px;
     white-space: pre-wrap;
 }
+.d32 {
+    margin-bottom: 40px;
+}
+.d33 {
+    position: relative;
+}
+.ip1 {
+    display: block;
+    width: 100%;
+    height: 48px;
+    padding: 0 14px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1a1a1a;
+    border: 1px solid #d4d4d4;
+    border-radius: 2px;
+    outline: none;
+}
+.p1 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 40px;
+    font-size: 12px;
+    line-height: 20px;
+}
+.sp3 {
+    position: relative;
+    padding-right: 28px;
+    color: rgb(196, 196, 196);
+}
+.sp3::after {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    width: 10px;
+    height: 6px;
+    border-bottom: 1px solid rgb(196, 196, 196);
+    border-left: 1px solid rgb(196, 196, 196);
+    border-top-color: rgb(196, 196, 196);
+    border-right-color: rgb(196, 196, 196);
+    transform: rotate(-45deg);
+    content: "";
+    box-sizing: content-box;
+}
+.btn1:disabled {
+    cursor: not-allowed;
+    background: #c4c4c4;
+    color: #ffffff;
+    
+}
+.btn1 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-width: 40px;
+    min-height: 25px;
+    width: 100%;
+    height: 52px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+}
+
+
 .d3 {
     padding: 22px 0px;
     margin-bottom: 15px;
@@ -235,6 +330,51 @@ button {
     font-size: 14px;
     font-weight: 700;
 }
+.btn3 {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+.btn31:disabled {
+    cursor: not-allowed;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-width: 40px;
+    min-height: 25px;
+    width: 100%;
+    height: 52px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    background: rgb(196, 196, 196);
+}
+.btn31 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-width: 40px;
+    min-height: 25px;
+    width: 100%;
+    height: 52px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+}
+.p2 {
+    position: absolute;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 40px;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(255, 72, 0);
 }
 </style>
 <header>
@@ -244,7 +384,7 @@ button {
 <body>
 	<div class="out">
 		<h2 class="title">간편가입</h2>
-		<div offset="100px" class="middle">
+		<div offset="100px" class="middle" id="content">
 			<i step="1" class="iMiddle"></i>
 			<div class="d2">
 				<h3 class="agree">29CM 서비스 이용약관에<br>동의해주세요.</h3>
@@ -291,13 +431,16 @@ button {
 							title="advertising">[선택] 광고성 정보 수신 동의</label></span>
 					</div>
 				</ul>
-				<button class="btn2" type="button"
-					disabled="">동의하고 가입하기</button>
+				<button class="btn2" type="button"disabled="">동의하고 가입하기</button>
 			</div>
 		</div>
 	</div>
+	<footer>
+	<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
+	</footer>
 </body>
 <script>
+  // 모두 동의 체크시 전체 체크
   $(".lb").on("click",function(){
 	 if($(".ip").prop("checked")){
 		 $(".ip").prop("checked",false); 
@@ -309,6 +452,8 @@ button {
 		 $(".btn2").prop('disabled', false);
 	 }
   });
+  
+  // 하나씩 체크,, 안됨,,
   $(".lb2").on("click",function(){
 	   var names = $(this).attr("for");
 	   alert(names);
@@ -329,8 +474,24 @@ button {
 	   }
    }); 
   
-  
-	  
-  
+  // signUp2.jsp 파일로 화면
+  $(function () {
+	    $(".btn2").click(function () {
+	        $.ajax({
+	            type: 'POST',
+	            url: 'signUp2.jsp',
+	            dataType: 'html',
+	            error: function (error) {
+	                alert("Error!");
+	            },
+	            success: function (data) {
+	            	$('#content').children().remove();
+	                // Contents 영역 교체
+	                $("#content").html(data);
+	            }
+	        });
+	    });
+	})
+	
 </script>
 </html>

@@ -1,61 +1,6 @@
-<%@page import="domain.Medium_CtgrVO"%>
-<%@page import="java.util.Iterator"%>
-<%@page import="java.sql.SQLException"%>
-<%@page import="java.util.ArrayList"%>
-<%@page import="domain.Large_CtgrVO"%>
-<%@page import="java.sql.ResultSet"%>
-<%@page import="java.sql.PreparedStatement"%>
-<%@page import="com.util.DBConn"%>
-<%@page import="java.sql.Connection"%>
-<%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ 
 taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
- <%
-    Connection conn = DBConn.getConnection();
-    
-    PreparedStatement pstmt = null;
-    ResultSet rs = null;    
-    String sql = " SELECT medium_ctgr_id, medium_ctgr_name, large_ctgr_id " 
-    		+" FROM medium_ctgr"
-    		+" where large_ctgr_id='13'";
-    
-    int medium_ctgr_id = 0;
-    String medium_ctgr_name =  null; 
-    int large_ctgr_id =0;
-    
-    Medium_CtgrVO mcvo = null;
-    ArrayList<Medium_CtgrVO> mclist = null;
-    
-    try {
-        pstmt = conn.prepareStatement(sql);
-        rs = pstmt.executeQuery();
-        
-        if( rs.next() ) {
-            mclist = new ArrayList<>();
-            do {
-            	medium_ctgr_id = rs.getInt("medium_ctgr_id");
-            	medium_ctgr_name = rs.getString("medium_ctgr_name");
-            	large_ctgr_id = rs.getInt("large_ctgr_id");    
-                
-                mcvo = new Medium_CtgrVO(medium_ctgr_id, medium_ctgr_name, large_ctgr_id);    
-                
-                mclist.add(mcvo);
-            } while (rs.next());                
-        } // if 
-        
-        
-    } catch (SQLException e) { 
-        e.printStackTrace();
-    } finally {
-        try {
-            pstmt.close();
-            rs.close();
-            // DBConn.close();
-        } catch (SQLException e) { 
-            e.printStackTrace();
-        }
-    }
-%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -68,7 +13,6 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <!-- <script src="/jspPro/resources/cdn-main/example.js"></script> -->
-
 <style>
 body {
 	min-height: 190vh;
@@ -118,6 +62,9 @@ body {
 	outline: none;
 	font-weight: 200;
 	text-decoration: none;
+}
+.medium-ctgr:hover{
+  cursor : pointer;
 }
 
 #best-right {
@@ -422,6 +369,7 @@ class ="best_radio_box3 ":checked+.bb {
 	background-repeat: no-repeat;
 	background-position: right 10px center;
 	border: 1px solid #ccc;
+	border-radius: 5px;
 	outline: none;
 	cursor: pointer;
 }
@@ -461,7 +409,6 @@ class ="best_radio_box3 ":checked+.bb {
 .review-point {
 	margin-right: 2px;
 	color: rgb(255, 72, 0);
-	margin-left: 4px;
 }
 
 .heart>svg+.jj {
@@ -511,22 +458,7 @@ button {
     background: transparent;
     cursor: pointer;
     outline: none;
-}
-
-.widget-top-btn {
-    display: flex;
-    flex-direction: row;
-    -webkit-box-pack: start;
-    justify-content: flex-start;
-    flex: 1 1 0%;
-    -webkit-box-align: center;
-    align-items: center;
-    height: 100%;
-    min-height: 42px;
-    border-right: 1px solid var(--ruler-semantic-color-border-line);
-}
-
-.widget-top-btn-box {
+}.scd {
     -webkit-box-align: center;
     align-items: center;
     display: flex;
@@ -534,31 +466,19 @@ button {
     -webkit-box-pack: start;
     justify-content: flex-start;
 }
-
-.wm-top-btn {
+.scb {
     position: relative;
     padding: 11px 20px;
 }
-
-.wm-top-btn-click {
+.scs {
     display: inline-block;
     font-family: var(--ruler-semantic-typography-text-l-bold-font-family);
     font-weight: var(--ruler-semantic-typography-text-l-bold-font-weight);
     line-height: var(--ruler-semantic-typography-text-l-bold-line-height);
     font-size: var(--ruler-semantic-typography-text-l-bold-font-size);
-    color: var(--ruler-semantic-color-text-primary);
+    color: rgb(93, 93, 93);
 }
-
-.wm-top-btn-nclick {
-    display: inline-block;
-    font-family: var(--ruler-semantic-typography-text-l-font-family);
-    font-weight: var(--ruler-semantic-typography-text-l-font-weight);
-    line-height: var(--ruler-semantic-typography-text-l-line-height);
-    font-size: var(--ruler-semantic-typography-text-l-font-size);
-    color: var(--ruler-semantic-color-text-secondary);
-}
-
-.wm-top-btn::after {
+.scb::after {
     content: "";
     position: absolute;
     right: 0px;
@@ -568,35 +488,38 @@ button {
 }
 </style>
 </head>
+<body>
 <header>
 	<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
 </header>
-<body>
 	<div id="wrap">
 		<div id="best-left">
 			<button></button>
 			<div>
 				<!-- <button></button>  화면이 작아졌을 때 #best-left메뉴 나타나게 하는거 -->
-				<h2 class="best_title_left">뷰티</h2>
+				<h2 class="best_title_left">인테리어</h2>
 				<!-- <ul class="left_bar_meue" > -->
+				<!-- <button class="left-menu"><span class="medium-ctgr">ALL</span></button><br>
+				<button class="left-menu"><span class="medium-ctgr">NEW</span></button><br>
+				<button class="left-menu"><span class="medium-ctgr">선물세트</span></button><br>
+				<button class="left-menu"><span class="medium-ctgr">음료</span></button><br>
+				<button class="left-menu"><span class="medium-ctgr">가공식품</span></button><br>
+				<button class="left-menu"><span class="medium-ctgr">신선,냉장</span></button> -->
 				<ul class="left-menu">
-					<li><a class="medium-ctgr" href="#">ALL</a></li>
-					<li><a class="medium-ctgr"  href="#">NEW</a></li>
-		<%
-              Iterator<Medium_CtgrVO> ir = mclist.iterator();
-              while (ir.hasNext()) {
-              mcvo = ir.next();
-         %>
-               <li value="<%= mcvo.getMedium_ctgr_id() %>" class="medium_ctgr_id111">
-               		<a href="#" class="medium-ctgr"  <%=medium_ctgr_id == mcvo.getMedium_ctgr_id() ? "selected" : "" %>><%= mcvo.getMedium_ctgr_name() %></a>
-               </li>
-               
-    
-    <!-- 각 도메인의 url도 db에 있어야 할거 같음.  -->
-		<%
-		        } // while
-		 %> 
-			
+					<li><span class="medium-ctgr">ALL</span></li>
+					<li><span class="medium-ctgr">NEW</span></li>
+					<li><span class="medium-ctgr">EXCLUSIVE</span></li>
+					<li><span class="medium-ctgr">비앤비이탈리아</span></li>
+					<li><span class="medium-ctgr">침구</span></li>
+					<li><span class="medium-ctgr">홈패브릭</span></li>
+					<li><span class="medium-ctgr">가구</span></li>
+					<li><span class="medium-ctgr">조명</span></li>
+					<li><span class="medium-ctgr">홈데코</span></li>
+					<li><span class="medium-ctgr">가드닝</span></li>
+					<li><span class="medium-ctgr">홈프레그런스</span></li>
+					<li><span class="medium-ctgr">아트,디자인</span></li>
+					<li><span class="medium-ctgr">책,음반</span></li>
+					<li><span class="medium-ctgr">스테이셔너리</span></li>
 				</ul>
 				<!-- </ul> -->
 			</div>
@@ -605,13 +528,7 @@ button {
 		<div id="best-right">
 			<!-- <h2 class="best_title_right" >여성의류</h2> -->
 			<div class="widget">
-				<div class="widget-gap">
-					<div class="widget-top-btn">
-						<div class="widget-top-btn-box">
-						
-						</div>
-					</div>
-				</div>
+				<div class="widget-gap"></div>
 				<div class="controlgroup">
 					<select id="sort-type" class="styled-select">
 						<option>추천순</option>
@@ -634,18 +551,18 @@ button {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef003eac0dc326bb6a5f556c2e2f99.jpg"
+									src="https://img.29cm.co.kr/item/202405/11ef084854380667b9bb1f3effe0fc7e.jpg?width=600"
 									class="ff">
 							</div>
 						</a> 
 						<div class="gg">
-							<a class="hh" href="">마땡킴</a> <a
-								title="[29CM 단독]_MINI BUCKLE BAG 7color">
+							<a class="hh" href="">락앤락</a> <a
+								title="드롭드롭드롭 DOSILOCK 3단 도시락 (LCB112S01_DRP)">
 								<div class="j">
-									<h5 class="jj">[29CM 단독]_MINI BUCKLE BAG 7color</h5>
+									<h5 class="jj">드롭드롭드롭 DOSILOCK 3단 도시락 (LCB112S01_DRP)</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk">5%</span> <strong class="qqq">90,250</strong>
+										<span class="kkk">30%</span> <strong class="qqq">29,900</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -662,7 +579,7 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">14,715</h5>
+									<h5 class="jj">1,175</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -672,8 +589,8 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">4.8</div>
-									<div class="review-count">(1183)</div>
+									<div class="review-point">4.9</div>
+									<div class="review-count">(14)</div>
 								</a>
 							</div>
 						</div>
@@ -685,18 +602,18 @@ button {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef0396e9283a71bb142f9ca532c66b.png"
+									src="https://img.29cm.co.kr/item/202403/11eee2a5ea13c82682f27532668945d8.png?width=600"
 									class="ff">
 							</div>
 						</a> 
 						<div class="gg">
-							<a class="hh" href="">코오롱스포츠</a> <a
-								title="KS X INAP 남녀공용 데일리 백팩 QEBXX24801BLK">
+							<a class="hh" href="">다이노탱</a> <a
+								title="Quokka in School Figure Pen">
 								<div class="j">
-									<h5 class="jj">KS X INAP 남녀공용 데일리 백팩 QEBXX24801BLK</h5>
+									<h5 class="jj">Quokka in School Figure Pen</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk">10%</span> <strong class="qqq">106,200</strong>
+										<strong class="qqq">7,000</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -713,7 +630,7 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">41,275</h5>
+									<h5 class="jj">5,890</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -723,8 +640,8 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5"></path>
 								</svg>
-									<div class="review-point">4.8</div>
-									<div class="review-count">(15034)</div>
+									<div class="review-point">4.9</div>
+									<div class="review-count">(42)</div>
 								</a>
 							</div>
 						</div>
@@ -734,49 +651,103 @@ button {
 			</ul>
 		</div>
 	</div>
-
-
-<footer>
+   <footer>
 	<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
-</footer>
-</body>
-<script>
+	</footer>
 
-    $(".medium_ctgr_id111").on("click", function(){
-  	  
-        let selectedMedium_ctgr_id = $(this).val(); // 선택한 부서번호 가져오기
+<script>
+$(function () {
+    $(".medium-ctgr:eq(1)").click(function () {
         $.ajax({
-           url: "small_ctgr_json.jsp", 
-           dataType: "json",
-           type: "GET", 
-           data: { medium_ctgr_id: selectedMedium_ctgr_id }, // 선택한 부서번호를 전달
-           cache: false,
-           success: function(data){
-               $(".widget-top-btn-box").empty(); // 테이블 내용 초기화
-               
-              
-               $(data.small_ctgr).each(function(index, element){
-                   // 직원 정보를 테이블에 추가
-                   $(".widget-top-btn-box").append(`	
-                  		 
-                		   <button class="wm-top-btn">
-							<span class="wm-top-btn-click" color="primary">\${element.small_ctgr_name}</span>
-							</button>
-                           
-                                 `);
-                   
-               });
-               
-              //alert( data.small_ctgr );
-           },
-           error: function(){
-               alert("error");
-           }
-           
-           
+            type: 'POST',
+            url: 'interior_new.jsp',
+            dataType: 'html',
+            error: function (error) {
+                alert("Error!");
+            },
+            success: function (data) {
+            	$('body').children().remove();
+                // Contents 영역 교체
+                $("body").html(data);
+            }
         });
     });
- 
+})
 
+$(function () {
+    $(".medium-ctgr:eq(2)").click(function () {
+        $.ajax({
+            type: 'POST',
+            url: 'interior_exclusive.jsp',
+            dataType: 'html',
+            error: function (error) {
+                alert("Error!");
+            },
+            success: function (data) {
+            	$('body').children().remove();
+                // Contents 영역 교체
+                $("body").html(data);
+            }
+        });
+    });
+})
+$(function () {
+    $(".medium-ctgr:eq(3)").click(function () {
+        $.ajax({
+            type: 'POST',
+            url: 'interior_bnb.jsp',
+            dataType: 'html',
+            error: function (error) {
+                alert("Error!");
+            },
+            success: function (data) {
+            	$('body').children().remove();
+                // Contents 영역 교체
+                $("body").html(data);
+            }
+        });
+    });
+})
+
+$(function () {
+    $(".medium-ctgr:eq(4)").click(function () {
+        $.ajax({
+            type: 'POST',
+            url: 'interior_bed.jsp',
+            dataType: 'html',
+            error: function (error) {
+                alert("Error!");
+            },
+            success: function (data) {
+            	$('body').children().remove();
+                // Contents 영역 교체
+                $("body").html(data);
+            }
+        });
+    });
+})
+
+$(function () {
+    $(".medium-ctgr:eq(5)").click(function () {
+        $.ajax({
+            type: 'POST',
+            url: 'interior_fabic.jsp',
+            dataType: 'html',
+            error: function (error) {
+                alert("Error!");
+            },
+            success: function (data) {
+            	$('body').children().remove();
+                // Contents 영역 교체
+                $("body").html(data);
+            }
+        });
+    });
+})
+
+
+	
 </script>
+
+</body>
 </html>
