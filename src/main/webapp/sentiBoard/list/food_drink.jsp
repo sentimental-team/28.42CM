@@ -63,9 +63,6 @@ body {
 	font-weight: 200;
 	text-decoration: none;
 }
-.medium-ctgr:hover{
-  cursor : pointer;
-}
 
 #best-right {
 	flex: 1;
@@ -458,7 +455,8 @@ button {
     background: transparent;
     cursor: pointer;
     outline: none;
-}.scd {
+}
+.scd {
     -webkit-box-align: center;
     align-items: center;
     display: flex;
@@ -499,12 +497,6 @@ button {
 				<!-- <button></button>  화면이 작아졌을 때 #best-left메뉴 나타나게 하는거 -->
 				<h2 class="best_title_left">푸드</h2>
 				<!-- <ul class="left_bar_meue" > -->
-				<!-- <button class="left-menu"><span class="medium-ctgr">ALL</span></button><br>
-				<button class="left-menu"><span class="medium-ctgr">NEW</span></button><br>
-				<button class="left-menu"><span class="medium-ctgr">선물세트</span></button><br>
-				<button class="left-menu"><span class="medium-ctgr">음료</span></button><br>
-				<button class="left-menu"><span class="medium-ctgr">가공식품</span></button><br>
-				<button class="left-menu"><span class="medium-ctgr">신선,냉장</span></button> -->
 				<ul class="left-menu">
 					<li><span class="medium-ctgr">ALL</span></li>
 					<li><span class="medium-ctgr">NEW</span></li>
@@ -520,7 +512,28 @@ button {
 		<div id="best-right">
 			<!-- <h2 class="best_title_right" >여성의류</h2> -->
 			<div class="widget">
-				<div class="widget-gap"></div>
+				<div class="widget-gap">
+				  <div class="scd">
+				     <button class="scb">
+				       <span class="scs">전체</span>
+				     </button>
+				     <button class="scb">
+				       <span class="scs">커피</span>
+				     </button>
+				     <button class="scb">
+				       <span class="scs">차</span>
+				     </button>
+				     <button class="scb">
+				       <span class="scs">전통주</span>
+				     </button>
+				     <button class="scb">
+				       <span class="scs">음료,주스,즙</span>
+				     </button>
+				     <button class="scb">
+				       <span class="scs">물,탄산수</span>
+				     </button>
+				 </div>
+				</div>
 				<div class="controlgroup">
 					<select id="sort-type" class="styled-select">
 						<option>추천순</option>
@@ -543,57 +556,6 @@ button {
 						<a href="">
 							<div class="dd">
 								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef05b99d42e469bb14aba69c0fd742.png?width=600"
-									class="ff">
-							</div>
-						</a> 
-						<div class="gg">
-							<a class="hh" href="">온더홀</a> <a
-								title="[당일배송] 온더홀 까눌레 4구 세트">
-								<div class="j">
-									<h5 class="jj">[당일배송] 온더홀 까눌레 4구 세트</h5>
-									<strong class="jjj"></strong>
-									<div class="01">
-										<span class="kkk"></span> <strong class="qqq">16,800</strong>
-									</div>
-									<ul class="eee">
-										<li class="yyy"></li>
-										<li></li>
-									</ul>
-								</div>
-							</a>
-							<div class="ppp">
-								<button class="heart">
-									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
-										viewBox="0 0 20 20">
-										<path
-											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
-											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-											stroke-width="1.5" />
-									</svg>
-									<h5 class="jj">240</h5>
-								</button>
-								<a href="#" class="review"> <svg
-										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
-								<path
-											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
-											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-											stroke-width="1.5"></path>
-								</svg>
-									<div class="review-point">5</div>
-									<div class="review-count">(3)</div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="photo1">
-					<div class="cc">
-						<a href="">
-							<div class="dd">
-								<img alt=""
 									src="https://img.29cm.co.kr/item/202308/11ee4315d967d9ff8a69c7b418cbe14c.jpeg?width=600"
 									class="ff">
 							</div>
@@ -605,7 +567,7 @@ button {
 									<h5 class="jj">[어버이날, 스승의날]_[선물포장] 티머그 & 논카페인 잎차 세트</h5>
 									<strong class="jjj"></strong>
 									<div class="01">
-										<span class="kkk">10%</span> <strong class="qqq">40,950</strong>
+										<strong class="qqq">45,500</strong>
 									</div>
 									<ul class="eee">
 										<li class="yyy"></li>
@@ -622,7 +584,57 @@ button {
 											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 											stroke-width="1.5" />
 									</svg>
-									<h5 class="jj">6,949</h5>
+									<h5 class="jj">6,971</h5>
+								</button>
+								<a href="#" class="review"> <svg
+										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
+								<path
+											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5"></path>
+								</svg>
+									<div class="review-point">4,9</div>
+									<div class="review-count">(334)</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="photo1">
+					<div class="cc">
+						<a href="">
+							<div class="dd">
+								<img alt=""
+									src="https://img.29cm.co.kr/item/202404/11eefdf23b2ad6af88b10176085773d7.png?width=600"
+									class="ff">
+							</div>
+						</a> 
+						<div class="gg">
+							<a class="hh" href="">베르크로스터스</a> <a
+								title="[선물하기 좋은] 감사의 달 드립백 기프트 세트">
+								<div class="j">
+									<h5 class="jj">[선물하기 좋은] 감사의 달 드립백 기프트 세트</h5>
+									<strong class="jjj"></strong>
+									<div class="01">
+										<span class="kkk">10%</span> <strong class="qqq">22,500</strong>
+									</div>
+									<ul class="eee">
+										<li class="yyy"></li>
+										<li></li>
+									</ul>
+								</div>
+							</a>
+							<div class="ppp">
+								<button class="heart">
+									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
+										viewBox="0 0 20 20">
+										<path
+											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5" />
+									</svg>
+									<h5 class="jj">1,710</h5>
 								</button>
 								<a href="#" class="review"> <svg
 										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -633,7 +645,259 @@ button {
 											stroke-width="1.5"></path>
 								</svg>
 									<div class="review-point">4.9</div>
-									<div class="review-count">(331)</div>
+									<div class="review-count">(257)</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li class="photo1">
+					<div class="cc">
+						<a href="">
+							<div class="dd">
+								<img alt=""
+									src="https://img.29cm.co.kr/item/202402/11eecbc3a5dd9f72b238e3227deaa8de.jpg?width=600"
+									class="ff">
+							</div>
+						</a> 
+						<div class="gg">
+							<a class="hh" href="">TWG</a> <a
+								title="티 디카페인_크림 카라멜 티 (루이보스) 티백 컬렉션 (15ea)">
+								<div class="j">
+									<h5 class="jj">티 디카페인_크림 카라멜 티 (루이보스) 티백 컬렉션 (15ea)</h5>
+									<strong class="jjj"></strong>
+									<div class="01">
+										<strong class="qqq">37,000</strong>
+									</div>
+									<ul class="eee">
+										<li class="yyy"></li>
+										<li></li>
+									</ul>
+								</div>
+							</a>
+							<div class="ppp">
+								<button class="heart">
+									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
+										viewBox="0 0 20 20">
+										<path
+											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5" />
+									</svg>
+									<h5 class="jj">1,408</h5>
+								</button>
+								<a href="#" class="review"> <svg
+										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
+								<path
+											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5"></path>
+								</svg>
+									<div class="review-point">4.9</div>
+									<div class="review-count">(77)</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="photo1">
+					<div class="cc">
+						<a href="">
+							<div class="dd">
+								<img alt=""
+									src="https://img.29cm.co.kr/item/202404/11eef560747febecbb6af7fa34f27036.png?width=600"
+									class="ff">
+							</div>
+						</a> 
+						<div class="gg">
+							<a class="hh" href="">모모스커피</a> <a
+								title="원두 에스쇼콜라">
+								<div class="j">
+									<h5 class="jj">원두 에스쇼콜라</h5>
+									<strong class="jjj"></strong>
+									<div class="01">
+										<span class="kkk">5%</span> <strong class="qqq">13,300</strong>
+									</div>
+									<ul class="eee">
+										<li class="yyy"></li>
+										<li></li>
+									</ul>
+								</div>
+							</a>
+							<div class="ppp">
+								<button class="heart">
+									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
+										viewBox="0 0 20 20">
+										<path
+											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5" />
+									</svg>
+									<h5 class="jj">3,280</h5>
+								</button>
+								<a href="#" class="review"> <svg
+										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
+								<path
+											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5"></path>
+								</svg>
+									<div class="review-point">4.9</div>
+									<div class="review-count">(4729)</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="photo1">
+					<div class="cc">
+						<a href="">
+							<div class="dd">
+								<img alt=""
+									src="https://img.29cm.co.kr/item/202404/11eef5615b8f3abd88b109cc28287ac2.png?width=600"
+									class="ff">
+							</div>
+						</a> 
+						<div class="gg">
+							<a class="hh" href="">모모스커피</a> <a
+								title="4 weeks 드립백">
+								<div class="j">
+									<h5 class="jj">4 weeks 드립백</h5>
+									<strong class="jjj"></strong>
+									<div class="01">
+										<span class="kkk">5%</span> <strong class="qqq">38,000</strong>
+									</div>
+									<ul class="eee">
+										<li class="yyy"></li>
+										<li></li>
+									</ul>
+								</div>
+							</a>
+							<div class="ppp">
+								<button class="heart">
+									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
+										viewBox="0 0 20 20">
+										<path
+											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5" />
+									</svg>
+									<h5 class="jj">3,236</h5>
+								</button>
+								<a href="#" class="review"> <svg
+										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
+								<path
+											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5"></path>
+								</svg>
+									<div class="review-point">4.9</div>
+									<div class="review-count">(1675)</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				
+				<li class="photo1">
+					<div class="cc">
+						<a href="">
+							<div class="dd">
+								<img alt=""
+									src="https://img.29cm.co.kr/next-product/2019/12/23/0bcf0cfc41e84d4cb8c7598a40a5e4ab_20191223151632.jpg?width=600"
+									class="ff">
+							</div>
+						</a> 
+						<div class="gg">
+							<a class="hh" href="">배상면주가</a> <a
+								title="오매락 퍽 500ml 40도 세레모니주">
+								<div class="j">
+									<h5 class="jj">오매락 퍽 500ml 40도 세레모니주</h5>
+									<strong class="jjj"></strong>
+									<div class="01">
+										<strong class="qqq">63,000</strong>
+									</div>
+									<ul class="eee">
+										<li class="yyy"></li>
+										<li></li>
+									</ul>
+								</div>
+							</a>
+							<div class="ppp">
+								<button class="heart">
+									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
+										viewBox="0 0 20 20">
+										<path
+											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5" />
+									</svg>
+									<h5 class="jj">3,029</h5>
+								</button>
+								<a href="#" class="review"> <svg
+										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
+								<path
+											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5"></path>
+								</svg>
+									<div class="review-point">4.8</div>
+									<div class="review-count">(197)</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+                <li class="photo1">
+					<div class="cc">
+						<a href="">
+							<div class="dd">
+								<img alt=""
+									src="https://img.29cm.co.kr/next-product/2021/11/29/e480339fc42e4e04a31e2bb75b05654d_20211129141457.jpg?width=600"
+									class="ff">
+							</div>
+						</a> 
+						<div class="gg">
+							<a class="hh" href="">델픽</a> <a
+								title="Signature Tea Selection 시그니처 티 셀렉션">
+								<div class="j">
+									<h5 class="jj">Signature Tea Selection 시그니처 티 셀렉션</h5>
+									<strong class="jjj"></strong>
+									<div class="01">
+										<span class="kkk">5%</span> <strong class="qqq">38,000</strong>
+									</div>
+									<ul class="eee">
+										<li class="yyy"></li>
+										<li></li>
+									</ul>
+								</div>
+							</a>
+							<div class="ppp">
+								<button class="heart">
+									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
+										viewBox="0 0 20 20">
+										<path
+											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5" />
+									</svg>
+									<h5 class="jj">1,671</h5>
+								</button>
+								<a href="#" class="review"> <svg
+										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
+								<path
+											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
+											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+											stroke-width="1.5"></path>
+								</svg>
+									<div class="review-point">4.8</div>
+									<div class="review-count">(170)</div>
 								</a>
 							</div>
 						</div>
@@ -643,7 +907,7 @@ button {
 			</ul>
 		</div>
 	</div>
-   <footer>
+<footer>
 	<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
 	</footer>
 
@@ -684,10 +948,10 @@ $(function () {
     });
 })
 $(function () {
-    $(".medium-ctgr:eq(3)").click(function () {
+    $(".medium-ctgr:eq(0)").click(function () {
         $.ajax({
             type: 'POST',
-            url: 'food_drink.jsp',
+            url: 'food_all.jsp',
             dataType: 'html',
             error: function (error) {
                 alert("Error!");
@@ -720,10 +984,10 @@ $(function () {
 })
 
 $(function () {
-    $(".medium-ctgr:eq(0)").click(function () {
+    $(".medium-ctgr:eq(5)").click(function () {
         $.ajax({
             type: 'POST',
-            url: 'food_all.jsp',
+            url: 'food_fresh.jsp',
             dataType: 'html',
             error: function (error) {
                 alert("Error!");
@@ -737,9 +1001,6 @@ $(function () {
     });
 })
 
-
-	
-</script>
 
 </body>
 </html>
