@@ -1571,7 +1571,7 @@ em {
 									<li class="bot3-li">
 										<div class="bot3-li-div">
 											<span class="bot3-li-div-span">
-												<input class="bot3-li-div-span-input" type="checkbox" name="checkone" onclick="checkSelectAll()"/>
+												<input class="bot3-li-div-span-input" type="checkbox" name="checkone" onclick="checkSelectAll()" required="required"/>
 												<b class="checkall-text">(필수) 개인정보 수집/이용 동의</b>
 											</span>
 											<button type="button" class="more-view1">보기</button>
@@ -1580,7 +1580,7 @@ em {
 									<li class="bot3-li">
 										<div class="bot3-li-div">
 											<span class="bot3-li-div-span">
-												<input class="bot3-li-div-span-input" type="checkbox" name="checkone" onclick="checkSelectAll()"/>
+												<input class="bot3-li-div-span-input" type="checkbox" name="checkone" onclick="checkSelectAll()" required="required"/>
 													<b class="checkall-text">(필수) 개인정보 제3자 제공 동의</b>
 											</span>
 											<button type="button" class="more-view1">보기</button>
@@ -1589,7 +1589,7 @@ em {
 									<li class="bot3-li">
 										<div class="bot3-li-div">
 											<span class="bot3-li-div-span">
-												<input class="bot3-li-div-span-input" type="checkbox" name="checkone" onclick="checkSelectAll()"/>
+												<input class="bot3-li-div-span-input" type="checkbox" name="checkone" onclick="checkSelectAll()" required="required"/>
 													<b class="checkall-text">(필수) 결제대행 서비스 이용약관</b>
 											</span>
 											<a class="KG-company" href="https://www.inicis.com/terms">(주)KG이니시스</a>
@@ -1676,6 +1676,26 @@ function checkSelectAll()  {
 	    checkbox.checked = selectAll.checked
 	  })
 	}
+	
+	$(".right-section-bot-checkout").click(function(){
+        // 필수로 체크해야 하는 체크박스가 모두 선택되었는지 확인
+        var allChecked = true;
+        $(".bot3-li-div-span-input[required]").each(function(){
+            if (!$(this).is(":checked")) {
+                allChecked = false;
+                return false;
+            }
+        });
+
+        // 필수로 체크해야 하는 체크박스가 모두 선택되지 않은 경우 알림창 띄우기
+        if (!allChecked) {
+            alert("필수 항목에 동의해야 합니다.");
+            return false;
+        } else {
+        	alert("결제 완료");
+        }
+    });
+	
 </script>
 </body>
 </html>

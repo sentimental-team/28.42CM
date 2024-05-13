@@ -7,8 +7,8 @@
 <%@page import="java.sql.Connection"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%> 
- <%
- System.out.print("product_json()..."); 
+<%
+System.out.print("product_json()..."); 
 Connection conn = null;
 PreparedStatement pstmt = null;
 ResultSet rs = null;
