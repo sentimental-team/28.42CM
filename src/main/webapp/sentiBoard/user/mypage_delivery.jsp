@@ -15,21 +15,21 @@
 
 	PreparedStatement pstmt = null;
 	ResultSet rs = null;
-	String sql = "SELECT b.brand_name, p.pd_name, p.pd_price, po.PD_OPTION_NAME, de.DELIVERY_STATE, de.DELIVERY_PAY, de.delivery_date "
+	String sql = "SELECT b.brand_name, p.pd_name, p.pd_price, po.pd_option_name, de.delivery_state, de.delivery_pay, de.delivery_date, p.pd_id "
 			+ "FROM product p JOIN large_ctgr lc ON p.large_ctgr_id = lc.large_ctgr_id "
             + "JOIN product_option po ON lc.large_ctgr_id = po.large_ctgr_id "
             + "JOIN brand b ON p.brand_id = b.brand_id "
             + "JOIN pay pay ON p.pd_id = pay.pd_id "
             + "JOIN delivery de ON pay.pay_id = de.pay_id "
             + "WHERE de.delivery_state = 1";
-		
-	String brand_name;
-	String pd_name;
-	int pd_price;
-	String pd_option_name;
-	String delivery_state;
-	int delivery_pay;
-	Date delivery_date;
+	int pdId;
+	String brandName;
+	String pdName;
+	int pdPrice;
+	String pdOptionName;
+	int deliveryState;
+	int deliveryPay;
+	Date deliveryDate;
 	
 	DeliveryVO dvo = null;
 	ArrayList<DeliveryVO> dlist = null;
@@ -42,15 +42,16 @@
 		if(rs.next()){
 			dlist = new ArrayList();
 			do{
-				brand_name = rs.getString("brand_name");
-				pd_name = rs.getString("pd_name");
-				pd_price = rs.getInt("pd_price");
-				pd_option_name = rs.getString("pd_option_name");
-				delivery_state = rs.getString("delivery_state");
-				delivery_pay = rs.getInt("delivery_pay");
-				delivery_date = rs.getDate("delivery_date");
+				pdId = rs.getInt("pd_id");
+				brandName = rs.getString("brand_name");
+				pdName = rs.getString("pd_name");
+				pdPrice = rs.getInt("pd_price");
+				pdOptionName = rs.getString("pd_option_name");
+				deliveryState = rs.getInt("delivery_state");
+				deliveryPay = rs.getInt("delivery_pay");
+				deliveryDate = rs.getDate("delivery_date");
 				
-				dvo = new DeliveryVO(brand_name, pd_name, pd_price, pd_option_name, delivery_state, delivery_pay, delivery_date);
+				dvo = new DeliveryVO(pdId, brandName, pdName, pdPrice, pdOptionName, deliveryState, deliveryPay, deliveryDate);
 			
 				dlist.add(dvo);
 			} while(rs.next());
@@ -63,10 +64,13 @@
 			JdbcUtil.close(pstmt);
 			JdbcUtil.close(conn);
 		}
+	
+	request.setAttribute("dlist", dlist);
 %>
 <!DOCTYPE html>
 <html>
 <head>
+<title>감도 깊은 취향 셀렉트샾 29CM</title>
 <meta charset="UTF-8">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <link rel="stylesheet" href="../css/mypage_delivery.css">
@@ -188,83 +192,81 @@
 					<ol class="deli-ok">
 					
 					<!-- 여기서부터 데이터 뿌려주기 -->
-					<c:if test="${empty dlist }">
-						<li class="deli-ok2">
-							<p class="deli-text">주문내역이 없습니다.</p>
-						</li>
-					</c:if>
-					<c:if test="${not dlist.isEmpty() }" >
-						<c:forEach items="${dlist }" var="dlist">
-						<li class="deli-ok2">
-							<div class="deli-ok-info">
-								<span class="deli-ok-date">
-									<span class="deli-ok-date2">주문일자 ${dlist.delivery_date }</span>
-									
-								</span>
-								<span class="deli-ok-ordernum">
-									<span class="deli-ok-ordernum2">주문번호 ${dlist.pd_id }</span>
-								</span>
-							</div>
-							<ul class="deli_ok-info2">
-								<li class="deli-ok-info3">
-									<ul class="deli-ok-info4">
-										<li class="deli-ok-info5">
-											<a class="deli-ok-info-url" href="#">
-												<div class="deli-ok-info6">
-													<div class="deli-ok-info-img">
-														<img src="" alt="" loading="lazy"/>
-													</div>
-													<div class="deli-ok-info7">
-														<p class="deli-ok-brandname">${dlist.brand_id }</p>
-														<p class="deli-ok-pd-title">${dlist.pd_name }</p>
-														<ul class="deli-ok-option">
-															<li>${dlist.pd_option_name }</li>
-														</ul>
-														<p class="deli-ok-pd-price">${dlist.pd_price }</p>
-													</div>
-												</div>
-											</a>
-											<div class="deli-ok-info7-padding"></div>
-											<div class="deli-ok-info8">
-												<div class="deli-ok-info9">
-													<div>
-														<p class="deli-ok-delistate">${dlist.delivery_state }</p>
-													</div>
-												</div>
-											</div>
-											<c:if test="${dlist.delivery_state eq 1 }">
-											<div class="deli-ok-info10">
-												<div class="deli-ok-info-btn">
-													<button type="button" class="deli-ok-cancel">주문취소</button>
-													<a class="one-one-inquiry" href="#">1:1문의</a>
-												</div>
-												<div class="deli-ok-buy">-</div>
-											</div>
-											</c:if>
-											<c:if test="${dlist.delivery_state eq 2 }">
-											<div class="deli-ok-info10">
-												<div class="deli-ok-info-btn">
-													<button type="button" class="deli-ok-review">리뷰작성</button>
-													<a class="one-one-inquiry" href="#">1:1문의</a>
-												</div>
-												<div class="deli-ok-buy">구매확정</div>
-											</div>
-											</c:if>
-										</li>
-									</ul>
-									<div class="deli-ok-charge">
-										<span class="deli-ok-charge2">${dlist.delivery_pay }</span>
-									</div>
-								</li>
-							</ul>
-						</li>
-						</c:forEach>
-					</c:if>
-						
+					<c:choose>
+					<c:when test="${empty dlist}">
+					    <li class="deli-ok2">
+					        <p class="deli-text">주문내역이 없습니다.</p>
+					    </li>
+					</c:when>
+					<c:otherwise>
+					    <c:forEach items="${dlist}" var="delivery">
+					        <li class="deli-ok2">
+					            <div class="deli-ok-info">
+					                <span class="deli-ok-date">
+					                    <span class="deli-ok-date2">주문일자 ${delivery.deliveryDate}</span>
+					                </span>
+					                <span class="deli-ok-ordernum">
+					                    <span class="deli-ok-ordernum2">주문번호 ${delivery.pdId}</span>
+					                </span>
+					            </div>
+					            <ul class="deli_ok-info2">
+					                <li class="deli-ok-info3">
+					                    <ul class="deli-ok-info4">
+					                        <li class="deli-ok-info5">
+					                            <a class="deli-ok-info-url" href="#">
+					                                <div class="deli-ok-info6">
+					                                    <div class="deli-ok-info-img">
+					                                        <img src="" alt="" loading="lazy"/>
+					                                    </div>
+					                                    <div class="deli-ok-info7">
+					                                        <p class="deli-ok-brandname">${delivery.brandName}</p>
+					                                        <p class="deli-ok-pd-title">${delivery.pdName}</p>
+					                                        <ul class="deli-ok-option">
+					                                            <li>${delivery.pdOptionName}</li>
+					                                        </ul>
+					                                        <p class="deli-ok-pd-price">${delivery.pdPrice}</p>
+					                                    </div>
+					                                </div>
+					                            </a>
+					                            <div class="deli-ok-info7-padding"></div>
+					                            <div class="deli-ok-info8">
+					                                <div class="deli-ok-info9">
+					                                    <div>
+					                                        <p class="deli-ok-delistate">${delivery.deliveryState}</p>
+					                                    </div>
+					                                </div>
+					                            </div>
+					                            <c:if test="${delivery.deliveryState eq 1}">
+					                                <div class="deli-ok-info10">
+					                                    <div class="deli-ok-info-btn">
+					                                        <button type="button" class="deli-ok-cancel">주문취소</button>
+					                                        <a class="one-one-inquiry" href="#">1:1문의</a>
+					                                    </div>
+					                                    <div class="deli-ok-buy">-</div>
+					                                </div>
+					                            </c:if>
+					                            <c:if test="${delivery.deliveryState eq 2}">
+					                                <div class="deli-ok-info10">
+					                                    <div class="deli-ok-info-btn">
+					                                        <button type="button" class="deli-ok-review">리뷰작성</button>
+					                                        <a class="one-one-inquiry" href="#">1:1문의</a>
+					                                    </div>
+					                                    <div class="deli-ok-buy">구매확정</div>
+					                                </div>
+					                            </c:if>
+					                        </li>
+					                    </ul>
+					                    <div class="deli-ok-charge">
+					                        <span class="deli-ok-charge2">${delivery.deliveryPay}</span>
+					                    </div>
+					                </li>
+					            </ul>
+					        </li>
+					    </c:forEach>
+					</c:otherwise>
+					</c:choose>
 						
 					</ol>
-					<!-- 주문 내역이 없을 시 -->
-					<!-- <p class="deli-text">주문내역이 없습니다.</p> -->
 				</section>
 			</section>
 			<section class="deli-guide">

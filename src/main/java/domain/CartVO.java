@@ -1,7 +1,5 @@
 package domain;
 
-import java.util.Date;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -15,13 +13,12 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class DeliveryVO {
-	private int pdId;
+public class CartVO {
 	private String brandName;
 	private String pdName;
 	private int pdPrice;
 	private String pdOptionName;
-	private int deliveryState;
 	private int deliveryPay;
-	private Date deliveryDate;
+	private int cnt;
+	
 }
