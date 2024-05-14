@@ -69,10 +69,8 @@
 	<div id="wrap">
 		<div id="best-left">
 			<button></button>
-			<div>
-				<!-- <button></button>  화면이 작아졌을 때 #best-left메뉴 나타나게 하는거 -->
-				<h2 class="best_title_left">Best</h2>
-				<!-- <ul class="left_bar_meue" > -->
+			<div>				
+				<h2 class="best_title_left">Best</h2>				
 				<ul class="left-menu">
 			
 	   	<%
@@ -89,9 +87,12 @@
 
               
                 <li value="<%= lcvo.getLarge_ctgr_id() %>" class="large-menu2">
-               		<a href="#" class="small-menu"  <%=large_ctgr_id == lcvo.getLarge_ctgr_id() ? "selected" : "" %>><%= lcvo.getLarge_ctgr_name() %></a>
-               </li>  
-               <!-- 스타일 시트에서 칼라를 black 으로 줘도 화면상에서 보라색으로 표시된 해결이 안됨...  -->
+
+               		<a href="#" class="small-menu"  <%=large_ctgr_id == lcvo.getLarge_ctgr_id() ? "selected" : "" %>><%= lcvo.getMain_ctgr_name() %></a>
+               </li>                
+
+               
+
  
 
 		<%
@@ -99,7 +100,7 @@
 		 %> 
 		
 				</ul>
-				<!-- </ul> -->
+				
 			</div>
 		</div>
 
@@ -134,8 +135,7 @@
 /*  왼쪽 메뉴바를 선택하면 가운데 small 카테고리가 비동기적으로 처리되는 스크립트. */
 
 $(".large-menu2").on("click", function(){
-	 /* medium 카테고리를 클릭했을 때 small 카테고리를 표시하는 코드. */
-	
+
     let selectedLarge_ctgr_id = $(this).val(); 
     $.ajax({
        url: "../json/medium_ctgr_json.jsp", 
@@ -147,8 +147,8 @@ $(".large-menu2").on("click", function(){
            $(".aa").empty();                    
            $(data.medium_ctgr).each(function(index, element){                   
                $(".aa").append(`	                		 
-            		   <span class="right_radio"><a href="#">\${element.medium_ctgr_name}</a>
-   					</span>                 
+            		   <li class="right_radio" value="\${element.medium_ctgr_id}"><a href="#">\${element.medium_ctgr_name}</a>
+   					</li>                 
                              `);                 
            });
            
@@ -164,7 +164,6 @@ $(".large-menu2").on("click", function(){
 
 <script>
 /* 할인율은 소수점 버리고 정수로만 표현하기. */
-
 $(".large-menu2").on("click", function(){
  	 
     let selectedLarge_ctgr_id = $(this).val(); 
@@ -182,8 +181,7 @@ $(".large-menu2").on("click", function(){
                              `);                    
            });
     	   
-           
-           
+          
            $("#photo_list").empty();           
            $(data.jsonProduct_main).each(function(index, element){                   
                $("#photo_list").append(`	                		 
@@ -204,7 +202,7 @@ $(".large-menu2").on("click", function(){
    										<strong class="jjj">\${element.pd_price}</strong>							
    									<div class="01" >
    										<span class="kkk">\${element.pd_discount_rate}%</span>
-   										<strong class="qqq">\${element.pd_price}/(1-\${element.pd_discount_rate})</strong>
+   										<strong class="qqq"></strong>
    										
    									</div>
    									<ul class="eee">
@@ -238,6 +236,99 @@ $(".large-menu2").on("click", function(){
 });
 
 </script>
+<script>
+	
+/*
+ajax를 통해 불러온 데이터는 기존에 사용하던 방법으로는 이벤트를 바인딩하지 못한다.
+그래서 ajax를 만들 때에 하드코딩으로 바로 event를 넣어버리는 경우가 있는데, event는 따로 javascript태그 안에 만들어 두는 것이 유지보수나 가시성에서 편리하다.
+따라서 다른 방법으로 바인딩하는 것이 좋다.
+$(document).on('click', '클래스명 혹은 id', function(){
+}); 
+*/
+
+
+	$(document).on('click', '.right_radio', function(){
+
+
+		 let selectedMedium_ctgr_id = $(this).val(); 
+	        $.ajax({
+	           url: "../json/product_json.jsp", 
+	           dataType: "json",
+	           type: "GET", 
+	           data: { medium_ctgr_id: selectedMedium_ctgr_id }, 
+	           cache: false,
+	           success: function(data){           	 
+	                	$("#photo_list").empty(); 
+	               $(data.Product).each(function(index, element){	                     
+	                   $("#photo_list").append(`	                		 
+	                           
+	                		   
+	                		   <li class="photo1">
+	       					<div class="cc">
+	       						<a href="">
+	       							<div class="dd">
+	       								<img alt="" src="\${element.pd_image_url}" class="ff">
+	       							</div>
+	       						</a>
+	       						<div class="gg">
+	       							<a class="hh" href="">\${element.brand_name}</a>	
+	       							<a title="\${element.pd_name}">
+	       								<div class="j">
+	       									<h5 class="jj">\${element.pd_name}</h5>
+	       										<strong class="jjj">\${element.pd_price}</strong>							
+	       									<div class="01" >
+	       										<span class="kkk">\${element.pd_discount_rate}%</span>
+	       										<strong class="qqq">\${element.pd_price}/(1-\${element.pd_discount_rate})</strong>
+	       										
+	       									</div>
+	       									<ul class="eee">
+	       										<li class="yyy">쿠폰</li>
+	       										<li>무료배송</li>
+	       									</ul>
+	       								</div>
+	       							</a>
+	       							<div class="ppp">
+	       								<button>2000</button><!-- 하트 마크표시 필요함  -->
+	       								<a>
+	       									<span>2000</span><!--  댓글 마크 표시 필요함 -->
+	       								</a>
+	       							</div>
+	       						</div>
+	       					</div>
+	       				</li>
+	                		   
+	                		   
+	                                 `);	                     
+									 });  //data.small_ctgr		       
+	              												 
+	          						 },//success
+	       			  	  error: function(){
+	      		      	   alert("error");
+	         						  }	            	             
+	     					   });
+		
+	});
+	
+	
+</script>
+<script>
+
+function calculate() {
+	
+	const v1 = ${element.pd_price};
+	const v2 = ${element.pd_discount_rate};
+	
+	
+	const result = v1/v2;
+	
+	 document.querySelector('.qqq').textContent = result;
+}
+}
+window.onload = calculate;
+
+
+</script>
+
 
 </body>
 <footer>
