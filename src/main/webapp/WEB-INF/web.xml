@@ -55,7 +55,7 @@
 	</servlet-mapping>
 	
 	<!-- ajax  -->
-	<servlet>
+	<!-- <servlet>
 		<servlet-name>AjaxControllerUsingURI</servlet-name>
 		<servlet-class>mvc.controller.AjaxControllerUsingURI</servlet-class>
 		<init-param>
@@ -70,7 +70,7 @@
 	<servlet-mapping>
 		<servlet-name>AjaxControllerUsingURI</servlet-name>
 		<url-pattern>*.ajax</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping> -->
 	
 	
 	
