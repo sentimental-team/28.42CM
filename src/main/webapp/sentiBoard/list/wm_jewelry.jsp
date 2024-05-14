@@ -523,7 +523,6 @@ button {
     min-height: 42px;
     border-right: 1px solid var(--ruler-semantic-color-border-line);
 }
-
 .widget-top-btn-box {
     -webkit-box-align: center;
     align-items: center;
@@ -532,12 +531,10 @@ button {
     -webkit-box-pack: start;
     justify-content: flex-start;
 }
-
 .wm-top-btn {
     position: relative;
     padding: 11px 20px;
 }
-
 .wm-top-btn-click {
     display: inline-block;
     font-family: var(--ruler-semantic-typography-text-l-bold-font-family);
@@ -546,7 +543,6 @@ button {
     font-size: var(--ruler-semantic-typography-text-l-bold-font-size);
     color: var(--ruler-semantic-color-text-primary);
 }
-
 .wm-top-btn-nclick {
     display: inline-block;
     font-family: var(--ruler-semantic-typography-text-l-font-family);
@@ -555,7 +551,6 @@ button {
     font-size: var(--ruler-semantic-typography-text-l-font-size);
     color: var(--ruler-semantic-color-text-secondary);
 }
-
 .wm-top-btn::after {
     content: "";
     position: absolute;
@@ -575,10 +570,10 @@ button {
 			<button></button>
 			<div>
 				<!-- <button></button>  화면이 작아졌을 때 #best-left메뉴 나타나게 하는거 -->
-				<h2 class="best_title_left">여성가방</h2>
+				<h2 class="best_title_left">여성엑세서리</h2>
 				<!-- <ul class="left_bar_meue" > -->
 				<ul class="left-menu">
-					 	<%
+					<%
               Iterator<Medium_CtgrVO> ir = mclist.iterator();
               while (ir.hasNext()) {
               mcvo = ir.next();
@@ -586,13 +581,12 @@ button {
                <li value="<%= mcvo.getMedium_ctgr_id() %>" class="medium_ctgr_id111">
                		<a href="#" class="medium-ctgr"  <%=medium_ctgr_id == mcvo.getMedium_ctgr_id() ? "selected" : "" %>><%= mcvo.getMedium_ctgr_name() %></a>
                </li>
-               
-    
+
+
     <!-- 각 도메인의 url도 db에 있어야 할거 같음.  -->
 		<%
 		        } // while
 		 %> 
-			
 				</ul>
 				<!-- </ul> -->
 			</div>
@@ -604,7 +598,7 @@ button {
 				<div class="widget-gap">
 					<div class="widget-top-btn">
 						<div class="widget-top-btn-box">
-						
+
 						</div>
 					</div>
 				</div>
@@ -730,21 +724,16 @@ button {
 			</ul>
 		</div>
 	</div>
-
-
-
 <footer>
 	<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
 </footer>
 </body>
-
 <script>
-
     $(".medium_ctgr_id111").on("click", function(){
   	  
         let selectedMedium_ctgr_id = $(this).val(); // 선택한 부서번호 가져오기
         $.ajax({
-           url: "small_ctgr_json.jsp", 
+           url: "../json/small_ctgr_json.jsp", 
            dataType: "json",
            type: "GET", 
            data: { medium_ctgr_id: selectedMedium_ctgr_id }, // 선택한 부서번호를 전달
@@ -774,7 +763,5 @@ button {
            
         });
     });
- 
-
 </script>
 </html>

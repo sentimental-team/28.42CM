@@ -1,4 +1,4 @@
-<%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ 
 taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
@@ -62,6 +62,9 @@ body {
 	outline: none;
 	font-weight: 200;
 	text-decoration: none;
+}
+.medium-ctgr:hover{
+  cursor : pointer;
 }
 
 #best-right {
@@ -455,6 +458,33 @@ button {
     background: transparent;
     cursor: pointer;
     outline: none;
+}.scd {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-flow: wrap;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+.scb {
+    position: relative;
+    padding: 11px 20px;
+}
+.scs {
+    display: inline-block;
+    font-family: var(--ruler-semantic-typography-text-l-bold-font-family);
+    font-weight: var(--ruler-semantic-typography-text-l-bold-font-weight);
+    line-height: var(--ruler-semantic-typography-text-l-bold-line-height);
+    font-size: var(--ruler-semantic-typography-text-l-bold-font-size);
+    color: rgb(93, 93, 93);
+}
+.scb::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    width: 1px;
+    height: 20px;
+    background: var(--ruler-semantic-color-border-line);
 }
 </style>
 </head>
@@ -469,13 +499,19 @@ button {
 				<!-- <button></button>  화면이 작아졌을 때 #best-left메뉴 나타나게 하는거 -->
 				<h2 class="best_title_left">푸드</h2>
 				<!-- <ul class="left_bar_meue" > -->
+				<!-- <button class="left-menu"><span class="medium-ctgr">ALL</span></button><br>
+				<button class="left-menu"><span class="medium-ctgr">NEW</span></button><br>
+				<button class="left-menu"><span class="medium-ctgr">선물세트</span></button><br>
+				<button class="left-menu"><span class="medium-ctgr">음료</span></button><br>
+				<button class="left-menu"><span class="medium-ctgr">가공식품</span></button><br>
+				<button class="left-menu"><span class="medium-ctgr">신선,냉장</span></button> -->
 				<ul class="left-menu">
-					<li><a class="medium-ctgr" href="">ALL</a></li>
-					<li><a class="medium-ctgr" href="">NEW</a></li>
-					<li><a class="medium-ctgr" href="">선물세트</a></li>
-					<li><a class="medium-ctgr" href="">음료</a></li>
-					<li><a class="medium-ctgr" href="">가공식품</a></li>
-					<li><a class="medium-ctgr" href="">신선,냉장</a></li>
+					<li><span class="medium-ctgr">ALL</span></li>
+					<li><span class="medium-ctgr">NEW</span></li>
+					<li><span class="medium-ctgr">선물세트</span></li>
+					<li><span class="medium-ctgr">음료</span></li>
+					<li><span class="medium-ctgr">가공식품</span></li>
+					<li><span class="medium-ctgr">신선,냉장</span></li>
 				</ul>
 				<!-- </ul> -->
 			</div>
@@ -607,10 +643,102 @@ button {
 			</ul>
 		</div>
 	</div>
+   <footer>
+	<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
+	</footer>
+
+<script>
+$(function () {
+    $(".medium-ctgr:eq(1)").click(function () {
+        $.ajax({
+            type: 'POST',
+            url: 'food_new.jsp',
+            dataType: 'html',
+            error: function (error) {
+                alert("Error!");
+            },
+            success: function (data) {
+            	$('body').children().remove();
+                // Contents 영역 교체
+                $("body").html(data);
+            }
+        });
+    });
+})
+
+$(function () {
+    $(".medium-ctgr:eq(2)").click(function () {
+        $.ajax({
+            type: 'POST',
+            url: 'food_present.jsp',
+            dataType: 'html',
+            error: function (error) {
+                alert("Error!");
+            },
+            success: function (data) {
+            	$('body').children().remove();
+                // Contents 영역 교체
+                $("body").html(data);
+            }
+        });
+    });
+})
+$(function () {
+    $(".medium-ctgr:eq(3)").click(function () {
+        $.ajax({
+            type: 'POST',
+            url: 'food_drink.jsp',
+            dataType: 'html',
+            error: function (error) {
+                alert("Error!");
+            },
+            success: function (data) {
+            	$('body').children().remove();
+                // Contents 영역 교체
+                $("body").html(data);
+            }
+        });
+    });
+})
+
+$(function () {
+    $(".medium-ctgr:eq(4)").click(function () {
+        $.ajax({
+            type: 'POST',
+            url: 'food_pfood.jsp',
+            dataType: 'html',
+            error: function (error) {
+                alert("Error!");
+            },
+            success: function (data) {
+            	$('body').children().remove();
+                // Contents 영역 교체
+                $("body").html(data);
+            }
+        });
+    });
+})
+
+$(function () {
+    $(".medium-ctgr:eq(0)").click(function () {
+        $.ajax({
+            type: 'POST',
+            url: 'food_all.jsp',
+            dataType: 'html',
+            error: function (error) {
+                alert("Error!");
+            },
+            success: function (data) {
+            	$('body').children().remove();
+                // Contents 영역 교체
+                $("body").html(data);
+            }
+        });
+    });
+})
 
 
-	<script>
-
+	
 </script>
 
 </body>

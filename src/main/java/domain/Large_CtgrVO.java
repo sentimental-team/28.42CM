@@ -21,7 +21,7 @@ public class Large_CtgrVO {
 	
 	private int cnt;
 	
-	public Large_CtgrVO(int large_ctgr_id, String main_ctgr_name, int main_ctgr_id) {
+	public Large_CtgrVO(int large_ctgr_id, String large_ctgr_name, int main_ctgr_id) {
 		this.large_ctgr_id = large_ctgr_id;
 		this.large_ctgr_name = large_ctgr_name;
 		this.main_ctgr_id = main_ctgr_id;

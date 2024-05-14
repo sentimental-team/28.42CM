@@ -657,16 +657,16 @@ fieldset {
 }
 
 fieldset {
-    display: block;
-    margin-inline-start: 2px;
-    margin-inline-end: 2px;
-    padding-block-start: 0.35em;
-    padding-inline-start: 0.75em;
-    padding-inline-end: 0.75em;
-    padding-block-end: 0.625em;
-    min-inline-size: min-content;
-    border-width: 2px;
-    border-image: initial;
+	display: block;
+	margin-inline-start: 2px;
+	margin-inline-end: 2px;
+	padding-block-start: 0.35em;
+	padding-inline-start: 0.75em;
+	padding-inline-end: 0.75em;
+	padding-block-end: 0.625em;
+	min-inline-size: min-content;
+	border-width: 2px;
+	border-image: initial;
 }
 
 .blind, legend {
@@ -686,11 +686,11 @@ fieldset {
 	border-top: 4px solid #000;
 }
 
-.tb_lst > li {
+.tb_lst>li {
 	display: table;
-    position: relative;
-    width: 100%;
-    border-bottom: 1px solid #e4e4e4;
+	position: relative;
+	width: 100%;
+	border-bottom: 1px solid #e4e4e4;
 }
 
 .tb_lst .in_td:first-child {
@@ -709,44 +709,39 @@ fieldset {
 	vertical-align: middle;
 }
 
- .inpbx {
-    position: relative;
-    height: 40px;
-    border: 1px solid #d4d4d4;
-    background: #fff;
-    vertical-align: top;
-    box-sizing: border-box;
+.tb_lst .inpbx {
+	float: left;
+	width: 245px;
+	height: 46px;
 }
 
-.tb_lst .inpbx input, .tb_lst .inptxtbx textarea {
-    padding: 0 18px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #303033;
-    line-height: 20px;
+.inpbx {
+	position: relative;
+	height: 40px;
+	background: #fff;
+	vertical-align: top;
+	box-sizing: border-box;
+	padding-right: 40px;
 }
 
-.inpbx input {
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 0 18px;
-    font-size: 14px;
-    color: #1a1a1a;
-    vertical-align: top;
-    border: 0;
-    background: transparent;
-    outline: none;
-    box-sizing: border-box;
+.u_title_style, .u_content_style {
+	padding: 0 18px;
+	font-size: 14px;
+	font-weight: 600;
+	color: #1a1a1a;
+	line-height: 30px;
+	border: 1px solid #d4d4d4;
 }
 
- input, textarea {
-    border: 0;
-    border-radius: 0;
-    background: transparent;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+#u_title .u_title_style {
+	display: block;
+	width: 200px;
+	height: 46px;
+	vertical-align: middle;
+	border: 0;
+	background: transparent;
+	outline: none;
+	box-sizing: border-box;
 }
 
 .tb_lst .type {
@@ -783,8 +778,7 @@ input {
 	background: transparent;
 }
 
-<
-style>input, textarea {
+input, textarea {
 	border: 0;
 	border-radius: 0;
 	background: transparent;
@@ -823,25 +817,21 @@ label:before {
 
 label:after {
 	position: absolute;
-    border: 1px solid #d4d4d4;
-    border-width: 0 1px 1px 0;
-    transform: rotate(45deg);
-    content: "";
-    top: 3px;
-    left: 7px;
-    width: 5px;
-    height: 10px;
+	border: 1px solid #d4d4d4;
+	border-width: 0 1px 1px 0;
+	transform: rotate(45deg);
+	content: "";
+	top: 3px;
+	left: 7px;
+	width: 5px;
+	height: 10px;
 }
-
 
 .tb_lst>li:after {
 	display: block;
 	clear: both;
 	content: "";
 }
-
-
-<style>
 
 .tb_lst>li:after {
 	display: block;
@@ -854,42 +844,101 @@ label:after {
 }
 
 @media screen and (max-width: 1550px) {
-    .my_grade[_ngcontent-xce-c49] li[_ngcontent-xce-c49] em[_ngcontent-xce-c49] {
-        font-size: 40px;
-    }
-}
-@media screen and (min-width: 541px) {
-    .my_grade[_ngcontent-xce-c49] li[_ngcontent-xce-c49] em[_ngcontent-xce-c49] {
-        text-align: right;
-    }
+	.my_grade[_ngcontent-xce-c49] li[_ngcontent-xce-c49] em[_ngcontent-xce-c49]
+		{
+		font-size: 40px;
+	}
 }
 
-.my_grade[_ngcontent-xce-c49] li[_ngcontent-xce-c49] em[_ngcontent-xce-c49] {
-    font-size: 50px;
-    font-weight: 400;
-    color: #fff;
-    line-height: 1.3;
-    vertical-align: text-bottom;
-    -webkit-transition: font-size .25s ease-in-out;
-    transition: font-size .25s ease-in-out;
+@media screen and (min-width: 541px) {
+	.my_grade[_ngcontent-xce-c49] li[_ngcontent-xce-c49] em[_ngcontent-xce-c49]
+		{
+		text-align: right;
+	}
+}
+
+.my_grade[_ngcontent-xce-c49] li[_ngcontent-xce-c49] em[_ngcontent-xce-c49]
+	{
+	font-size: 50px;
+	font-weight: 400;
+	color: #fff;
+	line-height: 1.3;
+	vertical-align: text-bottom;
+	-webkit-transition: font-size .25s ease-in-out;
+	transition: font-size .25s ease-in-out;
 }
 
 address, em {
-    font-style: normal;
+	font-style: normal;
 }
 
 .tb_lst .user_email a {
+	display: inline-block;
+	width: 110px;
+	height: 32px;
+	margin-left: 20px;
+	border: 1px solid #d4d4d4;
+	border-radius: 2px;
+	font-weight: 600;
+	font-size: 12px;
+	color: #303033;
+	text-align: center;
+	line-height: 32px;
+}
+
+.fileUpload .fileUpload-able label {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	width: 76px;
+	height: 76px;
+	background: #303033;
+	line-height: 100em;
+	cursor: pointer;
+}
+
+.fileUpload .fileUpload-able label:before {
+	width: 1px;
+	height: 22px;
+	margin-top: -11px;
+}
+
+.fileUpload .fileUpload-able label:after, .fileUpload .fileUpload-able label:before
+	{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: #fff;
+	content: "";
+}
+
+.fileUpload .fileUpload-able label:after {
+	width: 22px;
+	height: 1px;
+	margin-left: -11px;
+}
+
+
+.fileUpload .fileUpload-able input[type=file] {
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+}
+
+.fileUpload, .fileUpload .fileUpload_list {
+	display: flex;
+}
+
+.email_label {
     display: inline-block;
-    width: 110px;
-    height: 32px;
-    margin-left: 20px;
-    border: 1px solid #d4d4d4;
-    border-radius: 2px;
-    font-weight: 600;
-    font-size: 12px;
+    position: relative;
+    z-index: 10;
     color: #303033;
-    text-align: center;
-    line-height: 32px;
+    box-sizing: border-box;
+    cursor: pointer;
+    vertical-align: top;
+    padding-left: 20px;
 }
 
 </style>
@@ -909,16 +958,12 @@ address, em {
 				</ul>
 			</div>
 			<ul class="mid-top">
-				<li class="user-grade"><a class="grade1" href="#"> 
-				<span class="grade2">멤버십등급</span> 
-				<em class="grade-color">GREEN</em>
-				</a> 
-				<a class="sale" target="blank" href="#" class="benefit_show">할인혜택 보기</a></li>
-				<li class="user-coupon">
-				<a class="grade1" href="#"> 
-				<span
-						class="grade2">사용가능쿠폰</span> 
-						<em class="grade-color">2</em>
+				<li class="user-grade"><a class="grade1" href="#"> <span
+						class="grade2">멤버십등급</span> <em class="grade-color">GREEN</em>
+				</a> <a class="sale" target="blank" href="#" class="benefit_show">할인혜택
+						보기</a></li>
+				<li class="user-coupon"><a class="grade1" href="#"> <span
+						class="grade2">사용가능쿠폰</span> <em class="grade-color">2</em>
 				</a></li>
 				<li class="user-mileage"><a class="grade1" href="#"> <span
 						class="grade2">마일리지</span> <em class="grade-color">0</em>
@@ -982,165 +1027,132 @@ address, em {
 					</p>
 					<form novalidate="" class="ng-untouched ng-pristine ng-invalid">
 						<fieldset>
-						<legend>1:1 문의 작성</legend>
-						<ul class="tb_lst">
-							<li>
-								<div class="in_td">
-									<strong class="type">구매관련문의</strong>
-								</div>
-								<div class="in_td">
-									<uio-radio class="ng-star-inserted">
-									<span>
-									<input type="radio" name="undefined"> 
-									<label title="배송문의">배송문의</label>
-									</span> 
-									</uio-radio>
-									<uio-radio class="ng-star-inserted">
-									<span> 
-									<input type="radio" name="undefined"> 
-									<label title="주문문의">주문문의</label>
-									</span> 
-									</uio-radio>
-									<uio-radio class="ng-star-inserted">
-									<span> 
-									<input type="radio" name="undefined"> 
-									<label title="취소문의">취소문의</label>
-									</span> 
-									</uio-radio>
-									<uio-radio class="ng-star-inserted">
-									<span> 
-									<input type="radio" name="undefined"> 
-									<label title="반품문의">반품문의</label>
-									</span> 
-									</uio-radio>
-									<uio-radio class="ng-star-inserted">
-									<span> 
-									<input type="radio" name="undefined"> 
-									<label title="교환문의">교환문의</label>
-									</span> 
-									</uio-radio>
-									<uio-radio class="ng-star-inserted">
-									<span> 
-									<input type="radio" name="undefined"> 
-									<label title="환불문의">환불문의</label>
-									</span> 
-									</uio-radio>
-									<uio-radio class="ng-star-inserted">
-									<span > 
-									<input type="radio" name="undefined"> 
-									<label title="사은품문의">사은품문의</label>
-									</span> 
-									</uio-radio>
-									<uio-radio class="ng-star-inserted">
-									<span> 
-									<input type="radio" name="undefined"> 
-									<label title="입금문의">입금문의</label>
-									</span> </uio-radio>
-									<!---->
-								</div>
-							</li>
-							<li>
-								<div class="in_td">
-									<strong class="type">일반상담문의</strong>
-								</div>
-								<div class="in_td">
-									<uio-radio	class="ng-star-inserted">
-									<span > 
-									<input type="radio" name="undefined"> 
-									<label title="회원정보문의">회원정보문의</label>
-									</span> 
-									</uio-radio>
-									<uio-radio class="ng-star-inserted">
-									<span> 
-									<input type="radio" name="undefined"> 
-									<label title="회원제도문의">회원제도문의</label>
-									</span> 
-									</uio-radio>
-									<uio-radio class="ng-star-inserted">
-									<span > 
-									<input type="radio" name="undefined"> 
-									<label title="결제방법문의">결제방법문의</label>
-									</span> 
-									</uio-radio>
-									<uio-radio class="ng-star-inserted">
-									<span > 
-									<input type="radio" name="undefined"> 
-									<label title="상품문의">상품문의</label>
-									</span> 
-									</uio-radio>
-									<uio-radio class="ng-star-inserted">
-									<span > 
-									<input type="radio" name="undefined"> 
-									<label title="당첨문의">당첨문의</label>
-									</span> 
-									</uio-radio>
-									<uio-radio class="ng-star-inserted">
-									<span > 
-									<input type="radio" name="undefined"> 
-									<label title="쿠폰/마일리지문의">쿠폰/마일리지문의</label>
-									</span> </uio-radio>
-									<!---->
-								</div>
-							</li>
-							<li >
-								<div class="in_td">
-									<strong class="type">기타문의</strong>
-								</div>
-								<div  class="in_td">
-									<uio-radio class="ng-star-inserted">
-									<span > 
-									<input type="radio" name="undefined"> 
-									<label title="시스템문의">시스템문의</label>
-									</span> </uio-radio>
-									<uio-radio  class="ng-star-inserted">
-									<span > 
-									<input type="radio" name="undefined"> 
-									<label title="기타문의">기타문의</label>
-									</span> </uio-radio>
-									<uio-radio class="ng-star-inserted">
-									<span > 
-									<input
-										 type="radio" name="undefined"> <label
-										 title="증빙서류문의">증빙서류문의</label>
-									</span> </uio-radio>
-									<uio-radio class="ng-star-inserted">
-									<span > 
-									<input
-										 type="radio" name="undefined"> <label
-										 title="매장문의">매장문의</label>
-									</span> </uio-radio>
-									<uio-radio  class="ng-star-inserted">
-									<span > 
-									<input
-										type="radio" name="undefined"> <label
-										 title="리뷰재노출문의">리뷰재노출문의</label>
-									</span> </uio-radio>
-									<!---->
-								</div>
-							</li>
+							<legend>1:1 문의 작성</legend>
+							<ul class="tb_lst">
+								<li>
+									<div class="in_td">
+										<strong class="type">구매관련문의</strong>
+									</div>
+									<div class="in_td">
+										<uio-radio class="ng-star-inserted"> <span>
+											<input type="radio" name="undefined"> <label
+											title="배송문의">배송문의</label>
+										</span> </uio-radio>
+										<uio-radio class="ng-star-inserted"> <span>
+											<input type="radio" name="undefined"> <label
+											title="주문문의">주문문의</label>
+										</span> </uio-radio>
+										<uio-radio class="ng-star-inserted"> <span>
+											<input type="radio" name="undefined"> <label
+											title="취소문의">취소문의</label>
+										</span> </uio-radio>
+										<uio-radio class="ng-star-inserted"> <span>
+											<input type="radio" name="undefined"> <label
+											title="반품문의">반품문의</label>
+										</span> </uio-radio>
+										<uio-radio class="ng-star-inserted"> <span>
+											<input type="radio" name="undefined"> <label
+											title="교환문의">교환문의</label>
+										</span> </uio-radio>
+										<uio-radio class="ng-star-inserted"> <span>
+											<input type="radio" name="undefined"> <label
+											title="환불문의">환불문의</label>
+										</span> </uio-radio>
+										<uio-radio class="ng-star-inserted"> <span>
+											<input type="radio" name="undefined"> <label
+											title="사은품문의">사은품문의</label>
+										</span> </uio-radio>
+										<uio-radio class="ng-star-inserted"> <span>
+											<input type="radio" name="undefined"> <label
+											title="입금문의">입금문의</label>
+										</span> </uio-radio>
+										<!---->
+									</div>
+								</li>
+								<li>
+									<div class="in_td">
+										<strong class="type">일반상담문의</strong>
+									</div>
+									<div class="in_td">
+										<uio-radio class="ng-star-inserted"> <span>
+											<input type="radio" name="undefined"> <label
+											title="회원정보문의">회원정보문의</label>
+										</span> </uio-radio>
+										<uio-radio class="ng-star-inserted"> <span>
+											<input type="radio" name="undefined"> <label
+											title="회원제도문의">회원제도문의</label>
+										</span> </uio-radio>
+										<uio-radio class="ng-star-inserted"> <span>
+											<input type="radio" name="undefined"> <label
+											title="결제방법문의">결제방법문의</label>
+										</span> </uio-radio>
+										<uio-radio class="ng-star-inserted"> <span>
+											<input type="radio" name="undefined"> <label
+											title="상품문의">상품문의</label>
+										</span> </uio-radio>
+										<uio-radio class="ng-star-inserted"> <span>
+											<input type="radio" name="undefined"> <label
+											title="당첨문의">당첨문의</label>
+										</span> </uio-radio>
+										<uio-radio class="ng-star-inserted"> <span>
+											<input type="radio" name="undefined"> <label
+											title="쿠폰/마일리지문의">쿠폰/마일리지문의</label>
+										</span> </uio-radio>
+										<!---->
+									</div>
+								</li>
+								<li>
+									<div class="in_td">
+										<strong class="type">기타문의</strong>
+									</div>
+									<div class="in_td">
+										<uio-radio class="ng-star-inserted"> <span>
+											<input type="radio" name="undefined"> <label
+											title="시스템문의">시스템문의</label>
+										</span> </uio-radio>
+										<uio-radio class="ng-star-inserted"> <span>
+											<input type="radio" name="undefined"> <label
+											title="기타문의">기타문의</label>
+										</span> </uio-radio>
+										<uio-radio class="ng-star-inserted"> <span>
+											<input type="radio" name="undefined"> <label
+											title="증빙서류문의">증빙서류문의</label>
+										</span> </uio-radio>
+										<uio-radio class="ng-star-inserted"> <span>
+											<input type="radio" name="undefined"> <label
+											title="매장문의">매장문의</label>
+										</span> </uio-radio>
+										<uio-radio class="ng-star-inserted"> <span>
+											<input type="radio" name="undefined"> <label
+											title="리뷰재노출문의">리뷰재노출문의</label>
+										</span> </uio-radio>
+										<!---->
+									</div>
+								</li>
 
-							<!---->
-							<!---->
-							<!---->
-							<!---->
-							<li class="user">
-								<div class="in_td">
-									<strong class="type">성명</strong>
-								</div>
-								<div class="in_td">
-									<p class="txt"></p>
-									조연화    <!-- ajax처리-성명,아이디,이메일 -->
-								</div>
-							</li>
-							<li class="user_id">
-								<div class="in_td">
-									<strong class="type">아이디</strong>
-								</div>
-								<div class="in_td">
-									<p class="txt"></p>
-									dusk323@naver.com [GREEN]
-								</div>
-							</li>
+								<!---->
+								<!---->
+								<!---->
+								<!---->
+								<li class="user">
+									<div class="in_td">
+										<strong class="type">성명</strong>
+									</div>
+									<div class="in_td">
+										<p class="txt"></p>
+										조연화
+										<!-- ajax처리-성명,아이디,이메일 -->
+									</div>
+								</li>
+								<li class="user_id">
+									<div class="in_td">
+										<strong class="type">아이디</strong>
+									</div>
+									<div class="in_td">
+										<p class="txt"></p>
+										dusk323@naver.com [GREEN]
+									</div>
+								</li>
 								<li class="user_email">
 									<div class="in_td">
 										<strong class="type">이메일</strong>
@@ -1151,78 +1163,77 @@ address, em {
 										<!-- 이메일변경시 회원정보수정페이지로 이동 -->
 									</div>
 								</li>
-								<li _ngcontent-xce-c149="" class="tit_row">
-									<div _ngcontent-xce-c149="" class="in_td">
-										<label _ngcontent-xce-c149="" for="u_title" class="type">제목</label>
+								<li class="tit_row">
+									<div class="in_td">
+										<strong class="type">제목</strong>
 									</div>
-									<div _ngcontent-xce-c149="" class="in_td">
-										<div _ngcontent-xce-c149="" class="inpbx">
-											<input _ngcontent-bva-c149="" type="text" id="u_title" formcontrolname="title" placeholder="제목을 입력하세요." class="ng-untouched ng-pristine ng-invalid">
+									<div class="in_td">
+										<div class="inpbx">
+											<textarea type="text" id="u_title" formcontrolname="title"
+												placeholder="제목을 입력하세요." rows="2" cols="1"
+												class="u_title_style"></textarea>
 										</div>
 									</div>
 								</li>
 								<li class="cnt_row">
-								<div class="in_td">
-									<strong class="type">내용</strong>
-								</div>
-								<div class="in_td">
-									<div class="inptxtbx">
-										<textarea id="u_content" rows="5"
-											cols="1" placeholder="내용을 입력하세요." formcontrolname="contents"
-											class="field_inp ng-untouched ng-pristine ng-invalid"></textarea>
+									<div class="in_td">
+										<strong class="type">내용</strong>
 									</div>
-								</div>
-								<div class="ckemail">
-									<uio-checkbox label="이메일 받기"
-										>
-									<input type="checkbox" value="undefined">
-									<label title="이메일 받기">이메일 받기</label> </uio-checkbox>
-								</div>
-							</li>
-							<li class="add_img">
-								<div class="in_td">
-									<strong class="type">사진첨부</strong>
-								</div>
-								<div class="in_td">
-									<uio-file-upload >
-									<div class="fileUpload">
-										<ul class="fileUpload_list">
-											<!---->
-										</ul>
-										<div class="fileUpload-able"
-											style="display: block;">
-											<label for="u_file">
-											<br>사진첨부</label> <input
-												type="file" accept="image/*"
-												id="u_file" multiple="">
+									<div class="in_td">
+										<div class="inptxtbx">
+											<textarea id="u_content" rows="5" cols="1"
+												placeholder="내용을 입력하세요." formcontrolname="contents"
+												class="u_content_style"></textarea>
 										</div>
 									</div>
-									</uio-file-upload>
+									<div class="ckemail">
+										<uio-checkbox label="이메일 받기"> <input
+											type="checkbox" value="undefined"> <label
+											title="이메일 받기" class="email_label">이메일 받기</label> </uio-checkbox>
+									</div>
+								</li>
+								<li class="add_img">
+									<div class="in_td">
+										<strong class="type">사진첨부</strong>
+									</div>
+									<div class="in_td">
+										<uio-file-upload>
 
-									<ul class="info_lst">
-										<li >상품 불량 및 오배송의 경우, 해당 제품 사진을 등록
-											부탁드립니다.</li>
-										<li class="point">파일명은 영문만 가능하며,
-											파일당 최대 10MB 의<br > 용량 제한이 있습니다.
-										</li>
-										<li >가로사이즈가 450pixel을 초과하는 경우 자동으로<br
-											> 450픽셀로 조정됩니다.
-										</li>
-										<li >첨부파일은 최대 2개까지 등록가능합니다.</li>
-									</ul>
-								</div>
-							</li>
-						</ul>
+										<div class="fileUpload">
+											<ul class="fileUpload_list">
+												<!---->
+											</ul>
+											<div class="fileUpload-able" style="display: block;">
+												<label for="u_file">사진첨부</label> <input type="file"
+													accept="image/*" id="u_file" multiple="">
+											</div>
+										</div>
 
-						<div  class="btn_bx">
-							<button  type="submit" class="btn_black">
-								등록하기</button>
-						</div>
-						<ruler-message-dialog class="ng-star-inserted"><!----> </ruler-message-dialog>
-						<!---->
-						<!---->
-					</fieldset>
-				</form>
+										</uio-file-upload>
+
+										<ul class="info_lst">
+											<li>상품 불량 및 오배송의 경우, 해당 제품 사진을 등록 부탁드립니다.</li>
+											<li class="point">파일명은 영문만 가능하며, 파일당 최대 10MB 의<br>
+												용량 제한이 있습니다.
+											</li>
+											<li>가로사이즈가 450pixel을 초과하는 경우 자동으로<br>
+												450픽셀로 조정됩니다.
+											</li>
+											<li>첨부파일은 최대 2개까지 등록가능합니다.</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+
+							<div class="btn_bx">
+								<button type="submit" class="btn_black">등록하기</button>
+							</div>
+							<ruler-message-dialog class="ng-star-inserted"><!---->
+							</ruler-message-dialog>
+							<!---->
+							<!---->
+						</fieldset>
+					</form>
 					<!---->
 				</section>
 			</ul>
