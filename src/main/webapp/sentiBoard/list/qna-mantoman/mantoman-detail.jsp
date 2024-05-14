@@ -8,18 +8,6 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <style>
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
-	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
-	em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
-	b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
-	caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
-	details, embed, figure, figcaption, footer, header, menu, nav, output,
-	ruby, section, summary, time, mark, audio, video, input, textarea,
-	button, select {
-	margin: 0;
-	padding: 0;
-}
-
 *, *::before, *::after {
 	box-sizing: border-box;
 }
@@ -129,19 +117,6 @@ a {
 		height: 150px;
 		padding: 25px 0px;
 	}
-}
-
-@media ( min-width : 541px) {
-	.mid-top {
-		height: 150px;
-		padding: 25px 0px;
-	}
-}
-
-.mid-top {
-	display: flex;
-	line-height: 1;
-	background-color: rgb(48, 48, 51);
 }
 
 .user-grade {
@@ -630,12 +605,39 @@ body, input, select, textarea, button, a {
 </style>
 
 <style>
+a, abbr, acronym, address, article, aside, audio, b, big, blockquote,
+	body, button, canvas, caption, cite, code, dd, del, details, dfn, div,
+	dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2,
+	h3, h4, h5, h6, header, html, i, iframe, img, input, ins, kbd, label,
+	legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s,
+	samp, section, select, small, span, strike, strong, sub, summary, sup,
+	table, tbody, td, textarea, tfoot, th, thead, time, tr, tt, u, ul, var,
+	video {
+	margin: 0;
+	padding: 0;
+}
+
+@media screen and (min-width: 541px) {
+	.article_right {
+		-webkit-box-flex: 1;
+		flex: 1;
+		padding-top: 190px;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.my_tit.nobor {
+		padding: 6px 0 24px;
+		border-bottom: none;
+		font-size: 20px;
+		line-height: 30px;
+		text-align: center;
+	}
+}
+
 .my_tit.nobor {
 	padding: 0;
 	border: 0;
-}
-
-.my_tit {
 	position: relative;
 	padding-bottom: 10px;
 	border-bottom: 4px solid #000;
@@ -645,15 +647,22 @@ body, input, select, textarea, button, a {
 	font-weight: 500;
 }
 
-.my_tit_dsc {
+@media screen and (max-width: 540px) {
+	.my_tit_dsc {
+		margin: 0 20px;
+	}
+}
+
+.my_tit_dsc[_ngcontent-ctd-c149] {
 	font-size: 14px;
 	color: #5d5d5d;
 	line-height: 24px;
 }
 
-fieldset {
-	padding: 0;
-	border: 0;
+form {
+	display: block;
+	margin-top: 0em;
+	unicode-bidi: isolate;
 }
 
 fieldset {
@@ -666,6 +675,24 @@ fieldset {
 	padding-block-end: 0.625em;
 	min-inline-size: min-content;
 	border-width: 2px;
+	border-style: groove;
+	border-color: rgb(192, 192, 192);
+	border-image: initial;
+}
+
+fieldset {
+	padding: 0;
+	border: 0;
+}
+
+legend {
+	display: block;
+	padding-inline-start: 2px;
+	padding-inline-end: 2px;
+	unicode-bidi: isolate;
+	border-width: initial;
+	border-style: none;
+	border-color: initial;
 	border-image: initial;
 }
 
@@ -686,11 +713,21 @@ fieldset {
 	border-top: 4px solid #000;
 }
 
+li, ol, ul {
+	list-style: none;
+}
+
 .tb_lst>li {
 	display: table;
 	position: relative;
 	width: 100%;
 	border-bottom: 1px solid #e4e4e4;
+}
+
+.tb_lst>li:after {
+	display: block;
+	clear: both;
+	content: "";
 }
 
 .tb_lst .in_td:first-child {
@@ -700,48 +737,12 @@ fieldset {
 	vertical-align: top;
 }
 
-.tb_lst .in_td {
-	display: table-cell;
-	height: 62px;
-	padding: 10px 10px 10px 20px;
-	box-sizing: border-box;
-	font-size: 14px;
-	vertical-align: middle;
-}
-
-.tb_lst .inpbx {
-	float: left;
-	width: 245px;
-	height: 46px;
-}
-
-.inpbx {
-	position: relative;
-	height: 40px;
-	background: #fff;
-	vertical-align: top;
-	box-sizing: border-box;
-	padding-right: 40px;
-}
-
-.u_title_style, .u_content_style {
-	padding: 0 18px;
-	font-size: 14px;
-	font-weight: 600;
-	color: #1a1a1a;
-	line-height: 30px;
-	border: 1px solid #d4d4d4;
-}
-
-#u_title .u_title_style {
-	display: block;
-	width: 200px;
-	height: 46px;
-	vertical-align: middle;
-	border: 0;
-	background: transparent;
-	outline: none;
-	box-sizing: border-box;
+@media screen and (max-width: 540px) {
+	.tb_lst .in_td {
+		display: block;
+		height: auto;
+		padding: 0;
+	}
 }
 
 .tb_lst .type {
@@ -750,6 +751,15 @@ fieldset {
 	font-weight: 600;
 	color: #303033;
 	line-height: 60px;
+}
+
+.tb_lst .in_td {
+	display: table-cell;
+	height: 62px;
+	padding: 10px 0 10px 20px;
+	box-sizing: border-box;
+	font-size: 14px;
+	vertical-align: middle;
 }
 
 .tb_lst uio-radio {
@@ -788,7 +798,11 @@ input, textarea {
 }
 
 label {
-	display: block;
+	cursor: default;
+}
+
+label {
+	display: inline-block;
 	position: relative;
 	z-index: 1;
 	padding-left: 27px;
@@ -816,60 +830,22 @@ label:before {
 }
 
 label:after {
-	position: absolute;
-	border: 1px solid #d4d4d4;
-	border-width: 0 1px 1px 0;
-	transform: rotate(45deg);
-	content: "";
-	top: 3px;
-	left: 7px;
-	width: 5px;
-	height: 10px;
+	top: 1px;
+	left: 1px;
+	width: 18px;
+	height: 18px;
+	border: 5px solid #fff;
+	border-radius: 50%;
+	background: #f4f4f4;
 }
 
-.tb_lst>li:after {
+p {
 	display: block;
-	clear: both;
-	content: "";
-}
-
-.tb_lst>li:after {
-	display: block;
-	clear: both;
-	content: "";
-}
-
-.tb_lst .cnt_row {
-	position: relative;
-}
-
-@media screen and (max-width: 1550px) {
-	.my_grade[_ngcontent-xce-c49] li[_ngcontent-xce-c49] em[_ngcontent-xce-c49]
-		{
-		font-size: 40px;
-	}
-}
-
-@media screen and (min-width: 541px) {
-	.my_grade[_ngcontent-xce-c49] li[_ngcontent-xce-c49] em[_ngcontent-xce-c49]
-		{
-		text-align: right;
-	}
-}
-
-.my_grade[_ngcontent-xce-c49] li[_ngcontent-xce-c49] em[_ngcontent-xce-c49]
-	{
-	font-size: 50px;
-	font-weight: 400;
-	color: #fff;
-	line-height: 1.3;
-	vertical-align: text-bottom;
-	-webkit-transition: font-size .25s ease-in-out;
-	transition: font-size .25s ease-in-out;
-}
-
-address, em {
-	font-style: normal;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	unicode-bidi: isolate;
 }
 
 .tb_lst .user_email a {
@@ -886,7 +862,184 @@ address, em {
 	line-height: 32px;
 }
 
-.fileUpload .fileUpload-able label {
+a, button {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+@media screen and (min-width: 541px) {
+	.tb_lst .tit_row .inpbx {
+		width: 335px;
+	}
+}
+
+.tb_lst .inpbx {
+	float: left;
+	width: 245px;
+	height: 46px;
+}
+
+.inpbx {
+	position: relative;
+	height: 40px;
+	border: 1px solid #d4d4d4;
+	background: #fff;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+
+.tb_lst .inpbx input, .tb_lst .inptxtbx textarea {
+	padding: 0 18px;
+	font-size: 14px;
+	font-weight: 600;
+	color: #303033;
+	line-height: 20px;
+}
+
+.inpbx input {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 0 14px;
+	font-size: 15px;
+	color: #1a1a1a;
+	vertical-align: top;
+	border: 0;
+	background: transparent;
+	outline: none;
+	box-sizing: border-box;
+}
+
+input, textarea {
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.tb_lst .cnt_row {
+	position: relative;
+}
+
+.tb_lst .inptxtbx {
+	padding-right: 12px;
+}
+
+.tb_lst .inptxtbx textarea {
+	padding: 18px;
+	font-size: 14px;
+	font-weight: 400;
+	resize: none;
+}
+
+.tb_lst .inpbx input, .tb_lst .inptxtbx textarea {
+	padding: 0 18px;
+	font-size: 14px;
+	font-weight: 600;
+	color: #303033;
+	line-height: 20px;
+}
+
+.inptxtbx textarea {
+	display: block;
+	overflow: auto;
+	width: 100%;
+	padding: 14px;
+	border: 1px solid #ccc;
+	background: transparent;
+	font-size: 15px;
+	line-height: 20px;
+	color: #1a1a1a;
+	vertical-align: top;
+	outline: none;
+	box-sizing: border-box;
+}
+
+textarea {
+	resize: none;
+}
+
+@media screen and (min-width: 541px) {
+	.tb_lst .cnt_row .ckemail {
+		position: absolute;
+		top: -42px;
+		left: 500px;
+	}
+}
+
+uio-checkbox {
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	vertical-align: top;
+	line-height: 20px;
+	font-size: 12px;
+}
+
+#email_checkbox {
+	overflow: hidden;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	z-index: -1;
+	width: 1px;
+	height: 1px;
+	border: 0;
+	background: transparent;
+	visibility: hidden;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.email_agree {
+	display: inline-block;
+	position: relative;
+	z-index: 10;
+	color: #303033;
+	box-sizing: border-box;
+	cursor: pointer;
+	vertical-align: top;
+	padding-left: 29px;
+}
+
+.email_agree:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	border: 1px solid #d4d4d4;
+	border-radius: 2px;
+	text-align: center;
+	box-sizing: border-box;
+	content: "";
+	width: 20px;
+	height: 20px;
+	transition: background-color .2s;
+}
+
+.email_agree:after {
+	position: absolute;
+	border: 1px solid #d4d4d4;
+	border-width: 0 1px 1px 0;
+	transform: rotate(45deg);
+	content: "";
+	top: 3px;
+	left: 7px;
+	width: 5px;
+	height: 10px;
+}
+
+.fileUplod, .fileUpload .fileUpload_list {
+	display: flex;
+}
+
+.u_file_add {
 	display: block;
 	overflow: hidden;
 	position: relative;
@@ -903,7 +1056,13 @@ address, em {
 	margin-top: -11px;
 }
 
-.fileUpload .fileUpload-able label:after, .fileUpload .fileUpload-able label:before
+.fileUpload .fileUpload-able label:after {
+	width: 22px;
+	height: 1px;
+	margin-left: -11px;
+}
+
+.fileUpload .fileUpload-able label:after, .fileUpload .fileUpload-able label :before
 	{
 	position: absolute;
 	top: 50%;
@@ -912,13 +1071,6 @@ address, em {
 	content: "";
 }
 
-.fileUpload .fileUpload-able label:after {
-	width: 22px;
-	height: 1px;
-	margin-left: -11px;
-}
-
-
 .fileUpload .fileUpload-able input[type=file] {
 	overflow: hidden;
 	position: absolute;
@@ -926,19 +1078,246 @@ address, em {
 	height: 1px;
 }
 
-.fileUpload, .fileUpload .fileUpload_list {
-	display: flex;
+.add_img .info_lst {
+	margin-top: 16px;
 }
 
-.email_label {
-    display: inline-block;
+.add_img .info_lst li {
+	position: relative;
+	padding-left: 14px;
+	font-size: 12px;
+	color: #a0a0a0;
+	line-height: 24px;
+}
+
+.add_img .info_lst li :before {
+	position: absolute;
+	top: 9px;
+	left: 0;
+	width: 3px;
+	height: 3px;
+	border-radius: 100%;
+	background: #a0a0a0;
+	content: "";
+}
+
+.add_img .info_lst li {
+	position: relative;
+	padding-left: 14px;
+	font-size: 12px;
+	color: #a0a0a0;
+	line-height: 24px;
+}
+
+.add_img .info_lst .point {
+	color: #ff4800;
+}
+
+.add_img .info_lst li {
+	position: relative;
+	padding-left: 14px;
+	font-size: 12px;
+	color: #a0a0a0;
+	line-height: 24px;
+}
+
+.add_img .info_lst .point :before {
+	background: #ff4800;
+}
+
+.add_img .info_lst li:before {
+	position: absolute;
+	top: 9px;
+	left: 0;
+	width: 3px;
+	height: 3px;
+	border-radius: 100%;
+	background: #a0a0a0;
+	content: "";
+}
+
+.my_inq .btn_bx {
+	margin: 10px 0 -20px;
+	text-align: center;
+}
+
+.btn_bx .btn_black {
+	width: 100px;
+	height: 40px;
+}
+
+.btn_black {
+	display: inline-block;
+	min-width: 82px;
+	padding: 0 17px;
+	border: 1px solid #303033;
+	background: #303033;
+	font-size: 13px;
+	color: #fff;
+	line-height: 38px;
+	box-sizing: border-box;
+}
+
+ruler-message-dialog {
+	word-break: keep-all;
+	text-align: center;
+	line-height: 1.2;
+}
+</style>
+<style>
+.my_grade ul {
+    overflow: hidden;
+}
+
+.my_grade li:first-child {
+    width: 50%;
+}
+
+.my_grade li {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    float: left;
     position: relative;
-    z-index: 10;
-    color: #303033;
+    width: 25%;
+    height: 150px;
+    padding: 65px 20px 15px;
     box-sizing: border-box;
-    cursor: pointer;
-    vertical-align: top;
-    padding-left: 20px;
+    text-align: left;
+}
+
+.my_grade li a {
+    display: block;
+    width: 100%;
+}
+
+@media screen and (min-width: 541px) {
+    .my_grade li span {
+        display: inline-block;
+        position: absolute;
+        top: 24px;
+        left: 21px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+.my_grade li span {
+    color: #a0a0a0;
+}
+
+.my_grade li span :after {
+    display: inline-block;
+    clear: both;
+    width: 5px;
+    height: 5px;
+    margin-bottom: 2px;
+    margin-left: 3px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-top: 1px solid #a0a0a0;
+    border-right: 1px solid #a0a0a0;
+    content: "";
+}
+
+@media screen and (max-width: 1220px) {
+    .my_grade li em {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .my_grade li em {
+        font-size: 34px;
+    }
+}
+@media screen and (max-width: 1550px) {
+    .my_grade[_ngcontent-koy-c49] li[_ngcontent-koy-c49] em[_ngcontent-koy-c49] {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 541px) {
+    .my_grade[_ngcontent-koy-c49] li[_ngcontent-koy-c49] em[_ngcontent-koy-c49] {
+        text-align: right;
+    }
+}
+
+
+.my_grade li em {
+    font-size: 50px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.3;
+    vertical-align: text-bottom;
+    -webkit-transition: font-size .25s ease-in-out;
+    transition: font-size .25s ease-in-out;
+}
+address, em {
+    font-style: normal;
+}
+
+@media screen and (max-width: 1220px) {
+    .my_grade li .benefit_show {
+        bottom: 18px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .my_grade li .benefit_show {
+        bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 541px) {
+    .my_grade li .benefit_show {
+        padding: 8px 20px 7px;
+        border: 1px solid #6d6d6d;
+        border-radius: 17px;
+        font-size: 14px;
+        color: #fff;
+    }
+}
+
+.my_grade li .benefit_show {
+    position: absolute;
+    right: 26px;
+    bottom: 24px;
+    width: auto;
+    font-weight: 300;
+    line-height: 17px;
+    text-align: center;
+}
+
+.my_grade li:before {
+    position: absolute;
+    top: 27px;
+    left: 0;
+    width: 1px;
+    height: 100px;
+    background: #5d5d5d;
+    content: "";
+}
+
+.my_grade li a {
+    display: block;
+    width: 100%;
+}
+
+.my_grade li span:after {
+    display: inline-block;
+    clear: both;
+    width: 5px;
+    height: 5px;
+    margin-bottom: 2px;
+    margin-left: 3px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-top: 1px solid #a0a0a0;
+    border-right: 1px solid #a0a0a0;
+    content: "";
 }
 
 </style>
@@ -957,16 +1336,22 @@ address, em {
 					<li class="like-li"><a class="like-a" href="#">좋아요 0</a></li>
 				</ul>
 			</div>
-			<ul class="mid-top">
-				<li class="user-grade"><a class="grade1" href="#"> <span
-						class="grade2">멤버십등급</span> <em class="grade-color">GREEN</em>
-				</a> <a class="sale" target="blank" href="#" class="benefit_show">할인혜택
-						보기</a></li>
-				<li class="user-coupon"><a class="grade1" href="#"> <span
-						class="grade2">사용가능쿠폰</span> <em class="grade-color">2</em>
+			<ul >
+				<li ><a 
+					href="https://order.29cm.co.kr/my-order/grade"> <span
+						>멤버십 등급</span> <em 
+						class="ng-star-inserted">GREEN</em>
+					<!---->
+				</a> <a 
+					href="https://www.29cm.co.kr/event/benefit-guide/guide"
+					target="_blank" class="benefit_show"> 할인혜택 보기 </a></li>
+				<li ><a 
+					href="https://order.29cm.co.kr/my-order/coupon"> <span
+						>사용가능쿠폰</span> <em >1</em>
 				</a></li>
-				<li class="user-mileage"><a class="grade1" href="#"> <span
-						class="grade2">마일리지</span> <em class="grade-color">0</em>
+				<li ><a 
+					href="https://order.29cm.co.kr/my-order/mileage"> <span
+						>마일리지</span> <em >0</em>
 				</a></li>
 			</ul>
 			<ul class="mid-left-list-top">
@@ -1016,229 +1401,228 @@ address, em {
 				</ul>
 			</section>
 		</div>
-		<div class="mid-mid">
-			<!-- 여기서부터 작업하시면 됩니다 -->
-			<ul class="mantoman-detail">
-				<section class="my_inq">
-					<h3 class="my_tit nobor">1:1 문의쓰기</h3>
-					<p class="my_tit_dsc">
-						산업안전보건법 제 41조 시행령에 근거하여 2018년 10월 18일 부터 산업안전보건법에 따라 고객응대근로자 보호조치를
-						시행하고 있습니다. <br> 고객응대근로자에게 폭언, 폭행 등을 하지 말아주세요.
-					</p>
-					<form novalidate="" class="ng-untouched ng-pristine ng-invalid">
-						<fieldset>
-							<legend>1:1 문의 작성</legend>
-							<ul class="tb_lst">
-								<li>
-									<div class="in_td">
-										<strong class="type">구매관련문의</strong>
-									</div>
-									<div class="in_td">
-										<uio-radio class="ng-star-inserted"> <span>
-											<input type="radio" name="undefined"> <label
-											title="배송문의">배송문의</label>
-										</span> </uio-radio>
-										<uio-radio class="ng-star-inserted"> <span>
-											<input type="radio" name="undefined"> <label
-											title="주문문의">주문문의</label>
-										</span> </uio-radio>
-										<uio-radio class="ng-star-inserted"> <span>
-											<input type="radio" name="undefined"> <label
-											title="취소문의">취소문의</label>
-										</span> </uio-radio>
-										<uio-radio class="ng-star-inserted"> <span>
-											<input type="radio" name="undefined"> <label
-											title="반품문의">반품문의</label>
-										</span> </uio-radio>
-										<uio-radio class="ng-star-inserted"> <span>
-											<input type="radio" name="undefined"> <label
-											title="교환문의">교환문의</label>
-										</span> </uio-radio>
-										<uio-radio class="ng-star-inserted"> <span>
-											<input type="radio" name="undefined"> <label
-											title="환불문의">환불문의</label>
-										</span> </uio-radio>
-										<uio-radio class="ng-star-inserted"> <span>
-											<input type="radio" name="undefined"> <label
-											title="사은품문의">사은품문의</label>
-										</span> </uio-radio>
-										<uio-radio class="ng-star-inserted"> <span>
-											<input type="radio" name="undefined"> <label
-											title="입금문의">입금문의</label>
-										</span> </uio-radio>
-										<!---->
-									</div>
-								</li>
-								<li>
-									<div class="in_td">
-										<strong class="type">일반상담문의</strong>
-									</div>
-									<div class="in_td">
-										<uio-radio class="ng-star-inserted"> <span>
-											<input type="radio" name="undefined"> <label
-											title="회원정보문의">회원정보문의</label>
-										</span> </uio-radio>
-										<uio-radio class="ng-star-inserted"> <span>
-											<input type="radio" name="undefined"> <label
-											title="회원제도문의">회원제도문의</label>
-										</span> </uio-radio>
-										<uio-radio class="ng-star-inserted"> <span>
-											<input type="radio" name="undefined"> <label
-											title="결제방법문의">결제방법문의</label>
-										</span> </uio-radio>
-										<uio-radio class="ng-star-inserted"> <span>
-											<input type="radio" name="undefined"> <label
-											title="상품문의">상품문의</label>
-										</span> </uio-radio>
-										<uio-radio class="ng-star-inserted"> <span>
-											<input type="radio" name="undefined"> <label
-											title="당첨문의">당첨문의</label>
-										</span> </uio-radio>
-										<uio-radio class="ng-star-inserted"> <span>
-											<input type="radio" name="undefined"> <label
-											title="쿠폰/마일리지문의">쿠폰/마일리지문의</label>
-										</span> </uio-radio>
-										<!---->
-									</div>
-								</li>
-								<li>
-									<div class="in_td">
-										<strong class="type">기타문의</strong>
-									</div>
-									<div class="in_td">
-										<uio-radio class="ng-star-inserted"> <span>
-											<input type="radio" name="undefined"> <label
-											title="시스템문의">시스템문의</label>
-										</span> </uio-radio>
-										<uio-radio class="ng-star-inserted"> <span>
-											<input type="radio" name="undefined"> <label
-											title="기타문의">기타문의</label>
-										</span> </uio-radio>
-										<uio-radio class="ng-star-inserted"> <span>
-											<input type="radio" name="undefined"> <label
-											title="증빙서류문의">증빙서류문의</label>
-										</span> </uio-radio>
-										<uio-radio class="ng-star-inserted"> <span>
-											<input type="radio" name="undefined"> <label
-											title="매장문의">매장문의</label>
-										</span> </uio-radio>
-										<uio-radio class="ng-star-inserted"> <span>
-											<input type="radio" name="undefined"> <label
-											title="리뷰재노출문의">리뷰재노출문의</label>
-										</span> </uio-radio>
-										<!---->
-									</div>
-								</li>
 
-								<!---->
-								<!---->
-								<!---->
-								<!---->
-								<li class="user">
-									<div class="in_td">
-										<strong class="type">성명</strong>
-									</div>
-									<div class="in_td">
-										<p class="txt"></p>
-										조연화
-										<!-- ajax처리-성명,아이디,이메일 -->
-									</div>
-								</li>
-								<li class="user_id">
-									<div class="in_td">
-										<strong class="type">아이디</strong>
-									</div>
-									<div class="in_td">
-										<p class="txt"></p>
-										dusk323@naver.com [GREEN]
-									</div>
-								</li>
-								<li class="user_email">
-									<div class="in_td">
-										<strong class="type">이메일</strong>
-									</div>
-									<div class="in_td">
-										<p class="txt"></p>
-										dusk323@naver.com <a href="/mypage/edit/info">이메일 변경하기</a>
-										<!-- 이메일변경시 회원정보수정페이지로 이동 -->
-									</div>
-								</li>
-								<li class="tit_row">
-									<div class="in_td">
-										<strong class="type">제목</strong>
-									</div>
-									<div class="in_td">
-										<div class="inpbx">
-											<textarea type="text" id="u_title" formcontrolname="title"
-												placeholder="제목을 입력하세요." rows="2" cols="1"
-												class="u_title_style"></textarea>
-										</div>
-									</div>
-								</li>
-								<li class="cnt_row">
-									<div class="in_td">
-										<strong class="type">내용</strong>
-									</div>
-									<div class="in_td">
-										<div class="inptxtbx">
-											<textarea id="u_content" rows="5" cols="1"
-												placeholder="내용을 입력하세요." formcontrolname="contents"
-												class="u_content_style"></textarea>
-										</div>
-									</div>
-									<div class="ckemail">
-										<uio-checkbox label="이메일 받기"> <input
-											type="checkbox" value="undefined"> <label
-											title="이메일 받기" class="email_label">이메일 받기</label> </uio-checkbox>
-									</div>
-								</li>
-								<li class="add_img">
-									<div class="in_td">
-										<strong class="type">사진첨부</strong>
-									</div>
-									<div class="in_td">
-										<uio-file-upload>
+		<div class="article_right">
+			<router-outlet></router-outlet>
+			<ui-qna-mantoman-detail class="ng-star-inserted">
+			<section class="my_inq">
+				<h3 class="my_tit.nobor">1:1 문의쓰기</h3>
+				<p class="my_tit_dsc">
+					산업안전보건법 제 41조 시행령에 근거하여 2018년 10월 18일 부터 산업안전보건법에 따라 고객응대근로자 보호조치를
+					시행하고 있습니다.<br> 고객응대근로자에게 폭언, 폭행 등을 하지 말아주세요.
+				</p>
+				<form class="ng-untouched ng-pristine ng-invalid">
+					<fieldset>
+						<legend>1:1 문의 작성</legend>
+						<ul class="tb_lst">
+							<li>
+								<div class="in_td">
+									<strong class="type">구매관련문의</strong>
+								</div>
+								<div class="in_td">
+									<uio-radio class="ng-star-inserted"> <span>
+										<input type="radio" name="undefined"> <label
+										title="배송문의">배송문의</label>
+									</span> </uio-radio>
+									<uio-radio _nghost-ctd-c86="" class="ng-star-inserted">
+									<span> <input type="radio" name="undefined"> <label
+										title="주문문의">주문문의</label>
+									</span> </uio-radio>
+									<uio-radio class="ng-star-inserted"> <span>
+										<input type="radio" name="undefined"> <label
+										title="취소문의">취소문의</label>
+									</span> </uio-radio>
+									<uio-radio _nghost-ctd-c86="" class="ng-star-inserted">
+									<span> <input type="radio" name="undefined"> <label
+										title="반품문의">반품문의</label>
+									</span> </uio-radio>
+									<uio-radio class="ng-star-inserted"> <span>
+										<input type="radio" name="undefined"> <label
+										title="교환문의">교환문의</label>
+									</span> </uio-radio>
+									<uio-radio class="ng-star-inserted"> <span>
+										<input type="radio" name="undefined"> <label
+										title="환불문의">환불문의</label>
+									</span> </uio-radio>
+									<uio-radio class="ng-star-inserted"> <span>
+										<input type="radio" name="undefined"> <label
+										title="사은품문의">사은품문의</label>
+									</span> </uio-radio>
+									<uio-radio class="ng-star-inserted"> <span>
+										<input type="radio" name="undefined"> <label
+										title="입금문의">입금문의</label>
+									</span> </uio-radio>
+									<!---->
+								</div>
+							</li>
+							<li>
+								<div class="in_td">
+									<strong class="type">일반상담문의</strong>
+								</div>
+								<div class="in_td">
+									<uio-radio class="ng-star-inserted"> <span>
+										<input type="radio" name="undefined"> <label
+										title="회원정보문의">회원정보문의</label>
+									</span> </uio-radio>
+									<uio-radio class="ng-star-inserted"> <span>
+										<input type="radio" name="undefined"> <label
+										title="회원제도문의">회원제도문의</label>
+									</span> </uio-radio>
+									<uio-radio class="ng-star-inserted"> <span>
+										<input type="radio" name="undefined"> <label
+										title="결제방법문의">결제방법문의</label>
+									</span> </uio-radio>
+									<uio-radio class="ng-star-inserted"> <span>
+										<input type="radio" name="undefined"> <label
+										title="상품문의">상품문의</label>
+									</span> </uio-radio>
+									<uio-radio class="ng-star-inserted"> <span>
+										<input type="radio" name="undefined"> <label
+										title="당첨문의">당첨문의</label>
+									</span> </uio-radio>
+									<uio-radio class="ng-star-inserted"> <span>
+										<input type="radio" name="undefined"> <label
+										title="쿠폰/마일리지문의">쿠폰/마일리지문의</label>
+									</span> </uio-radio>
+									<!---->
+								</div>
+							</li>
+							<li>
+								<div class="in_td">
+									<strong class="type">기타문의</strong>
+								</div>
+								<div class="in_td">
+									<uio-radio class="ng-star-inserted"> <span>
+										<input type="radio" name="undefined"> <label
+										title="시스템문의">시스템문의</label>
+									</span> </uio-radio>
+									<uio-radio class="ng-star-inserted"> <span>
+										<input type="radio" name="undefined"> <label
+										title="기타문의">기타문의</label>
+									</span> </uio-radio>
+									<uio-radio class="ng-star-inserted"> <span>
+										<input type="radio" name="undefined"> <label
+										title="증빙서류문의">증빙서류문의</label>
+									</span> </uio-radio>
+									<uio-radio _nghost-ctd-c86="" class="ng-star-inserted">
+									<span> <input type="radio" name="undefined"> <label
+										title="매장문의">매장문의</label>
+									</span> </uio-radio>
+									<uio-radio class="ng-star-inserted"> <span>
+										<input type="radio" name="undefined"> <label
+										title="리뷰재노출문의">리뷰재노출문의</label>
+									</span> </uio-radio>
+									<!---->
+								</div>
+							</li>
 
-										<div class="fileUpload">
-											<ul class="fileUpload_list">
-												<!---->
-											</ul>
-											<div class="fileUpload-able" style="display: block;">
-												<label for="u_file">사진첨부</label> <input type="file"
-													accept="image/*" id="u_file" multiple="">
-											</div>
-										</div>
-
-										</uio-file-upload>
-
-										<ul class="info_lst">
-											<li>상품 불량 및 오배송의 경우, 해당 제품 사진을 등록 부탁드립니다.</li>
-											<li class="point">파일명은 영문만 가능하며, 파일당 최대 10MB 의<br>
-												용량 제한이 있습니다.
-											</li>
-											<li>가로사이즈가 450pixel을 초과하는 경우 자동으로<br>
-												450픽셀로 조정됩니다.
-											</li>
-											<li>첨부파일은 최대 2개까지 등록가능합니다.</li>
+							<!---->
+							<!---->
+							<!---->
+							<!---->
+							<li class="user">
+								<div class="in_td">
+									<strong class="type">성명</strong>
+								</div>
+								<div class="in_td">
+									<p class="txt"></p>
+									조연화
+								</div>
+							</li>
+							<li class="user_id">
+								<div class="in_td">
+									<strong class="type">아이디</strong>
+								</div>
+								<div class="in_td">
+									<p class="txt"></p>
+									dusk323@naver.com [GREEN]
+								</div>
+							</li>
+							<li class="user_email">
+								<div class="in_td">
+									<strong class="type">이메일</strong>
+								</div>
+								<div class="in_td">
+									<p class="txt"></p>
+									dusk323@naver.com <a href="/mypage/edit/info">이메일 변경하기</a>
+								</div>
+							</li>
+							<li class="tit_row">
+								<div class="in_td">
+									<label for="u_title" class="type">제목</label>
+								</div>
+								<div class="in_td">
+									<div class="inpbx">
+										<input type="text" id="u_title" formcontrolname="title"
+											placeholder="제목을 입력하세요."
+											class="ng-untouched ng-pristine ng-invalid">
+									</div>
+								</div>
+							</li>
+							<li class="cnt_row">
+								<div class="in_td">
+									<label for="u_content" class="type">내용</label>
+								</div>
+								<div class="in_td">
+									<div class="inptxtbx">
+										<textarea id="u_content" rows="5" cols="1"
+											placeholder="내용을 입력하세요." formcontrolname="contents"
+											class="field_inp ng-untouched ng-pristine ng-invalid"></textarea>
+									</div>
+								</div>
+								<div class="ckemail">
+									<uio-checkbox label="이메일 받기" _nghost-ctd-c82="">
+									<input type="checkbox" value="undefined" id="email_checkbox">
+									<label title="이메일 받기" class="email_agree"z-index: 10;>이메일
+										받기</label> </uio-checkbox>
+								</div>
+							</li>
+							<li class="add_img">
+								<div class="in_td">
+									<strong class="type">사진첨부</strong>
+								</div>
+								<div class="in_td">
+									<uio-file-upload _nghost-ctd-c113="">
+									<div class="fileUpload">
+										<ul class="fileUpload_list">
+											<!---->
 										</ul>
+										<div class="fileUpload-able" style="display: block;">
+											<label for="u_file" class="u_file_add">사진첨부</label> <input
+												type="file" accept="image/*" id="u_file" multiple="">
+										</div>
 									</div>
-								</li>
-							</ul>
+									</uio-file-upload>
 
-							<div class="btn_bx">
-								<button type="submit" class="btn_black">등록하기</button>
-							</div>
-							<ruler-message-dialog class="ng-star-inserted"><!---->
-							</ruler-message-dialog>
-							<!---->
-							<!---->
-						</fieldset>
-					</form>
-					<!---->
-				</section>
-			</ul>
+									<ul class="info_lst">
+										<li>상품 불량 및 오배송의 경우, 해당 제품 사진을 등록 부탁드립니다.</li>
+										<li class="point">파일명은 영문만 가능하며, 파일당 최대 10MB 의<br>
+											용량 제한이 있습니다.
+										</li>
+										<li>가로사이즈가 450pixel을 초과하는 경우 자동으로<br>
+											450픽셀로 조정됩니다.
+										</li>
+										<li>첨부파일은 최대 2개까지 등록가능합니다.</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
 
+						<div class="btn_bx">
+							<button type="submit" class="btn_black">등록하기</button>
+						</div>
+						<ruler-message-dialog class="ng-star-inserted"><!---->
+						</ruler-message-dialog>
+						<!---->
+						<!---->
+					</fieldset>
+				</form>
+				<!---->
+			</section>
+			</ui-qna-mantoman-detail>
+			<!---->
 		</div>
+
 	</div>
 
 	<br>
