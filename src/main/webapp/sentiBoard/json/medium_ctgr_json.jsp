@@ -18,14 +18,13 @@ ResultSet rs = null;
 String pLarge_ctgr_id = request.getParameter("large_ctgr_id");
 
 
-if(pLarge_ctgr_id == null || pLarge_ctgr_id.equals("")) pLarge_ctgr_id = "1";
 
 int large_ctgr_id = Integer.parseInt(pLarge_ctgr_id);
 
-String sql = " SELECT medium_ctgr_id, medium_ctgr_name, large_ctgr_id " 
-		+" FROM medium_ctgr"
-		+" where large_ctgr_id=?";
-				
+String sql = " SELECT medium_ctgr_id, medium_ctgr_name, large_ctgr_id"
+			+" FROM medium_ctgr" 
+			+" WHERE large_ctgr_id = ?";
+
 
 
 JSONObject jsonData = new JSONObject();
@@ -38,16 +37,16 @@ try{
     rs = pstmt.executeQuery();
 
     while(rs.next()){
-    	int medium_ctgr_id = rs.getInt("medium_ctgr_id");
+
+        int medium_ctgr_id = rs.getInt("medium_ctgr_id");
         String medium_ctgr_name = rs.getString("medium_ctgr_name");
-       
         
-        
-        JSONObject jsonMedium_ctgr = new JSONObject();       
+
+        JSONObject jsonMedium_ctgr = new JSONObject();
         jsonMedium_ctgr.put("medium_ctgr_id", medium_ctgr_id);
         jsonMedium_ctgr.put("medium_ctgr_name", medium_ctgr_name);
         jsonMedium_ctgr.put("large_ctgr_id", large_ctgr_id);
-        
+
        
 
         jsonEmpArray.add(jsonMedium_ctgr);

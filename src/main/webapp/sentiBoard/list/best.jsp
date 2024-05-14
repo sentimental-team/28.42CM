@@ -7,7 +7,7 @@
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.PreparedStatement"%>
-<%@page import="com.util.DBConn"%>
+<%@page import="com.util.ConnectionProvider"%>
 <%@page import="java.sql.Connection"%>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -16,12 +16,12 @@
     
     PreparedStatement pstmt = null;
     ResultSet rs = null;    
-    String sql = " SELECT large_ctgr_id, main_ctgr_name, main_ctgr_id"
+    String sql = " SELECT large_ctgr_id, large_ctgr_name, main_ctgr_id"
     		+" FROM LARGE_CTGR";
         
     
     int large_ctgr_id = 0;
-    String main_ctgr_name =  null; 
+    String large_ctgr_name =  null; 
     int main_ctgr_id =   0;
     
     Large_CtgrVO lcvo = null;
@@ -35,10 +35,10 @@
             lclist = new ArrayList<>();
             do {
             	large_ctgr_id = rs.getInt("large_ctgr_id");
-            	main_ctgr_name = rs.getString("main_ctgr_name");
+            	large_ctgr_name = rs.getString("large_ctgr_name");
             	main_ctgr_id = rs.getInt("main_ctgr_id");    
                 
-                lcvo = new Large_CtgrVO(large_ctgr_id, main_ctgr_name, main_ctgr_id);    
+                lcvo = new Large_CtgrVO(large_ctgr_id, large_ctgr_name, main_ctgr_id);    
                 
                 lclist.add(lcvo);
             } while (rs.next());                
@@ -48,13 +48,11 @@
     } catch (SQLException e) { 
         e.printStackTrace();
     } finally {
-        try {
-        	 JdbcUtil.close(rs);
-             JdbcUtil.close(pstmt);
-             JdbcUtil.close(conn);
-        } catch (Exception e) { 
-            e.printStackTrace();
-        }
+        
+          JdbcUtil.close(rs);
+          JdbcUtil.close(pstmt);
+          JdbcUtil.close(conn);
+       
     }
 %>
 <!DOCTYPE html>
@@ -80,11 +78,23 @@
               while (ir.hasNext()) {
               lcvo = ir.next();
          %>
+
+               <li>
+               		<a href="" class="small-menu" value="<%= lcvo.getLarge_ctgr_id() %>"
+                		data-main_ctgr_id="<%= lcvo.getMain_ctgr_id() %>"><%= lcvo.getLarge_ctgr_name() %></a>
+               </li>
+    <!-- 각 도메인의 url도 db에 있어야 할거 같음.  -->
+
               
                 <li value="<%= lcvo.getLarge_ctgr_id() %>" class="large-menu2">
+
                		<a href="#" class="small-menu"  <%=large_ctgr_id == lcvo.getLarge_ctgr_id() ? "selected" : "" %>><%= lcvo.getMain_ctgr_name() %></a>
                </li>                
+
+               
+
  
+
 		<%
 		        } // while
 		 %> 

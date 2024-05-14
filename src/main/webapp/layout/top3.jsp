@@ -1156,6 +1156,7 @@ $(document).ready(function(){
 	      $('.my-like-text').addClass('jin4');
 	      $('.my-bag-text').addClass('jin4');
 	      $('.my-logout-text').addClass('jin4');
+	      $(".menu_pan")
 	    } else {
 	      // 특정 위치 미만으로 스크롤 될 때
 	      $('.head-main' ).removeClass('yj'); // 클래스명 제거
@@ -1172,8 +1173,7 @@ $(document).ready(function(){
 	    }
 	  });
 	});
-</script>
-<script>
+	
 $("#third-2").on("click",function(){
 	$("#third2").css("background","rgb(48, 48, 51)");
 	$("#third1").css("background","rgb(255, 255, 255)");
@@ -1203,7 +1203,7 @@ $("#third-2").on("click",function(){
 	 }
 });
  
- $(".menu_pan").mouseenter(function(){
+ $(".menu_pan, .bot-li").mouseenter(function(){
 	 $('.menu_pan').eq($(this).index()).css({
          display:'block'
      })  

@@ -165,8 +165,6 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
          });
      });
 
-
-	 
 	 $(".medium_ctgr_id111").on("click", function(){
 		   /*medium카테고리를 클릭 했을 떄 해당 카테고리의 상품 전부(All)를 보여주는 코드  */
   	 

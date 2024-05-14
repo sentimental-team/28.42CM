@@ -69,7 +69,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!-- <script src="/jspPro/resources/cdn-main/example.js"></script> -->
 </head>
 <header>
-	<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
+	<jsp:include page="/layout/top3.jsp" flush="false"></jsp:include>
 </header>
 <body>
 	<div id="wrap">
@@ -126,516 +126,6 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 			</div>
 
 			<ul class="photo_list">
-				<li class="photo1">
-					<div class="cc">
-						<a href="">
-							<div class="dd">
-								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef02ddc815e25cbb6acd7db6ab5317.jpg?width=600"
-									class="ff">
-							</div>
-						</a> 
-						<div class="gg">
-							<a class="hh" href="">토마스모어</a> <a
-								title="TE5-SH07 페이퍼셔츠 (10 Color)">
-								<div class="j">
-									<h5 class="jj">TE5-SH07 페이퍼셔츠 (10 Color)</h5>
-									<strong class="jjj"></strong>
-									<div class="01">
-										<span class="kkk"></span> <strong class="qqq">59,700</strong>
-									</div>
-									<ul class="eee">
-										<li class="yyy"></li>
-										<li></li>
-									</ul>
-								</div>
-							</a>
-							<div class="ppp">
-								<button class="heart">
-									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
-										viewBox="0 0 20 20">
-										<path
-											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
-											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-											stroke-width="1.5" />
-									</svg>
-									<h5 class="jj">35,854</h5>
-								</button>
-								<a href="#" class="review"> <svg
-										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
-								<path
-											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
-											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-											stroke-width="1.5"></path>
-								</svg>
-									<div class="review-point">4.8</div>
-									<div class="review-count">(1526)</div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="photo1">
-					<div class="cc">
-						<a href="">
-							<div class="dd">
-								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef008fb56dcdbf88b199fb5f90965d.jpg"
-									class="ff">
-							</div>
-						</a> 
-						<div class="gg">
-							<a class="hh" href="">파르티멘토 우먼</a> <a
-								title="[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s SHORT SLEEVE TEE_6COLORS">
-								<div class="j">
-									<h5 class="jj">[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s
-										SHORT SLEEVE TEE_6COLORS</h5>
-									<strong class="jjj"></strong>
-									<div class="01">
-										<span class="kkk">24%</span> <strong class="qqq">29,640</strong>
-									</div>
-									<ul class="eee">
-										<li class="yyy"></li>
-										<li></li>
-									</ul>
-								</div>
-							</a>
-							<div class="ppp">
-								<button class="heart">
-									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
-										viewBox="0 0 20 20">
-										<path
-											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
-											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-											stroke-width="1.5" />
-									</svg>
-									<h5 class="jj">41,275</h5>
-								</button>
-								<a href="#" class="review"> <svg
-										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
-								<path
-											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
-											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-											stroke-width="1.5"></path>
-								</svg>
-									<div class="review-point">4.8</div>
-									<div class="review-count">(15034)</div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="photo1">
-					<div class="cc">
-						<a href="">
-							<div class="dd">
-								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef02ddc815e25cbb6acd7db6ab5317.jpg?width=600"
-									class="ff">
-							</div>
-						</a> <br>
-						<div class="gg">
-							<a class="hh" href="">토마스모어</a> <a
-								title="TE5-SH07 페이퍼셔츠 (10 Color)">
-								<div class="j">
-									<h5 class="jj">TE5-SH07 페이퍼셔츠 (10 Color)</h5>
-									<strong class="jjj"></strong>
-									<div class="01">
-										<span class="kkk"></span> <strong class="qqq">59,700</strong>
-									</div>
-									<ul class="eee">
-										<li class="yyy"></li>
-										<li></li>
-									</ul>
-								</div>
-							</a>
-							<div class="ppp">
-								<button class="heart">
-									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
-										viewBox="0 0 20 20">
-										<path
-											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
-											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-											stroke-width="1.5" />
-									</svg>
-									<h5 class="jj">41,275</h5>
-								</button>
-								<a href="#" class="review"> <svg
-										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
-								<path
-											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
-											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-											stroke-width="1.5"></path>
-								</svg>
-									<div class="review-point">4.8</div>
-									<div class="review-count">(15034)</div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="photo1">
-					<div class="cc">
-						<a href="">
-							<div class="dd">
-								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef008fb56dcdbf88b199fb5f90965d.jpg"
-									class="ff">
-							</div>
-						</a> 
-						<div class="gg">
-							<a class="hh" href="">파르티멘토 우먼</a> <a
-								title="[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s SHORT SLEEVE TEE_6COLORS">
-								<div class="j">
-									<h5 class="jj">[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s
-										SHORT SLEEVE TEE_6COLORS</h5>
-									<strong class="jjj"></strong>
-									<div class="01">
-										<span class="kkk">24%</span> <strong class="qqq">29,640</strong>
-									</div>
-									<ul class="eee">
-										<li class="yyy"></li>
-										<li></li>
-									</ul>
-								</div>
-							</a>
-							<div class="ppp">
-								<button class="heart">
-									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
-										viewBox="0 0 20 20">
-										<path
-											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
-											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-											stroke-width="1.5" />
-									</svg>
-									<h5 class="jj">41,275</h5>
-								</button>
-								<a href="#" class="review"> <svg
-										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
-								<path
-											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
-											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-											stroke-width="1.5"></path>
-								</svg>
-									<div class="review-point">4.8</div>
-									<div class="review-count">(15034)</div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="photo1">
-					<div class="cc">
-						<a href="">
-							<div class="dd">
-								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef008fb56dcdbf88b199fb5f90965d.jpg"
-									class="ff">
-							</div>
-						</a> 
-						<div class="gg">
-							<a class="hh" href="">파르티멘토 우먼</a> <a
-								title="[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s SHORT SLEEVE TEE_6COLORS">
-								<div class="j">
-									<h5 class="jj">[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s
-										SHORT SLEEVE TEE_6COLORS</h5>
-									<strong class="jjj"></strong>
-									<div class="01">
-										<span class="kkk">24%</span> <strong class="qqq">29,640</strong>
-									</div>
-									<ul class="eee">
-										<li class="yyy"></li>
-										<li></li>
-									</ul>
-								</div>
-							</a>
-							<div class="ppp">
-								<button class="heart">
-									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
-										viewBox="0 0 20 20">
-										<path
-											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
-											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-											stroke-width="1.5" />
-									</svg>
-									<h5 class="jj">41,275</h5>
-								</button>
-								<a href="#" class="review"> <svg
-										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
-								<path
-											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
-											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-											stroke-width="1.5"></path>
-								</svg>
-									<div class="review-point">4.8</div>
-									<div class="review-count">(15034)</div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="photo1">
-					<div class="cc">
-						<a href="">
-							<div class="dd">
-								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef008fb56dcdbf88b199fb5f90965d.jpg"
-									class="ff">
-							</div>
-						</a> 
-						<div class="gg">
-							<a class="hh" href="">파르티멘토 우먼</a> <a
-								title="[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s SHORT SLEEVE TEE_6COLORS">
-								<div class="j">
-									<h5 class="jj">[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s
-										SHORT SLEEVE TEE_6COLORS</h5>
-									<strong class="jjj"></strong>
-									<div class="01">
-										<span class="kkk">24%</span> <strong class="qqq">29,640</strong>
-									</div>
-									<ul class="eee">
-										<li class="yyy"></li>
-										<li></li>
-									</ul>
-								</div>
-							</a>
-							<div class="ppp">
-								<button class="heart">
-									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
-										viewBox="0 0 20 20">
-										<path
-											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
-											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-											stroke-width="1.5" />
-									</svg>
-									<h5 class="jj">41,275</h5>
-								</button>
-								<a href="#" class="review"> <svg
-										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
-								<path
-											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
-											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-											stroke-width="1.5"></path>
-								</svg>
-									<div class="review-point">4.8</div>
-									<div class="review-count">(15034)</div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="photo1">
-					<div class="cc">
-						<a href="">
-							<div class="dd">
-								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef008fb56dcdbf88b199fb5f90965d.jpg"
-									class="ff">
-							</div>
-						</a> 
-						<div class="gg">
-							<a class="hh" href="">파르티멘토 우먼</a> <a
-								title="[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s SHORT SLEEVE TEE_6COLORS">
-								<div class="j">
-									<h5 class="jj">[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s
-										SHORT SLEEVE TEE_6COLORS</h5>
-									<strong class="jjj"></strong>
-									<div class="01">
-										<span class="kkk">24%</span> <strong class="qqq">29,640</strong>
-									</div>
-									<ul class="eee">
-										<li class="yyy"></li>
-										<li></li>
-									</ul>
-								</div>
-							</a>
-							<div class="ppp">
-								<button class="heart">
-									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
-										viewBox="0 0 20 20">
-										<path
-											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
-											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-											stroke-width="1.5" />
-									</svg>
-									<h5 class="jj">41,275</h5>
-								</button>
-								<a href="#" class="review"> <svg
-										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
-								<path
-											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
-											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-											stroke-width="1.5"></path>
-								</svg>
-									<div class="review-point">4.8</div>
-									<div class="review-count">(15034)</div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="photo1">
-					<div class="cc">
-						<a href="">
-							<div class="dd">
-								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef008fb56dcdbf88b199fb5f90965d.jpg"
-									class="ff">
-							</div>
-						</a> 
-						<div class="gg">
-							<a class="hh" href="">파르티멘토 우먼</a> <a
-								title="[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s SHORT SLEEVE TEE_6COLORS">
-								<div class="j">
-									<h5 class="jj">[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s
-										SHORT SLEEVE TEE_6COLORS</h5>
-									<strong class="jjj"></strong>
-									<div class="01">
-										<span class="kkk">24%</span> <strong class="qqq">29,640</strong>
-									</div>
-									<ul class="eee">
-										<li class="yyy"></li>
-										<li></li>
-									</ul>
-								</div>
-							</a>
-							<div class="ppp">
-								<button class="heart">
-									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
-										viewBox="0 0 20 20">
-										<path
-											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
-											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-											stroke-width="1.5" />
-									</svg>
-									<h5 class="jj">41,275</h5>
-								</button>
-								<a href="#" class="review"> <svg
-										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
-								<path
-											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
-											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-											stroke-width="1.5"></path>
-								</svg>
-									<div class="review-point">4.8</div>
-									<div class="review-count">(15034)</div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="photo1">
-					<div class="cc">
-						<a href="">
-							<div class="dd">
-								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef008fb56dcdbf88b199fb5f90965d.jpg"
-									class="ff">
-							</div>
-						</a> 
-						<div class="gg">
-							<a class="hh" href="">파르티멘토 우먼</a> <a
-								title="[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s SHORT SLEEVE TEE_6COLORS">
-								<div class="j">
-									<h5 class="jj">[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s
-										SHORT SLEEVE TEE_6COLORS</h5>
-									<strong class="jjj"></strong>
-									<div class="01">
-										<span class="kkk">24%</span> <strong class="qqq">29,640</strong>
-									</div>
-									<ul class="eee">
-										<li class="yyy"></li>
-										<li></li>
-									</ul>
-								</div>
-							</a>
-							<div class="ppp">
-								<button class="heart">
-									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
-										viewBox="0 0 20 20">
-										<path
-											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
-											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-											stroke-width="1.5" />
-									</svg>
-									<h5 class="jj">41,275</h5>
-								</button>
-								<a href="#" class="review"> <svg
-										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
-								<path
-											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
-											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-											stroke-width="1.5"></path>
-								</svg>
-									<div class="review-point">4.8</div>
-									<div class="review-count">(15034)</div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="photo1">
-					<div class="cc">
-						<a href="">
-							<div class="dd">
-								<img alt=""
-									src="https://img.29cm.co.kr/item/202404/11ef008fb56dcdbf88b199fb5f90965d.jpg"
-									class="ff">
-							</div>
-						</a> 
-						<div class="gg">
-							<a class="hh" href="">파르티멘토 우먼</a> <a
-								title="[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s SHORT SLEEVE TEE_6COLORS">
-								<div class="j">
-									<h5 class="jj">[5/17일 예약배송]_[29CM 단독 / 유투버 쁨 착용] PW 90s
-										SHORT SLEEVE TEE_6COLORS</h5>
-									<strong class="jjj"></strong>
-									<div class="01">
-										<span class="kkk">24%</span> <strong class="qqq">29,640</strong>
-									</div>
-									<ul class="eee">
-										<li class="yyy"></li>
-										<li></li>
-									</ul>
-								</div>
-							</a>
-							<div class="ppp">
-								<button class="heart">
-									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
-										viewBox="0 0 20 20">
-										<path
-											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
-											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-											stroke-width="1.5" />
-									</svg>
-									<h5 class="jj">41,275</h5>
-								</button>
-								<a href="#" class="review"> <svg
-										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
-								<path
-											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
-											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-											stroke-width="1.5"></path>
-								</svg>
-									<div class="review-point">4.8</div>
-									<div class="review-count">(15034)</div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</li>
 				
 			</ul>
 		</div>
@@ -673,5 +163,79 @@ $(".medium_ctgr_id111").on("click", function(){
        }
     });
 });
+
+$(".medium_ctgr_id111").on("click", function(){
+	   /*medium카테고리를 클릭 했을 떄 해당 카테고리의 상품 전부(All)를 보여주는 코드  */
+	  
+   let selectedMedium_ctgr_id = $(this).val(); 
+   $.ajax({
+      url: "../json/product_json.jsp", 
+      dataType: "json",
+      type: "GET", 
+      data: { medium_ctgr_id: selectedMedium_ctgr_id }, 
+      cache: false,
+      success: function(data){           	 
+           $(".photo_list").empty(); 
+          $(data.Product).each(function(index, element){	                     
+              $(".photo_list").append(`	
+             	<li class="photo1">
+  					<div class="cc">
+  						<a href="#">
+  							<div class="dd">
+  								<img alt=""
+  									src="\${element.pd_image_url}"
+  									class="ff">
+  							</div>
+  						</a> 
+  						<div class="gg">
+  							<a class="hh" href="#">\${element.brand_name}</a> <a
+  								title="\${element.pd_name}">
+  								<div class="j">
+  									<h5 class="jj">\${element.pd_name} (10 Color)</h5>
+  									<strong class="jjj"></strong>
+  									<div class="01">
+  										<span class="kkk"></span> <strong class="qqq">\${element.pd_price}</strong>
+  									</div>
+  									<ul class="eee">
+  										<li class="yyy"></li>
+  										<li></li>
+  									</ul>
+  								</div>
+  							</a>
+  							<div class="ppp">
+  								<button class="heart">
+  									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18"
+  										viewBox="0 0 20 20">
+  										<path
+  											d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+  											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+  											stroke-width="1.5" />
+  									</svg>
+  									<h5 class="jj">좋아요 갯수 카운팅하는 쿼리문 작성해야함</h5>
+  								</button>
+  								<a href="#" class="review"> <svg
+  										xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+  										viewBox="0 0 13 12" class="css-ik4rmz e1f8g7yn1">
+  								<path
+  											d="M4.146 3.95L0 4.583l3 3.075L2.292 12 6 9.95 9.708 12 9 7.658l3-3.075-4.146-.633L6 0z"
+  											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+  											stroke-width="1.5"></path>
+  								</svg>
+  									<div class="review-point">\${element.pd_grade}</div>
+  									<div class="review-count">평점 준 사람들 카운팅 하는 쿼리문 필요함</div>
+  								</a>
+  							</div>
+  						</div>
+  					</div>
+  				</li>                   		 
+                    `);	                     
+							 });  //data.small_ctgr		       
+         												 
+     						 },//success
+  			  	  error: function(){
+ 		      	   alert("error");
+    						  }	            	             
+					   });
+											   });
 </script>
 </html>

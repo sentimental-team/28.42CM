@@ -1,11 +1,8 @@
 <%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <head>
-<link rel="stylesheet"
-	href="https://d13fzx7h5ezopb.cloudfront.net/fonts/font.css">
-<link rel="stylesheet"
-	href="https://cdn-resource-microservice.29cm.co.kr/product/_next/static/css/4e0d66812cb47237.css"
-	data-n-g="">
+<link rel="stylesheet" href="https://d13fzx7h5ezopb.cloudfront.net/fonts/font.css">
+<link rel="stylesheet" href="https://cdn-resource-microservice.29cm.co.kr/product/_next/static/css/4e0d66812cb47237.css" data-n-g="">
 <style data-emotion="css-global" data-s="">
 ol, li, ul {
 	list-style: none;
