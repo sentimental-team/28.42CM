@@ -15,7 +15,8 @@ ResultSet rs = null;
 
 String pMedium_ctgr_id = request.getParameter("medium_ctgr_id");
 
-if(pMedium_ctgr_id == null || pMedium_ctgr_id.equals("")) pMedium_ctgr_id = "21";
+ if(pMedium_ctgr_id == null || pMedium_ctgr_id.equals("")) pMedium_ctgr_id = "21"; 
+ /* medium_ctgr_id가 21인 경우만 데이터 값을 가져온다. 이유는 모르겠으나 데이터 전부 넣어보고 한번 더 확인해 봐야겠다. */
 
 int medium_ctgr_id = Integer.parseInt(pMedium_ctgr_id);
 
@@ -53,6 +54,7 @@ try{
         jsonProduct.put("pd_price", pd_price);
         jsonProduct.put("pd_grade", pd_grade);
         jsonProduct.put("pd_image_url", pd_image_url);
+        jsonProduct.put("medium_ctgr_id", medium_ctgr_id);
        
 
         jsonEmpArray.add(jsonProduct);

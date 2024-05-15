@@ -95,7 +95,7 @@
 								<img src="https://img.29cm.co.kr/next-product/2023/03/17/7fa23081b50747409bfeb23237637017_20230317194723.jpg?width=150" alt="로우로우 스트링 크로스백 750 ep.2 Charcoal" loading="lazy" class="css-o1wb4r e1pwpbld9"></a>
 								<div class="shop_12_1">
 								<div translate="no">
-									<a class="" href="https://shop.29cm.co.kr/brand/215">로우로우</a>
+									<a class="shop_30_1" href="https://shop.29cm.co.kr/brand/215">로우로우</a>
 								</div>
 									<a id="product_title_1056337" class="shop_13_1" href="https://product.29cm.co.kr/catalog/1056337">로우로우 스트링 크로스백 750 ep.2 Charcoal</a>
 								<div class="shop_12_2">
