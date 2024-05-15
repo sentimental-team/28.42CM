@@ -15,7 +15,7 @@ ResultSet rs = null;
 
 String pSmall_ctgr_id = request.getParameter("small_ctgr_id");
 
-if(pSmall_ctgr_id == null || pSmall_ctgr_id.equals("")) pSmall_ctgr_id = "866";
+if(pSmall_ctgr_id == null || pSmall_ctgr_id.equals("")) pSmall_ctgr_id = "867";
 
 int small_ctgr_id = Integer.parseInt(pSmall_ctgr_id);
 
@@ -53,12 +53,12 @@ try{
         jsonProduct_small.put("pd_price", pd_price);
         jsonProduct_small.put("pd_grade", pd_grade);
         jsonProduct_small.put("pd_image_url", pd_image_url);
-       
+        jsonProduct_small.put("small_ctgr_id", small_ctgr_id);
 
         jsonEmpArray.add(jsonProduct_small);
     }
 
-    jsonData.put("jsonProduct_small", jsonEmpArray);
+    jsonData.put("Product_small", jsonEmpArray);
 
 } catch(Exception e){
     e.printStackTrace();
