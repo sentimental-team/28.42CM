@@ -33,8 +33,7 @@ ol, ul, li {
 	list-style: none;
 }
 
-article, aside, details, figcaption, figure, footer, header, main, menu,
-	nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
 	display: block;
 }
 
@@ -632,6 +631,11 @@ body, input, select, textarea, button, a {
 	height: 4px;
 	background-color: var(--ruler-scale-color-gray-950);
 	border-radius: 100%;
+}
+</style>
+<style>
+.my_inquire[_ngcontent-agf-c148] {
+    position: relative;
 }
 </style>
 </head>

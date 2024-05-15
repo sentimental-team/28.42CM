@@ -11,7 +11,14 @@
 <%@page import="java.sql.Connection"%>
 <%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<<<<<<< HEAD
 <%
+=======
+<<<<<<< HEAD
+=======
+ <%
+
+>>>>>>> 170dd972a541c85dd1f843feb6a699b9a65f9615
     Connection conn = ConnectionProvider.getConnection();
     
     PreparedStatement pstmt = null;
@@ -56,6 +63,7 @@
         } // try
     } // try
 %>
+>>>>>>> 35dd7839e5100e10d97865bcc8221deb3a22d2db
 <!DOCTYPE html>
 <html>
 <head>

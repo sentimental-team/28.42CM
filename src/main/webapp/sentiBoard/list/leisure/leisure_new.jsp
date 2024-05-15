@@ -563,7 +563,7 @@ button {
 
 .css-1hjflnh {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 60px 20px;
     padding: 24px 0px 60px;
 }

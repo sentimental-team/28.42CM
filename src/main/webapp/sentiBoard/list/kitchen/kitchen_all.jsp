@@ -561,7 +561,7 @@ button {
 
 @media ( max-width : 1920px) {
 	.css-1hjflnh {
-		grid-template-columns: repeat(5, 1fr);
+		grid-template-columns: repeat(6, 1fr);
 	}
 }
 

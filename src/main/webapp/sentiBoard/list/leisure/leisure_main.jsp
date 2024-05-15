@@ -8,6 +8,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>leisure_main</title>
+<link rel="shortcut icon" href="#">
 
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -45,8 +46,8 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
 }
 
 div {
-    display: block;
-    unicode-bidi: isolate;
+	display: block;
+	unicode-bidi: isolate;
 }
 
 ol, ul, li {
@@ -86,614 +87,611 @@ user agent stylesheet
 }
 </style>
 <style>
-
 .css-ud09pe {
-    position: fixed;
-    bottom: calc(var(--ruler-scale-dimension-225) + constant(safe-area-inset-bottom));
-    bottom: calc(var(--ruler-scale-dimension-225) + env(safe-area-inset-bottom));
-    left: var(--ruler-scale-dimension-225);
-    right: var(--ruler-scale-dimension-225);
-    z-index: 2147483647;
+	position: fixed;
+	bottom: calc(var(- -ruler-scale-dimension-225)+ constant(safe-area-inset-bottom));
+	bottom: calc(var(- -ruler-scale-dimension-225)+ env(safe-area-inset-bottom));
+	left: var(- -ruler-scale-dimension-225);
+	right: var(- -ruler-scale-dimension-225);
+	z-index: 2147483647;
 }
 
-@supports (position:sticky) or (position:-webkit-sticky) {
-    .css-1opn7tv {
-        position: -webkit-sticky;
-        position: sticky;
-        z-index: 10;
-        top: 0px;
-        padding-top: 0;
-    }
+@
+supports (position:sticky) or (position:-webkit-sticky) { .css-1opn7tv {
+	position:-webkit-sticky;
+	position: sticky;
+	z-index: 10;
+	top: 0px;
+	padding-top: 0;
 }
 
+}
 .css-1opn7tv {
-    min-width: 540;
-    margin: 0 auto;
-    padding-top: 260px;
+	min-width: 540;
+	margin: 0 auto;
+	padding-top: 260px;
 }
 
-@supports (position:sticky) or (position:-webkit-sticky) {
-    .css-599st9 {
-        padding-bottom: 120px;
-    }
+@
+supports (position:sticky) or (position:-webkit-sticky) { .css-599st9 {
+	padding-bottom:120px;
+	
 }
 
+}
 .css-1gqrtg9 {
-    position: relative;
-    margin-top: 59px;
+	position: relative;
+	margin-top: 59px;
 }
 
 .css-79elbk {
-    position: relative;
+	position: relative;
 }
 
 .css-ccftqy {
-    height: 680px;
-    width: 100%;
-    position: relative;
+	height: 680px;
+	width: 100%;
+	position: relative;
 }
 
 .css-10klw3m {
-    height: 100%;
+	height: 100%;
 }
+
 .swiper-container-pointer-events {
-    touch-action: pan-y;
+	touch-action: pan-y;
 }
 
 .swiper-container {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
-    z-index: 1;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	overflow: hidden;
+	list-style: none;
+	padding: 0;
+	z-index: 1;
 }
 
 .css-ccftqy .swiper-pagination {
-    bottom: 30px;
-    position: absolute;
-    text-align: center;
-    transition: all 0.3s ease 0s;
-    transform: translateZ(0px);
-    z-index: 10;
-    height: 10px;
-    left: 0px;
-    right: 0px;
+	bottom: 30px;
+	position: absolute;
+	text-align: center;
+	transition: all 0.3s ease 0s;
+	transform: translateZ(0px);
+	z-index: 10;
+	height: 10px;
+	left: 0px;
+	right: 0px;
 }
 
-@media (min-width: 541px) {
-    .css-ccftqy .swiper-pagination-bullet {
-        margin: 0px 5px;
-        border-radius: 50%;
-    }
+@media ( min-width : 541px) {
+	.css-ccftqy .swiper-pagination-bullet {
+		margin: 0px 5px;
+		border-radius: 50%;
+	}
 }
 
 .css-ccftqy .swiper-pagination-bullet {
-    width: 16px;
-    height: 16px;
-    background: rgba(255, 255, 255, 0.3);
-    vertical-align: top;
-    display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: rgba(255, 255, 255, 0.3);
+	vertical-align: top;
+	display: inline-block;
 }
 
 .swiper-container-android .swiper-slide, .swiper-wrapper {
-    transform: translateZ(0);
+	transform: translateZ(0);
 }
 
 .swiper-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    display: flex;
-    transition-property: transform;
-    box-sizing: content-box;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	display: flex;
+	transition-property: transform;
+	box-sizing: content-box;
 }
 
 .swiper-slide {
-    flex-shrink: 0;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transition-property: transform;
+	flex-shrink: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transition-property: transform;
 }
 
 .css-12ngsuq {
-    position: relative;
-    background-color: rgb(244, 244, 244);
-    width: 100%;
-    height: 100%;
+	position: relative;
+	background-color: rgb(244, 244, 244);
+	width: 100%;
+	height: 100%;
 }
 
 .css-1rdq2xw {
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    object-position: 50% center;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	object-fit: cover;
+	object-position: 50% center;
 }
 
-@media (min-width: 541px) {
-    .css-ftsck8 {
-        height: 680px;
-        margin: 0px 100px 0px 380px;
-    }
+@media ( min-width : 541px) {
+	.css-ftsck8 {
+		height: 680px;
+		margin: 0px 100px 0px 380px;
+	}
 }
 
 .css-ftsck8 {
-    overflow: hidden;
-    text-align: left;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    position: absolute;
-    top: 0px;
+	overflow: hidden;
+	text-align: left;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	position: absolute;
+	top: 0px;
 }
 
-@media (min-width: 541px) {
-    .css-1a9mgan {
-        width: 440px;
-        margin-left: 60px;
-    }
+@media ( min-width : 541px) {
+	.css-1a9mgan {
+		width: 440px;
+		margin-left: 60px;
+	}
 }
 
 .css-1a9mgan {
-    color: rgb(0, 0, 0);
+	color: rgb(0, 0, 0);
 }
 
 .css-rrjwli {
-    white-space: pre-wrap;
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 58px;
+	white-space: pre-wrap;
+	font-size: 48px;
+	font-weight: 500;
+	line-height: 58px;
 }
 
 .css-1pnjbcd {
-    margin-top: 19px;
-    font-size: 28px;
-    line-height: 35px;
-    white-space: pre-wrap;
+	margin-top: 19px;
+	font-size: 28px;
+	line-height: 35px;
+	white-space: pre-wrap;
 }
 
 .css-145q29u {
-    position: absolute;
-    top: 50%;
-    margin-top: -60px;
-    padding: 30px;
-    z-index: 10;
-    cursor: pointer;
-    left: 275px;
-    right: auto;
+	position: absolute;
+	top: 50%;
+	margin-top: -60px;
+	padding: 30px;
+	z-index: 10;
+	cursor: pointer;
+	left: 275px;
+	right: auto;
 }
 
 .css-8k8h7u {
-    width: 30px;
-    height: 60px;
-    transform: rotate(180deg);
+	width: 30px;
+	height: 60px;
+	transform: rotate(180deg);
 }
 
 .css-8k8h7u path {
-    stroke: rgb(48, 48, 51);
-    stroke-width: 3;
+	stroke: rgb(48, 48, 51);
+	stroke-width: 3;
 }
 
 .css-a9wn2v {
-    position: absolute;
-    top: 50%;
-    margin-top: -60px;
-    padding: 30px;
-    z-index: 10;
-    cursor: pointer;
-    right: 0px;
-    left: auto;
+	position: absolute;
+	top: 50%;
+	margin-top: -60px;
+	padding: 30px;
+	z-index: 10;
+	cursor: pointer;
+	right: 0px;
+	left: auto;
 }
 
 .css-1s3uxh2 {
-    width: 30px;
-    height: 60px;
+	width: 30px;
+	height: 60px;
 }
 
 .css-1s3uxh2 path {
-    stroke: rgb(48, 48, 51);
-    stroke-width: 3;
+	stroke: rgb(48, 48, 51);
+	stroke-width: 3;
 }
 
-@media (min-width: 541px) {
-    .css-1onoukq {
-        position: absolute;
-        z-index: 2;
-        top: 0px;
-        left: 25px;
-    }
+@media ( min-width : 541px) {
+	.css-1onoukq {
+		position: absolute;
+		z-index: 2;
+		top: 0px;
+		left: 25px;
+	}
 }
 
 .css-1onoukq {
-    width: 250px;
-    margin: 25px 0px 0px;
-    padding: 25px 25px 15px;
-    background: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 30px 0px;
+	width: 250px;
+	margin: 25px 0px 0px;
+	padding: 25px 25px 15px;
+	background: rgb(255, 255, 255);
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 30px 0px;
 }
 
 .css-8t2d70 {
-    padding: 3px 0px;
+	padding: 3px 0px;
 }
 
 .css-kkqm0g {
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
-    margin: -6px 0px 8px;
-    padding: 0px 30px 12px 0px;
-    font-size: 23px;
-    font-weight: 800;
-    line-height: 1.25;
-    color: rgb(0, 0, 0);
-    text-align: left;
-    text-transform: uppercase;
-    border-bottom: 4px solid rgb(0, 0, 0);
-    outline: none;
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	margin: -6px 0px 8px;
+	padding: 0px 30px 12px 0px;
+	font-size: 23px;
+	font-weight: 800;
+	line-height: 1.25;
+	color: rgb(0, 0, 0);
+	text-align: left;
+	text-transform: uppercase;
+	border-bottom: 4px solid rgb(0, 0, 0);
+	outline: none;
 }
 
 .css-eannyr {
-    list-style: none;
+	list-style: none;
 }
 
 .css-1iv23n0 {
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 3px 30px 3px 0px;
-    font-size: 16px;
-    font-weight: 200;
-    line-height: 28px;
-    color: rgb(93, 93, 93);
-    text-align: left;
-    border: 0px;
-    outline: none;
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 3px 30px 3px 0px;
+	font-size: 16px;
+	font-weight: 200;
+	line-height: 28px;
+	color: rgb(93, 93, 93);
+	text-align: left;
+	border: 0px;
+	outline: none;
 }
 
-@media (min-width: 541px) {
-    .css-4e43p {
-        max-width: 1920px;
-        margin: 0px auto;
-        padding: 0px 50px 0px 300px;
-    }
+@media ( min-width : 541px) {
+	.css-4e43p {
+		max-width: 1920px;
+		margin: 0px auto;
+		padding: 0px 50px 0px 300px;
+	}
 }
 
-@media (min-width: 541px) {
-    .css-zl0y5r {
-        padding: 58px 0px 80px;
-    }
+@media ( min-width : 541px) {
+	.css-zl0y5r {
+		padding: 58px 0px 80px;
+	}
 }
 
-@media (min-width: 541px) {
-    .css-19p5dbs {
-        padding-bottom: 100px;
-    }
+@media ( min-width : 541px) {
+	.css-19p5dbs {
+		padding-bottom: 100px;
+	}
 }
 
-@media (min-width: 541px) and (max-width: 1400px) {
-    .css-3dx3su {
-    }
+@media ( min-width : 541px) and (max-width: 1400px) {
+	.css-3dx3su {
+		
+	}
 }
 
-@media (min-width: 541px) {
-    .css-3dx3su {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: -40px;
-    }
+@media ( min-width : 541px) {
+	.css-3dx3su {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -40px;
+	}
 }
 
-@media (min-width: 541px) and (max-width: 1400px) {
-    .css-1dmc8sd {
-        padding-left: 30px;
-    }
+@media ( min-width : 541px) and (max-width: 1400px) {
+	.css-1dmc8sd {
+		padding-left: 30px;
+	}
 }
 
-@media (min-width: 541px) {
-    .css-1dmc8sd {
-        flex: 0 0 auto;
-        width: 50%;
-        padding: 0px 0px 30px 40px;
-        box-sizing: border-box;
-    }
+@media ( min-width : 541px) {
+	.css-1dmc8sd {
+		flex: 0 0 auto;
+		width: 50%;
+		padding: 0px 0px 30px 40px;
+		box-sizing: border-box;
+	}
 }
 
 .css-y6diwn {
-    display: block;
-    position: relative;
-    text-decoration: none;
+	display: block;
+	position: relative;
+	text-decoration: none;
 }
 
 .css-1324aqc {
-    width: 100%;
+	width: 100%;
 }
 
 .css-9zetyy {
-    display: flex;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    justify-content: center;
-    color: rgb(0, 0, 0);
+	display: flex;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	justify-content: center;
+	color: rgb(0, 0, 0);
 }
 
-@media (min-width: 541px) {
-    .css-dtuif0 {
-        margin-top: 12px;
-        font-size: 23px;
-        line-height: 30px;
-        font-weight: 600;
-    }
+@media ( min-width : 541px) {
+	.css-dtuif0 {
+		margin-top: 12px;
+		font-size: 23px;
+		line-height: 30px;
+		font-weight: 600;
+	}
 }
 
 .css-1w6vxok {
-    margin-top: 6px;
-    font-size: 15px;
-    line-height: 24px;
+	margin-top: 6px;
+	font-size: 15px;
+	line-height: 24px;
 }
 
 .css-1rw4rkj {
-    position: relative;
-    overflow: hidden;
+	position: relative;
+	overflow: hidden;
 }
 
 .css-11egtcj {
-    display: flex;
+	display: flex;
 }
 
 .css-13tv9x8 {
-    flex: 1 1 0%;
-    display: block;
-    min-height: 70px;
-    height: 100%;
-    border-top: 1px solid rgb(48, 48, 51);
-    background: rgb(48, 48, 51);
-    font-size: 18px;
-    line-height: 70px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    position: relative;
-    margin: 0px -1px;
+	flex: 1 1 0%;
+	display: block;
+	min-height: 70px;
+	height: 100%;
+	border-top: 1px solid rgb(48, 48, 51);
+	background: rgb(48, 48, 51);
+	font-size: 18px;
+	line-height: 70px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	position: relative;
+	margin: 0px -1px;
 }
 
 .css-ydj7ef {
-    flex: 1 1 0%;
-    display: block;
-    min-height: 70px;
-    height: 100%;
-    border-top: 1px solid rgb(212, 212, 212);
-    background: rgb(255, 255, 255);
-    font-size: 18px;
-    line-height: 70px;
-    color: rgb(160, 160, 160);
-    text-align: center;
+	flex: 1 1 0%;
+	display: block;
+	min-height: 70px;
+	height: 100%;
+	border-top: 1px solid rgb(212, 212, 212);
+	background: rgb(255, 255, 255);
+	font-size: 18px;
+	line-height: 70px;
+	color: rgb(160, 160, 160);
+	text-align: center;
 }
 
-@media (min-width: 541px) {
-    .css-9qgiem {
-        padding: 50px 100px 40px;
-        text-align: center;
-        background: rgb(48, 48, 51);
-    }
+@media ( min-width : 541px) {
+	.css-9qgiem {
+		padding: 50px 100px 40px;
+		text-align: center;
+		background: rgb(48, 48, 51);
+	}
 }
 
-
-@media (min-width: 541px) {
-    .css-fnx4f5 {
-        display: none;
-    }
+@media ( min-width : 541px) {
+	.css-fnx4f5 {
+		display: none;
+	}
 }
 
-
-@media (min-width: 541px) {
-    .css-f1nnni {
-        display: none;
-    }
+@media ( min-width : 541px) {
+	.css-f1nnni {
+		display: none;
+	}
 }
 
 .css-1ymgzmv {
-    position: relative;
+	position: relative;
 }
 
 .css-6vy6m4 {
-    position: absolute;
-    top: 50%;
-    margin-top: -60px;
-    z-index: 10;
-    cursor: pointer;
-    padding: 20px 30px;
-    background: none;
-    left: -100px;
-    right: auto;
+	position: absolute;
+	top: 50%;
+	margin-top: -60px;
+	z-index: 10;
+	cursor: pointer;
+	padding: 20px 30px;
+	background: none;
+	left: -100px;
+	right: auto;
 }
 
 .css-1dv0xyg {
-    width: 22px;
-    height: 44px;
-    opacity: 0.35;
-    transform: rotate(180deg);
+	width: 22px;
+	height: 44px;
+	opacity: 0.35;
+	transform: rotate(180deg);
 }
 
 .css-1dv0xyg path {
-    stroke: rgb(255, 255, 255);
-    stroke-width: 2;
+	stroke: rgb(255, 255, 255);
+	stroke-width: 2;
 }
 
 .css-vhkf1b {
-    position: absolute;
-    top: 50%;
-    margin-top: -60px;
-    z-index: 10;
-    cursor: pointer;
-    padding: 20px 30px;
-    background: none;
-    right: -100px;
-    left: auto;
+	position: absolute;
+	top: 50%;
+	margin-top: -60px;
+	z-index: 10;
+	cursor: pointer;
+	padding: 20px 30px;
+	background: none;
+	right: -100px;
+	left: auto;
 }
 
 .css-1tulk9i {
-    width: 22px;
-    height: 44px;
+	width: 22px;
+	height: 44px;
 }
 
 .css-1tulk9i path {
-    stroke: rgb(255, 255, 255);
-    stroke-width: 2;
+	stroke: rgb(255, 255, 255);
+	stroke-width: 2;
 }
 
-@media (min-width: 541px) {
-    .css-13alrll {
-        padding-bottom: 54px;
-    }
+@media ( min-width : 541px) {
+	.css-13alrll {
+		padding-bottom: 54px;
+	}
 }
 
-
-@media (min-width: 541px) {
-    .css-1ymgzmv .swiper-pagination {
-        height: 16px;
-    }
+@media ( min-width : 541px) {
+	.css-1ymgzmv .swiper-pagination {
+		height: 16px;
+	}
 }
 
 .css-1ymgzmv .swiper-pagination {
-    position: absolute;
-    text-align: center;
-    transition: all 0.3s ease 0s;
-    transform: translateZ(0px);
-    left: 0px;
-    right: 0px;
-    z-index: 10;
-    bottom: 0px;
+	position: absolute;
+	text-align: center;
+	transition: all 0.3s ease 0s;
+	transform: translateZ(0px);
+	left: 0px;
+	right: 0px;
+	z-index: 10;
+	bottom: 0px;
 }
 
 .css-1ymgzmv .swiper-pagination-bullet-active {
-    opacity: 1;
+	opacity: 1;
 }
 
-@media (min-width: 541px) {
-    .css-1ymgzmv .swiper-pagination-bullet {
-        border-radius: 50%;
-        width: 16px;
-        height: 16px;
-        background: rgb(255, 255, 255);
-        opacity: 0.3;
-        margin: 0px 5px;
-    }
+@media ( min-width : 541px) {
+	.css-1ymgzmv .swiper-pagination-bullet {
+		border-radius: 50%;
+		width: 16px;
+		height: 16px;
+		background: rgb(255, 255, 255);
+		opacity: 0.3;
+		margin: 0px 5px;
+	}
 }
 
 .css-1ymgzmv .swiper-pagination-bullet {
-    display: inline-block;
+	display: inline-block;
 }
 
 .css-s06ru1 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-shrink: 0;
-    position: relative;
-    width: 100%;
-    height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-shrink: 0;
+	position: relative;
+	width: 100%;
+	height: 100%;
 }
 
-
-@media (max-width: 1400px) {
-    .css-1htel8m {
-        padding: 0px 10px;
-    }
+@media ( max-width : 1400px) {
+	.css-1htel8m {
+		padding: 0px 10px;
+	}
 }
 
 .css-1htel8m {
-    position: relative;
-    box-sizing: border-box;
-    width: 20%;
-    padding: 0px 20px;
-    color: rgb(255, 255, 255);
-    text-align: center;
+	position: relative;
+	box-sizing: border-box;
+	width: 20%;
+	padding: 0px 20px;
+	color: rgb(255, 255, 255);
+	text-align: center;
 }
 
 .css-13o7eu2 {
-    display: block;
+	display: block;
 }
 
 .css-15ri281 {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 100%;
-    background: rgb(244, 244, 244);
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 100%;
+	background: rgb(244, 244, 244);
 }
 
 .css-1efnu1n {
-    position: absolute;
-    inset: 0px;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
+	position: absolute;
+	inset: 0px;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
 }
 
 .css-uwwqev {
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .css-1pejrgr {
-    margin-top: 15px;
+	margin-top: 15px;
 }
 
-@media (min-width: 541px) {
-    .css-us5d4h {
-        margin-bottom: 7px;
-        font-size: 13px;
-        text-decoration: underline;
-    }
+@media ( min-width : 541px) {
+	.css-us5d4h {
+		margin-bottom: 7px;
+		font-size: 13px;
+		text-decoration: underline;
+	}
 }
 
 .css-us5d4h {
-    display: block;
-    font-weight: 700;
-    line-height: 1.2;
-    color: rgb(255, 255, 255);
+	display: block;
+	font-weight: 700;
+	line-height: 1.2;
+	color: rgb(255, 255, 255);
 }
 
-@media (min-width: 541px) {
-    .css-5bfev {
-        padding: 0px 1%;
-        color: rgb(255, 255, 255);
-    }
+@media ( min-width : 541px) {
+	.css-5bfev {
+		padding: 0px 1%;
+		color: rgb(255, 255, 255);
+	}
 }
 
 .css-5bfev {
-    margin-bottom: 14px;
-    font-size: 12px;
-    line-height: 16px;
-    color: rgb(93, 93, 93);
-    word-break: break-all;
+	margin-bottom: 14px;
+	font-size: 12px;
+	line-height: 16px;
+	color: rgb(93, 93, 93);
+	word-break: break-all;
 }
 
 .css-mojyhg {
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 16px;
-    color: rgb(255, 255, 255);
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 16px;
+	color: rgb(255, 255, 255);
 }
 
 .css-1cs9oh7 {
-    position: absolute;
-    top: 15px;
-    right: 0px;
-    left: 0px;
-    margin-top: calc(100% - 40px);
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 1.2;
-    color: transparent;
+	position: absolute;
+	top: 15px;
+	right: 0px;
+	left: 0px;
+	margin-top: calc(100% - 40px);
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 1.2;
+	color: transparent;
 }
-
 </style>
 <style>
 @media ( max-width : 1340px) {
@@ -1089,8 +1087,7 @@ svg:not(:root) {
 							</div>
 							<div class="swiper-slide swiper-slide-duplicate-next"
 								data-swiper-slide-index="0" style="width: 627px;">
-								<a class="css-12ngsuq eiewl70" target="_self"
-									href="#"><picture>
+								<a class="css-12ngsuq eiewl70" target="_self" href="#"><picture>
 									<img
 										src="https://img.29cm.co.kr/next-product/2024/05/08/6f3a219f5a464b56819ff80c21c34adc_20240508180402.jpg?width=2000"
 										class="css-1rdq2xw eiewl71"></picture>
@@ -1103,8 +1100,7 @@ svg:not(:root) {
 							</div>
 							<div class="swiper-slide" data-swiper-slide-index="1"
 								style="width: 627px;">
-								<a class="css-12ngsuq eiewl70" target="_self"
-									href="#"><picture>
+								<a class="css-12ngsuq eiewl70" target="_self" href="#"><picture>
 									<img
 										src="https://img.29cm.co.kr/next-product/2024/05/08/23f246eedc4044e4b32db5a4b71d577a_20240508180032.jpg?width=2000"
 										class="css-1rdq2xw eiewl71"></picture>
@@ -1117,8 +1113,7 @@ svg:not(:root) {
 							</div>
 							<div class="swiper-slide" data-swiper-slide-index="2"
 								style="width: 627px;">
-								<a class="css-12ngsuq eiewl70" target="_self"
-									href="#"><picture>
+								<a class="css-12ngsuq eiewl70" target="_self" href="#"><picture>
 									<img
 										src="https://img.29cm.co.kr/next-product/2024/05/08/2e9fb761932e4f96896d5c23a722c5bd_20240508180258.jpg?width=2000"
 										class="css-1rdq2xw eiewl71"></picture>
@@ -1131,8 +1126,7 @@ svg:not(:root) {
 							</div>
 							<div class="swiper-slide" data-swiper-slide-index="3"
 								style="width: 627px;">
-								<a class="css-12ngsuq eiewl70" target="_self"
-									href="#"><picture>
+								<a class="css-12ngsuq eiewl70" target="_self" href="#"><picture>
 									<img
 										src="https://img.29cm.co.kr/next-product/2024/05/08/6e8dc6a488114e2baab377967490a30f_20240508175744.jpg?width=2000"
 										class="css-1rdq2xw eiewl71"></picture>
@@ -1145,8 +1139,7 @@ svg:not(:root) {
 							</div>
 							<div class="swiper-slide swiper-slide-prev"
 								data-swiper-slide-index="4" style="width: 627px;">
-								<a class="css-12ngsuq eiewl70" target="_self"
-									href="#"><picture>
+								<a class="css-12ngsuq eiewl70" target="_self" href="#"><picture>
 									<img
 										src="https://img.29cm.co.kr/next-product/2024/05/08/c22e491618784c7ba208d82860dcf00c_20240508175925.jpg?width=2000"
 										class="css-1rdq2xw eiewl71"></picture>
@@ -1159,8 +1152,7 @@ svg:not(:root) {
 							</div>
 							<div class="swiper-slide swiper-slide-active"
 								data-swiper-slide-index="5" style="width: 627px;">
-								<a class="css-12ngsuq eiewl70" target="_self"
-									href="#"><picture>
+								<a class="css-12ngsuq eiewl70" target="_self" href="#"><picture>
 									<img
 										src="https://img.29cm.co.kr/next-product/2024/05/08/27b0afd9fdde4a48a8f981771021ab74_20240508180144.jpg?width=2000"
 										class="css-1rdq2xw eiewl71"></picture>
@@ -1174,8 +1166,7 @@ svg:not(:root) {
 							<div
 								class="swiper-slide swiper-slide-duplicate swiper-slide-next"
 								data-swiper-slide-index="0" style="width: 627px;">
-								<a class="css-12ngsuq eiewl70" target="_self"
-									href="#"><picture>
+								<a class="css-12ngsuq eiewl70" target="_self" href="#"><picture>
 									<img
 										src="https://img.29cm.co.kr/next-product/2024/05/08/6f3a219f5a464b56819ff80c21c34adc_20240508180402.jpg?width=2000"
 										class="css-1rdq2xw eiewl71"></picture>
@@ -1209,6 +1200,7 @@ svg:not(:root) {
 					</div>
 				</div>
 				<div class="css-1onoukq etlggkw0">
+<<<<<<< HEAD
 					<div class="css-8t2d70 etlggkw1">
 						<h2 class="css-kkqm0g etlggkw2">레저</h2>
 					</div>
@@ -1236,6 +1228,27 @@ svg:not(:root) {
 						<a class="css-1iv23n0 etlggkw4"
 							href="/jspPro/sentiBoard/list/leisure/leisure_bike.jsp">자전거</a>
 					</ul>
+=======
+					<form action="leisure_main.ss" method="post"
+						enctype="multipart/form-data">
+						<div class="css-8t2d70 etlggkw1">
+							<h2 class="css-kkqm0g etlggkw2">레저</h2>
+						</div>
+						<ul class="css-eannyr etlggkw3">
+							<a class="css-1iv23n0 etlggkw4" href="#">ALL</a>
+							<a class="css-1iv23n0 etlggkw4" href="#">NEW</a>
+							<a class="css-1iv23n0 etlggkw4" href="leisure_camping.ss">캠핑</a>
+							<a class="css-1iv23n0 etlggkw4" href="leisure_hiking.ss">등산,하이킹</a>
+							<a class="css-1iv23n0 etlggkw4" href="leisure_golf.ss">골프</a>
+							<a class="css-1iv23n0 etlggkw4" href="leisure_swiming.ss">수영</a>
+							<a class="css-1iv23n0 etlggkw4" href="leisure_running.ss">러닝</a>
+							<a class="css-1iv23n0 etlggkw4" href="leisure_indoor-exercise.ss">실내운동</a>
+							<a class="css-1iv23n0 etlggkw4" href="leisure_travel.ss">여행</a>
+							<a class="css-1iv23n0 etlggkw4" href="leisure_tennis.ss">테니스</a>
+							<a class="css-1iv23n0 etlggkw4" href="leisure_bike.ss">자전거</a>
+						</ul>
+					</form>
+>>>>>>> 170dd972a541c85dd1f843feb6a699b9a65f9615
 				</div>
 			</div>
 			<!-- second -->
@@ -1857,162 +1870,33 @@ svg:not(:root) {
 					<hr class="css-1kak7cd euxw2yv3">
 					<ul class="css-1kc1i5k euxw2yv2">
 						<div role="grid" class="css-kdcvh2" tabindex="0"
-							style="position: relative; width: 100%; max-width: 100%; height: 2743px; max-height: 2743px;">
+							style="position: relative; width: 100%; max-width: 100%; height: 3656px; max-height: 3656px;">
 							<div role="gridcell"
-								style="top: 1826px; left: 0px; width: 300px; writing-mode: horizontal-tb; position: absolute;">
+								style="top: 1926px; left: 0px; width: 303px; writing-mode: horizontal-tb; position: absolute;">
 								<div class="css-veh7ha elhzesg0">
 									<a class="css-1jypvcz e1qv5i7p8"
-										href="https://content.29cm.co.kr/showcase/1167"><span
+										href="https://content.29cm.co.kr/brand-news/20008"><span
 										class="css-1c39dt4 e1qv5i7p0"></span>
 									<div class="css-u58y5m e1qv5i7p1">
 											<img
-												src="https://img.29cm.co.kr/cm/202404/11ef06d16d57b28fbb149bb536d89d65.jpg?width=500"
+												src="https://img.29cm.co.kr/cms/202405/11ef0ce095167846892b770c6195e769.jpeg?width=500"
 												class="css-mqd1xo e1qv5i7p3">
 										</div>
 										<div class="css-10mzaug e1qv5i7p4">
-											<h1 class="css-1se6r14 e1qv5i7p6">흔들림 없는 안정감</h1>
-											<p class="css-jg1sml e1qv5i7p7">일상은 물론 자연 속에서도 함께할 수 있는
-												블랙야크의 요크셔 더퍼스트 GTX를 소개합니다. 아이유가 착용한 블랙야크 룩북을 만나보세요. 쇼케이스 기간
-												단독 할인과 추가 쿠폰 이벤트를 진행합니다.</p>
+											<h1 class="css-1se6r14 e1qv5i7p6">타협 없는 아웃도어 브랜드</h1>
+											<p class="css-jg1sml e1qv5i7p7">등산 및 아웃도어 분야에서 오랜 전통을
+												자랑하는 컬럼비아의 신상 잡화 아이템을 소개합니다. 강한 자외선을 막아주는 버킷햇부터 백팩까지 24SS
+												신상을 만나보세요.</p>
 										</div></a>
 									<div class="css-15xwjg0 e1b74qft0">
 										<a class="css-mn2zdd e1b74qft1"
-											href="https://product.29cm.co.kr/catalog/2539719"><img
-											src="https://img.29cm.co.kr/next-product/2024/03/19/844be9a8b8d24906bc242fe3eef07f83_20240319093647.jpg?width=150"
+											href="https://product.29cm.co.kr/catalog/2598097"><img
+											src="https://img.29cm.co.kr/item/202404/11ef0116eeb25f4388b159fccb3c65a0.jpg?width=150"
 											class="css-nt3lq3 e1b74qft2">
 										<div class="css-161seae e1b74qft3">
-												<span class="css-16b7yk2 e1b74qft4">블랙야크</span><span>요크셔
-													더퍼스트 GTX_LE</span><span class="css-pu7sky e1b74qft5">30%
-													175,296<span class="css-0 e1b74qft6">won</span>
-												</span>
-											</div></a>
-										<div class="css-16j3p2r e1b74qft7">
-											<button class="css-1u7zeg9 e1b74qft8">
-												<svg xmlns="http://www.w3.org/2000/svg" width="16"
-													height="14" viewBox="0 0 20 20">
-													<path
-														d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
-														fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-														stroke-width="0.7"></path></svg>
-												<span class="css-1afbq5h e1b74qft9">23</span>
-											</button>
-										</div>
-									</div>
-									<div class="css-15xwjg0 e1b74qft0">
-										<a class="css-mn2zdd e1b74qft1"
-											href="https://product.29cm.co.kr/catalog/2439788"><img
-											src="https://img.29cm.co.kr/item/202403/11eee684fb2177bc9a762b4d2bb50bca.jpg?width=150"
-											class="css-nt3lq3 e1b74qft2">
-										<div class="css-161seae e1b74qft3">
-												<span class="css-16b7yk2 e1b74qft4">블랙야크</span><span>요크셔
-													더퍼스트 GTX_BE</span><span class="css-pu7sky e1b74qft5">30%
-													175,296<span class="css-0 e1b74qft6">won</span>
-												</span>
-											</div></a>
-										<div class="css-16j3p2r e1b74qft7">
-											<button class="css-1u7zeg9 e1b74qft8">
-												<svg xmlns="http://www.w3.org/2000/svg" width="16"
-													height="14" viewBox="0 0 20 20">
-													<path
-														d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
-														fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-														stroke-width="0.7"></path></svg>
-												<span class="css-1afbq5h e1b74qft9">20</span>
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div role="gridcell"
-								style="top: 1856px; left: 300px; width: 300px; writing-mode: horizontal-tb; position: absolute;">
-								<div class="css-veh7ha elhzesg0">
-									<a class="css-1jypvcz e1qv5i7p8"
-										href="https://content.29cm.co.kr/brand-news/21432"><span
-										class="css-1c39dt4 e1qv5i7p0"></span>
-									<div class="css-u58y5m e1qv5i7p1">
-											<img
-												src="https://img.29cm.co.kr/cms/202404/11ef05c90b71b03dbb14cf4a4e01a13d.jpeg?width=500"
-												class="css-mqd1xo e1qv5i7p3">
-										</div>
-										<div class="css-10mzaug e1qv5i7p4">
-											<h1 class="css-1se6r14 e1qv5i7p6">시원함을 만끽할 준비</h1>
-											<p class="css-jg1sml e1qv5i7p7">HDEX 스윔웨어를 최대 35% 단독 할인가로
-												만나보세요. 다가오는 계절을 HDEX와 먼저 준비해보는건 어떨까요?</p>
-										</div></a>
-									<div class="css-15xwjg0 e1b74qft0">
-										<a class="css-mn2zdd e1b74qft1"
-											href="https://product.29cm.co.kr/catalog/2186226"><img
-											src="https://img.29cm.co.kr/next-product/2023/08/23/b0d5cb14b4ad444f972f6880e6038e6e_20230823124508.jpg?width=150"
-											class="css-nt3lq3 e1b74qft2">
-										<div class="css-161seae e1b74qft3">
-												<span class="css-16b7yk2 e1b74qft4">에이치덱스</span><span>우먼스
-													집업 크롭 래쉬가드 2 color</span><span class="css-pu7sky e1b74qft5">22%
-													53,800<span class="css-0 e1b74qft6">won</span>
-												</span>
-											</div></a>
-										<div class="css-16j3p2r e1b74qft7">
-											<button class="css-1u7zeg9 e1b74qft8">
-												<svg xmlns="http://www.w3.org/2000/svg" width="16"
-													height="14" viewBox="0 0 20 20">
-													<path
-														d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
-														fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-														stroke-width="0.7"></path></svg>
-												<span class="css-1afbq5h e1b74qft9">305</span>
-											</button>
-										</div>
-									</div>
-									<div class="css-15xwjg0 e1b74qft0">
-										<a class="css-mn2zdd e1b74qft1"
-											href="https://product.29cm.co.kr/catalog/2186224"><img
-											src="https://img.29cm.co.kr/next-product/2023/08/23/5735b43fe3bd4c1b88db8905c6a91368_20230823124417.jpg?width=150"
-											class="css-nt3lq3 e1b74qft2">
-										<div class="css-161seae e1b74qft3">
-												<span class="css-16b7yk2 e1b74qft4">에이치덱스</span><span>우먼스
-													집업 스탠다드 핏 래쉬가드 2 color</span><span class="css-pu7sky e1b74qft5">20%
-													63,200<span class="css-0 e1b74qft6">won</span>
-												</span>
-											</div></a>
-										<div class="css-16j3p2r e1b74qft7">
-											<button class="css-1u7zeg9 e1b74qft8">
-												<svg xmlns="http://www.w3.org/2000/svg" width="16"
-													height="14" viewBox="0 0 20 20">
-													<path
-														d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
-														fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-														stroke-width="0.7"></path></svg>
-												<span class="css-1afbq5h e1b74qft9">98</span>
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div role="gridcell"
-								style="top: 885px; left: 300px; width: 300px; writing-mode: horizontal-tb; position: absolute;">
-								<div class="css-veh7ha elhzesg0">
-									<a class="css-1jypvcz e1qv5i7p8"
-										href="https://content.29cm.co.kr/brand-news/21514"><span
-										class="css-1c39dt4 e1qv5i7p0"></span>
-									<div class="css-u58y5m e1qv5i7p1">
-											<img
-												src="https://img.29cm.co.kr/cms/202404/11ef03b9498c019bb9bbf7025a7e1a8c.jpeg?width=500"
-												class="css-mqd1xo e1qv5i7p3">
-										</div>
-										<div class="css-10mzaug e1qv5i7p4">
-											<h1 class="css-1se6r14 e1qv5i7p6">72시간의 즐거운 이벤트</h1>
-											<p class="css-jg1sml e1qv5i7p7">등산, 하이킹, 캠핑, 수상 스포츠, 낚시,
-												심지어 가족 주말여행을 커버할 수 있는 야외용 제품을 만들어 나가는 포몬스터의 즐거운 72시간 할인 이벤트를
-												29CM에서 만나보세요.</p>
-										</div></a>
-									<div class="css-15xwjg0 e1b74qft0">
-										<a class="css-mn2zdd e1b74qft1"
-											href="https://product.29cm.co.kr/catalog/435074"><img
-											src="https://img.29cm.co.kr/next-product/2023/03/20/e3a0965b7c2243cea73dfeaca370f9b4_20230320161925.jpg?width=150"
-											class="css-nt3lq3 e1b74qft2">
-										<div class="css-161seae e1b74qft3">
-												<span class="css-16b7yk2 e1b74qft4">포몬스터</span><span>
-													[초경량,서브여행가방] [~5/10 단독할인]_24L 초경량 폴딩백팩 블랙</span><span
-													class="css-pu7sky e1b74qft5">30% 36,400<span
+												<span class="css-16b7yk2 e1b74qft4">컬럼비아</span><span>
+													[추가 쿠폰]_공용 데졸 보울 버킷 (278)</span><span
+													class="css-1euw69w e1b74qft5">55,000<span
 													class="css-0 e1b74qft6">won</span></span>
 											</div></a>
 										<div class="css-16j3p2r e1b74qft7">
@@ -2023,19 +1907,19 @@ svg:not(:root) {
 														d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
 														fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 														stroke-width="0.7"></path></svg>
-												<span class="css-1afbq5h e1b74qft9">709</span>
+												<span class="css-1afbq5h e1b74qft9">0</span>
 											</button>
 										</div>
 									</div>
 									<div class="css-15xwjg0 e1b74qft0">
 										<a class="css-mn2zdd e1b74qft1"
-											href="https://product.29cm.co.kr/catalog/683105"><img
-											src="https://img.29cm.co.kr/next-product/2023/03/20/e2e9e62014f94f3e886b860ff3d0b859_20230320163030.jpg?width=150"
+											href="https://product.29cm.co.kr/catalog/2598095"><img
+											src="https://img.29cm.co.kr/item/202404/11ef0116c656f36abb6a3b3d23a9fcc9.jpg?width=150"
 											class="css-nt3lq3 e1b74qft2">
 										<div class="css-161seae e1b74qft3">
-												<span class="css-16b7yk2 e1b74qft4">포몬스터</span><span>
-													[초경량,서브여행가방] [~5/10 단독할인]_24L 초경량 폴딩백팩 헌터그린</span><span
-													class="css-pu7sky e1b74qft5">30% 36,400<span
+												<span class="css-16b7yk2 e1b74qft4">컬럼비아</span><span>
+													[추가 쿠폰]_여성 이스케이프 쓰라이브 샌들 (292)</span><span
+													class="css-1euw69w e1b74qft5">149,000<span
 													class="css-0 e1b74qft6">won</span></span>
 											</div></a>
 										<div class="css-16j3p2r e1b74qft7">
@@ -2046,36 +1930,36 @@ svg:not(:root) {
 														d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
 														fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 														stroke-width="0.7"></path></svg>
-												<span class="css-1afbq5h e1b74qft9">1,369</span>
+												<span class="css-1afbq5h e1b74qft9">2</span>
 											</button>
 										</div>
 									</div>
 								</div>
 							</div>
 							<div role="gridcell"
-								style="top: 995px; left: 600px; width: 300px; writing-mode: horizontal-tb; position: absolute;">
+								style="top: 2767px; left: 606px; width: 303px; writing-mode: horizontal-tb; position: absolute;">
 								<div class="css-veh7ha elhzesg0">
 									<a class="css-1jypvcz e1qv5i7p8"
-										href="https://product.29cm.co.kr/catalog/1997039"><span
+										href="https://content.29cm.co.kr/collection/6578?product_sort=best&amp;product_group=168421"><span
 										class="css-1c39dt4 e1qv5i7p0"></span>
 									<div class="css-u58y5m e1qv5i7p1">
 											<img
-												src="https://img.29cm.co.kr/cm/202405/11ef0c115c4cf813b9bb6b14cdb65c11.jpg?width=500"
+												src="https://img.29cm.co.kr/cm/202405/11ef0e688e3af277bb142b9bb9be05e8.jpg?width=500"
 												class="css-mqd1xo e1qv5i7p3">
 										</div>
 										<div class="css-10mzaug e1qv5i7p4">
-											<h1 class="css-1se6r14 e1qv5i7p6">피크닉 가는길</h1>
-											<p class="css-jg1sml e1qv5i7p7">피크닉 가는 길에 꼭 필요한, 눈에 띄는
-												디자인의 웨건을 소개합니다. 언제 어디서든 짐을 싣고 피크닉을 즐겨보세요.</p>
+											<h1 class="css-1se6r14 e1qv5i7p6">주말엔 숲으로</h1>
+											<p class="css-jg1sml e1qv5i7p7">등산과 피크닉의 계절, 산으로 숲으로 떠나고
+												싶은 당신을 위한 모자와 가방 액세서리를 준비했어요. 가격대별로 추천하는 상품을 소개합니다.</p>
 										</div></a>
 									<div class="css-15xwjg0 e1b74qft0">
 										<a class="css-mn2zdd e1b74qft1"
-											href="https://product.29cm.co.kr/catalog/1997039"><img
-											src="https://img.29cm.co.kr/next-product/2023/03/28/5012492486b74a448fcf933dc151f49d_20230328112116.JPG?width=150"
+											href="https://product.29cm.co.kr/catalog/2543323"><img
+											src="https://img.29cm.co.kr/item/202403/11eee6820772b9e89a76112b5895296e.jpeg?width=150"
 											class="css-nt3lq3 e1b74qft2">
 										<div class="css-161seae e1b74qft3">
-												<span class="css-16b7yk2 e1b74qft4">폴러스터프</span><span>[폴러스터프]
-													어드벤처 웨건 FURRY CAMO 캠핑웨건</span><span class="css-1euw69w e1b74qft5">180,000<span
+												<span class="css-16b7yk2 e1b74qft4">아크테릭스</span><span>[SS24]에어리어스
+													18 백팩</span><span class="css-pu7sky e1b74qft5">5% 313,500<span
 													class="css-0 e1b74qft6">won</span></span>
 											</div></a>
 										<div class="css-16j3p2r e1b74qft7">
@@ -2086,62 +1970,20 @@ svg:not(:root) {
 														d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
 														fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 														stroke-width="0.7"></path></svg>
-												<span class="css-1afbq5h e1b74qft9">57</span>
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div role="gridcell"
-								style="top: 1695px; left: 600px; width: 300px; writing-mode: horizontal-tb; position: absolute;">
-								<div class="css-veh7ha elhzesg0">
-									<a class="css-1jypvcz e1qv5i7p8"
-										href="https://content.29cm.co.kr/showcase/1185"><span
-										class="css-1c39dt4 e1qv5i7p0"></span>
-									<div class="css-u58y5m e1qv5i7p1">
-											<img
-												src="https://img.29cm.co.kr/cm/202405/11ef090de2822733bb14d9bf82a8b90b.jpg?width=500"
-												class="css-mqd1xo e1qv5i7p3">
-										</div>
-										<div class="css-10mzaug e1qv5i7p4">
-											<h1 class="css-1se6r14 e1qv5i7p6">어디서든 편안하고 완벽한 핏</h1>
-											<p class="css-jg1sml e1qv5i7p7">언제 어디서나 편안하고 완벽한 핏을 선사하는
-												데상트의 시그니처 원단 터프를 소개합니다. 쾌적한 착용감과 데상트만의 기술력으로 결합한 최상의 트레이닝
-												기능성 원단 티셔츠를 경험해 보세요.</p>
-										</div></a>
-									<div class="css-15xwjg0 e1b74qft0">
-										<a class="css-mn2zdd e1b74qft1"
-											href="https://product.29cm.co.kr/catalog/2325136"><img
-											src="https://img.29cm.co.kr/next-product/2024/04/29/bc79d117b7c448eb9724280cdc13e315_20240429122000.jpg?width=150"
-											class="css-nt3lq3 e1b74qft2">
-										<div class="css-161seae e1b74qft3">
-												<span class="css-16b7yk2 e1b74qft4">데상트</span><span>[TOUGH]
-													터프 에센셜 반팔 티셔츠 SP123UTS11</span><span class="css-pu7sky e1b74qft5">10%
-													49,500<span class="css-0 e1b74qft6">won</span>
-												</span>
-											</div></a>
-										<div class="css-16j3p2r e1b74qft7">
-											<button class="css-1u7zeg9 e1b74qft8">
-												<svg xmlns="http://www.w3.org/2000/svg" width="16"
-													height="14" viewBox="0 0 20 20">
-													<path
-														d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
-														fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-														stroke-width="0.7"></path></svg>
-												<span class="css-1afbq5h e1b74qft9">6</span>
+												<span class="css-1afbq5h e1b74qft9">116</span>
 											</button>
 										</div>
 									</div>
 									<div class="css-15xwjg0 e1b74qft0">
 										<a class="css-mn2zdd e1b74qft1"
-											href="https://product.29cm.co.kr/catalog/2512039"><img
-											src="https://img.29cm.co.kr/next-product/2024/04/09/5fb6aca4b4c74dd4a1bbdf893c3f05b7_20240409161835.jpg?width=150"
+											href="https://product.29cm.co.kr/catalog/2602296"><img
+											src="https://img.29cm.co.kr/item/202404/11eefe2296b2fdeebb6a452d0d1cfa90.jpg?width=150"
 											class="css-nt3lq3 e1b74qft2">
 										<div class="css-161seae e1b74qft3">
-												<span class="css-16b7yk2 e1b74qft4">데상트</span><span>여성
-													스트레치 우븐 바람막이 SP122UWB31</span><span class="css-pu7sky e1b74qft5">10%
-													161,100<span class="css-0 e1b74qft6">won</span>
-												</span>
+												<span class="css-16b7yk2 e1b74qft4">노스페이스</span><span>[노스페이스]
+													TNF 폴리카보네이트 휠러 28인치 NN2AQ12A_BLK</span><span
+													class="css-pu7sky e1b74qft5">5% 265,050<span
+													class="css-0 e1b74qft6">won</span></span>
 											</div></a>
 										<div class="css-16j3p2r e1b74qft7">
 											<button class="css-1u7zeg9 e1b74qft8">
@@ -2158,31 +2000,29 @@ svg:not(:root) {
 								</div>
 							</div>
 							<div role="gridcell"
-								style="top: 901px; left: 0px; width: 300px; writing-mode: horizontal-tb; position: absolute;">
+								style="top: 1007px; left: 303px; width: 303px; writing-mode: horizontal-tb; position: absolute;">
 								<div class="css-veh7ha elhzesg0">
 									<a class="css-1jypvcz e1qv5i7p8"
-										href="https://content.29cm.co.kr/brand-news/21300"><span
+										href="https://content.29cm.co.kr/brand-news/20319"><span
 										class="css-1c39dt4 e1qv5i7p0"></span>
 									<div class="css-u58y5m e1qv5i7p1">
 											<img
-												src="https://img.29cm.co.kr/cms/202404/11ef0208abfc5798bb6ab5b391f02684.jpeg?width=500"
+												src="https://img.29cm.co.kr/cms/202405/11ef0c31e42e1281bb148f516bfb93f0.jpeg?width=500"
 												class="css-mqd1xo e1qv5i7p3">
 										</div>
 										<div class="css-10mzaug e1qv5i7p4">
-											<h1 class="css-1se6r14 e1qv5i7p6">조금 일찍 만나는 여름</h1>
-											<p class="css-jg1sml e1qv5i7p7">디스커버리 래쉬가드를 통해 조금 더 일찍 여름
-												휴가를 준비해 보세요. 이월 상품 황금 사이즈로 최대 40%할인 혜택과 15만원 이상 구매 시 디스커버리
-												드라이백을 증정합니다.</p>
+											<h1 class="css-1se6r14 e1qv5i7p6">도심 속 자연을 닮은</h1>
+											<p class="css-jg1sml e1qv5i7p7">인&amp;아웃도어를 어우르는 브루클린웍스에서
+												모던 아웃도어를 브루클린 웍스만의 감성으로 재해석한 라인을 소개합니다.</p>
 										</div></a>
 									<div class="css-15xwjg0 e1b74qft0">
 										<a class="css-mn2zdd e1b74qft1"
-											href="https://product.29cm.co.kr/catalog/1866033"><img
-											src="https://img.29cm.co.kr/next-product/2023/01/09/78c35b40275f463b8e0959bb69fa3742_20230109181738.jpg?width=150"
+											href="https://product.29cm.co.kr/catalog/2437062"><img
+											src="https://img.29cm.co.kr/next-product/2024/01/29/df6ad91cacc34599bf3a6461e8a5f2ac_20240129113422.jpg?width=150"
 											class="css-nt3lq3 e1b74qft2">
 										<div class="css-161seae e1b74qft3">
-												<span class="css-16b7yk2 e1b74qft4">디스커버리 익스페디션</span><span>
-													[단독 할인]_에센셜 로고 남성 래쉬가드 (BLACK)</span><span
-													class="css-pu7sky e1b74qft5">30% 55,300<span
+												<span class="css-16b7yk2 e1b74qft4">브루클린웍스</span><span>BW_[브루클린웍스]
+													게이트웨이 쉐이드 원터치 텐트 (4-5인용)</span><span class="css-1euw69w e1b74qft5">280,000<span
 													class="css-0 e1b74qft6">won</span></span>
 											</div></a>
 										<div class="css-16j3p2r e1b74qft7">
@@ -2193,19 +2033,18 @@ svg:not(:root) {
 														d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
 														fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 														stroke-width="0.7"></path></svg>
-												<span class="css-1afbq5h e1b74qft9">112</span>
+												<span class="css-1afbq5h e1b74qft9">536</span>
 											</button>
 										</div>
 									</div>
 									<div class="css-15xwjg0 e1b74qft0">
 										<a class="css-mn2zdd e1b74qft1"
-											href="https://product.29cm.co.kr/catalog/1866031"><img
-											src="https://img.29cm.co.kr/next-product/2023/02/03/8559621d893a4e988952bae87719e1a0_20230203161259.jpg?width=150"
+											href="https://product.29cm.co.kr/catalog/1873212"><img
+											src="https://img.29cm.co.kr/item/202312/11ee926a841cc2b98a7f572fb4651493.jpg?width=150"
 											class="css-nt3lq3 e1b74qft2">
 										<div class="css-161seae e1b74qft3">
-												<span class="css-16b7yk2 e1b74qft4">디스커버리 익스페디션</span><span>
-													[단독 할인]_베이직 풀밴드형 남성 보드숏 (TURQUOISE)</span><span
-													class="css-pu7sky e1b74qft5">30% 55,300<span
+												<span class="css-16b7yk2 e1b74qft4">브루클린웍스</span><span>BW_[브루클린웍스]
+													로이 텐트 2.0 (3-4인용)</span><span class="css-1euw69w e1b74qft5">550,000<span
 													class="css-0 e1b74qft6">won</span></span>
 											</div></a>
 										<div class="css-16j3p2r e1b74qft7">
@@ -2216,39 +2055,37 @@ svg:not(:root) {
 														d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
 														fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 														stroke-width="0.7"></path></svg>
-												<span class="css-1afbq5h e1b74qft9">215</span>
+												<span class="css-1afbq5h e1b74qft9">154</span>
 											</button>
 										</div>
 									</div>
 								</div>
 							</div>
 							<div role="gridcell"
-								style="top: 0px; left: 600px; width: 300px; writing-mode: horizontal-tb; position: absolute;">
+								style="top: 1912px; left: 303px; width: 303px; writing-mode: horizontal-tb; position: absolute;">
 								<div class="css-veh7ha elhzesg0">
 									<a class="css-1jypvcz e1qv5i7p8"
-										href="https://content.29cm.co.kr/brand-news/21904"><span
+										href="https://content.29cm.co.kr/collection/6578?product_sort=best"><span
 										class="css-1c39dt4 e1qv5i7p0"></span>
 									<div class="css-u58y5m e1qv5i7p1">
 											<img
-												src="https://img.29cm.co.kr/cms/202405/11ef0c4ef0b9de5bb9bb212ead4e6361.jpeg?width=500"
+												src="https://img.29cm.co.kr/cm/202405/11ef0ea5326ad6b6892b8b61222444de.jpg?width=500"
 												class="css-mqd1xo e1qv5i7p3">
 										</div>
 										<div class="css-10mzaug e1qv5i7p4">
-											<h1 class="css-1se6r14 e1qv5i7p6">하와이의 햇빛과 파도를 담은</h1>
-											<p class="css-jg1sml e1qv5i7p7">트로피컬한 색감에 햇빛과 파도를 닮은 프린트를
-												넣은 컬러풀한 하이 서포티브 서프키니, 야자수 그늘 아래에서 릴렉스할 때에도 어울리는 말랑한 색감과 디자인의
-												비키니까지, 해변에서 일어나는 어떤 상황에나 어울리는 아이템들을 만나보세요.</p>
+											<h1 class="css-1se6r14 e1qv5i7p6">완전한 휴식에 필요한 것</h1>
+											<p class="css-jg1sml e1qv5i7p7">피크닉의 계절에 꼭 필요한 모자와 가방
+												액세서리 아이템을 만나보세요. 가격대별로 추천 상품을 소개합니다.</p>
 										</div></a>
 									<div class="css-15xwjg0 e1b74qft0">
 										<a class="css-mn2zdd e1b74qft1"
-											href="https://product.29cm.co.kr/catalog/2626976"><img
-											src="https://img.29cm.co.kr/item/202405/11ef0bbbb7d2095bb9bbf9e3ac2731fa.jpg?width=150"
+											href="https://product.29cm.co.kr/catalog/2303534"><img
+											src="https://img.29cm.co.kr/item/202311/11ee7891070c6de78a7f6f2ba397f61d.jpg?width=150"
 											class="css-nt3lq3 e1b74qft2">
 										<div class="css-161seae e1b74qft3">
-												<span class="css-16b7yk2 e1b74qft4">셸컬렉터</span><span>TIA
-													Lash Guard Banana</span><span class="css-pu7sky e1b74qft5">5%
-													75,050<span class="css-0 e1b74qft6">won</span>
-												</span>
+												<span class="css-16b7yk2 e1b74qft4">폴로 랄프 로렌</span><span>폴로
+													치노 베이스볼 캡 (RELAY CARSON)</span><span class="css-1euw69w e1b74qft5">89,000<span
+													class="css-0 e1b74qft6">won</span></span>
 											</div></a>
 										<div class="css-16j3p2r e1b74qft7">
 											<button class="css-1u7zeg9 e1b74qft8">
@@ -2258,20 +2095,20 @@ svg:not(:root) {
 														d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
 														fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 														stroke-width="0.7"></path></svg>
-												<span class="css-1afbq5h e1b74qft9">3</span>
+												<span class="css-1afbq5h e1b74qft9">4,413</span>
 											</button>
 										</div>
 									</div>
 									<div class="css-15xwjg0 e1b74qft0">
 										<a class="css-mn2zdd e1b74qft1"
-											href="https://product.29cm.co.kr/catalog/2626956"><img
-											src="https://img.29cm.co.kr/item/202405/11ef0bb681bfaaba892b99546f7c4992.jpg?width=150"
+											href="https://product.29cm.co.kr/catalog/2439227"><img
+											src="https://img.29cm.co.kr/item/202403/11eed9e82f6d0d3c9a763d5b0e4908f4.jpg?width=150"
 											class="css-nt3lq3 e1b74qft2">
 										<div class="css-161seae e1b74qft3">
-												<span class="css-16b7yk2 e1b74qft4">셸컬렉터</span><span>TIA
-													Surf Top Avocado</span><span class="css-pu7sky e1b74qft5">5%
-													84,550<span class="css-0 e1b74qft6">won</span>
-												</span>
+												<span class="css-16b7yk2 e1b74qft4">스노우피크 어패럴</span><span>듀얼테크
+													백팩 25L Black (S24ZUFBP31)</span><span
+													class="css-1euw69w e1b74qft5">169,000<span
+													class="css-0 e1b74qft6">won</span></span>
 											</div></a>
 										<div class="css-16j3p2r e1b74qft7">
 											<button class="css-1u7zeg9 e1b74qft8">
@@ -2281,14 +2118,337 @@ svg:not(:root) {
 														d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
 														fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 														stroke-width="0.7"></path></svg>
-												<span class="css-1afbq5h e1b74qft9">3</span>
+												<span class="css-1afbq5h e1b74qft9">200</span>
 											</button>
 										</div>
 									</div>
 								</div>
 							</div>
 							<div role="gridcell"
-								style="top: 0px; left: 0px; width: 300px; writing-mode: horizontal-tb; position: absolute;">
+								style="top: 1840px; left: 606px; width: 303px; writing-mode: horizontal-tb; position: absolute;">
+								<div class="css-veh7ha elhzesg0">
+									<a class="css-1jypvcz e1qv5i7p8"
+										href="https://content.29cm.co.kr/brand-news/20218"><span
+										class="css-1c39dt4 e1qv5i7p0"></span>
+									<div class="css-u58y5m e1qv5i7p1">
+											<img
+												src="https://img.29cm.co.kr/cms/202405/11ef10c7ee0a8d89b9bb256e8be31c93.jpeg?width=500"
+												class="css-mqd1xo e1qv5i7p3">
+										</div>
+										<div class="css-10mzaug e1qv5i7p4">
+											<h1 class="css-1se6r14 e1qv5i7p6">한계를 넘어서기 위한 모험</h1>
+											<p class="css-jg1sml e1qv5i7p7">끊임없는 도전정신이 깃든 아크테릭스를
+												소개해요. 시즌 마감 물량과 신상이 동시에 입고됐어요, 온라인은 한정 수량으로 진행하니 서둘러 만나보세요.</p>
+										</div></a>
+									<div class="css-15xwjg0 e1b74qft0">
+										<a class="css-mn2zdd e1b74qft1"
+											href="https://product.29cm.co.kr/catalog/2630187"><img
+											src="https://img.29cm.co.kr/item/202405/11ef0ce11fbe1387bb14091135ed7bb3.jpeg?width=150"
+											class="css-nt3lq3 e1b74qft2">
+										<div class="css-161seae e1b74qft3">
+												<span class="css-16b7yk2 e1b74qft4">아크테릭스</span><span>[SS24]감마
+													라이트웨이트 재킷 남성</span><span class="css-pu7sky e1b74qft5">5%
+													285,000<span class="css-0 e1b74qft6">won</span>
+												</span>
+											</div></a>
+										<div class="css-16j3p2r e1b74qft7">
+											<button class="css-1u7zeg9 e1b74qft8">
+												<svg xmlns="http://www.w3.org/2000/svg" width="16"
+													height="14" viewBox="0 0 20 20">
+													<path
+														d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+														fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+														stroke-width="0.7"></path></svg>
+												<span class="css-1afbq5h e1b74qft9">0</span>
+											</button>
+										</div>
+									</div>
+									<div class="css-15xwjg0 e1b74qft0">
+										<a class="css-mn2zdd e1b74qft1"
+											href="https://product.29cm.co.kr/catalog/2630183"><img
+											src="https://img.29cm.co.kr/item/202405/11ef0ce0ef79f76bbb148fc74a8eb3a1.jpeg?width=150"
+											class="css-nt3lq3 e1b74qft2">
+										<div class="css-161seae e1b74qft3">
+												<span class="css-16b7yk2 e1b74qft4">아크테릭스</span><span>[SS24]아톰
+													SL 후디 남성</span><span class="css-pu7sky e1b74qft5">5%
+													332,500<span class="css-0 e1b74qft6">won</span>
+												</span>
+											</div></a>
+										<div class="css-16j3p2r e1b74qft7">
+											<button class="css-1u7zeg9 e1b74qft8">
+												<svg xmlns="http://www.w3.org/2000/svg" width="16"
+													height="14" viewBox="0 0 20 20">
+													<path
+														d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+														fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+														stroke-width="0.7"></path></svg>
+												<span class="css-1afbq5h e1b74qft9">0</span>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div role="gridcell"
+								style="top: 0px; left: 303px; width: 303px; writing-mode: horizontal-tb; position: absolute;">
+								<div class="css-veh7ha elhzesg0">
+									<a class="css-1jypvcz e1qv5i7p8"
+										href="https://content.29cm.co.kr/brand-news/22002"><span
+										class="css-1c39dt4 e1qv5i7p0"></span>
+									<div class="css-u58y5m e1qv5i7p1">
+											<img
+												src="https://img.29cm.co.kr/cms/202405/11ef0d22fdedbe3c892b637d1763f7c8.jpeg?width=500"
+												class="css-mqd1xo e1qv5i7p3">
+										</div>
+										<div class="css-10mzaug e1qv5i7p4">
+											<h1 class="css-1se6r14 e1qv5i7p6">오로지 신체만으로 타협없는 도전</h1>
+											<p class="css-jg1sml e1qv5i7p7">코오롱스포츠의 트레일러닝 라인, 이제
+												29cm에서 만나보세요! 거친 움직임에 최적화된 디자인과 소재로 거듭난 코오롱스포츠의 트레일러닝을 머리부터
+												신발까지 단독 할인 이벤트로 진행합니다. 사이즈 재고가 얼마 없으니 서두르세요.</p>
+										</div></a>
+									<div class="css-15xwjg0 e1b74qft0">
+										<a class="css-mn2zdd e1b74qft1"
+											href="https://product.29cm.co.kr/catalog/2611903"><img
+											src="https://img.29cm.co.kr/item/202404/11ef069b9945a356892bbf45c300825b.jpg?width=150"
+											class="css-nt3lq3 e1b74qft2">
+										<div class="css-161seae e1b74qft3">
+												<span class="css-16b7yk2 e1b74qft4">코오롱스포츠</span><span>
+													[단독 할인]_[TRAIL] 남성 슬리브리스 TLTCX24741DGY</span><span
+													class="css-pu7sky e1b74qft5">5% 74,100<span
+													class="css-0 e1b74qft6">won</span></span>
+											</div></a>
+										<div class="css-16j3p2r e1b74qft7">
+											<button class="css-1u7zeg9 e1b74qft8">
+												<svg xmlns="http://www.w3.org/2000/svg" width="16"
+													height="14" viewBox="0 0 20 20">
+													<path
+														d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+														fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+														stroke-width="0.7"></path></svg>
+												<span class="css-1afbq5h e1b74qft9">1</span>
+											</button>
+										</div>
+									</div>
+									<div class="css-15xwjg0 e1b74qft0">
+										<a class="css-mn2zdd e1b74qft1"
+											href="https://product.29cm.co.kr/catalog/2611848"><img
+											src="https://img.29cm.co.kr/item/202404/11ef069b8240d901b9bb6fcca9bb7449.jpg?width=150"
+											class="css-nt3lq3 e1b74qft2">
+										<div class="css-161seae e1b74qft3">
+												<span class="css-16b7yk2 e1b74qft4">코오롱스포츠</span><span>
+													[단독 할인]_[TRAIL] 남성 러닝 반팔 티셔츠 TLTCX24735DGY</span><span
+													class="css-pu7sky e1b74qft5">5% 93,100<span
+													class="css-0 e1b74qft6">won</span></span>
+											</div></a>
+										<div class="css-16j3p2r e1b74qft7">
+											<button class="css-1u7zeg9 e1b74qft8">
+												<svg xmlns="http://www.w3.org/2000/svg" width="16"
+													height="14" viewBox="0 0 20 20">
+													<path
+														d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+														fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+														stroke-width="0.7"></path></svg>
+												<span class="css-1afbq5h e1b74qft9">0</span>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div role="gridcell"
+								style="top: 0px; left: 0px; width: 303px; writing-mode: horizontal-tb; position: absolute;">
+								<div class="css-veh7ha elhzesg0">
+									<a class="css-1jypvcz e1qv5i7p8"
+										href="https://content.29cm.co.kr/brand-news/22065"><span
+										class="css-1c39dt4 e1qv5i7p0"></span>
+									<div class="css-u58y5m e1qv5i7p1">
+											<img
+												src="https://img.29cm.co.kr/cms/202405/11ef0de9ad63bb28892b7790b1596f84.jpeg?width=500"
+												class="css-mqd1xo e1qv5i7p3">
+										</div>
+										<div class="css-10mzaug e1qv5i7p4">
+											<h1 class="css-1se6r14 e1qv5i7p6">테니스를 멋있게 즐기는 방법</h1>
+											<p class="css-jg1sml e1qv5i7p7">트렌드에 뒤쳐지지 않은 당신에게 테니스
+												어패럴을 추천한다면 100년 넘게 이어진 헤리티지가 담긴 윌슨을 추천 합니다. 24년 신상을 29CM에서
+												만나보세요.</p>
+										</div></a>
+									<div class="css-15xwjg0 e1b74qft0">
+										<a class="css-mn2zdd e1b74qft1"
+											href="https://product.29cm.co.kr/catalog/2574777"><img
+											src="https://img.29cm.co.kr/item/202404/11eef7ccb9214b6abb6a45fd8c5d772b.jpg?width=150"
+											class="css-nt3lq3 e1b74qft2">
+										<div class="css-161seae e1b74qft3">
+												<span class="css-16b7yk2 e1b74qft4">윌슨</span><span>여성
+													캡내장 카라 슬리브리스_WW30042413WHT</span><span
+													class="css-1euw69w e1b74qft5">139,000<span
+													class="css-0 e1b74qft6">won</span></span>
+											</div></a>
+										<div class="css-16j3p2r e1b74qft7">
+											<button class="css-1u7zeg9 e1b74qft8">
+												<svg xmlns="http://www.w3.org/2000/svg" width="16"
+													height="14" viewBox="0 0 20 20">
+													<path
+														d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+														fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+														stroke-width="0.7"></path></svg>
+												<span class="css-1afbq5h e1b74qft9">6</span>
+											</button>
+										</div>
+									</div>
+									<div class="css-15xwjg0 e1b74qft0">
+										<a class="css-mn2zdd e1b74qft1"
+											href="https://product.29cm.co.kr/catalog/2574782"><img
+											src="https://img.29cm.co.kr/item/202404/11eef7cd3c20e91c936791d033332d0a.jpg?width=150"
+											class="css-nt3lq3 e1b74qft2">
+										<div class="css-161seae e1b74qft3">
+												<span class="css-16b7yk2 e1b74qft4">윌슨</span><span>여성
+													캡내장 카라 슬리브리스_WW30042413BLU</span><span
+													class="css-1euw69w e1b74qft5">139,000<span
+													class="css-0 e1b74qft6">won</span></span>
+											</div></a>
+										<div class="css-16j3p2r e1b74qft7">
+											<button class="css-1u7zeg9 e1b74qft8">
+												<svg xmlns="http://www.w3.org/2000/svg" width="16"
+													height="14" viewBox="0 0 20 20">
+													<path
+														d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+														fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+														stroke-width="0.7"></path></svg>
+												<span class="css-1afbq5h e1b74qft9">2</span>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div role="gridcell"
+								style="top: 0px; left: 606px; width: 303px; writing-mode: horizontal-tb; position: absolute;">
+								<div class="css-veh7ha elhzesg0">
+									<a class="css-1jypvcz e1qv5i7p8"
+										href="https://content.29cm.co.kr/brand-news/21836"><span
+										class="css-1c39dt4 e1qv5i7p0"></span>
+									<div class="css-u58y5m e1qv5i7p1">
+											<img
+												src="https://img.29cm.co.kr/cms/202405/11ef0925da8b3285bb142980ab3454fb.jpeg?width=500"
+												class="css-mqd1xo e1qv5i7p3">
+										</div>
+										<div class="css-10mzaug e1qv5i7p4">
+											<h1 class="css-1se6r14 e1qv5i7p6">오로지 나만을 위한 하루</h1>
+											<p class="css-jg1sml e1qv5i7p7">늦은 밤 산속은 또 다른 매력을 선사해요.
+												지친 일상에서 오로지 나만을 위한 하루를 산에서 보내고 싶을 땐 콜맨과 함께하세요.</p>
+										</div></a>
+									<div class="css-15xwjg0 e1b74qft0">
+										<a class="css-mn2zdd e1b74qft1"
+											href="https://product.29cm.co.kr/catalog/1403485"><img
+											src="https://img.29cm.co.kr/next-product/2022/02/10/aae75f9502f142b484c75eff195857cf_20220210170632.jpg?width=150"
+											class="css-nt3lq3 e1b74qft2">
+										<div class="css-161seae e1b74qft3">
+												<span class="css-16b7yk2 e1b74qft4">콜맨</span><span>
+													[15% 쿠폰]_콜맨 레이체어 (레드) 리클라이닝 체어</span><span
+													class="css-pu7sky e1b74qft5">18% 104,000<span
+													class="css-0 e1b74qft6">won</span></span>
+											</div></a>
+										<div class="css-16j3p2r e1b74qft7">
+											<button class="css-1u7zeg9 e1b74qft8">
+												<svg xmlns="http://www.w3.org/2000/svg" width="16"
+													height="14" viewBox="0 0 20 20">
+													<path
+														d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+														fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+														stroke-width="0.7"></path></svg>
+												<span class="css-1afbq5h e1b74qft9">170</span>
+											</button>
+										</div>
+									</div>
+									<div class="css-15xwjg0 e1b74qft0">
+										<a class="css-mn2zdd e1b74qft1"
+											href="https://product.29cm.co.kr/catalog/1403185"><img
+											src="https://img.29cm.co.kr/next-product/2022/02/10/2c7ad63285cc4f5e96b7d9bfa5cfb577_20220210155047.jpg?width=150"
+											class="css-nt3lq3 e1b74qft2">
+										<div class="css-161seae e1b74qft3">
+												<span class="css-16b7yk2 e1b74qft4">콜맨</span><span>
+													[15% 쿠폰]_콜맨 레이체어 (올리브) 리클라이닝 체어</span><span
+													class="css-pu7sky e1b74qft5">15% 123,300<span
+													class="css-0 e1b74qft6">won</span></span>
+											</div></a>
+										<div class="css-16j3p2r e1b74qft7">
+											<button class="css-1u7zeg9 e1b74qft8">
+												<svg xmlns="http://www.w3.org/2000/svg" width="16"
+													height="14" viewBox="0 0 20 20">
+													<path
+														d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+														fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+														stroke-width="0.7"></path></svg>
+												<span class="css-1afbq5h e1b74qft9">355</span>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div role="gridcell"
+								style="top: 935px; left: 0px; width: 303px; writing-mode: horizontal-tb; position: absolute;">
+								<div class="css-veh7ha elhzesg0">
+									<a class="css-1jypvcz e1qv5i7p8"
+										href="https://content.29cm.co.kr/brand-news/21817"><span
+										class="css-1c39dt4 e1qv5i7p0"></span>
+									<div class="css-u58y5m e1qv5i7p1">
+											<img
+												src="https://img.29cm.co.kr/cms/202405/11ef10c523b91b85bb140d0390325ea6.jpeg?width=500"
+												class="css-mqd1xo e1qv5i7p3">
+										</div>
+										<div class="css-10mzaug e1qv5i7p4">
+											<h1 class="css-1se6r14 e1qv5i7p6">여름을 더욱 생기있게 만든 협업</h1>
+											<p class="css-jg1sml e1qv5i7p7">감성 아웃도어 퍼니처 론체어와 네파의 만남.
+												여름을 더욱 생기 있게 만들어 줄 콜라보레이션 라인업을 만나보세요. 20만원 이상 구매 시 추첨을 통해
+												론체어를 증정합니다.</p>
+										</div></a>
+									<div class="css-15xwjg0 e1b74qft0">
+										<a class="css-mn2zdd e1b74qft1"
+											href="https://product.29cm.co.kr/catalog/2622560"><img
+											src="https://img.29cm.co.kr/item/202405/11ef0cd573829668892bef9a7b70e558.jpg?width=150"
+											class="css-nt3lq3 e1b74qft2">
+										<div class="css-161seae e1b74qft3">
+												<span class="css-16b7yk2 e1b74qft4">네파</span><span>
+													[10% 추가 쿠폰]_네파/본사직영 7KD5368 공용 론체어 듀스 그래픽 반팔 티셔츠</span><span
+													class="css-pu7sky e1b74qft5">10% 53,100<span
+													class="css-0 e1b74qft6">won</span></span>
+											</div></a>
+										<div class="css-16j3p2r e1b74qft7">
+											<button class="css-1u7zeg9 e1b74qft8">
+												<svg xmlns="http://www.w3.org/2000/svg" width="16"
+													height="14" viewBox="0 0 20 20">
+													<path
+														d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+														fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+														stroke-width="0.7"></path></svg>
+												<span class="css-1afbq5h e1b74qft9">0</span>
+											</button>
+										</div>
+									</div>
+									<div class="css-15xwjg0 e1b74qft0">
+										<a class="css-mn2zdd e1b74qft1"
+											href="https://product.29cm.co.kr/catalog/2622564"><img
+											src="https://img.29cm.co.kr/item/202405/11ef0cd69f98556bb9bb3d6369533eef.jpg?width=150"
+											class="css-nt3lq3 e1b74qft2">
+										<div class="css-161seae e1b74qft3">
+												<span class="css-16b7yk2 e1b74qft4">네파</span><span>
+													[10% 추가 쿠폰]_네파/본사직영 7KD5388 공용 론체어 듀스 그래픽 반팔 티셔츠</span><span
+													class="css-pu7sky e1b74qft5">19% 47,790<span
+													class="css-0 e1b74qft6">won</span></span>
+											</div></a>
+										<div class="css-16j3p2r e1b74qft7">
+											<button class="css-1u7zeg9 e1b74qft8">
+												<svg xmlns="http://www.w3.org/2000/svg" width="16"
+													height="14" viewBox="0 0 20 20">
+													<path
+														d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
+														fill="none" fill-rule="evenodd" stroke="#5d5d5d"
+														stroke-width="0.7"></path></svg>
+												<span class="css-1afbq5h e1b74qft9">1</span>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div role="gridcell"
+								style="top: 935px; left: 606px; width: 303px; writing-mode: horizontal-tb; position: absolute;">
 								<div class="css-veh7ha elhzesg0">
 									<a class="css-1jypvcz e1qv5i7p8"
 										href="https://content.29cm.co.kr/brand-news/21646"><span
@@ -2322,7 +2482,7 @@ svg:not(:root) {
 														d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
 														fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 														stroke-width="0.7"></path></svg>
-												<span class="css-1afbq5h e1b74qft9">11</span>
+												<span class="css-1afbq5h e1b74qft9">17</span>
 											</button>
 										</div>
 									</div>
@@ -2345,70 +2505,7 @@ svg:not(:root) {
 														d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
 														fill="none" fill-rule="evenodd" stroke="#5d5d5d"
 														stroke-width="0.7"></path></svg>
-												<span class="css-1afbq5h e1b74qft9">4</span>
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div role="gridcell"
-								style="top: 0px; left: 300px; width: 300px; writing-mode: horizontal-tb; position: absolute;">
-								<div class="css-veh7ha elhzesg0">
-									<a class="css-1jypvcz e1qv5i7p8"
-										href="https://content.29cm.co.kr/collection/6578?product_sort=best&amp;product_group=168421"><span
-										class="css-1c39dt4 e1qv5i7p0"></span>
-									<div class="css-u58y5m e1qv5i7p1">
-											<img
-												src="https://img.29cm.co.kr/cm/202405/11ef0e688e3af277bb142b9bb9be05e8.jpg?width=500"
-												class="css-mqd1xo e1qv5i7p3">
-										</div>
-										<div class="css-10mzaug e1qv5i7p4">
-											<h1 class="css-1se6r14 e1qv5i7p6">주말엔 숲으로</h1>
-											<p class="css-jg1sml e1qv5i7p7">등산과 피크닉의 계절, 산으로 숲으로 떠나고
-												싶은 당신을 위한 모자와 가방 액세서리를 준비했어요. 가격대별로 추천하는 상품을 소개합니다.</p>
-										</div></a>
-									<div class="css-15xwjg0 e1b74qft0">
-										<a class="css-mn2zdd e1b74qft1"
-											href="https://product.29cm.co.kr/catalog/2543323"><img
-											src="https://img.29cm.co.kr/item/202403/11eee6820772b9e89a76112b5895296e.jpeg?width=150"
-											class="css-nt3lq3 e1b74qft2">
-										<div class="css-161seae e1b74qft3">
-												<span class="css-16b7yk2 e1b74qft4">아크테릭스</span><span>[SS24]에어리어스
-													18 백팩</span><span class="css-pu7sky e1b74qft5">5% 313,500<span
-													class="css-0 e1b74qft6">won</span></span>
-											</div></a>
-										<div class="css-16j3p2r e1b74qft7">
-											<button class="css-1u7zeg9 e1b74qft8">
-												<svg xmlns="http://www.w3.org/2000/svg" width="16"
-													height="14" viewBox="0 0 20 20">
-													<path
-														d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
-														fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-														stroke-width="0.7"></path></svg>
-												<span class="css-1afbq5h e1b74qft9">102</span>
-											</button>
-										</div>
-									</div>
-									<div class="css-15xwjg0 e1b74qft0">
-										<a class="css-mn2zdd e1b74qft1"
-											href="https://product.29cm.co.kr/catalog/2602296"><img
-											src="https://img.29cm.co.kr/item/202404/11eefe2296b2fdeebb6a452d0d1cfa90.jpg?width=150"
-											class="css-nt3lq3 e1b74qft2">
-										<div class="css-161seae e1b74qft3">
-												<span class="css-16b7yk2 e1b74qft4">노스페이스</span><span>[노스페이스]
-													TNF 폴리카보네이트 휠러 28인치 NN2AQ12A_BLK</span><span
-													class="css-pu7sky e1b74qft5">5% 265,050<span
-													class="css-0 e1b74qft6">won</span></span>
-											</div></a>
-										<div class="css-16j3p2r e1b74qft7">
-											<button class="css-1u7zeg9 e1b74qft8">
-												<svg xmlns="http://www.w3.org/2000/svg" width="16"
-													height="14" viewBox="0 0 20 20">
-													<path
-														d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z"
-														fill="none" fill-rule="evenodd" stroke="#5d5d5d"
-														stroke-width="0.7"></path></svg>
-												<span class="css-1afbq5h e1b74qft9">3</span>
+												<span class="css-1afbq5h e1b74qft9">9</span>
 											</button>
 										</div>
 									</div>
@@ -2423,7 +2520,8 @@ svg:not(:root) {
 		<footer class="css-1lo70d e1l4oco10">
 			<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
 		</footer>
-	</div> <!-- next -->
+	</div>
+	<!-- next -->
 
 </body>
 <script>
