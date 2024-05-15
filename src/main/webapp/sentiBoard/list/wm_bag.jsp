@@ -525,7 +525,6 @@ button {
     min-height: 42px;
     border-right: 1px solid var(--ruler-semantic-color-border-line);
 }
-
 .widget-top-btn-box {
     -webkit-box-align: center;
     align-items: center;
@@ -534,12 +533,10 @@ button {
     -webkit-box-pack: start;
     justify-content: flex-start;
 }
-
 .wm-top-btn {
     position: relative;
     padding: 11px 20px;
 }
-
 .wm-top-btn-click {
     display: inline-block;
     font-family: var(--ruler-semantic-typography-text-l-bold-font-family);
@@ -548,7 +545,6 @@ button {
     font-size: var(--ruler-semantic-typography-text-l-bold-font-size);
     color: var(--ruler-semantic-color-text-primary);
 }
-
 .wm-top-btn-nclick {
     display: inline-block;
     font-family: var(--ruler-semantic-typography-text-l-font-family);
@@ -557,7 +553,6 @@ button {
     font-size: var(--ruler-semantic-typography-text-l-font-size);
     color: var(--ruler-semantic-color-text-secondary);
 }
-
 .wm-top-btn::after {
     content: "";
     position: absolute;
@@ -594,7 +589,6 @@ button {
 		<%
 		        } // while
 		 %> 
-			
 				</ul>
 				<!-- </ul> -->
 			</div>
@@ -606,7 +600,7 @@ button {
 				<div class="widget-gap">
 					<div class="widget-top-btn">
 						<div class="widget-top-btn-box">
-						
+
 						</div>
 					</div>
 				</div>
@@ -732,19 +726,16 @@ button {
 			</ul>
 		</div>
 	</div>
-
-
 <footer>
 	<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
 </footer>
 </body>
 <script>
-
     $(".medium_ctgr_id111").on("click", function(){
   	  
         let selectedMedium_ctgr_id = $(this).val(); // 선택한 부서번호 가져오기
         $.ajax({
-           url: "small_ctgr_json.jsp", 
+           url: "../json/small_ctgr_json.jsp", 
            dataType: "json",
            type: "GET", 
            data: { medium_ctgr_id: selectedMedium_ctgr_id }, // 선택한 부서번호를 전달
@@ -774,7 +765,5 @@ button {
            
         });
     });
- 
-
-</script>
+ </script>
 </html>
