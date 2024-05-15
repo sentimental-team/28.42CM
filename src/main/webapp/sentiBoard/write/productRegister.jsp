@@ -149,29 +149,29 @@
     <div class="container">
         <h1>상품 등록 페이지</h1>
         <form action="" method="POST" enctype="multipart/form-data">
-            <label for="product_name">상품명:</label>
-            <input type="text" id="product_name" name="product_name" required>
+            <label for="productName">상품명:</label>
+            <input type="text" id="productName" name="pdName" required>
 			
 			<label for="product_info">상품설명:</label>
-            <input type="text" id="product_info" name="product_info">
+            <input type="text" id="productInfo" name="pdInfo">
 			
-			<label for="product_info">브랜드명:</label>
-            <input type="text" id="brand_name" name="brand_name">
+			<label for="brandName">브랜드명:</label>
+            <input type="text" id="brandName" name="brandName">
             
             <label for="price">가격:</label>
-            <input type="number" id="price" name="price" required>
+            <input type="number" id="price" name="pdPrice" required>
 
             <label for="discount">할인율:</label>
-            <input type="number" id="discount" name="discount" min="0" max="100">
+            <input type="number" id="discount" name="pdDiscountRate" min="0" max="100">
 
             <label for="image">이미지 업로드:</label>
-            <input type="file" id="image" name="image" accept="image/*">
+            <input type="file" id="image" name="pdImageUrl" accept="image/*">
 
             <label for="description_image">상품 설명 이미지:</label> <!-- 추가된 라벨 -->
-            <input type="file" id="description_image" name="description_image" accept="image/*"> <!-- 추가된 이미지 업로드 -->
+            <input type="file" id="description_image" name="pdInfoImageUrl" accept="image/*"> <!-- 추가된 이미지 업로드 -->
 
             <label class="main_category" for="main_category">Main Category:</label>
-            <select class="main_category" id="main_category" name="main_category" required>
+            <select class="main_category" id="main_category" name="mainCtgr" required>
 			<option value="" disabled selected>카테고리를 선택해주세요</option>
 			<%
 			    Iterator<Main_CtgrVO> ir = mainList.iterator();
@@ -187,24 +187,24 @@
 			</select>
 
             <label class="" for="large_category">Large Category:</label>
-            <select class="large_category" id="large_category" name="large_category" required>
+            <select class="large_category" id="large_category" name="largeCtgr" required>
             	<option value="" disabled selected>카테고리를 선택해주세요</option>
             </select>
 
             <label class="" for="medium_category">Medium Category:</label>
-            <select class="medium_category" id="medium_category" name="medium_category" required>
+            <select class="medium_category" id="medium_category" name="mediumCtgr" required>
             	<option value="" disabled selected>카테고리를 선택해주세요</option>
             </select>
 
             <label class="" for="small_category">Small Category:</label>
-            <select class="small_category" id="small_category" name="small_category" required>
+            <select class="small_category" id="small_category" name="smallCtgr" required>
             	<option value="" disabled selected>카테고리를 선택해주세요</option>
             </select>
 			<br>
 			<br>
-            <button type="submit" onclick="location.href='productRegister_ok.do'">등록</button>
+            <button type="submit" onclick="location.href='/sentiBoard/write/productRegister_ok.do'">등록</button>
             <button type="submit">수정</button>
-            <button type="submit">취소</button>
+            <button type="submit" onclick="location.href='../list/beautyboardlist.jsp'">취소</button>
         </form>
     </div>
 </body>
@@ -212,6 +212,8 @@
 	<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
 </footer>
 <script>
+	
+
     $(document).ready(function() {
         $(".main_category").on("change", function() {
             // 선택된 옵션의 값을 가져옴
@@ -271,30 +273,33 @@
     });
 </script>
 <script>
-    $(document).ready(function() {
-        $(".medium_category").on("click", function() {
-            // 선택된 옵션의 값을 가져옴
-            let selectedMediumCategoryId = $(this).val();
-            $.ajax({
-            	url: "../json/small_ctgr_json.jsp",
-            	dataType: "json",
-            	type: "GET",
-            	data: {medium_ctgr_id: selectedMediumCategoryId},
-            	cache: false,
-            	success: function(data){
-            		$(".small_category").empty();
-            		$(data.small_ctgr).each(function(index, element){
-            			$(".small_category").append(`
-            				<option class="small_ctgr_option">\${element.small_ctgr_name}</option>	
-            					`);
-            		});
-            		
-            	},
-            	error: function(){
-            		alert("error");
-            	}
-            }); // ajax
-        });
-    });
+	$(document).ready(function() {
+	    $(".medium_category").on("click", function() {
+	        // 선택된 옵션의 값을 가져옴
+	        let selectedMediumCategoryId = $(this).val();
+	        if (selectedMediumCategoryId !== "") { // 값이 비어있지 않은 경우에만 처리
+	            $.ajax({
+	                url: "../json/small_ctgr_json.jsp",
+	                dataType: "json",
+	                type: "GET",
+	                data: {medium_ctgr_id: selectedMediumCategoryId},
+	                cache: false,
+	                success: function(data){
+	                    $(".small_category").empty();
+	                    $(data.small_ctgr).each(function(index, element){
+	                        $(".small_category").append(`
+	                            <option class="small_ctgr_option">\${element.small_ctgr_name}</option>   
+	                        `);
+	                    });
+	                    
+	                },
+	                error: function(){
+	                    
+	                }
+	            }); // ajax
+	        }
+	    });
+	});
+
 </script>
 </html>
