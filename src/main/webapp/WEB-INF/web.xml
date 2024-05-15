@@ -57,7 +57,7 @@
 	<!-- ajax  -->
 	<servlet>
 		<servlet-name>AjaxControllerUsingURI</servlet-name>
-		<servlet-class>mvc.controller.AjaxControllerUsingURI</servlet-class>
+		<servlet-class>board.controller.AjaxControllerUsingURI</servlet-class>
 		<init-param>
 			<param-name>configFile</param-name>
 			<param-value>

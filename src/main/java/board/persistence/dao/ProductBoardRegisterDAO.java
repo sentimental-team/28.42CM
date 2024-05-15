@@ -8,6 +8,6 @@ import board.dto.ProductBoardRegisterDTO;
 public interface ProductBoardRegisterDAO {
 	
 	// 상품 등록
-	int  productRegister(Connection conn, ProductBoardRegisterDTO dto) throws SQLException;
+	int  productRegister(ProductBoardRegisterDTO dto) throws SQLException;
 	
 }

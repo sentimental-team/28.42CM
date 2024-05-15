@@ -41,7 +41,7 @@ try{
     while(rs.next()){       
         String brand_name = rs.getString("brand_name");
         String pd_name = rs.getString("pd_name");
-        int pd_price = rs.getInt("pd_price");
+        int pd_price = rs.getInt("pdPrice");
         int pd_grade = rs.getInt("pd_grade");
         String pd_image_url = rs.getString("pd_image_url");
         
@@ -56,6 +56,8 @@ try{
        
 
         jsonEmpArray.add(jsonProduct);
+        
+       
     }
 
     jsonData.put("Product", jsonEmpArray);

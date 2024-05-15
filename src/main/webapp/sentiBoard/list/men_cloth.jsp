@@ -87,7 +87,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 				<h2 class="best_title_left">남성의류</h2>
 				<!-- <ul class="left_bar_meue" > -->
 				<ul class="left-menu">
-					 	<%
+		<%
               Iterator<Medium_CtgrVO> ir =mclist.iterator();
               while (ir.hasNext()) {
               mcvo = ir.next();
