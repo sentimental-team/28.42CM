@@ -1218,23 +1218,23 @@ svg:not(:root) {
 						<a class="css-1iv23n0 etlggkw4"
 							href="#">NEW</a>
 						<a class="css-1iv23n0 etlggkw4"
-							href="#">캠핑</a>
+							href="/jspPro/sentiBoard/list/leisure/leisure_camping.jsp">캠핑</a>
 						<a class="css-1iv23n0 etlggkw4"
-							href="#">등산,하이킹</a>
+							href="/jspPro/sentiBoard/list/leisure/leisure_hiking.jsp">등산,하이킹</a>
 						<a class="css-1iv23n0 etlggkw4"
-							href="#">골프</a>
+							href="/jspPro/sentiBoard/list/leisure/leisure_golf.jsp">골프</a>
 						<a class="css-1iv23n0 etlggkw4"
-							href="#">수영</a>
+							href="/jspPro/sentiBoard/list/leisure/leisure_swiming.jsp">수영</a>
 						<a class="css-1iv23n0 etlggkw4"
-							href="#">러닝</a>
+							href="/jspPro/sentiBoard/list/leisure/leisure_running.jsp">러닝</a>
 						<a class="css-1iv23n0 etlggkw4"
-							href="#">실내운동</a>
+							href="/jspPro/sentiBoard/list/leisure/leisure_indoor-exercise.jsp">실내운동</a>
 						<a class="css-1iv23n0 etlggkw4"
-							href="#">여행</a>
+							href="/jspPro/sentiBoard/list/leisure/leisure_travel.jsp">여행</a>
 						<a class="css-1iv23n0 etlggkw4"
-							href="#">테니스</a>
+							href="/jspPro/sentiBoard/list/leisure/leisure_tennis.jsp">테니스</a>
 						<a class="css-1iv23n0 etlggkw4"
-							href="#">자전거</a>
+							href="/jspPro/sentiBoard/list/leisure/leisure_bike.jsp">자전거</a>
 					</ul>
 				</div>
 			</div>

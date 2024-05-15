@@ -1400,11 +1400,11 @@ svg:not(:root) {
 				<ul>
 					<a href="#" class="bb2">All</a>
 					<a href="#" class="bb2">NEW</a>
-					<a href="#" class="bb2">청소,수납</a>
-					<a href="#" class="bb2">쿡웨어</a>
-					<a href="#" class="bb2">테이블웨어</a>
-					<a href="#" class="bb2">욕실</a>
-					<a href="#" class="bb2">반려동물</a>
+					<a href="/jspPro/sentiBoard/list/kitchen/kitchen_cleaning.jsp" class="bb2">청소,수납</a>
+					<a href="/jspPro/sentiBoard/list/kitchen/kitchen_cookwear.jsp" class="bb2">쿡웨어</a>
+					<a href="/jspPro/sentiBoard/list/kitchen/kitchen_tablewear.jsp" class="bb2">테이블웨어</a>
+					<a href="/jspPro/sentiBoard/list/kitchen/kitchen_bath.jsp" class="bb2">욕실</a>
+					<a href="/jspPro/sentiBoard/list/kitchen/kitchen_pet.jsp" class="bb2">반려동물</a>
 				</ul>
 			</div>
 		</div>
