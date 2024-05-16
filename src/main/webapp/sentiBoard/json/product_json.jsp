@@ -22,10 +22,10 @@ int medium_ctgr_id = Integer.parseInt(pMedium_ctgr_id);
 
 String sql = " select brand_name, pd_name, pd_price, pd_grade,pd_image_url"
 			+" from product p"
-			+" join pd_like l on p.pd_Id=l.pd_id"
+		    +" join pd_like l on p.pd_Id=l.pd_id"
 			+" join product_grade g on l.pd_id=g.pd_id"
 			+" join brand b on p.brand_Id=b.brand_Id"
-			+" join product_image i on p.pd_id=i.pd_id"
+			+" join product_image i on p.pd_id=i.pd_id" 
 			+" where p.medium_ctgr_id = ? ";
 
 

@@ -25,15 +25,15 @@ public class PdDAO implements IPd {
 	public List<PdDTO> selectMediumList(Connection con, int medium_ctgr_id) throws SQLException {
 		
 		
-		String sql = " select brand_name, pd_name, pd_price, pd_grade,pd_image_url,medium_ctgr_id, pdInfo, pdSalesQuantity, pdDiscountRate"
-					+" ,brandId, pdImageUrl, pdInfoImageUrl"
-					+" from product p"
-					+" join pd_like l on p.pd_Id=l.pd_id"
-					+" join product_grade g on l.pd_id=g.pd_id"
-					+" join brand b on p.brand_Id=b.brand_Id"
-					+" join product_image i on p.pd_id=i.pd_id"
-					+" where p.medium_ctgr_id = ? ";
-		
+		String sql =" SELECT p.PD_ID, pd_name, pd_price, pd_info, pd_sales_quantity, pd_discount_rate"
+				+ " ,p.brand_id, brand_name, Pd_Image_Url, pd_info_image_url ,p.Medium_Ctgr_Id, pd_grade, c.medium_ctgr_name "
+				+ " FROM product p"
+				+ " JOIN brand b on p.brand_id =b.brand_id"
+				+ " join PRODUCT_IMAGE i on p.pd_id = i.pd_id"
+				+ " join PRODUCT_GRADE g  on p.pd_id=g.pd_id"
+				+ " join MEDIUM_CTGR c on p.medium_ctgr_id = c.medium_ctgr_id"
+				+ " WHERE p.medium_ctgr_id= ?";
+				
 				
 				
 		 ArrayList<PdDTO> list = null;
@@ -50,17 +50,19 @@ public class PdDAO implements IPd {
 	            do {
 	               dto =  new PdDTO();
 
-	               dto.setPdId(rs.getInt("pdId"));
-	               dto.setPdName(rs.getString("pdName"));
-	               dto.setPdPrice( rs.getInt("PdPrice"));
-	               dto.setPdInfo( rs.getString("pdInfo"));   
-	               dto.setPdSalesQuantity(rs.getInt("pdSalesQuantity"));
-	               dto.setPdDiscountRate(rs.getInt("pdDiscountRate"));
-	               dto.setBrandId(rs.getInt("brandId"));               
-	               dto.setBrandName(rs.getString("brandName"));       
-	               dto.setPdImageUrl(rs.getString("pdImageUrl"));    
-	               dto.setPdInfoImageUrl(rs.getString("pdInfoImageUrl")); 
-	               dto.setMedium_ctgr_id(rs.getInt("medium_ctgr_id"));
+	               dto.setPdId(rs.getInt("PD_ID"));
+	               dto.setPdName(rs.getString("pd_name"));
+	               dto.setPdPrice( rs.getInt("pd_price"));
+	               dto.setPdInfo( rs.getString("pd_info"));   
+	               dto.setPdSalesQuantity(rs.getInt("pd_sales_quantity"));
+	               dto.setPdDiscountRate(rs.getInt("pd_discount_rate"));
+	               dto.setBrandId(rs.getInt("brand_id"));               
+	               dto.setBrandName(rs.getString("brand_name"));       
+	               dto.setPdImageUrl(rs.getString("Pd_Image_Url"));    
+	               dto.setPdInfoImageUrl(rs.getString("pd_info_image_url")); 
+	               dto.setMedium_ctgr_id(rs.getInt("Medium_Ctgr_Id"));
+	               dto.setPdGrade(rs.getInt("pd_grade"));
+	               dto.setMedium_ctgr_name(rs.getString("medium_ctgr_name"));
 	               
 	               
 	                

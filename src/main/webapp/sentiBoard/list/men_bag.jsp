@@ -21,7 +21,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
     ResultSet rs = null;    	/*  sql로 불러온 결과 집합들을 저장할 공간 */
     String sql = " SELECT medium_ctgr_id, medium_ctgr_name, large_ctgr_id " 
     		+" FROM medium_ctgr"
-    		+" where large_ctgr_id='5'";
+    		+" where large_ctgr_id='6'";
     
     int medium_ctgr_id = 0;
     String medium_ctgr_name =  null; 
@@ -86,7 +86,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 			<button></button>
 			<div>
 				<!-- <button></button>  화면이 작아졌을 때 #best-left메뉴 나타나게 하는거 -->
-				<h2 class="best_title_left">남성의류</h2>
+				<h2 class="best_title_left">남성가방</h2>
 				<!-- <ul class="left_bar_meue" > -->
 				<ul class="left-menu">
 		<%
