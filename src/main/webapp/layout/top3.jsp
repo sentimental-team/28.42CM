@@ -744,7 +744,7 @@ button {
 												<div class="category">
 												  <a_href="#"class="category">EXCLUSIVE</a></div>
 												<div class="category">
-												  <a href=""class="category">해외브랜드</a></div>
+												  <a href="/sentiBoard/list/boardlist.do" class="category">해외브랜드</a></div>
 												<div class="category">
 												  <a href="#"class="category">아우터</a></div>
 												<div class="category">

@@ -20,6 +20,7 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <!-- <script src="/jspPro/resources/cdn-main/example.js"></script> -->
 </head>
+
 <body>
 	<header>
 		<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
