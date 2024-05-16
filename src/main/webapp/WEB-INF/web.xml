@@ -78,6 +78,7 @@
 		<servlet-class>member.command.LoginHandler</servlet-class>
 	</servlet>
 	<servlet-mapping>
+<<<<<<< HEAD
 		<servlet-name>login</servlet-name>
 		<url-pattern>/login</url-pattern>
 	</servlet-mapping>
@@ -90,5 +91,13 @@
 		<servlet-name>logout</servlet-name>
 		<url-pattern>/logout</url-pattern>
 	</servlet-mapping>
+=======
+		<servlet-name>AjaxControllerUsingURI</servlet-name>
+		<url-pattern>*.ajax</url-pattern>
+	</servlet-mapping> -->
+	
+	
+	y;
+>>>>>>> 1dd3f0e39d14b37671d1a52b0b90375d74357b93
 </web-app>
 
