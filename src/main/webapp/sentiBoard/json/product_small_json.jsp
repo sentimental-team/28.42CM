@@ -15,7 +15,6 @@ ResultSet rs = null;
 
 String pSmall_ctgr_id = request.getParameter("small_ctgr_id");
 
-if(pSmall_ctgr_id == null || pSmall_ctgr_id.equals("")) pSmall_ctgr_id = "867";
 
 int small_ctgr_id = Integer.parseInt(pSmall_ctgr_id);
 

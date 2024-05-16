@@ -25,14 +25,15 @@ public class PdDAO implements IPd {
 	public List<PdDTO> selectMediumList(Connection con, int medium_ctgr_id) throws SQLException {
 		
 		
-		String sql = " select brand_name, pd_name, pd_price, pd_grade,pd_image_url,medium_ctgr_id, pdInfo, pdSalesQuantity, pdDiscountRate"
-					+" ,brandId, pdImageUrl, pdInfoImageUrl"
-					+" from product p"
-					+" join pd_like l on p.pd_Id=l.pd_id"
-					+" join product_grade g on l.pd_id=g.pd_id"
-					+" join brand b on p.brand_Id=b.brand_Id"
-					+" join product_image i on p.pd_id=i.pd_id"
-					+" where p.medium_ctgr_id = ? ";
+		String sql = "select b.brand_name, p.pd_name, p.pd_price, g.pd_grade, i.pd_image_url, "
+				+ "p.medium_ctgr_id, p.pd_info, p.pd_sales_quantity, p.pd_discount_rate "
+				+ ",b.brand_id, i.pd_image_url, i.pd_info_image_url "
+				+ "FROM product p "
+				+ "JOIN pd_like l ON p.pd_Id=l.pd_id "
+				+ "JOIN product_grade g ON l.pd_id=g.pd_id "
+				+ "JOIN brand b ON p.brand_Id=b.brand_Id "
+				+ "JOIN product_image i ON p.pd_id=i.pd_id "
+				+ "WHERE p.medium_ctgr_id = ? ";
 		
 				
 				
@@ -50,16 +51,16 @@ public class PdDAO implements IPd {
 	            do {
 	               dto =  new PdDTO();
 
-	               dto.setPdId(rs.getInt("pdId"));
-	               dto.setPdName(rs.getString("pdName"));
-	               dto.setPdPrice( rs.getInt("PdPrice"));
-	               dto.setPdInfo( rs.getString("pdInfo"));   
-	               dto.setPdSalesQuantity(rs.getInt("pdSalesQuantity"));
-	               dto.setPdDiscountRate(rs.getInt("pdDiscountRate"));
-	               dto.setBrandId(rs.getInt("brandId"));               
-	               dto.setBrandName(rs.getString("brandName"));       
-	               dto.setPdImageUrl(rs.getString("pdImageUrl"));    
-	               dto.setPdInfoImageUrl(rs.getString("pdInfoImageUrl")); 
+	               dto.setPdId(rs.getInt("pd_id"));
+	               dto.setPdName(rs.getString("pd_name"));
+	               dto.setPdPrice( rs.getInt("pd_price"));
+	               dto.setPdInfo( rs.getString("pd_info"));   
+	               dto.setPdSalesQuantity(rs.getInt("pd_sales_quantity"));
+	               dto.setPdDiscountRate(rs.getInt("pd_discount_rate"));
+	               dto.setBrandId(rs.getInt("brand_id"));               
+	               dto.setBrandName(rs.getString("brand_name"));       
+	               dto.setPdImageUrl(rs.getString("pd_image_url"));    
+	               dto.setPdInfoImageUrl(rs.getString("pd_info_image_url")); 
 	               dto.setMedium_ctgr_id(rs.getInt("medium_ctgr_id"));
 	               
 	               

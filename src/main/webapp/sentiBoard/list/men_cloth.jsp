@@ -15,7 +15,6 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
  <%
 
     Connection conn = ConnectionProvider.getConnection();  /* DBconn 사용x ,ConnectionProvider 사용할것. */
-
     
     PreparedStatement pstmt = null; /*  sql문 사용할 준비 */
     ResultSet rs = null;    	/*  sql로 불러온 결과 집합들을 저장할 공간 */
