@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
@@ -245,9 +245,9 @@ a {
 
 </head>
 <body>
-	<header class="css-ktg3h6 e1e75y762">
-		<a href="링크주소">상단</a>
-	</header>
+<header>
+	<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
+</header>
 	<div class="css-immiqd e18sgbvw0">
 		<h2 class="css-fbjraf e18sgbvw1">로그인</h2>
 		<div class="css-1lu3imi e18sgbvw2">
@@ -297,8 +297,8 @@ a {
 			</ul>
 		</div>
 	</div>
-	<footer class="css-1lo70d e1l4oco10">
-		<a href="링크주소">하단</a>
+	<footer>
+	<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
 	</footer>
 
 	<script>
