@@ -9,8 +9,13 @@ import com.util.ConnectionProvider;
 import com.util.JdbcUtil;
 
 import member.domain.MemberDTO;
+<<<<<<< HEAD
+import member.persistence.MemberDAO;
+import member.persistence.MemberDAOImpl;
+=======
 import member.persistence.dao.MemberDAO;
 import member.persistence.daoImpl.MemberDAOImpl;
+>>>>>>> 1dd3f0e39d14b37671d1a52b0b90375d74357b93
 
 public class JoinService {
 
@@ -32,11 +37,24 @@ public class JoinService {
 			conn = ConnectionProvider.getConnection();
 			conn.setAutoCommit(false);
 
+<<<<<<< HEAD
+			if (memberDao.emailCheck(joinRequest.getMember_email())) {
+=======
 			if (memberDao.emailCheck(joinRequest.getMemberEmail())) {
+>>>>>>> 1dd3f0e39d14b37671d1a52b0b90375d74357b93
 				JdbcUtil.rollback(conn);
 				throw new DuplicateIdException();
 			}
 
+<<<<<<< HEAD
+			validatePassword(joinRequest.getMember_pwd(), joinRequest.getConfirmPassword());
+
+			MemberDTO memberDTO = new MemberDTO(
+				0,  // memberId는 시퀀스로 자동 생성
+				joinRequest.getMember_pwd(),
+				joinRequest.getMember_email(),
+				joinRequest.getMember_name(),
+=======
 			validatePassword(joinRequest.getMemberPwd(), joinRequest.getConfirmPassword());
 
 			MemberDTO memberDTO = new MemberDTO(
@@ -44,6 +62,7 @@ public class JoinService {
 				joinRequest.getMemberPwd(),
 				joinRequest.getMemberEmail(),
 				joinRequest.getMemberName(),
+>>>>>>> 1dd3f0e39d14b37671d1a52b0b90375d74357b93
 				0,  // Default mileage
 				0,  // Default coupon_id
 				0,  // Default grade_id
