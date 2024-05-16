@@ -22,6 +22,7 @@
     int main_ctgr_id = 0;
     String main_ctgr_name =  null; 
     
+    
     Main_CtgrVO mainCvo = null;
     ArrayList<Main_CtgrVO> mainList = null;
     
