@@ -14,6 +14,7 @@
 <%
     Connection conn = ConnectionProvider.getConnection();
     
+
     PreparedStatement pstmt = null;
     ResultSet rs = null;    
     String sql = " SELECT large_ctgr_id, large_ctgr_name, main_ctgr_id"

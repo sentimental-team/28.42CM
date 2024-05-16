@@ -430,14 +430,6 @@ button {
 	padding-right: 20px;
 }
 
-.bot-li-best {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	padding-right: 20px;
-}
-
 .bot-a {
 	cursor: pointer;
 	padding: 6px 0;
@@ -470,6 +462,7 @@ button {
     font-size: 15px;
     display: none;
     animation-delay: 2s;
+    border-bottom: 1px solid #d4d4d4;
 }
 
 .menu_category {
@@ -588,8 +581,8 @@ button {
 				</nav>
 				<div class="bottom">
 					<ul class="bot-ul">
-						<li class="bot-li-best">
-							<a class="bot-a" href="https://shop.29cm.co.kr/best-items">BEST</a></li>
+						<li class="bot-li"><a class="bot-a"
+							href="https://shop.29cm.co.kr/best-items">BEST</a></li>
 						<li class="bot-li">
 							<div class="div-ctgr">WOMEN</div>
 						</li>
@@ -662,7 +655,7 @@ button {
 												  <a  href="#"class="category">액티브웨어</a></div>
 													<!---->
 											</div>
-											<div  class="menu_category">
+									<div  class="menu_category">
 	                                   <a href="#"class="big_cate ng-tns-c43-0">
 	                                     <span class="categoryM">가방</span></a>
 												<div class="category">
@@ -749,9 +742,9 @@ button {
 												<div class="category">
 												  <a href="#"class="category">NEW</a></div>
 												<div class="category">
-												  <a href="#" class="category">EXCLUSIVE</a></div>
+												  <a_href="#"class="category">EXCLUSIVE</a></div>
 												<div class="category">
-												  <a href="#"class="category">해외브랜드</a></div>
+												  <a href="/sentiBoard/list/boardlist.do" class="category">해외브랜드</a></div>
 												<div class="category">
 												  <a href="#"class="category">아우터</a></div>
 												<div class="category">
@@ -964,9 +957,9 @@ button {
 												<div class="category">
 												  <a href="#"class="category">NEW</a></div>
 												<div class="category">
-												  <a href="#"class="category">음향기기</a></div>
+												  <a_href="#"class="category">음향기기</a></div>
 												<div class="category">
-												  <a href="#"class="category">모바일,웨어러블</a></div>
+												  <a_href="#"class="category">모바일,웨어러블</a></div>
 												<div class="category">
 												  <a href="#"class="category">모바일액세서리</a></div>
 												<div class="category">
@@ -1211,10 +1204,10 @@ $("#third-2").on("click",function(){
 	 }
 });
  
- $(".menu_pan, .bot-li").mouseenter(function(){
+ $(".menu_pan").mouseenter(function(){
 	 $('.menu_pan').eq($(this).index()).css({
          display:'block'
-     })
+     })  
  });
  
  $('.menu_pan').mouseleave(function(){

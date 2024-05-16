@@ -52,6 +52,8 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
         e.printStackTrace();
     } finally {
         try {
+          
+            
             JdbcUtil.close(rs);
             JdbcUtil.close(pstmt);
             JdbcUtil.close(conn);
@@ -77,7 +79,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <body>
 <header>
-	<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
+	<jsp:include page="/layout/top3.jsp" flush="false"></jsp:include>
 </header>
 	<div id="wrap">
 		<div id="best-left">

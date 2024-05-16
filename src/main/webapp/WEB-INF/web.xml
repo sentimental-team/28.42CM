@@ -35,11 +35,18 @@
 	   <url-pattern>/*</url-pattern> 
 	   <dispatcher>REQUEST</dispatcher>
 	</filter-mapping>
+
+
+
+		
+
+
    
    	<!-- 3.  컨트롤러 서블릿 등록 -->
 	<servlet>
-		<servlet-name>ControllerUsingURI</servlet-name>
-		<servlet-class>board.controller.ControllerUsingURI</servlet-class>
+		<servlet-name>dispatcherServlet</servlet-name>
+		<servlet-class>mvc.controller.DispatcherServlet</servlet-class>
+
 		<init-param>
 			<param-name>configFile</param-name>
 			<param-value>
@@ -50,12 +57,12 @@
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>ControllerUsingURI</servlet-name>
+		<servlet-name>dispatcherServlet</servlet-name>
 		<url-pattern>*.do</url-pattern>
 	</servlet-mapping>
 	
 	<!-- ajax  -->
-	<servlet>
+	<!-- <servlet>
 		<servlet-name>AjaxControllerUsingURI</servlet-name>
 		<servlet-class>mvc.controller.AjaxControllerUsingURI</servlet-class>
 		<init-param>
@@ -67,11 +74,17 @@
 		<load-on-startup>2</load-on-startup>
 	</servlet>
 
+
+
+	
+
+
 	<servlet-mapping>
 		<servlet-name>AjaxControllerUsingURI</servlet-name>
 		<url-pattern>*.ajax</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping> -->
 	
 	
 	
 </web-app>
+

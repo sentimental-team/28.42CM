@@ -381,25 +381,6 @@ input[type="radio"]:checked+label {
     color: inherit;
 }
 
-.right_radio{
-    min-height: 10px;
-    line-height: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: visible;
-    height: 18px;
-    margin-right: 10px;
-    padding-right: 15px;
-    border-right: 1px solid #ccc;
-    font-size: 12px;
-}
-
-.right_radio_a{
-	color: black;
-}
-
 .ppp>.heart+.review {
 	margin-left: 27px;
 }
@@ -495,7 +476,7 @@ button {
     font-weight: var(--ruler-semantic-typography-text-l-bold-font-weight);
     line-height: var(--ruler-semantic-typography-text-l-bold-line-height);
     font-size: var(--ruler-semantic-typography-text-l-bold-font-size);
-    color: #474747;
+    color: var(--ruler-semantic-color-text-primary);
 }
 .wm-top-btn-nclick {
     display: inline-block;
@@ -503,7 +484,7 @@ button {
     font-weight: var(--ruler-semantic-typography-text-l-font-weight);
     line-height: var(--ruler-semantic-typography-text-l-line-height);
     font-size: var(--ruler-semantic-typography-text-l-font-size);
-    color: #474747;
+    color: var(--ruler-semantic-color-text-secondary);
 }
 .wm-top-btn::after {
     content: "";

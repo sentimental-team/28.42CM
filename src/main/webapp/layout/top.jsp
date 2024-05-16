@@ -488,25 +488,25 @@ button {
 						<a class="logo-main" href="https://www.29cm.co.kr">29CM</a>
 						<ul class="menu-box">
 							<li class="my-page1">
-								<a class="my-page2" href="../write/productRegister.jsp">
+								<a class="my-page2" href="/sentiBoard/write/productRegister_ok.do">
 									<i class="my-icon"></i>
 									<strong class="my-page-text">상품 등록하기</strong>
 								</a>
 							</li>
 							<li class="my-page1">
-								<a class="my-page2" href="../user/mypage_delivery.jsp">
+								<a class="my-page2" href="https://www.29cm.co.kr/mypage/">
 									<i class="my-icon"></i>
 									<strong class="my-page-text">MY PAGE</strong>
 								</a>
 							</li>
 							<li class="my-like1">
-								<a class="my-like2" href="#">
+								<a class="my-like2" href="https://www.29cm.co.kr/mypage/heart">
 									<i class="like-icon"></i>
 									<strong class="my-like-text">MY LIKE</strong>
 								</a>
 							</li>
 							<li class="shop-bag1">
-								<a class="shop-bag2" href="../user/cart.jsp">
+								<a class="shop-bag2" href="https://www.29cm.co.kr/mypage/heart">
 									<i class="bag-icon"></i>
 									<strong class="my-bag-text">SHOPPING BAG</strong>
 								</a>

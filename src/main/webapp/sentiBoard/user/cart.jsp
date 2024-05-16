@@ -20,6 +20,7 @@
             + "JOIN pay pay ON p.pd_id = pay.pd_id "
             + "JOIN delivery de ON pay.pay_id = de.pay_id ";
             /* + "WHERE pd_name = 'test' "; */
+            
 	
 	String brandName;    
 	String pdName;       
@@ -164,7 +165,7 @@
 											</div>
 											<a id="item-title" class="item-title" href="https://product.29cm.co.kr/catalog/2523110">${cart.pdName }</a>
 											<div class="item-price">
-												<span class="price">${cart.pdPrice }원</span>
+												<span class="price">${cart.pdPrice }</span>
 											</div>
 											<div class="item-bot-info">${cart.pdOptionName }</div>
 										</div>
@@ -192,7 +193,7 @@
 								</div>
 								<div class="bot-info4">
 									<div class="bot-deli-pay">
-										${cart.deliveryPay }원
+										${cart.deliveryPay }
 									</div>
 								</div>
 							</div>
