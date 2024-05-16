@@ -29,6 +29,7 @@ String sql = " select brand_name, pd_name, pd_price, pd_grade,pd_image_url"
 
 
 
+
 JSONObject jsonData = new JSONObject();
 JSONArray jsonEmpArray = new JSONArray();
 
