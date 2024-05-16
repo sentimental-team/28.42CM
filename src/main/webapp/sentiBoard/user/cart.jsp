@@ -20,6 +20,7 @@
             + "JOIN pay pay ON p.pd_id = pay.pd_id "
             + "JOIN delivery de ON pay.pay_id = de.pay_id ";
             /* + "WHERE pd_name = 'test' "; */
+            
 	
 	String brandName;    
 	String pdName;       

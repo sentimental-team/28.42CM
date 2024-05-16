@@ -24,6 +24,7 @@ String sql = " SELECT small_ctgr_id, small_ctgr_name, medium_ctgr_id"
 			+" WHERE medium_ctgr_id = ?";
 
 
+
 JSONObject jsonData = new JSONObject();
 JSONArray jsonEmpArray = new JSONArray();
 

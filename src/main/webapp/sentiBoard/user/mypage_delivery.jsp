@@ -31,6 +31,7 @@
 	int deliveryPay;
 	Date deliveryDate;
 	
+	
 	DeliveryVO dvo = null;
 	ArrayList<DeliveryVO> dlist = null;
 	

@@ -27,6 +27,7 @@ String sql = " SELECT medium_ctgr_id, medium_ctgr_name, large_ctgr_id"
 
 
 
+
 JSONObject jsonData = new JSONObject();
 JSONArray jsonEmpArray = new JSONArray();
 

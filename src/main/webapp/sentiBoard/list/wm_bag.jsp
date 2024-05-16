@@ -13,6 +13,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
  <%
     Connection conn = DBConn.getConnection();
     
+ 
     PreparedStatement pstmt = null;
     ResultSet rs = null;    
     String sql = " SELECT medium_ctgr_id, medium_ctgr_name, large_ctgr_id " 

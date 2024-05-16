@@ -21,6 +21,7 @@
 >>>>>>> 170dd972a541c85dd1f843feb6a699b9a65f9615
     Connection conn = ConnectionProvider.getConnection();
     
+
     PreparedStatement pstmt = null;
     ResultSet rs = null;    
     String sql = " SELECT medium_ctgr_id, medium_ctgr_name, large_ctgr_id " 

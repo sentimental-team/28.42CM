@@ -1,4 +1,4 @@
-package board.dto;
+package product_list.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class ProductBoardRegisterDTO {
+public class PdDTO {
 	private int pdId;
 	private String pdName;
 	private int pdPrice;
@@ -23,6 +23,7 @@ public class ProductBoardRegisterDTO {
 	private int pdImageId;
 	private String pdImageUrl;
 	private String pdInfoImageUrl;
+	private int medium_ctgr_id;
 	
 	
 }

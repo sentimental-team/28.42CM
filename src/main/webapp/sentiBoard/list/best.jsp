@@ -19,6 +19,7 @@
 <%
     Connection conn = ConnectionProvider.getConnection();
     
+
     PreparedStatement pstmt = null;
     ResultSet rs = null;    
     String sql = " SELECT large_ctgr_id, large_ctgr_name, main_ctgr_id"
@@ -93,7 +94,7 @@
               
                 <li value="<%= lcvo.getLarge_ctgr_id() %>" class="large-menu2">
 
-               		<a href="#" class="small-menu"  <%=large_ctgr_id == lcvo.getLarge_ctgr_id() ? "selected" : "" %>><%= lcvo.getMain_ctgr_name() %></a>
+               		<a href="#" class="small-menu"  <%=large_ctgr_id == lcvo.getLarge_ctgr_id() ? "selected" : "" %>><%= lcvo.getLarge_ctgr_name() %></a>
                </li>                
 
                

@@ -44,8 +44,8 @@
    
    	<!-- 3.  컨트롤러 서블릿 등록 -->
 	<servlet>
-		<servlet-name>ControllerUsingURI</servlet-name>
-		<servlet-class>board.controller.ControllerUsingURI</servlet-class>
+		<servlet-name>dispatcherServlet</servlet-name>
+		<servlet-class>mvc.controller.DispatcherServlet</servlet-class>
 
 		<init-param>
 			<param-name>configFile</param-name>
@@ -57,7 +57,7 @@
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>ControllerUsingURI</servlet-name>
+		<servlet-name>dispatcherServlet</servlet-name>
 		<url-pattern>*.do</url-pattern>
 	</servlet-mapping>
 	
