@@ -18,7 +18,7 @@ ResultSet rs = null;
 String pMedium_ctgr_id = request.getParameter("medium_ctgr_id");
 
 int medium_ctgr_id = Integer.parseInt(pMedium_ctgr_id);
-
+System.out.print("dd");
 String sql = " SELECT small_ctgr_id, small_ctgr_name, medium_ctgr_id"
 			+" FROM small_ctgr" 
 			+" WHERE medium_ctgr_id = ?";
