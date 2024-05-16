@@ -564,7 +564,7 @@ button {
 </style>
 </head>
 <header>
-	<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
+	<jsp:include page="/layout/top3.jsp" flush="false"></jsp:include>
 </header>
 <body>
 	<div id="wrap">

@@ -52,8 +52,6 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
         e.printStackTrace();
     } finally {
         try {
-          
-            
             JdbcUtil.close(rs);
             JdbcUtil.close(pstmt);
             JdbcUtil.close(conn);

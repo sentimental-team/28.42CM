@@ -494,19 +494,19 @@ button {
 								</a>
 							</li>
 							<li class="my-page1">
-								<a class="my-page2" href="https://www.29cm.co.kr/mypage/">
+								<a class="my-page2" href="../user/mypage_delivery.jsp">
 									<i class="my-icon"></i>
 									<strong class="my-page-text">MY PAGE</strong>
 								</a>
 							</li>
 							<li class="my-like1">
-								<a class="my-like2" href="https://www.29cm.co.kr/mypage/heart">
+								<a class="my-like2" href="#">
 									<i class="like-icon"></i>
 									<strong class="my-like-text">MY LIKE</strong>
 								</a>
 							</li>
 							<li class="shop-bag1">
-								<a class="shop-bag2" href="https://www.29cm.co.kr/mypage/heart">
+								<a class="shop-bag2" href="../user/cart.jsp">
 									<i class="bag-icon"></i>
 									<strong class="my-bag-text">SHOPPING BAG</strong>
 								</a>

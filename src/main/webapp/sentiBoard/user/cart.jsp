@@ -164,7 +164,7 @@
 											</div>
 											<a id="item-title" class="item-title" href="https://product.29cm.co.kr/catalog/2523110">${cart.pdName }</a>
 											<div class="item-price">
-												<span class="price">${cart.pdPrice }</span>
+												<span class="price">${cart.pdPrice }원</span>
 											</div>
 											<div class="item-bot-info">${cart.pdOptionName }</div>
 										</div>
@@ -192,7 +192,7 @@
 								</div>
 								<div class="bot-info4">
 									<div class="bot-deli-pay">
-										${cart.deliveryPay }
+										${cart.deliveryPay }원
 									</div>
 								</div>
 							</div>

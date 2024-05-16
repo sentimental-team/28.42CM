@@ -430,6 +430,14 @@ button {
 	padding-right: 20px;
 }
 
+.bot-li-best {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	padding-right: 20px;
+}
+
 .bot-a {
 	cursor: pointer;
 	padding: 6px 0;
@@ -580,8 +588,8 @@ button {
 				</nav>
 				<div class="bottom">
 					<ul class="bot-ul">
-						<li class="bot-li"><a class="bot-a"
-							href="https://shop.29cm.co.kr/best-items">BEST</a></li>
+						<li class="bot-li-best">
+							<a class="bot-a" href="https://shop.29cm.co.kr/best-items">BEST</a></li>
 						<li class="bot-li">
 							<div class="div-ctgr">WOMEN</div>
 						</li>
@@ -741,7 +749,7 @@ button {
 												<div class="category">
 												  <a href="#"class="category">NEW</a></div>
 												<div class="category">
-												  <a_href="#"class="category">EXCLUSIVE</a></div>
+												  <a href="#" class="category">EXCLUSIVE</a></div>
 												<div class="category">
 												  <a href="#"class="category">해외브랜드</a></div>
 												<div class="category">
@@ -956,9 +964,9 @@ button {
 												<div class="category">
 												  <a href="#"class="category">NEW</a></div>
 												<div class="category">
-												  <a_href="#"class="category">음향기기</a></div>
+												  <a href="#"class="category">음향기기</a></div>
 												<div class="category">
-												  <a_href="#"class="category">모바일,웨어러블</a></div>
+												  <a href="#"class="category">모바일,웨어러블</a></div>
 												<div class="category">
 												  <a href="#"class="category">모바일액세서리</a></div>
 												<div class="category">
@@ -1206,7 +1214,7 @@ $("#third-2").on("click",function(){
  $(".menu_pan, .bot-li").mouseenter(function(){
 	 $('.menu_pan').eq($(this).index()).css({
          display:'block'
-     })  
+     })
  });
  
  $('.menu_pan').mouseleave(function(){

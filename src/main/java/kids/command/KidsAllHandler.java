@@ -13,7 +13,7 @@ public class KidsAllHandler implements CommandHandler {
 	private KidsAllDAO kidsAllDAO;
 
 	public KidsAllHandler() {
-		kidsAllDAO = new KidsAllDAOImpl();
+		KidsAllDAO = new KidsAllDAOImpl();
 	}
 
 	@Override

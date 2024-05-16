@@ -64,10 +64,10 @@
 </style>
 
 
+</head>
 <header>
 	  <jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
-	</header>
-</head>
+</header>
 
 	
 <body class="header_active">
