@@ -1218,8 +1218,8 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
             </div>
 				    </div>		    
 			  </div>
-			
-			
+
+
 			  <!-- If we need navigation buttons -->
 			  <div class="swiper-button-prev"></div>
 			  <div class="swiper-button-next"></div>
