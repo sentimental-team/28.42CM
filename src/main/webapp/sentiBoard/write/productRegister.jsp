@@ -146,7 +146,7 @@
 	<jsp:include page="/layout/top3.jsp" flush="false"></jsp:include>
 </header>
 <body>
-    <div class="container">
+    <div id="productForm" class="container">
         <h1>상품 등록 페이지</h1>
         <form action="" method="POST" enctype="multipart/form-data">
             <label for="productName">상품명:</label>
@@ -301,5 +301,24 @@
 	    });
 	});
 
+</script>
+<script>
+	document.getElementById('productForm').addEventListener('submit', function(event){
+		event.preventDefault();
+		
+		var formData = {
+			pdName: document.getElementById("productName").value,
+			pdInfo: document.getElementById("productInfo").value,
+			brandName: document.getElementById("brandName").value,
+			pdPrice: document.getElementById("price").value,
+			pdDiscountRate: document.getElementById("discount").value,
+			mainCtgrId: document.geltElementById("main_category").value,
+			largeCtgrId: document.geltElementById("large_category").value,
+			mediumCtgrId: document.geltElementById("medium_category").value,
+			smallCtgrId: document.geltElementById("small_category").value,
+		}
+		
+	})
+	
 </script>
 </html>

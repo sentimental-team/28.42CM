@@ -1,9 +1,9 @@
-package board.command;
+package mvc.command;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class BoardNullHandler implements BoardCommandHandler{
+public class NullHandler implements CommandHandler{
 
 	@Override
 	public String process(HttpServletRequest req, HttpServletResponse res) throws Exception {

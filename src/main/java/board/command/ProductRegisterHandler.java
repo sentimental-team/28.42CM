@@ -1,4 +1,4 @@
-package board.command.write;
+package board.command;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -13,12 +13,12 @@ import org.apache.commons.collections.map.HashedMap;
 import com.util.ConnectionProvider;
 import com.util.JdbcUtil;
 
-import board.command.BoardCommandHandler;
 import board.dto.ProductBoardRegisterDTO;
 import board.persistence.dao.ProductBoardRegisterDAO;
 import board.persistence.daoImpl.ProductBoardRegisterDAOImpl;
+import mvc.command.CommandHandler;
 
-public class ProductRegisterHandler implements BoardCommandHandler {
+public class ProductRegisterHandler implements CommandHandler {
 		
 	@Override
 	public String process(HttpServletRequest request, HttpServletResponse response) throws Exception {
