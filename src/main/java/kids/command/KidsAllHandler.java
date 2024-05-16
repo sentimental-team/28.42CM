@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import kids.domain.KidsAllDTO;
 import kids.persistence.KidsAllDAO;
 import kids.persistence.KidsAllDAOImpl;
+import mvc.command.CommandHandler;
 
 public class KidsAllHandler implements CommandHandler {
 
