@@ -88,7 +88,7 @@
               
                 <li value="<%= lcvo.getLarge_ctgr_id() %>" class="large-menu2">
 
-               		<a href="#" class="small-menu"  <%=large_ctgr_id == lcvo.getLarge_ctgr_id() ? "selected" : "" %>><%= lcvo.getMain_ctgr_name() %></a>
+               		<a href="#" class="small-menu"  <%=large_ctgr_id == lcvo.getLarge_ctgr_id() ? "selected" : "" %>><%= lcvo.getLarge_ctgr_name() %></a>
                </li>                
 
                

@@ -1,5 +1,6 @@
 package member.command;
 
-public class MemberHandler {
+
+public class MemberHandler  {
 
 }
