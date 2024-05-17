@@ -87,15 +87,15 @@ public class PdDAO implements IPd {
 	public List<PdDTO> viewProduct(Connection con, int pd_id) throws SQLException {
 	
 		
-		String sql =" select pd_name, pd_image_url, pd_price, pd_discount_rate, delivery_pay, pd_content, pd_option_name, pd_info_image_url,  review_content"
-				+ " from product p"
-				+ " join PRODUCT_IMAGE i on p.pd_id=i.pd_id"
-				+ " join PAY y on p.pd_id= y.pd_id\r\n"
-				+ " join DELIVERY d on d.pay_id = y.pay_id"
-				+ " join PRODUCT_QNA n on p.pd_id = n.pd_id"
-				+ " join PRODUCT_REVIEW w on w.pd_id = p.pd_id"
-				+ " join PRODUCT_OPTION t on t.large_ctgr_id =p.large_ctgr_id"
-				+ " where p.pd_id =?";
+		String sql =" select pd_name, pd_image_url, pd_price, pd_discount_rate, delivery_pay, pd_content, pd_option_name, pd_info_image_url,  review_content "
+				+ " from product p "
+				+ " join PRODUCT_IMAGE i on p.pd_id=i.pd_id "
+				+ " join PAY y on p.pd_id= y.pd_id "
+				+ " join DELIVERY d on d.pay_id = y.pay_id "
+				+ " join PRODUCT_QNA n on p.pd_id = n.pd_id "
+				+ " join PRODUCT_REVIEW w on w.pd_id = p.pd_id "
+				+ " join PRODUCT_OPTION t on t.large_ctgr_id =p.large_ctgr_id "
+				+ " where p.pd_id =? ";
 				
 		
 
