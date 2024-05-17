@@ -61,6 +61,7 @@ public Map<String, CommandHandler> commandHandlerMap = new HashMap<>();
 				try {
 					CommandHandler handler = (CommandHandler) commandHandlerClass.newInstance();
 					this.commandHandlerMap.put(url, handler);	// 맵 추가
+					System.out.println(commandHandlerMap);
 				} catch (InstantiationException e) {
 					e.printStackTrace();
 				} catch (IllegalAccessException e) {

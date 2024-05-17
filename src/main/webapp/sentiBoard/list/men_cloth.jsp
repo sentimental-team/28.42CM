@@ -134,16 +134,16 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 			<c:forEach var="list" items="${list}">
 				<li class="photo1">
        					<div class="cc">
-       						<a href="#">
+       						<a href="/sentiBoard/list/view.do?pd_id=${list.pd_id}">
        							<div class="dd">
        								<img alt=""
-       									src="\${list.pd_image_url}"
+       									src="${list.pdImageUrl}"
        									class="ff">
        							</div>
        						</a> 
        						<div class="gg">
        							<a class="hh" href="#">${list.brandName}</a> <a
-       								title="\${element.pd_name}">
+       								title="${element.pd_name}">
        								<div class="j">
        									<h5 class="jj">${list.pdName} (10 Color)</h5>
        									<strong class="jjj"></strong>
@@ -234,7 +234,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
                   	<li class="photo1">
        					<div class="cc">
        					
-       						<a href="/sentiBodard/list/view.do?pd_id=\${element.pd_id} ">
+       						<a href="/sentiBoard/list/view.do?pd_id=\${element.pd_id} ">
        							<div class="dd">
        								<img alt=""
        									src="\${element.pd_image_url}"
@@ -321,7 +321,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 		                   $(".photo_list").append(`	
 		                  	<li class="photo1">
 		       					<div class="cc">
-		       						<a href="#">
+		       						<a href="/sentiBoard/list/view.do?pd_id=\${element.pd_id}">
 		       							<div class="dd">
 		       								<img alt=""
 		       									src="\${element.pd_image_url}"

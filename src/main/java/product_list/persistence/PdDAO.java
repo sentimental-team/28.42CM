@@ -26,7 +26,7 @@ public class PdDAO implements IPd {
 		
 		
 		String sql =" SELECT p.PD_ID, pd_name, pd_price, pd_info, pd_sales_quantity, pd_discount_rate"
-				+ " ,p.brand_id, brand_name, Pd_Image_Url, pd_info_image_url ,p.Medium_Ctgr_Id, pd_grade, c.medium_ctgr_name "
+				+ " ,p.brand_id, brand_name, Pd_Image_Url, pd_info_image_url ,p.Medium_Ctgr_Id, pd_grade, c.medium_ctgr_name,p.pd_id "
 				+ " FROM product p"
 				+ " JOIN brand b on p.brand_id =b.brand_id"
 				+ " join PRODUCT_IMAGE i on p.pd_id = i.pd_id"
@@ -68,6 +68,7 @@ public class PdDAO implements IPd {
 	               dto.setMedium_ctgr_id(rs.getInt("Medium_Ctgr_Id"));
 	               dto.setPdGrade(rs.getInt("pd_grade"));
 	               dto.setMedium_ctgr_name(rs.getString("medium_ctgr_name"));
+	               dto.setPd_id(rs.getInt("pd_id"));
 	               
 	               
 	                
@@ -86,7 +87,18 @@ public class PdDAO implements IPd {
 	public List<PdDTO> viewProduct(Connection con, int pd_id) throws SQLException {
 	
 		
-		String sql ="";
+		String sql =" select pd_name, pd_image_url, pd_price, pd_discount_rate, delivery_pay, pd_content, pd_option_name, pd_info_image_url,  review_content"
+				+ " from product p"
+				+ " join PRODUCT_IMAGE i on p.pd_id=i.pd_id"
+				+ " join PAY y on p.pd_id= y.pd_id\r\n"
+				+ " join DELIVERY d on d.pay_id = y.pay_id"
+				+ " join PRODUCT_QNA n on p.pd_id = n.pd_id"
+				+ " join PRODUCT_REVIEW w on w.pd_id = p.pd_id"
+				+ " join PRODUCT_OPTION t on t.large_ctgr_id =p.large_ctgr_id"
+				+ " where p.pd_id =?";
+				
+		
+
 		
 		 ArrayList<PdDTO> list = null;
 	      PreparedStatement pstmt = null;
@@ -110,11 +122,13 @@ public class PdDAO implements IPd {
 	               dto.setPdImageUrl(rs.getString("pd_image_url"));
 	               dto.setPdPrice(rs.getInt("pd_price"));
 	               dto.setPdDiscountRate(rs.getInt("pd_discount_rate"));
-	               dto.setDeliveryPay(rs.getInt("delivery_pay"));
+	               dto.setDeliveryPay(rs.getInt("delivery_pay"));	
+	               dto.setPdContent(rs.getString("pd_content"));	              
 	               dto.setPdOptionName(rs.getString("pd_option_name"));
-	               dto.setPdInfoImageUrl(rs.getString("pd_info_image_url"));	              
+	               dto.setPdInfoImageUrl(rs.getString("pd_info_image_url"));	
 	               dto.setReviewContent(rs.getString("review_content"));
-	               dto.setPdContent(rs.getString("pd_content"));
+	             
+	            
 	                
 	               list.add(dto);
 	            } while ( rs.next() );
