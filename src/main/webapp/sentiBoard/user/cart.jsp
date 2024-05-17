@@ -88,7 +88,7 @@
 								<div class="bot-info1">
 									<div class="bot-item-info">
 										<a href="https://product.29cm.co.kr/catalog/2523110">
-											<img class="item-img" src="https://img.29cm.co.kr/item/202403/11eee58ea43027dc82f2a3e7a32e56e5.jpg?width=150" alt="LG전자 시네빔 큐브 Qube HU710PB" loading="lazy"/>
+											<img class="item-img" src="${list.pdImageURL }" alt="${list.pdName }" loading="lazy"/>
 										</a>
 										<div class="item-img-info">
 											<div translate="no">
@@ -98,7 +98,7 @@
 											<div class="item-price">
 												<span class="price">${list.pdPrice }</span>
 											</div>
-											<div class="item-bot-info">${list.pdOptionName }</div>
+											<div class="item-bot-info">옵션 : ${list.pdOptionName }</div>
 										</div>
 									</div>
 									<button id="item-delete" class="item-delete"></button>
@@ -151,10 +151,10 @@
 						<div class="total-pay-bottom">
 							<div class="total-pay-bottom-box1">
 								<span class="total-pay-price">
-									<strong class="total-pay-price-text">${list.totalPayPrice }</strong>
+									<strong class="total-pay-price-text"><c:out value="${totalPayPrice }" /></strong>
 									원
 								</span>
-								<span class="total-pay-item-cnt">총 ${totalItemCnt}개</span>
+								<span class="total-pay-item-cnt">총 ${totalCnt}개</span>
 							</div>
 							<div class="total-pay-bottom-box2">
 								<i class="css-15wexqq e17g5zv810"></i>
@@ -241,9 +241,9 @@
 	        checkbox.addEventListener('click', checkSelectAll);
 	    });
 
-	    document.querySelector('input[name="checkbox-btn-all"]').addEventListener('click', function() {
+	   /*  document.querySelector('input[name="checkbox-btn-all"]').addEventListener('click', function() {
 	        selectAll(this);
-	    });
+	    }); */
 
 	    document.querySelectorAll('input[name="checkbox-btn"]').forEach((checkbox) => {
 	        checkbox.addEventListener('click', checkSelectAll);
