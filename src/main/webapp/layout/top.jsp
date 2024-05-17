@@ -544,6 +544,12 @@ button {
 					<div class="logo">
 						<a class="logo-main" href="https://www.29cm.co.kr">29CM</a>
 						<ul class="menu-box">
+						<li class="my-page1">
+	                        <a class="my-page2" href="/sentiBoard/write/productRegister_ok.do">
+	                           <i class="my-icon"></i>
+	                           <strong class="my-page-text">상품 등록하기</strong>
+	                        </a>
+	                     </li>
 							<li class="my-page1"><a class="my-page2"
 								href="https://www.29cm.co.kr/mypage/"> <i class="my-icon"></i>
 									<strong class="my-page-text">MY PAGE</strong>
