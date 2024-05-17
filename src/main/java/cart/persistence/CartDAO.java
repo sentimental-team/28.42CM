@@ -41,6 +41,10 @@ public class CartDAO implements ICart {
 
 		
 
+			
+			
+	
+
 		try {
 			pstmt = con.prepareStatement(sql);
 			pstmt.setInt(1, pd_id);
@@ -61,6 +65,7 @@ public class CartDAO implements ICart {
 
 					list.add(dto);
 				} while (rs.next());
+
 			}
 		} finally {
 			JdbcUtil.close(pstmt);

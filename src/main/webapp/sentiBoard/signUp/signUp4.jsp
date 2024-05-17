@@ -630,7 +630,6 @@ $(document).ready(function(){
   
   	$(".btn1").prop('disabled', true);
   	$(".p2").remove();
-  	
   	if (!emailCheck(email)) {
   		$(".d32").append(result);
   	} 
@@ -639,6 +638,7 @@ $(document).ready(function(){
 	}
     
   });
+  // 이메일 중복 확인
   
 //한글이름 유효성 검사
   function nameCheck(name) {
