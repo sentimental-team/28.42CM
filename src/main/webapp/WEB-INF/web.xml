@@ -64,13 +64,13 @@
 		</servlet-mapping> -->
 
 	<!-- 맴버, 로그인 로그아웃 서블릿매핑 -->
-	<filter>
+	<!-- <filter>
 		<filter-name>authFilter</filter-name>
 		<filter-class>filter.AuthFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>authFilter</filter-name>
-		<url-pattern>/protected/*</url-pattern> <!-- 보호된 경로 설정 -->
+		<url-pattern>/protected/*</url-pattern> 보호된 경로 설정
 	</filter-mapping>
 
 	<servlet>
@@ -89,6 +89,5 @@
 	<servlet-mapping>
 		<servlet-name>logout</servlet-name>
 		<url-pattern>/logout</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping> -->
 </web-app>
-
