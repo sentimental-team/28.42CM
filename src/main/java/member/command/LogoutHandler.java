@@ -8,14 +8,22 @@ import mvc.command.CommandHandler;
 
 public class LogoutHandler implements CommandHandler {
 
-	private static final String LOGOUT_VIEW = "/WEB-INF/view/logoutSuccess.jsp"; // 로그아웃 성공 후 페이지 (수정필요)
+    private static final String LOGOUT_VIEW = "/sentiBoard/user/logout.jsp"; // 로그아웃 성공 페이지
 
-	@Override
-	public String process(HttpServletRequest req, HttpServletResponse res) {
-		HttpSession session = req.getSession(false);
-		if (session != null) {
-			session.invalidate();
-		}
-		return LOGOUT_VIEW;
-	}
+    @Override
+    public String process(HttpServletRequest req, HttpServletResponse res) {
+        HttpSession session = req.getSession(false);
+        if (session != null) {
+            session.invalidate();
+        }
+        
+        // 원래 페이지 URL 가져오기
+        String originalURL = req.getHeader("Referer");
+        if (originalURL == null || originalURL.contains("logout")) {
+            originalURL = req.getContextPath() + "/main.jsp"; // 기본 페이지 URL
+        }
+        req.setAttribute("originalURL", originalURL);
+
+        return LOGOUT_VIEW;
+    }
 }

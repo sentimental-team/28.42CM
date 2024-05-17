@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 import mvc.command.CommandHandler;
 
 
-@WebServlet("/DispatcherServlet")
+@WebServlet("/*do")
 public class DispatcherServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     
@@ -91,8 +91,6 @@ public Map<String, CommandHandler> commandHandlerMap = new HashMap<>();
 
 	protected void process (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
-	
-				
 				String requestURI = request.getRequestURI().toString();
 				int beginIndex = request.getContextPath().length();
 				requestURI = requestURI.substring(beginIndex);							

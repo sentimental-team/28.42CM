@@ -63,15 +63,8 @@
 		<servlet-mapping> <servlet-name>AjaxControllerUsingURI</servlet-name> <url-pattern>*.ajax</url-pattern> 
 		</servlet-mapping> -->
 
-	<!-- 맴버, 로그인 로그아웃 서블릿매핑 -->
-	<!-- <filter>
-		<filter-name>authFilter</filter-name>
-		<filter-class>filter.AuthFilter</filter-class>
-	</filter>
-	<filter-mapping>
-		<filter-name>authFilter</filter-name>
-		<url-pattern>/protected/*</url-pattern> 보호된 경로 설정
-	</filter-mapping>
+
+	<!-- 4. 맴버, 로그인 로그아웃 서블릿매핑 -->
 
 	<servlet>
 		<servlet-name>login</servlet-name>
@@ -89,5 +82,16 @@
 	<servlet-mapping>
 		<servlet-name>logout</servlet-name>
 		<url-pattern>/logout</url-pattern>
-	</servlet-mapping> -->
+	</servlet-mapping>
+
+	<!-- 4-1. 로그인 로그아웃 필터 서블릿매핑 -->
+	<filter>
+		<filter-name>SaveOriginalURLFilter</filter-name>
+		<filter-class>filter.SaveOriginalURLFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>SaveOriginalURLFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
 </web-app>

@@ -13,9 +13,9 @@ import mvc.command.CommandHandler;
 
 public class JoinHandler implements CommandHandler {
  
+
 	private static final String JOIN_VIEW = "../signUp/signUp4.jsp"; // 회원가입 페이지
 	private static final String SUCCESS_VIEW = "../signUp/signUp_ok.jsp"; // 회원가입 성공 페이지
-
 	private JoinService joinService = new JoinService();
 
 	@Override
