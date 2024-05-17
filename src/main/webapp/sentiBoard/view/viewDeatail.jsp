@@ -108,9 +108,9 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
             </ul>
         </div>
     </div>
-    
-    <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
-    <c:forEach var="vlist" items="${vlist }">
+
+
+  <c:forEach var="vlist" items="${vlist}"> 
     <div class="css-uio8sw e1uo4o521">
         <div class="css-1ux6qe5 e1uo4o525">
             <div class="css-y49a97 ek3ksls0"><a class="css-k95f3n ek3ksls1"
@@ -441,8 +441,8 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
                             구매하기</button></div>
                 </div>
             </div>
-            </c:forEach>
-            <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+             </c:forEach> 
+     
         </div>
     </div>
     <section class="css-5jl7kz e1uo4o527">

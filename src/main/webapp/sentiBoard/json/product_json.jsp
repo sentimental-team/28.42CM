@@ -21,7 +21,7 @@ String pMedium_ctgr_id = request.getParameter("medium_ctgr_id");
 int medium_ctgr_id = Integer.parseInt(pMedium_ctgr_id);
 
 
-String sql = " select brand_name, pd_name, pd_price, pd_grade,pd_image_url,p.pd_id"
+String sql = " select brand_name, pd_name, pd_price,pd_image_url,p.pd_id"
 			+" from product p"
 			+" join brand b on p.brand_Id=b.brand_Id"
 			+" join product_image i on p.pd_id=i.pd_id" 
