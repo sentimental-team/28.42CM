@@ -20,7 +20,11 @@ import javax.servlet.http.HttpServletResponse;
 import mvc.command.CommandHandler;
 
 
+<<<<<<< HEAD
 //@WebServlet("/*do")
+=======
+//@WebServlet("*.do")
+>>>>>>> 754b24f30390601ac9f82166d2389239fc059b6f
 public class DispatcherServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     
@@ -96,6 +100,12 @@ public Map<String, CommandHandler> commandHandlerMap = new HashMap<>();
 				int beginIndex = request.getContextPath().length();
 				requestURI = requestURI.substring(beginIndex);							
 				CommandHandler handler = this.commandHandlerMap.get(requestURI);
+				
+				if (handler == null) {
+			        System.out.println("No handler found for request URI: " + requestURI);
+			        response.sendError(HttpServletResponse.SC_NOT_FOUND);
+			        return;
+			    }
 				
 				String view = null;
 				try {
