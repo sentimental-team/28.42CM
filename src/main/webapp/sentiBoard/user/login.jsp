@@ -197,6 +197,22 @@ a {
     text-decoration: none;
     outline: none;
 }
+.join {
+    display: block;
+    box-sizing: border-box;
+    height: 56px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 56px;
+    color: #1d1d1d;
+    text-align: center;
+    border: 1px solid #5d5d5d;
+    border-radius: 28px;
+    width: 100%;
+}
+.joinTop{
+  margin: 20px;
+}
 </style>
 <style data-emotion="css 1yvkpbb" data-s="">
 .css-1yvkpbb{width:12px;height:12px;min-width:12px;min-height:12px;margin-left:2px;}
@@ -237,6 +253,11 @@ a {
             <button class="btn_login" type="submit">로그인하기</button>
         </form>
     </div>
+    <div class="joinTop">
+    </div>
+    <form action="join.do" method="post">
+    <button class="join" type="submit">간편 회원가입하기</button>
+    </form>
 </div>
 <footer>
     <jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
