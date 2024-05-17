@@ -13,18 +13,13 @@ import lombok.ToString;
 @AllArgsConstructor
 
 public class CartDTO {
-
-	
-	
 	private String pdName;
 	private int pdPrice;
 	private String brandName;	
 	private String pdOptionName;
     private int deliveryPay;
-	//private int totalPayPrice;
-	
-	
-	
-	
-	
+    private String pdImageURL;
+    private int cnt;
+    
+
 }

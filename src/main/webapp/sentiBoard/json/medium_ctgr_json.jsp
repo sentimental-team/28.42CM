@@ -9,15 +9,13 @@
     pageEncoding="UTF-8"%>
     
    
- <%
- System.out.print("medium_ctgr_json()...");
+<%
+System.out.print("medium_ctgr_json()...");
 Connection conn = null;
 PreparedStatement pstmt = null;
 ResultSet rs = null;
 
 String pLarge_ctgr_id = request.getParameter("large_ctgr_id");
-
-
 
 int large_ctgr_id = Integer.parseInt(pLarge_ctgr_id);
 
