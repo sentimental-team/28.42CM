@@ -21,7 +21,7 @@ String pSmall_ctgr_id = request.getParameter("small_ctgr_id");
  int small_ctgr_id = Integer.parseInt(pSmall_ctgr_id); 
 
 
-String sql =" SELECT brand_name, pd_name, pd_price, pd_image_url"
+String sql =" SELECT brand_name, pd_name, pd_price, pd_image_url,p.pd_id"
          +" FROM product p"
          +" JOIN BRAND b ON p.brand_id=b.brand_id"
          +" Join SMALL_CTGR s ON s.small_ctgr_id = p.small_ctgr_id"
@@ -42,6 +42,7 @@ try{
         String pdName = rs.getString("pd_name");
         int pdPrice = rs.getInt("pd_price");
         String pdImageUrl = rs.getString("pd_image_url");
+        int pd_id = rs.getInt("pd_id");
         
         
 
@@ -51,6 +52,7 @@ try{
         jsonProduct_small.put("pd_price", pdPrice);
         jsonProduct_small.put("pd_image_url", pdImageUrl);
         jsonProduct_small.put("small_ctgr_id", small_ctgr_id);
+        jsonProduct_small.put("pd_id",pd_id);
 
         jsonEmpArray.add(jsonProduct_small);
     }

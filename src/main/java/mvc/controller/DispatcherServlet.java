@@ -20,7 +20,11 @@ import javax.servlet.http.HttpServletResponse;
 import mvc.command.CommandHandler;
 
 
+<<<<<<< HEAD
+//@WebServlet("/*do")
+=======
 //@WebServlet("*.do")
+>>>>>>> 754b24f30390601ac9f82166d2389239fc059b6f
 public class DispatcherServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     
@@ -63,6 +67,7 @@ public Map<String, CommandHandler> commandHandlerMap = new HashMap<>();
 				try {
 					CommandHandler handler = (CommandHandler) commandHandlerClass.newInstance();
 					this.commandHandlerMap.put(url, handler);	// 맵 추가
+					System.out.println(commandHandlerMap);
 				} catch (InstantiationException e) {
 					e.printStackTrace();
 				} catch (IllegalAccessException e) {

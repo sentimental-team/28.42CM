@@ -28,6 +28,7 @@ public class PdDTO {
 	private String pdOptionName;
 	private String reviewContent;
 	private String pdContent;
+	private int pd_id;
 	
 	
 	
