@@ -18,29 +18,25 @@ public class LoginDAOImpl implements LoginDAO {
 	}
 
 	@Override
-	public LoginDTO loginCheck(String memberEmail, String memberPwd) throws SQLException {
+	public int loginCheck(String memberEmail, String memberPwd) throws SQLException {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
-		LoginDTO loginDTO = null;
-
+		
+		int result = 0 ;
 		try {
-			String sql = "SELECT member_id, member_email, member_name FROM member WHERE member_email = ? AND member_pwd = ?";
+			String sql = "SELECT count(*) result FROM member WHERE member_email = ? AND member_pwd = ? ";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, memberEmail);
 			pstmt.setString(2, memberPwd);
 			rs = pstmt.executeQuery();
 
 			if (rs.next()) {
-				loginDTO = new LoginDTO(
-					rs.getInt("member_id"),
-					rs.getString("member_email"),
-					rs.getString("member_name")
-				);
+				result = rs.getInt("result");
 			}
 		} finally {
 			JdbcUtil.close(rs);
 			JdbcUtil.close(pstmt);
 		}
-		return loginDTO;
+		return result;
 	}
 }

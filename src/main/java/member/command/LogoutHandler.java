@@ -20,7 +20,7 @@ public class LogoutHandler implements CommandHandler {
         // 원래 페이지 URL 가져오기
         String originalURL = req.getHeader("Referer");
         if (originalURL == null || originalURL.contains("logout")) {
-            originalURL = req.getContextPath() + "/main.jsp"; // 기본 페이지 URL
+            originalURL = req.getContextPath() + "/sentiBoard/write/main.jsp"; // 기본 페이지 URL
         }
         req.setAttribute("originalURL", originalURL);
 
