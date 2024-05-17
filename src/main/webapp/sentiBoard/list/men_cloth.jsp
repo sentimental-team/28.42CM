@@ -175,7 +175,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
        											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
        											stroke-width="1.5"></path>
        								</svg>
-       									<div class="review-point">${list.pd_grade}</div>
+       									<div class="review-point">${list.pdGrade}</div>
        									<div class="review-count">평점 준 사람들 카운팅 하는 쿼리문 필요함</div>
        								</a>
        							</div>
@@ -288,7 +288,8 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
        			  	  error: function(){
       		      	   alert("error");
          						  }	            	             
-     					   });
+     				
+        });
 	 });
         
 
