@@ -241,9 +241,9 @@
 	        checkbox.addEventListener('click', checkSelectAll);
 	    });
 
-	   /*  document.querySelector('input[name="checkbox-btn-all"]').addEventListener('click', function() {
+	   document.querySelector('input[name="checkbox-btn-all"]').addEventListener('click', function() {
 	        selectAll(this);
-	    }); */
+	    });
 
 	    document.querySelectorAll('input[name="checkbox-btn"]').forEach((checkbox) => {
 	        checkbox.addEventListener('click', checkSelectAll);

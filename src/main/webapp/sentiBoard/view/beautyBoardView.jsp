@@ -3814,7 +3814,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 	<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
 </header>
 <body>
-    <div class="css-zqyuit e1uo4o523">
+    <div class="css-zqyuit e1uo4o523">	
         <div class="css-0 ehh6z820">
             <ul class="css-70qvj9 ehh6z821">
                 <li class="css-wb64ex ehh6z822">
@@ -4231,7 +4231,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
                         </div>
                     </div>
                     <div class="css-jna93d e1aklvx10"><button id="pdp_shopping_basket"
-                            class="e1aklvx11 eh8h1ux0 css-vqh4y e12h9sp60 cartbtn" type="button"><a href="/sentiBoard/view/cartIn.do?pd_id=2">장바구니 담기</a></button><button
+                            class="e1aklvx11 eh8h1ux0 css-vqh4y e12h9sp60 cartbtn" type="button"><a href="/sentiBoard/list/cartIn.do?pd_id=2">장바구니 담기</a></button><button
                             id="pdp_buy_now" class="e1aklvx12 er7ti0m0 css-103n73x e12h9sp60" type="button">바로
                             구매하기</button></div>
                 </div>
