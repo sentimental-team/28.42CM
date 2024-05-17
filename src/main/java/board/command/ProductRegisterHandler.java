@@ -1,25 +1,15 @@
 package board.command;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.Connection;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.UUID;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 
-import com.oreilly.servlet.MultipartRequest;
-import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
-import com.oreilly.servlet.multipart.FileRenamePolicy;
 import com.util.ConnectionProvider;
-import com.util.FileUploadUtil;
-import com.util.JdbcUtil;
 
 import board.dto.FileUploadDTO;
 import board.dto.ProductRegisterDTO;
@@ -28,10 +18,8 @@ import mvc.command.CommandHandler;
 
 public class ProductRegisterHandler implements CommandHandler {
 
-
 	@Override
 	public String process(HttpServletRequest request, HttpServletResponse response) throws Exception {
-
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html; charset=utf-8");
 		
@@ -82,22 +70,35 @@ public class ProductRegisterHandler implements CommandHandler {
 			for (Part part : prs) {
 				if (part.getHeader("Content-Disposition").contains("filename=")) {
 					
-					UUID uuid = UUID.randomUUID();
-					String fileName1  = part.getSubmittedFileName();
-					String fileSystemName1 = uuid + fileName1;
-					String realpath1 = request.getRealPath("/sentiBoard/upload/" + fileName1);
 					
-					
-					
-					System.out.println(">>>> "  + realpath1);
-					
-					if (part.getSize() > 0) {
-						part.write( realpath1 ); // 저장	
+					if(part.getName().equals("pdImageUrl")) {
+						UUID uuid = UUID.randomUUID();
+						String fileName1  = part.getSubmittedFileName();
+						String fileSystemName1 = uuid + fileName1;
+						String realpath1 = request.getRealPath("/sentiBoard/upload/" + fileName1);
+						
+						System.out.println(">>>> "  + realpath1);
+						
+						if (part.getSize() > 0) {
+							part.write( realpath1 ); // 저장	
+						}
+						FileUploadDTO fDto = new FileUploadDTO(0, realpath1, 0, fileSystemName1);
+						rowCount = pr.insertProductImg(fDto);						
 					}
-					// FileUploadDTO fdto = new FileUploadDTO(0, fileName, fileSystemName);
-					FileUploadDTO fDto = new FileUploadDTO(0, realpath1, realpath1, 0, fileSystemName1, fileSystemName1);
-					rowCount = pr.insertProductImg(fDto);
-					
+					else {
+						UUID uuid = UUID.randomUUID();
+						String fileName1  = part.getSubmittedFileName();
+						String fileSystemName1 = uuid + fileName1;
+						String realpath1 = request.getRealPath("/sentiBoard/upload/" + fileName1);
+						
+						System.out.println(">>>> "  + realpath1);
+						
+						if (part.getSize() > 0) {
+							part.write( realpath1 ); // 저장	
+						}
+						FileUploadDTO fDto = new FileUploadDTO(realpath1, fileSystemName1);
+						rowCount = pr.insertProductInfoImg(fDto);
+					}
 				} 
 			}
 			
@@ -106,8 +107,9 @@ public class ProductRegisterHandler implements CommandHandler {
 			response.sendRedirect(request.getRequestURI());
 			return null;
 		}
-
 	}
+
+	
 
 
 }

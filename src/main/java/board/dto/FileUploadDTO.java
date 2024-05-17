@@ -18,13 +18,16 @@ public class FileUploadDTO {
 	private String pdImageInfoUuid;
 	private int cnt;
 	
-	public FileUploadDTO(int pdImageId, String pdImageUrl, String pdInfoImageUrl, int pdId, String pdImageUuid,  String pdImageInfoUuid) {
+	public FileUploadDTO(int pdImageId, String pdImageUrl,int pdId, String pdImageUuid) {
 
 		this.pdImageId = pdImageId;
 		this.pdImageUrl = pdImageUrl;
-		this.pdInfoImageUrl = pdInfoImageUrl;
 		this.pdId = pdId;
 		this.pdImageUuid = pdImageUuid;
+	}
+	public FileUploadDTO(String pdInfoImageUrl, String pdImageInfoUuid) {
+		
+		this.pdInfoImageUrl = pdInfoImageUrl;
 		this.pdImageInfoUuid = pdImageInfoUuid;
 	}
 	

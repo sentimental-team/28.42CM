@@ -56,8 +56,8 @@ public class LoginCheckFilter implements Filter {
 			System.out.println("> 가고자한 URL : " + referer);
 			session.setAttribute("referer", referer);
 			
-			String location = "/jspPro/days07/member/logon.jsp";	// 메인페이지
-			res.sendRedirect(location);
+			//String location = "/jspPro/days07/member/logon.jsp";	// 메인페이지
+			// res.sendRedirect(location);
 		}
 		
 	}

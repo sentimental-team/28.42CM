@@ -8,75 +8,6 @@
 <%@page import="java.sql.Connection"%>
 <%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%
-	Connection conn = null;
-	PreparedStatement pstmt = null;
-	ResultSet rs = null;
-	
-	String sql = "SELECT b.brand_name, p.pd_name, p.pd_price, po.pd_option_name, de.delivery_pay, COUNT(*) OVER() cnt "
-			+ "FROM product p JOIN large_ctgr lc ON p.large_ctgr_id = lc.large_ctgr_id "
-            + "JOIN product_option po ON lc.large_ctgr_id = po.large_ctgr_id "
-            + "JOIN brand b ON p.brand_id = b.brand_id "
-            + "JOIN pay pay ON p.pd_id = pay.pd_id "
-            + "JOIN delivery de ON pay.pay_id = de.pay_id ";
-            /* + "WHERE pd_name = 'test' "; */
-            
-	
-	String brandName;    
-	String pdName;       
-	int pdPrice;         
-	String pdOptionName;
-	int deliveryPay;     
-	int cnt;
-	
-	CartVO cvo = null;
-	ArrayList<CartVO> clist = null;
-	int totalPayPrice = 0;
-	int totalDeliveryPay = 0;
-	int totalChargePay = 0;
-	int totalItemCnt = 0;
-	
-	try{
-		conn = ConnectionProvider.getConnection();
-		pstmt = conn.prepareStatement(sql);
-		rs = pstmt.executeQuery();
-		
-		if(rs.next()){
-			clist = new ArrayList();
-			
-			do{
-				brandName = rs.getString("brand_name");
-				pdName = rs.getString("pd_name");
-				pdPrice = rs.getInt("pd_price");
-				pdOptionName = rs.getString("pd_option_name");
-				deliveryPay = rs.getInt("delivery_pay");
-				cnt = rs.getInt("cnt");
-				
-				cvo = new CartVO(brandName, pdName, pdPrice, pdOptionName, deliveryPay, cnt);
-				
-				clist.add(cvo);
-				
-				totalPayPrice += pdPrice;
-				totalDeliveryPay += deliveryPay;
-				totalChargePay = totalPayPrice - totalDeliveryPay;
-				totalItemCnt = cnt;
-				
-			} while(rs.next());
-		}
-	} catch (SQLException e){
-		e.printStackTrace();
-	} finally{
-		JdbcUtil.close(rs);
-		JdbcUtil.close(pstmt);
-		JdbcUtil.close(conn);
-	}
-	
-	request.setAttribute("clist", clist);
-	request.setAttribute("totalPayPrice", totalPayPrice);
-	request.setAttribute("totalDeliveryPay", totalDeliveryPay);
-	request.setAttribute("totalChargePay", totalChargePay);
-	request.setAttribute("totalItemCnt", totalItemCnt);
-%>
 
 <!DOCTYPE html>
 <html>
@@ -114,7 +45,7 @@
 			</ol>
 		</div>
 		<c:choose>
-			<c:when test="${empty clist }">
+			<c:when test="${empty list }">
 				<div class="cart-info">
 					<span class="cart-text">장바구니에 담은 상품이 없습니다.</span>
 					<div class="shop-btn">
@@ -147,7 +78,7 @@
 						</div>
 						<div class="box-info-bottom">
 							<h3 class="item-name" translate="no">LG전자</h3>
-							<c:forEach items="${clist }" var="cart">
+							<c:forEach items="${list }" var="list">
 							<div class="box-bottom-main">
 								<div class="bot-checkbox">
 									<span class="checkbox-span">
@@ -157,17 +88,17 @@
 								<div class="bot-info1">
 									<div class="bot-item-info">
 										<a href="https://product.29cm.co.kr/catalog/2523110">
-											<img class="item-img" src="https://img.29cm.co.kr/item/202403/11eee58ea43027dc82f2a3e7a32e56e5.jpg?width=150" alt="LG전자 시네빔 큐브 Qube HU710PB" loading="lazy"/>
+											<img class="item-img" src="${list.pdImageURL }" alt="${list.pdName }" loading="lazy"/>
 										</a>
 										<div class="item-img-info">
 											<div translate="no">
-												<a class="item-brand" href="https://shop.29cm.co.kr/brand/13646">${cart.brandName }</a>
+												<a class="item-brand" href="https://shop.29cm.co.kr/brand/13646">${list.brandName }</a>
 											</div>
-											<a id="item-title" class="item-title" href="https://product.29cm.co.kr/catalog/2523110">${cart.pdName }</a>
+											<a id="item-title" class="item-title" href="https://product.29cm.co.kr/catalog/2523110">${list.pdName }</a>
 											<div class="item-price">
-												<span class="price">${cart.pdPrice }</span>
+												<span class="price">${list.pdPrice }</span>
 											</div>
-											<div class="item-bot-info">${cart.pdOptionName }</div>
+											<div class="item-bot-info">옵션 : ${list.pdOptionName }</div>
 										</div>
 									</div>
 									<button id="item-delete" class="item-delete"></button>
@@ -184,7 +115,7 @@
 								</div>
 								<div class="bot-info3">
 									<div>
-										<span class="sell-price" id="sell-price">${cart.pdPrice }</span>
+										<span class="sell-price" id="sell-price">${list.pdPrice }</span>
 										원
 									</div>
 									<div class="buy-now">
@@ -193,7 +124,7 @@
 								</div>
 								<div class="bot-info4">
 									<div class="bot-deli-pay">
-										${cart.deliveryPay }
+										${list.deliveryPay }
 									</div>
 								</div>
 							</div>
@@ -209,7 +140,7 @@
 						<p class="max-cart-text">장바구니는 최대 100개의 상품을 담을 수 있습니다.</p>
 					</div>
 				</section>
-				<section class="total-pay">
+				<section class="total-pay" >			 
 					<div class="total-pay-box">
 						<div class="total-pay-top">
 							<div class="total-pay-text1">총 주문금액</div>
@@ -219,10 +150,10 @@
 						<div class="total-pay-bottom">
 							<div class="total-pay-bottom-box1">
 								<span class="total-pay-price">
-									<strong class="total-pay-price-text">${totalPayPrice}</strong>
+									<strong class="total-pay-price-text"><c:out value="${totalPayPrice }" /></strong>
 									원
 								</span>
-								<span class="total-pay-item-cnt">총 ${totalItemCnt}개</span>
+								<span class="total-pay-item-cnt">총 ${totalCnt}개</span>
 							</div>
 							<div class="total-pay-bottom-box2">
 								<i class="css-15wexqq e17g5zv810"></i>
@@ -309,7 +240,7 @@
 	        checkbox.addEventListener('click', checkSelectAll);
 	    });
 
-	    document.querySelector('input[name="checkbox-btn-all"]').addEventListener('click', function() {
+	   document.querySelector('input[name="checkbox-btn-all"]').addEventListener('click', function() {
 	        selectAll(this);
 	    });
 

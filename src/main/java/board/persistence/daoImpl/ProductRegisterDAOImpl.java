@@ -415,15 +415,13 @@ public class ProductRegisterDAOImpl implements ProductRegisterDAO{
 
 	@Override
 	public int insertProductImg(FileUploadDTO fdto) {
-		String sql = " INSERT INTO product_image(pd_image_id, pd_image_url, pd_info_image_url, pd_id, pd_image_uuid,  pd_image_info_uuid) "
-					+ " values(seq_pd_image_id.nextval, ?, ?, seq_pd_id.CURRVAL, ?, ?) ";
+		String sql = " INSERT INTO product_image(pd_image_id, pd_image_url, pd_id, pd_image_uuid) "
+					+ " values(seq_pd_image_id.nextval, ?, seq_pd_id.CURRVAL, ?) ";
 		int result = 0;
 		try {
 			imagePstmt = conn.prepareStatement(sql);
 			imagePstmt.setString(1, fdto.getPdImageUrl());
-			imagePstmt.setString(2, fdto.getPdInfoImageUrl());
-			imagePstmt.setString(3, fdto.getPdImageUuid());
-			imagePstmt.setString(4, fdto.getPdImageInfoUuid());
+			imagePstmt.setString(2, fdto.getPdImageUuid());
 			result = imagePstmt.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -437,28 +435,29 @@ public class ProductRegisterDAOImpl implements ProductRegisterDAO{
 		return result;
 	}
 
-//	@Override
-//	public int insertProductImg(String fileName, String fileSystemName) {
-//		String sql = "INSERT INTO product_image(pd_image_url, pd_image_uuid, pd_info_image_url, pd_image_info_uuid) values(seq_pd_image_id.nextval, ?, ?, seq_pd_id.CURRVAL, ?, ?) ";
-//		int result = 0;
-//		try {
-//			imagePstmt = conn.prepareStatement(sql);
-//			imagePstmt.setString(1, fileName);
-//			imagePstmt.setString(2, fileSystemName);
-//			imagePstmt.setString(3, fileName);
-//			imagePstmt.setString(4, fileSystemName);
-//			result = imagePstmt.executeUpdate();
-//		} catch (SQLException e) {
-//			e.printStackTrace();
-//		} finally {
-//			try {
-//				imagePstmt.close();
-//			} catch (SQLException e) {
-//				e.printStackTrace();
-//			}
-//		}
-//		return result;
-//	}
+	@Override
+	public int insertProductInfoImg(FileUploadDTO fdto) {
+		String sql = " UPDATE product_image "
+				+ "SET pd_info_image_url = ? , pd_image_info_uuid = ? "
+				+ "WHERE pd_image_id = (SELECT MAX(pd_image_id) FROM product_image) ";
+		int result = 0;
+		try {
+			imagePstmt = conn.prepareStatement(sql);
+			imagePstmt.setString(1, fdto.getPdInfoImageUrl());
+			imagePstmt.setString(2, fdto.getPdImageInfoUuid());
+			result = imagePstmt.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				imagePstmt.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		return result;
+	}
+
 
 	
 }

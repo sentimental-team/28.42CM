@@ -24,7 +24,8 @@ public interface ProductRegisterDAO {
 	int insertProductTable(ProductRegisterDTO pDto);
 
 	int insertProductImg(FileUploadDTO fdto);
-
+	int insertProductInfoImg(FileUploadDTO fdto);
+	
 	// int insertProductImg(String fileName, String fileSystemName);
 
 	int insertProductTableNonSmallCtgr(ProductRegisterDTO pDto);

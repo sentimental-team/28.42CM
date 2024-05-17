@@ -32,27 +32,7 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 20%;
-    height: 4px;
-    background: rgb(0, 0, 0);
-    transition: width 0.2s ease 0s;
-    z-index: 1;
-}
-.iMiddle2 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 40%;
-    height: 4px;
-    background: rgb(0, 0, 0);
-    transition: width 0.2s ease 0s;
-    z-index: 1;
-}
-.iMiddle3 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 60%;
+    width: 100%;
     height: 4px;
     background: rgb(0, 0, 0);
     transition: width 0.2s ease 0s;
@@ -383,11 +363,11 @@ button {
 </head>
 <body>
 	<div class="out">
-		<h2 class="title">간편가입</h2>
+		<h2 class="title">회원가입 완료</h2>
 		<div offset="100px" class="middle" id="content">
 			<i step="1" class="iMiddle"></i>
 			<div class="d2">
-				<h3 class="agree">29CM 서비스 이용약관에<br>동의해주세요.</h3>
+				<h3 class="agree">간편가입이<br>완료되었습니다!</h3>
 				<div class="d3">
 					<span class="sp"><input
 						class="ip" name="all" type="checkbox"><label
@@ -431,7 +411,7 @@ button {
 							title="advertising">[선택] 광고성 정보 수신 동의</label></span>
 					</div>
 				</ul>
-				<button class="btn2" type="button"disabled="">동의하고 가입하기</button>
+				<button class="btn2" type="button">쇼핑하러가기</button>
 			</div>
 		</div>
 	</div>
@@ -440,58 +420,6 @@ button {
 	</footer>
 </body>
 <script>
-  // 모두 동의 체크시 전체 체크
-  $(".lb").on("click",function(){
-	 if($(".ip").prop("checked")){
-		 $(".ip").prop("checked",false); 
-		 $(".ip2").prop("checked",false);
-		 $(".btn2").prop('disabled', true);
-	 }else{
-		 $(".ip").prop("checked",true);  
-		 $(".ip2").prop("checked",true);
-		 $(".btn2").prop('disabled', false);
-	 }
-  });
-  
-  // 하나씩 체크,, 안됨,,
-  $(".lb2").on("click",function(){
-	   var names = $(this).attr("for");
-	   alert(names);
-	   
-	   let bolean = $(`input[name='${names}']`).prop("checked");
-	   alert(bolean);
-	   
-	   if($(`.ip2[name='${names}']`).prop("checked")){
-			 $(`.ip2[name='${names}']`).prop("checked",false); 
-	   }else{
-		   $(`.ip2[name='${names}']`).prop("checked",true);  
-	   } 
-		 
-	   if ($("input[name=age]").prop("checked")&&$("input[name=term]").prop("checked")&&$("input[name=requiredPrivacy]").prop("checked")) {
-				$(".btn2").prop('disabled', false);
-	   }else{
-				$(".btn2").prop('disabled', true);
-	   }
-   }); 
-  
-  // signUp2.jsp 파일로 화면
-  $(function () {
-	    $(".btn2").click(function () {
-	        $.ajax({
-	            type: 'POST',
-	            url: 'signUp2.jsp',
-	            dataType: 'html',
-	            error: function (error) {
-	                alert("Error!");
-	            },
-	            success: function (data) {
-	            	$('#content').children().remove();
-	                // Contents 영역 교체
-	                $("#content").html(data);
-	            }
-	        });
-	    });
-	})
-	
+ 
 </script>
 </html>
