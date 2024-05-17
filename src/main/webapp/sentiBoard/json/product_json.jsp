@@ -20,7 +20,7 @@ String pMedium_ctgr_id = request.getParameter("medium_ctgr_id");
 
 int medium_ctgr_id = Integer.parseInt(pMedium_ctgr_id);
 
-String sql = " select brand_name, pd_name, pd_price, pd_grade,pd_image_url"
+String sql = " select brand_name, pd_name, pd_price, pd_grade,pd_image_url,p.pd_id"
 			+" from product p"
 		    +" join pd_like l on p.pd_Id=l.pd_id"
 			+" join product_grade g on l.pd_id=g.pd_id"
@@ -46,6 +46,7 @@ try{
         int pd_price = rs.getInt("pd_price");
         int pd_grade = rs.getInt("pd_grade");
         String pd_image_url = rs.getString("pd_image_url");
+        int pd_id = rs.getInt("pd_id");
         
         
 
@@ -56,6 +57,7 @@ try{
         jsonProduct.put("pd_grade", pd_grade);
         jsonProduct.put("pd_image_url", pd_image_url);
         jsonProduct.put("medium_ctgr_id", medium_ctgr_id);
+        jsonProduct.put("pd_id",pd_id);
        
 
         jsonEmpArray.add(jsonProduct);

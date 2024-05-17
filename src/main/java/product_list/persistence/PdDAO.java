@@ -82,6 +82,51 @@ public class PdDAO implements IPd {
 
 	      return list;
 	}
+	@Override
+	public List<PdDTO> viewProduct(Connection con, int pd_id) throws SQLException {
+	
+		
+		String sql ="";
+		
+		 ArrayList<PdDTO> list = null;
+	      PreparedStatement pstmt = null;
+	      ResultSet rs = null;
+	    
+
+	      try {
+	         pstmt = con.prepareStatement(sql);
+	         pstmt.setInt(1,pd_id);
+	         rs = pstmt.executeQuery();
+	         if ( rs.next() ) {
+	            list = new ArrayList<PdDTO>();
+	            PdDTO dto = null;
+	            do {
+	               dto =  new PdDTO();
+	               
+	              
+	             //  상품제목, 상품사진, 상품가격, 할인율, 배송비, 옵션, 내 , 상품설명 이미지, 리뷰, qna, 
+
+	               dto.setPdName(rs.getString("pd_name"));
+	               dto.setPdImageUrl(rs.getString("pd_image_url"));
+	               dto.setPdPrice(rs.getInt("pd_price"));
+	               dto.setPdDiscountRate(rs.getInt("pd_discount_rate"));
+	               dto.setDeliveryPay(rs.getInt("delivery_pay"));
+	               dto.setPdOptionName(rs.getString("pd_option_name"));
+	               dto.setPdInfoImageUrl(rs.getString("pd_info_image_url"));	              
+	               dto.setReviewContent(rs.getString("review_content"));
+	               dto.setPdContent(rs.getString("pd_content"));
+	                
+	               list.add(dto);
+	            } while ( rs.next() );
+	         } // 
+	      } finally {
+	         JdbcUtil.close(pstmt);
+	         JdbcUtil.close(rs);        
+	         //JdbcUtil.close(con);
+	      } // finally
+
+	      return list;
+	}
 	   
 	   
 	   

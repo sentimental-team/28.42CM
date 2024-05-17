@@ -1,4 +1,4 @@
-package cart.service;
+package product_list.service;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -9,29 +9,29 @@ import javax.naming.NamingException;
 import com.util.ConnectionProvider;
 import com.util.JdbcUtil;
 
-import cart.domain.CartDTO;
-import cart.persistence.CartDAO;
+import product_list.domain.PdDTO;
+import product_list.persistence.PdDAO;
 
-
-public class CartService {
-	 // 1. 싱글톤
-	   private CartService() {}      
-	   private static CartService instance = null;  
-	   public static CartService getInstance() {   
+public class PdViewSerivce {
+	 
+	   // 1. 싱글톤
+	   private PdViewSerivce() {}      
+	   private static PdViewSerivce instance = null;  
+	   public static PdViewSerivce getInstance() {   
 	      if(   instance == null  ) {
-	         instance = new CartService();
+	         instance = new PdViewSerivce();
 	      }
 	      return instance;
 	   }
 
-	   public List<CartDTO> cartIn(int pd_id){
+	   public List<PdDTO> viewProduct(int pd_id){
 	      //
 	      Connection con = null;
 	      try {
 	         con = ConnectionProvider.getConnection();
-	         CartDAO dao = CartDAO.getInstance();
-	         List<CartDTO> list = null;
-	         list = dao.cartIn(con, pd_id);
+	         PdDAO dao = PdDAO.getInstance();
+	         List<PdDTO> list = null;
+	         list = dao.viewProduct(con,pd_id);
 	         return list;
 	      } catch (NamingException | SQLException e) { 
 	         //e.printStackTrace();  syso("ListService.select() 에러 : ")
@@ -39,9 +39,5 @@ public class CartService {
 	      } finally {
 	         JdbcUtil.close(con);
 	      }
-	   }//cartIn
-	   
-	   
-	   
-	   
-}// class CartService
+	   }
+}

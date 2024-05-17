@@ -40,7 +40,7 @@ public class CartDAO implements ICart {
 			PreparedStatement pstmt = null;
 			ResultSet rs = null;
 			 
-			int totalPayPrice=0;
+			
 			
 			
 			try {
@@ -61,9 +61,6 @@ public class CartDAO implements ICart {
 						dto.setPdOptionName(rs.getString("pd_option_name"));
 						dto.setDeliveryPay(rs.getInt("delivery_pay"));
 			
-						totalPayPrice += rs.getInt("pd_price");
-						
-						 dto.setTotalPayPrice(totalPayPrice);  
 						
 						
 						list.add(dto);

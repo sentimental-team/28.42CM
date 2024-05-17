@@ -21,7 +21,7 @@ public class CartDTO {
 	private String brandName;	
 	private String pdOptionName;
     private int deliveryPay;
-	private int totalPayPrice;
+	//private int totalPayPrice;
 	
 	
 	
