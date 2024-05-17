@@ -25,20 +25,16 @@ public class LoginService {
 		}
 	}
 
-	public LoginDTO login(LoginRequest loginRequest) {
+	public int login(LoginRequest loginRequest) {
 		Connection conn = null;
 
 		try {
 			conn = ConnectionProvider.getConnection();
-			conn.setAutoCommit(false);
+		
 
-			LoginDTO loginDTO = loginDAO.loginCheck(loginRequest.getMemberEmail(), loginRequest.getMemberPwd());
-			if (loginDTO == null) {
-				throw new RuntimeException("잘못된 이메일 또는 비밀번호 입니다.");
-			}
-
-			conn.commit();
-			return loginDTO;
+			int result = loginDAO.loginCheck(loginRequest.getMemberEmail(), loginRequest.getMemberPwd());
+			
+			return result;
 		} catch (SQLException | NamingException e) {
 			JdbcUtil.rollback(conn);
 			throw new RuntimeException(e);
