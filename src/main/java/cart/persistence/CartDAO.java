@@ -26,15 +26,6 @@ public class CartDAO implements ICart {
 	@Override
 	public List<CartDTO> cartIn(Connection con, int pd_id) throws SQLException {
 
-		/*
-		 * String sql
-		 * =" SELECT  pd_name, pd_price, brand_name, pd_option_name, delivery_pay" +
-		 * " FROM product p" + " JOIN brand b ON b.brand_id = p.brand_id" +
-		 * " JOIN large_ctgr l ON l.large_ctgr_id = p.large_ctgr_id" +
-		 * " JOIN product_option o ON l.large_ctgr_id = o.large_ctgr_id" +
-		 * " JOIN pay a ON  a.pd_id = p.pd_id" +
-		 * " JOIN  delivery d ON d.pay_id = a.pay_id" + " WHERE p.pd_id = ?";
-		 */
 		String sql = " SELECT  pd_name, pd_price, brand_name, pd_option_name, delivery_pay, pd_image_url, COUNT(*) OVER() cnt "
 				+ " FROM product p " + " JOIN brand b ON b.brand_id = p.brand_id "
 				+ " JOIN main_ctgr m ON p.main_ctgr_id = m.main_ctgr_id "
