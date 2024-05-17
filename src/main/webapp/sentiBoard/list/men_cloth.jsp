@@ -233,7 +233,8 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
                    $(".photo_list").append(`	
                   	<li class="photo1">
        					<div class="cc">
-       						<a href="#">
+       					
+       						<a href="/sentiBodard/list/view.do?pd_id=\${element.pd_id} ">
        							<div class="dd">
        								<img alt=""
        									src="\${element.pd_image_url}"

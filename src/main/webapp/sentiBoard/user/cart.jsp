@@ -140,8 +140,7 @@
 						<p class="max-cart-text">장바구니는 최대 100개의 상품을 담을 수 있습니다.</p>
 					</div>
 				</section>
-				<section class="total-pay" >
-				 
+				<section class="total-pay" >			 
 					<div class="total-pay-box">
 						<div class="total-pay-top">
 							<div class="total-pay-text1">총 주문금액</div>
