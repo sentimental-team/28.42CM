@@ -156,8 +156,13 @@
 			<label for="product_info">상품설명:</label>
             <input type="text" id="productInfo" name="pdInfo">
 			
-			<label for="brandName">브랜드명:</label>
-            <input type="text" id="brandName" name="brandName">
+			<label class="" for="brand">브랜드:</label>
+            <select class="brand" id="brand" name="brand">
+            	<option value="" disabled selected>카테고리를 선택해주세요</option>
+            	<c:forEach var="brand" items="${listDto5}">
+                    <option value="${brand.brandId}">${brand.brandName}</option>
+                </c:forEach>
+            </select>
             
             <label for="price">가격:</label>
             <input type="number" id="price" name="pdPrice" required>
@@ -166,13 +171,13 @@
             <input type="number" id="discount" name="pdDiscountRate" min="0" max="100">
 
             <label for="image">이미지 업로드:</label>
-            <input type="file" id="image" name="pdImageUrl" accept="image/*">
+            <input type="file" id="image" name="pdImageUrl" multiple/>
 
             <label for="description_image">상품 설명 이미지:</label> <!-- 추가된 라벨 -->
-            <input type="file" id="description_image" name="pdInfoImageUrl" accept="image/*"> <!-- 추가된 이미지 업로드 -->
+            <input type="file" id="description_image" name="pdInfoImageUrl" > <!-- 추가된 이미지 업로드 -->
 
             <label class="main_category" for="main_category">Main Category:</label>
-            <select class="main_category" id="main_category" name="mainCtgr" required>
+            <select class="main_category" id="main_category" name="mainCtgr">
 			<option value="" disabled selected>카테고리를 선택해주세요</option>
 			<%
 			    Iterator<Main_CtgrVO> ir = mainList.iterator();
@@ -188,17 +193,17 @@
 			</select>
 
             <label class="" for="large_category">Large Category:</label>
-            <select class="large_category" id="large_category" name="largeCtgr" required>
+            <select class="large_category" id="large_category" name="largeCtgr">
             	<option value="" disabled selected>카테고리를 선택해주세요</option>
             </select>
 
             <label class="" for="medium_category">Medium Category:</label>
-            <select class="medium_category" id="medium_category" name="mediumCtgr" required>
+            <select class="medium_category" id="medium_category" name="mediumCtgr">
             	<option value="" disabled selected>카테고리를 선택해주세요</option>
             </select>
 
             <label class="" for="small_category">Small Category:</label>
-            <select class="small_category" id="small_category" name="smallCtgr" required>
+            <select class="small_category" id="small_category" name="smallCtgr">
             	<option value="" disabled selected>카테고리를 선택해주세요</option>
             </select>
 			<br>
@@ -212,6 +217,9 @@
  <footer>
 	<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
 </footer>
+<script>
+
+</script>
 <script>
 	
 
@@ -289,7 +297,9 @@
 	                    $(".small_category").empty();
 	                    $(data.small_ctgr).each(function(index, element){
 	                        $(".small_category").append(`
-	                            <option class="small_ctgr_option">\${element.small_ctgr_name}</option>   
+	                            <option class="small_ctgr_option" value=\${element.small_ctgr_id}>
+	                            	\${element.small_ctgr_name}
+	                            </option>   
 	                        `);
 	                    });
 	                    
@@ -302,24 +312,5 @@
 	    });
 	});
 
-</script>
-<script>
-	document.getElementById('productForm').addEventListener('submit', function(event){
-		event.preventDefault();
-		
-		var formData = {
-			pdName: document.getElementById("productName").value,
-			pdInfo: document.getElementById("productInfo").value,
-			brandName: document.getElementById("brandName").value,
-			pdPrice: document.getElementById("price").value,
-			pdDiscountRate: document.getElementById("discount").value,
-			mainCtgrId: document.geltElementById("main_category").value,
-			largeCtgrId: document.geltElementById("large_category").value,
-			mediumCtgrId: document.geltElementById("medium_category").value,
-			smallCtgrId: document.geltElementById("small_category").value,
-		}
-		
-	})
-	
 </script>
 </html>

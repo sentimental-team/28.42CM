@@ -25,24 +25,33 @@ public class ProductRegisterDTO {
 	private int mediumCtgrId;
 	private int smallCtgrId;
 	
-	private int pdImageId;
-	private String pdImageUrl;
-	private String pdInfoImageUrl;
-	
-	public ProductRegisterDTO(int pdId, String pdName, int pdPrice, String pdInfo, int pdDiscountRate, int brandId,
-			String brandName, int mainCtgrId, int largeCtgrId, int mediumCtgrId, int smallCtgrId) {
+	public ProductRegisterDTO(int pdId, String pdName, String pdInfo, int brandId, int pdPrice, int pdDiscountRate, 
+			int mainCtgrId, int largeCtgrId, int mediumCtgrId, int smallCtgrId) {
 		
 		this.pdId = pdId;
 		this.pdName = pdName;
-		this.pdPrice = pdPrice;
 		this.pdInfo = pdInfo;
-		this.pdDiscountRate = pdDiscountRate;
 		this.brandId = brandId;
-		this.brandName = brandName;
+		this.pdPrice = pdPrice;
+		this.pdDiscountRate = pdDiscountRate;
 		this.mainCtgrId = mainCtgrId;
 		this.largeCtgrId = largeCtgrId;
 		this.mediumCtgrId = mediumCtgrId;
 		this.smallCtgrId = smallCtgrId;
+		
+	}
+	public ProductRegisterDTO(int pdId, String pdName, String pdInfo, int brandId, int pdPrice, int pdDiscountRate, 
+			int mainCtgrId, int largeCtgrId, int mediumCtgrId) {
+		
+		this.pdId = pdId;
+		this.pdName = pdName;
+		this.pdInfo = pdInfo;
+		this.brandId = brandId;
+		this.pdPrice = pdPrice;
+		this.pdDiscountRate = pdDiscountRate;
+		this.mainCtgrId = mainCtgrId;
+		this.largeCtgrId = largeCtgrId;
+		this.mediumCtgrId = mediumCtgrId;
 		
 		
 	}
