@@ -22,9 +22,9 @@ public class PdDTO {
 	private String pdImageUrl;
 	private String pdInfoImageUrl;
 	private int medium_ctgr_id;
-	private int PdGrade;
+	private int pdGrade;
 	private String Medium_ctgr_name;
-	
+	 
 
 	
 }

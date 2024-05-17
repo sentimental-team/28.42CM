@@ -39,6 +39,9 @@ public class PdDAO implements IPd {
 		 ArrayList<PdDTO> list = null;
 	      PreparedStatement pstmt = null;
 	      ResultSet rs = null;
+	    
+	
+	      
 	      
 	      try {
 	         pstmt = con.prepareStatement(sql);
@@ -50,6 +53,8 @@ public class PdDAO implements IPd {
 	            do {
 	               dto =  new PdDTO();
 
+	               
+	              
 	               dto.setPdId(rs.getInt("PD_ID"));
 	               dto.setPdName(rs.getString("pd_name"));
 	               dto.setPdPrice( rs.getInt("pd_price"));
