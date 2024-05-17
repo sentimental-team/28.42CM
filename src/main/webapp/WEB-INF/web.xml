@@ -54,6 +54,14 @@
             </param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
+		<multipart-config> 
+	  	<location>C:\coding\Tools\apache-tomcat-9.0.88\temp</location>
+	  	<!-- -1 : 무한대 byte -->
+	  	<max-file-size>-1</max-file-size>
+	  	<max-request-size>-1</max-request-size>
+	  	<!-- 1024kb보다 더 큰 파일 생성되면 C:\Tools\apache-tomcat-9.0.88\temp 임시파일 생성하겠다 -->
+	  	<file-size-threshold>1024</file-size-threshold>
+	  </multipart-config>
 	</servlet>
 
 	<servlet-mapping>

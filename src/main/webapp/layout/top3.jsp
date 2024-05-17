@@ -541,6 +541,12 @@ button {
 					<div class="logo">
 						<a class="logo-main" href="https://www.29cm.co.kr">29CM</a>
 						<ul class="menu-box">
+							<li class="my-page1">
+								<a class="my-page2" href="/sentiBoard/write/productRegister_ok.do">
+									<i class="my-icon"></i>
+									<strong class="my-page-text">상품 등록하기</strong>
+								</a>
+							</li>
 							<li class="my-page1"><a class="my-page2"
 								href="https://www.29cm.co.kr/mypage/"> <i class="my-icon"></i>
 									<strong class="my-page-text">MY PAGE</strong>
@@ -992,9 +998,9 @@ button {
 												<div class="category">
 												  <a href="#"class="category">NEW</a></div>
 												<div class="category">
-												  <a_href="#"class="category">선물세트</a></div>
+												  <a href="/sentiBoard/list/boardlist.do" class="category">선물세트</a></div>
 												<div class="category">
-												  <a_href="#"class="category">스킨케어</a></div>
+												  <a href="#"class="category">스킨케어</a></div>
 												<div class="category">
 												  <a href="#"class="category">EXCLUSIVE</a></div>
 												<div class="category">
