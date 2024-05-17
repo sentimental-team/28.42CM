@@ -15,17 +15,18 @@ ResultSet rs = null;
 
 String pSmall_ctgr_id = request.getParameter("small_ctgr_id");
 
+ if(pSmall_ctgr_id == null || pSmall_ctgr_id.equals("")) pSmall_ctgr_id = "138"; 
 
-int small_ctgr_id = Integer.parseInt(pSmall_ctgr_id);
+ int small_ctgr_id = Integer.parseInt(pSmall_ctgr_id); 
 
-String sql = " select brand_name, pd_name, pd_price, pd_grade,pd_image_url"
-			+" from product p"
-			+" join pd_like l on p.pd_Id=l.pd_id"
-			+" join product_grade g on l.pd_id=g.pd_id"
-			+" join brand b on p.brand_Id=b.brand_Id"
-			+" join product_image i on p.pd_id=i.pd_id"
-			+" where p.small_ctgr_id = ? ";
-
+String sql =" SELECT brand_name, pd_name, pd_price, pd_grade, pd_image_url"
+			+" FROM product p"
+			+" JOIN brand b ON p.brand_id=b.brand_id"
+			+" Join small_ctgr s ON s.small_ctgr_id = p.small_ctgr_id"
+			+" JOIN product_grade g ON p.pd_id= g.pd_id"
+			+" JOIN product_image i ON p.pd_id=i.pd_id"
+			+" WHERE p.small_ctgr_id=?";
+		
 
 
 
@@ -35,7 +36,7 @@ JSONArray jsonEmpArray = new JSONArray();
 try{
     conn = ConnectionProvider.getConnection();
     pstmt = conn.prepareStatement(sql);
-    pstmt.setInt(1, small_ctgr_id);
+     pstmt.setInt(1, small_ctgr_id); 
     rs = pstmt.executeQuery();
 
     while(rs.next()){       
