@@ -547,7 +547,8 @@ button {
 							<li class="my-page1"><a class="my-page2"
 								href="https://www.29cm.co.kr/mypage/"> <i class="my-icon"></i>
 									<strong class="my-page-text">MY PAGE</strong>
-							</a></li>
+							</a>
+							</li>
 							<li class="my-like1"><a class="my-like2"
 								href="https://www.29cm.co.kr/mypage/heart"> <i
 									class="like-icon"></i> <strong class="my-like-text">MY
