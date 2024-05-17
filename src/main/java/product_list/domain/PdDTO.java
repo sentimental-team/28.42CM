@@ -24,7 +24,14 @@ public class PdDTO {
 	private int medium_ctgr_id;
 	private int pdGrade;
 	private String Medium_ctgr_name;
-	 
+	private int deliveryPay;
+	private String pdOptionName;
+	private String reviewContent;
+	private String pdContent;
+	
+	
+	
+	//dto에 정의 되어있는 내용중에 dao에서 호출 안하면 오류 뜨나??..
 
 	
 }
