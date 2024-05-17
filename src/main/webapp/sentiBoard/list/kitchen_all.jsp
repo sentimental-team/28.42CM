@@ -21,7 +21,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
     ResultSet rs = null;    	/*  sql로 불러온 결과 집합들을 저장할 공간 */
     String sql = " SELECT medium_ctgr_id, medium_ctgr_name, large_ctgr_id " 
     		+" FROM medium_ctgr"
-    		+" where large_ctgr_id='5'";
+    		+" where large_ctgr_id='10'";
     
     int medium_ctgr_id = 0;
     String medium_ctgr_name =  null; 
@@ -76,17 +76,16 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <link rel="stylesheet" href="../css/men_cloth.css">
 
 </head>
-
 <body>
-<header>
-	<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
-</header>
+	<header>
+		<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
+	</header>
 	<div id="wrap">
 		<div id="best-left">
 			<button></button>
 			<div>
 				<!-- <button></button>  화면이 작아졌을 때 #best-left메뉴 나타나게 하는거 -->
-				<h2 class="best_title_left">남성의류</h2>
+				<h2 class="best_title_left">주방,생활</h2>
 				<!-- <ul class="left_bar_meue" > -->
 				<ul class="left-menu">
 		<%
@@ -128,7 +127,8 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 				</div>
 				
 			</div>
-
+			
+			<!-- ul -->
 			<ul class="photo_list">	
 			<c:forEach var="list" items="${list}">
 				<li class="photo1">
@@ -376,15 +376,6 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 		      		      	   alert("error");
 		         						  }	            	             
 		     					   });
-			
-			
-			
-			
-			
-			
-			
-			
-			
 			
 			
 

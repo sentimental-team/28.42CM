@@ -21,7 +21,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
     ResultSet rs = null;    	/*  sql로 불러온 결과 집합들을 저장할 공간 */
     String sql = " SELECT medium_ctgr_id, medium_ctgr_name, large_ctgr_id " 
     		+" FROM medium_ctgr"
-    		+" where large_ctgr_id='5'";
+    		+" where large_ctgr_id='9'";
     
     int medium_ctgr_id = 0;
     String medium_ctgr_name =  null; 
@@ -86,7 +86,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 			<button></button>
 			<div>
 				<!-- <button></button>  화면이 작아졌을 때 #best-left메뉴 나타나게 하는거 -->
-				<h2 class="best_title_left">남성의류</h2>
+				<h2 class="best_title_left">가구,인테리어</h2>
 				<!-- <ul class="left_bar_meue" > -->
 				<ul class="left-menu">
 		<%
@@ -113,7 +113,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 				<div class="best_radio_box">
 					<ul class="aa">						
 					</ul>
-				</div>
+			</div>
 				<div class="controlgroup"><!-- 정렬 기능을 추가한 sql문이 필요 , 따로 json파일을 만들어야 할지 고민중...  -->
 					<select id="sort-type" class="styled-select">
 						<option>추천순</option>
@@ -126,6 +126,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 						<option>판매순</option>
 					</select>
 				</div>
+
 				
 			</div>
 
@@ -174,7 +175,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
        											fill="none" fill-rule="evenodd" stroke="#5d5d5d"
        											stroke-width="1.5"></path>
        								</svg>
-       									<div class="review-point">${list.pdGrade}</div>
+       									<div class="review-point">${list.pd_grade}</div>
        									<div class="review-count">평점 준 사람들 카운팅 하는 쿼리문 필요함</div>
        								</a>
        							</div>
@@ -232,8 +233,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
                    $(".photo_list").append(`	
                   	<li class="photo1">
        					<div class="cc">
-       					
-       						<a href="/sentiBodard/list/view.do?pd_id=\${element.pd_id} ">
+       						<a href="#">
        							<div class="dd">
        								<img alt=""
        									src="\${element.pd_image_url}"
@@ -288,8 +288,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
        			  	  error: function(){
       		      	   alert("error");
          						  }	            	             
-     				
-        });
+     					   });
 	 });
         
 
