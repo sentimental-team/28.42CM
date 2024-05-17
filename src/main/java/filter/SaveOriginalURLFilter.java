@@ -38,10 +38,10 @@ public class SaveOriginalURLFilter implements Filter {
         }
 
         // 원래 URL을 세션에 저장합니다.
-        session.setAttribute("originalURL", originalURL);
+        // session.setAttribute("originalURL", originalURL);
 
         // 필터 체인의 다음 필터 또는 서블릿을 호출합니다.
-        chain.doFilter(request, response);
+        //chain.doFilter(request, response);
     }
 
     @Override
