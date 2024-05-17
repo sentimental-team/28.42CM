@@ -6,6 +6,12 @@ public class LoginRequest {
 
 	private String memberEmail;
 	private String memberPwd;
+	
+	// 생성자
+	public LoginRequest(String memberEmail, String memberPwd) {
+		this.memberEmail = memberEmail;
+		this.memberPwd = memberPwd;
+	}
 
 	// Getter 및 Setter 메서드
 	public String getMemberEmail() {
