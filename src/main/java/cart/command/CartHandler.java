@@ -15,7 +15,7 @@ public class CartHandler implements CommandHandler {
 	  @Override
 	   public String process(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		   
-	      System.out.println("> ListHandler.process ...");
+	      System.out.println("> CartHandler.process ...");
 	      
 
 	     int pd_id = Integer.parseInt( request.getParameter("pd_id") );	     
