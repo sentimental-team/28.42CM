@@ -567,7 +567,7 @@ button {
 							</a></li>
 							<li class="logout1"><a class="logout2"
 								href="https://www.29cm.co.kr/mypage/heart"> <i
-									class="logout-icon"></i> <strong class="my-logout-text">LOGOUT</strong>
+									class="logout-icon"></i> <strong class="my-logout-text">LOGIN</strong>
 							</a></li>
 						</ul>
 					</div>
@@ -644,12 +644,6 @@ button {
 	                                   <a href="#"class="big_cate ng-tns-c43-0">
 	                                     <span class="categoryM">의류</span></a>
 												<div class="category">
-												  <a href="#"class="category">ALL</a></div>
-												<div class="category">
-												  <a href="#"class="category">NEW</a></div>
-												<div class="category">
-												  <a_href="#"class="category">EXCLUSIVE</a></div>
-												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=11"class="category">상의</a></div>
 												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=12"class="category">바지</a></div>
@@ -668,14 +662,8 @@ button {
 									<div  class="menu_category">
 	                                   <a href="#"class="big_cate ng-tns-c43-0">
 	                                     <span class="categoryM">가방</span></a>
-												<div class="category">
-												  <a href="#"class="category">ALL</a></div>
-												<div class="category">
-												  <a href="#"class="category">NEW</a></div>
 												<div class="category">								
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=113"class="category">숄더백</a></div>
-												<div class="category">
-												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id="class="category">EXCLUSIVE</a></div>
 												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=114"class="category">크로스백</a></div>
 												<div class="category">
@@ -694,13 +682,7 @@ button {
 	                                   <a href="#"class="big_cate ng-tns-c43-0">
 	                                     <span class="categoryM">신발</span></a>
 												<div class="category">
-												  <a href="#"class="category">ALL</a></div>
-												<div class="category">
-												  <a href="#"class="category">NEW</a></div>
-												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=122"class="category">해외브랜드</a></div>
-												<div class="category">
-												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id="class="category">EXCLUSIVE</a></div>
 												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=123"class="category">플랫,로퍼</a></div>
 												<div class="category">
@@ -719,13 +701,7 @@ button {
 	                                   <a href="#"class="big_cate ng-tns-c43-0">
 	                                     <span class="categoryM">액세서리</span></a>
 												<div class="category">
-												  <a href="#"class="category">ALL</a></div>
-												<div class="category">
-												  <a href="#"class="category">NEW</a></div>
-												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=130"class="category">해외브랜드</a></div>
-												<div class="category">
-												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id="class="category">EXCLUSIVE</a></div>
 												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=132"class="category">주얼리</a></div>
 												<div class="category">
@@ -748,10 +724,6 @@ button {
 	                                   <a href="#"class="big_cate ng-tns-c43-0">
 	                                     <span class="categoryM">의류</span></a>
 												<div class="category">
-												  <a href="/sentiBoard/list/boardlist.do"class="category">ALL</a></div>
-												<div class="category">
-												  <a href="/sentiBoard/list/boardlist.do"class="category">NEW</a></div>												
-												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=21" class="category">해외브랜드</a></div>
 												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=22"class="category">아우터</a></div>
@@ -772,12 +744,6 @@ button {
 	                                   <a href="#"class="big_cate ng-tns-c43-0">
 	                                     <span class="categoryM">가방</span></a>
 												<div class="category">
-												  <a href="#"class="category">ALL</a></div>
-												<div class="category">
-												  <a href="#"class="category">NEW</a></div>
-												<div class="category">
-												  <a href="#"class="category">EXCLUSIVE</a></div>
-												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=29"class="category">해외브랜드</a></div>
 												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=212"class="category">크로스백</a></div>
@@ -797,10 +763,6 @@ button {
 	                                   <a href="#"class="big_cate ng-tns-c43-0">
 	                                     <span class="categoryM">신발</span></a>
 												<div class="category">
-												  <a href="#"class="category">ALL</a></div>
-												<div class="category">
-												  <a href="#"class="category">NEW</a></div>												
-												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=221"class="category">해외브랜드</a></div>
 												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=222"class="category">스니커즈</a></div>
@@ -819,12 +781,6 @@ button {
 											<div  class="menu_category">
 	                                   <a href="#"class="big_cate ng-tns-c43-0">
 	                                     <span class="categoryM">액세서리</span></a>
-												<div class="category">
-												  <a href="#"class="category">ALL</a></div>
-												<div class="category">
-												  <a href="#"class="category">NEW</a></div>
-												<div class="category">
-												  <a href="#"class="category">EXCLUSIVE</a></div>
 												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=228"class="category">지갑,카드케이스</a></div>
 												<div class="category">
@@ -848,12 +804,6 @@ button {
 									<div  class="menu_category">
 	                                   <a href="#"class="big_cate ng-tns-c43-0">
 	                                     <span class="categoryM">가구,인테리어</span></a>
-												<div class="category">
-												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id="class="category">ALL</a></div>
-												<div class="category">
-												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id="class="category">NEW</a></div>
-												<div class="category">
-												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id="class="category">EXCLUSIVE</a></div>
 												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=31"class="category">비앤비이탈리아</a></div>
 												<div class="category">
@@ -892,12 +842,6 @@ button {
 	                                   <a href="#"class="big_cate ng-tns-c43-0">
 	                                     <span class="categoryM">주방,생활</span></a>
 												<div class="category">
-												  <a href="#"class="category">ALL</a></div>
-												<div class="category">
-												  <a href="#"class="category">NEW</a></div>
-												<div class="category">
-												  <a href="#"class="category">EXCLUSIVE</a></div>
-												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=41"class="category">청소수납</a></div>
 												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=42"class="category">쿡웨어</a></div>
@@ -922,10 +866,6 @@ button {
 									<div  class="menu_category">
 	                                   <a href="#"class="big_cate ng-tns-c43-0">
 	                                     <span class="categoryM">가전</span></a>
-												<div class="category">
-												  <a href="#"class="category">ALL</a></div>
-												<div class="category">
-												  <a href="#"class="category">NEW</a></div>
 												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=51"class="category">영상가전</a></div>
 												<div class="category">
@@ -960,10 +900,6 @@ button {
 	                                   <a href="#"class="big_cate ng-tns-c43-0">
 	                                     <span class="categoryM">컴퓨터,디지털</span></a>
 												<div class="category">
-												  <a href="#"class="category">ALL</a></div>
-												<div class="category">
-												  <a href="#"class="category">NEW</a></div>
-												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=61"class="category">음향기기</a></div>
 												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=62"class="category">모바일,웨어러블</a></div>
@@ -995,15 +931,9 @@ button {
 	                                   <a href="#"class="big_cate ng-tns-c43-0">
 	                                     <span class="categoryM">뷰티</span></a>
 												<div class="category">
-												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id="class="category">ALL</a></div>
-												<div class="category">
-												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id="class="category">NEW</a></div>
-												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=71"class="category">선물세트</a></div>
 												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=72"class="category">스킨케어</a></div>
-												<div class="category">
-												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id="class="category">EXCLUSIVE</a></div>
 												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=73"class="category">채식주의</a></div>
 												<div class="category">
@@ -1051,10 +981,6 @@ button {
 	                                   <a href="#"class="big_cate ng-tns-c43-0">
 	                                     <span class="categoryM">푸드</span></a>
 												<div class="category">
-												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id="class="category">ALL</a></div>
-												<div class="category">
-												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id="class="category">NEW</a></div>
-												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=81"class="category">선물세트</a></div>
 												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=82"class="category">음료</a></div>
@@ -1071,10 +997,6 @@ button {
 									<div  class="menu_category">
 	                                   <a href="#"class="big_cate ng-tns-c43-0">
 	                                     <span class="categoryM">레저</span></a>
-												<div class="category">
-												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id="class="category">ALL</a></div>
-												<div class="category">
-												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id="class="category">NEW</a></div>
 												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=92"class="category">등산</a></div>
 												<div class="category">
@@ -1109,10 +1031,6 @@ button {
 	                                   <a href="#"class="big_cate ng-tns-c43-0">
 	                                     <span class="categoryM">키즈</span></a>
 												<div class="category">
-												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id="class="category">ALL</a></div>
-												<div class="category">
-												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id="class="category">NEW</a></div>
-												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=101"class="category">의류</a></div>
 												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=102"class="category">신발,가방</a></div>
@@ -1127,10 +1045,6 @@ button {
 									<div  class="menu_category">
 	                                   <a href="#"class="big_cate ng-tns-c43-0">
 	                                     <span class="categoryM">컬처</span></a>
-												<div class="category">
-												  <a href="#"class="category">ALL</a></div>
-												<div class="category">
-												  <a href="#"class="category">NEW</a></div>
 												<div class="category">
 												  <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=1101"class="category">티켓</a></div>
 													<!---->
