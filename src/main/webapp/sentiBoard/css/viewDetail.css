@@ -525,7 +525,7 @@
         margin-left: 14px;
     }
     a:-webkit-any-link {
-        color: -webkit-link;
+        color:black;
         cursor: pointer;
     }
     .css-1dncbyk {
@@ -2361,7 +2361,7 @@
         outline: none;
     }
     a:-webkit-any-link {
-        color: -webkit-link;
+        color:black;
         cursor: pointer;
     }
     .css-1dmv4kt {

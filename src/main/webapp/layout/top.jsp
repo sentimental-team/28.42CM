@@ -559,7 +559,7 @@ button {
 										BAG</strong>
 							</a></li>
 							<li class="logout1"><a class="logout2"
-								href="https://www.29cm.co.kr/mypage/heart"> <i
+								href="/sentiBoard/main.jsp"> <i
 									class="logout-icon"></i> <strong class="my-logout-text">LOGOUT</strong>
 							</a></li>
 						</ul>
