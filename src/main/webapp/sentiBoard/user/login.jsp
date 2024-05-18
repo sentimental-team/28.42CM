@@ -287,4 +287,24 @@ a {
 	<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
 </footer>
 </body>
+<script>
+$(document).ready(function() {
+    $('#loginForm').submit(function(event) {
+        event.preventDefault();
+        $.ajax({
+            type: 'POST',
+            url: '${pageContext.request.contextPath}/sentiBoard/user/login.do',
+            data: $(this).serialize(),
+            success: function(response) {
+                if (response.success) {
+                    alert('로그인에 성공했습니다.');
+                    window.location.href = '${pageContext.request.contextPath}/sentiBoard/main.jsp';
+                } else {
+                    alert('로그인에 실패했습니다.');
+                }
+            }
+        });
+    });
+});
+</script>
 </html>

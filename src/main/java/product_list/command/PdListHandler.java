@@ -50,18 +50,22 @@ public class PdListHandler implements CommandHandler{
        return path = "/sentiBoard/list/men_accessory.jsp";
     } else if ((medium_ctgr_id>=31 && medium_ctgr_id<=39) || (medium_ctgr_id>=310 && medium_ctgr_id<=311)) {
 		// return path = 가구 , 인테리어
+    	
 	} else if (medium_ctgr_id>=41 && medium_ctgr_id<=45) {
 		// return path = 주방, 생활
+		return path = "/sentiBoard/list/kitchen_all.jsp";
 	} else if (medium_ctgr_id>=51 && medium_ctgr_id <=59) {
 		//return path = 가전
 	} else if (medium_ctgr_id>=61 && medium_ctgr_id <=68) {
 		//return path = 컴퓨터, 디지털
+	  return path = "/sentiBoard/list/digital.jsp";
 	} else if ((medium_ctgr_id>=71 && medium_ctgr_id<=79) || (medium_ctgr_id>=710 && medium_ctgr_id<=715)) {
 		//return path = 뷰티
 	} else if (medium_ctgr_id>=81 && medium_ctgr_id<=84) {
 		//return path = 푸드
 	} else if (medium_ctgr_id>=91 && medium_ctgr_id<=99) {
 		//return path = 러져
+		return path = "/sentiBoard/list/leisure_all.jsp";
 	} else if (medium_ctgr_id>=101 && medium_ctgr_id<=103) {
 		//return path = 유아, 아동
 	} else if (medium_ctgr_id==1101) {
