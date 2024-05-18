@@ -29,7 +29,7 @@ public class PdListHandler implements CommandHandler{
       
       // 1. 포워딩 전에 데이터 저장
       request.setAttribute("list", list);
-      
+
       String path = null;
       
       if ((medium_ctgr_id>=11 && medium_ctgr_id<=19) || (medium_ctgr_id>=110 && medium_ctgr_id<=112) ) {

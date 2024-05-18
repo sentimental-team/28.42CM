@@ -12,15 +12,13 @@ import java.util.Set;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import mvc.command.CommandHandler;
 
-
-@WebServlet("/*do")
+//@WebServlet("*.do")
 public class DispatcherServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     
@@ -63,6 +61,7 @@ public Map<String, CommandHandler> commandHandlerMap = new HashMap<>();
 				try {
 					CommandHandler handler = (CommandHandler) commandHandlerClass.newInstance();
 					this.commandHandlerMap.put(url, handler);	// 맵 추가
+					System.out.println(commandHandlerMap);
 				} catch (InstantiationException e) {
 					e.printStackTrace();
 				} catch (IllegalAccessException e) {
@@ -95,6 +94,12 @@ public Map<String, CommandHandler> commandHandlerMap = new HashMap<>();
 				int beginIndex = request.getContextPath().length();
 				requestURI = requestURI.substring(beginIndex);							
 				CommandHandler handler = this.commandHandlerMap.get(requestURI);
+				
+				if (handler == null) {
+			        System.out.println("No handler found for request URI: " + requestURI);
+			        response.sendError(HttpServletResponse.SC_NOT_FOUND);
+			        return;
+			    }
 				
 				String view = null;
 				try {
