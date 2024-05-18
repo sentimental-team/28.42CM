@@ -1,5 +1,6 @@
 package member.command;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -14,9 +15,15 @@ public class LogoutHandler implements CommandHandler {
     public String process(HttpServletRequest req, HttpServletResponse res) {
         HttpSession session = req.getSession(false);
         if (session != null) {
-            session.invalidate();
+            session.invalidate(); // 세션 무효화
         }
         
+        // 로그인 쿠키 제거
+        Cookie loginCookie = new Cookie("memberEmail", null);
+        loginCookie.setMaxAge(0); // 쿠키 즉시 만료
+        loginCookie.setPath(req.getContextPath());
+        res.addCookie(loginCookie);
+
         // 원래 페이지 URL 가져오기
         String originalURL = req.getHeader("Referer");
         if (originalURL == null || originalURL.contains("logout")) {
@@ -24,6 +31,6 @@ public class LogoutHandler implements CommandHandler {
         }
         req.setAttribute("originalURL", originalURL);
 
-        return LOGOUT_VIEW;
+        return LOGOUT_VIEW; // 로그아웃 성공 페이지로 이동
     }
 }
