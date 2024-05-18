@@ -68,7 +68,7 @@
 
 <header>
 	  <jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
-	</header>
+</header>
 </head>
 
 	
