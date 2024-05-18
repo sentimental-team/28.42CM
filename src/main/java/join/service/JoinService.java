@@ -13,7 +13,6 @@ import member.persistence.MemberDAO;
 import member.persistence.MemberDAOImpl;
 
 
-
 public class JoinService {
 
 	private MemberDAO memberDao;

@@ -1,6 +1,7 @@
 package member.command;
 
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -47,10 +48,18 @@ public class LoginHandler implements CommandHandler {
 
         String path = req.getContextPath();
         if (result == 1) {
+        	// 세션에 사용자 정보 저장
+            req.getSession().setAttribute("memberEmail", memberEmail);
+
+            // 쿠키에 사용자 정보 저장
+            Cookie loginCookie = new Cookie("memberEmail", memberEmail);
+            loginCookie.setMaxAge(60 * 60 * 24 * 30); // 30일 동안 유효
+            loginCookie.setPath(path);
+            res.addCookie(loginCookie);
             res.sendRedirect(path + "/sentiBoard/user/loginSuccess.jsp");
         } else {
             res.sendRedirect(path + "/sentiBoard/user/login.jsp?success=false");
-        }
+        } 
         return null;
     }
 }
