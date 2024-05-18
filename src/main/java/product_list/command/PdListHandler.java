@@ -58,6 +58,7 @@ public class PdListHandler implements CommandHandler{
 		//return path = 가전
 	} else if (medium_ctgr_id>=61 && medium_ctgr_id <=68) {
 		//return path = 컴퓨터, 디지털
+	  return path = "/sentiBoard/list/digital.jsp";
 	} else if ((medium_ctgr_id>=71 && medium_ctgr_id<=79) || (medium_ctgr_id>=710 && medium_ctgr_id<=715)) {
 		//return path = 뷰티
 	} else if (medium_ctgr_id>=81 && medium_ctgr_id<=84) {
