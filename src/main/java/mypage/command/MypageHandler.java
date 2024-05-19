@@ -16,15 +16,15 @@ public class MypageHandler implements CommandHandler{
 		
 		System.out.println("> MypageHandler.process() ...");
 		
-		String xxx = request.getParameter("pd_id");
+		String xxx = request.getParameter("member_id");
 		System.out.println(">>>>>>>>>>>>>" + xxx);
-		int pd_id = Integer.parseInt(request.getParameter("pd_id"));
+		int member_id = Integer.parseInt(request.getParameter("member_id"));
 		MypageService mypageService = MypageService.getinstance();
-		List<MypageDTO> dlist = mypageService.selectDeliveryList(pd_id);
+		List<MypageDTO> dlist = mypageService.selectDeliveryList(member_id);
 		
 		request.setAttribute("dlist", dlist);
 		
-		return "/sentiBoard/list/mypage_delivery.jsp";
+		return "/sentiBoard/user/mypage_delivery.jsp";
 	}
 
 }

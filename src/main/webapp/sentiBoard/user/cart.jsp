@@ -49,7 +49,7 @@
 				<div class="cart-info">
 					<span class="cart-text">장바구니에 담은 상품이 없습니다.</span>
 					<div class="shop-btn">
-						<a class="go-29cm" href="https://www.29cm.co.kr">CONTINUE SHOPPING</a>
+						<a class="go-29cm" href="/sentiBoard/main.jsp">CONTINUE SHOPPING</a>
 					</div>
 				</div>
 			</c:when>

@@ -26,7 +26,7 @@
 	<div class="mid-div">
 		<div class="mid-left">
 			<div class="mid-left-top">
-				<h3 class="name">유*</h3>
+				<h3 class="name">${list.memberId }</h3>
 				<ul class="like">
 					<li class="like-li">
 						<a class="like-a" href="#">좋아요 0</a>
@@ -143,14 +143,14 @@
 					    </li>
 					</c:when>
 					<c:otherwise>
-					    <c:forEach items="${dlist}" var="delivery">
+					    <c:forEach items="${dlist}" var="list">
 					        <li class="deli-ok2">
 					            <div class="deli-ok-info">
 					                <span class="deli-ok-date">
-					                    <span class="deli-ok-date2">주문일자 ${delivery.deliveryDate}</span>
+					                    <span class="deli-ok-date2">주문일자 ${list.deliveryDate}</span>
 					                </span>
 					                <span class="deli-ok-ordernum">
-					                    <span class="deli-ok-ordernum2">주문번호 ${delivery.pdId}</span>
+					                    <span class="deli-ok-ordernum2">주문번호 ${list.pdId}</span>
 					                </span>
 					            </div>
 					            <ul class="deli_ok-info2">
@@ -160,15 +160,15 @@
 					                            <a class="deli-ok-info-url" href="#">
 					                                <div class="deli-ok-info6">
 					                                    <div class="deli-ok-info-img">
-					                                        <img src="" alt="" loading="lazy"/>
+					                                        <img src="${list.pdImageURL}" alt="" loading="lazy"/>
 					                                    </div>
 					                                    <div class="deli-ok-info7">
-					                                        <p class="deli-ok-brandname">${delivery.brandName}</p>
-					                                        <p class="deli-ok-pd-title">${delivery.pdName}</p>
+					                                        <p class="deli-ok-brandname">${list.brandName}</p>
+					                                        <p class="deli-ok-pd-title">${list.pdName}</p>
 					                                        <ul class="deli-ok-option">
-					                                            <li>${delivery.pdOptionName}</li>
+					                                            <li>${list.pdOptionName}</li>
 					                                        </ul>
-					                                        <p class="deli-ok-pd-price">${delivery.pdPrice}</p>
+					                                        <p class="deli-ok-pd-price">${list.pdPrice}</p>
 					                                    </div>
 					                                </div>
 					                            </a>
@@ -176,11 +176,11 @@
 					                            <div class="deli-ok-info8">
 					                                <div class="deli-ok-info9">
 					                                    <div>
-					                                        <p class="deli-ok-delistate">${delivery.deliveryState}</p>
+					                                        <p class="deli-ok-delistate">${list.deliveryState}</p>
 					                                    </div>
 					                                </div>
 					                            </div>
-					                            <c:if test="${delivery.deliveryState eq 1}">
+					                            <c:if test="${list.deliveryState == '배송중'}">
 					                                <div class="deli-ok-info10">
 					                                    <div class="deli-ok-info-btn">
 					                                        <button type="button" class="deli-ok-cancel">주문취소</button>
@@ -189,7 +189,7 @@
 					                                    <div class="deli-ok-buy">-</div>
 					                                </div>
 					                            </c:if>
-					                            <c:if test="${delivery.deliveryState eq 2}">
+					                            <c:if test="${list.deliveryState == '배송완료'}">
 					                                <div class="deli-ok-info10">
 					                                    <div class="deli-ok-info-btn">
 					                                        <button type="button" class="deli-ok-review">리뷰작성</button>
@@ -201,7 +201,7 @@
 					                        </li>
 					                    </ul>
 					                    <div class="deli-ok-charge">
-					                        <span class="deli-ok-charge2">${delivery.deliveryPay}</span>
+					                        <span class="deli-ok-charge2">${list.deliveryPay}</span>
 					                    </div>
 					                </li>
 					            </ul>

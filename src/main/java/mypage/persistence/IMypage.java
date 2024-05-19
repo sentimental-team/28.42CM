@@ -7,5 +7,5 @@ import java.util.List;
 import mypage.domain.MypageDTO;
 
 public interface IMypage {
-	List<MypageDTO> selectDeliveryList(Connection con, int pd_id) throws SQLException;
+	List<MypageDTO> selectDeliveryList(Connection con, int member_id) throws SQLException;
 }
