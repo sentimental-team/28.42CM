@@ -551,7 +551,7 @@ button {
                         </a>
                      </li>
                      <li class="my-page1"><a class="my-page2"
-                        href="/sentiBoard/list/mypage.do"> <i class="my-icon"></i>
+                        href="/sentiBoard/user/mypage.do?member_id=1"> <i class="my-icon"></i>
                            <strong class="my-page-text">MY PAGE</strong>
                      </a>
                      </li>
@@ -592,13 +592,13 @@ button {
             <nav class="mid-nav">
                <ul class="mid-ul">
                   <li class="mid-li"><a class="mid-a"
-                     href="https://shop.29cm.co.kr/special-order">Special-Order</a></li>
+                     href="#">Special-Order</a></li>
                   <li class="mid-li"><a class="mid-a"
-                     href="https://shop.29cm.co.kr/showcase">Showcase</a></li>
+                     href="#">Showcase</a></li>
                   <li class="mid-li"><a class="mid-a"
-                     href="https://shop.29cm.co.kr/pt">PT</a></li>
+                     href="#">PT</a></li>
                   <li class="mid-li"><a class="mid-a"
-                     href="https://shop.29cm.co.kr/welove">Welove</a></li>
+                     href="#">Welove</a></li>
                </ul>
             </nav>
             <div class="bottom">
@@ -1151,7 +1151,11 @@ $("#third-2").on("click",function(){
  });
  
  $(".my-like2").on("click", function(){
-    alert("공사중입니다.")
+    alert("미구현")
+ })
+ 
+ $(".mid-a").on("click", function(){
+	 alert("미구현")
  })
 </script>
 </html>

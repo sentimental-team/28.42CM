@@ -17,7 +17,7 @@ public class MypageDTO {
 	private int pdPrice;
 	private String pdOptionName;
 	private int deliveryPay;
-	private int deliveryState;
+	private String deliveryState;
 	private Date deliveryDate;
 	private int pdId;
 	private String pdImageURL;
