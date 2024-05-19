@@ -22,7 +22,7 @@ public class MypageDAO implements IMypage{
 	
 
 	@Override
-	public List<MypageDTO> selectDeliveryList(Connection con, int delivery_state) throws SQLException {
+	public List<MypageDTO> selectDeliveryList(Connection con, int pd_id) throws SQLException {
 		
 		String sql = "SELECT delivery_date, pd_id, pd_image_url, brand_name, pd_name, pd_option_name, pd_price, deli_pay, delivery_state "
 				   + "FROM product p JOIN pay pay ON p.pd_id = pay.pd_id "
@@ -33,18 +33,18 @@ public class MypageDAO implements IMypage{
 				   + "JOIN large_ctgr lc ON lc.large_ctgr_id = p.large_ctgr_id "
 				   + "JOIN product_option po ON lc.large_ctgr_id = po.large_ctgr_id "
 				   + "JOIN brand b ON p.brand_id = b.brand_id "
-				   + "WHERE delivery_state = ? ";
+				   + "WHERE pd_id = ? ";
 		
-		ArrayList<MypageDTO> list = null;
+		ArrayList<MypageDTO> dlist = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		
 		try {
 			pstmt = con.prepareStatement(sql);
-			pstmt.setInt(1, delivery_state);
+			pstmt.setInt(1, pd_id);
 			rs = pstmt.executeQuery();
 			if (rs.next()) {
-				list = new ArrayList<MypageDTO>();
+				dlist = new ArrayList<MypageDTO>();
 				MypageDTO dto = null;
 				
 				do {
@@ -60,7 +60,7 @@ public class MypageDAO implements IMypage{
 					dto.setDeliveryPay(rs.getInt("deli_pay"));
 					dto.setMemberId(rs.getInt("member_id"));
 					
-					list.add(dto);
+					dlist.add(dto);
 				} while (rs.next());
 			}
 		} finally {
@@ -68,6 +68,6 @@ public class MypageDAO implements IMypage{
 			JdbcUtil.close(rs);
 		}
 		
-		return list;
+		return dlist;
 	}
 }
