@@ -905,17 +905,21 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
             <h2 class="bb1">뷰티</h2>
           </div>
           <ul>
-            <a href="" class="bb2">All</a>
-            <a href="" class="bb2">NEW</a>
-            <a href="" class="bb2">EXCLUSIVE</a>
-            <a href="" class="bb2">해외브랜드</a>
-            <a href="" class="bb2">아우터</a>
-            <a href="" class="bb2">상의</a>
-            <a href="" class="bb2">하의</a>
-            <a href="" class="bb2">홈웨어</a>
-            <a href="" class="bb2">셋업</a>
-            <a href="" class="bb2">이너웨어</a>
-            <a href="" class="bb2">니트웨어</a>
+            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=71" class="bb2">선물세트</a>
+            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=72" class="bb2">스킨케어</a>
+            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=73" class="bb2">채식주의</a>
+            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=74" class="bb2">친환경패키지</a>
+            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=75" class="bb2">자연유래</a>
+            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=76" class="bb2">바디케어</a>
+            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=77" class="bb2">헤어케어</a>
+            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=78" class="bb2">메이크업</a>
+            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=79" class="bb2">네일, 디자인 타투</a>
+            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=710" class="bb2">향수</a>
+            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=711" class="bb2">여성용품</a>
+            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=712" class="bb2">뷰티기기, 마스크</a>
+            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=713" class="bb2">남성뷰티</a>
+            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=714" class="bb2">스킨타입</a>
+            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=715" class="bb2">이너뷰티</a>
           
           </ul>
         </div>

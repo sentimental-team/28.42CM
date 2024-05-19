@@ -60,7 +60,7 @@ public class PdListHandler implements CommandHandler{
 		//return path = 컴퓨터, 디지털
 	  return path = "/sentiBoard/list/digital.jsp";
 	} else if ((medium_ctgr_id>=71 && medium_ctgr_id<=79) || (medium_ctgr_id>=710 && medium_ctgr_id<=715)) {
-		//return path = 뷰티
+		return path = "/sentiBoard/list/beautyboardlist.jsp";
 	} else if (medium_ctgr_id>=81 && medium_ctgr_id<=84) {
 		//return path = 푸드
 	} else if (medium_ctgr_id>=91 && medium_ctgr_id<=99) {
@@ -69,7 +69,7 @@ public class PdListHandler implements CommandHandler{
 	} else if (medium_ctgr_id>=101 && medium_ctgr_id<=103) {
 		//return path = 유아, 아동
 	} else if (medium_ctgr_id==1101) {
-		//return path = 티켓
+		return path = "/sentiBoard/list/cultureBoardlist.jsp";
 	}
 		 
 	

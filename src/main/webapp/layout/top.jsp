@@ -532,6 +532,55 @@ button {
     border-bottom: 1px solid rgb(212,212,212);
 }
  */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.8); /* Black with opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* Adjusted to be closer to the top */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Increased width */
+    height: 60%; /* Added height */
+    position: relative;
+}
+
+.modal-content input {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.modal-content {
+    display: flex;
+    align-items: center;
+}
+#search-input {
+    flex: 1;
+	margin-right: 10px; 
+}
+#search-submit {
+    margin-left: 10px; /* 검색 입력란과 버튼 사이에 간격을 줌 */
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse; /* 요소들을 우에서 좌로 나열함 */
+}
 </style>
 <head>
 <meta charset="UTF-8">
@@ -584,9 +633,19 @@ button {
                   </ul>
                </div>
                <div class="head-mid">
-                  <button class="search-btn">
+                  <button class="search-btn" >
                      <span class="search-text"></span>
                   </button>
+                  
+                   <div class="modal" id="searchModal">
+					    <div class="modal-content">
+					        <span class="close-btn">&times;</span>
+					        <div class="search-container">
+					            <input type="text" id="search-input" placeholder="Search...">
+					            <button id="search-submit">검색</button>
+					        </div>
+					    </div>
+					</div>
                </div>
             </div>
             <nav class="mid-nav">
@@ -940,7 +999,7 @@ button {
                      <div class="menu_pan">
                         <div>
                            <div  class="menu_category">
-                                      <a href="#"class="big_cate ng-tns-c43-0">
+                                      <a href="/sentiBoard/list/beautyBoardMain.jsp"class="big_cate ng-tns-c43-0">
                                         <span class="categoryM">뷰티</span></a>
                                     <div class="category">
                                       <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=71"class="category">선물세트</a></div>
@@ -1157,5 +1216,45 @@ $("#third-2").on("click",function(){
  $(".mid-a").on("click", function(){
 	 alert("미구현")
  })
+// script.js
+document.querySelector('.search-btn').addEventListener('click', function() {
+    document.getElementById('searchModal').style.display = 'block';
+});
+
+document.querySelector('.close-btn').addEventListener('click', function() {
+    document.getElementById('searchModal').style.display = 'none';
+});
+
+// Close the modal if the user clicks outside of the modal content
+window.addEventListener('click', function(event) {
+    const modal = document.getElementById('searchModal');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+});
+
+
+$(document).ready(function() {
+    // Open the modal
+    $('.search-btn').on('click', function() {
+        $('#searchModal').show();
+    });
+
+    // Close the modal when clicking the close button
+    $('.close-btn').on('click', function() {
+        $('#searchModal').hide();
+    });
+
+    // Close the modal when clicking outside the modal content
+    $(window).on('click', function(event) {
+        if ($(event.target).is('#searchModal')) {
+            $('#searchModal').hide();
+        }
+    });
+
+});
+
+
+
 </script>
 </html>
