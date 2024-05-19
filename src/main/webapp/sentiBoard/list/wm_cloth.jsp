@@ -191,7 +191,7 @@ $(".medium_ctgr_id111").on("click", function(){
   						<a href="#">
   							<div class="dd">
   								<img alt=""
-  									src="\${element.pd_image_url}"
+  									src="C:\coding\TeamProject\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\sentiProject\sentiBoard\upload\청바지.jpg"
   									class="ff">
   							</div>
   						</a> 

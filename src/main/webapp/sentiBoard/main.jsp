@@ -23,7 +23,8 @@
 
 
 <style>
-.main_container[_ngcontent-sin-c104]{min-width:1000px;margin:0 auto;padding:20px 50px 0 0;box-sizing:border-box}
+.main_container[_ngcontent-sin-c104]{min-width
+:1000px;margin:0 auto;padding:20px 50px 0 0;box-sizing:border-box}
 .main_container[_ngcontent-sin-c104]   .feed_section[_ngcontent-sin-c104]{margin:0 -2% 0 0}
 .main_container[_ngcontent-sin-c104]   .feed_section[_ngcontent-sin-c104]:before{left:44%}
 .main_container[_ngcontent-sin-c104]   .feed_section[_ngcontent-sin-c104]:after{right:28%}
