@@ -27,12 +27,14 @@ public class CartDAO implements ICart {
 	public List<CartDTO> cartIn(Connection con, int pd_id) throws SQLException {
 
 		String sql = " SELECT  pd_name, pd_price, brand_name, pd_option_name, delivery_pay, pd_image_url, COUNT(*) OVER() cnt "
-				+ " FROM product p " + " JOIN brand b ON b.brand_id = p.brand_id "
+				+ " FROM product p "
+				+ " JOIN brand b ON b.brand_id = p.brand_id "
 				+ " JOIN main_ctgr m ON p.main_ctgr_id = m.main_ctgr_id "
 				+ " JOIN delivery_pay de ON m.main_ctgr_id = de.main_ctgr_id "
 				+ " JOIN large_ctgr l ON p.large_ctgr_id = l.large_ctgr_id "
 				+ " JOIN product_option o ON l.large_ctgr_id = o.large_ctgr_id "
-				+ " JOIN product_image img ON p.pd_id = img.pd_id " + " JOIN pay a ON  a.pd_id = p.pd_id "
+				+ " JOIN product_image img ON p.pd_id = img.pd_id " 
+				+ " JOIN pay a ON  a.pd_id = p.pd_id "
 				+ " WHERE p.pd_id = ? ";
 
 		ArrayList<CartDTO> list = null;

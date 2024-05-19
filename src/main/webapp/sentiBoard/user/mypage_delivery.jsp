@@ -10,64 +10,7 @@
 <%@page import="java.sql.Connection"%>
 <%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%
-	Connection conn = null;
 
-	PreparedStatement pstmt = null;
-	ResultSet rs = null;
-	String sql = "SELECT b.brand_name, p.pd_name, p.pd_price, po.pd_option_name, de.delivery_state, de.delivery_pay, de.delivery_date, p.pd_id "
-			+ "FROM product p JOIN large_ctgr lc ON p.large_ctgr_id = lc.large_ctgr_id "
-            + "JOIN product_option po ON lc.large_ctgr_id = po.large_ctgr_id "
-            + "JOIN brand b ON p.brand_id = b.brand_id "
-            + "JOIN pay pay ON p.pd_id = pay.pd_id "
-            + "JOIN delivery de ON pay.pay_id = de.pay_id "
-            + "WHERE de.delivery_state = 1";
-	int pdId;
-	String brandName;
-	String pdName;
-	int pdPrice;
-	String pdOptionName;
-	int deliveryState;
-	int deliveryPay;
-	Date deliveryDate;
-	
-	
-	DeliveryVO dvo = null;
-	ArrayList<DeliveryVO> dlist = null;
-	
-	try{
-		conn = ConnectionProvider.getConnection();
-		pstmt = conn.prepareStatement(sql);
-		rs = pstmt.executeQuery();
-		
-		if(rs.next()){
-			dlist = new ArrayList();
-			do{
-				pdId = rs.getInt("pd_id");
-				brandName = rs.getString("brand_name");
-				pdName = rs.getString("pd_name");
-				pdPrice = rs.getInt("pd_price");
-				pdOptionName = rs.getString("pd_option_name");
-				deliveryState = rs.getInt("delivery_state");
-				deliveryPay = rs.getInt("delivery_pay");
-				deliveryDate = rs.getDate("delivery_date");
-				
-				dvo = new DeliveryVO(pdId, brandName, pdName, pdPrice, pdOptionName, deliveryState, deliveryPay, deliveryDate);
-			
-				dlist.add(dvo);
-			} while(rs.next());
-		}// if
-		
-		} catch (SQLException e){
-			e.printStackTrace();
-		} finally{
-			JdbcUtil.close(rs);
-			JdbcUtil.close(pstmt);
-			JdbcUtil.close(conn);
-		}
-	
-	request.setAttribute("dlist", dlist);
-%>
 <!DOCTYPE html>
 <html>
 <head>
