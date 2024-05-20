@@ -50,7 +50,7 @@ public class PdListHandler implements CommandHandler{
        return path = "/sentiBoard/list/men_accessory.jsp";
     } else if ((medium_ctgr_id>=31 && medium_ctgr_id<=39) || (medium_ctgr_id>=310 && medium_ctgr_id<=311)) {
 		// return path = 가구 , 인테리어
-    	
+    	return path = "/sentiBoard/list/interior.jsp";
 	} else if (medium_ctgr_id>=41 && medium_ctgr_id<=45) {
 		// return path = 주방, 생활
 		return path = "/sentiBoard/list/kitchen_all.jsp";
@@ -63,6 +63,7 @@ public class PdListHandler implements CommandHandler{
 		return path = "/sentiBoard/list/beautyboardlist.jsp";
 	} else if (medium_ctgr_id>=81 && medium_ctgr_id<=84) {
 		//return path = 푸드
+		return path = "/sentiBoard/list/food.jsp";
 	} else if (medium_ctgr_id>=91 && medium_ctgr_id<=99) {
 		//return path = 러져
 		return path = "/sentiBoard/list/leisure_all.jsp";
