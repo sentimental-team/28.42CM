@@ -32,82 +32,15 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 			    <!-- Slides -->
 			    <div class="swiper-slide">
 			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/14/7011254b18f34acba3480cf37821cd93_20240514222021.jpg?width=2000">
+			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/14/414e48cfec274fe4b91f320b4d4847e0_20240514173338.jpg?width=2000">
 			    		<div class="uuu">
 			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">여름을 봄과 여름 사이 티셔츠</h2>
-			    				<p class="uuu1_2">MAATILA</p>
+			    				<h2 class="uuu1_1">건강한 웰니스 루틴</h2>
+			    				<p class="uuu1_2">WELLNESS ROUTINE</p>
 			    			</div>
 			    		</div>
 			    	</a>	
 			    </div>
-			      <div class="swiper-slide">
-			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/14/1c0cf9a493734c94a6c3b35e85b2b00a_20240514222209.jpg?width=2000">
-			    		<div class="uuu">
-			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">여름을 책임질 여기서만 만나는 조명</h2>
-			    				<p class="uuu1_2">WELCOMETOCCC</p>
-			    			</div>
-			    		</div>
-			    	</a>	
-			    </div>
-			      <div class="swiper-slide">
-			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/14/2b1e2572e21b480094aab680d540b9ef_20240514222053.jpg?width=2000">
-			    		<div class="uuu">
-			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">침구 브랜드 모아보기</h2>
-			    				<p class="uuu1_2">BRAND HIGHLIGHT</p>
-			    			</div>
-			    		</div>
-			    	</a>	
-			    </div>
-			      <div class="swiper-slide">
-			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/14/6e2a9e54f06945088eb671cf742075c6_20240514224628.jpg?width=2000">
-			    		<div class="uuu">
-			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">매일 밤 함께할 포근함</h2>
-			    				<p class="uuu1_2">NUZAM&SLEEPER&PICKEND</p>
-			    			</div>
-			    		</div>
-			    	</a>	
-			    </div>
-			      <div class="swiper-slide">
-			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/14/03bc90712937436686b4e41201e9e0b0_20240514222731.jpg?width=2000">
-			    		<div class="uuu">
-			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">정성을 선물해요</h2>
-			    				<p class="uuu1_2">29EDITION</p>
-			    			</div>
-			    		</div>
-			    	</a>	
-			    </div>
-			      <div class="swiper-slide">
-			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/14/adb5c6e3b38d40f4864d05fc7a836faf_20240514224455.jpg?width=2000">
-			    		<div class="uuu">
-			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">익숙한 물건의 매력</h2>
-			    				<p class="uuu1_2">SANRO</p>
-			    			</div>
-			    		</div>
-			    	</a>	
-			    </div>
-			      <div class="swiper-slide">
-			    	<a>
-			    		<img alt="" src="https://img.29cm.co.kr/next-product/2024/05/14/eba1697c572246b6b6d0b2760d8bf6b8_20240514180215.jpg?width=2000">
-			    		<div class="uuu">
-			    			<div class="uuu1">
-			    				<h2 class="uuu1_1">전시를 기억하는 좋은 방법</h2>
-			    				<p class="uuu1_2">GROUNDSEESAW</p>
-			    			</div>
-			    		</div>
-			    	</a>	
-			    </div>
-			   			
 			  </div>
 			
 			
@@ -119,23 +52,15 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 		</div>
         <div class="bb">
           <div>
-            <h2 class="bb1">가구,인테리어</h2>
+            <h2 class="bb1">푸드</h2>
           </div>
           <ul>
             <a href="" class="bb2">All</a>
             <a href="" class="bb2">NEW</a>
-            <a href="" class="bb2">EXCLUSIVE</a>
-            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=31" class="bb2">비앤비이탈리아</a>
-            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=32" class="bb2">침구</a>
-            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=33" class="bb2">홈패브릭</a>
-            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=34" class="bb2">가구</a>
-            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=35" class="bb2">조명</a>
-            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=36" class="bb2">홈데코</a>
-            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=37" class="bb2">가드닝</a>
-            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=38" class="bb2">홈프레그런스</a>
-            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=39" class="bb2">아트,디자인</a>
-            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=310" class="bb2">책,음반</a>
-            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=311" class="bb2">스테이셔너리</a>
+            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=81" class="bb2">선물세트</a>
+            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=82" class="bb2">음료</a>
+            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=83" class="bb2">가공식품</a>
+            <a href="/sentiBoard/list/boardlist.do?medium_ctgr_id=84" class="bb2">신선,냉장</a>
           </ul>
         </div>
     </div>
@@ -149,41 +74,28 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
       <div class="cc1">
         <ul class="cc1_1">
           <li class="cc1_1_1">
-            <a href="https://content.29cm.co.kr/focus/2024/05/09/2nd" class="cc1_1_1_1">
+            <a href="https://content.29cm.co.kr/brand-news/21720" class="cc1_1_1_1">
             	<div>
             		<div>
-            			<img class="cc1_1_1_1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/14/2977c7804fe94ab19350f5f3126107b1_20240514224833.jpg?width=800">
+            			<img class="cc1_1_1_1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/14/ea6e2ab2a35145f9aa6088ee4a9672f9_20240514173407.jpg?width=800">
             		</div>	
             	</div>
             	<div class="cc1_1_1_2">
-            		<h1 class="cc1_1_1_3">일요입점회 베스트 아이템 앙코르</h1>
-            		<p class="cc1_1_1_4">내 방의 분위기를 바꿔줄 알로소를 만나보세요</p>
+            		<h1 class="cc1_1_1_3">한 조각으로 맛보는 행복</h1>
+            		<p class="cc1_1_1_4">디저트 기프트숍 온더홀을 새롭게 만나보세요</p>
             	</div>           	
             </a>
           </li>
            <li class="cc1_1_1">
-            <a href="https://content.29cm.co.kr/brand-news/21905" class="cc1_1_1_1">
+            <a href="https://content.29cm.co.kr/highlight/2024/05/07/1st/" class="cc1_1_1_1">
             	<div>
             		<div>
-            			<img class="cc1_1_1_1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/14/a98fcfc3423040a0b997b9a667927737_20240514224859.jpg?width=800">
+            			<img class="cc1_1_1_1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/14/24fb9383bfc54d41912e3f0e7d539005_20240514174001.jpg?width=800">
             		</div>	
             	</div>
             	<div class="cc1_1_1_2">
-            		<h1 class="cc1_1_1_3">다채로운 쓰임을 지닌 오브제</h1>
-            		<p class="cc1_1_1_4">39이티씨 스프링 시리즈를 단독으로 소개해요</p>
-            	</div>           	
-            </a>
-          </li>
-          <li class="cc1_1_1">
-            <a href="https://content.29cm.co.kr/brand-news/21912" class="cc1_1_1_1">
-            	<div>
-            		<div>
-            			<img class="cc1_1_1_1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/14/6db5203958064f6994fc19491a31a201_20240514224948.jpg?width=800">
-            		</div>	
-            	</div>
-            	<div class="cc1_1_1_2">
-            		<h1 class="cc1_1_1_3">즐거운 여정에 함께</h1>
-            		<p class="cc1_1_1_4">지비에이치의 신상품을 가장 먼저 만나보세요</p>
+            		<h1 class="cc1_1_1_3">이너뷰티 브랜드 하이라이트</h1>
+            		<p class="cc1_1_1_4">에이치마인드, 랩트리션, 오니스트를 소개해요</p>
             	</div>           	
             </a>
           </li>
@@ -215,95 +127,95 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0ddc4f33b730892b5d7f11714038.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef141b9a4af1c5b9bbf35af066aa84.png?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">꾸까</h2>
-              					<div class="dd2">[생일] 알록달록 컬러축제, 페스타 바스켓</div>
+              					<h2 class="ddd1">홀블랜딩</h2>
+              					<div class="dd2">다이어트 부스트 패키지 식물단백 1통 + 그린카테킨 1통</div>
               					<span class="ddd3">
-              					74,900
+              					73,500
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">꾸까</a>
+              			<a class="dd3_2_1_1_1_2">홀블랜딩</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef135e894be311b9bbfdb752eed3d2.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/17/2ac34a642a6045ca9f2b70f49354daa3_20240517141806.jpg?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">꾸까</h2>
-              					<div class="dd2">[집들이] 피치와 퍼플의 만남, 블렌디드 꽃다발</div>
+              					<h2 class="ddd1">세네카</h2>
+              					<div class="dd2">(12개 세트) 세네카 애플칩 사과칩 애플 스낵 사과 과자</div>
               					<span class="ddd3">
-              					46,900
+              					90,000
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">꾸까</a>
+              			<a class="dd3_2_1_1_1_2">세네카</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0de14f0decfc892bbf67fa44e4e4.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/17/1f1d3eb3d149454ebcb691d7c8585f7a_20240517143617.jpg?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">꾸까</h2>
-              					<div class="dd2">[생일] 아기자기하고 어여쁜, 코멜리 꽃다발</div>
+              					<h2 class="ddd1">세네카</h2>
+              					<div class="dd2">(1개 단품) 세네카 애플칩 사과칩 애플 스낵 사과 과자</div>
               					<span class="ddd3">
-              					28,600
+              					7,500
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">꾸까</a>
+              			<a class="dd3_2_1_1_1_2">세네카</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef135e17bed2d6892b255608ab3292.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0c661cecc12e892bcf817993efae.jpg?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">꾸까</h2>
-              					<div class="dd2">[홈데코] 핑크빛 모래사장,핑크비치 꽃다발</div>
+              					<h2 class="ddd1">팜밀리1987</h2>
+              					<div class="dd2">CCA Mix 2개월 프로그램 (4+4box)</div>
               					<span class="ddd3">
-              					40,900
+              					285,000
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">꾸까</a>
+              			<a class="dd3_2_1_1_1_2">팜밀리1987</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0841184201e3bb1455fa41728976.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0e877105e486892b991743257dc1.jpg?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">필리플레이스</h2>
-              					<div class="dd2">테리 쿠션 커버 Terry Cushion (Cover Only) (XL)</div>
+              					<h2 class="ddd1">센템</h2>
+              					<div class="dd2">[녹차 생강 꿀] 오늘허니 / 210g, 본채식, 아카시아 꿀, 블렌딩 꿀</div>
               					<span class="ddd3">
-              					250,000
+              					21,000
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">필리플레이스</a>
+              			<a class="dd3_2_1_1_1_2">센템</a>
               			
               		</div>
               		
@@ -320,303 +232,95 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/17/3878b520c9254326ba20ec0a6e37351c_20240517141822.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202404/11ef05fabf359f6fb9bb2b3dec733c5c.jpg?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">소소모소</h2>
-              					<div class="dd2">소소모소 쇼핑백</div>
+              					<h2 class="ddd1">브라운즈</h2>
+              					<div class="dd2">[보자기 포장 이벤트]_자사호 용단호 이알자 생차 보이차 선물세트</div>
               					<span class="ddd3">
-              					1,000
+              					413,000
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">소소모소</a>
+              			<a class="dd3_2_1_1_1_2">브라운즈</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef11f00240d0cc892bedfd915221d1.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/09/792c83c4bcab4300825207b8a868809b_20240509172907.jpg?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">리히르</h2>
-              					<div class="dd2">LHR-T-03 Ivory/Yellow (주문제작상품)</div>
-              					<span class="ddd3">
-              					950,000
-              						<span class="ddd3_1">원</span>
-              					</span>
-              				</div>
-              			</a>
-              			<a class="dd3_2_1_1_1_2">리히르</a>
-              			
-              		</div>
-              		<div class="dd3_2_1_1_1">
-              			<a class="dd3_2_1_1_1_1">
-              				<div class="dd3_2_1_1_1_1_1">
-              					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0c4c5d81ccdc892bdfb4d9d83e4a.jpg?width=500">	
-              					</div>
-              				</div>	
-              				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">노빅딜</h2>
-              					<div class="dd2">MIRROR_BACK TO THE FUTURE(L)</div>
-              					<span class="ddd3">
-              					150,000
-              						<span class="ddd3_1">원</span>
-              					</span>
-              				</div>
-              			</a>
-              			<a class="dd3_2_1_1_1_2">노빅딜</a>
-              			
-              		</div>
-              		<div class="dd3_2_1_1_1">
-              			<a class="dd3_2_1_1_1_1">
-              				<div class="dd3_2_1_1_1_1_1">
-              					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0de1e160ba2fb9bb611890393d64.jpg?width=500">	
-              					</div>
-              				</div>	
-              				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">꾸까</h2>
-              					<div class="dd2">[응원] 따스한 노을이 비치는 정원, 선셋가든 꽃다발</div>
-              					<span class="ddd3">
-              					74,900
-              						<span class="ddd3_1">원</span>
-              					</span>
-              				</div>
-              			</a>
-              			<a class="dd3_2_1_1_1_2">꾸까</a>
-              			
-              		</div>
-              		<div class="dd3_2_1_1_1">
-              			<a class="dd3_2_1_1_1_1">
-              				<div class="dd3_2_1_1_1_1_1">
-              					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0de1a6a999a7bb143bc50608141e.jpg?width=500">	
-              					</div>
-              				</div>	
-              				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">꾸까</h2>
-              					<div class="dd2">[집들이] 본연의 꽃 향, 프래그런스 꽃다발</div>
-              					<span class="ddd3">
-              					40,900
-              						<span class="ddd3_1">원</span>
-              					</span>
-              				</div>
-              			</a>
-              			<a class="dd3_2_1_1_1_2">꾸까</a>
-              			
-              		</div>
-              		
-              	</div>
-              </div>       
-            </div>
-				    </div>
-				      <div class="swiper-slide">
-				    		 <div class="dd3_2">
-              <div class="dd3_2_1">
-              	<div class="dd3_2_1_1">
-              		<div class="dd3_2_1_1_1">
-              			<a class="dd3_2_1_1_1_1">
-              				<div class="dd3_2_1_1_1_1_1">
-              					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0ddc83bca817bb14a584adec66bb.jpg?width=500">	
-              					</div>
-              				</div>	
-              				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">꾸까</h2>
-              					<div class="dd2">[서프라이즈] 소녀의 진실한 꿈, 핑크 수국 꽃다발</div>
-              					<span class="ddd3">
-              					52,900
-              						<span class="ddd3_1">원</span>
-              					</span>
-              				</div>
-              			</a>
-              			<a class="dd3_2_1_1_1_2">꾸까</a>
-              			
-              		</div>
-              		<div class="dd3_2_1_1_1">
-              			<a class="dd3_2_1_1_1_1">
-              				<div class="dd3_2_1_1_1_1_1">
-              					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0f50a18f2d27b9bbb19d48ef1a95.jpg?width=500">	
-              					</div>
-              				</div>	
-              				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">고리스튜디오</h2>
-              					<div class="dd2">WILLOW LAMP - stone</div>
-              					<span class="ddd3">
-              					250,000
-              						<span class="ddd3_1">원</span>
-              					</span>
-              				</div>
-              			</a>
-              			<a class="dd3_2_1_1_1_2">고리스튜디오</a>
-              			
-              		</div>
-              		<div class="dd3_2_1_1_1">
-              			<a class="dd3_2_1_1_1_1">
-              				<div class="dd3_2_1_1_1_1_1">
-              					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef134e13588671b9bbeb30f6901711.jpg?width=500">	
-              					</div>
-              				</div>	
-              				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">리히르</h2>
-              					<div class="dd2">LHR-T-03 Mint/Yellow (주문제작상품)</div>
-              					<span class="ddd3">
-              					950,000
-              						<span class="ddd3_1">원</span>
-              					</span>
-              				</div>
-              			</a>
-              			<a class="dd3_2_1_1_1_2">리히르</a>
-              			
-              		</div>
-              		<div class="dd3_2_1_1_1">
-              			<a class="dd3_2_1_1_1_1">
-              				<div class="dd3_2_1_1_1_1_1">
-              					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0ddd177e20e5bb143dda21760fc6.jpg?width=500">	
-              					</div>
-              				</div>	
-              				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">꾸까</h2>
-              					<div class="dd2">[ 응원 ]  푸르른 세상, 블루스카이 꽃다발</div>
-              					<span class="ddd3">
-              					74,900
-              						<span class="ddd3_1">원</span>
-              					</span>
-              				</div>
-              			</a>
-              			<a class="dd3_2_1_1_1_2">꾸까</a>
-              			
-              		</div>
-              		<div class="dd3_2_1_1_1">
-              			<a class="dd3_2_1_1_1_1">
-              				<div class="dd3_2_1_1_1_1_1">
-              					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef12a6535476d4892b271945a5fb99.jpg?width=500">	
-              					</div>
-              				</div>	
-              				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">퍼피북클럽</h2>
-              					<div class="dd2">Puffy Bed Book (stars/light blue)</div>
-              					<span class="ddd3">
-              					55,000
-              						<span class="ddd3_1">원</span>
-              					</span>
-              				</div>
-              			</a>
-              			<a class="dd3_2_1_1_1_2">퍼피북클럽</a>
-              			
-              		</div>
-              		
-              	</div>
-              </div>       
-            </div>
-				    </div>
-				      <div class="swiper-slide">
-				    		 <div class="dd3_2">
-              <div class="dd3_2_1">
-              	<div class="dd3_2_1_1">
-              		<div class="dd3_2_1_1_1">
-              			<a class="dd3_2_1_1_1_1">
-              				<div class="dd3_2_1_1_1_1_1">
-              					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0eab11d4cd14892b3f15c8be46b7.jpg?width=500">	
-              					</div>
-              				</div>	
-              				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">샵페블스</h2>
-              					<div class="dd2">NUMBER PENCIL _ 연필</div>
+              					<h2 class="ddd1">술마켓</h2>
+              					<div class="dd2">고창서해안 청정고창 소주 16.7도 360ml 10가지 꽃으로 빚은소주</div>
               					<span class="ddd3">
               					3,500
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">샵페블스</a>
+              			<a class="dd3_2_1_1_1_2">술마켓</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef10f8c2b489d5b9bb7d95af43476c.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0d0327c8ab9a892b9b3578dc2842.jpg?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">스테디너리</h2>
-              					<div class="dd2">삼색이 인센스 홀더</div>
+              					<h2 class="ddd1">쌍계명차</h2>
+              					<div class="dd2">일상다완 지리산 벌꿀 5종 선물세트+쇼핑백</div>
               					<span class="ddd3">
-              					38,000
+              					150,000
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">스테디너리</a>
+              			<a class="dd3_2_1_1_1_2">쌍계명차</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0f5a57fc2404892b85b1374b4c8b.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef10f837b07648892b931cdc59f54f.jpg?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">고리스튜디오</h2>
-              					<div class="dd2">BAEK JA OBJECT 001 / L</div>
+              					<h2 class="ddd1">크래커스 커피 로스터스</h2>
+              					<div class="dd2">크래커스 커피 드립백 샘플러(5EA)</div>
               					<span class="ddd3">
-              					110,000
+              					7,500
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">고리스튜디오</a>
+              			<a class="dd3_2_1_1_1_2">크래커스 커피 로스터스</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0de17e1a737a892bab7c43d0f589.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0d007795ed43b9bb0ff0da7a110e.jpg?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">꾸까</h2>
-              					<div class="dd2">[기념일] 달콤한 색상으로, 그라데이션 꽃다발</div>
+              					<h2 class="ddd1">쌍계명차</h2>
+              					<div class="dd2">일상다완 산야차 8종 선물세트+쇼핑백</div>
               					<span class="ddd3">
-              					52,900
+              					28,000
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">꾸까</a>
-              			
-              		</div>
-              		<div class="dd3_2_1_1_1">
-              			<a class="dd3_2_1_1_1_1">
-              				<div class="dd3_2_1_1_1_1_1">
-              					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0c289ca6d982892b953b923cea41.png?width=500">	
-              					</div>
-              				</div>	
-              				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">뮤지엄아카이브</h2>
-              					<div class="dd2">뮤지엄 아카이브_Ball bookmarks 볼 책갈피</div>
-              					<span class="ddd3">
-              					45,000
-              						<span class="ddd3_1">원</span>
-              					</span>
-              				</div>
-              			</a>
-              			<a class="dd3_2_1_1_1_2">뮤지엄아카이브</a>
+              			<a class="dd3_2_1_1_1_2">쌍계명차</a>
               			
               		</div>
               		
@@ -632,95 +336,303 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0cf1e567a0f7bb14b96afa2e844f.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0d0413e527bbb9bbb5693014927a.jpg?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">꼬누비아</h2>
-              					<div class="dd2">[꼬누비아] 애비)체어_라이트그린</div>
+              					<h2 class="ddd1">쌍계명차</h2>
+              					<div class="dd2">일상다완 프리미엄 삼각티백 단상자 8종택1</div>
               					<span class="ddd3">
-              					270,000
+              					17,000
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">꼬누비아</a>
+              			<a class="dd3_2_1_1_1_2">쌍계명차</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0ddc16abd29bbb14fbe44e3fbd81.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef134c4e5d1528892b33c8a1b029b0.jpg?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">꾸까</h2>
-              					<div class="dd2">[홈데코] 반짝이는 하늘의 별, 블루스타 꽃다발</div>
+              					<h2 class="ddd1">홀블렌딩</h2>
+              					<div class="dd2">홀블렌딩 식물단백 쑥 630g 2통/4통 (1달분/2달분)</div>
               					<span class="ddd3">
-              					28,600
+              					80,000
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">꾸까</a>
+              			<a class="dd3_2_1_1_1_2">홀블렌딩</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef142264b5bca1bb149964eb1b2164.png?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0cfe42d079d7bb14fdd809322ef7.jpg?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">베르헤</h2>
-              					<div class="dd2">에케 러그 (2 sizes)</div>
+              					<h2 class="ddd1">쌍계명차</h2>
+              					<div class="dd2">일상다완 허브차 6종 선물세트+쇼핑백</div>
               					<span class="ddd3">
-              					98,000
+              					23,000
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">베르헤</a>
+              			<a class="dd3_2_1_1_1_2">쌍계명차</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0d02d0aa93abbb149f7bdeea607f.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">쌍계명차</h2>
+              					<div class="dd2">일상다완 프리미엄 미니청 5종 선물세트+쇼핑백</div>
+              					<span class="ddd3">
+              					120,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">쌍계명차</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202404/11ef0606a88c9333b9bbbf6284d03038.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">브라운즈</h2>
+              					<div class="dd2">[보자기 포장 이벤트]_여울 뽕 말차 다도 선물세트</div>
+              					<span class="ddd3">
+              					125,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">브라운즈</a>
+              			
+              		</div>
+              		
+              	</div>
+              </div>       
+            </div>
+				    </div>
+				      <div class="swiper-slide">
+				    		 <div class="dd3_2">
+              <div class="dd3_2_1">
+              	<div class="dd3_2_1_1">
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/05/08/524bb01ee9074f20b776a23b0ca963b5_20240508092005.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">10X10</h2>
+              					<div class="dd2">[디즈니] 칩앤데일_슈퍼너츠 피넛버터 크런치</div>
+              					<span class="ddd3">
+              					18,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">10X10</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef13f7fa32879c892bb5c60b8a2af3.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">더닐크팩토리</h2>
+              					<div class="dd2">프리미엄 골드 카무트효소 브랜드밀 복합발효효소 카무트</div>
+              					<span class="ddd3">
+              					35,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">더닐크팩토리</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0d070fcf7125bb14f3eb4620d838.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">쌍계명차</h2>
+              					<div class="dd2">일상다완 프리미엄 잎차 4종택1</div>
+              					<span class="ddd3">
+              					40,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">쌍계명차</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef134ca8bfd0f9b9bbe7df6ae59606.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">홀블렌딩</h2>
+              					<div class="dd2">홀블렌딩 식물단백 그레인 630g 2통/4통 (1달분/2달분)</div>
+              					<span class="ddd3">
+              					80,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">홀블렌딩</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0d0255dd5998892b71f853e9be7f.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">쌍계명차</h2>
+              					<div class="dd2">일상다완 프리미엄 전통 쌍화차 30포 선물세트+쇼핑백</div>
+              					<span class="ddd3">
+              					60,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">쌍계명차</a>
+              			
+              		</div>
+              		
+              	</div>
+              </div>       
+            </div>
+				    </div>
+				      <div class="swiper-slide">
+				    		 <div class="dd3_2">
+              <div class="dd3_2_1">
+              	<div class="dd3_2_1_1">
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0d0538631629b9bb11e718f08594.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">쌍계명차</h2>
+              					<div class="dd2">일상다완 프리미엄 블렌딩티 6종택1</div>
+              					<span class="ddd3">
+              					13,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">쌍계명차</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0db8f7ac6ae3b9bb47e6faa0af0c.png?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">듁스커피</h2>
+              					<div class="dd2">듁스커피 커피백 (콜롬비아 엘 호르단)</div>
+              					<span class="ddd3">
+              					12,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">듁스커피</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202404/11ef05fad2d0b2b8892bf7d6c3c853c6.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">브라운즈</h2>
+              					<div class="dd2">[보자기 포장 이벤트]_백야 도자기 백차 선물세트</div>
+              					<span class="ddd3">
+              					245,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">브라운즈</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1" >
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0ddcc789fcaa892b7bbe801598eb.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef141b9a4af1c5b9bbf35af066aa84.png?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">꾸까</h2>
-              					<div class="dd2">[5월의 탄생화] 수줍음 속 커다란 마음, 작약 꽃다발</div>
+              					<h2 class="ddd1">홀블렌딩</h2>
+              					<div class="dd2">다이어트 부스트 패키지 식물단백 1통 + 그린카테킨 1통</div>
               					<span class="ddd3">
               					64,900
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">꾸까</a>
+              			<a class="dd3_2_1_1_1_2">홀블렌딩</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0ea9f2bd51bdb9bbf3ce42f497ba.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef134859d6b10fb9bbdff1dfe7d3d5.png?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">샵페블스</h2>
-              					<div class="dd2">ARROW NOTE PAD (A4) _ 노트 패드</div>
+              					<h2 class="ddd1">듁스커피</h2>
+              					<div class="dd2">듁스커피 원두 콜롬비아 라 프라데라 모카 200g</div>
               					<span class="ddd3">
-              					9,000
+              					45,000
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">샵페블스</a>
+              			<a class="dd3_2_1_1_1_2">듁스커피</a>
               			
               		</div>
               		
@@ -754,95 +666,95 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202401/11eebb40c513e41491eb8725c571d34e.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202404/11eef560747febecbb6af7fa34f27036.png?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">믹스앤매치</h2>
-              					<div class="dd2">데뮤어 스트라이프 자일리톨 순면뱀부서커 여름이불세트 SS/Q 베이지네이비</div>
+              					<h2 class="ddd1">모모스커피</h2>
+              					<div class="dd2">원두 에스쇼콜라</div>
               					<span class="ddd3">
-              					54,900
+              					13,300
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">믹스앤매치</a>
+              			<a class="dd3_2_1_1_1_2">모모스커피</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/04/29/4e7da183c066404ab04a3c6042ab723c_20240429172018.png?width=500">	
+              						<img class="ddd1_1" alt="" src="<img src="https://img.29cm.co.kr/next-product/2022/04/29/8d1e3793835a4b8f98d74cdb452ba37c_20220429103750.jpg?width=500" alt="[꿀선물] 워커비 기프트세트 미니자(8개입)" class="css-uwwqev e30iaq25">">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">리케</h2>
-              					<div class="dd2"><div class="css-5bfev e30iaq28">[29CM 단독 특가] 조인 스탠딩 북선반</div></div>
-              					<span class="ddd3">
-              					136,700
-              						<span class="ddd3_1">원</span>
-              					</span>
-              				</div>
-              			</a>
-              			<a class="dd3_2_1_1_1_2">리케</a>
-              			
-              		</div>
-              		<div class="dd3_2_1_1_1">
-              			<a class="dd3_2_1_1_1_1">
-              				<div class="dd3_2_1_1_1_1_1">
-              					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202311/11ee8aa30428f7418a7f950d5a958df4.jpg?width=500">	
-              					</div>
-              				</div>	
-              				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">플레지어</h2>
-              					<div class="dd2">톰 미니어처 빈백소파 쿠션 10colors </div>
+              					<h2 class="ddd1">워커비</h2>
+              					<div class="dd2"><div class="css-5bfev e30iaq28">[꿀선물] 워커비 기프트세트 미니자(8개입)</div></div>
               					<span class="ddd3">
               					36,000
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">플레지어</a>
+              			<a class="dd3_2_1_1_1_2">워커비</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202404/11eefaf1f97cc4fabb6a57fc47e6526d.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202308/11ee31a288d8da78a5ca11d6908bff68.jpg?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">산로</h2>
-              					<div class="dd2">감각적인 그리고 간편한  교체! 빈티지 스위치 커버 _ 메탈</div>
+              					<h2 class="ddd1">조은나래</h2>
+              					<div class="dd2">조은나래 개성주악 개성약과 6구 12구</div>
+              					<span class="ddd3">
+              					15,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">조은나래</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202312/11ee92929148c5db8a7fc76475d53cd5.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">벙커컴퍼니</h2>
+              					<div class="dd2">BUNKER#8.5 BUTTERY 블렌드 원두</div>
               					<span class="ddd3">
               					19,000
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">산로</a>
+              			<a class="dd3_2_1_1_1_2">벙커컴퍼니</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2021/05/26/46c6b943487440f5911d7d47f113654e_20210526094614.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2023/04/07/f8f2860c32a8406991b4685903e79b1e_20230407110730.jpg?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">렉슨</h2>
-              					<div class="dd2">LEXON 렉슨 MINA M사이즈 미나 무드등 조명 램프 - LH64</div>
+              					<h2 class="ddd1">파지티브호텔</h2>
+              					<div class="dd2">지중해 그린민트</div>
               					<span class="ddd3">
-              					78,000
+              					19,000
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">렉슨</a>
+              			<a class="dd3_2_1_1_1_2">파지티브호텔</a>
               			
               		</div>
               		
@@ -859,199 +771,95 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202404/11ef05fa3ec86d79b9bbbb6ea8302f8b.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2022/11/09/0ce4fcfe59234e1d9f708b7beca58f15_20221109173249.jpg?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">꼴레</h2>
-              					<div class="dd2">퍼리퍼피 플러시 키링 그레이</div>
+              					<h2 class="ddd1">크렘드마롱</h2>
+              					<div class="dd2">[29CM단독]_밤잼 GIFT SET - 쁘띠.pm</div>
               					<span class="ddd3">
-              					25,000
+              					29,800
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">꼴레</a>
+              			<a class="dd3_2_1_1_1_2">크렘드마롱</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef10f8cfa363ffb9bb6796a686e0c0.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2023/06/15/fcb2c5f39f0746b7b9d232f81f267654_20230615162857.jpg?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">마틸라</h2>
-              					<div class="dd2">[풍기인견X순면]빈티지맨션 양면 여름 차렵이불</div>
+              					<h2 class="ddd1">헤베컼피</h2>
+              					<div class="dd2">[기프트세트] 스페셜 기프트 세트</div>
               					<span class="ddd3">
-              					59,900
+              					17,000
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">마틸라</a>
+              			<a class="dd3_2_1_1_1_2">헤베커피</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202403/11eee42bf3dc6cf891a5a71739f35f88.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2022/04/05/2902225826974f688f6f5b3ca4fa7ebb_20220405154836.jpg?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">알로소</h2>
-              					<div class="dd2">알로소 엘머 1인소파 패브릭소파</div>
+              					<h2 class="ddd1">센템</h2>
+              					<div class="dd2">[보자기포장] 30 수정다움 12g x 30포 (1개월분, 기프트키트증정) / 본채식 인삼, 꿀 스틱</div>
               					<span class="ddd3">
-              					982,000
+              					52,900
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">알로소</a>
+              			<a class="dd3_2_1_1_1_2">센템</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202403/11eee3fad1e4dcfa82f21f483b03cb97.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2022/04/27/7ae71dc2a97442d89fe2ec5e585428eb_20220427170855.jpg?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">라튤립</h2>
-              					<div class="dd2">시어서커X순면 양면 여름 차렵이불</div>
+              					<h2 class="ddd1">프릳츠</h2>
+              					<div class="dd2">프릳츠 잘 되어 가시나</div>
               					<span class="ddd3">
-              					61,000
+              					16,000
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">라튤립</a>
+              			<a class="dd3_2_1_1_1_2">프릳츠</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202404/11eefd8008b86f5abb6a8bac62c0b2c5.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202401/11eeb1116d6fd5c391eb9733445bf026.jpg?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">버금메이킹</h2>
-              					<div class="dd2">복을 선물해보세요_굿럭피쉬, 명태-골드</div>
+              					<h2 class="ddd1">워커비</h2>
+              					<div class="dd2">[사랑의 마음] DEAR. CHILD</div>
               					<span class="ddd3">
-              					28,800
+              					18,900
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">버금메이킹</a>
-              			
-              		</div>
-              		
-              	</div>
-              </div>       
-            </div>
-				    </div>
-				      <div class="swiper-slide">
-				    		 <div class="dd3_2">
-              <div class="dd3_2_1">
-              	<div class="dd3_2_1_1">
-              		<div class="dd3_2_1_1_1">
-              			<a class="dd3_2_1_1_1_1">
-              				<div class="dd3_2_1_1_1_1_1">
-              					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202402/11eec04e4faf621a83774fceff09bab3.jpg?width=500">	
-              					</div>
-              				</div>	
-              				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">글로시</h2>
-              					<div class="dd2">Mushroom lamp 머쉬룸 램프(white)</div>
-              					<span class="ddd3">
-              					38,000
-              						<span class="ddd3_1">원</span>
-              					</span>
-              				</div>
-              			</a>
-              			<a class="dd3_2_1_1_1_2">글로시</a>
-              			
-              		</div>
-              		<div class="dd3_2_1_1_1">
-              			<a class="dd3_2_1_1_1_1">
-              				<div class="dd3_2_1_1_1_1_1">
-              					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2023/03/14/87635b7167914c1899c67c753057f50a_20230314091454.jpg?width=500">	
-              					</div>
-              				</div>	
-              				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">일광전구</h2>
-              					<div class="dd2">SNOWMAN15 SOLID Portable Stand 3Colors</div>
-              					<span class="ddd3">
-              					110,000
-              						<span class="ddd3_1">원</span>
-              					</span>
-              				</div>
-              			</a>
-              			<a class="dd3_2_1_1_1_2">일광전구</a>
-              			
-              		</div>
-              		<div class="dd3_2_1_1_1">
-              			<a class="dd3_2_1_1_1_1">
-              				<div class="dd3_2_1_1_1_1_1">
-              					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202402/11eed1349c1bb49991eb3de145f41903.jpg?width=500">	
-              					</div>
-              				</div>	
-              				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">마틸라</h2>
-              					<div class="dd2">온가족템 데일리슬립 먼지없는 고정밴드</div>
-              					<span class="ddd3">
-              					34,900
-              						<span class="ddd3_1">원</span>
-              					</span>
-              				</div>
-              			</a>
-              			<a class="dd3_2_1_1_1_2">마틸라</a>
-              			
-              		</div>
-              		<div class="dd3_2_1_1_1">
-              			<a class="dd3_2_1_1_1_1">
-              				<div class="dd3_2_1_1_1_1_1">
-              					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202404/11ef02ad019cddf788b19f5bc6df53a2.jpg?width=500">	
-              					</div>
-              				</div>	
-              				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">메종드룸룸</h2>
-              					<div class="dd2">파라다이스 스트라이프 사계절 차렵이불(SS/Q&K)</div>
-              					<span class="ddd3">
-              					99,200
-              						<span class="ddd3_1">원</span>
-              					</span>
-              				</div>
-              			</a>
-              			<a class="dd3_2_1_1_1_2">메종드룸룸</a>
-              			
-              		</div>
-              		<div class="dd3_2_1_1_1">
-              			<a class="dd3_2_1_1_1_1">
-              				<div class="dd3_2_1_1_1_1_1">
-              					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef0de0eef3b8a9b9bba3f536deb932.jpg?width=500">	
-              					</div>
-              				</div>	
-              				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">피부</h2>
-              					<div class="dd2">아로마 스톤디퓨저 세트 (7가지 향 중 택1)</div>
-              					<span class="ddd3">
-              					34,000
-              						<span class="ddd3_1">원</span>
-              					</span>
-              				</div>
-              			</a>
-              			<a class="dd3_2_1_1_1_2">피부</a>
+              			<a class="dd3_2_1_1_1_2">워커비</a>
               			
               		</div>
               		
@@ -1067,95 +875,95 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202402/11eed6abf39b32129a76b7dd468ae724.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202404/11eef5607bdcfe0ebb6ae10293619392.png?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">웰컴투씨씨씨</h2>
-              					<div class="dd2">PPIPI BAG (MIRROR) 가방</div>
+              					<h2 class="ddd1">모모스커피</h2>
+              					<div class="dd2">원두 부산</div>
               					<span class="ddd3">
-              					37,000
+              					13,300
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">웰컴투씨씨씨</a>
+              			<a class="dd3_2_1_1_1_2">모모스커피</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202403/11eee0cf1df436d091a593a33b56540f.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202402/11eec59afabb2cc591eb29d4eabe0314.jpg?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">마틸라</h2>
-              					<div class="dd2">미드센추리 빈티지맨션 60수 고밀도순면 차렵이불(SS/Q/K) 8종</div>
+              					<h2 class="ddd1">만월회</h2>
+              					<div class="dd2">만월회 음료 선물세트 For muse(3종 선택)</div>
               					<span class="ddd3">
-              					59,900
+              					15,900
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">마틸라</a>
+              			<a class="dd3_2_1_1_1_2">만월회</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202403/11eee2a5ea13c82682f27532668945d8.png?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef133cfb6b18e9bb145d5a1b3b304b.jpg?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">다이노탱</h2>
-              					<div class="dd2">Quokka in School Figure Pen</div>
+              					<h2 class="ddd1">보르딘</h2>
+              					<div class="dd2">콜드브루 더치커피 알록달록 앰플 24종세트</div>
               					<span class="ddd3">
-              					9,000
+              					39,000
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">다이노탱</a>
+              			<a class="dd3_2_1_1_1_2">보르딘</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202402/11eec4c3a22d04928377454083cf40f1.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2019/10/07/5b2719719016440f8deb9a042e4680f6_20191007115841.jpg?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">고그린오브젝트</h2>
-              					<div class="dd2">쪼꼬미 꼬질이 강아지 티슈케이스 두루마리 휴지 케이스</div>
+              					<h2 class="ddd1">앤트러사이트</h2>
+              					<div class="dd2">앤트러사이트 원두 나쓰메 소세끼</div>
               					<span class="ddd3">
-              					26,900
+              					14,000
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">고그린오브젝트</a>
+              			<a class="dd3_2_1_1_1_2">앤트러사이트</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202403/11eee057cca695b29a76f5cbde7dd93b.JPG?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2022/04/29/8d1e3793835a4b8f98d74cdb452ba37c_20220429103750.jpg?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">요와</h2>
-              					<div class="dd2">레트로 스퀘어 클락 무소음 사각 벽시계 앤틱 빈티지 1973</div>
+              					<h2 class="ddd1">워커비</h2>
+              					<div class="dd2">[꿀카라멜] 워커비 허니 얼그레이 카라멜 50g</div>
               					<span class="ddd3">
-              					24,300
+              					3,000
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">요와</a>
+              			<a class="dd3_2_1_1_1_2">워커비</a>
               			
               		</div>
               		
@@ -1171,95 +979,199 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202405/11ef084854380667b9bb1f3effe0fc7e.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202404/11eef561634282509367e1e10e519563.png?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">락앤락</h2>
-              					<div class="dd2">드롭드롭드롭 DOSILOCK 3단 도시락 (LCB112S01_DRP)</div>
+              					<h2 class="ddd1">모모스커피</h2>
+              					<div class="dd2">드립백 7개입</div>
               					<span class="ddd3">
-              					29,900
+              					10,500
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">락앤락</a>
+              			<a class="dd3_2_1_1_1_2">모모스커피</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2024/04/30/93c3baa9d66f4e8194384c53152f1c7e_20240430101236.png?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202404/11eef560854a79d493672bfda20b9dba.png?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">리케</h2>
-              					<div class="dd2">조인 스탠딩 코트랙 행거</div>
+              					<h2 class="ddd1">모모스커피</h2>
+              					<div class="dd2">원두 므쵸베리</div>
               					<span class="ddd3">
-              					195,300
+              					14,500
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">리케</a>
+              			<a class="dd3_2_1_1_1_2">모모스커피</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202404/11eef189a5c887609367951f3a912e24.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2023/06/20/bbfb62d5d3884d68ac92156105593ba5_20230620103030.jpg?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">노르딕슬립</h2>
-              					<div class="dd2">노르딕슬립 콜드스토프 쿨매트</div>
+              					<h2 class="ddd1">감자밭</h2>
+              					<div class="dd2">[춘천 감자밭] 감자빵 10개입</div>
               					<span class="ddd3">
-              					149,000
+              					29,700
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">노르딕슬립</a>
+              			<a class="dd3_2_1_1_1_2">감자밭</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2022/12/12/15ebdb72f4834734a60e32d2cf68ad2b_20221212093148.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">레오나르디</h2>
+              					<div class="dd2">모데나산 발사믹 비니거 2메달(블루)_4년숙성 250ml</div>
+              					<span class="ddd3">
+              					30,600
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">레오나르디</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202404/11eefd4fc21d071a936741d114946308.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">이츠스포츠</h2>
+              					<div class="dd2">ES 이츠스포츠_말차 프로틴 쉐이크</div>
+              					<span class="ddd3">
+              					39,800
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">이츠스포츠</a>
+              			
+              		</div>
+              		
+              	</div>
+              </div>       
+            </div>
+				    </div>
+				      <div class="swiper-slide">
+				    		 <div class="dd3_2">
+              <div class="dd3_2_1">
+              	<div class="dd3_2_1_1">
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202308/11ee4315d967d9ff8a69c7b418cbe14c.jpeg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">맥파이앤타이거</h2>
+              					<div class="dd2">[선물포장]_티머그 & 논카페인 잎차 세트</div>
+              					<span class="ddd3">
+              					45,500
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">맥파이앤타이거</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2021/05/11/bbd5e2beb9554715904218a49440db8d_20210511143630.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">닥터브라이언</h2>
+              					<div class="dd2">복숭아맛구미 비타민C&D 3000(100구미)</div>
+              					<span class="ddd3">
+              					15,900
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">닥터브라이언</a>
+              			
+              		</div>
+              		<div class="dd3_2_1_1_1">
+              			<a class="dd3_2_1_1_1_1">
+              				<div class="dd3_2_1_1_1_1_1">
+              					<div class="ddd">
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202404/11ef0397cf89e334892b7780ad2f0204.jpg?width=500">	
+              					</div>
+              				</div>	
+              				<div class="dd3_2_1_1_1_1_2">
+              					<h2 class="ddd1">워커비</h2>
+              					<div class="dd2">[꿀선물] 워커비 기프트세트 미니자(3-4개입)</div>
+              					<span class="ddd3">
+              					14,000
+              						<span class="ddd3_1">원</span>
+              					</span>
+              				</div>
+              			</a>
+              			<a class="dd3_2_1_1_1_2">워커비</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1" >
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202404/11eefaeba300efb788b1d76b24374912.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2021/11/29/e480339fc42e4e04a31e2bb75b05654d_20211129141457.jpg?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">산로</h2>
-              					<div class="dd2">감각적인 그리고 간편한  교체!  빈티지 스위치 커버 _ 크림</div>
+              					<h2 class="ddd1">델픽</h2>
+              					<div class="dd2">Signature Tea Selection 시그니처 티 셀렉션</div>
               					<span class="ddd3">
-              					20,900
+              					40,000
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">산로</a>
+              			<a class="dd3_2_1_1_1_2">델픽</a>
               			
               		</div>
               		<div class="dd3_2_1_1_1">
               			<a class="dd3_2_1_1_1_1">
               				<div class="dd3_2_1_1_1_1_1">
               					<div class="ddd">
-              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/item/202307/11ee2d200d7b4654a5ca07590473badd.jpg?width=500">	
+              						<img class="ddd1_1" alt="" src="https://img.29cm.co.kr/next-product/2023/05/31/e848c9685f94433382e0bf8a70fefc1c_20230531182700.jpg?width=500">	
               					</div>
               				</div>	
               				<div class="dd3_2_1_1_1_1_2">
-              					<h2 class="ddd1">스퀘어폰드</h2>
-              					<div class="dd2">괴마옥 & 이끼코스터 SET</div>
+              					<h2 class="ddd1">앙젤리나</h2>
+              					<div class="dd2">Angelina Paris 앙젤리나 크리스피크레페 다크초콜릿</div>
               					<span class="ddd3">
-              					26,600
+              					32,000
               						<span class="ddd3_1">원</span>
               					</span>
               				</div>
               			</a>
-              			<a class="dd3_2_1_1_1_2">스퀘어폰드</a>
+              			<a class="dd3_2_1_1_1_2">앙젤리나</a>
               			
               		</div>
               		
@@ -1286,23 +1198,23 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
           <div class="qq3_1">
           	<div  class="qq3_1_1" style="top: 1650px; left: 0px; width: 300px; writing-mode: horizontal-tb; position: absolute;">
           		<div class=" qq3_1_1_1 ">
-          			<a class="qq3_1_1_1_1" href="https://content.29cm.co.kr/brand-news/22018">
+          			<a class="qq3_1_1_1_1" href="https://content.29cm.co.kr/29gift/2024/05/16/1st">
           				<span class="qq3_1_1_1_1_1"></span>
           				<div class="qq3_1_1_1_1_2">
-          					<img src="https://img.29cm.co.kr/cm/202405/11ef13eb7e0abd8c892b0f8cc6a829b7.jpg?width=500" class="qq3_1_1_1_1_2_1">
+          					<img src="https://img.29cm.co.kr/cm/202405/11ef13f0a3ecf9fe892bcb5284caed94.jpg?width=500" class="qq3_1_1_1_1_2_1">
           				</div>
           				<div class="qq3_1_1_1_1_3">
-          					<h1 class="qq3_1_1_1_1_3_1">집안 곳곳의 존재감</h1>
-          					<p class="qq3_1_1_1_1_3_2">침실뿐 아니라 거실, 주방까지 라이프 시리즈의 제품으로 채워보세요. 신상품을 29CM에서 가장 먼저 소개합니다.</p>
+          					<h1 class="qq3_1_1_1_1_3_1">선물 고르기 어렵지 않아요</h1>
+          					<p class="qq3_1_1_1_1_3_2">감각적인 선물을 찾는다면, 29선물하기를 둘러보세요. 소중한 사람에게 내 마음을 전하기 좋은 선물이 가득해요.</p>
           				</div>
           			</a>
           			<div class="qq3_1_1_1_2">
- 						<a class="qq3_1_1_1_2_1" href="https://product.29cm.co.kr/catalog/2600999">
- 							<img src="https://img.29cm.co.kr/next-product/2024/05/08/ace05282188b47489ab7ce11336b344d_20240508113140.jpg?width=150" class="qq3_1_1_1_2_1_1">
+ 						<a class="qq3_1_1_1_2_1" href="https://product.29cm.co.kr/catalog/2612992">
+ 							<img src="https://img.29cm.co.kr/item/202404/11ef05b99d42e469bb14aba69c0fd742.png?width=150" class="qq3_1_1_1_2_1_1">
  								<div class="qq3_1_1_1_2_1_2">
-	 								<span class="qq3_1_1_1_2_1_2_1">라이프시리즈</span>
-	 								<span>클래식 앞치마-빈티지 무드네이비</span>
-	 								<span class="qq3_1_1_1_2_1_2_2">36,000<span class=>won</span>
+	 								<span class="qq3_1_1_1_2_1_2_1">온더홀</span>
+	 								<span>[당일배송] 온더홀 까눌레 4구 세트</span>
+	 								<span class="qq3_1_1_1_2_1_2_2">14,500<span class=>won</span>
 	 								</span>
 	 							</div>
 	 					</a>
@@ -1311,51 +1223,31 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 	 							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 20 20">
 	 								<path d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z" fill="none" fill-rule="evenodd" stroke="#5d5d5d" stroke-width="0.7"></path>
 	 							</svg>
-	 							<span class="qq3_1_1_1_3_3_1">33</span>
+	 							<span class="qq3_1_1_1_3_3_1">271</span>
 	 						</button>
 	 					</div>
-          			</div>
-          			<div class="qq3_1_1_1_3">
-          					<a class="qq3_1_1_1_3_1" href="https://product.29cm.co.kr/catalog/2600970">
-          						<img src="https://img.29cm.co.kr/next-product/2024/05/08/d7c5ad4bf50c46cd962abb241af5f425_20240508113238.jpg?width=150" class="qq3_1_1_1_3_1_1">
-          							<div class="qq3_1_1_1_3_1_1_1 ">
-          								<span class="qq3_1_1_1_3_1_1_1_1">라이프시리즈</span>
-          								<span>가리개 커튼-우디 레몬 (3 sizes)</span>
-          								<span class=" qq3_1_1_1_3_1_1_1_2">40,000
-          									<span class=" ">won</span>
-          								</span>
-          							</div>
-          					</a>
-          					<div class="qq3_1_1_1_3_2">
-          						<button class="qq3_1_1_1_3_3">
-          							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 20 20">
-          								<path d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z" fill="none" fill-rule="evenodd" stroke="#5d5d5d" stroke-width="0.7"></path>
-          							</svg>
-          							<span class="qq3_1_1_1_3_3_1">9</span>
-          						</button>
-          					</div>
           			</div>
           		</div>
           	</div>
           	<div  class="qq3_1_1" style="top: 1500px; left: 500px; width: 300px; writing-mode: horizontal-tb; position: absolute;">
           		<div class=" qq3_1_1_1 ">
-          			<a class="qq3_1_1_1_1" href="https://content.29cm.co.kr/brand-news/22273">
+          			<a class="qq3_1_1_1_1" href="https://content.29cm.co.kr/collection/6741">
           				<span class="qq3_1_1_1_1_1"></span>
           				<div class="qq3_1_1_1_1_2">
-          					<img src="https://img.29cm.co.kr/cms/202405/11ef11d26133e5b5b9bb6f2e97cc6f9a.jpeg?width=500" class="qq3_1_1_1_1_2_1">
+          					<img src="https://img.29cm.co.kr/cm/202405/11ef0e9d8b325360892b8dab7931d18f.jpg?width=500" class="qq3_1_1_1_1_2_1">
           				</div>
           				<div class="qq3_1_1_1_1_3">
-          					<h1 class="qq3_1_1_1_1_3_1">화제의 덴마크 1인 쇼파</h1>
-          					<p class="qq3_1_1_1_1_3_2">최근 커뮤니티에서 오픈런으로 화제가 된 ILVA 브랜드를 소개합니다. 1961년에 설립된 덴마크 최대의 홈퍼니싱 가구를 합리적인 가격으로 만나보세요.</p>
+          					<h1 class="qq3_1_1_1_1_3_1">가벼운 선물로 툭</h1>
+          					<p class="qq3_1_1_1_1_3_2">부담 없이 마음 전하기 좋은 푸드 아이템을 추천해요. 달콤한 디저트부터, 센스 있는 치즈 플래터와 건강을 지켜주는 식품까지. 말로 쉽게 전하지 못했던 마음, 무심한 듯 세심하게 툭 선물에 담아보내요.</p>
           				</div>
           			</a>
           			<div class="qq3_1_1_1_2">
- 						<a class="qq3_1_1_1_2_1" href="https://content.29cm.co.kr/brand-news/22273">
- 							<img src="https://img.29cm.co.kr/item/202309/11ee506924888a0183bcb1a4b0095816.jpg?width=150" class="qq3_1_1_1_2_1_1">
+ 						<a class="qq3_1_1_1_2_1" href="https://product.29cm.co.kr/catalog/2585456">
+ 							<img src="https://img.29cm.co.kr/item/202404/11eef870f31acedabb6a0ba5b7986c40.jpg?width=150" class="qq3_1_1_1_2_1_1">
  								<div class="qq3_1_1_1_2_1_2">
-	 								<span class="qq3_1_1_1_2_1_2_1">일바</span>
-	 								<span>미쉐린 2인 소파</span>
-	 								<span class="qq3_1_1_1_2_1_2_2">1,947,300<span class=>won</span>
+	 								<span class="qq3_1_1_1_2_1_2_1">쎄콩데</span>
+	 								<span>미니 콩포트 선물세트</span>
+	 								<span class="qq3_1_1_1_2_1_2_2">18,000<span class=>won</span>
 	 								</span>
 	 							</div>
 	 					</a>
@@ -1364,17 +1256,17 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 	 							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 20 20">
 	 								<path d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z" fill="none" fill-rule="evenodd" stroke="#5d5d5d" stroke-width="0.7"></path>
 	 							</svg>
-	 							<span class="qq3_1_1_1_3_3_1">412</span>
+	 							<span class="qq3_1_1_1_3_3_1">91</span>
 	 						</button>
 	 					</div>
           			</div>
           			<div class="qq3_1_1_1_3">
-          					<a class="qq3_1_1_1_3_1" href="https://product.29cm.co.kr/catalog/1977679">
-          						<img src="https://img.29cm.co.kr/next-product/2023/03/17/34dc5847c39648fb848927a79e7bddde_20230317144317.jpg?width=150" class="qq3_1_1_1_3_1_1">
+          					<a class="qq3_1_1_1_3_1" href="https://product.29cm.co.kr/catalog/1970378">
+          						<img src="https://img.29cm.co.kr/item/202404/11eefb8bc74cd0a188b15b75ea235ce3.jpg?width=150" class="qq3_1_1_1_3_1_1">
           							<div class="qq3_1_1_1_3_1_1_1 ">
-          								<span class="qq3_1_1_1_3_1_1_1_1">일바</span>
-          								<span>심플리 벽선반 40</span>
-          								<span class=" qq3_1_1_1_3_1_1_1_2">92,000
+          								<span class="qq3_1_1_1_3_1_1_1_1">워커비</span>
+          								<span>[고마운 마음] DEAR. FRIENDS</span>
+          								<span class=" qq3_1_1_1_3_1_1_1_2">129,000
           									<span class=" ">won</span>
           								</span>
           							</div>
@@ -1384,7 +1276,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
           							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 20 20">
           								<path d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z" fill="none" fill-rule="evenodd" stroke="#5d5d5d" stroke-width="0.7"></path>
           							</svg>
-          							<span class="qq3_1_1_1_3_3_1">1,501</span>
+          							<span class="qq3_1_1_1_3_3_1">1,741</span>
           						</button>
           					</div>
           			</div>
@@ -1393,23 +1285,23 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
        
        <div  class="qq3_1_1" style="top: 500px; left: 900px; width: 300px; writing-mode: horizontal-tb; position: absolute;">
           		<div class=" qq3_1_1_1 ">
-          			<a class="qq3_1_1_1_1" href="https://content.29cm.co.kr/highlight/2024/05/06/1st">
+          			<a class="qq3_1_1_1_1" href="https://content.29cm.co.kr/keyword/2024/05/09/wellness_routine">
           				<span class="qq3_1_1_1_1_1"></span>
           				<div class="qq3_1_1_1_1_2">
-          					<img src="https://img.29cm.co.kr/cm/202405/11ef11d5f036205dbb1421aa613faf24.jpg?width=500" class="qq3_1_1_1_1_2_1">
+          					<img src="https://img.29cm.co.kr/cm/202405/11ef0ea7ec1f3485bb1435ad029f15cf.jpeg?width=500" class="qq3_1_1_1_1_2_1">
           				</div>
           				<div class="qq3_1_1_1_1_3">
-          					<h1 class="qq3_1_1_1_1_3_1">꿀잠을 위한 선택</h1>
-          					<p class="qq3_1_1_1_1_3_2">고단했던 하루를 달래줄 온전한 쉼을 선사합니다. 슬립퍼의 매트리스, 그 위에 폭신함을 더하는 누잠, 포근한 픽켄드의 이불까지 숙면에 최적화된 아이템들을 모았어요.</p>
+          					<h1 class="qq3_1_1_1_1_3_1">건강한 웰니스루틴</h1>
+          					<p class="qq3_1_1_1_1_3_2">스킨케어와 이너뷰티가 필요한 요즘 날씨. 특별한 혜택을 준비했습니다. +13% 쿠폰</p>
           				</div>
           			</a>
           			<div class="qq3_1_1_1_2">
- 						<a class="qq3_1_1_1_2_1" href="https://product.29cm.co.kr/catalog/2532636">
- 							<img src="https://img.29cm.co.kr/next-product/2024/03/14/0845225b79454fb79b48756760a59426_20240314142538.jpeg?width=150" class="qq3_1_1_1_2_1_1">
+ 						<a class="qq3_1_1_1_2_1" href="https://product.29cm.co.kr/catalog/1970921">
+ 							<img src="https://img.29cm.co.kr/next-product/2023/03/15/fd08787401bf48278bf34fc572dfe413_20230315175250.jpg?width=150" class="qq3_1_1_1_2_1_1">
  								<div class="qq3_1_1_1_2_1_2">
-	 								<span class="qq3_1_1_1_2_1_2_1">슬립퍼</span>
-	 								<span>누어 편안히 포켓스프링 롤팩 매트리스 24cm S SS Q</span>
-	 								<span class="qq3_1_1_1_2_1_2_2">299,000<span class=>won</span>
+	 								<span class="qq3_1_1_1_2_1_2_1">오니싀트</span>
+	 								<span>트리플콜라겐 오렌지 84개입(12주)</span>
+	 								<span class="qq3_1_1_1_2_1_2_2">159,000<span class=>won</span>
 	 								</span>
 	 							</div>
 	 					</a>
@@ -1418,17 +1310,17 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 	 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 20 20">
           							<path d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z" fill="none" fill-rule="evenodd" stroke="#5d5d5d" stroke-width="0.7"></path>
           					</svg>   						
-	 							<span class="qq3_1_1_1_3_3_1">267</span>
+	 							<span class="qq3_1_1_1_3_3_1">1,896</span>
 	 						</button>
 	 					</div>
           			</div>
           			<div class="qq3_1_1_1_3">
-          					<a class="qq3_1_1_1_3_1" href="https://product.29cm.co.kr/catalog/2563559">
-          						<img src="https://img.29cm.co.kr/item/202403/11eeebe25c08ca169367b1c92d64c227.jpg?width=150" class="qq3_1_1_1_3_1_1">
+          					<a class="qq3_1_1_1_3_1" href="https://product.29cm.co.kr/catalog/1377712">
+          						<img src="https://img.29cm.co.kr/item/202306/11ee147d7e5c26cbaf86677cee946fd1.jpg?width=150" class="qq3_1_1_1_3_1_1">
           							<div class="qq3_1_1_1_3_1_1_1 ">
-          								<span class="qq3_1_1_1_3_1_1_1_1">슬립퍼</span>
-          								<span>누어 룬드 Q/K 공용 침대프레임 5 Color</span>
-          								<span class=" qq3_1_1_1_3_1_1_1_2">349,000
+          								<span class="qq3_1_1_1_3_1_1_1_1">소미노</span>
+          								<span>소이요 밤콩두유_16개입</span>
+          								<span class=" qq3_1_1_1_3_1_1_1_2">40,000
           									<span class=" ">won</span>
           								</span>
           							</div>
@@ -1438,7 +1330,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
           						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 20 20">
           							<path d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z" fill="none" fill-rule="evenodd" stroke="#5d5d5d" stroke-width="0.7"></path>
           						</svg>             							
-          							<span class="qq3_1_1_1_3_3_1">1,666</span>
+          							<span class="qq3_1_1_1_3_3_1">680</span>
           						</button>
           					</div>
           			</div>
@@ -1447,23 +1339,23 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
        
        <div  class="qq3_1_1" style="top: 800px; left: 0px; width: 300px; writing-mode: horizontal-tb; position: absolute;">
           		<div class=" qq3_1_1_1 ">
-          			<a class="qq3_1_1_1_1" href="https://content.29cm.co.kr/showcase/1212">
+          			<a class="qq3_1_1_1_1" href="https://content.29cm.co.kr/brand-news/11520">
           				<span class="qq3_1_1_1_1_1"></span>
           				<div class="qq3_1_1_1_1_2">
-          					<img src="https://img.29cm.co.kr/cm/202405/11ef11d58e254c60892b094026ff190e.jpg?width=500" class="qq3_1_1_1_1_2_1">
+          					<img src="https://img.29cm.co.kr/cms/202405/11ef10ff65a01753b9bbaf5007e6253a.jpeg?width=500" class="qq3_1_1_1_1_2_1">
           				</div>
           				<div class="qq3_1_1_1_1_3">
-          					<h1 class="qq3_1_1_1_1_3_1">청량한 초여름을 닮은 패턴</h1>
-          					<p class="qq3_1_1_1_1_3_2">초록 잔디가 무성하게 펼쳐진 여름 들판을 표현한 서머 필드 패브릭에 키티버니포니의 대표 이미지 버니즈를 자수로 수놓아 완성한 패브릭 시리즈를 단독으로 만나보세요.</p>
+          					<h1 class="qq3_1_1_1_1_3_1">몸을 비우는 시간</h1>
+          					<p class="qq3_1_1_1_1_3_2">내 몸을 위한 건강한 루틴 음료, 팜밀리1987을 만나보세요. 삶을 더욱 건강하게 가꿀 수 있도록 공들여 만든 음료입니다.</p>
           				</div>
           			</a>
           			<div class="qq3_1_1_1_2">
- 						<a class="qq3_1_1_1_2_1" href="https://product.29cm.co.kr/catalog/2619160">
- 							<img src="https://img.29cm.co.kr/item/202404/11ef06b5804ef53c892bfb124f2230b3.png?width=150" class="qq3_1_1_1_2_1_1">
+ 						<a class="qq3_1_1_1_2_1" href="https://product.29cm.co.kr/catalog/1733839">
+ 							<img src="https://img.29cm.co.kr/item/202401/11eeb8e9a8fb0d68b238e5ff57af435d.jpg?width=150" class="qq3_1_1_1_2_1_1">
  								<div class="qq3_1_1_1_2_1_2">
-	 								<span class="qq3_1_1_1_2_1_2_1">키티버니포니</span>
-	 								<span> [사은품 이벤트]_버니즈 인 썸머 필드 플럼프 파우치</span>
-	 								<span class="qq3_1_1_1_2_1_2_2">24,000<span class=>won</span>
+	 								<span class="qq3_1_1_1_2_1_2_1">팜밀리1987</span>
+	 								<span>ABCD 클렌즈 1개월 프로그램 (2box)</span>
+	 								<span class="qq3_1_1_1_2_1_2_2">86,000<span class=>won</span>
 	 								</span>
 	 							</div>
 	 					</a>
@@ -1472,51 +1364,31 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 	 							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 20 20">
           							<path d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z" fill="none" fill-rule="evenodd" stroke="#5d5d5d" stroke-width="0.7"></path>
           						</svg>  
-	 							<span  class="qq3_1_1_1_3_3_1">289</span>
+	 							<span  class="qq3_1_1_1_3_3_1">290</span>
 	 						</button>
 	 					</div>
-          			</div>
-          			<div class="qq3_1_1_1_3">
-          					<a class="qq3_1_1_1_3_1" href="https://product.29cm.co.kr/catalog/2619204">
-          						<img src="https://img.29cm.co.kr/item/202404/11ef06b63dbebed3b9bb999ec92e6ba2.png?width=150" class="qq3_1_1_1_3_1_1">
-          							<div class="qq3_1_1_1_3_1_1_1 ">
-          								<span class="qq3_1_1_1_3_1_1_1_1">키티버니포니</span>
-          								<span> [사은품 이벤트]_버니즈 인 썸머 필드 파우치</span>
-          								<span class=" qq3_1_1_1_3_1_1_1_2">11,000
-          									<span class=" ">won</span>
-          								</span>
-          							</div>
-          					</a>
-          					<div class="qq3_1_1_1_3_2">
-          						<button class="qq3_1_1_1_3_3">   
-          						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 20 20">
-          							<path d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z" fill="none" fill-rule="evenodd" stroke="#5d5d5d" stroke-width="0.7"></path>
-          						</svg>         							
-          							<span class="qq3_1_1_1_3_3_1">121</span>
-          						</button>
-          					</div>
           			</div>
           		</div>
           	</div>
           	  <div  class="qq3_1_1" style="top: 0px; left: 0px; width: 300px; writing-mode: horizontal-tb; position: absolute;">
           		<div class=" qq3_1_1_1 ">
-          			<a class="qq3_1_1_1_1" href="https://content.29cm.co.kr/brand-news/22398">
+          			<a class="qq3_1_1_1_1" href="https://content.29cm.co.kr/brand-news/3838">
           				<span class="qq3_1_1_1_1_1"></span>
           				<div class="qq3_1_1_1_1_2">
-          					<img src="https://img.29cm.co.kr/cms/202405/11ef142f93a88db5bb1471a73a071e4b.jpeg?width=500" class="qq3_1_1_1_1_2_1">
+          					<img src="https://img.29cm.co.kr/cm/202305/11edea3c336caa2384dd97d4130d6ce0.jpeg?width=500" class="qq3_1_1_1_1_2_1">
           				</div>
           				<div class="qq3_1_1_1_1_3">
-          					<h1 class="qq3_1_1_1_1_3_1">집을 물들이는 가장 아름다운 방법</h1>
-          					<p class="qq3_1_1_1_1_3_2">곡선의 아름다움 프리츠 한센을 주말 동안 특별한 혜택으로 만나보세요.</p>
+          					<h1 class="qq3_1_1_1_1_3_1">나만의 건강 루틴</h1>
+          					<p class="qq3_1_1_1_1_3_2">내 몸을 위하는 건강한 루틴 음료, 팜밀리1987을 소개합니다. 삶을 더욱 건강하게 가꿀 수 있도록 공들여 만들었어요.</p>
           				</div>
           			</a>
           			<div class="qq3_1_1_1_2">
- 						<a class="qq3_1_1_1_2_1" href="https://product.29cm.co.kr/catalog/1966152">
- 							<img src="https://img.29cm.co.kr/next-product/2023/03/13/6df115b934da4129a4a154606084bfdd_20230313145108.jpg?width=150" class="qq3_1_1_1_2_1_1">
+ 						<a class="qq3_1_1_1_2_1" href="https://product.29cm.co.kr/catalog/1733851">
+ 							<img src="https://img.29cm.co.kr/item/202401/11eeb8e9b18be4a2b2381d5343ab6dda.jpg?width=150" class="qq3_1_1_1_2_1_1">
  								<div class="qq3_1_1_1_2_1_2">
-	 								<span class="qq3_1_1_1_2_1_2_1">프리츠한센</span>
-	 								<span>프리츠한센 - IKEBANA SMALL(BRASS)</span>
-	 								<span class="qq3_1_1_1_2_1_2_2">157,000<span class=>won</span>
+	 								<span class="qq3_1_1_1_2_1_2_1">팜밀리1987</span>
+	 								<span>ABCD 클렌즈 2개월 프로그램 (3+1box)</span>
+	 								<span class="qq3_1_1_1_2_1_2_2">144,000<span class=>won</span>
 	 								</span>
 	 							</div>
 	 					</a>
@@ -1525,17 +1397,17 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 	 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 20 20">
           							<path d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z" fill="none" fill-rule="evenodd" stroke="#5d5d5d" stroke-width="0.7"></path>
           					</svg>    							
-	 							<span  class="qq3_1_1_1_3_3_1">8,593</span>
+	 							<span  class="qq3_1_1_1_3_3_1">1,302</span>
 	 						</button>
 	 					</div>
           			</div>
           			<div class="qq3_1_1_1_3">
-          					<a class="qq3_1_1_1_3_1" href="https://product.29cm.co.kr/catalog/1966498">
-          						<img src="https://img.29cm.co.kr/next-product/2023/03/13/8d2aebb657d34f35b50a2e03c037b73e_20230313162231.jpg?width=150" class="qq3_1_1_1_3_1_1">
+          					<a class="qq3_1_1_1_3_1" href="https://product.29cm.co.kr/catalog/1735442">
+          						<img src="https://img.29cm.co.kr/item/202401/11eeb8ea1a47b8aa83777fd6a833b5ba.jpg?width=150" class="qq3_1_1_1_3_1_1">
           							<div class="qq3_1_1_1_3_1_1_1 ">
-          								<span class="qq3_1_1_1_3_1_1_1_1">프리츠한센</span>
-          								<span>프리츠한센 FRITZHANSEN - IKEBANA SMALL(STAINLESS STEEL)</span>
-          								<span class=" qq3_1_1_1_3_1_1_1_2">157,000
+          								<span class="qq3_1_1_1_3_1_1_1_1">팜밀리1987</span>
+          								<span>타트체리 나이트 클렌즈 2개월 프로그램 (3+1box)</span>
+          								<span class=" qq3_1_1_1_3_1_1_1_2">129,000
           									<span class=" ">won</span>
           								</span>
           							</div>
@@ -1545,7 +1417,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
           						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 20 20">
           							<path d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z" fill="none" fill-rule="evenodd" stroke="#5d5d5d" stroke-width="0.7"></path>
           						</svg>           							
-          							<span class="qq3_1_1_1_3_3_1">2,779</span>
+          							<span class="qq3_1_1_1_3_3_1">177</span>
           						</button>
           					</div>
           			</div>
@@ -1553,23 +1425,23 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
           	</div>
           	 <div  class="qq3_1_1" style="top: 0px; left: 500px; width: 300px; writing-mode: horizontal-tb; position: absolute;">
           		<div class=" qq3_1_1_1 ">
-          			<a class="qq3_1_1_1_1" href="https://content.29cm.co.kr/brand-news/22306">
+          			<a class="qq3_1_1_1_1" href="https://content.29cm.co.kr/brand-news/22147">
           				<span class="qq3_1_1_1_1_1"></span>
           				<div class="qq3_1_1_1_1_2">
-          					<img src="https://img.29cm.co.kr/cms/202405/11ef1326fce6be53bb1409b79c290723.jpeg?width=500" class="qq3_1_1_1_1_2_1">
+          					<img src="https://img.29cm.co.kr/cm/202405/11ef11d2b2ab000bb9bb95e470c8ec0b.jpg?width=500" class="qq3_1_1_1_1_2_1">
           				</div>
           				<div class="qq3_1_1_1_1_3">
-          					<h1 class="qq3_1_1_1_1_3_1">나를 위한 작은 홈</h1>
-          					<p class="qq3_1_1_1_1_3_2">기본에 충실한 고퀄리티 패브릭 아이템</p>
+          					<h1 class="qq3_1_1_1_1_3_1">삶의 질을 높이는 작은 실천</h1>
+          					<p class="qq3_1_1_1_1_3_2">비움과 채움의 선순환으로 건강한 오늘을 만들어요. 더 가벼운 내일을 딥트 3일과 함께 준비해 보세요.</p>
           				</div>
           			</a>
           			<div class="qq3_1_1_1_2">
- 						<a class="qq3_1_1_1_2_1" href="https://product.29cm.co.kr/catalog/2148838">
- 							<img src="https://img.29cm.co.kr/item/202307/11ee279b99a0cb58a5cadb5c067ae536.jpg?width=150" class="qq3_1_1_1_2_1_1">
+ 						<a class="qq3_1_1_1_2_1" href="https://product.29cm.co.kr/catalog/2573940">
+ 							<img src="https://img.29cm.co.kr/item/202404/11eefbc044b43fa8bb6adf6a07954bb6.jpg?width=150" class="qq3_1_1_1_2_1_1">
  								<div class="qq3_1_1_1_2_1_2">
-	 								<span class="qq3_1_1_1_2_1_2_1">데이드리머</span>
-	 								<span>틸 핑크 스트라이프 코마사 30수 시어서커 침구세트</span>
-	 								<span class="qq3_1_1_1_2_1_2_2">99,700<span class=>won</span>
+	 								<span class="qq3_1_1_1_2_1_2_1">딥트 3일</span>
+	 								<span>스트롱 플러스 대용량 1+1박스(30개입)</span>
+	 								<span class="qq3_1_1_1_2_1_2_2">46,800<span class=>won</span>
 	 								</span>
 	 							</div>
 	 					</a>
@@ -1578,17 +1450,17 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 	 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 20 20">
           							<path d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z" fill="none" fill-rule="evenodd" stroke="#5d5d5d" stroke-width="0.7"></path>
           					</svg>    							
-	 							<span  class="qq3_1_1_1_3_3_1">2,731</span>
+	 							<span  class="qq3_1_1_1_3_3_1">13</span>
 	 						</button>
 	 					</div>
           			</div>
           			<div class="qq3_1_1_1_3">
-          					<a class="qq3_1_1_1_3_1" href="https://product.29cm.co.kr/catalog/1659567">
-          						<img src="https://img.29cm.co.kr/next-product/2022/08/08/95de5f3395f340938cf8dc431ee61aac_20220808152234.jpg?width=150" class="qq3_1_1_1_3_1_1">
+          					<a class="qq3_1_1_1_3_1" href="https://product.29cm.co.kr/catalog/2524059">
+          						<img src="https://img.29cm.co.kr/item/202403/11eeebefd377836f88b12defd148e3ab.jpg?width=150" class="qq3_1_1_1_3_1_1">
           							<div class="qq3_1_1_1_3_1_1_1 ">
-          								<span class="qq3_1_1_1_3_1_1_1_1">데이드리머</span>
-          								<span>COTTON RIB HALF KNIT POLO - 컨투어리 먼지없는 거실러그 A COLOR</span>
-          								<span class=" qq3_1_1_1_3_1_1_1_2">129,000
+          								<span class="qq3_1_1_1_3_1_1_1_1">딥트 3일</span>
+          								<span>피치맛 번 1박스 (30일분)</span>
+          								<span class=" qq3_1_1_1_3_1_1_1_2">44,000
           									<span class=" ">won</span>
           								</span>
           							</div>
@@ -1598,7 +1470,7 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
           						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 20 20">
           							<path d="M2.24 3.425a4.758 4.758 0 0 1 6.79 0c.416.421.74.901.971 1.413.23-.512.553-.992.97-1.413a4.758 4.758 0 0 1 6.79 0 4.91 4.91 0 0 1 0 6.88L10 18.166l-7.76-7.863-.166-.176a4.911 4.911 0 0 1 .166-6.703z" fill="none" fill-rule="evenodd" stroke="#5d5d5d" stroke-width="0.7"></path>
           						</svg>    							
-          							<span class="qq3_1_1_1_3_3_1">4,431</span>
+          							<span class="qq3_1_1_1_3_3_1">23</span>
           						</button>
           					</div>
           			</div>

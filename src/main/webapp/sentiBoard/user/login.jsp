@@ -282,6 +282,10 @@ a {
 				<button class="btn_login" type="submit">로그인하기</button>
 			</form>
 		</div>
+		<div class="joinTop"></div>
+		<form action="join.do">
+		  <button class="join" type="submit">회원가입</button>
+		</form>
 	</div>
 <footer>
 	<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
