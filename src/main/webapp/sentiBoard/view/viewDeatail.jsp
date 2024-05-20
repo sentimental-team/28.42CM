@@ -1,3 +1,4 @@
+<%@page import="product_list.domain.PdDTO"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="domain.Medium_CtgrVO"%>
 <%@page import="java.sql.SQLException"%>
@@ -15,33 +16,46 @@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"
    
     PreparedStatement pstmt = null; /*  sql문 사용할 준비 */
     ResultSet rs = null;    	/*  sql로 불러온 결과 집합들을 저장할 공간 */
-    String sql = " SELECT b.brand_name , pd_image_url , pd_name , pd_discount_rate , pd_price , pd_info , i.pd_info_image_url "
+    String sql = " SELECT p.pd_id, b.brand_name , pd_image_url , pd_name , pd_discount_rate , pd_price , pd_info , i.pd_info_image_url "
     		+" FROM product p "
     		+" JOIN brand b ON b.brand_id = p.brand_id "
     		+" JOIN product_image i ON i.pd_id = p.pd_id " 
     		+" WHERE pd_id = ? ";
     
-    int medium_ctgr_id = 0;
-    String medium_ctgr_name =  null; 
-    int large_ctgr_id =0;
+    int pd_id = 0;
+    String brand_name =  null;
+    String pd_image_url = null; 
+    String pd_name = null ;
+    int pd_discount_rate = 0;
+    int pd_price = 0;
+    String pd_info = null;
+    String pd_info_image_url = null;
     
-    Medium_CtgrVO mcvo = null;
-    ArrayList<Medium_CtgrVO> mclist = null;
+    
+    PdDTO dto = null;
+    ArrayList<PdDTO> pdlist = null;
     
     try {
         pstmt = conn.prepareStatement(sql);
         rs = pstmt.executeQuery();
         
         if( rs.next() ) {
-            mclist = new ArrayList<>();
+        	pdlist = new ArrayList<>();
             do {
-            	medium_ctgr_id = rs.getInt("medium_ctgr_id");
-            	medium_ctgr_name = rs.getString("medium_ctgr_name");
-            	large_ctgr_id = rs.getInt("large_ctgr_id");    
-                
-                mcvo = new Medium_CtgrVO(medium_ctgr_id, medium_ctgr_name, large_ctgr_id);    
-                
-                mclist.add(mcvo);
+            	pdId = rs.getInt("pdId");
+            	pdName = rs.getString("pd_name");
+            	pdPrice = rs.getInt("pd_price");
+            	pdInfo =rs.getString("pd_info");   
+            	PdSalesQuantity = rs.getInt("pd_sales_quantity");
+            	PdDiscountRate = rs.getInt("pd_discount_rate");               
+            	BrandName = rs.getString("brand_name");       
+            	PdImageUrl =rs.getString("Pd_Image_Url");    
+            	PdInfoImageUrl = rs.getString("pd_info_image_url"); 
+           
+            	
+            	dto = new PdDTO(pd_id,brand_name , pd_image_url , pd_name , pd_discount_rate , pd_price , pd_info , pd_info_image_url );  
+            	                
+                pdlist.add(dto);
             } while (rs.next());                
         } // if 
         
