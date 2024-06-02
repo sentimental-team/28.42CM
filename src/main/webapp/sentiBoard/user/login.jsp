@@ -1,3 +1,4 @@
+<!-- login.jsp -->
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
@@ -5,14 +6,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Insert title here</title>
+<title>로그인</title>
 <link rel="shortcut icon"
 	href="http://localhost/sentiProject/images/29.ico">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-
 <style>
+/* CSS styles go here */
 .css-immiqd {
 	max-width: 400px;
 	margin: 0 auto;
@@ -174,17 +174,6 @@ input[type="password" i] {
 	outline: none;
 }
 </style>
-
-<!-- 
-<style data-emotion="css 1d6ilgc" data-s="">
-.css-1d6ilgc {
-	position: relative;
-	font-size: 12px;
-	font-weight: 500;
-	color: #5d5d5d;
-}
-</style>
- -->
 <style>
 .css-eik7hh {
 	display: -webkit-box;
@@ -237,71 +226,89 @@ a {
 	text-decoration: none;
 	outline: none;
 }
+.join {
+    display: block;
+    box-sizing: border-box;
+    height: 56px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 56px;
+    color: #1d1d1d;
+    text-align: center;
+    border: 1px solid #5d5d5d;
+    border-radius: 28px;
+    width: 100%;
+}
+.joinTop{
+  margin: 20px;
+}
 </style>
 <style data-emotion="css 1yvkpbb" data-s="">
-.css-1yvkpbb{width:12px;height:12px;min-width:12px;min-height:12px;margin-left:2px;}
-.css-1yvkpbb *{fill:var(--ruler-semantic-color-text-primary);}
-</style>
+.css-1yvkpbb {
+	width: 12px;
+	height: 12px;
+	min-width: 12px;
+	min-height: 12px;
+	margin-left: 2px;
+}
 
+.css-1yvkpbb * {
+	fill: var(- -ruler-semantic-color-text-primary);
+}
+</style>
 </head>
 <body>
-	<header class="css-ktg3h6 e1e75y762">
-		<a href="링크주소">상단</a>
-	</header>
+<header>
+	<jsp:include page="/layout/top.jsp" flush="false"></jsp:include>
+</header>
 	<div class="css-immiqd e18sgbvw0">
 		<h2 class="css-fbjraf e18sgbvw1">로그인</h2>
 		<div class="css-1lu3imi e18sgbvw2">
-			<form>
+			<c:if test="${param.success == 'false'}">
+				<p>로그인에 실패했습니다. 다시 시도해주세요.</p>
+			</c:if>
+			<form method="post"
+				action="${pageContext.request.contextPath}/sentiBoard/user/login.do">
 				<div class="css-1xlzx9v e8awftn0">
-					<input class="css-coe4td e6yr7gu0" 
-						   placeholder="아이디 (이메일)"
-						   autocapitalize="none" 
-						   autocomplete="username" 
-						   type="text"
-						   name="username">
+					<input class="css-coe4td e6yr7gu0" placeholder="아이디 (이메일)"
+						autocapitalize="none" autocomplete="username" type="text"
+						name="username">
 				</div>
 				<div class="css-1xlzx9v e8awftn0">
-					<input class="css-coe4td e6yr7gu0" 
-							placeholder="비밀번호"
-							autocapitalize="none" 
-							id="current-password"
-							autocomplete="current-password" 
-							type="password" 
-							name="password">
+					<input class="css-coe4td e6yr7gu0" placeholder="비밀번호"
+						autocapitalize="none" id="current-password"
+						autocomplete="current-password" type="password" name="password">
 				</div>
-				<!-- 로그인버튼 클래스명 변경 -->
-				<!-- 기존 클래스명 : button class="e8awftn1 css-otj6by e12h9sp60" -->
 				<button class="btn_login" type="submit">로그인하기</button>
 			</form>
-			<!-- 
-			<ul class="css-eik7hh eyny7ue0">
-				<li class="css-foao9h eyny7ue1">
-				<a class="css-1d6ilgc eyny7ue2" href="#">아이디 (이메일)찾기</a>
-				</li>
-				<li class="css-foao9h eyny7ue1">
-				<a class="css-1d6ilgc eyny7ue2" href="#">비밀번호 찾기</a>
-				</li>
-				<li class="css-foao9h eyny7ue1">
-				<span class="css-13m1uov e1q77p0w0" color="secondary">로그인/회원가입 1:1 문의하기</span> 
-				<svg xmlns="http://www.w3.org/2000/svg" 
-						width="12"
-						height="12" viewBox="0 0 24 24" fill="none" color="primary"
-						class="eyny7ue3 css-1yvkpbb e1q77p0w6">
-	<path fill-rule="evenodd" clip-rule="evenodd"
-							d="M16.7071 12L8.35354 20.3536L7.64643 19.6464L15.2929 12L7.64643 4.35355L8.35354 3.64645L16.7071 12Z"
-							fill="black">
-</path>
-</svg>
-</li>
- -->
-			</ul>
 		</div>
+		<div class="joinTop"></div>
+		<form action="join.do">
+		  <button class="join" type="submit">회원가입</button>
+		</form>
 	</div>
-	<footer class="css-1lo70d e1l4oco10">
-		<a href="링크주소">하단</a>
-	</footer>
-
-	<script>
-</script>
+<footer>
+	<jsp:include page="/layout/bottom.jsp" flush="false"></jsp:include>
+</footer>
 </body>
+<script>
+$(document).ready(function() {
+    $('#loginForm').submit(function(event) {
+        event.preventDefault();
+        $.ajax({
+            type: 'POST',
+            url: '${pageContext.request.contextPath}/sentiBoard/user/login.do',
+            data: $(this).serialize(),
+            success: function(response) {
+                if (response.success) {
+                    alert('로그인에 성공했습니다.');
+                    window.location.href = '${pageContext.request.contextPath}/sentiBoard/main.jsp';
+                } else {
+                    alert('로그인에 실패했습니다.');
+                }
+            }
+        });
+    });
+});
+</script>
 </html>
